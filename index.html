@@ -99,7 +99,7 @@
 
   <footer>
     <p>高中英文參考詞彙表 © 財團法人大學入學考試中心基金會。本工具供非營利學習使用；詞彙級別與詞性依原表整理，中文釋義與音標含 ECDICT（MIT）資料。</p>
-    <p>線上補充來源：<a href="https://dictionaryapi.dev/" target="_blank" rel="noreferrer">DictionaryAPI</a> · <a href="https://en.wiktionary.org/" target="_blank" rel="noreferrer">Wiktionary</a> · <a href="https://www.datamuse.com/api/" target="_blank" rel="noreferrer">Datamuse</a> · Google TTS／翻譯試行路徑。Datamuse 結果只顯示存在於內建大考中心 1～6 級白名單的詞；例句分數是學測取向的啟發式評估，並非大考中心官方評分。</p>
+    <p>線上補充來源：<a href="https://dictionaryapi.dev/" target="_blank" rel="noreferrer">DictionaryAPI</a> · <a href="https://en.wiktionary.org/" target="_blank" rel="noreferrer">Wiktionary</a> · <a href="https://www.datamuse.com/api/" target="_blank" rel="noreferrer">Datamuse</a> · Google 翻譯試行路徑。發音優先使用 DictionaryAPI 美式音檔，無音檔時改用瀏覽器／系統 en-US 語音，避免 Safari、Chrome 與行動 WebView 對非官方 Google TTS 音檔路徑的限制。Datamuse 結果只顯示存在於內建大考中心 1～6 級白名單的詞；例句分數是學測取向的啟發式評估，並非大考中心官方評分。</p>
   </footer>
   <div class="toast" id="toast" role="status"></div>
 
@@ -114,10 +114,9 @@
       dictionary:"https://api.dictionaryapi.dev/api/v2/entries/en/",
       wiktionary:"https://en.wiktionary.org/api/rest_v1/page/definition/",
       datamuse:"https://api.datamuse.com/words",
-      googleTranslate:"https://translate.googleapis.com/translate_a/single",
-      googleTts:"https://translate.google.com/translate_tts"
+      googleTranslate:"https://translate.googleapis.com/translate_a/single"
     });
-    const state = {query:"", levels:new Set(LEVELS), favorites:new Set(readFavorites()), favoritesOnly:false, selectedIndex:-1, filtered:[], onlineCache:new Map(), onlineRequest:0, onlineController:null, currentAudio:null};
+    const state = {query:"", levels:new Set(LEVELS), favorites:new Set(readFavorites()), favoritesOnly:false, selectedIndex:-1, filtered:[], onlineCache:new Map(), onlineRequest:0, onlineController:null, currentAudio:null, currentUtterance:null, voices:[]};
     const byId = id => document.getElementById(id);
     const searchInput=byId("searchInput"), clearSearch=byId("clearSearch"), searchKey=byId("searchKey"), wordList=byId("wordList"), wordDetail=byId("wordDetail");
 
@@ -267,7 +266,6 @@
     function datamuseUrl(params){const url=new URL(API_ENDPOINTS.datamuse);Object.entries(params).forEach(([key,value])=>url.searchParams.set(key,String(value)));return url.href}
     function googleTranslationUrl(word){const url=new URL(API_ENDPOINTS.googleTranslate);url.search=new URLSearchParams({client:"gtx",sl:"en",tl:"zh-TW",dt:"t",q:word}).toString();return url.href}
     function googleTranslatePage(word){const url=new URL("https://translate.google.com/");url.search=new URLSearchParams({sl:"en",tl:"zh-TW",text:spokenForm(word),op:"translate"}).toString();return url.href}
-    function googleTtsUrl(word){const url=new URL(API_ENDPOINTS.googleTts);url.search=new URLSearchParams({ie:"UTF-8",client:"tw-ob",tl:"en-US",q:spokenForm(word)}).toString();return url.href}
 
     async function fetchJson(url,signal){
       try{
@@ -284,7 +282,7 @@
       const phonetic=byId("apiPhonetic"),phoneticSource=byId("phoneticSource"),button=byId("speakButton"),source=byId("speakSource"),status=byId("audioStatus");if(!phonetic||!phoneticSource||!button||!source||!status)return;
       phonetic.textContent=result&&result.phonetic?result.phonetic:(entry.pronunciation||"音標未收錄");phoneticSource.textContent=result&&result.phonetic?"DICTIONARY API":"OFFLINE";
       if(result&&result.usAudio){source.textContent="API US";button.title="播放 DictionaryAPI 的 -us.mp3 美式真人發音";status.className="audio-status ready";status.textContent="美式真人發音 · DictionaryAPI -us.mp3";return}
-      source.textContent="G TTS";button.title="播放 Google TTS en-US 備援發音";status.className="audio-status fallback";status.textContent=error?"DictionaryAPI 暫時無法連線 · 使用 Google TTS":"查無 -us.mp3 · 使用 Google TTS en-US";
+      source.textContent="SYS US";button.title="播放瀏覽器／系統 en-US 語音";status.className="audio-status fallback";status.textContent=error?"DictionaryAPI 暫時無法連線 · 使用系統 en-US":"查無 -us.mp3 · 使用系統 en-US";
     }
 
     function renderGsatExampleCard(example,rank){
@@ -352,32 +350,57 @@
     }
 
     function toggleFavorite(word,index){state.favorites.has(word)?state.favorites.delete(word):state.favorites.add(word);saveFavorites();renderDetail(VOCABULARY[index],index);applyFilters();showToast(state.favorites.has(word)?"已加入收藏":"已取消收藏")}
+    function refreshSpeechVoices(){
+      if(!("speechSynthesis" in window))return[];
+      const voices=window.speechSynthesis.getVoices()||[];if(voices.length)state.voices=voices;return state.voices;
+    }
+    function preferredUsVoice(){
+      const voices=refreshSpeechVoices();
+      const lang=voice=>String(voice.lang||"").replace("_","-").toLowerCase();
+      return voices.find(voice=>lang(voice)==="en-us"&&voice.localService)||voices.find(voice=>lang(voice)==="en-us")||voices.find(voice=>lang(voice).startsWith("en-")&&voice.localService)||voices.find(voice=>lang(voice).startsWith("en"))||null;
+    }
     function stopPronunciation(){
-      const audio=state.currentAudio;state.currentAudio=null;if(audio){audio.pause();audio.removeAttribute("src");audio.load()}
-      if("speechSynthesis" in window)window.speechSynthesis.cancel();
+      const audio=state.currentAudio;state.currentAudio=null;if(audio){try{audio.pause();audio.removeAttribute("src");audio.load()}catch{}}
+      state.currentUtterance=null;
+      if("speechSynthesis" in window){try{window.speechSynthesis.cancel()}catch{}}
       document.querySelectorAll(".speak.speaking").forEach(button=>button.classList.remove("speaking"));
     }
-    function playBrowserUs(word,button,notice=true){
+    function playBrowserUs(word,button,notice=false,onFailure=null){
       stopPronunciation();
-      if(!("speechSynthesis" in window)){showToast("此瀏覽器不支援語音發音");return}
-      const utterance=new SpeechSynthesisUtterance(spokenForm(word));utterance.lang="en-US";utterance.rate=.82;
-      const voices=window.speechSynthesis.getVoices();const voice=voices.find(v=>v.lang.replace("_","-").toLowerCase()==="en-us")||voices.find(v=>v.lang.toLowerCase().startsWith("en"));if(voice)utterance.voice=voice;
-      if(button){button.classList.add("speaking");utterance.onend=utterance.onerror=()=>button.classList.remove("speaking")}
-      window.speechSynthesis.speak(utterance);if(notice)showToast("Google TTS 無法播放，使用瀏覽器 en-US");
+      if(!("speechSynthesis" in window)||typeof SpeechSynthesisUtterance==="undefined"){
+        if(onFailure)onFailure(new Error("speechSynthesis unavailable"));else showToast("此瀏覽器不支援系統語音發音");return;
+      }
+      const synth=window.speechSynthesis,utterance=new SpeechSynthesisUtterance(spokenForm(word));
+      utterance.lang="en-US";utterance.rate=.82;utterance.pitch=1;utterance.volume=1;
+      const voice=preferredUsVoice();if(voice)utterance.voice=voice;
+      state.currentUtterance=utterance;if(button)button.classList.add("speaking");
+      const cleanup=()=>{if(state.currentUtterance===utterance)state.currentUtterance=null;if(button&&button.isConnected)button.classList.remove("speaking")};
+      utterance.onstart=()=>{if(button&&button.isConnected)button.classList.add("speaking")};
+      utterance.onend=cleanup;
+      utterance.onerror=event=>{cleanup();if(onFailure)onFailure(event);else if(!event||event.error!=="canceled")showToast("系統語音無法播放，請再按一次")};
+      try{
+        if(synth.paused)synth.resume();
+        synth.speak(utterance);
+        if(notice)showToast("已切換為瀏覽器／系統 en-US 語音");
+      }catch(error){cleanup();if(onFailure)onFailure(error);else showToast("系統語音無法播放")}
     }
     function playRemoteAudio(url,button,onFailure){
-      stopPronunciation();const audio=new Audio(url);state.currentAudio=audio;audio.preload="auto";if(button)button.classList.add("speaking");
-      const finish=()=>{if(state.currentAudio!==audio)return;state.currentAudio=null;if(button&&button.isConnected)button.classList.remove("speaking")};
-      const fail=()=>{if(state.currentAudio!==audio)return;state.currentAudio=null;if(button&&button.isConnected)button.classList.remove("speaking");onFailure()};
-      audio.addEventListener("ended",finish,{once:true});audio.addEventListener("error",fail,{once:true});audio.play().catch(fail);
-    }
-    function playGoogleTts(word,button){
-      playRemoteAudio(googleTtsUrl(word),button,()=>playBrowserUs(word,button,true));
+      stopPronunciation();
+      const audio=new Audio();let settled=false;state.currentAudio=audio;audio.preload="auto";audio.src=url;if(button)button.classList.add("speaking");
+      const finish=()=>{if(settled)return;settled=true;if(state.currentAudio===audio)state.currentAudio=null;if(button&&button.isConnected)button.classList.remove("speaking")};
+      const fail=error=>{if(settled)return;settled=true;if(state.currentAudio===audio)state.currentAudio=null;if(button&&button.isConnected)button.classList.remove("speaking");try{audio.pause()}catch{};if(onFailure)onFailure(error)};
+      audio.addEventListener("ended",finish,{once:true});audio.addEventListener("error",fail,{once:true});audio.addEventListener("abort",fail,{once:true});
+      try{const promise=audio.play();if(promise&&typeof promise.catch==="function")promise.catch(fail)}catch(error){fail(error)}
     }
     function speakWord(word,button){
       const key=apiLookupWord(word).toLowerCase(),online=state.onlineCache.get(key),dictionary=online&&online.dictionary;
-      if(dictionary&&dictionary.usAudio){playRemoteAudio(dictionary.usAudio,button,()=>{showToast("DictionaryAPI 音檔失敗，改用 Google TTS");playGoogleTts(word,button)});return}
-      playGoogleTts(word,button);
+      // 重要：沒有真人音檔時，直接在 click 的同一個呼叫堆疊啟動系統語音，
+      // 避免 Safari / Chrome 因非同步備援而失去 user activation。
+      if(dictionary&&dictionary.usAudio){
+        playRemoteAudio(dictionary.usAudio,button,()=>playBrowserUs(word,button,true));
+        return;
+      }
+      playBrowserUs(word,button,false);
     }
 
     function setupDaily(){const enriched=VOCABULARY.filter(entry=>entry.example);const pool=enriched.length?enriched:VOCABULARY;const now=new Date(),seed=Number(`${now.getFullYear()}${now.getMonth()+1}${now.getDate()}`),entry=pool[seed%pool.length],index=VOCABULARY.indexOf(entry);const button=byId("dailyButton");button.innerHTML=`<span class="dot l${entry.level}">${entry.level}</span><strong>${escapeHtml(entry.word)}</strong><small>${escapeHtml(entry.meaning)}</small><span class="arrow">→</span>`;button.addEventListener("click",()=>selectEntry(index,true))}
@@ -388,7 +411,10 @@
     byId("allTab").addEventListener("click",()=>{state.favoritesOnly=false;byId("allTab").classList.add("on");byId("favoriteTab").classList.remove("on");applyFilters()});
     byId("favoriteTab").addEventListener("click",()=>{state.favoritesOnly=true;byId("favoriteTab").classList.add("on");byId("allTab").classList.remove("on");applyFilters()});
     document.addEventListener("keydown",event=>{if(event.key==="/"&&!/INPUT|TEXTAREA/.test(document.activeElement.tagName)){event.preventDefault();searchInput.focus()}if(event.key==="Escape"&&document.activeElement===searchInput){searchInput.value="";state.query="";applyFilters();searchInput.blur()}});
-    if("speechSynthesis" in window)window.speechSynthesis.getVoices();
+    if("speechSynthesis" in window){
+      refreshSpeechVoices();
+      window.speechSynthesis.addEventListener("voiceschanged",refreshSpeechVoices);
+    }
 
     buildLevelFilters();byId("totalCount").textContent=VOCABULARY.length.toLocaleString();
     state.selectedIndex=Math.max(0,VOCABULARY.findIndex(entry=>entry.word==="challenge"));
