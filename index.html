@@ -4,8 +4,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="color-scheme" content="light">
-  <meta name="description" content="內建 6,012 個大考中心官方詞條，整合 DictionaryAPI、Wiktionary、Datamuse 與行動裝置發音備援的學測英文詞典">
-  <title>學測英文專用詞典｜離線單一 HTML</title>
+  <meta name="description" content="依 115 學年度起現行命題方向整理，內建 6,012 個大考中心詞條、智慧搜尋、真人發音、例句篩選與搭配詞分級的學測英文詞典">
+  <title>學測英文專用詞典｜115 現行命題智慧版</title>
   <style>
     :root {
       --ink:#17352d; --ink2:#29483f; --paper:#f6f1e7; --paper2:#e9e0cf;
@@ -33,6 +33,7 @@
     .search input{border:0;outline:0;background:transparent;min-width:0;flex:1;font:500 clamp(19px,2vw,26px) Georgia,"Noto Serif TC",serif}.search input::placeholder{color:#8e9993}
     .clear,.key{width:30px;height:30px;border:1px solid var(--line);border-radius:5px;background:var(--paper);display:grid;place-items:center;color:var(--muted);flex:none}.clear{font-size:21px}.key{font:12px ui-monospace,monospace}
     .stats{display:flex;gap:18px;flex-wrap:wrap;margin-top:22px;color:var(--muted);font-size:11px}.stats span+span{padding-left:18px;border-left:1px solid var(--line)}.stats strong{color:var(--ink)}
+    .exam-dashboard{max-width:1440px;margin:auto;padding:0 46px 28px}.exam-dashboard details{border:1px solid var(--ink);border-radius:18px;background:var(--white);box-shadow:7px 8px 0 var(--ink);overflow:hidden}.exam-dashboard summary{list-style:none;display:flex;align-items:center;gap:12px;padding:18px 22px;font-size:13px;font-weight:900;cursor:pointer;background:linear-gradient(100deg,var(--acid),#f3ffd2 56%,var(--white))}.exam-dashboard summary::-webkit-details-marker{display:none}.exam-dashboard summary:after{content:"＋";margin-left:auto;font-size:20px;font-weight:500}.exam-dashboard details[open] summary:after{content:"−"}.current-badge{display:inline-flex;padding:5px 8px;border:1px solid var(--ink);border-radius:999px;background:var(--white);font-size:8px;letter-spacing:.08em}.exam-dashboard-body{padding:21px 22px 23px}.exam-metrics{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}.exam-metric{min-height:91px;border:1px solid var(--line);border-radius:12px;padding:13px 14px;background:var(--paper)}.exam-metric strong{display:block;font:650 24px Georgia,serif;color:var(--coral);margin-bottom:5px}.exam-metric span{font-size:10px;line-height:1.55;color:var(--ink2)}.direction-layout{display:grid;grid-template-columns:1.25fr .75fr;gap:16px;margin-top:16px}.direction-block{border-top:1px solid var(--line);padding-top:15px}.direction-block h2{margin:0 0 9px;font:650 15px "Noto Serif TC",Georgia,serif}.direction-list{display:grid;grid-template-columns:1fr 1fr;gap:7px 22px;margin:0;padding-left:21px;color:var(--ink2);font-size:10px;line-height:1.6}.teacher-consensus{margin:0;padding:13px 14px;border-left:5px solid var(--coral);background:#fff1ec;border-radius:0 10px 10px 0;color:var(--ink2);font-size:10px;line-height:1.75}.teacher-consensus strong{color:var(--ink)}.rubric-note{margin:9px 0 0;padding:10px 12px;border:1px solid var(--line);border-radius:10px;background:var(--paper);color:var(--ink2);font-size:9px;line-height:1.65}.rubric-note strong{color:var(--ink)}.official-links{display:flex;flex-wrap:wrap;gap:7px;margin-top:14px}.official-links a{padding:7px 10px;border:1px solid var(--line);border-radius:999px;background:var(--white);font-size:9px;font-weight:850;text-underline-offset:2px}.official-links a:hover{border-color:var(--ink);background:var(--acid)}.data-date{margin:11px 0 0;color:var(--muted);font-size:8px;line-height:1.6}
     .tools{max-width:1440px;margin:auto;padding:13px 46px;border-top:1px solid var(--line);border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:70px}
     .levels{display:flex;gap:8px;align-items:center}.filter-label{font-size:10px;font-weight:900;letter-spacing:.15em;color:var(--muted);margin-right:7px}.level-btn{--level:var(--ink);--level-soft:var(--paper2);height:36px;min-width:47px;padding:0 12px;border-radius:999px;border:1px solid var(--level);background:var(--level-soft);color:var(--level);font-size:11px;font-weight:900;opacity:.66;transition:transform .15s,box-shadow .15s,opacity .15s}.level-btn:hover{opacity:1;transform:translateY(-1px)}.level-btn.on{color:white;background:var(--level);opacity:1;box-shadow:0 5px 13px color-mix(in srgb,var(--level) 24%,transparent)}.level-btn[data-level="1"]{--level:var(--l1);--level-soft:var(--l1s)}.level-btn[data-level="2"]{--level:var(--l2);--level-soft:var(--l2s)}.level-btn[data-level="3"]{--level:var(--l3);--level-soft:var(--l3s)}.level-btn[data-level="4"]{--level:var(--l4);--level-soft:var(--l4s)}.level-btn[data-level="5"]{--level:var(--l5);--level-soft:var(--l5s)}.level-btn[data-level="6"]{--level:var(--l6);--level-soft:var(--l6s)}
     .tabs{padding:4px;background:rgba(23,53,45,.07);border-radius:999px;display:flex}.tabs button{border:0;background:transparent;border-radius:999px;padding:8px 15px;font-size:12px;color:var(--muted)}.tabs button.on{background:var(--white);color:var(--ink);font-weight:750;box-shadow:0 2px 8px rgba(23,53,45,.08)}
@@ -41,41 +42,90 @@
     .list{height:650px;overflow:auto;scrollbar-color:rgba(23,53,45,.25) transparent;scrollbar-width:thin}.row{--level:var(--ink);--level-soft:var(--paper2);min-height:70px;width:100%;display:flex;align-items:center;text-align:left;border:0;border-left:4px solid var(--level);border-bottom:1px solid rgba(23,53,45,.1);padding:10px 17px 10px 14px;background:linear-gradient(90deg,var(--level-soft),transparent 39%);transition:padding .15s,background .15s,color .15s}.row:hover{background:linear-gradient(90deg,var(--level-soft),rgba(217,255,114,.2));padding-left:19px}.row.selected{background:linear-gradient(110deg,var(--level),var(--ink) 78%);color:white;border-left-color:var(--acid)}
     .level-row-1{--level:var(--l1);--level-soft:var(--l1s)}.level-row-2{--level:var(--l2);--level-soft:var(--l2s)}.level-row-3{--level:var(--l3);--level-soft:var(--l3s)}.level-row-4{--level:var(--l4);--level-soft:var(--l4s)}.level-row-5{--level:var(--l5);--level-soft:var(--l5s)}.level-row-6{--level:var(--l6);--level-soft:var(--l6s)}
     .dot{width:28px;height:28px;border-radius:50%;color:white;display:grid;place-items:center;font-size:10px;font-weight:900;flex:none}.l1{background:var(--l1)}.l2{background:var(--l2)}.l3{background:var(--l3)}.l4{background:var(--l4)}.l5{background:var(--l5)}.l6{background:var(--l6)}
-    .row-copy{min-width:0;flex:1;padding:0 13px;display:flex;flex-direction:column}.row-copy strong{font:600 18px Georgia,serif;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.row-copy small{font-size:11px;color:var(--muted);margin-top:4px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.row.selected small{color:rgba(255,255,255,.65)}.arrow{opacity:.42}
+    .row-copy{min-width:0;flex:1;padding:0 13px;display:flex;flex-direction:column}.row-title{display:flex;align-items:center;gap:7px;min-width:0}.row-copy strong{font:600 18px Georgia,serif;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.search-match{flex:none;padding:3px 6px;border-radius:999px;background:var(--acid);color:var(--ink);font-size:7px;font-weight:950;letter-spacing:.04em}.row-copy small{font-size:11px;color:var(--muted);margin-top:4px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.row.selected small{color:rgba(255,255,255,.65)}.arrow{opacity:.42}
     .more{margin:0;text-align:center;background:var(--paper);padding:12px;font-size:10px;color:var(--muted)}
     .empty{height:330px;display:grid;place-items:center;text-align:center;color:var(--muted);padding:30px}.empty strong{display:block;color:var(--ink);margin-bottom:7px}.empty p{font-size:12px;line-height:1.7}
     .detail{--level:var(--l3);--level-soft:var(--l3s);min-height:636px;align-self:start;position:sticky;top:18px;padding:36px 40px 24px;box-shadow:var(--shadow);border-radius:22px;overflow:hidden}.detail:before{content:"";position:absolute;left:-1px;right:-1px;top:-1px;height:8px;background:var(--level)}.detail:after{content:"";position:absolute;width:210px;height:210px;right:-100px;top:-120px;border-radius:50%;background:var(--level-soft);z-index:-1}.theme-l1{--level:var(--l1);--level-soft:var(--l1s)}.theme-l2{--level:var(--l2);--level-soft:var(--l2s)}.theme-l3{--level:var(--l3);--level-soft:var(--l3s)}.theme-l4{--level:var(--l4);--level-soft:var(--l4s)}.theme-l5{--level:var(--l5);--level-soft:var(--l5s)}.theme-l6{--level:var(--l6);--level-soft:var(--l6s)}
     .topline{display:flex;align-items:center;gap:10px;color:var(--muted);font-size:11px}.badge{padding:6px 9px;border-radius:999px;background:var(--level);color:white;font-size:9px;font-weight:900;letter-spacing:.08em;box-shadow:0 4px 12px color-mix(in srgb,var(--level) 22%,transparent)}.favorite{margin-left:auto;border:1px solid transparent;border-radius:999px;background:transparent;font-size:12px;padding:7px 10px}.favorite:hover{border-color:var(--line);background:var(--white)}.favorite.saved{color:#a5680d;background:#fff5d8}
     .title-row{display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line);padding:28px 0 25px}.title-row h2{margin:0;font:500 clamp(42px,5vw,68px)/1 Georgia,serif;letter-spacing:-.05em;overflow-wrap:anywhere}.phonetic{margin:12px 0 0;color:var(--muted);font-size:13px}.phonetic em{font-family:Georgia,serif;color:var(--level);font-weight:750;margin-right:10px}.phonetic-source{display:inline-block;margin-left:8px;padding:3px 6px;border-radius:999px;background:var(--level-soft);color:var(--level);font:800 8px ui-sans-serif,system-ui}.pos-chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px}.pos-chip{border:1px solid var(--line);border-radius:999px;padding:4px 8px;background:var(--white);color:var(--ink2);font-size:9px;font-weight:800}.audio-status{display:flex;align-items:center;gap:7px;margin:9px 0 0;color:var(--muted);font-size:10px}.audio-status:before{content:"";width:7px;height:7px;border-radius:50%;background:var(--muted);flex:none}.audio-status.loading:before{background:var(--l6);animation:statusPulse .75s infinite alternate}.audio-status.ready{color:var(--level);font-weight:750}.audio-status.ready:before{background:var(--level);box-shadow:0 0 0 4px var(--level-soft)}.audio-status.fallback:before{background:var(--coral)}@keyframes statusPulse{to{opacity:.25}}
     .speak{width:70px;height:70px;border-radius:50%;border:2px solid var(--level);background:var(--level-soft);color:var(--level);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:5px;font-size:8px;font-weight:900;letter-spacing:.08em;margin-left:18px;flex:none;transition:.14s}.speak span{font-size:15px}.speak small{font-size:8px;font-weight:900;line-height:1}.speak:hover{background:var(--level);color:white;transform:rotate(-4deg)}.speak.speaking{background:var(--level);color:white;animation:pulse .7s infinite alternate}@keyframes pulse{to{transform:scale(1.06)}}
+    .pronunciation-options{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}.accent-choice{min-height:27px;border:1px solid var(--line);border-radius:999px;background:var(--white);padding:5px 9px;color:var(--ink2);font-size:8px;font-weight:850}.accent-choice:hover,.accent-choice.speaking{border-color:var(--level);background:var(--level-soft);color:var(--level)}
     .kicker{margin:0 0 11px;font-size:9px;font-weight:900;letter-spacing:.17em;color:var(--muted);text-transform:uppercase}.definition{padding:27px 0 23px}.definition h3{font:600 25px/1.55 "Noto Serif TC",Georgia,serif;letter-spacing:.02em;margin:0;border-left:4px solid var(--level);padding-left:17px}.translation-live{margin:17px 0 0;padding:12px 14px;border:1px dashed var(--level);border-radius:11px;background:var(--level-soft);display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:9px;font-size:10px}.translation-live span{font-weight:900;color:var(--level)}.translation-live strong{font-size:12px}.translation-live a{color:var(--level);font-weight:800;text-underline-offset:3px}
+    .exam-profile{margin:0 0 13px;padding:17px 18px;border:1px solid var(--line);border-radius:15px;background:linear-gradient(125deg,var(--level-soft),var(--white) 70%)}.profile-head{display:flex;align-items:center;gap:8px;flex-wrap:wrap}.profile-priority{padding:5px 8px;border-radius:999px;background:var(--level);color:white;font-size:8px;font-weight:950;letter-spacing:.05em}.profile-head strong{font-size:13px}.profile-modes{display:flex;flex-wrap:wrap;gap:6px;margin:11px 0}.profile-mode{padding:5px 8px;border:1px solid var(--level);border-radius:999px;background:var(--white);color:var(--level);font-size:8px;font-weight:850}.profile-action{margin:0;color:var(--ink2);font-size:10px;line-height:1.7}.profile-source{margin:8px 0 0;color:var(--muted);font-size:8px;line-height:1.55}
     .example{background:var(--ink);color:white;padding:23px 25px;position:relative;overflow:hidden;border-radius:15px}.example:after{content:"“";position:absolute;right:14px;top:-12px;font:140px/1 Georgia,serif;color:rgba(217,255,114,.09)}.example .kicker{color:var(--acid)}.filter-legend{display:flex;flex-wrap:wrap;gap:6px;margin:-2px 0 15px;position:relative;z-index:1}.filter-legend span{padding:4px 7px;border:1px solid rgba(255,255,255,.2);border-radius:999px;color:rgba(255,255,255,.72);font-size:8px;font-weight:800}.example-list{display:grid;gap:11px;position:relative;z-index:1}.example-list.loading{opacity:.66;animation:examplePulse .8s infinite alternate}.example-loading{margin:3px 0 5px;font:17px/1.6 Georgia,serif}.gold-example{padding:16px 17px;border:1px solid rgba(255,255,255,.18);border-left:4px solid var(--acid);border-radius:12px;background:rgba(255,255,255,.065)}.gold-head{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:9px}.gold-rank{font-size:8px;font-weight:950;letter-spacing:.13em;color:var(--acid)}.gold-score{min-width:55px;border-radius:999px;background:var(--acid);color:var(--ink);padding:5px 8px;text-align:center;font-size:9px;font-weight:950}.gold-example blockquote{font:18px/1.65 Georgia,serif;margin:0}.gold-example footer{max-width:none;margin:10px 0 0;padding:0;border:0;display:block;color:rgba(255,255,255,.56);font-size:8px}.filter-tags{display:flex;flex-wrap:wrap;gap:5px;margin-top:11px}.filter-tag{padding:4px 7px;border-radius:999px;background:rgba(255,255,255,.1);color:rgba(255,255,255,.82);font-size:8px;font-weight:750}.filter-tag:first-child{background:rgba(217,255,114,.17);color:var(--acid)}.fallback-example{padding:16px 17px;border:1px dashed rgba(255,255,255,.25);border-radius:12px}.fallback-example strong{display:block;margin-bottom:8px;color:var(--acid);font-size:9px;letter-spacing:.08em}.fallback-example blockquote{font:17px/1.6 Georgia,serif;margin:0}.example>p:last-child{margin:12px 0 0;color:rgba(255,255,255,.66);font-size:10px;line-height:1.6;position:relative;z-index:1}.example a{color:var(--acid);text-underline-offset:3px}@keyframes examplePulse{to{opacity:1}}
-    .learning-grid{display:grid;grid-template-columns:1fr 1fr;gap:13px;margin-top:13px}.study-card{min-height:145px;border:1px solid var(--line);border-radius:15px;background:var(--white);padding:19px 20px}.study-card.cloze{border-top:5px solid var(--coral)}.study-card.collocation{border-top:5px solid var(--level)}.study-card .card-note{margin:-4px 0 13px;color:var(--muted);font-size:9px;line-height:1.55}.chips{display:flex;flex-wrap:wrap;gap:7px}.word-chip{display:inline-flex;align-items:center;gap:5px;min-height:30px;border-radius:999px;padding:6px 8px 6px 10px;background:#f4eee2;border:1px solid var(--line);font:700 12px Georgia,serif}.word-chip.synonym:before{content:"↔";margin-right:1px;color:var(--coral);font:900 10px system-ui}.word-chip.collocation{background:var(--level-soft);border-color:var(--level);color:var(--ink)}.word-chip.collocation strong{color:var(--level)}.ceec-level{display:inline-grid;place-items:center;min-width:25px;height:19px;padding:0 5px;border-radius:999px;color:white;font:900 8px/1 ui-sans-serif,system-ui;letter-spacing:.03em}.ceec-level.level-1{background:var(--l1)}.ceec-level.level-2{background:var(--l2)}.ceec-level.level-3{background:var(--l3)}.ceec-level.level-4{background:var(--l4)}.ceec-level.level-5{background:var(--l5)}.ceec-level.level-6{background:var(--l6)}.ceec-filter-status{flex-basis:100%;margin:2px 0 0;color:var(--muted);font-size:8px;line-height:1.5}.ceec-filter-status strong{color:var(--ink)}.card-empty{margin:3px 0;color:var(--muted);font-size:11px;line-height:1.6}.service-actions{margin-top:15px;padding:11px 13px;border-radius:10px;background:rgba(23,53,45,.055);display:flex;justify-content:space-between;align-items:center;gap:12px;color:var(--muted);font-size:9px}.service-actions button{border:1px solid var(--line);border-radius:999px;background:var(--white);padding:6px 9px;font-size:9px;font-weight:800}.service-actions button[hidden]{display:none}
+    .example-tools{display:flex;flex-wrap:wrap;gap:6px;margin-top:12px}.example-tool{min-height:28px;border:1px solid rgba(255,255,255,.25);border-radius:999px;background:rgba(255,255,255,.08);color:white;padding:5px 9px;font-size:8px;font-weight:850}.example-tool:hover,.example-tool.active,.example-tool.speaking{border-color:var(--acid);background:rgba(217,255,114,.16);color:var(--acid)}.example-translation{margin:12px 0 0;padding:10px 12px;border-radius:9px;background:rgba(217,255,114,.11);color:rgba(255,255,255,.9);font-size:11px;line-height:1.65}.example-translation strong{display:inline-block;margin-right:8px;color:var(--acid);font-size:8px;letter-spacing:.08em}.example-translation.not-sent{background:rgba(255,255,255,.05);color:rgba(255,255,255,.5)}.example-source{display:inline-block;margin-top:10px;color:rgba(255,255,255,.58);font-size:8px;line-height:1.55}.example-source a{color:var(--acid)}
+    .learning-grid{display:grid;grid-template-columns:1fr 1fr;gap:13px;margin-top:13px}.study-card{min-height:145px;border:1px solid var(--line);border-radius:15px;background:var(--white);padding:19px 20px}.study-card.cloze{border-top:5px solid var(--coral)}.study-card.collocation{border-top:5px solid var(--level)}.study-card.exam-points{grid-column:1/-1;border-top:5px solid var(--acid);background:linear-gradient(135deg,#fff 0%,#f8ffe5 100%)}.study-card .card-note{margin:-4px 0 13px;color:var(--muted);font-size:9px;line-height:1.55}.exam-point-list{display:grid;gap:9px}.exam-pattern{display:grid;grid-template-columns:minmax(190px,.8fr) 1fr;gap:10px;align-items:start;padding:11px 12px;border:1px solid var(--line);border-radius:10px;background:rgba(255,255,255,.8)}.exam-pattern code{font:800 12px/1.55 ui-monospace,SFMono-Regular,Consolas,monospace;color:var(--level);white-space:normal}.exam-pattern span{font-size:11px;line-height:1.65}.exam-trap{margin:11px 0 0;padding:10px 12px;border-left:4px solid var(--coral);background:#fff1ec;color:var(--ink2);font-size:10px;line-height:1.65}.exam-source{margin:10px 0 0;color:var(--muted);font-size:8px;line-height:1.6}.exam-source a{color:var(--level);font-weight:800;text-underline-offset:2px}.chips{display:flex;flex-wrap:wrap;gap:7px}.word-chip{display:inline-flex;align-items:center;gap:5px;min-height:30px;border-radius:999px;padding:6px 8px 6px 10px;background:#f4eee2;border:1px solid var(--line);font:700 12px Georgia,serif}.word-chip.synonym:before{content:"↔";margin-right:1px;color:var(--coral);font:900 10px system-ui}.word-chip.collocation{background:var(--level-soft);border-color:var(--level);color:var(--ink)}.word-chip.collocation strong{color:var(--level)}.collocation-confidence{padding:3px 5px;border-radius:999px;font:900 7px/1 ui-sans-serif,system-ui;letter-spacing:.04em}.confidence-high{background:var(--level);color:white}.confidence-medium{background:#fff0ba;color:#6f4a00}.confidence-explore{background:var(--paper2);color:var(--muted)}.ceec-level{display:inline-grid;place-items:center;min-width:25px;height:19px;padding:0 5px;border-radius:999px;color:white;font:900 8px/1 ui-sans-serif,system-ui;letter-spacing:.03em}.ceec-level.level-1{background:var(--l1)}.ceec-level.level-2{background:var(--l2)}.ceec-level.level-3{background:var(--l3)}.ceec-level.level-4{background:var(--l4)}.ceec-level.level-5{background:var(--l5)}.ceec-level.level-6{background:var(--l6)}.ceec-filter-status{flex-basis:100%;margin:2px 0 0;color:var(--muted);font-size:8px;line-height:1.5}.ceec-filter-status strong{color:var(--ink)}.card-empty{margin:3px 0;color:var(--muted);font-size:11px;line-height:1.6}.service-actions{margin-top:15px;padding:11px 13px;border-radius:10px;background:rgba(23,53,45,.055);display:flex;justify-content:space-between;align-items:center;gap:12px;color:var(--muted);font-size:9px}.service-actions button{border:1px solid var(--line);border-radius:999px;background:var(--white);padding:6px 9px;font-size:9px;font-weight:800}.service-actions button[hidden]{display:none}
     .twocol{display:grid;grid-template-columns:1fr 1fr}.twocol section{padding:22px 21px 22px 0;border-bottom:1px solid var(--line)}.twocol section+section{border-left:1px solid var(--line);padding-left:21px;padding-right:0}.twocol p:last-child{margin:0;font-size:13px;line-height:1.75}.source{margin:0;padding-top:17px;color:var(--muted);font-size:9px;line-height:1.6}
     .daily{max-width:1348px;margin:0 auto 60px;background:var(--coral);padding:30px 38px;display:flex;align-items:center;justify-content:space-between;gap:24px}.daily-label{font-size:9px;font-weight:900;letter-spacing:.18em}.daily h2{margin:7px 0 0;font:600 25px "Noto Serif TC",Georgia,serif}.daily button{min-width:380px;padding:16px 18px;background:var(--white);border:1px solid var(--ink);box-shadow:6px 6px 0 var(--ink);display:grid;grid-template-columns:auto minmax(130px,1fr) auto;gap:0 13px;align-items:center;text-align:left}.daily .dot{grid-row:1/span 2}.daily button strong{font:600 20px Georgia,serif}.daily button small{font-size:10px;color:var(--muted);grid-column:2;margin-top:3px}.daily button .arrow{grid-row:1/span 2;grid-column:3}
     footer{max-width:1440px;margin:auto;padding:27px 46px 35px;border-top:1px solid var(--line);display:flex;justify-content:space-between;gap:20px;color:var(--muted);font-size:9px;line-height:1.7}footer p{margin:0;max-width:760px}
     .toast{position:fixed;left:50%;bottom:24px;transform:translate(-50%,20px);background:var(--ink);color:white;padding:11px 16px;font-size:12px;box-shadow:0 8px 30px rgba(0,0,0,.2);opacity:0;pointer-events:none;transition:.2s;z-index:30}.toast.show{opacity:1;transform:translate(-50%,0)}
-    @media(max-width:920px){.hero{grid-template-columns:1fr;gap:38px}.grid{grid-template-columns:1fr}.detail{position:relative;top:0}.list{height:500px}.daily{margin-left:28px;margin-right:28px;flex-direction:column;align-items:stretch}.daily button{width:100%;min-width:0}}
-    @media(max-width:640px){.header{height:66px;padding:0 17px}.offline span{display:none}.hero,.tools,.grid,footer{padding-left:17px;padding-right:17px}.hero{padding-top:35px}.hero:after{display:none}h1{font-size:44px}.search{height:66px;padding:0 16px;box-shadow:6px 7px 0 var(--ink)}.search input{font-size:18px}.stats span+span{border:0;padding:0}.tools{align-items:stretch;flex-direction:column}.levels{overflow:auto;padding-bottom:3px}.level-btn{min-width:42px}.tabs{align-self:flex-start}.grid{padding-top:22px;gap:22px}.detail{padding:31px 19px 21px}.title-row{align-items:flex-start}.title-row h2{font-size:42px}.speak{width:56px;height:56px}.translation-live{grid-template-columns:1fr}.learning-grid{grid-template-columns:1fr}.twocol{grid-template-columns:1fr}.twocol section{padding-right:0}.twocol section+section{border-left:0;padding-left:0}.example{padding:20px 16px}.gold-example{padding:14px 13px}.gold-example blockquote{font-size:16px}.daily{margin:0 17px 46px;padding:24px 19px}.daily h2{font-size:21px}footer{flex-direction:column}}
+    @media(max-width:920px){.hero{grid-template-columns:1fr;gap:38px}.exam-metrics{grid-template-columns:1fr 1fr}.direction-layout{grid-template-columns:1fr}.grid{grid-template-columns:1fr}.detail{position:relative;top:0}.list{height:500px}.daily{margin-left:28px;margin-right:28px;flex-direction:column;align-items:stretch}.daily button{width:100%;min-width:0}}
+    @media(max-width:640px){.header{height:66px;padding:0 17px}.offline span{display:none}.hero,.exam-dashboard,.tools,.grid,footer{padding-left:17px;padding-right:17px}.hero{padding-top:35px}.hero:after{display:none}h1{font-size:44px}.search{height:66px;padding:0 16px;box-shadow:6px 7px 0 var(--ink)}.search input{font-size:18px}.stats span+span{border:0;padding:0}.exam-dashboard{padding-bottom:22px}.exam-dashboard summary{align-items:flex-start;padding:15px 16px}.current-badge{display:none}.exam-dashboard-body{padding:16px}.exam-metrics,.direction-list{grid-template-columns:1fr}.exam-metric{min-height:0}.tools{align-items:stretch;flex-direction:column}.levels{overflow:auto;padding-bottom:3px}.level-btn{min-width:42px}.tabs{align-self:flex-start}.grid{padding-top:22px;gap:22px}.detail{padding:31px 19px 21px}.title-row{align-items:flex-start}.title-row h2{font-size:42px}.speak{width:56px;height:56px}.translation-live{grid-template-columns:1fr}.learning-grid{grid-template-columns:1fr}.exam-pattern{grid-template-columns:1fr}.twocol{grid-template-columns:1fr}.twocol section{padding-right:0}.twocol section+section{border-left:0;padding-left:0}.example{padding:20px 16px}.gold-example{padding:14px 13px}.gold-example blockquote{font-size:16px}.daily{margin:0 17px 46px;padding:24px 19px}.daily h2{font-size:21px}footer{flex-direction:column}}
     @media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important;animation:none!important}}
   </style>
 </head>
 <body>
   <header class="header">
     <div class="brand"><span class="mark">G</span><span class="brand-copy"><strong>學測英文字典</strong><small>GSAT LEXICON</small></span></div>
-    <div class="offline"><i aria-hidden="true"></i><span>6,012 詞條離線 · 六項學習工具連線</span></div>
+    <div class="offline"><i aria-hidden="true"></i><span>6,012 詞條離線 · 多來源學習工具連線</span></div>
   </header>
 
   <section class="hero" id="top">
     <div>
-      <p class="eyebrow"><span>111 學年度起適用</span>大考中心六級詞彙</p>
+      <p class="eyebrow"><span>115 學年度起現行方向</span>大考中心六級詞彙</p>
       <h1>查一個字，<br><em>連考點一起記。</em></h1>
-      <p class="lead">單一 HTML 版：完整詞表與六級彩色辨識皆已內建；Wiktionary 候選句會經過四維大考濾鏡，Datamuse 推薦詞則必須與官方 1～6 級詞表取交集，避免托福／GRE 等超綱字干擾。</p>
+      <p class="lead">以大考中心現行考試說明為主軸：搜尋可辨識拼字誤差、中文與搭配句型；真人發音優先；例句依 CEEC 詞彙覆蓋、語境線索、搭配正確性與來源可信度排序，通過門檻的最佳句才送 Google 翻譯。</p>
     </div>
     <div class="search-wrap">
       <label class="search"><span class="magnify" aria-hidden="true"></span><input id="searchInput" type="search" autocomplete="off" placeholder="搜尋英文、中文或搭配…" aria-label="搜尋詞彙"><button id="clearSearch" class="clear" type="button" aria-label="清除搜尋" hidden>×</button><span id="searchKey" class="key">/</span></label>
-      <div class="stats"><span><strong id="totalCount">0</strong> 個官方詞條</span><span><strong>6</strong> 個詞彙級別</span><span>資料完全儲存在本檔案</span></div>
+      <div class="stats"><span><strong id="totalCount">0</strong> 個官方詞條</span><span><strong>6</strong> 個詞彙級別</span><span><strong>42</strong> 組教師常提醒搭配</span><span>核心資料儲存在本檔案</span></div>
     </div>
+  </section>
+
+  <section class="exam-dashboard" aria-label="現行學測英文命題方向">
+    <details open>
+      <summary><span class="current-badge">CURRENT · 2026-08 查核</span>現行學測英文命題導航：讀懂、判斷、整合、表達</summary>
+      <div class="exam-dashboard-body">
+        <div class="exam-metrics">
+          <div class="exam-metric"><strong>約 4,500</strong><span>Level 1～5 為主要詞彙範圍；Level 6 以上可少量出現，須能依語境推論。</span></div>
+          <div class="exam-metric"><strong>180–400</strong><span>官方說明的篇章字數約略範圍；閱讀不只找單字，還要整合與推論。</span></div>
+          <div class="exam-metric"><strong>4 空 5 選</strong><span>現行篇章結構題型；重視指涉、轉承、因果與前後連貫。</span></div>
+          <div class="exam-metric"><strong>62 · 10 · 28</strong><span>官方參考卷的選擇／混合／非選參考配分；正式試卷仍可能微調。</span></div>
+        </div>
+        <div class="direction-layout">
+          <div class="direction-block">
+            <h2>大考中心八項能力 → 本工具的演算法權重</h2>
+            <ol class="direction-list">
+              <li>實詞的字形變化、語意與搭配</li>
+              <li>依篇章使用功能字、片語、慣用語、轉承語與文法</li>
+              <li>掌握篇章中的詞彙與語意關係</li>
+              <li>判斷篇章組織、指涉與上下文連貫</li>
+              <li>整合語彙、文法、語用與篇章，理解、分析、比較、推論</li>
+              <li>讀寫整合：依材料擷取資訊並表達回應</li>
+              <li>中譯英做到正確、通順、達意</li>
+              <li>短文內容切題、組織連貫、語句與用字適切</li>
+            </ol>
+          </div>
+          <div class="direction-block">
+            <h2>教師共識（備考策略，不是官方出題頻率）</h2>
+            <p class="teacher-consensus"><strong>單字：</strong>字族＋搭配一起記，特別留意多義與詞性。<br><strong>篇章：</strong>先辨識轉承、指涉、因果，再回文定位。<br><strong>實戰：</strong>限時做官方歷屆題，建立個人錯題原因。<br><strong>寫作：</strong>先顧內容與組織，再修正文法、用字與拼字。</p>
+            <p class="rubric-note"><strong>115 實卷觀察：</strong>長篇閱讀、語境猜義、篇章連貫、讀寫整合與多元生活／學科題材並重。</p>
+            <p class="rubric-note"><strong>115 非選評分：</strong>中譯英 2 題各 4 分，錯誤原則上每處扣 0.5；作文 20 分，分看內容、組織、文法句構、字彙拼字。</p>
+          </div>
+        </div>
+        <div class="official-links">
+          <a href="https://www.ceec.edu.tw/files/file_pool/1/0O211559263171214197/01_115%E5%AD%B8%E5%B9%B4%E5%BA%A6%E8%B5%B7%E9%81%A9%E7%94%A8%E5%AD%B8%E6%B8%AC%E8%8B%B1%E6%96%87%E8%80%83%E7%A7%91%E8%80%83%E8%A9%A6%E8%AA%AA%E6%98%8E.pdf" target="_blank" rel="noreferrer">官方｜115 起考試說明</a>
+          <a href="https://www.ceec.edu.tw/xmdoc/cont?sid=0O211573150658099894&amp;xsmsid=0J018586101460336585" target="_blank" rel="noreferrer">官方｜參考試卷</a>
+          <a href="https://www.ceec.edu.tw/xmfile?xsmsid=0J052424829869345634" target="_blank" rel="noreferrer">官方｜歷屆試題</a>
+          <a href="https://www.ceec.edu.tw/files/file_pool/1/0q054335046832331817/115%E5%AD%B8%E6%B8%AC%E8%8B%B1%E6%96%87%E8%80%83%E7%A7%91%E9%9D%9E%E9%81%B8%E6%93%87%E9%A1%8C%E5%8F%83%E8%80%83%E7%AD%94%E6%A1%88%E8%88%87%E8%A9%95%E5%88%86%E5%8E%9F%E5%89%87.pdf" target="_blank" rel="noreferrer">官方｜115 非選評分原則</a>
+          <a href="https://www.ceec.edu.tw/xcepaper/cont?qunit=0Q105367191322447606&amp;sid=0Q105583094870257539&amp;xsmsid=0J066588036013658199" target="_blank" rel="noreferrer">官方｜115 試題特色</a>
+          <a href="https://www.studybank.com.tw/article/article.php?id=6169" target="_blank" rel="noreferrer">教師｜武璁備考整理</a>
+          <a href="https://udn.com/news/story/124703/9244669" target="_blank" rel="noreferrer">教師｜Gary 應考策略</a>
+          <a href="https://www.lfntu.com/eng1_ceec/" target="_blank" rel="noreferrer">教師｜胡家榮題型整理</a>
+        </div>
+        <p class="data-date">資料基準：2026 年 8 月查核。62／10／28 為參考試卷架構，不宣稱每年固定；教師建議僅用於形成讀書策略，未當成官方命題統計。</p>
+      </div>
+    </details>
   </section>
 
   <section class="tools" aria-label="詞彙篩選">
@@ -99,7 +149,7 @@
 
   <footer>
     <p>高中英文參考詞彙表 © 財團法人大學入學考試中心基金會。本工具供非營利學習使用；詞彙級別與詞性依原表整理，中文釋義與音標含 ECDICT（MIT）資料。</p>
-    <p>線上補充來源：<a href="https://dictionaryapi.dev/" target="_blank" rel="noreferrer">DictionaryAPI</a> · <a href="https://en.wiktionary.org/" target="_blank" rel="noreferrer">Wiktionary</a> · <a href="https://www.datamuse.com/api/" target="_blank" rel="noreferrer">Datamuse</a> · Google 翻譯試行路徑。發音優先使用 DictionaryAPI 美式音檔，無音檔時改用瀏覽器／系統 en-US 語音，避免 Safari、Chrome 與行動 WebView 對非官方 Google TTS 音檔路徑的限制。Datamuse 結果只顯示存在於內建大考中心 1～6 級白名單的詞；例句分數是學測取向的啟發式評估，並非大考中心官方評分。</p>
+    <p>線上補充來源：<a href="https://dictionaryapi.dev/" target="_blank" rel="noreferrer">DictionaryAPI</a> · <a href="https://en.wiktionary.org/" target="_blank" rel="noreferrer">Wiktionary</a>／<a href="https://freedictionaryapi.com/" target="_blank" rel="noreferrer">FreeDictionaryAPI</a>（CC BY-SA 4.0）· <a href="https://tatoeba.org/" target="_blank" rel="noreferrer">Tatoeba</a>（各句／錄音授權依回傳資料）· <a href="https://www.datamuse.com/api/" target="_blank" rel="noreferrer">Datamuse</a> · Google 翻譯免金鑰端點。真人錄音失敗時才使用裝置英文語音；CEEC-115 v2 分數與搭配信心皆為透明的學習用啟發式判斷，不是大考中心官方評分或頻率。</p>
   </footer>
   <div class="toast" id="toast" role="status"></div>
 
@@ -113,22 +163,132 @@
     const API_ENDPOINTS = Object.freeze({
       dictionary:"https://api.dictionaryapi.dev/api/v2/entries/en/",
       wiktionary:"https://en.wiktionary.org/api/rest_v1/page/definition/",
+      freeDictionary:"https://freedictionaryapi.com/api/v1/entries/en/",
+      tatoeba:"https://api.tatoeba.org/v1/sentences",
+      wiktionaryAction:"https://en.wiktionary.org/w/api.php",
+      commonsAction:"https://commons.wikimedia.org/w/api.php",
       datamuse:"https://api.datamuse.com/words",
       googleTranslate:"https://translate.googleapis.com/translate_a/single"
     });
-    const state = {query:"", levels:new Set(LEVELS), favorites:new Set(readFavorites()), favoritesOnly:false, selectedIndex:-1, filtered:[], onlineCache:new Map(), onlineRequest:0, onlineController:null, currentAudio:null, currentUtterance:null, voices:[]};
+    const CURRENT_EXAM_MODEL = Object.freeze({
+      version:"CEEC-115 v2",
+      effectiveFrom:"115 學年度起",
+      coreLevels:[1,2,3,4,5],
+      extendedLevel:6,
+      passageWords:[180,400],
+      discourseStructure:{blanks:4,options:5},
+      referenceWeight:{multipleChoice:62,mixed:10,nonSelection:28},
+      abilities:["字形語意搭配","篇章語法與轉承","語境詞彙","篇章組織","整合理解推論","讀寫整合","中譯英","短文寫作"]
+    });
+    const GSAT_COLLOCATION_GUIDE = Object.freeze([
+      {keys:["satisfy","satisfied","satisfying","satisfaction","satisfactory"],patterns:[["satisfy + person / need / requirement","使某人滿意；滿足需求／條件"],["be satisfied with + N / V-ing","對……感到滿意"],["a satisfying experience / result","令人滿意的經驗／結果"]],trap:"✕ satisfy with；『人感到滿意』用 satisfied，『事物令人滿意』用 satisfying。",blocked:["satisfy with"]},
+      {keys:["contribute","contribution"],patterns:[["contribute to + N / V-ing","促成；導致；對……有貢獻"],["make a contribution to + N / V-ing","對……作出貢獻"]],trap:"to 是介系詞，後接名詞或 V-ing。"},
+      {keys:["lead"],patterns:[["lead to + N / V-ing","導致……"],["lead + person + to + N","帶領某人前往……"],["lead + person + to + V","促使某人做……"]],trap:"表示『導致』時，to 後不可直接接原形動詞。"},
+      {keys:["result"],patterns:[["result in + result","導致某結果"],["result from + cause","起因於某原因"],["as a result of + N","由於……"]],trap:"in 後面放結果；from 後面放原因。"},
+      {keys:["account"],patterns:[["account for + N","解釋；占（比例）"],["take + N + into account","把……納入考量"],["on account of + N","因為……"]],trap:"account for 不用被動表示『占比』。"},
+      {keys:["responsible","responsibility"],patterns:[["be responsible for + N / V-ing","對……負責；是……原因"],["take responsibility for + N / V-ing","為……承擔責任"]],trap:"for 後接名詞或 V-ing。"},
+      {keys:["familiar"],patterns:[["person + be familiar with + thing","某人熟悉某事物"],["thing + be familiar to + person","某事物為某人所熟悉"]],trap:"主詞是人通常搭 with；主詞是事物通常搭 to。"},
+      {keys:["accustom","accustomed"],patterns:[["be accustomed to + N / V-ing","習慣於……"],["accustom + person + to + N / V-ing","使某人習慣……"]],trap:"to 是介系詞，後接 V-ing，不接原形動詞。"},
+      {keys:["use","used"],patterns:[["used to + V","過去常常……"],["be used to + N / V-ing","習慣於……"],["be used to + V","被用來做……"]],trap:"三種 used to 結構是常見克漏字考點，須由語意判斷。"},
+      {keys:["look","forward"],patterns:[["look forward to + N / V-ing","期待……"],["look into + N","調查……"],["look up to + person","尊敬某人"]],trap:"look forward to 的 to 是介系詞。"},
+      {keys:["object","objection"],patterns:[["object to + N / V-ing","反對……"],["have an objection to + N / V-ing","對……有異議"]],trap:"to 後接 V-ing。object 當名詞另有『物體／目的』之意。"},
+      {keys:["devote","dedicate","devoted","dedicated"],patterns:[["devote / dedicate + time + to + N / V-ing","把時間投入……"],["be devoted / dedicated to + N / V-ing","致力於……"]],trap:"to 是介系詞，後接 V-ing。"},
+      {keys:["prefer","preference"],patterns:[["prefer A to B","喜歡 A 勝過 B"],["prefer V-ing to V-ing","寧可做 A 而不做 B"],["prefer to V rather than V","寧可做 A 而不做 B"]],trap:"比較的兩端要保持平行結構。"},
+      {keys:["prevent","stop","keep"],patterns:[["prevent / stop / keep + person + from V-ing","阻止某人做……"],["keep + person + V-ing","使某人持續做……"]],trap:"prevent 後不可直接接人再接原形動詞。"},
+      {keys:["distinguish","tell"],patterns:[["distinguish / tell A from B","區分 A 與 B"],["distinguish between A and B","辨別 A 與 B"]],trap:"from 與 between...and... 不可混搭。"},
+      {keys:["compare","comparison"],patterns:[["compare A with B","比較 A 與 B 的異同"],["compare A to B","把 A 比作 B"],["in comparison with / to + N","與……相比"]],trap:"考題常利用 with 與 to 的語意差異。"},
+      {keys:["provide"],patterns:[["provide + person + with + thing","提供某人某物"],["provide + thing + for + person","為某人提供某物"]],trap:"with 後放物；for 後放接受者。"},
+      {keys:["supply","equip"],patterns:[["supply / equip + person + with + thing","供應／配備某人某物"],["supply + thing + to + person","把某物供給某人"]],trap:"equip 常用被動 be equipped with。"},
+      {keys:["regard","view","consider"],patterns:[["regard / view A as B","把 A 視為 B"],["consider A (to be) B","認為 A 是 B"]],trap:"標準用法通常不是 consider A as B。",blocked:["consider as"]},
+      {keys:["consist","comprise","compose","composed"],patterns:[["A consists of B","A 由 B 組成"],["A is composed of B","A 由 B 組成"],["A comprises B","A 包含 B"]],trap:"consist of；comprise 後不加 of。",blocked:["comprise of"]},
+      {keys:["participate","participation"],patterns:[["participate in + activity","參加活動"],["take part in + activity","參與活動"]],trap:"participate 是不及物動詞，活動前需加 in。"},
+      {keys:["engage","engaged","involve","involved"],patterns:[["engage / be engaged in + N / V-ing","從事……"],["involve / be involved in + N / V-ing","涉及；參與……"]],trap:"in 後接名詞或 V-ing。"},
+      {keys:["depend","dependent","rely"],patterns:[["depend / rely on + N","依靠；取決於……"],["be dependent on + N","依賴……"]],trap:"depend 與 rely 通常不可省略 on。"},
+      {keys:["insist"],patterns:[["insist on + N / V-ing","堅持……"],["insist that + S + (should) V","堅持主張某人應……"]],trap:"insist on 後接 V-ing；that 子句常用原形動詞。"},
+      {keys:["cope","deal"],patterns:[["cope with + problem","應付問題"],["deal with + problem / topic","處理問題；涉及主題"]],trap:"cope 是不及物動詞，通常不可省略 with。"},
+      {keys:["recover","recovery"],patterns:[["recover from + illness / shock","從疾病／震驚中復原"],["make a recovery from + N","從……復原"]],trap:"表示從某狀態復原時搭 from。"},
+      {keys:["benefit","beneficial"],patterns:[["person + benefits from + thing","某人從某事獲益"],["thing + benefits + person","某事使某人受益"],["be beneficial to + N","對……有益"]],trap:"benefit 可及物也可不及物；介系詞依句型改變。"},
+      {keys:["apply","application"],patterns:[["apply for + position / aid","申請職位／援助"],["apply to + school / person","向學校／某人申請；適用於"],["apply A to B","把 A 應用於 B"]],trap:"for 後放申請的東西；to 後放申請對象。"},
+      {keys:["adapt","adopt"],patterns:[["adapt to + N","適應……"],["adapt A for / from B","為 B 改編 A／由 B 改編"],["adopt + policy / method","採用政策／方法"]],trap:"adapt＝適應／改編；adopt＝採用／收養。"},
+      {keys:["apologize","apology"],patterns:[["apologize to + person for + thing / V-ing","因某事向某人道歉"],["make an apology to + person","向某人道歉"]],trap:"to 後放人；for 後放原因。"},
+      {keys:["congratulate","congratulation"],patterns:[["congratulate + person + on + thing / V-ing","因某事恭喜某人"]],trap:"受詞是人；事情前用 on。"},
+      {keys:["accuse","accusation"],patterns:[["accuse + person + of + N / V-ing","指控某人……"],["charge + person + with + crime","控告某人犯某罪"]],trap:"accuse 搭 of；charge 搭 with。"},
+      {keys:["remind","reminder"],patterns:[["remind + person + of + thing","使某人想起某事"],["remind + person + to + V","提醒某人做……"],["remind + person + that...","提醒某人……"]],trap:"of 表『想起』；to V 表『提醒去做』。"},
+      {keys:["inform","information"],patterns:[["inform + person + of / about + thing","告知某人某事"],["inform + person + that...","告知某人……"]],trap:"inform 後先接人，不用 inform something to someone。"},
+      {keys:["persuade","convince"],patterns:[["persuade + person + to + V","說服某人做……"],["convince + person + of + N / that...","使某人相信……"]],trap:"persuade 強調採取行動；convince 強調相信。"},
+      {keys:["deprive","rob"],patterns:[["deprive / rob + person + of + thing","剝奪／搶走某人的某物"]],trap:"人放在動詞後；被奪走的東西前用 of。"},
+      {keys:["protect","protection"],patterns:[["protect + person / thing + from / against + danger","保護……免受危險"],["provide protection against + N","提供對……的防護"]],trap:"from / against 後放危險來源。"},
+      {keys:["expose","exposed","subject","addict","addicted"],patterns:[["be exposed / subject / addicted to + N / V-ing","暴露於／受制於／沉迷於……"],["expose + person + to + N","使某人接觸……"]],trap:"to 是介系詞，後接 V-ing。"},
+      {keys:["capable","capability"],patterns:[["be capable of + N / V-ing","有能力做……"],["have the capability to + V","具備做……的能力"]],trap:"capable 搭 of，不搭 to V。",blocked:["capable to"]},
+      {keys:["aware","awareness"],patterns:[["be aware of + N / V-ing","知道；意識到……"],["be aware that...","意識到……"]],trap:"aware 通常不置於名詞前；常作表語。"},
+      {keys:["associate","associated","relate","related"],patterns:[["associate A with B","把 A 與 B 聯想在一起"],["be associated / related to / with + N","與……相關"]],trap:"主動 associate A with B；被動常見 be associated with。"},
+      {keys:["known","know"],patterns:[["be known for + feature","以特色聞名"],["be known as + identity","以身分／名稱聞名"],["be known to + people","為某人所知"]],trap:"for 放特色；as 放身分；to 放知情者。"}
+    ]);
+    const GSAT_POINT_BY_WORD = new Map(GSAT_COLLOCATION_GUIDE.flatMap(point=>point.keys.map(key=>[key,point])));
+    const SEARCH_FIELD_CACHE = new WeakMap();
+    const state = {query:"", levels:new Set(LEVELS), favorites:new Set(readFavorites()), favoritesOnly:false, selectedIndex:-1, filtered:[], onlineCache:new Map(), onlineRequest:0, onlineController:null, currentAudio:null, audioElement:null, audioSession:0};
     const byId = id => document.getElementById(id);
     const searchInput=byId("searchInput"), clearSearch=byId("clearSearch"), searchKey=byId("searchKey"), wordList=byId("wordList"), wordDetail=byId("wordDetail");
 
     function escapeHtml(value){return String(value??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#039;"}[c]));}
+    function safeExternalUrl(value){try{const url=new URL(String(value||""));return url.protocol==="https:"?url.href:""}catch{return""}}
     function spokenForm(word){return String(word).split(/[/(]/)[0].replace(/[^A-Za-z'-]/g," ").trim();}
     function apiLookupWord(word){return String(word).split(/[/(]/)[0].replace(/’/g,"'").replace(/\./g,"").replace(/[^A-Za-z'-]/g," ").trim();}
     function normalizeCeecWord(word){return String(word||"").normalize("NFKC").toLowerCase().replace(/’/g,"'").replace(/\./g,"").replace(/\s+/g," ").trim()}
+    function normalizeSearchValue(value){return String(value||"").normalize("NFKC").toLowerCase().replace(/’/g,"'").replace(/[^a-z0-9\u3400-\u9fff'-]+/gi," ").replace(/\s+/g," ").trim()}
     function readFavorites(){try{return JSON.parse(localStorage.getItem(FAVORITES_KEY)||"[]")}catch{return []}}
     function saveFavorites(){try{localStorage.setItem(FAVORITES_KEY,JSON.stringify([...state.favorites]))}catch{showToast("此瀏覽器無法儲存收藏")}}
     function showToast(message){const toast=byId("toast");toast.textContent=message;toast.classList.add("show");clearTimeout(showToast.timer);showToast.timer=setTimeout(()=>toast.classList.remove("show"),1800)}
-    function levelName(level){return level<=2?"基礎核心":level<=4?"學測主力":"高階挑戰"}
-    function rowSearchText(entry){return [entry.word,entry.meaning,entry.collocations,entry.note].join(" ").toLowerCase()}
+    function levelName(level){return level<=2?"基礎核心":level<=4?"學測主力":level===5?"核心進階":"語境延伸"}
+    function getGsatPoint(entry){
+      const candidates=[normalizeCeecWord(apiLookupWord(entry&&entry.word)),...(String(entry&&entry.word||"").toLowerCase().match(/[a-z]+/g)||[])];
+      for(const key of candidates){const point=GSAT_POINT_BY_WORD.get(key);if(point)return point}return null;
+    }
+    function gsatPointSearchText(entry){const point=getGsatPoint(entry);return point?[...point.keys,...point.patterns.flat(),point.trap].join(" ").toLowerCase():""}
+    function searchFields(entry){
+      if(SEARCH_FIELD_CACHE.has(entry))return SEARCH_FIELD_CACHE.get(entry);
+      const point=getGsatPoint(entry),word=normalizeSearchValue(entry.word),aliases=[...new Set([word,...(String(entry.word||"").match(/[A-Za-z]+(?:[-'][A-Za-z]+)*/g)||[]).map(normalizeSearchValue),...(point&&point.keys||[]).map(normalizeSearchValue)].filter(Boolean))];
+      const pattern=normalizeSearchValue(point?point.patterns.flat().join(" "):""),meaning=normalizeSearchValue(entry.meaning),notes=normalizeSearchValue([entry.collocations,entry.note,point&&point.trap].join(" "));
+      const fields={word,aliases,pattern,meaning,notes,all:normalizeSearchValue([word,aliases.join(" "),pattern,meaning,notes].join(" "))};SEARCH_FIELD_CACHE.set(entry,fields);return fields;
+    }
+    function boundedDamerauLevenshtein(a,b,limit=2){
+      a=String(a||"");b=String(b||"");if(a===b)return 0;if(!a||!b)return Math.max(a.length,b.length);if(Math.abs(a.length-b.length)>limit)return limit+1;
+      const matrix=Array.from({length:a.length+1},()=>Array(b.length+1).fill(0));for(let i=0;i<=a.length;i++)matrix[i][0]=i;for(let j=0;j<=b.length;j++)matrix[0][j]=j;
+      for(let i=1;i<=a.length;i++){let rowMin=limit+1;for(let j=1;j<=b.length;j++){const cost=a[i-1]===b[j-1]?0:1;let value=Math.min(matrix[i-1][j]+1,matrix[i][j-1]+1,matrix[i-1][j-1]+cost);if(i>1&&j>1&&a[i-1]===b[j-2]&&a[i-2]===b[j-1])value=Math.min(value,matrix[i-2][j-2]+1);matrix[i][j]=value;rowMin=Math.min(rowMin,value)}if(rowMin>limit&&i>b.length+limit)return limit+1}
+      return matrix[a.length][b.length];
+    }
+    function scoreSearchEntry(entry,rawQuery){
+      const query=normalizeSearchValue(rawQuery);if(!query)return{score:0,reason:""};const fields=searchFields(entry),terms=query.split(" ").filter(Boolean),englishOnly=/^[a-z'-]+$/i.test(query);
+      if(fields.word===query)return{score:1000,reason:"完全相符"};
+      if(fields.aliases.some(alias=>alias===query))return{score:940,reason:"字族相符"};
+      if(fields.word.startsWith(query))return{score:820,reason:"開頭相符"};
+      if(fields.aliases.some(alias=>alias.startsWith(query)))return{score:760,reason:"字族開頭"};
+      if(fields.pattern.includes(query))return{score:720+Math.min(20,query.length),reason:"句型考點"};
+      if(fields.notes.includes(query))return{score:610,reason:"搭配／提醒"};
+      if(fields.meaning.includes(query))return{score:540+Math.min(30,query.length),reason:"中文釋義"};
+      if(terms.length>1&&terms.every(term=>fields.all.includes(term)))return{score:380+terms.length*12,reason:"多詞命中"};
+      if(terms.length===1&&fields.all.includes(query))return{score:330,reason:"內容相符"};
+      if(englishOnly&&terms.length===1&&query.length>=4){const limit=query.length<=6?1:2,wordDistance=boundedDamerauLevenshtein(query,fields.word,limit);if(wordDistance<=limit)return{score:250-wordDistance*35,reason:`近似拼字 ${wordDistance} 處`};const aliasDistance=Math.min(...fields.aliases.filter(alias=>alias!==fields.word).map(alias=>boundedDamerauLevenshtein(query,alias,limit)),limit+1);if(aliasDistance<=limit)return{score:235-aliasDistance*30,reason:`近似字族 ${aliasDistance} 處`}}
+      return null;
+    }
+    function renderGsatPoint(entry){
+      const point=getGsatPoint(entry);
+      if(!point)return'<p class="card-empty">此詞尚未列入 42 組精選考點；仍可參考下方詞表搭配與 Datamuse 語料補充。</p>';
+      const patterns=point.patterns.map(([form,meaning])=>`<div class="exam-pattern"><code>${escapeHtml(form)}</code><span>${escapeHtml(meaning)}</span></div>`).join("");
+      const dictionaryWord=encodeURIComponent(point.keys[0]);
+      return`<div class="exam-point-list">${patterns}</div><p class="exam-trap"><strong>易錯：</strong>${escapeHtml(point.trap)}</p><p class="exam-source">定位：大考中心明列常用實詞的語意與搭配能力；本卡依歷屆常見題型、教師常提醒與標準辭典整理，非官方頻率排名。<a href="https://www.ceec.edu.tw/xcepaper/cont?qperoid=0J134522431497878724&amp;sid=0J135646927771747&amp;xsmsid=0J066588036013658199" target="_blank" rel="noreferrer">大考中心備考建議</a> · <a href="https://dictionary.cambridge.org/dictionary/english/${dictionaryWord}" target="_blank" rel="noreferrer">Cambridge 查證</a></p>`;
+    }
+    function renderExamProfile(entry){
+      const point=getGsatPoint(entry),pos=String(entry.partOfSpeech||"").toLowerCase(),modes=["語境選字"];
+      if(point)modes.push("介系詞／搭配辨錯");
+      if(/v\.|n\.|adj\.|a\./.test(pos))modes.push("字形與詞性轉換");
+      if(/adv\.|conj\.|prep\./.test(pos))modes.push("篇章轉承與連貫");else modes.push("克漏字／選填");
+      if(/v\.|n\.|adj\.|a\./.test(pos))modes.push("中譯英／作文應用");
+      const priority=entry.level<=2?"基礎核心｜先做到秒懂":entry.level<=4?"學測主力｜多義與語境":entry.level===5?"主要範圍｜精準搭配":"延伸詞彙｜靠語境推論";
+      let action;if(point)action="先讀精選句型與介系詞 → 用自己的情境造一句 → 回看易錯欄做辨錯。";else if(/v\./.test(pos))action="一起確認及物／不及物、介系詞、時態與常接的名詞，避免只背中文。";else if(/n\./.test(pos))action="一起記可數性、單複數、常搭動詞與介系詞，再放入完整句。";else if(/adj\.|a\./.test(pos))action="一起記修飾名詞或作表語、常接介系詞，以及 -ed／-ing 的語意差異。";else action="先判斷它在篇章中表達的關係，再用前後句驗證，不只做逐字翻譯。";
+      const scope=entry.level<=5?"官方主要詞彙範圍":"官方允許少量延伸字；重點是由上下文推義";
+      return`<section class="exam-profile"><div class="profile-head"><span class="profile-priority">${escapeHtml(priority)}</span><strong>這個字可能怎麼考？</strong></div><div class="profile-modes">${[...new Set(modes)].map(mode=>`<span class="profile-mode">${escapeHtml(mode)}</span>`).join("")}</div><p class="profile-action"><strong>智慧複習：</strong>${escapeHtml(action)}</p><p class="profile-source">${escapeHtml(scope)} · 依 ${CURRENT_EXAM_MODEL.version} 能力模型產生，不代表單字實際出題機率。</p></section>`;
+    }
 
     function buildLevelFilters(){
       const host=byId("levelFilters");
@@ -140,20 +300,20 @@
     function syncLevelButtons(){document.querySelectorAll(".level-btn").forEach(button=>{const on=state.levels.has(Number(button.dataset.level));button.classList.toggle("on",on);button.setAttribute("aria-pressed",String(on))})}
 
     function applyFilters(){
-      const needle=state.query.trim().toLowerCase();
-      state.filtered=VOCABULARY.map((entry,index)=>({entry,index})).filter(({entry})=>state.levels.has(Number(entry.level))).filter(({entry})=>!state.favoritesOnly||state.favorites.has(entry.word)).filter(({entry})=>!needle||rowSearchText(entry).includes(needle));
-      state.filtered.sort((a,b)=>{if(!needle)return a.entry.word.localeCompare(b.entry.word);const score=w=>w===needle?0:w.startsWith(needle)?1:2;const aw=a.entry.word.toLowerCase(),bw=b.entry.word.toLowerCase();return score(aw)-score(bw)||aw.localeCompare(bw)});
+      const needle=normalizeSearchValue(state.query);
+      state.filtered=VOCABULARY.map((entry,index)=>({entry,index,match:needle?scoreSearchEntry(entry,needle):{score:0,reason:""}})).filter(({entry})=>state.levels.has(Number(entry.level))).filter(({entry})=>!state.favoritesOnly||state.favorites.has(entry.word)).filter(({match})=>!needle||Boolean(match));
+      state.filtered.sort((a,b)=>needle?b.match.score-a.match.score||a.entry.level-b.entry.level||a.entry.word.localeCompare(b.entry.word):a.entry.word.localeCompare(b.entry.word));
       renderList();
     }
 
     function renderList(){
       byId("resultCount").textContent=state.filtered.length.toLocaleString();
-      byId("resultLabel").textContent=state.query?"搜尋結果":state.favoritesOnly?"我的收藏":"官方詞彙表";
-      byId("sortHint").textContent=state.query?"依相符程度排序":"";
+      byId("resultLabel").textContent=state.query?"智慧搜尋結果":state.favoritesOnly?"我的收藏":"官方詞彙表";
+      byId("sortHint").textContent=state.query?"拼字／中文／句型加權":"";
       byId("favoriteCount").textContent=state.favorites.size?String(state.favorites.size):"";
       const rows=state.filtered.slice(0,MAX_RESULTS);
       if(!rows.length){wordList.innerHTML='<div class="empty"><div><strong>找不到符合的詞彙</strong><p>試試其他拼法、中文關鍵字，或開啟更多級別。</p></div></div>';byId("moreHint").textContent="";return}
-      wordList.innerHTML=rows.map(({entry,index})=>`<button class="row level-row-${entry.level} ${state.selectedIndex===index?"selected":""}" type="button" data-index="${index}"><span class="dot l${entry.level}">${entry.level}</span><span class="row-copy"><strong>${escapeHtml(entry.word)}</strong><small>${escapeHtml(entry.partOfSpeech)} · ${escapeHtml(entry.meaning)}</small></span><span class="arrow" aria-hidden="true">→</span></button>`).join("");
+      wordList.innerHTML=rows.map(({entry,index,match})=>`<button class="row level-row-${entry.level} ${state.selectedIndex===index?"selected":""}" type="button" data-index="${index}"><span class="dot l${entry.level}">${entry.level}</span><span class="row-copy"><span class="row-title"><strong>${escapeHtml(entry.word)}</strong>${state.query&&match&&match.reason?`<span class="search-match">${escapeHtml(match.reason)}</span>`:""}</span><small>${escapeHtml(entry.partOfSpeech)} · ${escapeHtml(entry.meaning)}</small></span><span class="arrow" aria-hidden="true">→</span></button>`).join("");
       byId("moreHint").textContent=state.filtered.length>MAX_RESULTS?`顯示前 ${MAX_RESULTS} 筆；輸入更多字母可縮小範圍。`:"";
     }
 
@@ -165,10 +325,10 @@
     function renderDetail(entry,index){
       stopPronunciation();
       const saved=state.favorites.has(entry.word);
-      const example=`<section class="example" id="exampleCard"><p class="kicker">📖 WIKTIONARY · 大考語感過濾大腦</p><div class="filter-legend" aria-label="例句評分維度"><span>🧠 學科語感</span><span>📏 15–30 字</span><span>🧬 高階文法</span><span>💎 字彙密度</span></div><div class="example-list loading" id="exampleResults"><p class="example-loading">正在篩選、評分並排序候選例句…</p></div><p id="exampleMeta">只保留最高分的 1～2 句；不合格時顯示次級來源</p></section>`;
-      const learning=`<div class="learning-grid"><section class="study-card cloze"><p class="kicker">🎯 克漏字近義詞替換</p><p class="card-note">Datamuse ml → CEEC 1～6 級交集 · 最多 5 個</p><div class="chips" id="synonymChips"><p class="card-empty">正在比對大考中心白名單…</p></div></section><section class="study-card collocation"><p class="kicker">✍️ 作文動詞黃金搭配</p><p class="card-note">Datamuse rel_bgb → CEEC 1～6 級交集 · 名詞專用</p><div class="chips" id="collocationChips"><p class="card-empty">${isNounEntry(entry)?"正在篩選學測範圍動詞…":"此詞條不是名詞，保留內建搭配。"}</p></div></section></div>`;
+      const example=`<section class="example" id="exampleCard"><p class="kicker">📖 四源句庫 · CEEC-115 v2 智慧排序</p><div class="filter-legend" aria-label="例句評分維度"><span>🎯 目標字＋完整句</span><span>📚 CEEC 詞彙覆蓋</span><span>🔗 語境／搭配線索</span><span>🗣️ 來源多樣與真人音訊</span></div><div class="example-list loading" id="exampleResults"><p class="example-loading">正在彙整、去重、檢查詞彙覆蓋與搭配，再排序候選例句…</p></div><p id="exampleMeta">至少提供一句目前最適合的；只有通過門檻的句子才送 Google 翻譯</p></section>`;
+      const learning=`<div class="learning-grid"><section class="study-card exam-points"><p class="kicker">🔥 學測搭配考點 · 教師常提醒</p><p class="card-note">可搜尋句型（如 satisfied with）· 42 組精選考點 · 標準辭典交叉查證；不是官方頻率榜</p>${renderGsatPoint(entry)}</section><section class="study-card cloze"><p class="kicker">🎯 克漏字近義詞替換</p><p class="card-note">Datamuse ml → CEEC 1～6 級交集 · 最多 5 個</p><div class="chips" id="synonymChips"><p class="card-empty">正在比對大考中心白名單…</p></div></section><section class="study-card collocation"><p class="kicker">✍️ 語料庫搭配候選與信心</p><p class="card-note">語料頻率＋詞性方向＋CEEC 級別＋精選句型校正 · 最多 6 組；請以「高」信心優先</p><div class="chips" id="collocationChips"><p class="card-empty">正在評估學測範圍內的前後搭配…</p></div></section></div>`;
       wordDetail.className=`detail theme-l${entry.level}`;
-      wordDetail.innerHTML=`<div class="topline"><span class="badge">LEVEL ${entry.level}</span><span>${levelName(entry.level)}</span><button class="favorite ${saved?"saved":""}" id="favoriteButton" type="button">${saved?"★ 已收藏":"☆ 收藏"}</button></div><div class="title-row"><div><h2>${escapeHtml(entry.word)}</h2><p class="phonetic"><em id="primaryPos">${escapeHtml(entry.partOfSpeech)}</em><span id="apiPhonetic">${escapeHtml(entry.pronunciation||"音標未收錄")}</span><span class="phonetic-source" id="phoneticSource">OFFLINE</span></p><div class="pos-chips" id="posChips"><span class="pos-chip">${escapeHtml(entry.partOfSpeech)}</span></div><p class="audio-status loading" id="audioStatus">正在尋找 DictionaryAPI 的 -us.mp3…</p></div><button class="speak" id="speakButton" type="button" aria-label="播放 ${escapeHtml(entry.word)} 的美式發音"><span>🔊</span><small id="speakSource">US</small></button></div><section class="definition"><p class="kicker">🇹🇼 繁體中文釋義</p><h3>${escapeHtml(entry.meaning)}</h3><p class="translation-live"><span>GOOGLE 即時補貼</span><strong id="translationText">正在查詢繁中翻譯…</strong><a id="translationLink" href="${escapeHtml(googleTranslatePage(entry.word))}" target="_blank" rel="noreferrer">開啟翻譯</a></p></section>${example}${learning}<div class="twocol"><section><p class="kicker">詞表內建搭配</p><p>${escapeHtml(entry.collocations||"尚未補充常用搭配")}</p></section><section><p class="kicker">易錯提醒</p><p>${escapeHtml(entry.note||"尚未補充易錯提醒")}</p></section></div><div class="service-actions"><span id="onlineStatus">正在載入線上學習資料…</span><button id="onlineRetry" type="button" hidden>重新載入線上資料</button></div><p class="source">${escapeHtml(entry.source)}</p>`;
+      wordDetail.innerHTML=`<div class="topline"><span class="badge">LEVEL ${entry.level}</span><span>${levelName(entry.level)}</span><button class="favorite ${saved?"saved":""}" id="favoriteButton" type="button">${saved?"★ 已收藏":"☆ 收藏"}</button></div><div class="title-row"><div><h2>${escapeHtml(entry.word)}</h2><p class="phonetic"><em id="primaryPos">${escapeHtml(entry.partOfSpeech)}</em><span id="apiPhonetic">${escapeHtml(entry.pronunciation||"音標未收錄")}</span><span class="phonetic-source" id="phoneticSource">OFFLINE</span></p><div class="pos-chips" id="posChips"><span class="pos-chip">${escapeHtml(entry.partOfSpeech)}</span></div><p class="audio-status loading" id="audioStatus">正在彙整美式、英式與其他真人發音…</p><div class="pronunciation-options" id="pronunciationOptions" aria-label="可用真人發音"></div></div><button class="speak" id="speakButton" type="button" aria-label="播放 ${escapeHtml(entry.word)} 的發音"><span>🔊</span><small id="speakSource">真人優先</small></button></div><section class="definition"><p class="kicker">🇹🇼 繁體中文釋義</p><h3>${escapeHtml(entry.meaning)}</h3><p class="translation-live"><span>GOOGLE 即時補貼</span><strong id="translationText">正在查詢繁中翻譯…</strong><a id="translationLink" href="${escapeHtml(googleTranslatePage(entry.word))}" target="_blank" rel="noreferrer">開啟翻譯</a></p></section>${renderExamProfile(entry)}${example}${learning}<div class="twocol"><section><p class="kicker">詞表內建搭配</p><p>${escapeHtml(entry.collocations||"尚未補充常用搭配")}</p></section><section><p class="kicker">易錯提醒</p><p>${escapeHtml(entry.note||"尚未補充易錯提醒")}</p></section></div><div class="service-actions"><span id="onlineStatus">正在載入線上學習資料…</span><button id="onlineRetry" type="button" hidden>重新載入線上資料</button></div><p class="source">${escapeHtml(entry.source)}</p>`;
       byId("favoriteButton").addEventListener("click",()=>toggleFavorite(entry.word,index));
       byId("speakButton").addEventListener("click",event=>speakWord(entry.word,event.currentTarget));
       byId("onlineRetry").addEventListener("click",()=>loadOnlineData(entry,index,true));
@@ -176,64 +336,126 @@
     }
 
     function isNounEntry(entry){return String(entry.partOfSpeech||"").split("/").some(part=>part.trim()==="n.")}
-    function emptyDictionaryResult(){return{phonetic:"",usAudio:"",example:"",definition:"",partOfSpeech:""}}
-    function emptyWiktionaryResult(){return{partsOfSpeech:[],examples:[],candidateCount:0,qualifiedCount:0}}
-    function normalizeAudioUrl(value){const url=String(value||"").trim();if(!url)return"";if(url.startsWith("//"))return"https:"+url;if(url.startsWith("http://"))return"https://"+url.slice(7);return url}
-    function isUsAudio(url){let label=String(url||"");try{label=decodeURIComponent(label)}catch{}return/-us\.mp3(?:[?#]|$)/i.test(label)}
+    function emptyDictionaryResult(){return{phonetic:"",audioCandidates:[],examples:[],partsOfSpeech:[]}}
+    function emptyExampleSource(){return{partsOfSpeech:[],candidates:[],candidateCount:0}}
+    function emptyAudioResult(){return{candidates:[]}}
+    function normalizeAudioUrl(value){let url=String(value||"").trim();if(!url)return"";if(url.startsWith("//"))url="https:"+url;if(url.startsWith("http://"))url="https://"+url.slice(7);return safeExternalUrl(url)}
+    function decodedAudioLabel(value){let label=String(value||"");try{label=decodeURIComponent(label)}catch{}return label}
+    function audioAccent(url,label=""){
+      const value=(decodedAudioLabel(url)+" "+label).toLowerCase();
+      if(/(^|[-_. (])(us|usa|american)([-_. )]|$)/.test(value))return"US";
+      if(/(^|[-_. (])(uk|gb|british|rp)([-_. )]|$)/.test(value))return"UK";
+      if(/(^|[-_. (])(ca|canadian)([-_. )]|$)/.test(value))return"CA";
+      if(/(^|[-_. (])(au|australian)([-_. )]|$)/.test(value))return"AU";
+      return"EN";
+    }
+    function audioFormat(url){const value=String(url||"").toLowerCase().split(/[?#]/)[0];if(value.endsWith(".mp3"))return"MP3";if(/\.(m4a|aac)$/.test(value))return"AAC";if(/\.(wav|wave)$/.test(value))return"WAV";if(/\.(ogg|oga|opus)$/.test(value))return"OGG";return"AUDIO"}
+    function audioCandidate(url,label="",source="DictionaryAPI",attributionUrl=""){
+      const normalized=normalizeAudioUrl(url);if(!normalized)return null;return{url:normalized,accent:audioAccent(normalized,label),format:audioFormat(normalized),source,label:String(label||"").trim(),attributionUrl:String(attributionUrl||"").trim()};
+    }
+    function supportsAudioCandidate(candidate){
+      if(!candidate||!candidate.url)return false;const probe=document.createElement("audio"),format=candidate.format;if(!probe.canPlayType)return true;
+      const mime=format==="MP3"?"audio/mpeg":format==="AAC"?"audio/mp4":format==="WAV"?"audio/wav":format==="OGG"?"audio/ogg":"";return!mime||probe.canPlayType(mime)!=="";
+    }
+    function rankAudioCandidates(candidates){
+      const accentRank={US:0,CA:1,UK:2,AU:3,EN:4},formatRank={MP3:0,AAC:1,WAV:2,AUDIO:3,OGG:4},seen=new Set();
+      return(candidates||[]).filter(Boolean).filter(candidate=>{const key=candidate.url.toLowerCase();if(seen.has(key)||!supportsAudioCandidate(candidate))return false;seen.add(key);return true}).sort((a,b)=>(accentRank[a.accent]??9)-(accentRank[b.accent]??9)||(formatRank[a.format]??9)-(formatRank[b.format]??9)||a.source.localeCompare(b.source));
+    }
 
     function parseDictionaryPayload(payload){
       const result=emptyDictionaryResult();if(!Array.isArray(payload))return result;
       for(const item of payload){
         if(!item)continue;
         if(!result.phonetic&&item.phonetic)result.phonetic=String(item.phonetic).trim();
-        for(const phonetic of item.phonetics||[]){const audio=normalizeAudioUrl(phonetic.audio);if(audio&&isUsAudio(audio)&&!result.usAudio)result.usAudio=audio}
-        for(const meaning of item.meanings||[])for(const definition of meaning.definitions||[])if(!result.example&&definition.example&&String(definition.example).trim()){result.example=String(definition.example).trim();result.definition=String(definition.definition||"").trim();result.partOfSpeech=String(meaning.partOfSpeech||"").trim()}
+        for(const phonetic of item.phonetics||[]){const candidate=audioCandidate(phonetic.audio,phonetic.text||"","DictionaryAPI");if(candidate)result.audioCandidates.push(candidate)}
+        for(const meaning of item.meanings||[]){
+          const part=String(meaning.partOfSpeech||"").trim();if(part&&!result.partsOfSpeech.includes(part))result.partsOfSpeech.push(part);
+          for(const definition of meaning.definitions||[]){const text=String(definition&&definition.example||"").trim();if(text)result.examples.push({text,partOfSpeech:part,source:"DictionaryAPI",sourceUrl:"https://dictionaryapi.dev/"})}
+        }
       }
+      result.audioCandidates=rankAudioCandidates(result.audioCandidates);
       return result;
     }
 
     function stripWikiHtml(value){const documentValue=new DOMParser().parseFromString(String(value||""),"text/html");return String(documentValue.body.textContent||"").replace(/\s+/g," ").trim()}
     function wiktionaryExampleText(value){if(typeof value==="string")return stripWikiHtml(value);if(value&&typeof value==="object")return stripWikiHtml(value.text||value.example||"");return""}
     const GSAT_TOPICS=[
-      {label:"生物演化",signals:["species","evolut","organism","genetic","ecosystem","biodiversity","habitat","marine","survival","biological"]},
-      {label:"氣候環境",signals:["climate","carbon","emission","environment","pollution","renewable","temperature","ocean","drought","conservation","energy"]},
-      {label:"數位科技",signals:["digital","technolog","satellite","artificial intelligence","algorithm","data","internet","network","computer","automation","device","innovation"]},
-      {label:"心理行為",signals:["cognitive","behavior","behaviour","psycholog","emotion","memory","decision","perception","mental","motivation","learning"]},
-      {label:"歷史文明",signals:["history","historical","civilization","ancient","culture","cultural","empire","archaeolog","tradition","century","society"]},
-      {label:"經濟金融",signals:["econom","finance","financial","market","consumer","industry","trade","investment","employment","income","business"]}
+      {label:"生活與教育",signals:["school","student","teacher","learn","education","family","meal","restaurant","travel","community","daily life","volunteer"]},
+      {label:"健康與心理",signals:["health","medical","exercise","sleep","disease","emotion","memory","behavior","behaviour","mental","stress","decision"]},
+      {label:"環境與永續",signals:["climate","carbon","environment","pollution","renewable","ocean","drought","conservation","energy","habitat","recycle"]},
+      {label:"科學與科技",signals:["science","research","digital","technolog","satellite","artificial intelligence","algorithm","data","internet","device","innovation"]},
+      {label:"文化與歷史",signals:["history","historical","civilization","ancient","culture","cultural","art","tradition","language","museum","century"]},
+      {label:"社會與公民",signals:["society","social","public","government","law","election","citizen","equality","media","population","rights"]},
+      {label:"經濟與工作",signals:["econom","finance","market","consumer","industry","trade","investment","employment","income","business","workplace"]},
+      {label:"自然與生物",signals:["species","evolut","organism","genetic","ecosystem","biodiversity","marine","survival","animal","plant"]}
     ];
-    const GSAT_ACADEMIC_SIGNALS=["research","scientist","study","evidence","analysis","method","theory","process","system","development","significant","impact","factor","result","hypothesis"];
-    const GSAT_ADVANCED_PHRASES=[
-      {label:"not only…but also",test:/\bnot only\b[\s\S]{0,90}\bbut also\b/i},
-      {label:"in order to",test:/\bin order to\b/i},
-      {label:"as a result",test:/\bas a result\b/i},
-      {label:"rather than",test:/\brather than\b/i},
-      {label:"so that",test:/\bso that\b/i},
-      {label:"due to",test:/\bdue to\b/i},
-      {label:"whether or not",test:/\bwhether or not\b/i}
+    const CONTEXT_SIGNAL_PATTERNS=[
+      {label:"因果線索",test:/\b(because|since|therefore|thus|consequently|so that|as a result|due to)\b/i},
+      {label:"轉折比較",test:/\b(although|though|however|whereas|nevertheless|despite|while|rather than|in contrast)\b/i},
+      {label:"條件目的",test:/\b(if|unless|whether|in order to|so as to|provided that)\b/i},
+      {label:"舉例補充",test:/\b(for example|for instance|such as|in addition|moreover|furthermore)\b/i},
+      {label:"關係指涉",test:/\b(which|who|whom|whose|where|that)\b/i},
+      {label:"時間順序",test:/\b(before|after|when|while|eventually|meanwhile|first|finally)\b/i}
     ];
+    const IRREGULAR_FORMS=new Map(Object.entries({be:["am","is","are","was","were","been","being"],have:["has","had"],do:["does","did","done"],go:["goes","went","gone"],make:["made"],take:["took","taken"],give:["gave","given"],get:["got","gotten"],come:["came"],see:["saw","seen"],know:["knew","known"],think:["thought"],find:["found"],write:["wrote","written"],speak:["spoke","spoken"],choose:["chose","chosen"],lead:["led"],teach:["taught"],buy:["bought"],bring:["brought"],build:["built"],feel:["felt"],keep:["kept"],leave:["left"],meet:["met"],read:["read"],run:["ran"],say:["said"],send:["sent"],stand:["stood"],understand:["understood"],win:["won"]}));
+    const IRREGULAR_BASE_BY_FORM=new Map([...IRREGULAR_FORMS].flatMap(([base,forms])=>forms.map(form=>[form,base])));
+    const CONTRACTION_BASES=new Map(Object.entries({"can't":"can","cannot":"can","couldn't":"could","won't":"will","wouldn't":"would","shouldn't":"should","mustn't":"must","isn't":"be","aren't":"be","wasn't":"be","weren't":"be","hasn't":"have","haven't":"have","hadn't":"have","doesn't":"do","don't":"do","didn't":"do","i'm":"be","you're":"be","we're":"be","they're":"be","i've":"have","we've":"have","they've":"have"}));
     function sentenceWords(text){return String(text||"").match(/[A-Za-z]+(?:[-'][A-Za-z]+)*/g)||[]}
-    function evaluateGsatExample(text,partOfSpeech,word){
-      const lower=text.toLowerCase(),tokens=sentenceWords(text),wordCount=tokens.length,reasons=[];
-      const topicHits=GSAT_TOPICS.filter(topic=>topic.signals.some(signal=>lower.includes(signal)));
-      const academicHits=GSAT_ACADEMIC_SIGNALS.filter(signal=>lower.includes(signal));
-      const longWords=[...new Set(tokens.map(token=>token.toLowerCase().replace(/[^a-z]/g,"")).filter(token=>token.length>=8))];
-      let score=0;
-      if(wordCount>=15&&wordCount<=30){score+=28;reasons.push("黃金長度 "+wordCount+" 字")}else if(wordCount>=12&&wordCount<=40){score+=12;reasons.push("可用長度 "+wordCount+" 字")}
-      if(topicHits.length){score+=Math.min(30,topicHits.length*15);topicHits.forEach(topic=>reasons.push(topic.label))}
-      if(academicHits.length)score+=Math.min(12,academicHits.length*3);
-      if(/\b(which|who|whom|whose|that|where|how)\b/i.test(text)){score+=12;reasons.push("關係／名詞子句")}
-      if(/\b(although|whereas|nevertheless|however|despite|while)\b|\beven though\b/i.test(text)){score+=14;reasons.push("轉折讓步")}
-      const phraseHits=GSAT_ADVANCED_PHRASES.filter(pattern=>pattern.test.test(text));if(phraseHits.length){score+=14+Math.min(8,(phraseHits.length-1)*4);phraseHits.forEach(pattern=>reasons.push(pattern.label))}
-      if(/\b(because|when|whether|unless|since|if)\b/i.test(text)){score+=7;reasons.push("從屬子句")}
-      if(longWords.length>=2){score+=Math.min(20,10+(longWords.length-2)*2);reasons.push("高階字彙 "+longWords.length+" 個")}else if(longWords.length===1)score+=3;
-      const target=String(word||"").toLowerCase().replace(/[^a-z]/g,""),stem=target.slice(0,Math.min(6,target.length));if(stem&&tokens.some(token=>token.toLowerCase().replace(/[^a-z]/g,"").startsWith(stem)))score+=5;
-      const hasQuote=/["“”]/.test(text),hasExclamation=/!/.test(text),hasQuestion=/\?/.test(text),hasDialogueVerb=/\b(hey|hello|said|asked|replied|shouted|cried|whispered|yelled|told)\b/i.test(text),hasPersonal=/\b(i|we|you|my|our|your|me|us)\b/i.test(text),hasContraction=/\b[A-Za-z]+'(?:m|re|ve|ll|d|t|s)\b/i.test(text),hasNarrativeCue=/\b(glad|furious|rowdy|whining|shame|smiled|laughed|waiting|friends?|boys?|girls?|door|home)\b|\b(world of pain|next door|couldn't wait|can't wait|cold hard)\b/i.test(text);
-      if(!hasQuote&&!hasExclamation&&!hasQuestion&&!hasDialogueVerb&&!hasPersonal&&!hasContraction&&!hasNarrativeCue){score+=4;reasons.push("客觀語氣")}
-      if(/[.]$/.test(text))score+=2;
-      if(hasQuote)score-=22;if(hasExclamation)score-=18;if(hasQuestion)score-=14;if(hasDialogueVerb)score-=16;if(hasPersonal)score-=10;if(hasContraction)score-=6;if(hasNarrativeCue)score-=18;
-      const disallowedTone=hasQuote&&(hasDialogueVerb||hasExclamation||hasQuestion)||hasNarrativeCue&&(hasContraction||hasPersonal||hasQuote),eligible=wordCount>=12&&wordCount<=40&&!disallowedTone&&score>=40;
-      return{text,partOfSpeech,score:Math.max(0,Math.min(99,Math.round(score))),wordCount,longWordCount:longWords.length,reasons:[...new Set(reasons)].slice(0,6),eligible};
+    function normalizedToken(value){return String(value||"").toLowerCase().replace(/’/g,"'").replace(/[^a-z'-]/g,"")}
+    function matchesTargetForm(token,target){
+      if(!token||!target)return false;if(token===target)return true;
+      if((IRREGULAR_FORMS.get(target)||[]).includes(token))return true;
+      const forms=new Set([target+"s",target+"es",target+"ed",target+"ing"]);
+      if(target.endsWith("e")){forms.add(target+"d");forms.add(target.slice(0,-1)+"ing")}
+      if(target.endsWith("y")&&target.length>2){forms.add(target.slice(0,-1)+"ies");forms.add(target.slice(0,-1)+"ied")}
+      if(target.length>3&&/[bcdfghjklmnpqrstvwxyz]$/.test(target)){const last=target.slice(-1);forms.add(target+last+"ed");forms.add(target+last+"ing")}
+      return forms.has(token);
+    }
+    function containsTargetForm(text,word){
+      const targetWords=sentenceWords(apiLookupWord(word)).map(normalizedToken).filter(Boolean),tokens=sentenceWords(text).map(normalizedToken);
+      if(!targetWords.length)return false;if(targetWords.length===1)return tokens.some(token=>matchesTargetForm(token,targetWords[0]));
+      const phrase=targetWords.join(" "),normalizedText=tokens.join(" ");return normalizedText.includes(phrase);
+    }
+    function ceecTokenLevel(value){
+      let token=normalizedToken(value);if(!token)return 0;token=CONTRACTION_BASES.get(token)||token;const exact=Number(CEEC_LEVEL_BY_WORD[token]||0);if(exact)return exact;
+      const irregular=IRREGULAR_BASE_BY_FORM.get(token);if(irregular&&CEEC_LEVEL_BY_WORD[irregular])return Number(CEEC_LEVEL_BY_WORD[irregular]);
+      const candidates=[];if(token.endsWith("ies")&&token.length>4)candidates.push(token.slice(0,-3)+"y");if(token.endsWith("ied")&&token.length>4)candidates.push(token.slice(0,-3)+"y");
+      if(token.endsWith("ing")&&token.length>5){const stem=token.slice(0,-3);candidates.push(stem,stem+"e");if(stem[stem.length-1]===stem[stem.length-2])candidates.push(stem.slice(0,-1))}
+      if(token.endsWith("ed")&&token.length>4){const stem=token.slice(0,-2);candidates.push(stem,stem+"e");if(stem[stem.length-1]===stem[stem.length-2])candidates.push(stem.slice(0,-1))}
+      if(token.endsWith("es")&&token.length>4)candidates.push(token.slice(0,-2),token.slice(0,-1));if(token.endsWith("s")&&token.length>3)candidates.push(token.slice(0,-1));
+      for(const candidate of candidates){const level=Number(CEEC_LEVEL_BY_WORD[candidate]||0);if(level)return level}return 0;
+    }
+    function sentenceCeecCoverage(tokens){
+      let known=0,total=0,ignoredProper=0;const unknown=[];tokens.forEach((token,index)=>{if(index>0&&/^[A-Z][a-z'-]+$/.test(token)&&ignoredProper<2){ignoredProper++;return}total++;if(ceecTokenLevel(token))known++;else unknown.push(normalizedToken(token))});return{ratio:total?known/total:0,known,total,unknown:[...new Set(unknown)].slice(0,5)};
+    }
+    function likelyCompleteSentence(text,tokens,partOfSpeech,word){
+      if(tokens.length<8||!/^[“"']?[A-Z0-9]/.test(text)||!/[.!?][”"']?$/.test(text))return false;
+      const lower=` ${tokens.map(normalizedToken).join(" ")} `,commonVerb=/\b(am|is|are|was|were|be|been|being|have|has|had|do|does|did|can|could|will|would|shall|should|may|might|must|make|made|get|got|give|gave|take|took|go|went|come|came|say|said|show|find|found|use|used|help|need|want|seem|become|became)\b/.test(lower),verbEnding=tokens.some(token=>/(ed|ing|en|ify|ise|ize|ate)$/.test(normalizedToken(token)));
+      return commonVerb||verbEnding||(/v/i.test(String(partOfSpeech||""))&&containsTargetForm(text,word));
+    }
+    function curatedCollocationCheck(text,word){
+      const point=getGsatPoint({word}),normalized=normalizeSearchValue(text),tokens=normalized.split(" ").filter(Boolean);if(!point)return{aligned:false,blocked:false,score:0,label:""};
+      const blocked=(point.blocked||[]).map(normalizeSearchValue).find(pattern=>pattern&&normalized.includes(pattern));if(blocked)return{aligned:false,blocked:true,score:-24,label:"易錯搭配"};
+      const targetPositions=[];tokens.forEach((token,index)=>{if(point.keys.some(key=>matchesTargetForm(token,normalizeSearchValue(key))))targetPositions.push(index)});
+      const prepositions=new Set("to with for from of in on as against between into about by".split(" ")),generic=new Set("be a b n v ing person people thing feature identity result cause activity problem topic time position aid school someone something method policy danger illness shock crime".split(" "));
+      const patternTokens=point.patterns.flatMap(([form])=>normalizeSearchValue(form).split(" ")),prepSignals=new Set(patternTokens.filter(token=>prepositions.has(token))),anchors=[...new Set(patternTokens.filter(token=>token.length>3&&!generic.has(token)&&!prepositions.has(token)&&!point.keys.includes(token)))];
+      for(const position of targetPositions){const window=tokens.slice(Math.max(0,position-4),position+6);if(window.some(token=>prepSignals.has(token))||window.some(token=>anchors.some(anchor=>matchesTargetForm(token,anchor))))return{aligned:true,blocked:false,score:14,label:"精選搭配吻合"}}
+      return{aligned:false,blocked:false,score:6,label:"搭配可判讀"};
+    }
+    function evaluateGsatExample(text,partOfSpeech,word,meta={}){
+      text=String(text||"").replace(/\s+/g," ").trim();const lower=text.toLowerCase(),tokens=sentenceWords(text),wordCount=tokens.length,reasons=[],targetMatched=containsTargetForm(text,word),coverage=sentenceCeecCoverage(tokens),complete=likelyCompleteSentence(text,tokens,partOfSpeech,word),topicHits=GSAT_TOPICS.filter(topic=>topic.signals.some(signal=>lower.includes(signal))),contextHits=CONTEXT_SIGNAL_PATTERNS.filter(pattern=>pattern.test.test(text)),collocation=curatedCollocationCheck(text,word),longWords=[...new Set(tokens.map(normalizedToken).filter(token=>token.length>=8))];let score=0;
+      if(targetMatched){score+=18;reasons.push("目標字入句")}else score-=50;
+      if(wordCount>=10&&wordCount<=28){score+=15;reasons.push(`適讀長度 ${wordCount} 字`)}else if(wordCount>=8&&wordCount<=35){score+=8;reasons.push(`可讀長度 ${wordCount} 字`)}else score-=12;
+      if(complete){score+=10;reasons.push("完整句")}
+      if(coverage.ratio>=.8){score+=16;reasons.push(`CEEC 覆蓋 ${Math.round(coverage.ratio*100)}%`)}else if(coverage.ratio>=.65){score+=10;reasons.push(`CEEC 覆蓋 ${Math.round(coverage.ratio*100)}%`)}else if(coverage.ratio>=.55){score+=4;reasons.push(`CEEC 覆蓋 ${Math.round(coverage.ratio*100)}%`)}else score-=12;
+      if(contextHits.length){score+=Math.min(10,6+(contextHits.length-1)*2);contextHits.slice(0,2).forEach(hit=>reasons.push(hit.label))}
+      if(topicHits.length){score+=8;reasons.push(topicHits[0].label)}
+      score+=collocation.score;if(collocation.label)reasons.push(collocation.label);
+      if(meta.nativeSpeaker){score+=6;reasons.push("母語者句庫")}else if(/Wiktionary|DictionaryAPI|詞表內建/.test(meta.source||""))score+=4;
+      if(meta.audioUrl){score+=2;reasons.push("附真人錄音")}
+      const markup=/<[^>]+>|\{\{|\}\}|\[[^\]]+\]/.test(text),repeatedPunctuation=/[!?.,]{3,}/.test(text),dialogueHeavy=/["“”].*\b(said|asked|replied|shouted|whispered|yelled)\b|\b(hey|hello)\b/i.test(text);if(markup)score-=25;if(repeatedPunctuation)score-=12;if(dialogueHeavy)score-=8;
+      const hardReject=!targetMatched||!complete||wordCount<8||wordCount>35||coverage.ratio<.55||markup||collocation.blocked,eligible=!hardReject&&score>=60;
+      return{text,partOfSpeech,score:Math.max(0,Math.min(99,Math.round(score))),wordCount,longWordCount:longWords.length,ceecCoverage:coverage.ratio,ceecKnown:coverage.known,ceecTotal:coverage.total,unknownWords:coverage.unknown,collocationAligned:collocation.aligned,officialSignals:contextHits.length,hardReject,reasons:[...new Set(reasons)].slice(0,7),eligible,targetMatched,...meta};
     }
     function parseWiktionaryPayload(payload,word){
       const blocks=payload&&Array.isArray(payload.en)?payload.en:[],partsOfSpeech=[],evaluated=[],seen=new Set();
@@ -241,82 +463,157 @@
         const part=String(block.partOfSpeech||"").trim();if(part&&!partsOfSpeech.includes(part))partsOfSpeech.push(part);
         for(const definition of block.definitions||[]){
           const candidates=[...(Array.isArray(definition.examples)?definition.examples:[]),...(Array.isArray(definition.parsedExamples)?definition.parsedExamples:[])];
-          for(const candidate of candidates){const text=wiktionaryExampleText(candidate),key=text.toLowerCase();if(text&&!seen.has(key)){seen.add(key);evaluated.push(evaluateGsatExample(text,part,word))}}
+          for(const candidate of candidates){const text=wiktionaryExampleText(candidate),key=text.toLowerCase();if(text&&!seen.has(key)){seen.add(key);evaluated.push(evaluateGsatExample(text,part,word,{source:"Wiktionary",sourceUrl:"https://en.wiktionary.org/wiki/"+encodeURIComponent(word)}))}}
         }
       }
-      const qualified=evaluated.filter(example=>example.eligible).sort((a,b)=>b.score-a.score||Math.abs(22-a.wordCount)-Math.abs(22-b.wordCount));
-      return{partsOfSpeech,examples:qualified.slice(0,2),candidateCount:evaluated.length,qualifiedCount:qualified.length};
+      return{partsOfSpeech,candidates:evaluated,candidateCount:evaluated.length};
+    }
+    function collectFreeDictionarySenses(senses,part,word,sourceUrl,output){
+      for(const sense of Array.isArray(senses)?senses:[]){
+        for(const example of Array.isArray(sense&&sense.examples)?sense.examples:[]){const text=stripWikiHtml(example);if(text)output.push(evaluateGsatExample(text,part,word,{source:"FreeDictionaryAPI／Wiktionary",sourceUrl}))}
+        collectFreeDictionarySenses(sense&&sense.subsenses,part,word,sourceUrl,output);
+      }
+    }
+    function parseFreeDictionaryPayload(payload,word){
+      const result=emptyExampleSource();if(!payload||!Array.isArray(payload.entries))return result;const sourceUrl=String(payload.source&&payload.source.url||"https://freedictionaryapi.com/");
+      for(const entry of payload.entries){const part=String(entry&&entry.partOfSpeech||"").trim();if(part&&!result.partsOfSpeech.includes(part))result.partsOfSpeech.push(part);collectFreeDictionarySenses(entry&&entry.senses,part,word,sourceUrl,result.candidates)}
+      result.candidateCount=result.candidates.length;return result;
+    }
+    function parseTatoebaPayload(payload,word){
+      const result=emptyExampleSource();for(const sentence of payload&&Array.isArray(payload.data)?payload.data:[]){
+        const text=String(sentence&&sentence.text||"").replace(/\s+/g," ").trim();if(!text)continue;const audio=(Array.isArray(sentence.audios)?sentence.audios:[]).find(item=>item&&item.download_url),audioUrl=audio?normalizeAudioUrl(audio.download_url):"";
+        result.candidates.push(evaluateGsatExample(text,"",word,{source:"Tatoeba 母語者句庫",sourceUrl:"https://tatoeba.org/en/sentences/show/"+encodeURIComponent(sentence.id),sentenceLicense:String(sentence&&sentence.license||""),nativeSpeaker:true,audioUrl,audioAuthor:String(audio&&audio.author||""),audioLicense:String(audio&&audio.licence||""),audioAttributionUrl:String(audio&&audio.attribution_url||"")}));
+      }
+      result.candidateCount=result.candidates.length;return result;
+    }
+    function emergencyExample(entry){
+      const safeWord=apiLookupWord(entry.word)||entry.word;return{text:`Before using “${safeWord}” in a sentence, students should check its meaning, grammar, and common collocations.`,partOfSpeech:entry.partOfSpeech,score:0,wordCount:16,longWordCount:1,ceecCoverage:1,reasons:["離線保底","非詞義示範"],eligible:false,targetMatched:true,source:"內建離線學習提示",sourceUrl:"",selectionTier:"emergency",isEmergency:true};
+    }
+    function rankExampleCandidates(entry,wiktionary,freeDictionary,tatoeba,dictionary){
+      const partsOfSpeech=[],pool=[];for(const source of [wiktionary,freeDictionary,tatoeba]){for(const part of source&&source.partsOfSpeech||[])if(part&&!partsOfSpeech.includes(part))partsOfSpeech.push(part);pool.push(...(source&&source.candidates||[]))}
+      for(const item of dictionary&&dictionary.examples||[])pool.push(evaluateGsatExample(item.text,item.partOfSpeech,entry.word,{source:item.source,sourceUrl:item.sourceUrl}));
+      if(entry.example)pool.push(evaluateGsatExample(entry.example,entry.partOfSpeech,entry.word,{source:"詞表內建例句",sourceUrl:""}));
+      const byText=new Map();for(const example of pool){const key=example.text.toLowerCase().replace(/[^a-z0-9]+/g," ").trim(),current=byText.get(key);if(!key)continue;if(!current||example.score>current.score||(!current.audioUrl&&example.audioUrl))byText.set(key,example)}
+      const ranked=[...byText.values()].filter(example=>example.targetMatched).sort((a,b)=>b.score-a.score||b.ceecCoverage-a.ceecCoverage||Number(Boolean(b.audioUrl))-Number(Boolean(a.audioUrl))||Math.abs(19-a.wordCount)-Math.abs(19-b.wordCount)),qualified=ranked.filter(example=>example.eligible);let examples;
+      if(qualified.length){const first=qualified[0],differentSource=qualified.find((example,index)=>index>0&&example.source!==first.source&&example.score>=first.score-8),second=differentSource||qualified[1];examples=[first,...(second?[second]:[])].map(example=>({...example,selectionTier:"gold"}))}else if(ranked.length)examples=[{...ranked[0],selectionTier:"fallback"}];else examples=[emergencyExample(entry)];
+      return{partsOfSpeech:partsOfSpeech.length?partsOfSpeech:[entry.partOfSpeech],examples,candidateCount:ranked.length,qualifiedCount:qualified.length,rejectedCount:Math.max(0,ranked.length-qualified.length),selectionTier:examples[0].selectionTier,algorithmVersion:CURRENT_EXAM_MODEL.version};
     }
 
     function parseTranslationPayload(payload){if(!Array.isArray(payload)||!Array.isArray(payload[0]))return"";return payload[0].map(segment=>Array.isArray(segment)?String(segment[0]||""):"").join("").trim()}
-    function emptyCeecSuggestions(){return{items:[],candidateCount:0,rejectedCount:0}}
-    function ceecSuggestion(value){const key=normalizeCeecWord(value),level=Number(CEEC_LEVEL_BY_WORD[key]||0);return level?{word:value,level}:null}
+    async function translateQualifiedExamples(result,signal){
+      let error=false;const examples=await Promise.all((result.examples||[]).map(async example=>{
+        if(example.selectionTier!=="gold")return example;
+        const response=await fetchJson(googleTranslationUrl(example.text),signal,3500),translationZh=parseTranslationPayload(response.payload);if(response.error||!translationZh)error=true;
+        return{...example,translationZh,translationError:response.error||!translationZh};
+      }));
+      return{result:{...result,examples},error};
+    }
+    function emptyCeecSuggestions(){return{items:[],candidateCount:0,rejectedCount:0,blockedCount:0}}
+    function ceecSuggestion(value){const key=normalizeCeecWord(value),single=/^[A-Za-z]+(?:[-'][A-Za-z]+)*$/.test(String(value||"").trim()),level=Number(CEEC_LEVEL_BY_WORD[key]||0)||(single?ceecTokenLevel(value):0);return level?{word:value,level}:null}
     function parseSynonyms(payload,word){
       if(!Array.isArray(payload))return emptyCeecSuggestions();const seen=new Set(),target=normalizeCeecWord(word),result=emptyCeecSuggestions();
       for(const item of payload){const value=String(item&&item.word||"").trim(),key=normalizeCeecWord(value);if(!value||key===target||seen.has(key))continue;seen.add(key);result.candidateCount++;const match=ceecSuggestion(value);if(!match){result.rejectedCount++;continue}if(result.items.length<5)result.items.push(match)}
       return result;
     }
-    const COLLOCATION_STOPWORDS=new Set("the of these and a all this such their our your its more other any each some with from on in for to by as no is was be been being are were am have has had do does did will would can could should may might must".split(" "));
-    function parseCollocations(payload,word){
-      if(!Array.isArray(payload))return emptyCeecSuggestions();const target=normalizeCeecWord(word),seen=new Set(),result=emptyCeecSuggestions();
-      for(const item of payload){const value=String(item&&item.word||"").trim(),key=normalizeCeecWord(value),tags=Array.isArray(item&&item.tags)?item.tags:[];if(!value||key===target||seen.has(key)||COLLOCATION_STOPWORDS.has(key)||tags[0]!=="v"||!/^[A-Za-z][A-Za-z '-]*$/.test(value))continue;seen.add(key);result.candidateCount++;const match=ceecSuggestion(value);if(!match){result.rejectedCount++;continue}if(result.items.length<5)result.items.push(match)}
-      return result;
+    const COLLOCATION_STOPWORDS=new Set("the an a these those and or but all this that their our your its more other any each some no is was be been being are were am have has had do does did will would can could should may might must".split(" "));
+    const COLLOCATION_PREPOSITIONS=new Set("to with for from of in on as by against into about over under between among through without".split(" "));
+    function datamusePosTags(item){return new Set((item&&Array.isArray(item.tags)?item.tags:[]).map(tag=>String(tag).toLowerCase()).filter(tag=>["n","v","adj","adv"].includes(tag)))}
+    function collocationDirectionScore(entry,direction,partnerKey,tags){
+      const pos=String(entry&&entry.partOfSpeech||"").toLowerCase(),prep=COLLOCATION_PREPOSITIONS.has(partnerKey);let score=0,label="語料方向";
+      if(/v\./.test(pos)){if(direction==="after"&&(tags.has("n")||prep)){score=20;label=prep?"動詞＋介系詞方向":"動詞＋名詞方向"}else if(direction==="before"&&tags.has("adv")){score=10;label="副詞＋動詞方向"}}
+      else if(/n\./.test(pos)){if(direction==="before"&&(tags.has("v")||tags.has("adj"))){score=19;label="動／形＋名詞方向"}else if(direction==="after"&&prep){score=13;label="名詞＋介系詞方向"}}
+      else if(/adj\.|a\./.test(pos)){if(direction==="after"&&(prep||tags.has("n"))){score=18;label="形容詞後接方向"}else if(direction==="before"&&tags.has("adv")){score=12;label="副詞＋形容詞方向"}}
+      else if(/adv\./.test(pos)&&(tags.has("v")||tags.has("adj"))){score=12;label="副詞修飾方向"}
+      return{score,label};
+    }
+    function parseCorpusCollocations(beforePayload,afterPayload,entry){
+      const word=apiLookupWord(entry&&entry.word),target=normalizeCeecWord(word),point=getGsatPoint(entry),blocked=new Set((point&&point.blocked||[]).map(normalizeSearchValue)),patternText=normalizeSearchValue(point?point.patterns.map(pattern=>pattern[0]).join(" "):""),seen=new Set(),result=emptyCeecSuggestions(),pool=[];
+      for(const [payload,direction] of [[beforePayload,"before"],[afterPayload,"after"]])for(const item of Array.isArray(payload)?payload:[]){
+        const value=String(item&&item.word||"").trim(),key=normalizeCeecWord(value);if(!value||key===target||COLLOCATION_STOPWORDS.has(key)||!/^[A-Za-z][A-Za-z '-]*$/.test(value))continue;
+        const phrase=direction==="before"?`${value} ${word}`:`${word} ${value}`,phraseKey=normalizeSearchValue(phrase);if(seen.has(phraseKey))continue;seen.add(phraseKey);result.candidateCount++;if(blocked.has(phraseKey)){result.blockedCount++;continue}
+        const match=ceecSuggestion(value);if(!match){result.rejectedCount++;continue}pool.push({...match,phrase,direction,rawScore:Math.max(0,Number(item&&item.score||0)),partnerKey:normalizeSearchValue(value),tags:datamusePosTags(item)});
+      }
+      const maxRaw=Math.max(1,...pool.map(item=>item.rawScore));for(const item of pool){const frequency=Math.round(35*Math.log1p(item.rawScore)/Math.log1p(maxRaw)),directionFit=collocationDirectionScore(entry,item.direction,item.partnerKey,item.tags),coreBonus=item.level<=5?14:6,curated=Boolean(point&&patternText.split(" ").some(token=>token===item.partnerKey||matchesTargetForm(item.partnerKey,token))),curatedBonus=curated?30:0,score=Math.min(99,frequency+directionFit.score+coreBonus+curatedBonus),confidence=curated||score>=68?"high":score>=48?"medium":"explore";Object.assign(item,{score,confidence,confidenceLabel:confidence==="high"?"高":confidence==="medium"?"中":"探索",reasons:[`語料 ${frequency}/35`,directionFit.label,`CEEC L${item.level}`,...(curated?["精選句型吻合"]:[])]})}
+      result.items=pool.sort((a,b)=>b.score-a.score||a.level-b.level||a.phrase.localeCompare(b.phrase)).slice(0,6);return result;
     }
 
     function datamuseUrl(params){const url=new URL(API_ENDPOINTS.datamuse);Object.entries(params).forEach(([key,value])=>url.searchParams.set(key,String(value)));return url.href}
-    function googleTranslationUrl(word){const url=new URL(API_ENDPOINTS.googleTranslate);url.search=new URLSearchParams({client:"gtx",sl:"en",tl:"zh-TW",dt:"t",q:word}).toString();return url.href}
+    function googleTranslationUrl(text){const url=new URL(API_ENDPOINTS.googleTranslate);url.search=new URLSearchParams({client:"gtx",sl:"en",tl:"zh-TW",dt:"t",q:text}).toString();return url.href}
     function googleTranslatePage(word){const url=new URL("https://translate.google.com/");url.search=new URLSearchParams({sl:"en",tl:"zh-TW",text:spokenForm(word),op:"translate"}).toString();return url.href}
+    function tatoebaUrl(word){const url=new URL(API_ENDPOINTS.tatoeba);url.search=new URLSearchParams({lang:"eng",q:`"${word.replace(/["\\]/g,"")}"`,word_count:"8-40",is_unapproved:"no",is_orphan:"no",is_native:"yes",sort:"relevance",limit:"24",include:"audios",showtrans:"none"}).toString();return url.href}
+    function actionApiUrl(base,params){const url=new URL(base);url.search=new URLSearchParams({origin:"*",format:"json",formatversion:"2",...params}).toString();return url.href}
+    function wiktionaryWikitextUrl(word){return actionApiUrl(API_ENDPOINTS.wiktionaryAction,{action:"parse",page:word,prop:"wikitext"})}
+    function commonsAudioUrl(fileNames){return actionApiUrl(API_ENDPOINTS.commonsAction,{action:"query",prop:"imageinfo",iiprop:"url|mime",titles:fileNames.map(name=>"File:"+name).join("|")})}
 
-    async function fetchJson(url,signal){
+    function parseWiktionaryAudioNames(payload){
+      const raw=payload&&payload.parse&&payload.parse.wikitext,text=typeof raw==="string"?raw:String(raw&&raw["*"]||""),regex=/\{\{\s*audio\s*\|\s*en\s*\|\s*([^|}\n]+)(?:\|\s*([^|}\n]*))?/gi,result=[],seen=new Set();let match;
+      while((match=regex.exec(text))&&result.length<8){const file=String(match[1]||"").trim(),label=stripWikiHtml(match[2]||"").replace(/^Audio\s*/i,"").trim();if(!file||/[{}]/.test(file)||seen.has(file.toLowerCase()))continue;seen.add(file.toLowerCase());result.push({file,label})}
+      return result;
+    }
+    function normalizedFileTitle(value){return String(value||"").replace(/^File:/i,"").replace(/_/g," ").trim().toLowerCase()}
+    async function fetchWiktionaryAudio(word,signal){
+      const markup=await fetchJson(wiktionaryWikitextUrl(word),signal);if(markup.error)return{...emptyAudioResult(),error:true};const names=parseWiktionaryAudioNames(markup.payload);if(!names.length)return{...emptyAudioResult(),error:false};
+      const info=await fetchJson(commonsAudioUrl(names.map(item=>item.file)),signal);if(info.error)return{...emptyAudioResult(),error:true};const pages=info.payload&&info.payload.query&&info.payload.query.pages,items=Array.isArray(pages)?pages:Object.values(pages||{}),labels=new Map(names.map(item=>[normalizedFileTitle(item.file),item.label])),candidates=[];
+      for(const page of items){const image=page&&Array.isArray(page.imageinfo)?page.imageinfo[0]:null,candidate=image&&audioCandidate(image.url,labels.get(normalizedFileTitle(page.title))||"","Wiktionary／Wikimedia Commons",page&&page.canonicalurl||"");if(candidate)candidates.push(candidate)}
+      return{candidates:rankAudioCandidates(candidates),error:false};
+    }
+
+    async function fetchJson(url,signal,timeoutMs=6500){
+      const controller=new AbortController(),abortFromParent=()=>controller.abort();let timer;
       try{
-        const response=await fetch(url,{headers:{Accept:"application/json"},signal});
+        if(signal){if(signal.aborted)controller.abort();else signal.addEventListener("abort",abortFromParent,{once:true})}timer=setTimeout(()=>controller.abort(),timeoutMs);
+        const response=await fetch(url,{headers:{Accept:"application/json"},signal:controller.signal,credentials:"omit",referrerPolicy:"no-referrer"});
         if(response.status===404)return{payload:null,error:false};
         if(!response.ok)throw new Error(`HTTP ${response.status}`);
         const contentType=response.headers.get("content-type")||"";if(!contentType.toLowerCase().includes("json"))throw new Error("Unexpected response");
         return{payload:await response.json(),error:false};
-      }catch(error){if(error&&error.name==="AbortError")throw error;return{payload:null,error:true}}
+      }catch(error){if(error&&error.name==="AbortError"&&signal&&signal.aborted)throw error;return{payload:null,error:true}}
+      finally{clearTimeout(timer);if(signal)signal.removeEventListener("abort",abortFromParent)}
     }
 
     function showDictionaryResult(result,entry,index,error=false){
       if(state.selectedIndex!==index)return;
-      const phonetic=byId("apiPhonetic"),phoneticSource=byId("phoneticSource"),button=byId("speakButton"),source=byId("speakSource"),status=byId("audioStatus");if(!phonetic||!phoneticSource||!button||!source||!status)return;
+      const phonetic=byId("apiPhonetic"),phoneticSource=byId("phoneticSource"),button=byId("speakButton"),source=byId("speakSource"),status=byId("audioStatus"),options=byId("pronunciationOptions");if(!phonetic||!phoneticSource||!button||!source||!status||!options)return;
       phonetic.textContent=result&&result.phonetic?result.phonetic:(entry.pronunciation||"音標未收錄");phoneticSource.textContent=result&&result.phonetic?"DICTIONARY API":"OFFLINE";
-      if(result&&result.usAudio){source.textContent="API US";button.title="播放 DictionaryAPI 的 -us.mp3 美式真人發音";status.className="audio-status ready";status.textContent="美式真人發音 · DictionaryAPI -us.mp3";return}
-      source.textContent="SYS US";button.title="播放瀏覽器／系統 en-US 語音";status.className="audio-status fallback";status.textContent=error?"DictionaryAPI 暫時無法連線 · 使用系統 en-US":"查無 -us.mp3 · 使用系統 en-US";
+      const candidates=result&&result.audioCandidates||[];
+      if(candidates.length){const preferred=candidates[0];source.textContent=preferred.accent;button.title=`播放 ${preferred.accent} ${preferred.format} 真人發音`;status.className="audio-status ready";status.textContent=`${candidates.length} 組可播放真人發音 · 預設 ${preferred.accent} ${preferred.format}`;options.innerHTML=candidates.slice(0,4).map((candidate,position)=>`<button class="accent-choice" type="button" data-audio-index="${position}" title="${escapeHtml(candidate.source)}">${escapeHtml(candidate.accent)} · ${escapeHtml(candidate.format)}</button>`).join("");options.querySelectorAll("button").forEach(option=>option.addEventListener("click",event=>{const candidate=candidates[Number(event.currentTarget.dataset.audioIndex)];if(candidate)playAudioCandidates([candidate],entry.word,event.currentTarget,true)}));return}
+      source.textContent="系統";button.title="使用 iPhone／iPad 內建英文語音";status.className="audio-status fallback";status.textContent=error?"真人音源暫時無法連線 · 點按使用裝置英文語音":"未收錄可播放真人音檔 · 點按使用裝置英文語音";options.innerHTML="";
     }
 
     function renderGsatExampleCard(example,rank){
-      const tags=(example.reasons||[]).map(reason=>`<span class="filter-tag">${escapeHtml(reason)}</span>`).join("");
-      return`<article class="gold-example"><div class="gold-head"><span class="gold-rank">GOLD SENTENCE #${rank}</span><strong class="gold-score">${example.score} 分</strong></div><blockquote>${escapeHtml(example.text)}</blockquote><div class="filter-tags">${tags}</div><footer>${escapeHtml(example.partOfSpeech||"Wiktionary example")} · ${example.wordCount} words · 長字彙 ${example.longWordCount} 個</footer></article>`;
+      const tags=(example.reasons||[]).map(reason=>`<span class="filter-tag">${escapeHtml(reason)}</span>`).join(""),tier=example.selectionTier==="gold"?`BEST SENTENCE #${rank}`:example.selectionTier==="emergency"?"OFFLINE SAFETY SENTENCE":"BEST AVAILABLE",score=example.selectionTier==="emergency"?"保底":`${example.score} 分`,safeSourceUrl=safeExternalUrl(example.sourceUrl),sourceUrl=safeSourceUrl?`<a href="${escapeHtml(safeSourceUrl)}" target="_blank" rel="noreferrer">${escapeHtml(example.source)}</a>`:escapeHtml(example.source||"來源未標示"),safeAttribution=safeExternalUrl(example.audioAttributionUrl),audioAuthor=example.audioAuthor?(safeAttribution?`<a href="${escapeHtml(safeAttribution)}" target="_blank" rel="noreferrer">錄音 ${escapeHtml(example.audioAuthor)}</a>`:`錄音 ${escapeHtml(example.audioAuthor)}`):"",audioCredit=audioAuthor?` · ${audioAuthor}${example.audioLicense?` (${escapeHtml(example.audioLicense)})`:""}`:"",translation=example.selectionTier==="gold"?(example.translationZh?`<p class="example-translation"><strong>GOOGLE 翻譯</strong>${escapeHtml(example.translationZh)}</p>`:`<p class="example-translation"><strong>GOOGLE 翻譯</strong>暫時無法取得繁中翻譯</p>`):'<p class="example-translation not-sent"><strong>未送翻譯</strong>此句未通過 CEEC-115 v2 門檻，因此不送出 Google 翻譯。</p>',coverage=Number.isFinite(Number(example.ceecCoverage))?`${Math.round(Number(example.ceecCoverage)*100)}%`:"—";
+      return`<article class="gold-example" data-example-index="${rank-1}"><div class="gold-head"><span class="gold-rank">${tier}</span><strong class="gold-score">${score}</strong></div><blockquote>${escapeHtml(example.text)}</blockquote>${translation}<div class="filter-tags">${tags}</div><div class="example-tools">${example.audioUrl?'<button class="example-tool example-audio" type="button">▶ 真人例句</button>':""}<button class="example-tool example-cloze" type="button">遮字練習</button><button class="example-tool example-copy" type="button">複製例句</button></div><span class="example-source">${sourceUrl}${example.sentenceLicense?` (${escapeHtml(example.sentenceLicense)})`:""} · ${example.wordCount} words · CEEC 覆蓋 ${coverage}${audioCredit}</span></article>`;
     }
-    function showWiktionaryResult(result,dictionary,entry,index,error=false){
+    function escapeRegExp(value){return String(value||"").replace(/[.*+?^${}()|[\]\\]/g,"\\$&")}
+    function clozeSentence(text,word){const targetWords=sentenceWords(apiLookupWord(word)).map(normalizedToken).filter(Boolean);if(targetWords.length===1)return String(text).replace(/[A-Za-z]+(?:[-'][A-Za-z]+)*/g,token=>matchesTargetForm(normalizedToken(token),targetWords[0])?"________":token);if(targetWords.length>1)return String(text).replace(new RegExp(`\\b${escapeRegExp(targetWords.join(" "))}\\b`,"ig"),"________");return text}
+    async function copyText(value){try{if(navigator.clipboard&&window.isSecureContext)await navigator.clipboard.writeText(value);else{const area=document.createElement("textarea");area.value=value;area.setAttribute("readonly","");area.style.position="fixed";area.style.opacity="0";document.body.appendChild(area);area.select();document.execCommand("copy");area.remove()}showToast("例句已複製")}catch{showToast("無法複製，請長按例句選取")}}
+    function showExampleResult(result,entry,index,error=false){
       if(state.selectedIndex!==index)return;
       const posHost=byId("posChips"),primaryPos=byId("primaryPos"),host=byId("exampleResults"),meta=byId("exampleMeta");if(!posHost||!primaryPos||!host||!meta)return;
       const parts=result&&result.partsOfSpeech&&result.partsOfSpeech.length?result.partsOfSpeech:[entry.partOfSpeech];primaryPos.textContent=parts.join(" / ");posHost.innerHTML=parts.map(part=>`<span class="pos-chip">${escapeHtml(part)}</span>`).join("");host.classList.remove("loading");
-      if(result&&result.examples&&result.examples.length){host.innerHTML=result.examples.map((example,position)=>renderGsatExampleCard(example,position+1)).join("");meta.innerHTML=`Wiktionary ${result.candidateCount} 句候選 → ${result.qualifiedCount} 句通過 → 顯示最高分 ${result.examples.length} 句 · <a href="https://en.wiktionary.org/" target="_blank" rel="noreferrer">來源</a>`;return}
-      let fallback="",label="";
-      if(dictionary&&dictionary.example){fallback=dictionary.example;label="DictionaryAPI 次級例句"}else if(entry.example){fallback=entry.example;label="詞典內建次級例句"}
-      if(fallback){host.innerHTML=`<div class="fallback-example"><strong>${escapeHtml(label)} · 未通過四維濾鏡評分</strong><blockquote>${escapeHtml(fallback)}</blockquote></div>`;meta.textContent=error?"Wiktionary 暫時無法連線；先顯示次級來源。":`Wiktionary ${result&&result.candidateCount||0} 句候選均未達 12～40 字與大考語感門檻。`;return}
-      host.innerHTML=`<div class="fallback-example"><strong>本次沒有黃金例句</strong><blockquote>${error?"Wiktionary 暫時無法連線。":"候選句皆因太短、太長、對話感過強或分數不足而淘汰。"}</blockquote></div>`;meta.textContent="濾鏡寧缺勿濫，不以低品質句子冒充學測例句。";
+      const examples=result&&result.examples&&result.examples.length?result.examples:[emergencyExample(entry)];host.innerHTML=examples.map((example,position)=>renderGsatExampleCard(example,position+1)).join("");
+      host.querySelectorAll(".gold-example").forEach(card=>{const position=Number(card.dataset.exampleIndex),example=examples[position],quote=card.querySelector("blockquote"),cloze=card.querySelector(".example-cloze"),copy=card.querySelector(".example-copy"),audio=card.querySelector(".example-audio");cloze.addEventListener("click",()=>{const active=cloze.classList.toggle("active");quote.textContent=active?clozeSentence(example.text,entry.word):example.text;cloze.textContent=active?"顯示答案":"遮字練習"});copy.addEventListener("click",()=>copyText(example.text));if(audio)audio.addEventListener("click",()=>{const candidate=audioCandidate(example.audioUrl,"真人例句","Tatoeba",example.audioAttributionUrl);if(candidate)playAudioCandidates([candidate],example.text,audio,true)})});
+      if(result.selectionTier==="gold"){const translated=examples.filter(example=>example.translationZh).length;meta.textContent=`${result.algorithmVersion||CURRENT_EXAM_MODEL.version}：四源 ${result.candidateCount} 句候選 → ${result.qualifiedCount} 句通過（${result.rejectedCount||0} 句未通過）→ 顯示 ${examples.length} 句；Google 已翻譯 ${translated} 句。`}
+      else if(result.selectionTier==="fallback")meta.textContent=`${result.algorithmVersion||CURRENT_EXAM_MODEL.version}：${result.candidateCount} 句候選未達門檻；仍保留分數最高的一句供判讀，但不送 Google 翻譯。`;
+      else meta.textContent=error?"線上句庫暫時受限；已顯示不冒充詞義用法的離線保底學習句。":"尚無可靠語意例句；已顯示離線保底學習句。";
     }
 
-    function ceecFilterSummary(result){return result.rejectedCount?`<p class="ceec-filter-status"><strong>CEEC 白名單 ✓</strong> 已隱藏 ${result.rejectedCount} 個超綱候選詞</p>`:`<p class="ceec-filter-status"><strong>CEEC 白名單 ✓</strong> 顯示詞皆在官方 1～6 級範圍</p>`}
+    function ceecFilterSummary(result){const rejected=Number(result&&result.rejectedCount||0),blocked=Number(result&&result.blockedCount||0);return rejected||blocked?`<p class="ceec-filter-status"><strong>CEEC＋易錯規則 ✓</strong>${rejected?` 已隱藏 ${rejected} 個超綱候選`:""}${blocked?`${rejected?"；":" 已"}排除 ${blocked} 個易錯組合`:""}</p>`:`<p class="ceec-filter-status"><strong>CEEC 白名單 ✓</strong> 顯示詞皆在官方 1～6 級範圍</p>`}
     function showSynonymsResult(result,index,error=false){
       if(state.selectedIndex!==index)return;const host=byId("synonymChips");if(!host)return;
       const items=result&&result.items||[];host.innerHTML=items.length?items.map(item=>`<span class="word-chip synonym">${escapeHtml(item.word)}<span class="ceec-level level-${item.level}">L${item.level}</span></span>`).join("")+ceecFilterSummary(result):`<p class="card-empty">${error?"Datamuse 暫時無法連線。":result&&result.candidateCount?"Datamuse 候選均不在大考中心 1～6 級詞表內，已全部隱藏。":"沒有找到適合的替換詞。"}</p>`;
     }
     function showCollocationsResult(result,entry,index,error=false){
       if(state.selectedIndex!==index)return;const host=byId("collocationChips");if(!host)return;
-      if(!isNounEntry(entry)){host.innerHTML='<p class="card-empty">此詞條不是名詞；動詞搭配功能不送出查詢。</p>';return}
-      const noun=escapeHtml(apiLookupWord(entry.word).toLowerCase()),items=result&&result.items||[];host.innerHTML=items.length?items.map(item=>`<span class="word-chip collocation"><strong>${escapeHtml(item.word)}</strong> ${noun}<span class="ceec-level level-${item.level}">L${item.level}</span></span>`).join("")+ceecFilterSummary(result):`<p class="card-empty">${error?"Datamuse 暫時無法連線。":result&&result.candidateCount?"Datamuse 動詞候選均不在大考中心 1～6 級詞表內，已全部隱藏。":"沒有找到可信度足夠的動詞搭配。"}</p>`;
+      const items=result&&result.items||[];host.innerHTML=items.length?items.map(item=>`<span class="word-chip collocation" title="${escapeHtml((item.reasons||[]).join(" · "))}"><strong>${escapeHtml(item.phrase)}</strong><span class="collocation-confidence confidence-${escapeHtml(item.confidence||"explore")}">${escapeHtml(item.confidenceLabel||"探索")}</span><span class="ceec-level level-${item.level}">L${item.level}</span></span>`).join("")+ceecFilterSummary(result):`<p class="card-empty">${error?"Datamuse 暫時無法連線。":result&&result.candidateCount?"候選未通過 CEEC 白名單與易錯搭配規則。":"沒有找到可信度足夠的前後搭配。"}</p>`;
     }
     function showTranslationResult(value,index,error=false){
       if(state.selectedIndex!==index)return;const host=byId("translationText");if(!host)return;
       host.textContent=value||(error?"免金鑰路徑目前受限；已保留上方內建繁中":"Google 未回傳翻譯；已保留上方內建繁中");
     }
     function showOnlineResult(result,entry,index){
-      showDictionaryResult(result.dictionary,entry,index,result.errors.dictionary);
-      showWiktionaryResult(result.wiktionary,result.dictionary,entry,index,result.errors.wiktionary);
+      showDictionaryResult(result.dictionary,entry,index,result.errors.dictionary||result.errors.wiktionaryAudio);
+      showExampleResult(result.examples,entry,index,result.errors.dictionary&&result.errors.wiktionary&&result.errors.freeDictionary&&result.errors.tatoeba);
       showSynonymsResult(result.synonyms,index,result.errors.synonyms);
       showCollocationsResult(result.collocations,entry,index,result.errors.collocations);
       showTranslationResult(result.translation,index,result.errors.translation);
@@ -324,83 +621,66 @@
     }
 
     async function loadOnlineData(entry,index,retry=false){
-      const word=apiLookupWord(entry.word).toLowerCase();if(!word)return;
-      if(retry){state.onlineCache.delete(word);const status=byId("onlineStatus"),button=byId("onlineRetry");if(status)status.textContent="正在重新載入線上學習資料…";if(button)button.hidden=true}
+      const word=apiLookupWord(entry.word).toLowerCase(),cacheKey=word+"|"+normalizeCeecWord(entry.word);if(!word)return;
+      if(retry){state.onlineCache.delete(cacheKey);const status=byId("onlineStatus"),button=byId("onlineRetry");if(status)status.textContent="正在重新載入線上學習資料…";if(button)button.hidden=true}
       const request=++state.onlineRequest;if(state.onlineController)state.onlineController.abort();state.onlineController=null;
-      if(state.onlineCache.has(word)){showOnlineResult(state.onlineCache.get(word),entry,index);return}
-      state.onlineController=new AbortController();const signal=state.onlineController.signal,noun=isNounEntry(entry);
+      if(state.onlineCache.has(cacheKey)){showOnlineResult(state.onlineCache.get(cacheKey),entry,index);return}
+      state.onlineController=new AbortController();const signal=state.onlineController.signal;
       try{
-        const [dictionary,wiktionary,synonyms,collocations,translation]=await Promise.all([
+        const [dictionary,wiktionary,freeDictionary,tatoeba,wiktionaryAudio,synonyms,collocationsBefore,collocationsAfter,translation]=await Promise.all([
           fetchJson(API_ENDPOINTS.dictionary+encodeURIComponent(word),signal),
           fetchJson(API_ENDPOINTS.wiktionary+encodeURIComponent(word),signal),
+          fetchJson(API_ENDPOINTS.freeDictionary+encodeURIComponent(word),signal),
+          fetchJson(tatoebaUrl(word),signal),
+          fetchWiktionaryAudio(word,signal),
           fetchJson(datamuseUrl({ml:word,md:"p",max:5}),signal),
-          noun?fetchJson(datamuseUrl({rel_bgb:word,md:"p",max:250}),signal):Promise.resolve({payload:[],error:false}),
+          fetchJson(datamuseUrl({rel_bgb:word,md:"p",max:120}),signal),
+          fetchJson(datamuseUrl({rel_bga:word,md:"p",max:120}),signal),
           fetchJson(googleTranslationUrl(word),signal)
         ]);
+        const dictionaryResult=parseDictionaryPayload(dictionary.payload),wiktionaryResult=parseWiktionaryPayload(wiktionary.payload,word),freeDictionaryResult=parseFreeDictionaryPayload(freeDictionary.payload,word),tatoebaResult=parseTatoebaPayload(tatoeba.payload,word);
+        dictionaryResult.audioCandidates=rankAudioCandidates([...dictionaryResult.audioCandidates,...(wiktionaryAudio.candidates||[])]);
+        const rankedExamples=rankExampleCandidates(entry,wiktionaryResult,freeDictionaryResult,tatoebaResult,dictionaryResult),translatedExamples=await translateQualifiedExamples(rankedExamples,signal);
         const result={
-          dictionary:parseDictionaryPayload(dictionary.payload),
-          wiktionary:parseWiktionaryPayload(wiktionary.payload,word),
+          dictionary:dictionaryResult,
+          examples:translatedExamples.result,
           synonyms:parseSynonyms(synonyms.payload,word),
-          collocations:parseCollocations(collocations.payload,word),
+          collocations:parseCorpusCollocations(collocationsBefore.payload,collocationsAfter.payload,entry),
           translation:parseTranslationPayload(translation.payload),
-          errors:{dictionary:dictionary.error,wiktionary:wiktionary.error,synonyms:synonyms.error,collocations:noun&&collocations.error,translation:translation.error}
+          errors:{dictionary:dictionary.error,wiktionary:wiktionary.error,freeDictionary:freeDictionary.error,tatoeba:tatoeba.error,wiktionaryAudio:wiktionaryAudio.error,synonyms:synonyms.error,collocations:collocationsBefore.error||collocationsAfter.error,translation:translation.error,exampleTranslation:translatedExamples.error}
         };
-        state.onlineCache.set(word,result);if(request===state.onlineRequest)showOnlineResult(result,entry,index);
-      }catch(error){if(error&&error.name==="AbortError")return;if(request===state.onlineRequest){const result={dictionary:emptyDictionaryResult(),wiktionary:emptyWiktionaryResult(),synonyms:emptyCeecSuggestions(),collocations:emptyCeecSuggestions(),translation:"",errors:{dictionary:true,wiktionary:true,synonyms:true,collocations:noun,translation:true}};showOnlineResult(result,entry,index)}}
+        state.onlineCache.set(cacheKey,result);if(request===state.onlineRequest)showOnlineResult(result,entry,index);
+      }catch(error){if(error&&error.name==="AbortError")return;if(request===state.onlineRequest){const dictionary=emptyDictionaryResult(),result={dictionary,examples:rankExampleCandidates(entry,emptyExampleSource(),emptyExampleSource(),emptyExampleSource(),dictionary),synonyms:emptyCeecSuggestions(),collocations:emptyCeecSuggestions(),translation:"",errors:{dictionary:true,wiktionary:true,freeDictionary:true,tatoeba:true,wiktionaryAudio:true,synonyms:true,collocations:true,translation:true,exampleTranslation:true}};showOnlineResult(result,entry,index)}}
     }
 
     function toggleFavorite(word,index){state.favorites.has(word)?state.favorites.delete(word):state.favorites.add(word);saveFavorites();renderDetail(VOCABULARY[index],index);applyFilters();showToast(state.favorites.has(word)?"已加入收藏":"已取消收藏")}
-    function refreshSpeechVoices(){
-      if(!("speechSynthesis" in window))return[];
-      const voices=window.speechSynthesis.getVoices()||[];if(voices.length)state.voices=voices;return state.voices;
-    }
-    function preferredUsVoice(){
-      const voices=refreshSpeechVoices();
-      const lang=voice=>String(voice.lang||"").replace("_","-").toLowerCase();
-      return voices.find(voice=>lang(voice)==="en-us"&&voice.localService)||voices.find(voice=>lang(voice)==="en-us")||voices.find(voice=>lang(voice).startsWith("en-")&&voice.localService)||voices.find(voice=>lang(voice).startsWith("en"))||null;
+    function getAudioElement(){
+      if(state.audioElement)return state.audioElement;const audio=document.createElement("audio");audio.id="sharedPronunciationPlayer";audio.preload="none";audio.hidden=true;audio.setAttribute("playsinline","");audio.setAttribute("webkit-playsinline","");document.body.appendChild(audio);state.audioElement=audio;return audio;
     }
     function stopPronunciation(){
-      const audio=state.currentAudio;state.currentAudio=null;if(audio){try{audio.pause();audio.removeAttribute("src");audio.load()}catch{}}
-      state.currentUtterance=null;
-      if("speechSynthesis" in window){try{window.speechSynthesis.cancel()}catch{}}
-      document.querySelectorAll(".speak.speaking").forEach(button=>button.classList.remove("speaking"));
+      state.audioSession++;const audio=state.currentAudio;state.currentAudio=null;if(audio){audio.onerror=null;audio.onended=null;audio.pause();try{audio.currentTime=0}catch{}}
+      if("speechSynthesis" in window)window.speechSynthesis.cancel();
+      document.querySelectorAll(".speaking").forEach(button=>button.classList.remove("speaking"));
     }
-    function playBrowserUs(word,button,notice=false,onFailure=null){
+    function playBrowserVoice(text,button,notice=true){
       stopPronunciation();
-      if(!("speechSynthesis" in window)||typeof SpeechSynthesisUtterance==="undefined"){
-        if(onFailure)onFailure(new Error("speechSynthesis unavailable"));else showToast("此瀏覽器不支援系統語音發音");return;
-      }
-      const synth=window.speechSynthesis,utterance=new SpeechSynthesisUtterance(spokenForm(word));
-      utterance.lang="en-US";utterance.rate=.82;utterance.pitch=1;utterance.volume=1;
-      const voice=preferredUsVoice();if(voice)utterance.voice=voice;
-      state.currentUtterance=utterance;if(button)button.classList.add("speaking");
-      const cleanup=()=>{if(state.currentUtterance===utterance)state.currentUtterance=null;if(button&&button.isConnected)button.classList.remove("speaking")};
-      utterance.onstart=()=>{if(button&&button.isConnected)button.classList.add("speaking")};
-      utterance.onend=cleanup;
-      utterance.onerror=event=>{cleanup();if(onFailure)onFailure(event);else if(!event||event.error!=="canceled")showToast("系統語音無法播放，請再按一次")};
-      try{
-        if(synth.paused)synth.resume();
-        synth.speak(utterance);
-        if(notice)showToast("已切換為瀏覽器／系統 en-US 語音");
-      }catch(error){cleanup();if(onFailure)onFailure(error);else showToast("系統語音無法播放")}
+      if(!("speechSynthesis" in window)||!("SpeechSynthesisUtterance" in window)){showToast("此瀏覽器不支援語音發音");return}
+      const utterance=new SpeechSynthesisUtterance(String(text||"").replace(/[“”]/g,'"'));utterance.lang="en-US";utterance.rate=.82;
+      const voices=window.speechSynthesis.getVoices(),english=voice=>String(voice.lang||"").replace("_","-").toLowerCase();const voice=voices.find(v=>v.localService&&english(v)==="en-us")||voices.find(v=>english(v)==="en-us")||voices.find(v=>english(v).startsWith("en"));if(voice)utterance.voice=voice;
+      if(button){button.classList.add("speaking");utterance.onend=utterance.onerror=()=>button.classList.remove("speaking")}
+      if(window.speechSynthesis.paused)window.speechSynthesis.resume();window.speechSynthesis.speak(utterance);if(notice)showToast("真人音檔不可用，已切換裝置英文語音");
     }
-    function playRemoteAudio(url,button,onFailure){
-      stopPronunciation();
-      const audio=new Audio();let settled=false;state.currentAudio=audio;audio.preload="auto";audio.src=url;if(button)button.classList.add("speaking");
-      const finish=()=>{if(settled)return;settled=true;if(state.currentAudio===audio)state.currentAudio=null;if(button&&button.isConnected)button.classList.remove("speaking")};
-      const fail=error=>{if(settled)return;settled=true;if(state.currentAudio===audio)state.currentAudio=null;if(button&&button.isConnected)button.classList.remove("speaking");try{audio.pause()}catch{};if(onFailure)onFailure(error)};
-      audio.addEventListener("ended",finish,{once:true});audio.addEventListener("error",fail,{once:true});audio.addEventListener("abort",fail,{once:true});
-      try{const promise=audio.play();if(promise&&typeof promise.catch==="function")promise.catch(fail)}catch(error){fail(error)}
+    function playAudioCandidates(candidates,fallbackText,button,notice=true){
+      const playable=rankAudioCandidates(candidates);if(!playable.length){playBrowserVoice(fallbackText,button,notice);return}
+      stopPronunciation();const audio=getAudioElement(),session=state.audioSession;state.currentAudio=audio;if(button)button.classList.add("speaking");let position=0,attempt=0;
+      const finish=()=>{if(session!==state.audioSession)return;state.currentAudio=null;audio.onerror=null;audio.onended=null;if(button&&button.isConnected)button.classList.remove("speaking")};
+      const tryNext=()=>{if(session!==state.audioSession)return;if(position>=playable.length){finish();playBrowserVoice(fallbackText,button,notice);return}const candidate=playable[position++],token=++attempt;let failed=false;const fail=()=>{if(failed||token!==attempt||session!==state.audioSession)return;failed=true;tryNext()};audio.onerror=fail;audio.onended=finish;audio.src=candidate.url;audio.load();const promise=audio.play();if(promise&&typeof promise.catch==="function")promise.catch(fail)};
+      tryNext();
     }
     function speakWord(word,button){
-      const key=apiLookupWord(word).toLowerCase(),online=state.onlineCache.get(key),dictionary=online&&online.dictionary;
-      // 重要：沒有真人音檔時，直接在 click 的同一個呼叫堆疊啟動系統語音，
-      // 避免 Safari / Chrome 因非同步備援而失去 user activation。
-      if(dictionary&&dictionary.usAudio){
-        playRemoteAudio(dictionary.usAudio,button,()=>playBrowserUs(word,button,true));
-        return;
-      }
-      playBrowserUs(word,button,false);
+      const lookup=apiLookupWord(word).toLowerCase(),key=lookup+"|"+normalizeCeecWord(word),online=state.onlineCache.get(key),dictionary=online&&online.dictionary;
+      if(dictionary&&dictionary.audioCandidates&&dictionary.audioCandidates.length){playAudioCandidates(dictionary.audioCandidates,spokenForm(word),button,true);return}
+      playBrowserVoice(spokenForm(word),button,false);
     }
 
     function setupDaily(){const enriched=VOCABULARY.filter(entry=>entry.example);const pool=enriched.length?enriched:VOCABULARY;const now=new Date(),seed=Number(`${now.getFullYear()}${now.getMonth()+1}${now.getDate()}`),entry=pool[seed%pool.length],index=VOCABULARY.indexOf(entry);const button=byId("dailyButton");button.innerHTML=`<span class="dot l${entry.level}">${entry.level}</span><strong>${escapeHtml(entry.word)}</strong><small>${escapeHtml(entry.meaning)}</small><span class="arrow">→</span>`;button.addEventListener("click",()=>selectEntry(index,true))}
@@ -411,10 +691,7 @@
     byId("allTab").addEventListener("click",()=>{state.favoritesOnly=false;byId("allTab").classList.add("on");byId("favoriteTab").classList.remove("on");applyFilters()});
     byId("favoriteTab").addEventListener("click",()=>{state.favoritesOnly=true;byId("favoriteTab").classList.add("on");byId("allTab").classList.remove("on");applyFilters()});
     document.addEventListener("keydown",event=>{if(event.key==="/"&&!/INPUT|TEXTAREA/.test(document.activeElement.tagName)){event.preventDefault();searchInput.focus()}if(event.key==="Escape"&&document.activeElement===searchInput){searchInput.value="";state.query="";applyFilters();searchInput.blur()}});
-    if("speechSynthesis" in window){
-      refreshSpeechVoices();
-      window.speechSynthesis.addEventListener("voiceschanged",refreshSpeechVoices);
-    }
+    if("speechSynthesis" in window)window.speechSynthesis.getVoices();
 
     buildLevelFilters();byId("totalCount").textContent=VOCABULARY.length.toLocaleString();
     state.selectedIndex=Math.max(0,VOCABULARY.findIndex(entry=>entry.word==="challenge"));
