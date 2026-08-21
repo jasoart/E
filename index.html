@@ -4,8 +4,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="color-scheme" content="light">
-  <meta name="description" content="依 115 學年度起現行命題方向整理，內建 6,012 個大考中心詞條、智慧搜尋、真人發音、例句篩選與搭配詞分級的學測英文詞典">
-  <title>學測英文專用詞典｜115 現行命題智慧版</title>
+  <meta name="description" content="依 115 學年度起現行命題方向整理，內建 6,012 個大考中心詞條、超過 200 組學測搭配考點、離線混合搜尋、互動練習、真人發音與例句篩選的學測英文詞典">
+  <title>學測英文專用詞典｜V2 AI 混合檢索強化版</title>
   <style>
     :root {
       --ink:#17352d; --ink2:#29483f; --paper:#f6f1e7; --paper2:#e9e0cf;
@@ -37,6 +37,7 @@
     .tools{max-width:1440px;margin:auto;padding:13px 46px;border-top:1px solid var(--line);border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:70px}
     .levels{display:flex;gap:8px;align-items:center}.filter-label{font-size:10px;font-weight:900;letter-spacing:.15em;color:var(--muted);margin-right:7px}.level-btn{--level:var(--ink);--level-soft:var(--paper2);height:36px;min-width:47px;padding:0 12px;border-radius:999px;border:1px solid var(--level);background:var(--level-soft);color:var(--level);font-size:11px;font-weight:900;opacity:.66;transition:transform .15s,box-shadow .15s,opacity .15s}.level-btn:hover{opacity:1;transform:translateY(-1px)}.level-btn.on{color:white;background:var(--level);opacity:1;box-shadow:0 5px 13px color-mix(in srgb,var(--level) 24%,transparent)}.level-btn[data-level="1"]{--level:var(--l1);--level-soft:var(--l1s)}.level-btn[data-level="2"]{--level:var(--l2);--level-soft:var(--l2s)}.level-btn[data-level="3"]{--level:var(--l3);--level-soft:var(--l3s)}.level-btn[data-level="4"]{--level:var(--l4);--level-soft:var(--l4s)}.level-btn[data-level="5"]{--level:var(--l5);--level-soft:var(--l5s)}.level-btn[data-level="6"]{--level:var(--l6);--level-soft:var(--l6s)}
     .tabs{padding:4px;background:rgba(23,53,45,.07);border-radius:999px;display:flex}.tabs button{border:0;background:transparent;border-radius:999px;padding:8px 15px;font-size:12px;color:var(--muted)}.tabs button.on{background:var(--white);color:var(--ink);font-weight:750;box-shadow:0 2px 8px rgba(23,53,45,.08)}
+    .ai-strip{max-width:1440px;margin:auto;padding:18px 46px 0}.ai-strip-inner{border:1px solid var(--line);border-radius:15px;background:rgba(255,253,247,.72);padding:14px 16px;display:grid;grid-template-columns:auto 1fr;gap:10px 18px;align-items:center}.ai-label{display:inline-flex;align-items:center;gap:7px;font-size:9px;font-weight:950;letter-spacing:.09em}.ai-label:before{content:"";width:8px;height:8px;border-radius:50%;background:var(--coral);box-shadow:0 0 0 4px rgba(239,118,95,.13)}.ai-method{margin:0;color:var(--muted);font-size:9px;line-height:1.65}.ai-method strong{color:var(--ink)}.category-filters,.quick-searches{grid-column:1/-1;display:flex;flex-wrap:wrap;gap:6px}.category-btn,.query-chip{min-height:29px;border:1px solid var(--line);border-radius:999px;background:var(--white);padding:5px 10px;font-size:9px;font-weight:800}.category-btn:hover,.query-chip:hover{border-color:var(--ink);background:var(--acid)}.category-btn.on{border-color:var(--ink);background:var(--ink);color:white}.category-filters[hidden]{display:none}.quick-searches:before{content:"試搜";align-self:center;color:var(--muted);font-size:8px;font-weight:950;letter-spacing:.12em;margin-right:2px}
     .grid{max-width:1440px;margin:auto;padding:34px 46px 68px;display:grid;grid-template-columns:minmax(330px,.78fr) minmax(520px,1.22fr);gap:32px}
     .panel,.detail{background:rgba(255,253,247,.86);border:1px solid var(--line);backdrop-filter:blur(12px)}.panel{align-self:start;overflow:hidden;border-radius:18px;box-shadow:0 14px 42px rgba(36,55,44,.07)}.panel-head{height:74px;border-bottom:1px solid var(--line);padding:17px 22px;display:flex;align-items:end;justify-content:space-between}.panel-head p{margin:0;color:var(--muted);font-size:9px;font-weight:900;letter-spacing:.16em}.panel-head strong{display:block;font:500 24px Georgia,serif;margin-top:3px}.panel-head>span{font-size:9px;color:var(--muted)}
     .list{height:650px;overflow:auto;scrollbar-color:rgba(23,53,45,.25) transparent;scrollbar-width:thin}.row{--level:var(--ink);--level-soft:var(--paper2);min-height:70px;width:100%;display:flex;align-items:center;text-align:left;border:0;border-left:4px solid var(--level);border-bottom:1px solid rgba(23,53,45,.1);padding:10px 17px 10px 14px;background:linear-gradient(90deg,var(--level-soft),transparent 39%);transition:padding .15s,background .15s,color .15s}.row:hover{background:linear-gradient(90deg,var(--level-soft),rgba(217,255,114,.2));padding-left:19px}.row.selected{background:linear-gradient(110deg,var(--level),var(--ink) 78%);color:white;border-left-color:var(--acid)}
@@ -54,31 +55,31 @@
     .exam-profile{margin:0 0 13px;padding:17px 18px;border:1px solid var(--line);border-radius:15px;background:linear-gradient(125deg,var(--level-soft),var(--white) 70%)}.profile-head{display:flex;align-items:center;gap:8px;flex-wrap:wrap}.profile-priority{padding:5px 8px;border-radius:999px;background:var(--level);color:white;font-size:8px;font-weight:950;letter-spacing:.05em}.profile-head strong{font-size:13px}.profile-modes{display:flex;flex-wrap:wrap;gap:6px;margin:11px 0}.profile-mode{padding:5px 8px;border:1px solid var(--level);border-radius:999px;background:var(--white);color:var(--level);font-size:8px;font-weight:850}.profile-action{margin:0;color:var(--ink2);font-size:10px;line-height:1.7}.profile-source{margin:8px 0 0;color:var(--muted);font-size:8px;line-height:1.55}
     .example{background:var(--ink);color:white;padding:23px 25px;position:relative;overflow:hidden;border-radius:15px}.example:after{content:"“";position:absolute;right:14px;top:-12px;font:140px/1 Georgia,serif;color:rgba(217,255,114,.09)}.example .kicker{color:var(--acid)}.filter-legend{display:flex;flex-wrap:wrap;gap:6px;margin:-2px 0 15px;position:relative;z-index:1}.filter-legend span{padding:4px 7px;border:1px solid rgba(255,255,255,.2);border-radius:999px;color:rgba(255,255,255,.72);font-size:8px;font-weight:800}.example-list{display:grid;gap:11px;position:relative;z-index:1}.example-list.loading{opacity:.66;animation:examplePulse .8s infinite alternate}.example-loading{margin:3px 0 5px;font:17px/1.6 Georgia,serif}.gold-example{padding:16px 17px;border:1px solid rgba(255,255,255,.18);border-left:4px solid var(--acid);border-radius:12px;background:rgba(255,255,255,.065)}.gold-head{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:9px}.gold-rank{font-size:8px;font-weight:950;letter-spacing:.13em;color:var(--acid)}.gold-score{min-width:55px;border-radius:999px;background:var(--acid);color:var(--ink);padding:5px 8px;text-align:center;font-size:9px;font-weight:950}.gold-example blockquote{font:18px/1.65 Georgia,serif;margin:0}.gold-example footer{max-width:none;margin:10px 0 0;padding:0;border:0;display:block;color:rgba(255,255,255,.56);font-size:8px}.filter-tags{display:flex;flex-wrap:wrap;gap:5px;margin-top:11px}.filter-tag{padding:4px 7px;border-radius:999px;background:rgba(255,255,255,.1);color:rgba(255,255,255,.82);font-size:8px;font-weight:750}.filter-tag:first-child{background:rgba(217,255,114,.17);color:var(--acid)}.fallback-example{padding:16px 17px;border:1px dashed rgba(255,255,255,.25);border-radius:12px}.fallback-example strong{display:block;margin-bottom:8px;color:var(--acid);font-size:9px;letter-spacing:.08em}.fallback-example blockquote{font:17px/1.6 Georgia,serif;margin:0}.example>p:last-child{margin:12px 0 0;color:rgba(255,255,255,.66);font-size:10px;line-height:1.6;position:relative;z-index:1}.example a{color:var(--acid);text-underline-offset:3px}@keyframes examplePulse{to{opacity:1}}
     .example-tools{display:flex;flex-wrap:wrap;gap:6px;margin-top:12px}.example-tool{min-height:28px;border:1px solid rgba(255,255,255,.25);border-radius:999px;background:rgba(255,255,255,.08);color:white;padding:5px 9px;font-size:8px;font-weight:850}.example-tool:hover,.example-tool.active,.example-tool.speaking{border-color:var(--acid);background:rgba(217,255,114,.16);color:var(--acid)}.example-translation{margin:12px 0 0;padding:10px 12px;border-radius:9px;background:rgba(217,255,114,.11);color:rgba(255,255,255,.9);font-size:11px;line-height:1.65}.example-translation strong{display:inline-block;margin-right:8px;color:var(--acid);font-size:8px;letter-spacing:.08em}.example-translation.not-sent{background:rgba(255,255,255,.05);color:rgba(255,255,255,.5)}.example-source{display:inline-block;margin-top:10px;color:rgba(255,255,255,.58);font-size:8px;line-height:1.55}.example-source a{color:var(--acid)}
-    .learning-grid{display:grid;grid-template-columns:1fr 1fr;gap:13px;margin-top:13px}.study-card{min-height:145px;border:1px solid var(--line);border-radius:15px;background:var(--white);padding:19px 20px}.study-card.cloze{border-top:5px solid var(--coral)}.study-card.collocation{border-top:5px solid var(--level)}.study-card.exam-points{grid-column:1/-1;border-top:5px solid var(--acid);background:linear-gradient(135deg,#fff 0%,#f8ffe5 100%)}.study-card .card-note{margin:-4px 0 13px;color:var(--muted);font-size:9px;line-height:1.55}.exam-point-list{display:grid;gap:9px}.exam-pattern{display:grid;grid-template-columns:minmax(190px,.8fr) 1fr;gap:10px;align-items:start;padding:11px 12px;border:1px solid var(--line);border-radius:10px;background:rgba(255,255,255,.8)}.exam-pattern code{font:800 12px/1.55 ui-monospace,SFMono-Regular,Consolas,monospace;color:var(--level);white-space:normal}.exam-pattern span{font-size:11px;line-height:1.65}.exam-trap{margin:11px 0 0;padding:10px 12px;border-left:4px solid var(--coral);background:#fff1ec;color:var(--ink2);font-size:10px;line-height:1.65}.exam-source{margin:10px 0 0;color:var(--muted);font-size:8px;line-height:1.6}.exam-source a{color:var(--level);font-weight:800;text-underline-offset:2px}.chips{display:flex;flex-wrap:wrap;gap:7px}.word-chip{display:inline-flex;align-items:center;gap:5px;min-height:30px;border-radius:999px;padding:6px 8px 6px 10px;background:#f4eee2;border:1px solid var(--line);font:700 12px Georgia,serif}.word-chip.synonym:before{content:"↔";margin-right:1px;color:var(--coral);font:900 10px system-ui}.word-chip.collocation{background:var(--level-soft);border-color:var(--level);color:var(--ink)}.word-chip.collocation strong{color:var(--level)}.collocation-confidence{padding:3px 5px;border-radius:999px;font:900 7px/1 ui-sans-serif,system-ui;letter-spacing:.04em}.confidence-high{background:var(--level);color:white}.confidence-medium{background:#fff0ba;color:#6f4a00}.confidence-explore{background:var(--paper2);color:var(--muted)}.ceec-level{display:inline-grid;place-items:center;min-width:25px;height:19px;padding:0 5px;border-radius:999px;color:white;font:900 8px/1 ui-sans-serif,system-ui;letter-spacing:.03em}.ceec-level.level-1{background:var(--l1)}.ceec-level.level-2{background:var(--l2)}.ceec-level.level-3{background:var(--l3)}.ceec-level.level-4{background:var(--l4)}.ceec-level.level-5{background:var(--l5)}.ceec-level.level-6{background:var(--l6)}.ceec-filter-status{flex-basis:100%;margin:2px 0 0;color:var(--muted);font-size:8px;line-height:1.5}.ceec-filter-status strong{color:var(--ink)}.card-empty{margin:3px 0;color:var(--muted);font-size:11px;line-height:1.6}.service-actions{margin-top:15px;padding:11px 13px;border-radius:10px;background:rgba(23,53,45,.055);display:flex;justify-content:space-between;align-items:center;gap:12px;color:var(--muted);font-size:9px}.service-actions button{border:1px solid var(--line);border-radius:999px;background:var(--white);padding:6px 9px;font-size:9px;font-weight:800}.service-actions button[hidden]{display:none}
+    .learning-grid{display:grid;grid-template-columns:1fr 1fr;gap:13px;margin-top:13px}.study-card{min-height:145px;border:1px solid var(--line);border-radius:15px;background:var(--white);padding:19px 20px}.study-card.cloze{border-top:5px solid var(--coral)}.study-card.collocation{border-top:5px solid var(--level)}.study-card.exam-points{grid-column:1/-1;border-top:5px solid var(--acid);background:linear-gradient(135deg,#fff 0%,#f8ffe5 100%)}.study-card .card-note{margin:-4px 0 13px;color:var(--muted);font-size:9px;line-height:1.55}.exam-point-header{display:flex;align-items:flex-start;justify-content:space-between;gap:12px}.practice-button{flex:none;border:1px solid var(--ink);border-radius:999px;background:var(--acid);padding:7px 10px;font-size:9px;font-weight:950}.practice-button:hover{background:var(--ink);color:var(--acid)}.point-group+.point-group{margin-top:14px;padding-top:14px;border-top:1px dashed var(--line)}.point-meta{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px}.point-category,.point-priority{padding:4px 7px;border-radius:999px;font-size:8px;font-weight:900}.point-category{background:var(--level-soft);color:var(--level)}.point-priority{background:var(--ink);color:white}.exam-point-list{display:grid;gap:9px}.exam-pattern{display:grid;grid-template-columns:minmax(190px,.8fr) 1fr;gap:10px;align-items:start;padding:11px 12px;border:1px solid var(--line);border-radius:10px;background:rgba(255,255,255,.8)}.exam-pattern code{font:800 12px/1.55 ui-monospace,SFMono-Regular,Consolas,monospace;color:var(--level);white-space:normal}.exam-pattern span{font-size:11px;line-height:1.65}.exam-trap{margin:9px 0 0;padding:10px 12px;border-left:4px solid var(--coral);background:#fff1ec;color:var(--ink2);font-size:10px;line-height:1.65}.collocation-practice{margin-top:14px;padding:15px;border:1px solid var(--ink);border-radius:12px;background:var(--paper)}.collocation-practice[hidden]{display:none}.practice-kicker{margin:0 0 7px;font-size:8px;font-weight:950;letter-spacing:.12em;color:var(--coral)}.practice-question{margin:0 0 11px;font:700 15px/1.6 ui-monospace,SFMono-Regular,Consolas,monospace}.practice-options{display:flex;flex-wrap:wrap;gap:7px}.practice-option{border:1px solid var(--line);border-radius:8px;background:white;padding:7px 11px;font-size:10px;font-weight:900}.practice-option:hover{border-color:var(--ink)}.practice-option.correct{background:#dff4e7;border-color:var(--l1);color:var(--l1)}.practice-option.wrong{background:#fff0ec;border-color:var(--coral);color:#a73d31}.practice-feedback{margin:10px 0 0;font-size:10px;line-height:1.6}.practice-next{margin-top:9px;border:0;border-bottom:1px solid var(--ink);background:transparent;padding:3px 0;font-size:9px;font-weight:900}.exam-source{margin:10px 0 0;color:var(--muted);font-size:8px;line-height:1.6}.exam-source a{color:var(--level);font-weight:800;text-underline-offset:2px}.chips{display:flex;flex-wrap:wrap;gap:7px}.word-chip{display:inline-flex;align-items:center;gap:5px;min-height:30px;border-radius:999px;padding:6px 8px 6px 10px;background:#f4eee2;border:1px solid var(--line);font:700 12px Georgia,serif}.word-chip.synonym:before{content:"↔";margin-right:1px;color:var(--coral);font:900 10px system-ui}.word-chip.collocation{background:var(--level-soft);border-color:var(--level);color:var(--ink)}.word-chip.collocation strong{color:var(--level)}.collocation-confidence{padding:3px 5px;border-radius:999px;font:900 7px/1 ui-sans-serif,system-ui;letter-spacing:.04em}.confidence-high{background:var(--level);color:white}.confidence-medium{background:#fff0ba;color:#6f4a00}.confidence-explore{background:var(--paper2);color:var(--muted)}.ceec-level{display:inline-grid;place-items:center;min-width:25px;height:19px;padding:0 5px;border-radius:999px;color:white;font:900 8px/1 ui-sans-serif,system-ui;letter-spacing:.03em}.ceec-level.level-1{background:var(--l1)}.ceec-level.level-2{background:var(--l2)}.ceec-level.level-3{background:var(--l3)}.ceec-level.level-4{background:var(--l4)}.ceec-level.level-5{background:var(--l5)}.ceec-level.level-6{background:var(--l6)}.ceec-filter-status{flex-basis:100%;margin:2px 0 0;color:var(--muted);font-size:8px;line-height:1.5}.ceec-filter-status strong{color:var(--ink)}.card-empty{margin:3px 0;color:var(--muted);font-size:11px;line-height:1.6}.service-actions{margin-top:15px;padding:11px 13px;border-radius:10px;background:rgba(23,53,45,.055);display:flex;justify-content:space-between;align-items:center;gap:12px;color:var(--muted);font-size:9px}.service-actions button{border:1px solid var(--line);border-radius:999px;background:var(--white);padding:6px 9px;font-size:9px;font-weight:800}.service-actions button[hidden]{display:none}
     .twocol{display:grid;grid-template-columns:1fr 1fr}.twocol section{padding:22px 21px 22px 0;border-bottom:1px solid var(--line)}.twocol section+section{border-left:1px solid var(--line);padding-left:21px;padding-right:0}.twocol p:last-child{margin:0;font-size:13px;line-height:1.75}.source{margin:0;padding-top:17px;color:var(--muted);font-size:9px;line-height:1.6}
     .daily{max-width:1348px;margin:0 auto 60px;background:var(--coral);padding:30px 38px;display:flex;align-items:center;justify-content:space-between;gap:24px}.daily-label{font-size:9px;font-weight:900;letter-spacing:.18em}.daily h2{margin:7px 0 0;font:600 25px "Noto Serif TC",Georgia,serif}.daily button{min-width:380px;padding:16px 18px;background:var(--white);border:1px solid var(--ink);box-shadow:6px 6px 0 var(--ink);display:grid;grid-template-columns:auto minmax(130px,1fr) auto;gap:0 13px;align-items:center;text-align:left}.daily .dot{grid-row:1/span 2}.daily button strong{font:600 20px Georgia,serif}.daily button small{font-size:10px;color:var(--muted);grid-column:2;margin-top:3px}.daily button .arrow{grid-row:1/span 2;grid-column:3}
     footer{max-width:1440px;margin:auto;padding:27px 46px 35px;border-top:1px solid var(--line);display:flex;justify-content:space-between;gap:20px;color:var(--muted);font-size:9px;line-height:1.7}footer p{margin:0;max-width:760px}
     .toast{position:fixed;left:50%;bottom:24px;transform:translate(-50%,20px);background:var(--ink);color:white;padding:11px 16px;font-size:12px;box-shadow:0 8px 30px rgba(0,0,0,.2);opacity:0;pointer-events:none;transition:.2s;z-index:30}.toast.show{opacity:1;transform:translate(-50%,0)}
     @media(max-width:920px){.hero{grid-template-columns:1fr;gap:38px}.exam-metrics{grid-template-columns:1fr 1fr}.direction-layout{grid-template-columns:1fr}.grid{grid-template-columns:1fr}.detail{position:relative;top:0}.list{height:500px}.daily{margin-left:28px;margin-right:28px;flex-direction:column;align-items:stretch}.daily button{width:100%;min-width:0}}
-    @media(max-width:640px){.header{height:66px;padding:0 17px}.offline span{display:none}.hero,.exam-dashboard,.tools,.grid,footer{padding-left:17px;padding-right:17px}.hero{padding-top:35px}.hero:after{display:none}h1{font-size:44px}.search{height:66px;padding:0 16px;box-shadow:6px 7px 0 var(--ink)}.search input{font-size:18px}.stats span+span{border:0;padding:0}.exam-dashboard{padding-bottom:22px}.exam-dashboard summary{align-items:flex-start;padding:15px 16px}.current-badge{display:none}.exam-dashboard-body{padding:16px}.exam-metrics,.direction-list{grid-template-columns:1fr}.exam-metric{min-height:0}.tools{align-items:stretch;flex-direction:column}.levels{overflow:auto;padding-bottom:3px}.level-btn{min-width:42px}.tabs{align-self:flex-start}.grid{padding-top:22px;gap:22px}.detail{padding:31px 19px 21px}.title-row{align-items:flex-start}.title-row h2{font-size:42px}.speak{width:56px;height:56px}.translation-live{grid-template-columns:1fr}.learning-grid{grid-template-columns:1fr}.exam-pattern{grid-template-columns:1fr}.twocol{grid-template-columns:1fr}.twocol section{padding-right:0}.twocol section+section{border-left:0;padding-left:0}.example{padding:20px 16px}.gold-example{padding:14px 13px}.gold-example blockquote{font-size:16px}.daily{margin:0 17px 46px;padding:24px 19px}.daily h2{font-size:21px}footer{flex-direction:column}}
+    @media(max-width:640px){.header{height:66px;padding:0 17px}.offline span{display:none}.hero,.exam-dashboard,.tools,.ai-strip,.grid,footer{padding-left:17px;padding-right:17px}.hero{padding-top:35px}.hero:after{display:none}h1{font-size:44px}.search{height:66px;padding:0 16px;box-shadow:6px 7px 0 var(--ink)}.search input{font-size:18px}.stats span+span{border:0;padding:0}.exam-dashboard{padding-bottom:22px}.exam-dashboard summary{align-items:flex-start;padding:15px 16px}.current-badge{display:none}.exam-dashboard-body{padding:16px}.exam-metrics,.direction-list{grid-template-columns:1fr}.exam-metric{min-height:0}.tools{align-items:stretch;flex-direction:column}.levels{overflow:auto;padding-bottom:3px}.tabs{align-self:flex-start;max-width:100%;overflow:auto}.tabs button{white-space:nowrap}.ai-strip-inner{grid-template-columns:1fr}.ai-method{grid-column:1}.level-btn{min-width:42px}.grid{padding-top:22px;gap:22px}.detail{padding:31px 19px 21px}.title-row{align-items:flex-start}.title-row h2{font-size:42px}.speak{width:56px;height:56px}.translation-live{grid-template-columns:1fr}.learning-grid{grid-template-columns:1fr}.exam-pattern{grid-template-columns:1fr}.exam-point-header{display:block}.practice-button{margin:0 0 12px}.twocol{grid-template-columns:1fr}.twocol section{padding-right:0}.twocol section+section{border-left:0;padding-left:0}.example{padding:20px 16px}.gold-example{padding:14px 13px}.gold-example blockquote{font-size:16px}.daily{margin:0 17px 46px;padding:24px 19px}.daily h2{font-size:21px}footer{flex-direction:column}}
     @media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important;animation:none!important}}
   </style>
 </head>
 <body>
   <header class="header">
     <div class="brand"><span class="mark">G</span><span class="brand-copy"><strong>學測英文字典</strong><small>GSAT LEXICON</small></span></div>
-    <div class="offline"><i aria-hidden="true"></i><span>6,012 詞條離線 · 多來源學習工具連線</span></div>
+    <div class="offline"><i aria-hidden="true"></i><span>6,012 詞條離線 · 混合檢索與多來源學習工具</span></div>
   </header>
 
   <section class="hero" id="top">
     <div>
       <p class="eyebrow"><span>115 學年度起現行方向</span>大考中心六級詞彙</p>
       <h1>查一個字，<br><em>連考點一起記。</em></h1>
-      <p class="lead">以大考中心現行考試說明為主軸：搜尋可辨識拼字誤差、中文與搭配句型；真人發音優先；例句依 CEEC 詞彙覆蓋、語境線索、搭配正確性與來源可信度排序，通過門檻的最佳句才送 Google 翻譯。</p>
+      <p class="lead">以大考中心現行考試說明為主軸：離線 AI 混合搜尋融合精確字面、BM25 關鍵詞、概念擴展、拼字容錯與 RRF 排序；常見搭配按句型分類並可立即測驗。真人發音優先，例句依 CEEC 詞彙覆蓋、語境線索、搭配正確性與來源可信度排序。</p>
     </div>
     <div class="search-wrap">
-      <label class="search"><span class="magnify" aria-hidden="true"></span><input id="searchInput" type="search" autocomplete="off" placeholder="搜尋英文、中文或搭配…" aria-label="搜尋詞彙"><button id="clearSearch" class="clear" type="button" aria-label="清除搜尋" hidden>×</button><span id="searchKey" class="key">/</span></label>
-      <div class="stats"><span><strong id="totalCount">0</strong> 個官方詞條</span><span><strong>6</strong> 個詞彙級別</span><span><strong>42</strong> 組教師常提醒搭配</span><span>核心資料儲存在本檔案</span></div>
+      <label class="search"><span class="magnify" aria-hidden="true"></span><input id="searchInput" type="search" autocomplete="off" placeholder="搜尋單字、中文概念或句型（例：導致）…" aria-label="搜尋詞彙與搭配"><button id="clearSearch" class="clear" type="button" aria-label="清除搜尋" hidden>×</button><span id="searchKey" class="key">/</span></label>
+      <div class="stats"><span><strong id="totalCount">0</strong> 個官方詞條</span><span><strong>6</strong> 個詞彙級別</span><span><strong id="collocationCount">0</strong> 組學測常見搭配</span><span>核心資料儲存在本檔案</span></div>
     </div>
   </section>
 
@@ -130,7 +131,16 @@
 
   <section class="tools" aria-label="詞彙篩選">
     <div class="levels" id="levelFilters"><span class="filter-label">級別</span></div>
-    <div class="tabs"><button id="allTab" class="on" type="button">全部</button><button id="favoriteTab" type="button">收藏 <span id="favoriteCount"></span></button></div>
+    <div class="tabs"><button id="allTab" class="on" type="button">全部</button><button id="collocationTab" type="button">搭配考點 <span id="collocationTabCount"></span></button><button id="favoriteTab" type="button">收藏 <span id="favoriteCount"></span></button></div>
+  </section>
+
+  <section class="ai-strip" aria-label="離線 AI 搜尋說明與快速搜尋">
+    <div class="ai-strip-inner">
+      <span class="ai-label">V2 AI · LOCAL HYBRID</span>
+      <p class="ai-method"><strong>四路檢索：</strong>字面權重、BM25 稀疏相關、中文概念擴展、拼字容錯，再以 RRF 融合；點選結果會只在本機形成輕量偏好訊號。</p>
+      <div class="category-filters" id="categoryFilters" hidden aria-label="搭配分類"></div>
+      <div class="quick-searches" id="quickSearches"><button class="query-chip" type="button" data-query="導致">導致</button><button class="query-chip" type="button" data-query="習慣於">習慣於</button><button class="query-chip" type="button" data-query="阻止某人做">阻止某人做</button><button class="query-chip" type="button" data-query="be responsible for">responsible for</button><button class="query-chip" type="button" data-query="動名詞">動名詞</button></div>
+    </div>
   </section>
 
   <main class="grid">
@@ -149,7 +159,7 @@
 
   <footer>
     <p>高中英文參考詞彙表 © 財團法人大學入學考試中心基金會。本工具供非營利學習使用；詞彙級別與詞性依原表整理，中文釋義與音標含 ECDICT（MIT）資料。</p>
-    <p>線上補充來源：<a href="https://dictionaryapi.dev/" target="_blank" rel="noreferrer">DictionaryAPI</a> · <a href="https://en.wiktionary.org/" target="_blank" rel="noreferrer">Wiktionary</a>／<a href="https://freedictionaryapi.com/" target="_blank" rel="noreferrer">FreeDictionaryAPI</a>（CC BY-SA 4.0）· <a href="https://tatoeba.org/" target="_blank" rel="noreferrer">Tatoeba</a>（各句／錄音授權依回傳資料）· <a href="https://www.datamuse.com/api/" target="_blank" rel="noreferrer">Datamuse</a> · Google 翻譯免金鑰端點。真人錄音失敗時才使用裝置英文語音；CEEC-115 v2 分數與搭配信心皆為透明的學習用啟發式判斷，不是大考中心官方評分或頻率。</p>
+    <p>線上補充來源：<a href="https://dictionaryapi.dev/" target="_blank" rel="noreferrer">DictionaryAPI</a> · <a href="https://en.wiktionary.org/" target="_blank" rel="noreferrer">Wiktionary</a>／<a href="https://freedictionaryapi.com/" target="_blank" rel="noreferrer">FreeDictionaryAPI</a>（CC BY-SA 4.0）· <a href="https://tatoeba.org/" target="_blank" rel="noreferrer">Tatoeba</a> · <a href="https://www.datamuse.com/api/" target="_blank" rel="noreferrer">Datamuse</a>。檢索架構參考 <a href="https://github.com/deepset-ai/haystack" target="_blank" rel="noreferrer">Haystack</a> 的混合檢索、<a href="https://github.com/qdrant/qdrant" target="_blank" rel="noreferrer">Qdrant</a> 與 <a href="https://github.com/run-llama/llama_index" target="_blank" rel="noreferrer">LlamaIndex</a> 的 RRF 融合，以及 <a href="https://github.com/huggingface/transformers.js" target="_blank" rel="noreferrer">Transformers.js</a> 的瀏覽器端 AI 思路；本檔採免下載模型的透明輕量實作。所有評分、優先級與搭配信心均為學習用啟發式判斷，不是大考中心官方頻率。</p>
   </footer>
   <div class="toast" id="toast" role="status"></div>
 
@@ -160,6 +170,8 @@
     const LEVELS = [1,2,3,4,5,6];
     const MAX_RESULTS = 60;
     const FAVORITES_KEY = "gsat-standalone-favorites-v1";
+    const SEARCH_FEEDBACK_KEY = "gsat-v2-search-feedback-v1";
+    const PRACTICE_KEY = "gsat-v2-collocation-practice-v1";
     const API_ENDPOINTS = Object.freeze({
       dictionary:"https://api.dictionaryapi.dev/api/v2/entries/en/",
       wiktionary:"https://en.wiktionary.org/api/rest_v1/page/definition/",
@@ -180,7 +192,7 @@
       referenceWeight:{multipleChoice:62,mixed:10,nonSelection:28},
       abilities:["字形語意搭配","篇章語法與轉承","語境詞彙","篇章組織","整合理解推論","讀寫整合","中譯英","短文寫作"]
     });
-    const GSAT_COLLOCATION_GUIDE = Object.freeze([
+    const GSAT_COLLOCATION_CORE = Object.freeze([
       {keys:["satisfy","satisfied","satisfying","satisfaction","satisfactory"],patterns:[["satisfy + person / need / requirement","使某人滿意；滿足需求／條件"],["be satisfied with + N / V-ing","對……感到滿意"],["a satisfying experience / result","令人滿意的經驗／結果"]],trap:"✕ satisfy with；『人感到滿意』用 satisfied，『事物令人滿意』用 satisfying。",blocked:["satisfy with"]},
       {keys:["contribute","contribution"],patterns:[["contribute to + N / V-ing","促成；導致；對……有貢獻"],["make a contribution to + N / V-ing","對……作出貢獻"]],trap:"to 是介系詞，後接名詞或 V-ing。"},
       {keys:["lead"],patterns:[["lead to + N / V-ing","導致……"],["lead + person + to + N","帶領某人前往……"],["lead + person + to + V","促使某人做……"]],trap:"表示『導致』時，to 後不可直接接原形動詞。"},
@@ -224,9 +236,246 @@
       {keys:["associate","associated","relate","related"],patterns:[["associate A with B","把 A 與 B 聯想在一起"],["be associated / related to / with + N","與……相關"]],trap:"主動 associate A with B；被動常見 be associated with。"},
       {keys:["known","know"],patterns:[["be known for + feature","以特色聞名"],["be known as + identity","以身分／名稱聞名"],["be known to + people","為某人所知"]],trap:"for 放特色；as 放身分；to 放知情者。"}
     ]);
-    const GSAT_POINT_BY_WORD = new Map(GSAT_COLLOCATION_GUIDE.flatMap(point=>point.keys.map(key=>[key,point])));
+    const C=(category,priority,keys,patterns,trap,blocked=[])=>({category,priority,keys,patterns,trap,blocked});
+    const GSAT_COLLOCATION_EXPANSION = Object.freeze([
+      C("介系詞辨析","必熟",["abide"],[["abide by + rule / decision","遵守規則／決定"]],"abide 表『遵守』時固定搭 by。"),
+      C("介系詞辨析","常用",["abstain","avoid"],[["abstain from + N / V-ing","戒除；避免做……"]],"from 是介系詞，後接名詞或 V-ing。"),
+      C("介系詞辨析","必熟",["arise"],[["arise from / out of + cause","由……引起；起因於……"]],"arise 不及物；不說 be arisen from。"),
+      C("介系詞辨析","常用",["aspire"],[["aspire to + N","嚮往……"],["aspire to + V","立志做……"]],"to N 與 to V 都可，但結構不同。"),
+      C("介系詞辨析","必熟",["attend","attendance"],[["attend + event / school","出席活動；上學"],["attend to + person / matter","照料某人；處理事情"],["attendance at + event","出席活動"]],"attend 表『出席』直接接受詞；attend to 才是『照料／處理』。"),
+      C("介系詞辨析","必熟",["attribute"],[["attribute A to B","把 A 歸因於 B"],["A is attributed to B","A 被歸因於 B"]],"A 是結果，B 是原因。"),
+      C("介系詞辨析","必熟",["belong"],[["belong to + person / group","屬於某人／團體"]],"belong 不用進行式，也通常不用被動。"),
+      C("介系詞辨析","必熟",["blame"],[["blame + person + for + thing","因某事責怪某人"],["blame + thing + on + person","把某事歸咎於某人"],["be to blame for + N","應為……負責"]],"for 後放事情；on 後放被歸咎的人。"),
+      C("介系詞辨析","常用",["care"],[["care about + issue / person","在乎……"],["care for + person","照顧；喜歡某人"],["take care of + N","照料；處理……"]],"care about 強調重視；care for 可表照顧或喜歡。"),
+      C("介系詞辨析","常用",["comment"],[["comment on / upon + N","評論……"],["make a comment on + N","對……發表評論"]],"comment 作動詞通常不直接接受詞。"),
+      C("介系詞辨析","必熟",["complain","complaint"],[["complain to + person about + thing","向某人抱怨某事"],["make a complaint about + N","對……提出抱怨"]],"to 後放人；about 後放事情。"),
+      C("介系詞辨析","必熟",["concentrate","concentration"],[["concentrate on + N / V-ing","專注於……"],["concentration on + N","對……的專注"]],"on 不可省略。"),
+      C("介系詞辨析","常用",["conform"],[["conform to / with + rule / standard","符合規則／標準"],["conform to + custom","遵從習俗"]],"正式英文常用 conform to。"),
+      C("介系詞辨析","進階",["consent"],[["consent to + N / V-ing","同意……"],["with / without consent","經／未經同意"]],"to 是介系詞，後接 V-ing。"),
+      C("介系詞辨析","常用",["correspond","correspondence"],[["correspond with + person","與某人通信"],["correspond to + thing","與……相符／相當"],["in correspondence with + person","與某人通信中"]],"with 後常接人；to 表相符。"),
+      C("介系詞辨析","必熟",["differ","difference"],[["differ from + N","與……不同"],["differ in + aspect","在某方面不同"],["tell the difference between A and B","分辨 A 與 B"]],"from 放比較對象；in 放差異面向。"),
+      C("介系詞辨析","常用",["dispose","disposal"],[["dispose of + N","處理；丟棄……"],["at one's disposal","供某人使用／支配"]],"dispose 作『處理』時要接 of。"),
+      C("介系詞辨析","常用",["dream"],[["dream of / about + N / V-ing","夢想；夢見……"],["dream that + clause","夢見／夢想……"]],"of / about 後接名詞或 V-ing。"),
+      C("介系詞辨析","常用",["emerge"],[["emerge from + place / situation","從……出現；擺脫……"],["emerge as + identity","嶄露為……"]],"from 表來源；as 表後來的身分。"),
+      C("介系詞辨析","必熟",["escape"],[["escape from + place","從某地逃脫"],["escape + danger / punishment","躲過危險／處罰"]],"escape 可直接接受詞；地點來源常搭 from。"),
+      C("介系詞辨析","常用",["excel","excellent"],[["excel in / at + subject / activity","擅長學科／活動"],["be excellent at + N / V-ing","非常擅長……"]],"excel 不及物，需接 in / at。"),
+      C("介系詞辨析","必熟",["focus"],[["focus on + N / V-ing","專注於……"],["focus A on B","把 A 集中於 B"],["the focus of + N","……的焦點"]],"focus on 的 on 不可省略。"),
+      C("介系詞辨析","常用",["graduate"],[["graduate from + school","從學校畢業"],["graduate with + degree","取得某學位畢業"]],"from 後放學校，不說 graduate school 表『從學校畢業』。"),
+      C("介系詞辨析","必熟",["interfere","interference"],[["interfere with + person / thing","妨礙；干擾……"],["interfere in + affair","干涉某事"],["interference with + N","對……的干擾"]],"with 偏妨礙；in 偏干涉。"),
+      C("介系詞辨析","必熟",["occur"],[["occur to + person","被某人想到"],["It occurs to + person + that...","某人突然想到……"]],"表示『想到』時，以事情作主詞。"),
+      C("介系詞辨析","常用",["persist","persistence"],[["persist in + N / V-ing","堅持……"],["persist with + task","堅持做某任務"]],"in 後接 V-ing，不接原形動詞。"),
+      C("介系詞辨析","必熟",["prepare","preparation"],[["prepare for + N","為……準備"],["prepare A for B","使 A 為 B 作準備"],["in preparation for + N","為了準備……"]],"prepare for 後放即將面對的事。"),
+      C("介系詞辨析","必熟",["refer","reference"],[["refer to + N","提及；指的是；查閱……"],["refer A to B","把 A 轉交給 B"],["with reference to + N","關於……"]],"refer to 的 to 不可省略。"),
+      C("介系詞辨析","常用",["refrain","restrain"],[["refrain from + N / V-ing","克制；避免做……"]],"from 後接 V-ing；restrain 則常用 restrain person from V-ing。"),
+      C("介系詞辨析","必熟",["respond","response"],[["respond to + N","回應……"],["in response to + N","作為對……的回應"]],"respond 不直接接受詞；response 後也搭 to。"),
+      C("介系詞辨析","常用",["specialize","specialist"],[["specialize in + field","專攻某領域"],["a specialist in + field","某領域的專家"]],"領域前搭 in。"),
+      C("介系詞辨析","必熟",["stem"],[["stem from + cause","源自……"],["stem the flow / spread of + N","遏止……的流動／擴散"]],"stem from＝源自；及物 stem＝遏止。"),
+      C("介系詞辨析","常用",["subscribe","subscription"],[["subscribe to + service / view","訂閱服務；贊同觀點"],["a subscription to + service","服務的訂閱"]],"to 後放訂閱項目或贊同的觀點。"),
+      C("介系詞辨析","必熟",["succeed","success"],[["succeed in + N / V-ing","成功做到……"],["succeed to + title / position","繼承頭銜／職位"],["have success in + N / V-ing","在……方面成功"]],"表『成功做』用 in V-ing；succeed to 是『繼承』。"),
+      C("介系詞辨析","必熟",["suffer","suffering"],[["suffer from + illness / problem","患有；受……之苦"],["suffer + loss / damage","遭受損失／損害"]],"疾病常接 from；loss 等可直接作受詞。"),
+      C("介系詞辨析","常用",["sympathize","sympathy"],[["sympathize with + person","同情某人"],["have / feel sympathy for + person","對某人感到同情"]],"動詞搭 with；名詞 sympathy 常搭 for。"),
+      C("介系詞辨析","必熟",["translate","translation"],[["translate A into B","把 A 翻成 B"],["translate from A into B","由 A 譯成 B"],["translate into + result","轉化為某結果"]],"into 後放譯入語言或轉化結果。"),
+      C("介系詞辨析","必熟",["warn","warning"],[["warn + person + of / about + danger","警告某人有危險"],["warn + person + against + N / V-ing","告誡某人不要……"],["warn + person + not to + V","警告某人勿做……"]],"against 後接 V-ing；not to V 也常考。"),
+      C("介系詞辨析","必熟",["aim"],[["aim at + N / V-ing","以……為目標"],["aim to + V","旨在做……"],["be aimed at + N / V-ing","目的是……"]],"at 後接 V-ing；to 後接原形動詞。"),
+      C("介系詞辨析","常用",["appeal"],[["appeal to + person","吸引某人；向某人呼籲"],["appeal for + aid / calm","呼籲援助／冷靜"],["appeal against + decision","對決定提出上訴"]],"to 放對象；for 放所求事物。"),
+
+      C("形容詞搭配","必熟",["absent","absence"],[["be absent from + place / event","缺席……"],["in the absence of + N","在缺少……時"]],"absent 後搭 from；absence 常搭 of。"),
+      C("形容詞搭配","必熟",["afraid"],[["be afraid of + N / V-ing","害怕……"],["be afraid to + V","不敢做……"],["I'm afraid that...","恐怕……"]],"of V-ing 偏害怕某事；to V 偏不敢採取行動。"),
+      C("形容詞搭配","必熟",["anxious","anxiety"],[["be anxious about + N","為……焦慮"],["be anxious for + N","渴望；擔心……"],["be anxious to + V","渴望做……"]],"anxious to V 可表『渴望』，不一定是焦慮。"),
+      C("形容詞搭配","常用",["ashamed","shame"],[["be ashamed of + N / V-ing","對……感到羞愧"],["be ashamed to + V","羞於做……"]],"ashamed 通常描述人的感受。"),
+      C("形容詞搭配","常用",["astonish","astonished","astonishing"],[["be astonished at / by + N","對……感到驚訝"],["be astonished to + V","驚訝地發現／做……"]],"人感到驚訝用 astonished；事物令人驚訝用 astonishing。"),
+      C("形容詞搭配","常用",["attentive","attention"],[["be attentive to + N","留心；體貼……"],["pay attention to + N / V-ing","注意……"]],"to 是介系詞，後接 V-ing。"),
+      C("形容詞搭配","必熟",["available","availability"],[["be available to + person","某人可取得／使用"],["be available for + purpose / time","可供某用途／時段使用"]],"to 後放使用者；for 後放用途。"),
+      C("形容詞搭配","必熟",["base","based","basis"],[["base A on B","以 B 為 A 的基礎"],["A is based on B","A 以 B 為基礎"],["on the basis of + N","基於……"]],"主動 base A on B；被動 A be based on B。"),
+      C("形容詞搭配","必熟",["bored","boring"],[["be bored with / by + N","對……感到厭倦"],["a boring task / lecture","無聊的任務／演講"]],"人感到無聊用 bored；事物無聊用 boring。"),
+      C("形容詞搭配","常用",["bound"],[["be bound for + place","前往某地"],["be bound to + V","必然會……"],["be bound by + rule","受規則約束"]],"for 表目的地；to V 表必然；by 表受約束。"),
+      C("形容詞搭配","常用",["characteristic"],[["be characteristic of + N","是……的特徵"],["a characteristic of + N","……的一項特徵"]],"characteristic 作形容詞與名詞都常搭 of。"),
+      C("形容詞搭配","必熟",["concerned","concern"],[["be concerned about / for + N","擔心……"],["be concerned with + N","與……有關；涉及……"],["as far as ... is concerned","就……而言"]],"about / for 表擔心；with 表涉及。"),
+      C("形容詞搭配","常用",["confident","confidence"],[["be confident of / about + N","對……有信心"],["be confident that...","確信……"],["have confidence in + N","信任……"]],"形容詞常搭 of / about；名詞搭 in。"),
+      C("形容詞搭配","常用",["conscious","consciousness"],[["be conscious of + N / V-ing","察覺；意識到……"],["be conscious that...","意識到……"]],"conscious of 不等於 conscious about。"),
+      C("形容詞搭配","常用",["content"],[["be content with + N","對……感到滿足"],["be content to + V","樂意做……"]],"content 作形容詞時重音與名詞 content 常不同。"),
+      C("形容詞搭配","必熟",["contrary"],[["be contrary to + N","與……相反"],["on the contrary","正好相反"],["contrary to + N","與……相反地"]],"on the contrary 用來反駁前述；by contrast 是對照。"),
+      C("形容詞搭配","常用",["convenient","convenience"],[["be convenient for + person","對某人方便"],["It is convenient for + person + to V","某人做……很方便"],["at one's convenience","在某人方便時"]],"convenient 的主詞通常是事情，不說 person is convenient。"),
+      C("形容詞搭配","常用",["curious","curiosity"],[["be curious about + N","對……好奇"],["be curious to + V","好奇而想做……"],["out of curiosity","出於好奇"]],"about 後放好奇的對象。"),
+      C("形容詞搭配","必熟",["different","difference"],[["be different from + N","與……不同"],["make a difference to + N","對……產生影響"],["make no difference","沒有差別／影響"]],"標準考試英文優先用 different from。"),
+      C("形容詞搭配","必熟",["eager"],[["be eager for + N","渴望某物"],["be eager to + V","渴望做……"]],"for 後接名詞；to 後接原形動詞。"),
+      C("形容詞搭配","必熟",["equal","equality"],[["be equal to + N / V-ing","等於；能勝任……"],["equal A in + aspect","在某方面與 A 相等"]],"to 是介系詞；be equal to the task＝能勝任。"),
+      C("形容詞搭配","必熟",["essential"],[["be essential to / for + N","對……不可或缺"],["It is essential that + S + (should) V","……是必要的"]],"essential that 子句常用原形動詞。"),
+      C("形容詞搭配","必熟",["famous","fame"],[["be famous for + feature","以特色聞名"],["be famous as + identity","以身分聞名"]],"for 放特色；as 放身分。"),
+      C("形容詞搭配","常用",["fit"],[["be fit for + N","適合……"],["be fit to + V","適合／可以做……"],["fit A into B","把 A 放入／排入 B"]],"for 後接名詞；to 後接原形動詞。"),
+      C("形容詞搭配","必熟",["free","freedom"],[["be free from + harm / worry","免於傷害／憂慮"],["be free of + charge / defects","免費；沒有缺陷"],["be free to + V","可自由做……"]],"from / of 表『沒有』；to V 表自由去做。"),
+      C("形容詞搭配","必熟",["grateful","gratitude"],[["be grateful to + person for + thing","因某事感謝某人"],["express gratitude to + person","向某人表達感謝"]],"to 後放人；for 後放原因。"),
+      C("形容詞搭配","常用",["guilty","guilt"],[["be guilty of + crime / V-ing","犯……罪；做了……"],["feel guilty about + N / V-ing","對……感到內疚"]],"法律上的有罪搭 of；內疚常搭 about。"),
+      C("形容詞搭配","必熟",["harmful","harm"],[["be harmful to + N","對……有害"],["do harm to + N","傷害……"],["protect A from harm","保護 A 免受傷害"]],"harmful 與 harm 都常搭 to。"),
+      C("形容詞搭配","常用",["identical"],[["be identical to / with + N","與……完全相同"],["identical twins","同卵雙胞胎"]],"正式考試可接受 identical to / with；不可搭 from。"),
+      C("形容詞搭配","必熟",["independent","independence"],[["be independent of / from + N","不依賴……；獨立於……"],["gain independence from + N","脫離……而獨立"]],"independent 常搭 of；談脫離來源可搭 from。"),
+      C("形容詞搭配","常用",["inferior","superior"],[["be inferior / superior to + N","劣於／優於……"]],"用 to，不用 than。",["inferior than","superior than"]),
+      C("形容詞搭配","必熟",["interested","interesting","interest"],[["be interested in + N / V-ing","對……有興趣"],["take / show interest in + N","對……感興趣"],["an interesting topic","有趣的主題"]],"人感興趣用 interested；事物有趣用 interesting。"),
+      C("形容詞搭配","常用",["keen"],[["be keen on + N / V-ing","熱衷於……"],["be keen to + V","渴望做……"]],"on 後接 V-ing；to 後接原形動詞。"),
+      C("形容詞搭配","常用",["lacking","lack"],[["be lacking in + quality","缺乏某特質"],["lack + N","缺少……"],["a lack of + N","缺乏……"]],"lack 作動詞直接接受詞，不接 of。"),
+      C("形容詞搭配","必熟",["opposed","opposite"],[["be opposed to + N / V-ing","反對……"],["be opposite to + N","與……相反／相對"]],"opposed to 的 to 是介系詞。"),
+      C("形容詞搭配","必熟",["proud","pride"],[["be proud of + N / V-ing","以……為傲"],["take pride in + N / V-ing","以……為榮"]],"proud 搭 of；pride 搭 in。"),
+      C("形容詞搭配","必熟",["relevant","relevance"],[["be relevant to + N","與……相關"],["have relevance to + N","與……有關聯"]],"relevant 固定搭 to。"),
+      C("形容詞搭配","必熟",["similar","similarity"],[["be similar to + N","與……相似"],["a similarity between A and B","A 與 B 的相似之處"]],"similar 搭 to，不搭 with。",["similar with"]),
+      C("形容詞搭配","必熟",["suitable","suit"],[["be suitable for + N / V-ing","適合……"],["suit + person / purpose","適合某人／用途"]],"suitable 搭 for；suit 作動詞直接接受詞。"),
+      C("形容詞搭配","常用",["worthy","worth","worthwhile"],[["be worthy of + N / V-ing","值得……"],["be worth + N / V-ing","值得……"],["It is worthwhile to V / V-ing","做……值得"]],"worth 後不接 to V；worthy 才搭 of。",["worth to"]),
+
+      C("動名詞／不定詞","必熟",["allow","permit","permission"],[["allow / permit + person + to V","允許某人做……"],["allow / permit + V-ing","允許做……"],["with permission","經許可"]],"有受詞用 person to V；沒有受詞常用 V-ing。"),
+      C("動名詞／不定詞","必熟",["advise","advice","recommend"],[["advise + person + to V","建議某人做……"],["advise / recommend + V-ing","建議做……"],["recommend that + S + (should) V","建議某人……"]],"recommend 不用 recommend person to V。",["recommend person to"]),
+      C("動名詞／不定詞","必熟",["admit","admission"],[["admit + N / V-ing","承認……"],["admit that...","承認……"],["be admitted to / into + school / hospital","獲准進入；被錄取／住院"]],"admit 後接 V-ing，不接 to V 表承認做過。"),
+      C("動名詞／不定詞","必熟",["avoid"],[["avoid + N / V-ing","避免……"],["avoid being + p.p.","避免被……"]],"avoid 後接 V-ing，不接 to V。",["avoid to"]),
+      C("動名詞／不定詞","必熟",["deny"],[["deny + N / V-ing","否認……"],["deny that...","否認……"],["deny + person + thing","拒絕給某人某物"]],"『否認做過』接 V-ing。"),
+      C("動名詞／不定詞","必熟",["enjoy"],[["enjoy + N / V-ing","享受；喜歡做……"],["enjoy oneself","玩得愉快"]],"enjoy 後不接 to V。",["enjoy to"]),
+      C("動名詞／不定詞","必熟",["finish"],[["finish + N / V-ing","完成……"],["finish off + N","吃完；徹底完成……"]],"finish 後接 V-ing，不接 to V。"),
+      C("動名詞／不定詞","必熟",["mind"],[["mind + N / V-ing","介意……"],["Would you mind + V-ing?","你介意……嗎？"],["never mind","不要緊"]],"Would you mind 後接 V-ing；同意時答 No。"),
+      C("動名詞／不定詞","常用",["postpone","delay"],[["postpone / delay + N / V-ing","延後……"],["without delay","立刻；毫不耽擱"]],"postpone / delay 後接 V-ing。"),
+      C("動名詞／不定詞","常用",["practice"],[["practice + N / V-ing","練習……"],["put A into practice","把 A 付諸實行"]],"practice 作動詞後接 V-ing。"),
+      C("動名詞／不定詞","必熟",["risk"],[["risk + N / V-ing","冒著……的風險"],["at the risk of + N / V-ing","冒著……風險"]],"risk 後接 V-ing。"),
+      C("動名詞／不定詞","必熟",["suggest","suggestion"],[["suggest + N / V-ing","建議……"],["suggest that + S + (should) V","建議某人……"],["suggest that + indicative clause","顯示／暗示……"]],"表『建議』時不可用 suggest person to V。",["suggest person to"]),
+      C("動名詞／不定詞","常用",["appreciate"],[["appreciate + N / V-ing","感激；欣賞……"],["I would appreciate it if...","如果……我將不勝感激"]],"appreciate 後通常不直接接人作『感謝某人』。"),
+      C("動名詞／不定詞","常用",["help"],[["cannot help + V-ing","忍不住做……"],["cannot help but + V","不得不做……"],["help + person + (to) V","幫助某人做……"]],"cannot help V-ing 與 cannot help but V 結構不同。"),
+      C("動名詞／不定詞","常用",["imagine"],[["imagine + N / V-ing","想像……"],["imagine that...","想像……"],["imagine + person + V-ing","想像某人正在做……"]],"imagine 後不接 to V。"),
+      C("動名詞／不定詞","常用",["miss"],[["miss + N / V-ing","錯過；懷念……"],["miss the chance to + V","錯失做……的機會"]],"miss 表『錯過做』時接 V-ing。"),
+      C("動名詞／不定詞","常用",["quit"],[["quit + N / V-ing","停止；戒掉……"],["quit one's job","辭職"]],"quit 後接 V-ing，不接 to V。"),
+      C("動名詞／不定詞","必熟",["afford"],[["can / cannot afford to + V","（不）負擔得起做……"],["afford + N","買得起／承擔得起……"]],"afford 後接 to V，不接 V-ing。"),
+      C("動名詞／不定詞","必熟",["agree","agreement"],[["agree to + plan / proposal","同意計畫／提議"],["agree with + person / opinion","同意某人／意見；適合"],["agree on + topic","對某議題達成共識"],["agree to + V","同意做……"]],"to 放提案或動作；with 放人或意見；on 放共同決定的議題。"),
+      C("動名詞／不定詞","必熟",["decide","decision"],[["decide to + V","決定做……"],["decide on / upon + N","選定……"],["make a decision to + V","作出做……的決定"]],"decide 後接 to V；選擇某物時可用 decide on。"),
+      C("動名詞／不定詞","必熟",["expect","expectation"],[["expect to + V","預期做……"],["expect + person + to V","預期某人做……"],["expect that...","預期……"]],"有受詞時用 person to V。"),
+      C("動名詞／不定詞","必熟",["fail","failure"],[["fail to + V","未能做……"],["fail in + attempt / duty","在嘗試／職責上失敗"],["without fail","務必；必定"]],"fail to V＝該做而沒做到。"),
+      C("動名詞／不定詞","必熟",["manage"],[["manage to + V","設法成功做……"],["manage + N","管理；應付……"]],"manage to V 暗示最後成功；不接 V-ing 表此義。"),
+      C("動名詞／不定詞","常用",["offer"],[["offer to + V","主動提出做……"],["offer + person + thing","提供某人某物"],["offer + thing + to + person","把某物提供給某人"]],"offer to V 的主詞是主動提出做的人。"),
+      C("動名詞／不定詞","必熟",["promise"],[["promise to + V","答應做……"],["promise + person + that...","向某人承諾……"],["make / keep / break a promise","許下／遵守／違背承諾"]],"promise 後可接 to V 或 that 子句。"),
+      C("動名詞／不定詞","常用",["refuse"],[["refuse to + V","拒絕做……"],["refuse + N","拒收／拒絕……"]],"refuse 後接 to V，不接 V-ing。"),
+      C("動名詞／不定詞","必熟",["remember","forget","regret"],[["remember / forget to + V","記得／忘記要做……"],["remember / forget + V-ing","記得／忘記做過……"],["regret to + V","遺憾地要告知／做……"],["regret + V-ing","後悔做過……"]],"to V 指尚未／當下要做；V-ing 指已發生。"),
+      C("動名詞／不定詞","必熟",["try"],[["try to + V","努力做……"],["try + V-ing","試著做……看看"],["try one's best to + V","盡力做……"]],"to V 重點是努力；V-ing 重點是嘗試方法。"),
+      C("動名詞／不定詞","必熟",["stop"],[["stop + V-ing","停止正在做的事"],["stop to + V","停下來去做另一件事"],["stop + person + from V-ing","阻止某人做……"]],"stop V-ing 與 stop to V 意義相反。"),
+      C("動名詞／不定詞","常用",["need"],[["need to + V","需要做……"],["need + V-ing","需要被……"],["need to be + p.p.","需要被……"]],"need V-ing 可用主動形式表被動意義。"),
+
+      C("受詞與補語","必熟",["make","let","have"],[["make / let + person + V","使／讓某人做……"],["have + person + V","叫某人做……"],["have + thing + p.p.","使某物被……"]],"主動 make / let / have 後接原形；make 被動要補回 to。"),
+      C("受詞與補語","必熟",["get"],[["get + person + to V","說服／使某人做……"],["get + thing + p.p.","使某物被……"],["get used to + N / V-ing","逐漸習慣……"]],"get person 後用 to V；與 make person V 不同。"),
+      C("受詞與補語","必熟",["force","encourage"],[["force + person + to V","迫使某人做……"],["encourage + person + to V","鼓勵某人做……"]],"兩者都用 person to V。"),
+      C("受詞與補語","必熟",["enable"],[["enable + person / thing + to V","使……能夠做……"],["be enabled to + V","得以做……"]],"enable 後必須有受詞再接 to V。"),
+      C("受詞與補語","常用",["require","requirement"],[["require + person + to V","要求某人做……"],["require + V-ing","需要被……"],["meet / satisfy a requirement","符合要求"]],"require V-ing 可表示需要被處理。"),
+      C("受詞與補語","必熟",["ask","tell","order"],[["ask / tell / order + person + to V","要求／告訴／命令某人做……"],["ask + person + for + thing","向某人索取某物"]],"tell / order 後要有人作受詞；say 不用此句型。"),
+      C("受詞與補語","必熟",["see","hear","watch","notice"],[["see / hear / watch / notice + person + V","看／聽見完整動作"],["see / hear / watch / notice + person + V-ing","看／聽見動作進行中"],["be seen / heard to + V","被看／聽見做……"]],"感官動詞被動時原形動詞前要補 to。"),
+      C("受詞與補語","常用",["find"],[["find + object + adj.","發現某物是……的"],["find it + adj. + to V","發現做……很……"],["find + object + V-ing / p.p.","發現某物正在／被……"]],"形式受詞 it 後再接真正受詞 to V。"),
+      C("受詞與補語","常用",["leave"],[["leave + object + adj. / V-ing / p.p.","讓某物處於某狀態"],["leave for + place","動身前往某地"],["leave A to B","把 A 留給 B"]],"leave 後的補語描述受詞留下的狀態。"),
+      C("受詞與補語","必熟",["spend","waste"],[["spend / waste + time / money + on + N","把時間／金錢花在……"],["spend / waste + time + V-ing","花時間做……"]],"V-ing 前通常不加 to。"),
+      C("受詞與補語","必熟",["take"],[["It takes + person + time + to V","某人做……花費時間"],["take advantage of + N","利用……"],["take part in + N","參加……"]],"花時間句型用形式主詞 It。"),
+      C("受詞與補語","必熟",["difficulty","trouble"],[["have difficulty / trouble (in) V-ing","做……有困難"],["have difficulty / trouble with + N","在……方面有困難"]],"difficulty / trouble 後接 V-ing，不接 to V。"),
+      C("受詞與補語","常用",["busy"],[["be busy + V-ing","忙著做……"],["be busy with + N","忙於……"]],"busy 可直接接 V-ing。"),
+      C("受詞與補語","常用",["catch"],[["catch + person + V-ing","撞見某人正在做……"],["be caught in + rain / traffic","遇上雨／塞車"],["catch up with + person","趕上某人"]],"catch person V-ing 強調撞見正在進行的動作。"),
+      C("受詞與補語","必熟",["owe"],[["owe + person + thing","欠某人某物"],["owe A to B","把 A 歸功／歸因於 B"],["owing to + N","由於……"]],"owe A to B 的 A 可是成功或存在的原因。"),
+      C("受詞與補語","必熟",["explain","describe"],[["explain / describe + thing + to + person","向某人解釋／描述某事"],["explain why / how...","解釋為何／如何……"]],"不說 explain me / describe me the thing。",["explain me","describe me"]),
+      C("受詞與補語","常用",["introduce"],[["introduce A to B","把 A 介紹給 B"],["introduce A into B","把 A 引進 B"],["be introduced to + N","初次接觸……"]],"to 後放人或接觸對象；into 表引進某環境。"),
+      C("受詞與補語","必熟",["marry","married","marriage"],[["marry + person","與某人結婚"],["be / get married to + person","與某人結婚"],["marriage to + person","與某人的婚姻"]],"marry 作動詞不接 with；married 搭 to。",["marry with","married with"]),
+
+      C("片語動詞","必熟",["bring"],[["bring about + change / result","帶來；造成……"],["bring up + topic / child","提出話題；養育孩子"],["bring out + quality / product","使特質顯現；推出產品"]],"三個副詞／介系詞會改變整個語意。"),
+      C("片語動詞","必熟",["carry"],[["carry out + plan / experiment","執行計畫／實驗"],["carry on + N / V-ing","繼續……"],["be carried away by + N","因……而忘乎所以"]],"carry out 受詞可放中間，但代名詞通常放中間。"),
+      C("片語動詞","必熟",["come"],[["come across + N","偶然遇見／發現……"],["come up with + idea / solution","想出點子／解法"],["come about","發生"],["come into effect","開始生效"]],"come up with 後接想出的內容。"),
+      C("片語動詞","必熟",["cut"],[["cut down on + N","減少……"],["cut off + supply / contact","切斷供應／聯繫"],["cut in","插話；插隊"]],"cut down on 才是『減少用量』。"),
+      C("片語動詞","常用",["figure"],[["figure out + answer / problem","想出；弄懂……"]],"figure out 可分離；代名詞放中間：figure it out。"),
+      C("片語動詞","必熟",["get"],[["get along with + person","與某人相處"],["get over + illness / shock","克服；恢復"],["get rid of + N","擺脫……"],["get through + N","熬過；完成；接通電話"]],"注意後面的介系詞不可任意替換。"),
+      C("片語動詞","必熟",["give"],[["give up + N / V-ing","放棄……"],["give in to + N","向……屈服"],["give rise to + N","引起；導致……"],["give off + smell / heat","散發氣味／熱"]],"give up 後接 V-ing；give rise to 的 to 是介系詞。"),
+      C("片語動詞","常用",["go"],[["go through + experience / process","經歷；仔細檢查……"],["go over + notes","複習；檢查筆記"],["go against + rule / belief","違反規則／信念"]],"through 偏經歷完整過程；over 偏複習檢查。"),
+      C("片語動詞","常用",["hand"],[["hand in + assignment","繳交作業"],["hand out + material","分發資料"],["hand A over to B","把 A 移交給 B"]],"hand in / out 可分離；代名詞放中間。"),
+      C("片語動詞","常用",["hold"],[["hold back + tears / information","忍住眼淚；隱瞞資訊"],["hold on","等一下；撐住"],["hold on to + N","緊握；保留……"]],"hold on to 後接要保留的事物。"),
+      C("片語動詞","必熟",["keep"],[["keep up with + N","跟上……"],["keep away from + N","遠離……"],["keep on + V-ing","繼續做……"],["keep track of + N","掌握……動態"]],"keep on 後接 V-ing；keep up with 三字不可拆。"),
+      C("片語動詞","必熟",["make"],[["make up + story / excuse","編造故事／藉口"],["make up for + loss / mistake","彌補損失／錯誤"],["make out + meaning","辨認；理解……"],["make the most of + N","充分利用……"]],"make up for 中的 for 不可省略。"),
+      C("片語動詞","常用",["pick"],[["pick up + object / skill","撿起；接人；學會技能"],["pick out + N","挑選；辨認……"]],"pick up 多義，須靠受詞與語境判斷。"),
+      C("片語動詞","必熟",["put"],[["put off + N / V-ing","延期……"],["put out + fire","撲滅火；出版"],["put up with + N","忍受……"],["put A into practice","把 A 付諸實行"]],"put off 後接 V-ing；put up with 是三字片語。"),
+      C("片語動詞","必熟",["run"],[["run into + person / problem","偶遇某人；碰上問題"],["run out of + N","用完……"],["run for + office","競選職位"]],"物作主詞可說 N runs out；人作主詞常說 run out of N。"),
+      C("片語動詞","必熟",["set"],[["set up + system / business","建立系統／公司"],["set off + alarm / journey","觸發警報；出發"],["set aside + time / money","撥出時間／金錢"],["set out to + V","著手做……"]],"set out to 後接原形動詞。"),
+      C("片語動詞","必熟",["take"],[["take after + person","外貌／性格像某人"],["take over + business / task","接管公司／工作"],["take up + hobby / space","開始嗜好；占空間"],["take on + task / worker","承擔工作；雇用員工"]],"take after 不等於 look after。"),
+      C("片語動詞","必熟",["turn"],[["turn down + offer / volume","拒絕提議；調低音量"],["turn out + adj. / to V","結果是……"],["turn up","出現；調高音量"],["turn A into B","把 A 變成 B"]],"turn out 後可接形容詞或 to be。"),
+      C("片語動詞","必熟",["break"],[["break down","故障；崩潰；分解"],["break out","爆發"],["break into + place","闖入某地"],["break up","分手；解散"]],"break out 不及物；『爆發某事』不用被動。"),
+      C("片語動詞","常用",["call"],[["call off + event","取消活動"],["call for + N","需要；呼籲……"],["call on + person to V","呼籲某人做……；拜訪某人"]],"call off 可分離；代名詞放中間。"),
+      C("片語動詞","常用",["do"],[["do away with + N","廢除；去掉……"],["do without + N","沒有……也行"],["have something to do with + N","與……有關"]],"do away with 是三字片語。"),
+      C("片語動詞","常用",["fall"],[["fall behind + person / schedule","落後於某人／進度"],["fall apart","瓦解；破裂"],["fall for + person / trick","愛上某人；上當"]],"fall for 可依受詞表示愛上或受騙。"),
+      C("片語動詞","必熟",["look"],[["look after + N","照顧……"],["look for + N","尋找……"],["look down on + person","輕視某人"],["look back on + past","回顧過去"]],"look after 與 look for 不可混淆。"),
+      C("片語動詞","常用",["work"],[["work out + problem","解決問題"],["work out","運動；結果良好"],["work on + N","致力於；改善……"]],"work out 可及物也可不及物，依語境判斷。"),
+      C("片語動詞","常用",["stand"],[["stand for + idea / letters","代表觀念／字母"],["stand out from + group","從群體中脫穎而出"],["stand by + person / decision","支持某人／堅持決定"]],"stand for 不用進行式表示『代表』。"),
+      C("片語動詞","常用",["pass"],[["pass away","去世"],["pass down + tradition","把傳統傳給後代"],["pass A on to B","把 A 轉交給 B"],["pass by + place","經過某地"]],"pass on to 後放接收者。"),
+
+      C("名詞搭配","必熟",["access","accessible"],[["have / gain access to + N","可取得／使用……"],["provide access to + N","提供……的使用管道"],["be accessible to + person","某人可取得／理解"]],"access 名詞固定搭 to；不用 access of。"),
+      C("名詞搭配","必熟",["advantage","disadvantage"],[["take advantage of + N","利用……"],["have an advantage over + N","比……占優勢"],["to one's advantage","對某人有利"]],"over 後放比較對象；of 後放利用的事物。"),
+      C("名詞搭配","必熟",["attention"],[["pay / draw attention to + N","注意／吸引注意到……"],["bring A to one's attention","使某人注意到 A"]],"to 是介系詞，後可接 V-ing。"),
+      C("名詞搭配","常用",["attitude"],[["attitude to / toward(s) + N","對……的態度"],["have a positive attitude toward + N","對……抱正面態度"]],"toward 與 towards 皆可。"),
+      C("名詞搭配","必熟",["cause"],[["the cause of + result","某結果的原因"],["cause + person + to V","造成某人做……"],["cause damage to + N","對……造成損害"]],"cause 作動詞可接 person to V。"),
+      C("名詞搭配","必熟",["demand"],[["a demand for + N","對……的需求"],["meet / satisfy demand","滿足需求"],["demand that + S + (should) V","要求……"]],"demand that 子句常用原形動詞。"),
+      C("名詞搭配","必熟",["effect","affect"],[["have an effect on + N","對……有影響"],["take effect","生效"],["come into effect","開始生效"],["affect + N","影響……"]],"effect 多為名詞；affect 多為動詞。"),
+      C("名詞搭配","常用",["exception","except"],[["an exception to + rule","規則的例外"],["with the exception of + N","除了……之外"],["except for + N","除了……之外"]],"exception 名詞後搭 to。"),
+      C("名詞搭配","必熟",["influence"],[["have an influence on + N","對……有影響"],["under the influence of + N","受……影響"],["influence + person / decision","影響某人／決定"]],"influence 作動詞直接接受詞。"),
+      C("名詞搭配","必熟",["lack"],[["a lack of + N","缺乏……"],["for lack of + N","因缺少……"],["lack + N","缺少……"]],"動詞 lack 後不加 of；名詞 lack 後加 of。"),
+      C("名詞搭配","必熟",["reason"],[["the reason for + N / V-ing","……的理由"],["the reason why + clause","……的原因"],["reason with + person","與某人講道理"]],"reason why 後接完整子句；reason for 後接名詞／V-ing。"),
+      C("名詞搭配","必熟",["relationship","relation"],[["a relationship with + person","與某人的關係"],["the relationship between A and B","A 與 B 的關係"],["in relation to + N","關於；與……相比"]],"between 後要接 A and B。"),
+      C("名詞搭配","必熟",["solution"],[["a solution to + problem","問題的解決方法"],["find / propose a solution","找到／提出解法"]],"solution 固定搭 to，不搭 of。",["solution of"]),
+      C("名詞搭配","必熟",["threat","threaten"],[["a threat to + N","對……的威脅"],["pose a threat to + N","對……構成威脅"],["threaten to + V","威脅要做……"]],"名詞 threat 搭 to；動詞 threaten 可接 to V。"),
+      C("名詞搭配","必熟",["increase","decrease"],[["an increase / decrease in + quantity","某數量的增加／減少"],["increase / decrease by + amount","增加／減少了多少"],["increase / decrease to + figure","增加／減少到某數字"]],"by 放變化量；to 放最後數值。"),
+      C("名詞搭配","必熟",["evidence"],[["evidence of / for + N","……的證據"],["There is evidence that...","有證據顯示……"],["provide evidence for + claim","為主張提供證據"]],"evidence 通常不可數，不說 an evidence。",["an evidence"]),
+      C("名詞搭配","必熟",["opportunity","chance"],[["an opportunity / a chance to + V","做……的機會"],["take / seize an opportunity","把握機會"],["by chance","偶然地"]],"opportunity / chance 後常接 to V。"),
+      C("名詞搭配","常用",["possibility","possible"],[["the possibility of + N / V-ing","……的可能性"],["There is a possibility that...","有可能……"],["make it possible for + person + to V","使某人得以做……"]],"possibility of 後接 V-ing；possible 常用形式受詞 it。"),
+      C("名詞搭配","必熟",["role"],[["play a role / part in + N / V-ing","在……中扮演角色"],["the role of A in B","A 在 B 中的角色"]],"in 後放所影響的活動或情境。"),
+      C("名詞搭配","必熟",["way"],[["a way of + V-ing","做……的方法"],["a way to + V","做……的方法"],["the way + S + V","……的方式"],["in this way","用這種方式"]],"the way how 通常重複，考試宜用 the way S V。",["the way how"]),
+
+      C("篇章與寫作","必熟",["accord","according"],[["according to + source","根據某來源"],["according as + clause","依照……而……"]],"according to 不用來表『依我看』；可用 in my opinion。"),
+      C("篇章與寫作","必熟",["addition","additional"],[["in addition","此外"],["in addition to + N / V-ing","除了……之外還……"],["add A to B","把 A 加到 B"]],"in addition to 的 to 是介系詞。"),
+      C("篇章與寫作","必熟",["contrast"],[["in contrast to / with + N","與……形成對比"],["by contrast","相較之下"],["contrast A with B","比較 A 與 B 的差異"]],"on the contrary 用來反駁；by contrast 用來對照。"),
+      C("篇章與寫作","必熟",["spite","despite"],[["in spite of + N / V-ing","儘管……"],["despite + N / V-ing","儘管……"],["despite the fact that + clause","儘管……"]],"despite 後不加 of；in spite 才接 of。",["despite of"]),
+      C("篇章與寫作","常用",["term"],[["in terms of + N","就……而言；以……計"],["come to terms with + N","接受；面對……"],["on good terms with + person","與某人關係良好"]],"in terms of 後放評估面向。"),
+      C("篇章與寫作","常用",["favor","favorable"],[["in favor of + N / V-ing","贊成……"],["do + person + a favor","幫某人一個忙"],["be favorable to + N","對……有利／贊成"]],"in favor of 的 of 是介系詞。"),
+      C("篇章與寫作","常用",["means"],[["by means of + N","藉由……"],["by no means","絕不"],["a means of + V-ing","做……的一種方法"]],"means 單複數同形；by no means 置首可倒裝。"),
+      C("篇章與寫作","常用",["sake"],[["for the sake of + N","為了……；看在……份上"],["for one's own sake","為了某人自己"]],"of 後接名詞，不接完整子句。"),
+      C("篇章與寫作","必熟",["regard"],[["with regard to + N","關於……"],["in this regard","在這方面"],["regardless of + N","不論……"]],"regardless 固定搭 of；with regard to 的 regard 不加 s。"),
+      C("篇章與寫作","必熟",["due","owing"],[["due to / owing to + N","由於……"],["be due to + V","預定做……"],["be due for + N","應得到／預定接受……"]],"due to 後接名詞；be due to V 表預定。"),
+      C("篇章與寫作","常用",["thank","thanks"],[["thanks to + N","多虧；由於……"],["give thanks to + person","向某人致謝"]],"thanks to 可依語境表示正面或反諷原因。"),
+      C("篇章與寫作","必熟",["regardless"],[["regardless of + N / wh-clause","不論……"],["irrespective of + N","不考慮……"]],"regardless 後一定有 of。"),
+      C("篇章與寫作","必熟",["rather"],[["rather than + N / V","而不是……"],["would rather + V + than + V","寧願……而不……"],["prefer to V rather than V","寧可……而不……"]],"rather than 兩端要平行；would rather 後接原形。"),
+      C("篇章與寫作","必熟",["either","neither"],[["either A or B","不是 A 就是 B"],["neither A nor B","A、B 都不"],["not only A but also B","不但 A 而且 B"]],"連接主詞時，動詞常與較近的主詞一致；兩端結構要平行。"),
+      C("篇章與寫作","必熟",["order","purpose"],[["in order to + V","為了做……"],["so as to + V","以便做……"],["so that + S + can / may V","以便……"],["for the purpose of + V-ing","為了……"]],"介系詞 for the purpose of 後接 V-ing；so that 後接子句。"),
+      C("篇章與寫作","必熟",["such","so"],[["so + adj. / adv. + that...","如此……以致於……"],["such + (a/an) + adj. + N + that...","如此……以致於……"],["so many / much / few / little + N + that...","如此多／少……以致於……"]],"有名詞通常用 such；many / much / few / little 是 so 的例外。"),
+      C("篇章與寫作","必熟",["because","because of"],[["because + clause","因為……"],["because of + N / V-ing","因為……"],["the reason is that + clause","原因是……"]],"because 後接完整子句；because of 後接名詞。"),
+      C("篇章與寫作","必熟",["although","though","while","whereas"],[["although / though + clause","雖然……"],["while / whereas + clause","然而；相較之下……"],["even though + clause","儘管……"]],"although 不與 but 同時連接同一組子句。"),
+      C("篇章與寫作","常用",["case"],[["in case + clause","以防……"],["in case of + N","萬一發生……"],["in any case","無論如何"],["in no case + auxiliary + S + V","絕不……"]],"in case 後接子句；in case of 後接名詞。"),
+      C("篇章與寫作","常用",["addition","besides","except"],[["besides + N / V-ing","除了……還……"],["except (for) + N","除了……之外（排除）"],["apart from + N","除了；除……之外還……"]],"besides 是加法；except 是排除。"),
+      C("篇章與寫作","常用",["respect"],[["in respect of / with respect to + N","關於……"],["in this respect","在這方面"],["show respect for + N","尊重……"]],"respect 作『方面』與『尊重』時搭配不同。"),
+      C("篇章與寫作","常用",["view"],[["in view of + N","鑑於……"],["from one's point of view","從某人的觀點"],["with a view to + V-ing","為了……"]],"with a view to 的 to 是介系詞。"),
+      C("篇章與寫作","常用",["contrary","contrary to"],[["contrary to + N","與……相反"],["on the contrary","正好相反"],["to the contrary","表示相反情況的"]],"on the contrary 不是一般性的『另一方面』。")
+    ]);
+    const GSAT_COLLOCATION_GUIDE = Object.freeze([...GSAT_COLLOCATION_CORE.map(point=>({category:"核心辨析",priority:"必熟",...point})),...GSAT_COLLOCATION_EXPANSION]);
+    const GSAT_POINTS_BY_WORD = new Map();
+    GSAT_COLLOCATION_GUIDE.forEach(point=>point.keys.forEach(key=>{const normalized=String(key).toLowerCase();if(!GSAT_POINTS_BY_WORD.has(normalized))GSAT_POINTS_BY_WORD.set(normalized,[]);GSAT_POINTS_BY_WORD.get(normalized).push(point)}));
+    const SEARCH_CONCEPTS = Object.freeze([
+      {triggers:["導致","造成","引起","cause"],terms:["lead to","result in","contribute to","cause","bring about","give rise to"]},
+      {triggers:["起因","源自","because","原因"],terms:["result from","arise from","stem from","due to","owing to","because of"]},
+      {triggers:["習慣","used to"],terms:["be used to","get used to","be accustomed to","used to"]},
+      {triggers:["阻止","預防","prevent"],terms:["prevent from","stop from","keep from","protect from","warn against"]},
+      {triggers:["負責","責任","responsible"],terms:["be responsible for","take responsibility for","be to blame for"]},
+      {triggers:["參加","參與","participate"],terms:["participate in","take part in","be involved in","engage in"]},
+      {triggers:["處理","應付","deal"],terms:["deal with","cope with","attend to","dispose of","work out"]},
+      {triggers:["申請","apply"],terms:["apply for","apply to","application for"]},
+      {triggers:["提供","供應","provide"],terms:["provide with","provide for","supply with","offer to"]},
+      {triggers:["比較","區分","compare"],terms:["compare with","compare to","distinguish from","difference between","in contrast to"]},
+      {triggers:["反對","object"],terms:["object to","be opposed to","have an objection to","against"]},
+      {triggers:["致力","投入","devote"],terms:["devote to","dedicate to","engage in","focus on","work on"]},
+      {triggers:["擅長","善於","capable"],terms:["be good at","excel in","be capable of","be skilled at"]},
+      {triggers:["道歉","apologize"],terms:["apologize to","apologize for","make an apology"]},
+      {triggers:["感謝","grateful"],terms:["be grateful to","be grateful for","thanks to","express gratitude"]},
+      {triggers:["影響","effect","affect"],terms:["have an effect on","have an influence on","affect","make a difference to"]},
+      {triggers:["缺乏","lack"],terms:["lack","a lack of","be lacking in","for lack of"]},
+      {triggers:["恢復","克服","recover"],terms:["recover from","get over","make a recovery from","cope with"]},
+      {triggers:["允許","許可","allow"],terms:["allow to","permit to","allow v-ing","permission"]},
+      {triggers:["建議","suggest","recommend"],terms:["suggest v-ing","recommend v-ing","advise to","suggest that"]},
+      {triggers:["動名詞","v-ing","gerund"],terms:["v-ing","avoid","enjoy","mind","practice","risk","suggest","postpone"]},
+      {triggers:["不定詞","to v","infinitive"],terms:["to v","afford","decide","expect","manage","offer","promise","refuse"]},
+      {triggers:["儘管","讓步","although"],terms:["although","though","despite","in spite of","even though"]},
+      {triggers:["此外","addition"],terms:["in addition","in addition to","besides","moreover"]},
+      {triggers:["相反","對比","contrast"],terms:["in contrast to","by contrast","on the contrary","whereas","while"]}
+    ]);
     const SEARCH_FIELD_CACHE = new WeakMap();
-    const state = {query:"", levels:new Set(LEVELS), favorites:new Set(readFavorites()), favoritesOnly:false, selectedIndex:-1, filtered:[], onlineCache:new Map(), onlineRequest:0, onlineController:null, currentAudio:null, audioElement:null, audioSession:0};
+    const BM25_DOC_CACHE = new WeakMap();
+    const BM25_INDEX = {ready:false,df:new Map(),avgLength:1};
+    const state = {query:"", levels:new Set(LEVELS), favorites:new Set(readFavorites()), favoritesOnly:false, collocationsOnly:false, category:"全部", selectedIndex:-1, filtered:[], onlineCache:new Map(), onlineRequest:0, onlineController:null, currentAudio:null, audioElement:null, audioSession:0,searchFeedback:readSearchFeedback(),practice:readPracticeStats()};
     const byId = id => document.getElementById(id);
     const searchInput=byId("searchInput"), clearSearch=byId("clearSearch"), searchKey=byId("searchKey"), wordList=byId("wordList"), wordDetail=byId("wordDetail");
 
@@ -238,19 +487,29 @@
     function normalizeSearchValue(value){return String(value||"").normalize("NFKC").toLowerCase().replace(/’/g,"'").replace(/[^a-z0-9\u3400-\u9fff'-]+/gi," ").replace(/\s+/g," ").trim()}
     function readFavorites(){try{return JSON.parse(localStorage.getItem(FAVORITES_KEY)||"[]")}catch{return []}}
     function saveFavorites(){try{localStorage.setItem(FAVORITES_KEY,JSON.stringify([...state.favorites]))}catch{showToast("此瀏覽器無法儲存收藏")}}
+    function readSearchFeedback(){try{return JSON.parse(localStorage.getItem(SEARCH_FEEDBACK_KEY)||"{}")}catch{return{}}}
+    function readPracticeStats(){try{return JSON.parse(localStorage.getItem(PRACTICE_KEY)||'{"correct":0,"total":0}')}catch{return{correct:0,total:0}}}
+    function savePracticeStats(){try{localStorage.setItem(PRACTICE_KEY,JSON.stringify(state.practice))}catch{}}
+    function recordSearchFeedback(query,word){const key=normalizeSearchValue(query);if(!key||!word)return;const current=state.searchFeedback[key]||{};current[word]=Math.min(12,Number(current[word]||0)+1);state.searchFeedback[key]=current;const keys=Object.keys(state.searchFeedback);if(keys.length>40)delete state.searchFeedback[keys[0]];try{localStorage.setItem(SEARCH_FEEDBACK_KEY,JSON.stringify(state.searchFeedback))}catch{}}
     function showToast(message){const toast=byId("toast");toast.textContent=message;toast.classList.add("show");clearTimeout(showToast.timer);showToast.timer=setTimeout(()=>toast.classList.remove("show"),1800)}
     function levelName(level){return level<=2?"基礎核心":level<=4?"學測主力":level===5?"核心進階":"語境延伸"}
-    function getGsatPoint(entry){
+    function getGsatPoints(entry){
       const candidates=[normalizeCeecWord(apiLookupWord(entry&&entry.word)),...(String(entry&&entry.word||"").toLowerCase().match(/[a-z]+/g)||[])];
-      for(const key of candidates){const point=GSAT_POINT_BY_WORD.get(key);if(point)return point}return null;
+      const points=[];for(const key of candidates){for(const point of GSAT_POINTS_BY_WORD.get(key)||[]){if(!points.includes(point))points.push(point)}}return points;
     }
-    function gsatPointSearchText(entry){const point=getGsatPoint(entry);return point?[...point.keys,...point.patterns.flat(),point.trap].join(" ").toLowerCase():""}
+    function getGsatPoint(entry){return getGsatPoints(entry)[0]||null}
+    function gsatPointSearchText(entry){return getGsatPoints(entry).flatMap(point=>[...point.keys,...point.patterns.flat(),point.trap,point.category,point.priority]).join(" ").toLowerCase()}
     function searchFields(entry){
       if(SEARCH_FIELD_CACHE.has(entry))return SEARCH_FIELD_CACHE.get(entry);
-      const point=getGsatPoint(entry),word=normalizeSearchValue(entry.word),aliases=[...new Set([word,...(String(entry.word||"").match(/[A-Za-z]+(?:[-'][A-Za-z]+)*/g)||[]).map(normalizeSearchValue),...(point&&point.keys||[]).map(normalizeSearchValue)].filter(Boolean))];
-      const pattern=normalizeSearchValue(point?point.patterns.flat().join(" "):""),meaning=normalizeSearchValue(entry.meaning),notes=normalizeSearchValue([entry.collocations,entry.note,point&&point.trap].join(" "));
+      const points=getGsatPoints(entry),word=normalizeSearchValue(entry.word),aliases=[...new Set([word,...(String(entry.word||"").match(/[A-Za-z]+(?:[-'][A-Za-z]+)*/g)||[]).map(normalizeSearchValue),...points.flatMap(point=>point.keys).map(normalizeSearchValue)].filter(Boolean))];
+      const pattern=normalizeSearchValue(points.flatMap(point=>point.patterns.flat()).join(" ")),meaning=normalizeSearchValue(entry.meaning),notes=normalizeSearchValue([entry.collocations,entry.note,...points.map(point=>point.trap),...points.map(point=>point.category),...points.map(point=>point.priority)].join(" "));
       const fields={word,aliases,pattern,meaning,notes,all:normalizeSearchValue([word,aliases.join(" "),pattern,meaning,notes].join(" "))};SEARCH_FIELD_CACHE.set(entry,fields);return fields;
     }
+    function tokenizeSearch(value){const normalized=normalizeSearchValue(value),tokens=normalized.match(/[a-z0-9]+(?:[-'][a-z0-9]+)*|[\u3400-\u9fff]+/gi)||[],result=[];for(const token of tokens){result.push(token);if(/[\u3400-\u9fff]/.test(token)&&token.length>2){for(let i=0;i<token.length-1;i++)result.push(token.slice(i,i+2))}}return result}
+    function ensureBm25Index(){if(BM25_INDEX.ready)return;let total=0;for(const entry of VOCABULARY){const tokens=tokenizeSearch(searchFields(entry).all),counts=new Map();for(const token of tokens)counts.set(token,(counts.get(token)||0)+1);BM25_DOC_CACHE.set(entry,{counts,length:Math.max(1,tokens.length)});total+=Math.max(1,tokens.length);for(const token of counts.keys())BM25_INDEX.df.set(token,(BM25_INDEX.df.get(token)||0)+1)}BM25_INDEX.avgLength=total/Math.max(1,VOCABULARY.length);BM25_INDEX.ready=true}
+    function expandedQueryTerms(query){const normalized=normalizeSearchValue(query),terms=tokenizeSearch(normalized),conceptTerms=[];for(const concept of SEARCH_CONCEPTS){if(concept.triggers.some(trigger=>{const t=normalizeSearchValue(trigger);return normalized===t||normalized.length>=2&&normalized.includes(t)||(/[\u3400-\u9fff]/.test(normalized)||normalized.length>=4)&&t.includes(normalized)})){for(const term of concept.terms)conceptTerms.push(...tokenizeSearch(term))}}return{base:[...new Set(terms)],expanded:[...new Set([...terms,...conceptTerms])],hasConcept:conceptTerms.length>0}}
+    function bm25Score(entry,terms){if(!terms.length)return 0;ensureBm25Index();const doc=BM25_DOC_CACHE.get(entry),N=VOCABULARY.length,k1=1.25,b=.72;let score=0;for(const term of terms){const tf=doc.counts.get(term)||0;if(!tf)continue;const df=BM25_INDEX.df.get(term)||0,idf=Math.log(1+(N-df+.5)/(df+.5));score+=idf*(tf*(k1+1))/(tf+k1*(1-b+b*doc.length/BM25_INDEX.avgLength))}return score}
+    function conceptScore(entry,queryInfo){if(!queryInfo.hasConcept)return 0;const haystack=searchFields(entry).all;let score=0;for(const term of queryInfo.expanded){if(haystack.includes(term))score+=term.length>4?2:1}return score}
     function boundedDamerauLevenshtein(a,b,limit=2){
       a=String(a||"");b=String(b||"");if(a===b)return 0;if(!a||!b)return Math.max(a.length,b.length);if(Math.abs(a.length-b.length)>limit)return limit+1;
       const matrix=Array.from({length:a.length+1},()=>Array(b.length+1).fill(0));for(let i=0;i<=a.length;i++)matrix[i][0]=i;for(let j=0;j<=b.length;j++)matrix[0][j]=j;
@@ -271,12 +530,23 @@
       if(englishOnly&&terms.length===1&&query.length>=4){const limit=query.length<=6?1:2,wordDistance=boundedDamerauLevenshtein(query,fields.word,limit);if(wordDistance<=limit)return{score:250-wordDistance*35,reason:`近似拼字 ${wordDistance} 處`};const aliasDistance=Math.min(...fields.aliases.filter(alias=>alias!==fields.word).map(alias=>boundedDamerauLevenshtein(query,alias,limit)),limit+1);if(aliasDistance<=limit)return{score:235-aliasDistance*30,reason:`近似字族 ${aliasDistance} 處`}}
       return null;
     }
+    function hybridSearch(rawQuery){
+      const query=normalizeSearchValue(rawQuery),queryInfo=expandedQueryTerms(query),lexical=[],sparse=[],conceptual=[];
+      VOCABULARY.forEach((entry,index)=>{const direct=scoreSearchEntry(entry,query);if(direct)lexical.push({entry,index,score:direct.score,reason:direct.reason});const sparseScore=bm25Score(entry,queryInfo.expanded);if(sparseScore>0)sparse.push({entry,index,score:sparseScore});const semantic=conceptScore(entry,queryInfo);if(semantic>0)conceptual.push({entry,index,score:semantic})});
+      lexical.sort((a,b)=>b.score-a.score);sparse.sort((a,b)=>b.score-a.score);conceptual.sort((a,b)=>b.score-a.score);
+      const fused=new Map(),lexicalByIndex=new Map(lexical.map(item=>[item.index,item]));
+      const addRanking=(items,weight,channel)=>items.slice(0,350).forEach((item,rank)=>{const record=fused.get(item.index)||{entry:item.entry,index:item.index,score:0,channels:new Set()};record.score+=weight/(60+rank+1);record.channels.add(channel);fused.set(item.index,record)});
+      addRanking(lexical,1.75,"字面");addRanking(sparse,1,"BM25");if(queryInfo.hasConcept)addRanking(conceptual,1.2,"概念");
+      lexical.slice(0,30).forEach(item=>{const record=fused.get(item.index);if(record&&item.score>=1000)record.score+=.09;else if(record&&item.score>=940)record.score+=.025});
+      const feedback=state.searchFeedback[query]||{};Object.entries(feedback).sort((a,b)=>b[1]-a[1]).forEach(([word,count],rank)=>{const index=VOCABULARY.findIndex(entry=>entry.word===word);if(index<0)return;const record=fused.get(index)||{entry:VOCABULARY[index],index,score:0,channels:new Set()};record.score+=Math.min(1.15,.7+Number(count)*.06)/(60+rank+1);record.channels.add("本機偏好");fused.set(index,record)});
+      return[...fused.values()].map(record=>{const direct=lexicalByIndex.get(record.index),reason=direct&&direct.reason?direct.reason:record.channels.has("概念")?"概念擴展":record.channels.has("BM25")?"BM25 相關":"本機偏好";return{entry:record.entry,index:record.index,match:{score:record.score,reason,channels:[...record.channels]}}}).sort((a,b)=>b.match.score-a.match.score||a.entry.level-b.entry.level||a.entry.word.localeCompare(b.entry.word));
+    }
     function renderGsatPoint(entry){
-      const point=getGsatPoint(entry);
-      if(!point)return'<p class="card-empty">此詞尚未列入 42 組精選考點；仍可參考下方詞表搭配與 Datamuse 語料補充。</p>';
-      const patterns=point.patterns.map(([form,meaning])=>`<div class="exam-pattern"><code>${escapeHtml(form)}</code><span>${escapeHtml(meaning)}</span></div>`).join("");
-      const dictionaryWord=encodeURIComponent(point.keys[0]);
-      return`<div class="exam-point-list">${patterns}</div><p class="exam-trap"><strong>易錯：</strong>${escapeHtml(point.trap)}</p><p class="exam-source">定位：大考中心明列常用實詞的語意與搭配能力；本卡依歷屆常見題型、教師常提醒與標準辭典整理，非官方頻率排名。<a href="https://www.ceec.edu.tw/xcepaper/cont?qperoid=0J134522431497878724&amp;sid=0J135646927771747&amp;xsmsid=0J066588036013658199" target="_blank" rel="noreferrer">大考中心備考建議</a> · <a href="https://dictionary.cambridge.org/dictionary/english/${dictionaryWord}" target="_blank" rel="noreferrer">Cambridge 查證</a></p>`;
+      const points=getGsatPoints(entry);
+      if(!points.length)return`<p class="card-empty">此詞尚未列入 ${GSAT_COLLOCATION_GUIDE.length} 組精選考點；仍可參考下方詞表搭配與 Datamuse 語料補充。</p>`;
+      const groups=points.map(point=>{const patterns=point.patterns.map(([form,meaning])=>`<div class="exam-pattern"><code>${escapeHtml(form)}</code><span>${escapeHtml(meaning)}</span></div>`).join("");return`<div class="point-group"><div class="point-meta"><span class="point-category">${escapeHtml(point.category||"核心辨析")}</span><span class="point-priority">${escapeHtml(point.priority||"必熟")}</span></div><div class="exam-point-list">${patterns}</div><p class="exam-trap"><strong>易錯：</strong>${escapeHtml(point.trap)}</p></div>`}).join("");
+      const dictionaryWord=encodeURIComponent(apiLookupWord(entry.word));
+      return`${groups}<div class="collocation-practice" id="collocationPractice" hidden></div><p class="exam-source">定位：大考中心明列常用實詞的語意與搭配能力；本卡依標準辭典與常見高中考點整理，優先級是複習建議，不是官方出題頻率。<a href="https://www.ceec.edu.tw/xcepaper/cont?qperoid=0J134522431497878724&amp;sid=0J135646927771747&amp;xsmsid=0J066588036013658199" target="_blank" rel="noreferrer">大考中心備考建議</a> · <a href="https://dictionary.cambridge.org/dictionary/english/${dictionaryWord}" target="_blank" rel="noreferrer">Cambridge 查證</a></p>`;
     }
     function renderExamProfile(entry){
       const point=getGsatPoint(entry),pos=String(entry.partOfSpeech||"").toLowerCase(),modes=["語境選字"];
@@ -298,18 +568,21 @@
       });host.appendChild(button)});
     }
     function syncLevelButtons(){document.querySelectorAll(".level-btn").forEach(button=>{const on=state.levels.has(Number(button.dataset.level));button.classList.toggle("on",on);button.setAttribute("aria-pressed",String(on))})}
+    function buildCategoryFilters(){const host=byId("categoryFilters"),categories=["全部",...new Set(GSAT_COLLOCATION_GUIDE.map(point=>point.category||"核心辨析"))];host.innerHTML=categories.map(category=>`<button type="button" class="category-btn ${category==="全部"?"on":""}" data-category="${escapeHtml(category)}">${escapeHtml(category)}</button>`).join("");host.addEventListener("click",event=>{const button=event.target.closest(".category-btn");if(!button)return;state.category=button.dataset.category||"全部";host.querySelectorAll(".category-btn").forEach(item=>item.classList.toggle("on",item===button));applyFilters()})}
+    function setListMode(mode){state.favoritesOnly=mode==="favorites";state.collocationsOnly=mode==="collocations";for(const [id,value] of [["allTab","all"],["collocationTab","collocations"],["favoriteTab","favorites"]])byId(id).classList.toggle("on",mode===value);byId("categoryFilters").hidden=!state.collocationsOnly;applyFilters()}
 
     function applyFilters(){
       const needle=normalizeSearchValue(state.query);
-      state.filtered=VOCABULARY.map((entry,index)=>({entry,index,match:needle?scoreSearchEntry(entry,needle):{score:0,reason:""}})).filter(({entry})=>state.levels.has(Number(entry.level))).filter(({entry})=>!state.favoritesOnly||state.favorites.has(entry.word)).filter(({match})=>!needle||Boolean(match));
-      state.filtered.sort((a,b)=>needle?b.match.score-a.match.score||a.entry.level-b.entry.level||a.entry.word.localeCompare(b.entry.word):a.entry.word.localeCompare(b.entry.word));
+      const ranked=needle?hybridSearch(needle):VOCABULARY.map((entry,index)=>({entry,index,match:{score:0,reason:"",channels:[]}}));
+      state.filtered=ranked.filter(({entry})=>state.levels.has(Number(entry.level))).filter(({entry})=>!state.favoritesOnly||state.favorites.has(entry.word)).filter(({entry})=>!state.collocationsOnly||getGsatPoints(entry).some(point=>state.category==="全部"||(point.category||"核心辨析")===state.category));
+      if(!needle)state.filtered.sort((a,b)=>state.collocationsOnly?(getGsatPoints(a.entry)[0]?.priority==="必熟"?-1:0)-(getGsatPoints(b.entry)[0]?.priority==="必熟"?-1:0)||a.entry.word.localeCompare(b.entry.word):a.entry.word.localeCompare(b.entry.word));
       renderList();
     }
 
     function renderList(){
       byId("resultCount").textContent=state.filtered.length.toLocaleString();
-      byId("resultLabel").textContent=state.query?"智慧搜尋結果":state.favoritesOnly?"我的收藏":"官方詞彙表";
-      byId("sortHint").textContent=state.query?"拼字／中文／句型加權":"";
+      byId("resultLabel").textContent=state.query?"AI 混合搜尋結果":state.favoritesOnly?"我的收藏":state.collocationsOnly?(state.category==="全部"?"搭配考點詞彙":state.category):"官方詞彙表";
+      byId("sortHint").textContent=state.query?"字面＋BM25＋概念＋RRF":state.collocationsOnly?"必熟優先":"";
       byId("favoriteCount").textContent=state.favorites.size?String(state.favorites.size):"";
       const rows=state.filtered.slice(0,MAX_RESULTS);
       if(!rows.length){wordList.innerHTML='<div class="empty"><div><strong>找不到符合的詞彙</strong><p>試試其他拼法、中文關鍵字，或開啟更多級別。</p></div></div>';byId("moreHint").textContent="";return}
@@ -318,20 +591,26 @@
     }
 
     function selectEntry(index,scroll=false){
-      const entry=VOCABULARY[index];if(!entry)return;state.selectedIndex=index;renderDetail(entry,index);renderList();
+      const entry=VOCABULARY[index];if(!entry)return;if(scroll&&state.query)recordSearchFeedback(state.query,entry.word);state.selectedIndex=index;renderDetail(entry,index);renderList();
       if(scroll&&innerWidth<920)wordDetail.scrollIntoView({behavior:"smooth",block:"start"});
     }
+
+    function shuffled(values){const result=[...values];for(let i=result.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[result[i],result[j]]=[result[j],result[i]]}return result}
+    function collocationQuestion(entry){const targets=["to","for","of","with","in","on","from","at","by","into","as","than","about","against","over","between","among","without"],patterns=getGsatPoints(entry).flatMap(point=>point.patterns.map(pattern=>({pattern,point}))),candidates=[];for(const item of patterns){const form=item.pattern[0],match=form.match(/\b(to|for|of|with|in|on|from|at|by|into|as|than|about|against|over|between|among|without)\b/i);if(match)candidates.push({form,meaning:item.pattern[1],answer:match[0].toLowerCase(),point:item.point,masked:form.slice(0,match.index)+"_____"+form.slice(match.index+match[0].length)})}if(!candidates.length)return null;const candidate=candidates[Math.floor(Math.random()*candidates.length)],distractors=shuffled(targets.filter(value=>value!==candidate.answer)).slice(0,3);candidate.options=shuffled([candidate.answer,...distractors]);return candidate}
+    function startCollocationPractice(entry){const host=byId("collocationPractice"),question=collocationQuestion(entry);if(!host||!question)return;host.dataset.answered="";host.hidden=false;host.innerHTML=`<p class="practice-kicker">SMART CLOZE · ${escapeHtml(question.point.category||"搭配")}</p><p class="practice-question">${escapeHtml(question.masked)}</p><div class="practice-options">${question.options.map(option=>`<button class="practice-option" type="button" data-answer="${escapeHtml(option)}">${escapeHtml(option)}</button>`).join("")}</div><p class="practice-feedback">選出正確搭配。累積：${Number(state.practice.correct||0)} / ${Number(state.practice.total||0)} 題答對。</p>`;host.scrollIntoView({behavior:"smooth",block:"nearest"});host.querySelector(".practice-options").addEventListener("click",event=>{const button=event.target.closest(".practice-option");if(!button||host.dataset.answered==="true")return;host.dataset.answered="true";const correct=button.dataset.answer===question.answer;state.practice.total=Number(state.practice.total||0)+1;if(correct)state.practice.correct=Number(state.practice.correct||0)+1;savePracticeStats();host.querySelectorAll(".practice-option").forEach(option=>{option.disabled=true;option.classList.toggle("correct",option.dataset.answer===question.answer);if(option===button&&!correct)option.classList.add("wrong")});host.querySelector(".practice-feedback").innerHTML=`<strong>${correct?"答對了":"再記一次"}：</strong>${escapeHtml(question.form)}＝${escapeHtml(question.meaning)}<br>累積 ${state.practice.correct} / ${state.practice.total} 題答對。`;const next=document.createElement("button");next.type="button";next.className="practice-next";next.textContent="再出一題 →";next.addEventListener("click",()=>startCollocationPractice(entry));host.appendChild(next)})}
 
     function renderDetail(entry,index){
       stopPronunciation();
       const saved=state.favorites.has(entry.word);
       const example=`<section class="example" id="exampleCard"><p class="kicker">📖 四源句庫 · CEEC-115 v2 智慧排序</p><div class="filter-legend" aria-label="例句評分維度"><span>🎯 目標字＋完整句</span><span>📚 CEEC 詞彙覆蓋</span><span>🔗 語境／搭配線索</span><span>🗣️ 來源多樣與真人音訊</span></div><div class="example-list loading" id="exampleResults"><p class="example-loading">正在彙整、去重、檢查詞彙覆蓋與搭配，再排序候選例句…</p></div><p id="exampleMeta">至少提供一句目前最適合的；只有通過門檻的句子才送 Google 翻譯</p></section>`;
-      const learning=`<div class="learning-grid"><section class="study-card exam-points"><p class="kicker">🔥 學測搭配考點 · 教師常提醒</p><p class="card-note">可搜尋句型（如 satisfied with）· 42 組精選考點 · 標準辭典交叉查證；不是官方頻率榜</p>${renderGsatPoint(entry)}</section><section class="study-card cloze"><p class="kicker">🎯 克漏字近義詞替換</p><p class="card-note">Datamuse ml → CEEC 1～6 級交集 · 最多 5 個</p><div class="chips" id="synonymChips"><p class="card-empty">正在比對大考中心白名單…</p></div></section><section class="study-card collocation"><p class="kicker">✍️ 語料庫搭配候選與信心</p><p class="card-note">語料頻率＋詞性方向＋CEEC 級別＋精選句型校正 · 最多 6 組；請以「高」信心優先</p><div class="chips" id="collocationChips"><p class="card-empty">正在評估學測範圍內的前後搭配…</p></div></section></div>`;
+      const hasPoints=getGsatPoints(entry).length>0;
+      const learning=`<div class="learning-grid"><section class="study-card exam-points"><div class="exam-point-header"><div><p class="kicker">🔥 學測搭配考點 · 分類強化版</p><p class="card-note">可搜尋中文概念或完整句型 · ${GSAT_COLLOCATION_GUIDE.length} 組、${GSAT_COLLOCATION_GUIDE.reduce((sum,point)=>sum+point.patterns.length,0)} 條句型 · 非官方頻率榜</p></div>${hasPoints?'<button class="practice-button" id="practiceButton" type="button">立即考一題</button>':""}</div>${renderGsatPoint(entry)}</section><section class="study-card cloze"><p class="kicker">🎯 克漏字近義詞替換</p><p class="card-note">Datamuse ml → CEEC 1～6 級交集 · 最多 5 個</p><div class="chips" id="synonymChips"><p class="card-empty">正在比對大考中心白名單…</p></div></section><section class="study-card collocation"><p class="kicker">✍️ 語料庫搭配候選與信心</p><p class="card-note">語料頻率＋詞性方向＋CEEC 級別＋精選句型校正 · 最多 6 組；請以「高」信心優先</p><div class="chips" id="collocationChips"><p class="card-empty">正在評估學測範圍內的前後搭配…</p></div></section></div>`;
       wordDetail.className=`detail theme-l${entry.level}`;
       wordDetail.innerHTML=`<div class="topline"><span class="badge">LEVEL ${entry.level}</span><span>${levelName(entry.level)}</span><button class="favorite ${saved?"saved":""}" id="favoriteButton" type="button">${saved?"★ 已收藏":"☆ 收藏"}</button></div><div class="title-row"><div><h2>${escapeHtml(entry.word)}</h2><p class="phonetic"><em id="primaryPos">${escapeHtml(entry.partOfSpeech)}</em><span id="apiPhonetic">${escapeHtml(entry.pronunciation||"音標未收錄")}</span><span class="phonetic-source" id="phoneticSource">OFFLINE</span></p><div class="pos-chips" id="posChips"><span class="pos-chip">${escapeHtml(entry.partOfSpeech)}</span></div><p class="audio-status loading" id="audioStatus">正在彙整美式、英式與其他真人發音…</p><div class="pronunciation-options" id="pronunciationOptions" aria-label="可用真人發音"></div></div><button class="speak" id="speakButton" type="button" aria-label="播放 ${escapeHtml(entry.word)} 的發音"><span>🔊</span><small id="speakSource">真人優先</small></button></div><section class="definition"><p class="kicker">🇹🇼 繁體中文釋義</p><h3>${escapeHtml(entry.meaning)}</h3><p class="translation-live"><span>GOOGLE 即時補貼</span><strong id="translationText">正在查詢繁中翻譯…</strong><a id="translationLink" href="${escapeHtml(googleTranslatePage(entry.word))}" target="_blank" rel="noreferrer">開啟翻譯</a></p></section>${renderExamProfile(entry)}${example}${learning}<div class="twocol"><section><p class="kicker">詞表內建搭配</p><p>${escapeHtml(entry.collocations||"尚未補充常用搭配")}</p></section><section><p class="kicker">易錯提醒</p><p>${escapeHtml(entry.note||"尚未補充易錯提醒")}</p></section></div><div class="service-actions"><span id="onlineStatus">正在載入線上學習資料…</span><button id="onlineRetry" type="button" hidden>重新載入線上資料</button></div><p class="source">${escapeHtml(entry.source)}</p>`;
       byId("favoriteButton").addEventListener("click",()=>toggleFavorite(entry.word,index));
       byId("speakButton").addEventListener("click",event=>speakWord(entry.word,event.currentTarget));
       byId("onlineRetry").addEventListener("click",()=>loadOnlineData(entry,index,true));
+      if(hasPoints)byId("practiceButton").addEventListener("click",()=>startCollocationPractice(entry));
       loadOnlineData(entry,index);
     }
 
@@ -434,11 +713,11 @@
       return commonVerb||verbEnding||(/v/i.test(String(partOfSpeech||""))&&containsTargetForm(text,word));
     }
     function curatedCollocationCheck(text,word){
-      const point=getGsatPoint({word}),normalized=normalizeSearchValue(text),tokens=normalized.split(" ").filter(Boolean);if(!point)return{aligned:false,blocked:false,score:0,label:""};
-      const blocked=(point.blocked||[]).map(normalizeSearchValue).find(pattern=>pattern&&normalized.includes(pattern));if(blocked)return{aligned:false,blocked:true,score:-24,label:"易錯搭配"};
-      const targetPositions=[];tokens.forEach((token,index)=>{if(point.keys.some(key=>matchesTargetForm(token,normalizeSearchValue(key))))targetPositions.push(index)});
+      const points=getGsatPoints({word}),normalized=normalizeSearchValue(text),tokens=normalized.split(" ").filter(Boolean);if(!points.length)return{aligned:false,blocked:false,score:0,label:""};
+      const keys=[...new Set(points.flatMap(point=>point.keys).map(normalizeSearchValue))],blocked=points.flatMap(point=>point.blocked||[]).map(normalizeSearchValue).find(pattern=>pattern&&normalized.includes(pattern));if(blocked)return{aligned:false,blocked:true,score:-24,label:"易錯搭配"};
+      const targetPositions=[];tokens.forEach((token,index)=>{if(keys.some(key=>matchesTargetForm(token,key)))targetPositions.push(index)});
       const prepositions=new Set("to with for from of in on as against between into about by".split(" ")),generic=new Set("be a b n v ing person people thing feature identity result cause activity problem topic time position aid school someone something method policy danger illness shock crime".split(" "));
-      const patternTokens=point.patterns.flatMap(([form])=>normalizeSearchValue(form).split(" ")),prepSignals=new Set(patternTokens.filter(token=>prepositions.has(token))),anchors=[...new Set(patternTokens.filter(token=>token.length>3&&!generic.has(token)&&!prepositions.has(token)&&!point.keys.includes(token)))];
+      const patternTokens=points.flatMap(point=>point.patterns).flatMap(([form])=>normalizeSearchValue(form).split(" ")),prepSignals=new Set(patternTokens.filter(token=>prepositions.has(token))),anchors=[...new Set(patternTokens.filter(token=>token.length>3&&!generic.has(token)&&!prepositions.has(token)&&!keys.includes(token)))];
       for(const position of targetPositions){const window=tokens.slice(Math.max(0,position-4),position+6);if(window.some(token=>prepSignals.has(token))||window.some(token=>anchors.some(anchor=>matchesTargetForm(token,anchor))))return{aligned:true,blocked:false,score:14,label:"精選搭配吻合"}}
       return{aligned:false,blocked:false,score:6,label:"搭配可判讀"};
     }
@@ -527,13 +806,13 @@
       return{score,label};
     }
     function parseCorpusCollocations(beforePayload,afterPayload,entry){
-      const word=apiLookupWord(entry&&entry.word),target=normalizeCeecWord(word),point=getGsatPoint(entry),blocked=new Set((point&&point.blocked||[]).map(normalizeSearchValue)),patternText=normalizeSearchValue(point?point.patterns.map(pattern=>pattern[0]).join(" "):""),seen=new Set(),result=emptyCeecSuggestions(),pool=[];
+      const word=apiLookupWord(entry&&entry.word),target=normalizeCeecWord(word),points=getGsatPoints(entry),blocked=new Set(points.flatMap(point=>point.blocked||[]).map(normalizeSearchValue)),patternText=normalizeSearchValue(points.flatMap(point=>point.patterns).map(pattern=>pattern[0]).join(" ")),seen=new Set(),result=emptyCeecSuggestions(),pool=[];
       for(const [payload,direction] of [[beforePayload,"before"],[afterPayload,"after"]])for(const item of Array.isArray(payload)?payload:[]){
         const value=String(item&&item.word||"").trim(),key=normalizeCeecWord(value);if(!value||key===target||COLLOCATION_STOPWORDS.has(key)||!/^[A-Za-z][A-Za-z '-]*$/.test(value))continue;
         const phrase=direction==="before"?`${value} ${word}`:`${word} ${value}`,phraseKey=normalizeSearchValue(phrase);if(seen.has(phraseKey))continue;seen.add(phraseKey);result.candidateCount++;if(blocked.has(phraseKey)){result.blockedCount++;continue}
         const match=ceecSuggestion(value);if(!match){result.rejectedCount++;continue}pool.push({...match,phrase,direction,rawScore:Math.max(0,Number(item&&item.score||0)),partnerKey:normalizeSearchValue(value),tags:datamusePosTags(item)});
       }
-      const maxRaw=Math.max(1,...pool.map(item=>item.rawScore));for(const item of pool){const frequency=Math.round(35*Math.log1p(item.rawScore)/Math.log1p(maxRaw)),directionFit=collocationDirectionScore(entry,item.direction,item.partnerKey,item.tags),coreBonus=item.level<=5?14:6,curated=Boolean(point&&patternText.split(" ").some(token=>token===item.partnerKey||matchesTargetForm(item.partnerKey,token))),curatedBonus=curated?30:0,score=Math.min(99,frequency+directionFit.score+coreBonus+curatedBonus),confidence=curated||score>=68?"high":score>=48?"medium":"explore";Object.assign(item,{score,confidence,confidenceLabel:confidence==="high"?"高":confidence==="medium"?"中":"探索",reasons:[`語料 ${frequency}/35`,directionFit.label,`CEEC L${item.level}`,...(curated?["精選句型吻合"]:[])]})}
+      const maxRaw=Math.max(1,...pool.map(item=>item.rawScore));for(const item of pool){const frequency=Math.round(35*Math.log1p(item.rawScore)/Math.log1p(maxRaw)),directionFit=collocationDirectionScore(entry,item.direction,item.partnerKey,item.tags),coreBonus=item.level<=5?14:6,curated=Boolean(points.length&&patternText.split(" ").some(token=>token===item.partnerKey||matchesTargetForm(item.partnerKey,token))),curatedBonus=curated?30:0,score=Math.min(99,frequency+directionFit.score+coreBonus+curatedBonus),confidence=curated||score>=68?"high":score>=48?"medium":"explore";Object.assign(item,{score,confidence,confidenceLabel:confidence==="high"?"高":confidence==="medium"?"中":"探索",reasons:[`語料 ${frequency}/35`,directionFit.label,`CEEC L${item.level}`,...(curated?["精選句型吻合"]:[])]})}
       result.items=pool.sort((a,b)=>b.score-a.score||a.level-b.level||a.phrase.localeCompare(b.phrase)).slice(0,6);return result;
     }
 
@@ -688,12 +967,14 @@
     wordList.addEventListener("click",event=>{const row=event.target.closest(".row");if(row)selectEntry(Number(row.dataset.index),true)});
     searchInput.addEventListener("input",()=>{state.query=searchInput.value;clearSearch.hidden=!state.query;searchKey.hidden=!!state.query;applyFilters()});
     clearSearch.addEventListener("click",()=>{searchInput.value="";state.query="";clearSearch.hidden=true;searchKey.hidden=false;applyFilters();searchInput.focus()});
-    byId("allTab").addEventListener("click",()=>{state.favoritesOnly=false;byId("allTab").classList.add("on");byId("favoriteTab").classList.remove("on");applyFilters()});
-    byId("favoriteTab").addEventListener("click",()=>{state.favoritesOnly=true;byId("favoriteTab").classList.add("on");byId("allTab").classList.remove("on");applyFilters()});
+    byId("allTab").addEventListener("click",()=>setListMode("all"));
+    byId("collocationTab").addEventListener("click",()=>setListMode("collocations"));
+    byId("favoriteTab").addEventListener("click",()=>setListMode("favorites"));
+    byId("quickSearches").addEventListener("click",event=>{const button=event.target.closest(".query-chip");if(!button)return;searchInput.value=button.dataset.query||"";state.query=searchInput.value;clearSearch.hidden=!state.query;searchKey.hidden=!!state.query;applyFilters();searchInput.focus()});
     document.addEventListener("keydown",event=>{if(event.key==="/"&&!/INPUT|TEXTAREA/.test(document.activeElement.tagName)){event.preventDefault();searchInput.focus()}if(event.key==="Escape"&&document.activeElement===searchInput){searchInput.value="";state.query="";applyFilters();searchInput.blur()}});
     if("speechSynthesis" in window)window.speechSynthesis.getVoices();
 
-    buildLevelFilters();byId("totalCount").textContent=VOCABULARY.length.toLocaleString();
+    buildLevelFilters();buildCategoryFilters();byId("totalCount").textContent=VOCABULARY.length.toLocaleString();byId("collocationCount").textContent=GSAT_COLLOCATION_GUIDE.length.toLocaleString();byId("collocationTabCount").textContent=GSAT_COLLOCATION_GUIDE.length.toLocaleString();
     state.selectedIndex=Math.max(0,VOCABULARY.findIndex(entry=>entry.word==="challenge"));
     applyFilters();selectEntry(state.selectedIndex);setupDaily();
   </script>
