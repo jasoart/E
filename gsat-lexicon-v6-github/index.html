@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <meta name="theme-color" content="#17352d">
+  <link rel="icon" href="./favicon.ico" sizes="any">
+  <link rel="icon" type="image/svg+xml" href="./assets/icons/icon.svg?v=27427b00f5ce">
+  <link rel="apple-touch-icon" href="./assets/icons/apple-touch-icon.png?v=9d47a9f1fc60">
+  <link rel="manifest" href="./manifest.webmanifest">
+  <link rel="preconnect" href="https://api.dictionaryapi.dev" crossorigin>
+  <link rel="dns-prefetch" href="https://api.tatoeba.org">
+  <meta name="description" content="內建 6,012 個大考中心詞條、每頁 60 筆分頁、免 API Key 的本機開源 AI 語意搜尋、111–115 學測真題搭配與智慧複習">
+  <title>學測英文專用詞典｜V6 情境搭配 × 智慧複習</title>
+  <link rel="stylesheet" href="./assets/css/app.css?v=1f99325cf839">
+  <script defer src="./assets/js/config.js?v=ccbd475b5e65"></script>
+  <script defer src="./assets/data/vocabulary.js?v=f0471273feca"></script>
+  <script defer src="./assets/data/collocations.js?v=9ca91a43390d"></script>
+  <script defer src="./assets/data/learning.js?v=e9e970c406e3"></script>
+  <script defer src="./assets/js/state.js?v=8bebbeb9cf98"></script>
+  <script defer src="./assets/js/search.js?v=00ed1092af88"></script>
+  <script defer src="./assets/js/ai.js?v=6bdd38e20cde"></script>
+  <script defer src="./assets/js/network.js?v=f26707142a01"></script>
+  <script defer src="./assets/js/dictionary.js?v=a1980b9811ef"></script>
+  <script defer src="./assets/js/examples.js?v=4997ea5e1702"></script>
+  <script defer src="./assets/js/audio.js?v=058264e8662d"></script>
+  <script defer src="./assets/js/ui.js?v=6122b0eed22a"></script>
+  <script defer src="./assets/js/favorites.js?v=569a332f0d3a"></script>
+  <script defer src="./assets/js/online.js?v=c62c1c448b70"></script>
+  <script defer src="./assets/js/diagnostics.js?v=9f5fd89b00a8"></script>
+  <script defer src="./assets/js/app.js?v=7c18a2a4ee3e"></script>
+
+</head>
+<body>
+  <header class="header">
+    <div class="brand"><img class="brand-icon" src="./assets/icons/icon.svg?v=27427b00f5ce" width="41" height="41" alt="GSAT 詞典"><span class="brand-copy"><strong>學測英文字典</strong><small>GSAT LEXICON</small></span></div>
+    <div class="header-actions"><div class="offline"><i aria-hidden="true"></i><span>6,012 內建詞條 · 2,500 條中英搭配</span></div><button class="header-shortcut" id="commandButton" type="button" aria-label="開啟搜尋">⌘K</button></div>
+  </header>
+
+  <section class="hero" id="top">
+    <div>
+      <p class="eyebrow"><span>111–115 真題語料</span>大考中心六級詞彙 × 搭配學習</p>
+      <h1>查一個字，<br><em>把真題搭配一起記。</em></h1>
+      <p class="lead">內建 6,012 個大考中心詞條，查字不必等待線上 API；搭配庫含 2,500 條中英搭配與 111–115 年逐筆來源；另附 102–110 年官方試卷索引、自編情境題及錯題複習。搜尋會同時看單字、中文、片語與真題句型，讓你從「查字」直接進到「會用」。</p>
+    </div>
+    <div class="search-wrap">
+      <label class="search"><span class="magnify" aria-hidden="true"></span><input id="searchInput" type="search" autocomplete="off" placeholder="搜尋單字、中文概念或真題搭配（例：give rise to）…" aria-label="搜尋詞彙與搭配" aria-autocomplete="list" aria-controls="searchSuggestions" aria-expanded="false"><button id="clearSearch" class="clear" type="button" aria-label="清除搜尋" hidden>×</button><span id="searchKey" class="key">/</span></label><div class="search-suggestions" id="searchSuggestions" role="listbox" aria-label="搜尋建議" hidden></div>
+      <div class="stats"><span><strong id="totalCount">0</strong> 個官方詞條</span><span><strong>6</strong> 個詞彙級別</span><span><strong id="collocationCount">0</strong> 組搭配考點</span><span><strong id="examPointCount">0</strong> 組 111–115 真題搭配</span><span>內建詞表 · 線上資料分區補充</span></div>
+    </div>
+  </section>
+
+  <section class="tools" aria-label="詞彙篩選">
+    <div class="levels" id="levelFilters"><span class="filter-label">級別</span></div>
+    <div class="tabs"><button id="allTab" class="on" type="button">全部</button><button id="examTab" type="button">111–115 真題 <span id="examTabCount"></span></button><button id="collocationTab" type="button">搭配考點 <span id="collocationTabCount"></span></button><button id="reviewTab" type="button">今日複習 <span id="reviewCount"></span></button><button id="favoriteTab" type="button">收藏 <span id="favoriteCount"></span></button></div>
+  </section>
+
+  <section class="ai-strip" aria-label="離線 AI 搜尋說明與快速搜尋">
+    <div class="ai-strip-inner">
+      <span class="ai-label">V6 · LOCAL AI SEARCH</span>
+      <p class="ai-method"><strong>七路搜尋：</strong>完全／前綴、BM25、中文概念、拼字容錯、真題搭配權重、本機偏好，以及可選的 MiniLM 多語語意搜尋。AI 在瀏覽器內執行，不傳送搜尋文字，也不需要 API Key。</p>
+      <div class="ai-control"><button class="ai-search-button" id="aiSearchButton" type="button" aria-pressed="false">啟用 AI 語意搜尋</button><span class="ai-status" id="aiSearchStatus" role="status">首次使用會下載開源模型並建立本機索引；完成後瀏覽器會快取。</span></div>
+      <div class="category-filters" id="categoryFilters" hidden aria-label="搭配分類"></div>
+      <div class="category-filters exam-years" id="examYearFilters" hidden aria-label="真題年度篩選"></div>
+      <div class="quick-searches" id="quickSearches"><button class="query-chip" type="button" data-query="give rise to">give rise to</button><button class="query-chip" type="button" data-query="depend on">depend on</button><button class="query-chip" type="button" data-query="prevent from">prevent from</button><button class="query-chip" type="button" data-query="be associated with">associated with</button><button class="query-chip" type="button" data-query="導致">導致</button><button class="query-chip" type="button" data-query="適應">適應</button></div>
+    </div>
+  </section>
+  <section class="diagnostic-panel" aria-label="自編情境診斷與錯題複習">
+    <div class="diagnostic-head"><div><span class="ai-label">CONTEXT PRACTICE · 自編題</span><h2>情境診斷與錯題複習</h2><p>先讀上下文，再練習搭配、因果轉承、指代、研究判讀與寫作連貫。答錯自動收進本機錯題，答對再移出；不影響舊收藏與單字複習。</p></div><div class="diagnostic-actions"><button type="button" id="diagnosticStart">開始情境診斷</button><button type="button" id="diagnosticReview">只練錯題 <span id="diagnosticWrongCount">0</span></button></div></div>
+    <div id="diagnosticContent" class="diagnostic-content" hidden></div>
+  </section>
+  <details class="historic-resources"><summary>102–110 年舊制學測英文試卷與新舊題型差異（參考索引）</summary><p>舊制試卷連結導向大考中心公開下載頁；本包尚未取得 102–110 年完整 PDF 的逐頁可核對原文，因此不把該九年的自編句型冒充已核對真題。111 年起增設混合題；115 年篇章結構為五個選項填四空。</p><nav aria-label="102 至 110 年歷屆英文試卷"><a target="_blank" rel="noreferrer" href="https://www.ceec.edu.tw/xmfile?page=9&xsmsid=0J052424829869345634">102 年英文試卷官方下載頁</a><a target="_blank" rel="noreferrer" href="https://www.ceec.edu.tw/xmfile?page=8&xsmsid=0J052424829869345634">103 年英文試卷官方下載頁</a><a target="_blank" rel="noreferrer" href="https://www.ceec.edu.tw/xmfile?page=8&xsmsid=0J052424829869345634">104 年英文試卷官方下載頁</a><a target="_blank" rel="noreferrer" href="https://www.ceec.edu.tw/xmfile?page=7&xsmsid=0J052424829869345634">105 年英文試卷官方下載頁</a><a target="_blank" rel="noreferrer" href="https://www.ceec.edu.tw/xmfile?page=7&xsmsid=0J052424829869345634">106 年英文試卷官方下載頁</a><a target="_blank" rel="noreferrer" href="https://www.ceec.edu.tw/xmfile?page=6&xsmsid=0J052424829869345634">107 年英文試卷官方下載頁</a><a target="_blank" rel="noreferrer" href="https://www.ceec.edu.tw/xmfile?page=5&xsmsid=0J052424829869345634">108 年英文試卷官方下載頁</a><a target="_blank" rel="noreferrer" href="https://www.ceec.edu.tw/xmfile?page=5&xsmsid=0J052424829869345634">109 年英文試卷官方下載頁</a><a target="_blank" rel="noreferrer" href="https://www.ceec.edu.tw/xmfile?page=4&xsmsid=0J052424829869345634">110 年英文試卷官方下載頁</a></nav><p>點入年份頁面後選擇「英文 → 試題內容」。不同年度資料頁次可能調整；可改從 <a target="_blank" rel="noreferrer" href="https://www.ceec.edu.tw/xmfile?xsmsid=0J052424829869345634">大考中心歷年試題總入口</a> 查詢。</p></details>
+  <p class="v3-note"><strong>來源標記：</strong>611 條句型附 111–115 試卷原文出處，共 636 筆紀錄。句型是教學整理，可展開核對年度、題組、頁碼與摘錄；選項用語另行標示，並非答案或官方出題頻率。</p>
+
+  <div class="backup-tools"><span>收藏與複習保存在此瀏覽器</span><button id="exportFavorites" type="button">匯出收藏</button><button id="importFavorites" type="button">匯入收藏</button><input id="favoritesFile" type="file" accept=".json,application/json" hidden></div>
+  <p id="bootStatus" class="boot-status" role="status">正在載入內建詞表… 若長時間沒有完成，請確認 assets 資料夾已一併上傳，再重新整理。</p>
+  <noscript><p class="boot-status">請啟用 JavaScript，以使用詞典、收藏與複習。</p></noscript>
+  <main class="grid">
+    <aside class="panel">
+      <div class="panel-head"><div><p id="resultLabel">官方詞彙表</p><strong><span id="resultCount">0</span> words</strong></div><span id="sortHint"></span></div>
+      <div class="list" id="wordList" aria-live="polite"></div>
+      <nav class="pagination" id="pagination" aria-label="詞彙結果分頁"><p id="moreHint"></p><div class="page-buttons" id="pageButtons"></div></nav>
+    </aside>
+    <article class="detail" id="wordDetail" aria-live="polite"></article>
+  </main>
+
+  <section class="daily" id="dailySection">
+    <div><span class="daily-label">WORD OF THE DAY</span><h2>今天，先記熟一個字。</h2></div>
+    <button id="dailyButton" type="button"></button>
+  </section>
+
+  <footer>
+    <p>高中英文參考詞彙表 © 財團法人大學入學考試中心基金會。本工具供非營利學習使用；詞彙級別與詞性依原表整理，中文釋義與音標含 ECDICT（MIT）資料。</p>
+    <p>線上補充來源：<a href="https://dictionaryapi.dev/" target="_blank" rel="noreferrer">DictionaryAPI</a> · <a href="https://en.wiktionary.org/" target="_blank" rel="noreferrer">Wiktionary</a>／<a href="https://freedictionaryapi.com/" target="_blank" rel="noreferrer">FreeDictionaryAPI</a> · <a href="https://tatoeba.org/" target="_blank" rel="noreferrer">Tatoeba</a> · <a href="https://www.datamuse.com/api/" target="_blank" rel="noreferrer">Datamuse</a>。AI 語意搜尋使用 <a href="https://huggingface.co/docs/transformers.js" target="_blank" rel="noreferrer">Transformers.js</a> 在本機執行 <a href="https://huggingface.co/Xenova/paraphrase-multilingual-MiniLM-L12-v2" target="_blank" rel="noreferrer">paraphrase-multilingual-MiniLM-L12-v2</a>（Apache-2.0）；不需帳號、API Key 或按次付費。搜尋設計另參考 MiniSearch／Fuse／FlexSearch、Pagefind／Algolia Autocomplete、local-first 儲存與 FSRS 的觀念；沒有直接嵌入這些框架。已核對真題標記僅適用 111–115 試題本文或選項曾出現的相同／同族搭配，不是官方頻率榜。</p>
+    <p>考題來源與教學方法：<a href="./SOURCE_GUIDE.md">資料來源說明</a> · <a target="_blank" rel="noreferrer" href="https://www.ceec.edu.tw/xcepaper/cont?qperoid=0Q105359543716106563&amp;sid=0Q105583094870257539&amp;xsmsid=0J066588036013658199">大考中心 115 年試題特色</a> · <a target="_blank" rel="noreferrer" href="https://www.ceec.edu.tw/xmfile?xsmsid=0J052424829869345634">官方試卷</a> · <a target="_blank" rel="noreferrer" href="https://www.ehanlin.com.tw/infos/gsat/download.html">公開歷屆試題與解析索引（翰林）</a>。本包僅收錄自行整理的搭配與自編題，不轉載重考班付費教材。</p>
+  </footer>
+  <div class="toast" id="toast" role="status"></div>
+
+
+</body>
+</html>
