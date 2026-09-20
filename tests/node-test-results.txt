@@ -1,0 +1,208 @@
+TAP version 13
+# Subtest: all script files parse and local HTML asset references exist
+ok 1 - all script files parse and local HTML asset references exist
+  ---
+  duration_ms: 31.099994
+  type: 'test'
+  ...
+# Subtest: all 6012 exact word IDs remain unique
+ok 2 - all 6012 exact word IDs remain unique
+  ---
+  duration_ms: 44.579503
+  type: 'test'
+  ...
+# Subtest: old favorites and every original progress key load without startup writes
+ok 3 - old favorites and every original progress key load without startup writes
+  ---
+  duration_ms: 22.700299
+  type: 'test'
+  ...
+# Subtest: favorite changes never reload the detail card/API and preserve unknown IDs
+ok 4 - favorite changes never reload the detail card/API and preserve unknown IDs
+  ---
+  duration_ms: 22.976185
+  type: 'test'
+  ...
+# Subtest: quota failure leaves original favorites and memory unchanged
+ok 5 - quota failure leaves original favorites and memory unchanged
+  ---
+  duration_ms: 21.6841
+  type: 'test'
+  ...
+# Subtest: import merges backups and rejects malformed data without clearing favorites
+ok 6 - import merges backups and rejects malformed data without clearing favorites
+  ---
+  duration_ms: 21.845724
+  type: 'test'
+  ...
+# Subtest: malformed localStorage does not crash startup or get rewritten
+ok 7 - malformed localStorage does not crash startup or get rewritten
+  ---
+  duration_ms: 23.219651
+  type: 'test'
+  ...
+# Subtest: target forms, contractions and phrase boundaries
+ok 8 - target forms, contractions and phrase boundaries
+  ---
+  duration_ms: 25.71005
+  type: 'test'
+  ...
+# Subtest: ordered collocation matching avoids unrelated nearby prepositions
+ok 9 - ordered collocation matching avoids unrelated nearby prepositions
+  ---
+  duration_ms: 28.529925
+  type: 'test'
+  ...
+# Subtest: hard-rejected examples never come back as fallback
+ok 10 - hard-rejected examples never come back as fallback
+  ---
+  duration_ms: 20.799468
+  type: 'test'
+  ...
+# Subtest: near duplicates are omitted and duplicate audio attribution survives
+ok 11 - near duplicates are omitted and duplicate audio attribution survives
+  ---
+  duration_ms: 25.751983
+  type: 'test'
+  ...
+# Subtest: exact, Chinese concept, typo and phrase searches remain available
+ok 12 - exact, Chinese concept, typo and phrase searches remain available
+  ---
+  duration_ms: 494.682843
+  type: 'test'
+  ...
+# Subtest: full app startup runs through all 6012 entries with old favorites
+ok 13 - full app startup runs through all 6012 entries with old favorites
+  ---
+  duration_ms: 144.216183
+  type: 'test'
+  ...
+# Subtest: concurrent identical calls deduplicate and cancelling one subscriber keeps the other
+ok 14 - concurrent identical calls deduplicate and cancelling one subscriber keeps the other
+  ---
+  duration_ms: 98.331277
+  type: 'test'
+  ...
+# Subtest: timeout and failed responses are not cached; next call retries
+ok 15 - timeout and failed responses are not cached; next call retries
+  ---
+  duration_ms: 103.698039
+  type: 'test'
+  ...
+# Subtest: last subscriber abort cancels the request and allows a fresh retry
+ok 16 - last subscriber abort cancels the request and allows a fresh retry
+  ---
+  duration_ms: 60.582209
+  type: 'test'
+  ...
+# Subtest: per-host concurrency is bounded and 429 respects Retry-After
+ok 17 - per-host concurrency is bounded and 429 respects Retry-After
+  ---
+  duration_ms: 104.542446
+  type: 'test'
+  ...
+# Subtest: offline cache works; cache misses do not send network requests
+ok 18 - offline cache works; cache misses do not send network requests
+  ---
+  duration_ms: 26.179553
+  type: 'test'
+  ...
+# Subtest: progressive display precedes slow ancillary APIs, translations stay asynchronous
+ok 19 - progressive display precedes slow ancillary APIs, translations stay asynchronous
+  ---
+  duration_ms: 505.237939
+  type: 'test'
+  ...
+# Subtest: switching A to B to A does not let cancelled responses paint the wrong word
+ok 20 - switching A to B to A does not let cancelled responses paint the wrong word
+  ---
+  duration_ms: 69.712661
+  type: 'test'
+  ...
+# Subtest: API failures leave no spinner and preserve offline data and favorites
+ok 21 - API failures leave no spinner and preserve offline data and favorites
+  ---
+  duration_ms: 20.834895
+  type: 'test'
+  ...
+# Subtest: persistent API cache survives a new app context and expired entries revalidate
+ok 22 - persistent API cache survives a new app context and expired entries revalidate
+  ---
+  duration_ms: 100.793583
+  type: 'test'
+  ...
+# Subtest: global API concurrency stays within six across different hosts
+ok 23 - global API concurrency stays within six across different hosts
+  ---
+  duration_ms: 58.32778
+  type: 'test'
+  ...
+# Subtest: built-in example translations do not send unnecessary Google requests
+ok 24 - built-in example translations do not send unnecessary Google requests
+  ---
+  duration_ms: 22.502537
+  type: 'test'
+  ...
+# Subtest: expanded corpus counts, verified evidence and reachable source cards are consistent
+ok 25 - expanded corpus counts, verified evidence and reachable source cards are consistent
+  ---
+  duration_ms: 221.059952
+  type: 'test'
+  ...
+# Subtest: new phrases and Chinese concepts are searchable through existing vocabulary
+ok 26 - new phrases and Chinese concepts are searchable through existing vocabulary
+  ---
+  duration_ms: 291.525746
+  type: 'test'
+  ...
+# Subtest: each year filters both word results and displayed source references
+ok 27 - each year filters both word results and displayed source references
+  ---
+  duration_ms: 54.873904
+  type: 'test'
+  ...
+# Subtest: source UI distinguishes options, leaves general patterns unverified and escapes quotations
+ok 28 - source UI distinguishes options, leaves general patterns unverified and escapes quotations
+  ---
+  duration_ms: 21.496301
+  type: 'test'
+  ...
+# Subtest: practice uses reviewed four-choice prompts, skips slash alternatives and deduplicates
+ok 29 - practice uses reviewed four-choice prompts, skips slash alternatives and deduplicates
+  ---
+  duration_ms: 50.308775
+  type: 'test'
+  ...
+# Subtest: changing source filters refreshes learning only and keeps stored favorites untouched
+ok 30 - changing source filters refreshes learning only and keeps stored favorites untouched
+  ---
+  duration_ms: 48.13099
+  type: 'test'
+  ...
+# Subtest: new bilingual thematic patterns are reachable, distinct, and do not claim exam provenance
+ok 31 - new bilingual thematic patterns are reachable, distinct, and do not claim exam provenance
+  ---
+  duration_ms: 349.289281
+  type: 'test'
+  ...
+# Subtest: all 636 original quote texts are moved to delayed JSON but citation metadata stays usable
+ok 32 - all 636 original quote texts are moved to delayed JSON but citation metadata stays usable
+  ---
+  duration_ms: 27.01413
+  type: 'test'
+  ...
+# Subtest: self-authored diagnostics retain wrong answers independently of legacy favorites and remove only on successful retry
+ok 33 - self-authored diagnostics retain wrong answers independently of legacy favorites and remove only on successful retry
+  ---
+  duration_ms: 20.315563
+  type: 'test'
+  ...
+1..33
+# tests 33
+# suites 0
+# pass 33
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 3235.355544
