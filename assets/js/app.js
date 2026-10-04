@@ -2,7 +2,6 @@
 
 wordList.addEventListener("click",event=>{const row=event.target.closest(".row");if(row)selectEntry(Number(row.dataset.index),true)});
 pageButtons.addEventListener("click",event=>{const button=event.target.closest(".page-button[data-page]");if(button&&!button.disabled)goToPage(button.dataset.page)});
-aiSearchButton.addEventListener("click",runAiSearch);
 let searchTimer,composing=false;
 function flushSearch(){clearTimeout(searchTimer);searchTimer=null;state.query=searchInput.value;applyFilters();renderSuggestions();}
 searchInput.addEventListener("compositionstart",()=>{composing=true;clearTimeout(searchTimer);});
@@ -28,6 +27,10 @@ state.selectedIndex=Math.max(0,VOCABULARY.findIndex(entry=>entry.word==="challen
 applyFilters();selectEntry(state.selectedIndex);setupDaily();
 
 setupFavoriteBackup();setTimeout(warmSearchIndex,100);
+const builtinStats=builtinStudyStats();
+for(const [id,value] of [["builtinWordCount",builtinStats.words],["builtinExampleCount",builtinStats.examples],["builtinCollocationCount",builtinStats.collocations]])if(byId(id))byId(id).textContent=value.toLocaleString();
+if(byId("headerDataCount"))byId("headerDataCount").textContent=`${VOCABULARY.length.toLocaleString()} 詞條 · ${builtinStats.examples.toLocaleString()} 內建例句 · ${builtinStats.collocations.toLocaleString()} 內建搭配`;
+document.addEventListener("localvoicestatus",event=>{const host=byId("audioStatus");if(host)host.textContent=event.detail.message;});
 byId("bootStatus").hidden=true;
 
 setupDiagnostics();

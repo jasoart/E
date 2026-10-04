@@ -3,13 +3,16 @@
 const SEARCH_FIELD_CACHE = new WeakMap();
 const BM25_DOC_CACHE = new WeakMap();
 const BM25_INDEX = {ready:false,df:new Map(),avgLength:1};
-const state = {query:"", levels:new Set(LEVELS), favorites:new Set(readFavorites()), favoritesOnly:false, collocationsOnly:false, examOnly:false, examYear:"all", reviewOnly:false, category:"全部", selectedIndex:-1, filtered:[], page:1, aiMode:false, aiQuery:"", aiRanking:[], aiBusy:false, aiExtractor:null, aiVectors:null, aiVectorSize:0, onlineCache:new Map(), onlineRequest:0, onlineController:null, currentAudio:null, audioElement:null, audioSession:0,searchFeedback:readSearchFeedback(),practice:readPracticeStats(),recentSearches:readRecentSearches(),review:readReviewQueue(),suggestionIndex:-1};
+const state = {query:"", levels:new Set(LEVELS), favorites:new Set(readFavorites()), favoritesOnly:false, collocationsOnly:false, examOnly:false, examYear:"all", reviewOnly:false, category:"全部", selectedIndex:-1, filtered:[], page:1, currentAudio:null, audioSession:0,searchFeedback:readSearchFeedback(),practice:readPracticeStats(),recentSearches:readRecentSearches(),review:readReviewQueue(),suggestionIndex:-1};
 const byId = id => document.getElementById(id);
-const searchInput=byId("searchInput"), clearSearch=byId("clearSearch"), searchKey=byId("searchKey"), searchSuggestions=byId("searchSuggestions"), wordList=byId("wordList"), wordDetail=byId("wordDetail"), pagination=byId("pagination"), pageButtons=byId("pageButtons"), aiSearchButton=byId("aiSearchButton"), aiSearchStatus=byId("aiSearchStatus");
+const searchInput=byId("searchInput"), clearSearch=byId("clearSearch"), searchKey=byId("searchKey"), searchSuggestions=byId("searchSuggestions"), wordList=byId("wordList"), wordDetail=byId("wordDetail"), pagination=byId("pagination"), pageButtons=byId("pageButtons");
 
 function escapeHtml(value){return String(value??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#039;"}[c]));}
 function safeExternalUrl(value){try{const url=new URL(String(value||""));return url.protocol==="https:"?url.href:""}catch{return""}}
-function spokenForm(word){return String(word).split(/[/(]/)[0].replace(/[^A-Za-z'-]/g," ").trim();}
+function spokenForm(word){
+  const aliases=typeof builtinTargetAliases==="function"?builtinTargetAliases(word):[];
+  return String(aliases[0]||String(word).split(/[/(]/)[0]).normalize("NFKC").replace(/[^\p{L}\p{N}'.-]+/gu," ").trim();
+}
 function apiLookupWord(word){return String(word).split(/[/(]/)[0].replace(/’/g,"'").replace(/\./g,"").replace(/[^A-Za-z'-]/g," ").trim();}
 function normalizeCeecWord(word){return String(word||"").normalize("NFKC").toLowerCase().replace(/’/g,"'").replace(/\./g,"").replace(/\s+/g," ").trim()}
 function normalizeSearchValue(value){return String(value||"").normalize("NFKC").toLowerCase().replace(/’/g,"'").replace(/[^a-z0-9\u3400-\u9fff'-]+/gi," ").replace(/\s+/g," ").trim()}

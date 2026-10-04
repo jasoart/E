@@ -1,0 +1,16 @@
+.coach-panel{margin:24px 0;padding:24px;border:1px solid var(--line,#ddd);border-radius:22px;background:var(--paper,#fff)}
+.coach-panel h2{margin:8px 0;font-size:clamp(1.3rem,3vw,1.8rem)}
+.coach-panel>p,.coach-scope{color:var(--muted,#62656b);line-height:1.7}
+.coach-panel textarea{display:block;width:100%;min-height:145px;padding:14px;border:1px solid var(--line,#ccc);border-radius:12px;font:inherit;font-size:16px;resize:vertical;box-sizing:border-box;background:var(--paper,#fff);color:inherit}
+.coach-prompts,.coach-actions{display:flex;flex-wrap:wrap;gap:10px;margin:14px 0}
+.coach-prompts button,.coach-actions button{min-height:44px;padding:10px 14px;border:1px solid var(--line,#ccc);border-radius:10px;background:var(--paper,#fff);color:inherit;font:inherit;cursor:pointer}
+.coach-actions button:first-child{background:#234c43;color:#fff;border-color:#234c43}
+.coach-output{overflow-wrap:anywhere;line-height:1.7}
+.coach-output ul,.coach-output ol{padding-left:24px}
+.coach-output li{margin:8px 0}
+.coach-output small{display:block;color:var(--muted,#62656b)}
+.coach-result-title{font-weight:700}
+.coach-example{border-top:1px solid var(--line,#ddd);padding:12px 0}
+.coach-example p{margin:6px 0}
+.coach-output blockquote{margin:12px 0;padding:10px 16px;border-left:3px solid #487c6b;background:#f2f7f4;color:#233d32}
+@media(max-width:600px){.coach-panel{padding:18px}.coach-actions button{flex:1 1 135px}.coach-panel textarea{min-height:175px}}

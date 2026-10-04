@@ -1,0 +1,6822 @@
+{
+  "ability": {
+    "plainMeaning": "完成事情的能力；某方面的才幹",
+    "examples": [
+      {
+        "text": "Reading aloud improves my ability to speak clearly.",
+        "translationZh": "朗讀提升我清楚說話的能力。",
+        "grammar": "動名詞主詞",
+        "writingTip": "用 ability to 說明具體能力，不只籠統稱讚。",
+        "topic": "語言學習",
+        "source": "self-authored"
+      },
+      {
+        "text": "Students who lack confidence may still have the ability to solve difficult problems.",
+        "translationZh": "缺乏自信的學生仍可能有解決難題的能力。",
+        "grammar": "關係子句與情態動詞",
+        "writingTip": "以 may still 讓步，區分自信與實際能力。",
+        "topic": "教育",
+        "source": "self-authored"
+      }
+    ],
+    "collocations": [
+      [
+        "the ability to do something",
+        "做某事的能力",
+        "ability 後接 to 不定詞。"
+      ],
+      [
+        "develop an ability",
+        "培養能力",
+        "特定一種能力可用 an。"
+      ],
+      [
+        "exceptional ability",
+        "出眾的才幹",
+        "指整體才幹時常不可數。"
+      ],
+      [
+        "to the best of your ability",
+        "盡你所能",
+        "固定片語，ability 用單數。"
+      ]
+    ],
+    "usageNote": "可指一般才能或特定技能；特定能力常用 ability to。不要把 able 當名詞。"
+  },
+  "able": {
+    "plainMeaning": "有能力的；能夠做到的",
+    "examples": [
+      {
+        "text": "Leo is able to repair a bicycle without help.",
+        "translationZh": "里歐能獨自修理腳踏車。",
+        "grammar": "be able to",
+        "writingTip": "用 be able to 描述實際可完成的任務。",
+        "topic": "生活技能",
+        "source": "self-authored"
+      },
+      {
+        "text": "Although the room is small, we are able to work in groups because its tables can be moved.",
+        "translationZh": "房間雖然很小，但桌子可移動，所以我們能分組工作。",
+        "grammar": "讓步、原因與被動",
+        "writingTip": "用 although 承認限制，再提出可行安排。",
+        "topic": "學校空間",
+        "source": "self-authored"
+      }
+    ],
+    "collocations": [
+      [
+        "be able to do something",
+        "能夠做某事",
+        "able 後接 to 加原形動詞。"
+      ],
+      [
+        "an able assistant",
+        "能幹的助理",
+        "置於名詞前，強調能幹。"
+      ],
+      [
+        "be perfectly able to",
+        "完全有能力",
+        "perfectly 加強能力的肯定。"
+      ],
+      [
+        "more able students",
+        "能力較好的學生",
+        "more able 比較能力，勿等同所有人的價值。"
+      ]
+    ],
+    "usageNote": "be able to 表示能力；名詞前的 able 常指能幹。過去成功完成某次任務可用 was able to。"
+  },
+  "academic": {
+    "plainMeaning": "學校課業或學術相關的；也可指學者或純理論的",
+    "examples": [
+      {
+        "text": "The school provides academic support after class.",
+        "translationZh": "學校在課後提供課業協助。",
+        "grammar": "現在簡單式",
+        "writingTip": "以具體措施說明課業支持。",
+        "topic": "學校服務",
+        "source": "self-authored"
+      },
+      {
+        "text": "Academic success should not be judged only by grades, which reveal little about a student’s kindness.",
+        "translationZh": "學業成功不應只以成績判斷，因為成績難以反映學生的善良。",
+        "grammar": "被動與非限定關係子句",
+        "writingTip": "先提出評量原則，再補充單一指標的限制。",
+        "topic": "教育價值",
+        "source": "self-authored"
+      }
+    ],
+    "collocations": [
+      [
+        "academic performance",
+        "學業表現",
+        "performance 通常不可數。"
+      ],
+      [
+        "academic research",
+        "學術研究",
+        "research 為不可數名詞。"
+      ],
+      [
+        "an academic career",
+        "學術生涯",
+        "指研究、教學等職涯。"
+      ],
+      [
+        "a purely academic question",
+        "純理論的問題",
+        "此處指缺乏當下實際影響，非課業題目。"
+      ]
+    ],
+    "usageNote": "常作形容詞；an academic 可指大學教師或學者。purely academic 有「純理論、暫無實際關聯」之意。"
+  },
+  "accept": {
+    "plainMeaning": "接受、接納；承認或願意承擔",
+    "examples": [
+      {
+        "text": "Nora accepted the invitation to join our reading club.",
+        "translationZh": "諾拉接受了加入讀書會的邀請。",
+        "grammar": "過去簡單式",
+        "writingTip": "描述接受具體邀請時，直接接 invitation。",
+        "topic": "社團",
+        "source": "self-authored"
+      },
+      {
+        "text": "If we accept responsibility for the mistake, we can begin to rebuild our customers’ trust.",
+        "translationZh": "如果我們承擔這次錯誤的責任，就能開始重建顧客的信任。",
+        "grammar": "條件子句",
+        "writingTip": "把承擔責任連結到修復關係的方案。",
+        "topic": "服務倫理",
+        "source": "self-authored"
+      }
+    ],
+    "collocations": [
+      [
+        "accept an offer",
+        "接受提議或錄取",
+        "accept 直接接名詞，不接 to do 表示同意。"
+      ],
+      [
+        "accept responsibility for",
+        "承擔某事的責任",
+        "for 後接名詞或動名詞。"
+      ],
+      [
+        "accept that",
+        "承認某個事實",
+        "that 後接完整子句。"
+      ],
+      [
+        "be accepted into a program",
+        "獲某計畫錄取",
+        "用被動表示被接納。"
+      ]
+    ],
+    "usageNote": "accept 是接受或承認，不必然代表喜歡；agree with 偏向同意看法，receive 只表示收到。"
+  },
+  "access": {
+    "plainMeaning": "取得或使用的機會、權利；進入或讀取",
+    "examples": [
+      {
+        "text": "Students can access the course notes from home.",
+        "translationZh": "學生可以在家讀取課程筆記。",
+        "grammar": "情態動詞",
+        "writingTip": "動詞 access 直接接受詞。",
+        "topic": "數位學習",
+        "source": "self-authored"
+      },
+      {
+        "text": "A public library gives residents access to books that they may be unable to afford.",
+        "translationZh": "公共圖書館讓居民能取得他們可能買不起的書。",
+        "grammar": "關係子句",
+        "writingTip": "用 access to 說明公共服務如何減少限制。",
+        "topic": "社區資源",
+        "source": "self-authored"
+      }
+    ],
+    "collocations": [
+      [
+        "have access to",
+        "能使用或取得",
+        "名詞 access 後的 to 是介系詞。"
+      ],
+      [
+        "gain access to",
+        "獲得使用權",
+        "強調從沒有到取得。"
+      ],
+      [
+        "access a file",
+        "讀取檔案",
+        "動詞不加 to。"
+      ],
+      [
+        "internet access",
+        "網路連線／使用機會",
+        "access 通常不可數。"
+      ]
+    ],
+    "usageNote": "名詞通常不可數；名詞用 access to，動詞直接接資料、地點等受詞。也可指入口或通路。"
+  },
+  "accurate": {
+    "plainMeaning": "正確而精準的",
+    "examples": [
+      {
+        "text": "An accurate map helps hikers choose the right path.",
+        "translationZh": "準確的地圖幫助登山者選對路徑。",
+        "grammar": "現在簡單式",
+        "writingTip": "以實際用途說明準確資訊的價值。",
+        "topic": "戶外活動",
+        "source": "self-authored"
+      },
+      {
+        "text": "Before sharing a message, we should check whether its description of the event is accurate.",
+        "translationZh": "分享訊息前，我們應檢查它對事件的描述是否準確。",
+        "grammar": "whether 名詞子句",
+        "writingTip": "將核實準確度寫成負責任的行動。",
+        "topic": "媒體識讀",
+        "source": "self-authored"
+      }
+    ],
+    "collocations": [
+      [
+        "accurate information",
+        "準確資訊",
+        "information 不可數，不用 an。"
+      ],
+      [
+        "an accurate description",
+        "準確的描述",
+        "description 可數。"
+      ],
+      [
+        "accurate to the nearest millimetre",
+        "精確到最接近的毫米",
+        "to 引出精度。"
+      ],
+      [
+        "an accurate assessment",
+        "準確的評估",
+        "評估須與實際情況相符。"
+      ]
+    ],
+    "usageNote": "accurate 強調與事實或測量相符；precise 偏重細節明確，詳細不一定準確。"
+  },
+  "achieve(ment)": {
+    "plainMeaning": "達成目標；achievement 是成就或達成的事",
+    "examples": [
+      {
+        "text": "I achieved my goal of finishing the book this week.",
+        "translationZh": "我達成了這週讀完這本書的目標。",
+        "grammar": "過去式與動名詞",
+        "writingTip": "以具體完成事項取代空泛的成功。",
+        "topic": "閱讀習慣",
+        "source": "self-authored"
+      },
+      {
+        "text": "A team’s achievement becomes more meaningful when every member has had a chance to contribute.",
+        "translationZh": "當每位成員都有機會付出時，團隊的成就更有意義。",
+        "grammar": "時間子句與完成式",
+        "writingTip": "用 when 評論公平參與如何增加成就的價值。",
+        "topic": "團隊合作",
+        "source": "self-authored"
+      }
+    ],
+    "collocations": [
+      [
+        "achieve a goal",
+        "達成目標",
+        "achieve 直接接受詞。"
+      ],
+      [
+        "achieve success",
+        "取得成功",
+        "success 指一般成功時不可數。"
+      ],
+      [
+        "a sense of achievement",
+        "成就感",
+        "固定 of 結構。"
+      ],
+      [
+        "academic achievement",
+        "學業成就",
+        "一般表現常不可數，具體成就可用複數。"
+      ]
+    ],
+    "usageNote": "achieve 是動詞，achievement 是名詞；通常指努力後完成，不用 achieve to do。"
+  },
+  "acknowledge(ment)": {
+    "plainMeaning": "承認事實、確認收到或表達感謝",
+    "examples": [
+      {
+        "text": "The editor acknowledged receiving my article in a brief email.",
+        "translationZh": "編輯以簡短電郵確認收到了我的文章。",
+        "grammar": "動名詞受詞",
+        "writingTip": "acknowledge 後可接動名詞表示確認某事。",
+        "topic": "投稿",
+        "source": "self-authored"
+      },
+      {
+        "text": "While we acknowledge the plan’s benefits, we must also consider those who may be excluded.",
+        "translationZh": "我們承認這項計畫有好處，同時也必須考慮可能被排除的人。",
+        "grammar": "讓步與關係子句",
+        "writingTip": "先承認對方優點，再提出限制，使論證公平。",
+        "topic": "公共決策",
+        "source": "self-authored"
+      }
+    ],
+    "collocations": [
+      [
+        "acknowledge a mistake",
+        "承認錯誤",
+        "直接接名詞受詞。"
+      ],
+      [
+        "acknowledge that",
+        "承認某個事實",
+        "that 後接完整子句。"
+      ],
+      [
+        "acknowledge receipt of",
+        "確認收到",
+        "receipt 指收悉，常見正式通信。"
+      ],
+      [
+        "in acknowledgement of",
+        "為表達對某事的感謝／承認",
+        "of 後接貢獻等名詞。"
+      ]
+    ],
+    "usageNote": "acknowledge 不只表示同意，也可表示確認收悉或致謝；acknowledgement／acknowledgment 都是常用拼法。"
+  },
+  "adapt": {
+    "plainMeaning": "適應新情況；修改內容以適合新用途",
+    "examples": [
+      {
+        "text": "It took me a month to adapt to my new school.",
+        "translationZh": "我花了一個月適應新學校。",
+        "grammar": "it takes 時間 to",
+        "writingTip": "描述適應需要時間，避免把困難當失敗。",
+        "topic": "校園生活",
+        "source": "self-authored"
+      },
+      {
+        "text": "The museum adapted its tour for children, using short stories instead of lengthy explanations.",
+        "translationZh": "博物館把導覽調整成適合兒童的版本，以短故事代替冗長說明。",
+        "grammar": "分詞補充",
+        "writingTip": "以具體改動說明如何照顧不同使用者。",
+        "topic": "文化教育",
+        "source": "self-authored"
+      }
+    ],
+    "collocations": [
+      [
+        "adapt to a new environment",
+        "適應新環境",
+        "不及物用法接 to。"
+      ],
+      [
+        "adapt a story for the stage",
+        "把故事改編成舞台作品",
+        "for 表示新用途。"
+      ],
+      [
+        "adapt a film from a novel",
+        "把小說改編為電影",
+        "from 表示原始來源。"
+      ],
+      [
+        "be well adapted to",
+        "很適合某環境",
+        "被動形容用法，to 後接環境。"
+      ]
+    ],
+    "usageNote": "人適應用 adapt to；改編或調整某物時 adapt 接受詞。勿與 adopt「採用、收養」混淆。"
+  },
+  "adjust(ment)": {
+    "plainMeaning": "調整位置、大小或計畫；逐漸適應",
+    "examples": [
+      {
+        "text": "Please adjust the chair so that your feet rest on the floor.",
+        "translationZh": "請調整椅子，讓雙腳能平放在地板上。",
+        "grammar": "目的子句",
+        "writingTip": "用 so that 交代調整的具體目的。",
+        "topic": "日常健康",
+        "source": "self-authored"
+      },
+      {
+        "text": "After the timetable was adjusted, students who lived far away could catch an earlier bus home.",
+        "translationZh": "課表調整後，住得遠的學生能搭較早的公車回家。",
+        "grammar": "被動與關係子句",
+        "writingTip": "以受益者的實際改變說明方案成效。",
+        "topic": "交通安排",
+        "source": "self-authored"
+      }
+    ],
+    "collocations": [
+      [
+        "adjust the settings",
+        "調整設定",
+        "及物用法直接接受詞。"
+      ],
+      [
+        "adjust to a new routine",
+        "適應新作息",
+        "to 是介系詞。"
+      ],
+      [
+        "make an adjustment to",
+        "對某事作調整",
+        "adjustment 可數，後接 to。"
+      ],
+      [
+        "adjust something to fit",
+        "調整某物以配合",
+        "to fit 是目的不定詞。"
+      ]
+    ],
+    "usageNote": "adjust 可指小幅修改或適應；adjustment 是名詞。adjust to doing 不等於 adjust to do。"
+  },
+  "advantage": {
+    "plainMeaning": "好處、優點；比別人有利的條件",
+    "examples": [
+      {
+        "text": "Living near school has the advantage of saving travel time.",
+        "translationZh": "住在學校附近的好處是節省通勤時間。",
+        "grammar": "of 加動名詞",
+        "writingTip": "明確交代某項安排的實際優點。",
+        "topic": "校園生活",
+        "source": "self-authored"
+      },
+      {
+        "text": "Although online shops offer convenience, local stores have an advantage when customers need personal advice.",
+        "translationZh": "網路商店雖然方便，但顧客需要個別建議時，實體店家較有優勢。",
+        "grammar": "讓步與條件情境",
+        "writingTip": "比較不同選擇在特定條件下的長處。",
+        "topic": "消費選擇",
+        "source": "self-authored"
+      }
+    ],
+    "collocations": [
+      [
+        "have an advantage over",
+        "比某人／物有優勢",
+        "over 引出比較對象。"
+      ],
+      [
+        "take advantage of",
+        "善用；占某人的便宜",
+        "由受詞與情境分辨正負義。"
+      ],
+      [
+        "the advantage of doing",
+        "做某事的好處",
+        "of 後接動名詞。"
+      ],
+      [
+        "work to your advantage",
+        "對你有利",
+        "your 隨主語境改變。"
+      ]
+    ],
+    "usageNote": "可數名詞；take advantage of resources 是善用，take advantage of someone 常含利用他人的負面義。"
+  },
+  "advocate": {
+    "plainMeaning": "提倡某做法；支持某理念的人",
+    "examples": [
+      {
+        "text": "The student council advocates providing quiet spaces during lunch.",
+        "translationZh": "學生會提倡在午餐時間提供安靜空間。",
+        "grammar": "動名詞受詞",
+        "writingTip": "advocate 後接具体做法，清楚表達主張。",
+        "topic": "校園提案",
+        "source": "self-authored"
+      },
+      {
+        "text": "As an advocate of accessible transport, Mei asks whether every new bus stop can be reached safely.",
+        "translationZh": "身為無障礙交通的倡議者，梅會確認每個新站點是否能安全抵達。",
+        "grammar": "as 身分片語與 whether 子句",
+        "writingTip": "把理念轉為可檢查的設計問題。",
+        "topic": "交通公平",
+        "source": "self-authored"
+      }
+    ],
+    "collocations": [
+      [
+        "advocate doing something",
+        "提倡做某事",
+        "動詞後可接動名詞，不用 advocate to do。"
+      ],
+      [
+        "advocate for equal access",
+        "倡議平等使用機會",
+        "for 引出所支持的議題。"
+      ],
+      [
+        "an advocate of reform",
+        "改革的支持者",
+        "名詞人稱用 an，常接 of。"
+      ],
+      [
+        "a strong advocate",
+        "堅定的倡議者",
+        "strong 描述支持程度。"
+      ]
+    ],
+    "usageNote": "可作動詞或表示人的名詞；提倡某行動不表示該行動已實施。"
+  },
+  "agree(ment)": {
+    "plainMeaning": "同意看法或安排；agreement 是協議或意見一致",
+    "examples": [
+      {
+        "text": "We agreed on a date for the class picnic.",
+        "translationZh": "我們就班級野餐的日期達成共識。",
+        "grammar": "過去簡單式",
+        "writingTip": "on 表示共同決定的事項。",
+        "topic": "班級活動",
+        "source": "self-authored"
+      },
+      {
+        "text": "Even if neighbors disagree about the design, they may reach an agreement on keeping the street safe.",
+        "translationZh": "即使鄰居對設計意見不同，仍可能就維護街道安全達成協議。",
+        "grammar": "讓步條件與情態",
+        "writingTip": "尋找共同目標，提出協商的可能性。",
+        "topic": "社區協商",
+        "source": "self-authored"
+      }
+    ],
+    "collocations": [
+      [
+        "agree with someone",
+        "同意某人的看法",
+        "with 接人或觀點。"
+      ],
+      [
+        "agree on a plan",
+        "就計畫取得共識",
+        "on 引出討論事項。"
+      ],
+      [
+        "agree to a proposal",
+        "同意接受提案",
+        "to 是介系詞；agree to do 則是承諾行動。"
+      ],
+      [
+        "reach an agreement",
+        "達成協議",
+        "agreement 此義可數。"
+      ]
+    ],
+    "usageNote": "agree with、on、to 的受詞不同；agree that 接完整子句。食物 agrees with someone 另可指吃了沒有不適。"
+  },
+  "aim": {
+    "plainMeaning": "想達成的目標；以某事為目標或瞄準",
+    "examples": [
+      {
+        "text": "Our club aims to introduce younger students to gardening.",
+        "translationZh": "我們社團希望讓低年級學生接觸園藝。",
+        "grammar": "aim to 不定詞",
+        "writingTip": "用 aims to 簡潔說明活動目標。",
+        "topic": "社團活動",
+        "source": "self-authored"
+      },
+      {
+        "text": "With the aim of reducing food waste, the cafeteria lets students choose smaller portions.",
+        "translationZh": "為減少食物浪費，餐廳讓學生選擇較小份量。",
+        "grammar": "目的片語與使役動詞",
+        "writingTip": "目的後接具體措施，使提案可操作。",
+        "topic": "飲食與環境",
+        "source": "self-authored"
+      }
+    ],
+    "collocations": [
+      [
+        "aim to do something",
+        "以做某事為目標",
+        "to 後接原形動詞。"
+      ],
+      [
+        "aim at doing something",
+        "以做某事為目的",
+        "at 後接動名詞。"
+      ],
+      [
+        "the main aim",
+        "主要目標",
+        "aim 是可數名詞。"
+      ],
+      [
+        "with the aim of",
+        "抱著某個目的",
+        "of 後接名詞或動名詞。"
+      ]
+    ],
+    "usageNote": "也可指瞄準；瞄準物體用 aim at。原詞條中的大寫 AIM 技術縮寫與普通字 aim 不同。"
+  },
+  "alternative": {
+    "plainMeaning": "可替代的選項；不同於原做法的",
+    "examples": [
+      {
+        "text": "Walking is a cheap alternative to taking a taxi.",
+        "translationZh": "步行是搭計程車以外的一種省錢選擇。",
+        "grammar": "名詞與動名詞",
+        "writingTip": "用 alternative to 清楚指出替代對象。",
+        "topic": "交通選擇",
+        "source": "self-authored"
+      },
+      {
+        "text": "If students cannot attend in person, a recorded lesson offers an alternative that they can use later.",
+        "translationZh": "若學生無法親自到場，錄影課程提供可稍後使用的替代選項。",
+        "grammar": "條件與關係子句",
+        "writingTip": "針對具體限制提出替代方案。",
+        "topic": "學習安排",
+        "source": "self-authored"
+      }
+    ],
+    "collocations": [
+      [
+        "an alternative to",
+        "某事的替代方案",
+        "to 是介系詞。"
+      ],
+      [
+        "a viable alternative",
+        "可行的替代方案",
+        "viable 強調能實際施行。"
+      ],
+      [
+        "an alternative route",
+        "另一條路線",
+        "alternative 作形容詞。"
+      ],
+      [
+        "have no alternative but to",
+        "別無選擇，只能",
+        "but 後保留 to 不定詞。"
+      ]
+    ],
+    "usageNote": "替代選項不必只有兩個；alternative 與 alternate「交替的」不完全相同。"
+  },
+  "analyze": {
+    "plainMeaning": "仔細拆解並研究資訊、原因或構成",
+    "examples": [
+      {
+        "text": "We analyzed the survey responses before choosing a club activity.",
+        "translationZh": "我們分析問卷回覆後才選擇社團活動。",
+        "grammar": "過去式與時間片語",
+        "writingTip": "以分析作為決策前的步驟。",
+        "topic": "學生調查",
+        "source": "self-authored"
+      },
+      {
+        "text": "To understand why the plants wilted, the class analyzed both the watering schedule and the soil conditions.",
+        "translationZh": "為了解植物為何枯萎，全班分析了澆水時間與土壤狀況。",
+        "grammar": "目的與 why 名詞子句",
+        "writingTip": "同時檢查多種可能原因，避免草率歸因。",
+        "topic": "自然探究",
+        "source": "self-authored"
+      }
+    ],
+    "collocations": [
+      [
+        "analyze data",
+        "分析資料",
+        "直接接受詞，不加 about。"
+      ],
+      [
+        "analyze the causes of",
+        "分析某事的原因",
+        "of 引出被解釋的事件。"
+      ],
+      [
+        "analyze something in detail",
+        "詳盡分析某事",
+        "in detail 說明分析程度。"
+      ],
+      [
+        "critically analyze",
+        "審慎分析",
+        "critical 指檢驗根據，不只批評。"
+      ]
+    ],
+    "usageNote": "美式 analyze、英式 analyse；名詞是 analysis，複數 analyses。不要把 analyses 誤當動詞單數拼法。"
+  },
+  "approach": {
+    "plainMeaning": "接近；處理事情的方法或途徑",
+    "examples": [
+      {
+        "text": "Our teacher uses a practical approach to teaching fractions.",
+        "translationZh": "老師用實際的方法教分數。",
+        "grammar": "名詞補語",
+        "writingTip": "用 approach to doing 說明處理方式。",
+        "topic": "數學學習",
+        "source": "self-authored"
+      },
+      {
+        "text": "Rather than blame the volunteers, we should approach the scheduling problem as something the team can solve together.",
+        "translationZh": "與其責怪志工，我們應把排班問題視為團隊能共同解決的事。",
+        "grammar": "對比與受詞補語",
+        "writingTip": "用 rather than 排除責怪，提出合作方式。",
+        "topic": "團隊管理",
+        "source": "self-authored"
+      }
+    ],
+    "collocations": [
+      [
+        "an approach to a problem",
+        "處理問題的方法",
+        "名詞後 to 是介系詞。"
+      ],
+      [
+        "take a different approach",
+        "採取不同做法",
+        "take 接 approach。"
+      ],
+      [
+        "approach someone for advice",
+        "找某人請教",
+        "動詞直接接人，for 引出目的。"
+      ],
+      [
+        "as the deadline approaches",
+        "隨著期限接近",
+        "approach 可不及物表示靠近。"
+      ]
+    ],
+    "usageNote": "作動詞時直接接受詞；作方法名詞用 approach to。也可指入口、接近或逐步逼近某數值。"
+  },
+  "appropriate": {
+    "plainMeaning": "適合某情境、年齡或目的的",
+    "examples": [
+      {
+        "text": "Choose an appropriate jacket for the mountain weather.",
+        "translationZh": "請選適合山區天氣的外套。",
+        "grammar": "祈使句",
+        "writingTip": "用 for 指出是否適合的判準。",
+        "topic": "戶外準備",
+        "source": "self-authored"
+      },
+      {
+        "text": "A joke that feels harmless among friends may be inappropriate at work, so an appropriate tone matters.",
+        "translationZh": "朋友間看似無害的玩笑在職場可能不恰當，因此合宜的語氣很重要。",
+        "grammar": "關係子句與因果",
+        "writingTip": "以情境差異解釋溝通方式要調整。",
+        "topic": "溝通",
+        "source": "self-authored"
+      }
+    ],
+    "collocations": [
+      [
+        "appropriate for children",
+        "適合兒童的",
+        "for 引出使用者。"
+      ],
+      [
+        "appropriate to the situation",
+        "符合當前情況的",
+        "to 引出情境。"
+      ],
+      [
+        "an appropriate response",
+        "恰當的回應",
+        "依問題與場合判斷。"
+      ],
+      [
+        "where appropriate",
+        "在適當之處／情況下",
+        "正式文章的條件性補充。"
+      ]
+    ],
+    "usageNote": "常用形容詞讀音尾部與動詞不同；動詞另指挪用或撥款，不能按形容詞「適合」翻譯。"
+  },
+  "argue(argument)": {
+    "plainMeaning": "以理由主張；也可指爭辯，argument 是論點或爭論",
+    "examples": [
+      {
+        "text": "My brother and I argued about whose turn it was to wash the dishes.",
+        "translationZh": "哥哥與我爭論該輪到誰洗碗。",
+        "grammar": "about 與名詞子句",
+        "writingTip": "用日常情境區分爭吵與說理。",
+        "topic": "家庭生活",
+        "source": "self-authored"
+      },
+      {
+        "text": "Some students argue that a later start to the school day would help those who struggle to get enough sleep.",
+        "translationZh": "有些學生主張較晚開始上課能幫助睡眠不足的人。",
+        "grammar": "that 與關係子句",
+        "writingTip": "用 argue that 引入有理由可討論的主張。",
+        "topic": "教育討論",
+        "source": "self-authored"
+      }
+    ],
+    "collocations": [
+      [
+        "argue that",
+        "主張某觀點",
+        "that 後接完整句。"
+      ],
+      [
+        "argue for a policy",
+        "支持某政策並提出理由",
+        "for 表支持；against 表反對。"
+      ],
+      [
+        "argue with someone about",
+        "與某人爭論某事",
+        "with 接人，about 接事項。"
+      ],
+      [
+        "a convincing argument",
+        "有說服力的論點",
+        "argument 可指說理，不一定爭吵。"
+      ]
+    ],
+    "usageNote": "作文中 argue that 常是提出主張；日常 argue with 常是爭論。argument 也可指支撐結論的理由組合。"
+  },
+  "assess(ment)": {
+    "plainMeaning": "衡量狀況、價值或風險並作評定",
+    "examples": [
+      {
+        "text": "The coach assessed each swimmer’s progress after the lesson.",
+        "translationZh": "教練在課後評估每位泳者的進步。",
+        "grammar": "過去簡單式",
+        "writingTip": "評估對象要明確，不只寫籠統成績。",
+        "topic": "運動學習",
+        "source": "self-authored"
+      },
+      {
+        "text": "Before a new crossing is built, its risks should be assessed from the perspective of pedestrians.",
+        "translationZh": "新行人穿越道興建前，應從行人的角度評估其風險。",
+        "grammar": "時間子句與被動",
+        "writingTip": "將使用者觀點加入方案評估。",
+        "topic": "交通安全",
+        "source": "self-authored"
+      }
+    ],
+    "collocations": [
+      [
+        "assess the risk of",
+        "評估某事的風險",
+        "of 後接事件或動名詞。"
+      ],
+      [
+        "assess someone’s needs",
+        "評估某人的需求",
+        "先了解需求再決定方案。"
+      ],
+      [
+        "make an assessment",
+        "作出評估",
+        "assessment 是名詞。"
+      ],
+      [
+        "be assessed at",
+        "被估定為某金額",
+        "at 接估值或稅額。"
+      ]
+    ],
+    "usageNote": "不只是給分，也可估價、估定稅額；assessment 不等同考試，可能包含觀察與訪談。"
+  },
+  "assume": {
+    "plainMeaning": "在未確認前假定；承擔職務或呈現某狀態",
+    "examples": [
+      {
+        "text": "Do not assume that a quiet student has nothing to say.",
+        "translationZh": "不要以為安靜的學生沒有想法。",
+        "grammar": "否定祈使與 that 子句",
+        "writingTip": "指出常見但未證實的推測。",
+        "topic": "人際理解",
+        "source": "self-authored"
+      },
+      {
+        "text": "If we assume that every family owns a printer, our homework policy may exclude students with fewer resources.",
+        "translationZh": "若假定每個家庭都有印表機，作業政策可能排除資源較少的學生。",
+        "grammar": "條件與情態",
+        "writingTip": "檢查假設如何影響方案公平性。",
+        "topic": "教育公平",
+        "source": "self-authored"
+      }
+    ],
+    "collocations": [
+      [
+        "assume that",
+        "假定某事",
+        "that 後接完整子句。"
+      ],
+      [
+        "assume responsibility for",
+        "承擔某事的責任",
+        "此義不是猜測。"
+      ],
+      [
+        "assume the role of",
+        "擔任某角色",
+        "the role of 後接職務。"
+      ],
+      [
+        "assume a different form",
+        "呈現不同形式",
+        "主詞可為物或情況。"
+      ]
+    ],
+    "usageNote": "assume 常指未證實的假定；也可指承擔職責、取得角色或呈現某樣貌，須依受詞辨義。"
+  },
+  "attitude": {
+    "plainMeaning": "對人或事情的態度、看法",
+    "examples": [
+      {
+        "text": "Her positive attitude helped the team stay calm.",
+        "translationZh": "她積極的態度幫助團隊保持冷靜。",
+        "grammar": "help 加原形動詞",
+        "writingTip": "用可觀察的影響解釋態度的重要性。",
+        "topic": "團隊合作",
+        "source": "self-authored"
+      },
+      {
+        "text": "A welcoming attitude toward newcomers can make a club more inclusive, even when its activities remain unchanged.",
+        "translationZh": "友善接待新人的態度能讓社團更包容，即使活動沒有改變。",
+        "grammar": "讓步與情態",
+        "writingTip": "把態度與制度安排分開評估。",
+        "topic": "社團文化",
+        "source": "self-authored"
+      }
+    ],
+    "collocations": [
+      [
+        "an attitude toward something",
+        "對某事的態度",
+        "toward／towards 都可。"
+      ],
+      [
+        "a positive attitude",
+        "積極的態度",
+        "需以行為支持，勿只貼標籤。"
+      ],
+      [
+        "change your attitude",
+        "改變態度",
+        "通常指看法或對待方式。"
+      ],
+      [
+        "adopt a cautious attitude",
+        "採取審慎態度",
+        "adopt 是採取，不用 adapt。"
+      ]
+    ],
+    "usageNote": "可指看法或對待方式；航空等專業語境另可指姿態，日常作文通常不用該義。"
+  },
+  "authority": {
+    "plainMeaning": "權限；當局；某領域的權威人士",
+    "examples": [
+      {
+        "text": "Only the manager has the authority to approve refunds.",
+        "translationZh": "只有經理有權批准退款。",
+        "grammar": "名詞加不定詞",
+        "writingTip": "說明某人的具體權限範圍。",
+        "topic": "服務流程",
+        "source": "self-authored"
+      },
+      {
+        "text": "Although an authority may offer useful advice, readers should still examine the reasons behind that advice.",
+        "translationZh": "權威人士雖可提供有用建議，讀者仍應檢視建議背後的理由。",
+        "grammar": "讓步子句",
+        "writingTip": "承認專業價值，同時避免只憑身分相信。",
+        "topic": "批判思考",
+        "source": "self-authored"
+      }
+    ],
+    "collocations": [
+      [
+        "have the authority to",
+        "有權做某事",
+        "to 後接原形動詞。"
+      ],
+      [
+        "local authorities",
+        "地方當局",
+        "表示政府部門常用複數。"
+      ],
+      [
+        "an authority on a subject",
+        "某領域的權威",
+        "on 引出專業範圍。"
+      ],
+      [
+        "abuse one’s authority",
+        "濫用職權",
+        "authority 此義不可數。"
+      ]
+    ],
+    "usageNote": "權力通常不可數；an authority 是專家；the authorities 常指政府或主管機關。"
+  },
+  "aware": {
+    "plainMeaning": "知道或察覺到某事的",
+    "examples": [
+      {
+        "text": "I was not aware of the change in the bus route.",
+        "translationZh": "我不知道公車路線已變更。",
+        "grammar": "be aware of",
+        "writingTip": "明確指出資訊落差。",
+        "topic": "日常交通",
+        "source": "self-authored"
+      },
+      {
+        "text": "Once consumers become aware that a repair is possible, they may replace fewer damaged items.",
+        "translationZh": "消費者一旦知道東西可以修理，便可能較少直接更換損壞物品。",
+        "grammar": "once 與 that 子句",
+        "writingTip": "用 may 表達合理可能性，避免保證行為改變。",
+        "topic": "消費與環境",
+        "source": "self-authored"
+      }
+    ],
+    "collocations": [
+      [
+        "be aware of",
+        "察覺某事",
+        "of 後接名詞或動名詞。"
+      ],
+      [
+        "be aware that",
+        "知道某個事實",
+        "that 後接完整子句。"
+      ],
+      [
+        "become aware of",
+        "開始察覺",
+        "become 表狀態變化。"
+      ],
+      [
+        "make someone aware of",
+        "讓某人知道",
+        "aware 是受詞補語。"
+      ]
+    ],
+    "usageNote": "aware 是形容詞，通常不直接放在名詞前；用 aware of／that，而非 aware about。"
+  },
+  "balance": {
+    "plainMeaning": "平衡；權衡不同需求；也可指結餘",
+    "examples": [
+      {
+        "text": "I try to balance schoolwork with time for rest.",
+        "translationZh": "我試著在課業與休息時間之間取得平衡。",
+        "grammar": "balance A with B",
+        "writingTip": "說明兩種需求都需照顧。",
+        "topic": "學習生活",
+        "source": "self-authored"
+      },
+      {
+        "text": "A schedule that leaves no room for unexpected tasks may upset the balance between work and family life.",
+        "translationZh": "毫無臨時任務餘裕的時間表可能破壞工作與家庭生活的平衡。",
+        "grammar": "關係子句與情態",
+        "writingTip": "用具體風險評估看似高效的安排。",
+        "topic": "時間管理",
+        "source": "self-authored"
+      }
+    ],
+    "collocations": [
+      [
+        "strike a balance between",
+        "在兩者間取得平衡",
+        "between 後通常列兩個面向。"
+      ],
+      [
+        "balance A with B",
+        "兼顧 A 與 B",
+        "動詞直接接 A。"
+      ],
+      [
+        "lose your balance",
+        "失去平衡",
+        "身體不穩時使用。"
+      ],
+      [
+        "an account balance",
+        "帳戶餘額",
+        "此義是剩餘款項。"
+      ]
+    ],
+    "usageNote": "可作名詞或動詞；身體平衡、需求權衡與金額結餘是不同語義，須看上下文。"
+  },
+  "base": {
+    "plainMeaning": "基礎、底部或基地；以某事為根據",
+    "examples": [
+      {
+        "text": "The lamp has a wide base to keep it steady.",
+        "translationZh": "這盞燈有寬底座以維持穩定。",
+        "grammar": "目的不定詞",
+        "writingTip": "用物件功能幫助理解底部這個意思。",
+        "topic": "生活設計",
+        "source": "self-authored"
+      },
+      {
+        "text": "A judgment based on one photograph may overlook what happened before or after it was taken.",
+        "translationZh": "只根據一張照片的判斷可能忽略拍攝前後發生的事。",
+        "grammar": "過去分詞與名詞子句",
+        "writingTip": "指出單一證據的限制。",
+        "topic": "媒體識讀",
+        "source": "self-authored"
+      }
+    ],
+    "collocations": [
+      [
+        "base a decision on",
+        "依某事作決定",
+        "on 引出依據。"
+      ],
+      [
+        "be based on",
+        "以某事為基礎",
+        "被動結構。"
+      ],
+      [
+        "a solid base",
+        "穩固的基礎／底座",
+        "由情境分辨實物與抽象義。"
+      ],
+      [
+        "a military base",
+        "軍事基地",
+        "base 為可數名詞。"
+      ]
+    ],
+    "usageNote": "名詞可指底部、基礎、基地或棒球壘包；形容詞 base 另有卑劣之意，不是 basic「基本的」。"
+  },
+  "benefit": {
+    "plainMeaning": "好處；使受益或從中受益",
+    "examples": [
+      {
+        "text": "The new reading corner benefits younger children.",
+        "translationZh": "新的閱讀角落使較小的孩子受益。",
+        "grammar": "及物動詞",
+        "writingTip": "benefit 直接接受益者。",
+        "topic": "社區閱讀",
+        "source": "self-authored"
+      },
+      {
+        "text": "While flexible hours may benefit employees, their success depends on whether essential services remain available.",
+        "translationZh": "彈性工時雖可能有利員工，能否成功仍取決於必要服務是否持續提供。",
+        "grammar": "讓步與 whether 子句",
+        "writingTip": "談好處時兼顧實施條件。",
+        "topic": "工作安排",
+        "source": "self-authored"
+      }
+    ],
+    "collocations": [
+      [
+        "benefit from",
+        "從某事受益",
+        "受益者作主詞，後接 from。"
+      ],
+      [
+        "benefit someone",
+        "使某人受益",
+        "及物用法不加 to。"
+      ],
+      [
+        "the benefits of doing",
+        "做某事的好處",
+        "of 後接動名詞。"
+      ],
+      [
+        "for the benefit of",
+        "為了某人的利益",
+        "of 後接受益者。"
+      ]
+    ],
+    "usageNote": "名詞常可數；employee benefits 另指福利。比較 benefit someone 與 someone benefits from something。"
+  },
+  "cause": {
+    "plainMeaning": "事情發生的原因；造成某個結果",
+    "examples": [
+      {
+        "text": "A broken pipe caused the kitchen floor to flood.",
+        "translationZh": "破裂的水管導致廚房地板淹水。",
+        "grammar": "cause 加受詞與不定詞",
+        "writingTip": "清楚標示原因與受影響對象。",
+        "topic": "居家問題",
+        "source": "self-authored"
+      },
+      {
+        "text": "Before blaming a student’s effort, we should ask whether a lack of support is a possible cause of the difficulty.",
+        "translationZh": "責怪學生不夠努力前，我們應先問缺乏支持是否可能是困難的原因。",
+        "grammar": "whether 名詞子句",
+        "writingTip": "避免未檢查其他原因就歸咎個人。",
+        "topic": "教育理解",
+        "source": "self-authored"
+      }
+    ],
+    "collocations": [
+      [
+        "the cause of a problem",
+        "問題的原因",
+        "of 引出結果或問題。"
+      ],
+      [
+        "cause damage",
+        "造成損害",
+        "damage 此義不可數。"
+      ],
+      [
+        "cause someone to do",
+        "使某人做某事",
+        "cause 後不省略 to。"
+      ],
+      [
+        "support a good cause",
+        "支持公益理念",
+        "cause 此義是值得支持的目標。"
+      ]
+    ],
+    "usageNote": "可指原因或共同奮鬥的理念；cause 是及物動詞，不用 cause to someone。關聯不一定等於因果。"
+  },
+  "challenge": {
+    "plainMeaning": "困難而值得克服的任務；質疑或向某人挑戰",
+    "examples": [
+      {
+        "text": "Learning to swim was a challenge for me.",
+        "translationZh": "學游泳對我來說是一項挑戰。",
+        "grammar": "動名詞主詞",
+        "writingTip": "描述具體困難，避免只說事情很難。",
+        "topic": "技能學習",
+        "source": "self-authored"
+      },
+      {
+        "text": "Rather than reject unfamiliar ideas, a good discussion challenges them with questions that test their assumptions.",
+        "translationZh": "好的討論會用檢驗假設的問題質疑陌生想法，而非直接否定它們。",
+        "grammar": "對比與關係子句",
+        "writingTip": "把質疑寫成檢查理由，不是攻擊提出者。",
+        "topic": "課堂討論",
+        "source": "self-authored"
+      }
+    ],
+    "collocations": [
+      [
+        "face a challenge",
+        "面對挑戰",
+        "challenge 為可數名詞。"
+      ],
+      [
+        "meet a challenge",
+        "成功應對挑戰",
+        "meet 此處不只是遇見。"
+      ],
+      [
+        "challenge an assumption",
+        "質疑假設",
+        "動詞直接接被質疑的內容。"
+      ],
+      [
+        "challenge someone to a game",
+        "向某人挑戰比賽",
+        "to 後接比賽名詞。"
+      ]
+    ],
+    "usageNote": "可指困難、競賽挑戰或對觀點的質疑；challenging 是具挑戰性，不等同 impossible。"
+  },
+  "change": {
+    "plainMeaning": "改變或更換；變化；也可指找零",
+    "examples": [
+      {
+        "text": "I changed my seat so that my friend could see the board.",
+        "translationZh": "我換了座位，讓朋友能看見黑板。",
+        "grammar": "目的子句",
+        "writingTip": "以行動及目的描述改變。",
+        "topic": "校園互助",
+        "source": "self-authored"
+      },
+      {
+        "text": "Even a small change in the entrance design can help visitors who use wheelchairs enter independently.",
+        "translationZh": "入口設計即使只有小改變，也能幫助輪椅使用者獨立進入。",
+        "grammar": "強調 even 與關係子句",
+        "writingTip": "用具體受益者說明小改善的價值。",
+        "topic": "無障礙設計",
+        "source": "self-authored"
+      }
+    ],
+    "collocations": [
+      [
+        "make a change",
+        "作出改變",
+        "change 作可數名詞。"
+      ],
+      [
+        "a change in plans",
+        "計畫的變動",
+        "in 指改變的面向。"
+      ],
+      [
+        "change from A to B",
+        "從 A 改成 B",
+        "交代起點與結果。"
+      ],
+      [
+        "keep the change",
+        "不用找零",
+        "此義 change 為不可數錢款。"
+      ]
+    ],
+    "usageNote": "可指變化、替換或找零；change into 可表示變成另一形態，change clothes 是換衣服。"
+  },
+  "clarify": {
+    "plainMeaning": "把不清楚的意思、規則或情況說明白",
+    "examples": [
+      {
+        "text": "The guide clarified the meeting time before we left.",
+        "translationZh": "導遊在出發前說清楚了集合時間。",
+        "grammar": "時間子句",
+        "writingTip": "用 clarify 表達消除資訊歧義。",
+        "topic": "旅行安排",
+        "source": "self-authored"
+      },
+      {
+        "text": "When a rule affects everyone, its exceptions should be clarified so that people can follow it fairly.",
+        "translationZh": "規則若影響所有人，就應說清楚例外情況，讓大家能公平遵守。",
+        "grammar": "被動與目的子句",
+        "writingTip": "以公平執行說明清楚規則的重要性。",
+        "topic": "公共規則",
+        "source": "self-authored"
+      }
+    ],
+    "collocations": [
+      [
+        "clarify a point",
+        "釐清一個要點",
+        "直接接需要說清的內容。"
+      ],
+      [
+        "clarify the meaning of",
+        "說明某事的意思",
+        "of 引出詞句或概念。"
+      ],
+      [
+        "clarify whether",
+        "釐清是否",
+        "whether 後接完整子句。"
+      ],
+      [
+        "clarify your position",
+        "表明你的立場",
+        "position 此處非身體位置。"
+      ]
+    ],
+    "usageNote": "clarify 是釐清，不必然證明對方錯誤；也可指使液體澄清，須看受詞。"
+  },
+  "compare": {
+    "plainMeaning": "比較異同；把某物比喻為另一物",
+    "examples": [
+      {
+        "text": "We compared the prices before buying a refrigerator.",
+        "translationZh": "我們買冰箱前先比較價格。",
+        "grammar": "過去簡單式",
+        "writingTip": "以具體項目作比較，不空談優劣。",
+        "topic": "消費決策",
+        "source": "self-authored"
+      },
+      {
+        "text": "If we compare two schools only by test scores, we may miss differences in the support they offer.",
+        "translationZh": "如果只用考試分數比較兩所學校，就可能忽略它們提供的支持有何不同。",
+        "grammar": "條件與關係子句",
+        "writingTip": "說明單一比較標準的盲點。",
+        "topic": "教育評量",
+        "source": "self-authored"
+      }
+    ],
+    "collocations": [
+      [
+        "compare A with B",
+        "比較 A 與 B",
+        "with 常用於檢視異同。"
+      ],
+      [
+        "compare A to B",
+        "把 A 比作 B；比較 A 與 B",
+        "to 常用於比喻，也可用於比較。"
+      ],
+      [
+        "compare prices",
+        "比較價格",
+        "prices 用複數表示多個價格。"
+      ],
+      [
+        "compare favorably with",
+        "與某物相比毫不遜色",
+        "favorably 表相對評價良好。"
+      ]
+    ],
+    "usageNote": "compare with／to 有重疊；比喻常用 to，逐項比對常用 with，不能當絕對分界。"
+  },
+  "comparison": {
+    "plainMeaning": "比較、對照；用來說明的比喻",
+    "examples": [
+      {
+        "text": "A comparison of the two menus showed several cheaper choices.",
+        "translationZh": "比較兩份菜單後，我們發現幾項較便宜的選擇。",
+        "grammar": "名詞主詞",
+        "writingTip": "先說明比較對象，再呈現發現。",
+        "topic": "生活消費",
+        "source": "self-authored"
+      },
+      {
+        "text": "For a fair comparison, products that serve different purposes should not be judged by price alone.",
+        "translationZh": "為公平比較，用途不同的產品不應只按價格判斷。",
+        "grammar": "關係子句與被動",
+        "writingTip": "界定比較條件，避免不對等評價。",
+        "topic": "評估方法",
+        "source": "self-authored"
+      }
+    ],
+    "collocations": [
+      [
+        "make a comparison",
+        "作比較",
+        "comparison 為可數名詞。"
+      ],
+      [
+        "a comparison between A and B",
+        "A 與 B 的比較",
+        "between 後完整列出兩者。"
+      ],
+      [
+        "in comparison with",
+        "與某物相比",
+        "介系詞片語引出參照對象。"
+      ],
+      [
+        "by comparison",
+        "相較之下",
+        "前文須有可比較的資訊。"
+      ]
+    ],
+    "usageNote": "comparison 是名詞，不用 comparison two things 當動詞；比較結果不等於因果證據。"
+  },
+  "compete": {
+    "plainMeaning": "與他人競爭或參加競賽",
+    "examples": [
+      {
+        "text": "Our team will compete in the regional chess tournament.",
+        "translationZh": "我們隊將參加區域西洋棋賽。",
+        "grammar": "will 未來式",
+        "writingTip": "用 in 指參與的競賽。",
+        "topic": "校園運動",
+        "source": "self-authored"
+      },
+      {
+        "text": "Small shops may struggle to compete with large chains unless they offer something customers cannot find elsewhere.",
+        "translationZh": "小店若沒有提供別處找不到的商品或服務，可能難與大型連鎖店競爭。",
+        "grammar": "unless 條件與關係子句",
+        "writingTip": "提出競爭限制及差異化條件。",
+        "topic": "地方商業",
+        "source": "self-authored"
+      }
+    ],
+    "collocations": [
+      [
+        "compete with someone",
+        "與某人競爭",
+        "with 接競爭對手。"
+      ],
+      [
+        "compete for a place",
+        "競爭一個名額",
+        "for 接爭取的事物。"
+      ],
+      [
+        "compete in a race",
+        "參加比賽",
+        "in 接活動。"
+      ],
+      [
+        "compete on price",
+        "在價格上競爭",
+        "on 接競爭面向。"
+      ]
+    ],
+    "usageNote": "compete 通常不及物，不直接接對手；competition 是競爭或競賽，competitor 是競爭者。"
+  },
+  "complex": {
+    "plainMeaning": "由許多部分構成而複雜的；也可指建築群或情結",
+    "examples": [
+      {
+        "text": "The instructions are too complex for a first-time user.",
+        "translationZh": "這些說明對初次使用者太複雜了。",
+        "grammar": "too 加形容詞",
+        "writingTip": "從使用者角度指出設計問題。",
+        "topic": "產品使用",
+        "source": "self-authored"
+      },
+      {
+        "text": "Because housing needs are complex, a plan that helps students may not suit families with young children.",
+        "translationZh": "住宅需求很複雜，因此適合學生的計畫不一定適合有幼兒的家庭。",
+        "grammar": "原因與關係子句",
+        "writingTip": "說明多種需求為何不能用單一方案滿足。",
+        "topic": "公共住宅",
+        "source": "self-authored"
+      }
+    ],
+    "collocations": [
+      [
+        "a complex issue",
+        "複雜的議題",
+        "指多個因素相互影響。"
+      ],
+      [
+        "a complex system",
+        "複雜系統",
+        "system 為可數名詞。"
+      ],
+      [
+        "a sports complex",
+        "運動場館群",
+        "complex 此處是建築群名詞。"
+      ],
+      [
+        "an inferiority complex",
+        "自卑情結",
+        "心理術語，不宜草率診斷他人。"
+      ]
+    ],
+    "usageNote": "形容詞指複雜；名詞可指建築群、情結或化學配合物。complex 不表示毫無規律。"
+  },
+  "concern": {
+    "plainMeaning": "擔心或關注的事；涉及某人，或使人擔心",
+    "examples": [
+      {
+        "text": "My main concern is the cost of repairing the roof.",
+        "translationZh": "我最擔心的是屋頂修繕費用。",
+        "grammar": "名詞表語",
+        "writingTip": "明確指出需要處理的擔憂。",
+        "topic": "家庭支出",
+        "source": "self-authored"
+      },
+      {
+        "text": "A decision about the shared garden concerns all residents, including those who cannot attend the meeting.",
+        "translationZh": "公共花園的決定涉及所有住戶，包括無法出席會議的人。",
+        "grammar": "及物動詞與關係子句",
+        "writingTip": "說明誰應納入決策，不只算出席者。",
+        "topic": "社區參與",
+        "source": "self-authored"
+      }
+    ],
+    "collocations": [
+      [
+        "concern about safety",
+        "對安全的擔憂",
+        "名詞後常接 about。"
+      ],
+      [
+        "be concerned about",
+        "擔心某事",
+        "與 be concerned with「涉及」區分。"
+      ],
+      [
+        "raise a concern",
+        "提出疑慮",
+        "通常需具體說明內容。"
+      ],
+      [
+        "as far as I am concerned",
+        "就我而言",
+        "固定片語用來限定個人立場。"
+      ]
+    ],
+    "usageNote": "concern 作動詞可表示涉及或使擔心；concerned about 偏擔忧，concerned with 偏涉及的主題。"
+  },
+  "conclude": {
+    "plainMeaning": "根據資訊推斷；結束活動或論述",
+    "examples": [
+      {
+        "text": "The concert concluded with a song chosen by the audience.",
+        "translationZh": "音樂會以觀眾選出的歌曲結束。",
+        "grammar": "過去分詞修飾",
+        "writingTip": "用 with 說明結尾內容。",
+        "topic": "文化活動",
+        "source": "self-authored"
+      },
+      {
+        "text": "We cannot conclude that the new timetable works until we hear from students whose journeys take longer.",
+        "translationZh": "在聽取通勤較久學生的意見前，我們不能斷定新課表有效。",
+        "grammar": "until 與關係子句",
+        "writingTip": "結論須涵蓋容易被忽略的受影響者。",
+        "topic": "學校政策",
+        "source": "self-authored"
+      }
+    ],
+    "collocations": [
+      [
+        "conclude that",
+        "得出某結論",
+        "that 後接完整子句。"
+      ],
+      [
+        "conclude from the evidence",
+        "依證據推斷",
+        "from 交代依據。"
+      ],
+      [
+        "conclude with",
+        "以某事作結",
+        "with 後接結尾內容。"
+      ],
+      [
+        "conclude negotiations",
+        "結束談判",
+        "不必表示各方已同意。"
+      ]
+    ],
+    "usageNote": "可表示推論或結束；conclude that 需要根據，不應把個人猜測寫成確定結論。"
+  },
+  "conclusion": {
+    "plainMeaning": "由理由得出的結論；文章或活動的結尾",
+    "examples": [
+      {
+        "text": "Write your main conclusion at the end of the report.",
+        "translationZh": "請在報告末尾寫出主要結論。",
+        "grammar": "祈使句",
+        "writingTip": "結尾應回應前面的核心問題。",
+        "topic": "報告寫作",
+        "source": "self-authored"
+      },
+      {
+        "text": "A conclusion drawn from one interview may need revision when people with different experiences are included.",
+        "translationZh": "只根據一次訪談得出的結論，在納入不同經驗的人後可能需要修正。",
+        "grammar": "過去分詞與被動",
+        "writingTip": "提醒證據範圍會限制結論適用性。",
+        "topic": "探究方法",
+        "source": "self-authored"
+      }
+    ],
+    "collocations": [
+      [
+        "draw a conclusion",
+        "得出結論",
+        "draw 此处非畫圖。"
+      ],
+      [
+        "reach a conclusion",
+        "作出結論",
+        "常用於考慮後的判定。"
+      ],
+      [
+        "jump to conclusions",
+        "草率下結論",
+        "通常用複數。"
+      ],
+      [
+        "in conclusion",
+        "最後，總而言之",
+        "結尾標記，不能代替實際總結。"
+      ]
+    ],
+    "usageNote": "結論與結尾是不同但相關的意思；不同結論可用 conclusions，in conclusion 是固定作文連接語。"
+  },
+  "condition": {
+    "plainMeaning": "情況、狀態或條件；使形成某種反應",
+    "examples": [
+      {
+        "text": "The donated bicycle is still in good condition.",
+        "translationZh": "這輛捐贈的腳踏車仍保持良好狀態。",
+        "grammar": "介系詞表語",
+        "writingTip": "以狀態支持物品仍可使用的判斷。",
+        "topic": "資源再利用",
+        "source": "self-authored"
+      },
+      {
+        "text": "The school will lend us the room on condition that we leave it clean for the next group.",
+        "translationZh": "學校願意借教室給我們，條件是我們須清理乾淨供下一組使用。",
+        "grammar": "on condition that 子句",
+        "writingTip": "把權利與責任寫成明確條件。",
+        "topic": "場地使用",
+        "source": "self-authored"
+      }
+    ],
+    "collocations": [
+      [
+        "in good condition",
+        "狀況良好",
+        "表示狀態，不加 a。"
+      ],
+      [
+        "under certain conditions",
+        "在特定條件下",
+        "conditions 常用複數。"
+      ],
+      [
+        "on condition that",
+        "條件是",
+        "that 後接完整子句。"
+      ],
+      [
+        "working conditions",
+        "工作條件／環境",
+        "通常用複數。"
+      ]
+    ],
+    "usageNote": "狀態常不可數，具體條件可數；condition 另可作動詞表示調整或制約，不等於單純禁止。"
+  },
+  "consequence": {
+    "plainMeaning": "某行動或事件造成的後果",
+    "examples": [
+      {
+        "text": "Missing the last bus was a consequence of leaving too late.",
+        "translationZh": "錯過末班車是太晚出發的後果。",
+        "grammar": "動名詞主詞",
+        "writingTip": "把後果連結到可辨識的原因。",
+        "topic": "時間管理",
+        "source": "self-authored"
+      },
+      {
+        "text": "A rule intended to reduce noise may have the unintended consequence of limiting children’s outdoor play.",
+        "translationZh": "為減少噪音制定的規則可能有意外後果，限制了兒童戶外玩耍。",
+        "grammar": "過去分詞與情態",
+        "writingTip": "比較政策目的與可能副作用。",
+        "topic": "社區規範",
+        "source": "self-authored"
+      }
+    ],
+    "collocations": [
+      [
+        "the consequences of",
+        "某事的後果",
+        "of 後接行動或事件。"
+      ],
+      [
+        "as a consequence",
+        "因此，作為結果",
+        "前文須交代原因。"
+      ],
+      [
+        "face the consequences",
+        "面對後果",
+        "常含承擔不利結果之意。"
+      ],
+      [
+        "an unintended consequence",
+        "未預期的後果",
+        "intended 表示原先打算的。"
+      ]
+    ],
+    "usageNote": "常帶負面意味，但不一定只指壞事；也可有「重要性」的較正式用法，如 of consequence。"
+  },
+  "consider": {
+    "plainMeaning": "仔細想一想；把某人或事看作某種情況",
+    "examples": [
+      {
+        "text": "We are considering planting herbs on the balcony.",
+        "translationZh": "我們正在考慮在陽台種香草。",
+        "grammar": "動名詞受詞",
+        "writingTip": "consider 後用 doing 描述正在考慮的方案。",
+        "topic": "居家生活",
+        "source": "self-authored"
+      },
+      {
+        "text": "Before banning phones entirely, schools should consider how students use them to coordinate travel with their families.",
+        "translationZh": "全面禁止手機前，學校應考慮學生如何用它們與家人協調交通。",
+        "grammar": "how 名詞子句",
+        "writingTip": "評估禁令前先檢查合理需求。",
+        "topic": "校園討論",
+        "source": "self-authored"
+      }
+    ],
+    "collocations": [
+      [
+        "consider doing something",
+        "考慮做某事",
+        "不使用 consider to do。"
+      ],
+      [
+        "consider the options",
+        "考慮各種選項",
+        "直接接受詞。"
+      ],
+      [
+        "consider someone to be",
+        "認為某人是",
+        "可用受詞加 to be 補語。"
+      ],
+      [
+        "consider something carefully",
+        "仔細考慮某事",
+        "carefully 修飾動詞。"
+      ]
+    ],
+    "usageNote": "可表示思考或認為；consider him reliable 可省 to be，但考慮行動仍用 doing。"
+  },
+  "consistent": {
+    "plainMeaning": "前後一致的；穩定維持同樣標準的",
+    "examples": [
+      {
+        "text": "Consistent practice helped me improve my handwriting.",
+        "translationZh": "持續而穩定的練習幫助我改善字跡。",
+        "grammar": "形容詞修飾名詞",
+        "writingTip": "說明進步需要穩定投入。",
+        "topic": "學習習慣",
+        "source": "self-authored"
+      },
+      {
+        "text": "A fair rule should be consistent with its stated purpose, even when an exception would benefit a popular student.",
+        "translationZh": "公平的規則應符合它公開的目的，即使例外會讓受歡迎的學生受益。",
+        "grammar": "讓步與情態",
+        "writingTip": "以一致標準檢查是否偏袒個人。",
+        "topic": "校園公平",
+        "source": "self-authored"
+      }
+    ],
+    "collocations": [
+      [
+        "consistent with",
+        "與某事一致",
+        "with 引出標準、事實或目的。"
+      ],
+      [
+        "a consistent approach",
+        "一致的做法",
+        "指不同情況下採相容原則。"
+      ],
+      [
+        "consistent quality",
+        "穩定的品質",
+        "quality 此處不可數。"
+      ],
+      [
+        "remain consistent",
+        "維持一致",
+        "remain 為連綴動詞。"
+      ]
+    ],
+    "usageNote": "不只是「經常」；consistent with 表示相容，一致並不保證正確，仍須檢查所依標準。"
+  },
+  "construct": {
+    "plainMeaning": "建造實物；有步驟地組織論述或模型",
+    "examples": [
+      {
+        "text": "The volunteers constructed a wooden shelter for the tools.",
+        "translationZh": "志工為工具建造了一座木製棚子。",
+        "grammar": "過去簡單式",
+        "writingTip": "交代建造對象及用途。",
+        "topic": "社區工作",
+        "source": "self-authored"
+      },
+      {
+        "text": "To construct a convincing argument, writers must explain how their examples support the claim.",
+        "translationZh": "要建立有說服力的論證，寫作者必須說明例子如何支持主張。",
+        "grammar": "目的與 how 子句",
+        "writingTip": "把例子與主張的連結寫清楚。",
+        "topic": "論說寫作",
+        "source": "self-authored"
+      }
+    ],
+    "collocations": [
+      [
+        "construct a building",
+        "建造建築物",
+        "construct 直接接實物。"
+      ],
+      [
+        "construct an argument",
+        "組織論證",
+        "不是僅列出不同意見。"
+      ],
+      [
+        "construct a model",
+        "建立模型",
+        "可為實物或理論模型。"
+      ],
+      [
+        "be constructed from",
+        "由某材料建成",
+        "from 引出原材料。"
+      ]
+    ],
+    "usageNote": "可指實物建造與抽象組織；名詞 a construct 是建構出的概念，與動詞的重音不同。"
+  },
+  "contribute": {
+    "plainMeaning": "捐助、付出、投稿；對結果有所促成",
+    "examples": [
+      {
+        "text": "Each family contributed food to the neighborhood dinner.",
+        "translationZh": "每個家庭都為社區聚餐提供食物。",
+        "grammar": "過去簡單式",
+        "writingTip": "描述貢獻的內容與接受者。",
+        "topic": "社區活動",
+        "source": "self-authored"
+      },
+      {
+        "text": "A longer opening time may contribute to better access for residents who work during the day.",
+        "translationZh": "延長開放時間可能讓白天上班的住戶更方便使用。",
+        "grammar": "情態與關係子句",
+        "writingTip": "用 contribute to 表部分促成，避免宣稱唯一原因。",
+        "topic": "公共服務",
+        "source": "self-authored"
+      }
+    ],
+    "collocations": [
+      [
+        "contribute to a result",
+        "促成某結果",
+        "to 是介系詞，不接原形動詞。"
+      ],
+      [
+        "contribute money to",
+        "捐款給",
+        "直接接所捐內容，再接 to。"
+      ],
+      [
+        "contribute an article to",
+        "向某刊物投稿",
+        "article 為可數名詞。"
+      ],
+      [
+        "make a contribution to",
+        "對某事作出貢獻",
+        "to 後接名詞或動名詞。"
+      ]
+    ],
+    "usageNote": "contribute to 也可能促成壞結果；不要因「貢獻」中文直覺就只用在正面情境。"
+  },
+  "convince": {
+    "plainMeaning": "讓某人相信理由或願意採取行動",
+    "examples": [
+      {
+        "text": "The clear instructions convinced me to try baking bread.",
+        "translationZh": "清楚的說明讓我願意試著烤麵包。",
+        "grammar": "受詞加不定詞",
+        "writingTip": "指出使人採取行動的具體原因。",
+        "topic": "生活學習",
+        "source": "self-authored"
+      },
+      {
+        "text": "A proposal is more likely to convince residents if it explains how their concerns will be addressed.",
+        "translationZh": "提案若說明將如何處理住戶疑慮，就較可能說服他們。",
+        "grammar": "條件與被動",
+        "writingTip": "讓說服建立在回應需求，而非口號。",
+        "topic": "社區提案",
+        "source": "self-authored"
+      }
+    ],
+    "collocations": [
+      [
+        "convince someone to do",
+        "說服某人做某事",
+        "to 後接原形動詞。"
+      ],
+      [
+        "convince someone of",
+        "使某人相信某事",
+        "of 後接名詞。"
+      ],
+      [
+        "convince someone that",
+        "使某人相信某觀點",
+        "that 後接完整子句。"
+      ],
+      [
+        "be convinced of",
+        "確信某事",
+        "主詞是相信的人。"
+      ]
+    ],
+    "usageNote": "可著重相信或行動；convincing 是有說服力，convinced 是感到確信，勿混用兩者。"
+  },
+  "cooperate": {
+    "plainMeaning": "與他人配合，共同完成事情",
+    "examples": [
+      {
+        "text": "The two classes cooperated on the school exhibition.",
+        "translationZh": "兩個班合作籌辦校內展覽。",
+        "grammar": "過去簡單式",
+        "writingTip": "on 指合作的專案。",
+        "topic": "校園活動",
+        "source": "self-authored"
+      },
+      {
+        "text": "Neighbors can cooperate to share expensive equipment, provided that everyone agrees on how it will be maintained.",
+        "translationZh": "鄰居可合作共用昂貴設備，但前提是大家同意如何維護。",
+        "grammar": "條件與被動",
+        "writingTip": "共享方案需附責任安排，才具可行性。",
+        "topic": "資源共享",
+        "source": "self-authored"
+      }
+    ],
+    "collocations": [
+      [
+        "cooperate with someone",
+        "與某人合作",
+        "with 接合作對象。"
+      ],
+      [
+        "cooperate on a project",
+        "合作進行專案",
+        "on 接事項。"
+      ],
+      [
+        "cooperate to achieve a goal",
+        "合作達成目標",
+        "to 表目的。"
+      ],
+      [
+        "cooperate fully",
+        "充分配合",
+        "fully 修飾合作程度。"
+      ]
+    ],
+    "usageNote": "通常不及物；不用 cooperate someone。配合調查也可用 cooperate with the investigation。"
+  },
+  "creative": {
+    "plainMeaning": "有創意的；能提出新想法或從事創作的",
+    "examples": [
+      {
+        "text": "Rita found a creative use for the empty boxes.",
+        "translationZh": "麗塔替空盒子想出了有創意的用途。",
+        "grammar": "過去簡單式",
+        "writingTip": "用實際新用途展示創意。",
+        "topic": "資源再利用",
+        "source": "self-authored"
+      },
+      {
+        "text": "A creative solution should still be tested, because an original idea may fail to meet practical needs.",
+        "translationZh": "創意方案仍應經過測試，因為新穎想法未必符合實際需求。",
+        "grammar": "被動與原因子句",
+        "writingTip": "承認創意價值，同時要求可用性。",
+        "topic": "方案設計",
+        "source": "self-authored"
+      }
+    ],
+    "collocations": [
+      [
+        "creative thinking",
+        "創意思考",
+        "thinking 此處不可數。"
+      ],
+      [
+        "a creative solution",
+        "有創意的解決方式",
+        "需對應某個實際問題。"
+      ],
+      [
+        "creative writing",
+        "創作性寫作",
+        "包括故事、詩等，不只論說文。"
+      ],
+      [
+        "make creative use of",
+        "有創意地運用",
+        "use 此處是名詞，後接 of。"
+      ]
+    ],
+    "usageNote": "creative 不等於有效或全新；名詞 a creative 在職業語境可指創意工作者，教材通常先教形容詞。"
+  },
+  "critical": {
+    "plainMeaning": "需要仔細判斷的；關鍵的；也可指批評或危急的",
+    "examples": [
+      {
+        "text": "Clean water is critical to the success of the garden.",
+        "translationZh": "乾淨的水是花園成功的關鍵。",
+        "grammar": "be critical to",
+        "writingTip": "具體指出必不可少的條件。",
+        "topic": "園藝",
+        "source": "self-authored"
+      },
+      {
+        "text": "Critical thinking requires us to ask what evidence is missing, not merely to disagree with an unpopular opinion.",
+        "translationZh": "批判思考要求我們追問缺少哪些證據，而非只是反對不受歡迎的意見。",
+        "grammar": "what 名詞子句與對比",
+        "writingTip": "解釋審慎判斷與單純反對的不同。",
+        "topic": "媒體識讀",
+        "source": "self-authored"
+      }
+    ],
+    "collocations": [
+      [
+        "critical thinking",
+        "批判性思考",
+        "重視檢驗理由，不等於挑剔。"
+      ],
+      [
+        "be critical of",
+        "批評某人或事",
+        "of 引出批評對象。"
+      ],
+      [
+        "play a critical role in",
+        "在某事中扮演關鍵角色",
+        "in 後接名詞或動名詞。"
+      ],
+      [
+        "in critical condition",
+        "處於危急狀態",
+        "常用於傷病，不加 a。"
+      ]
+    ],
+    "usageNote": "critical 有批評、關鍵與危急等意思；依 of／to 和名詞搭配判斷，不一律譯為批判。"
+  },
+  "debate": {
+    "plainMeaning": "針對不同觀點進行辯論或討論",
+    "examples": [
+      {
+        "text": "The class debated whether uniforms should be optional.",
+        "translationZh": "全班辯論制服是否應由學生自行選擇。",
+        "grammar": "whether 名詞子句",
+        "writingTip": "明確提出可討論的政策問題。",
+        "topic": "課堂活動",
+        "source": "self-authored"
+      },
+      {
+        "text": "A useful debate allows participants to question a proposal without treating its supporters as enemies.",
+        "translationZh": "有益的辯論讓參與者質疑提案，而不把支持者當敵人。",
+        "grammar": "不定詞與 without 動名詞",
+        "writingTip": "區分批評方案與攻擊個人。",
+        "topic": "公共討論",
+        "source": "self-authored"
+      }
+    ],
+    "collocations": [
+      [
+        "debate whether",
+        "辯論是否",
+        "動詞後直接接 whether 子句。"
+      ],
+      [
+        "a debate over",
+        "關於某事的辯論",
+        "名詞可接 over／about。"
+      ],
+      [
+        "a public debate",
+        "公開辯論",
+        "可指活動或持續討論。"
+      ],
+      [
+        "be open to debate",
+        "仍有討論餘地",
+        "不表示已證明為錯。"
+      ]
+    ],
+    "usageNote": "可作名詞或動詞；debate an issue 不加 about 也正確，名詞 debate about／over 常用。"
+  },
+  "decide": {
+    "plainMeaning": "作出決定，選定一種做法",
+    "examples": [
+      {
+        "text": "We decided to bring reusable cups to the picnic.",
+        "translationZh": "我們決定帶可重複使用的杯子去野餐。",
+        "grammar": "decide to 不定詞",
+        "writingTip": "用具體行動展示選擇。",
+        "topic": "生活環保",
+        "source": "self-authored"
+      },
+      {
+        "text": "Before deciding which route to recommend, the guide asked whether anyone had difficulty climbing stairs.",
+        "translationZh": "決定推薦哪條路線前，導遊先詢問是否有人不方便爬樓梯。",
+        "grammar": "疑問詞加不定詞與 whether",
+        "writingTip": "把不同使用者的需求納入決策。",
+        "topic": "旅行規劃",
+        "source": "self-authored"
+      }
+    ],
+    "collocations": [
+      [
+        "decide to do something",
+        "決定做某事",
+        "to 後接原形動詞。"
+      ],
+      [
+        "decide on a date",
+        "選定日期",
+        "on 後接選定的項目。"
+      ],
+      [
+        "decide against doing",
+        "決定不做某事",
+        "against 後接動名詞。"
+      ],
+      [
+        "decide that",
+        "決定某事",
+        "that 後接完整子句。"
+      ]
+    ],
+    "usageNote": "decide 是動詞，decision 是名詞；decision to do 不能取代句子的謂語動詞。"
+  },
+  "decision": {
+    "plainMeaning": "考慮後的決定或選擇",
+    "examples": [
+      {
+        "text": "Choosing a roommate is an important decision.",
+        "translationZh": "選擇室友是重要的決定。",
+        "grammar": "動名詞主詞",
+        "writingTip": "以具體選擇說明決策重要性。",
+        "topic": "學生生活",
+        "source": "self-authored"
+      },
+      {
+        "text": "An informed decision depends on information that includes both a plan’s benefits and its possible costs.",
+        "translationZh": "明智且有根據的決定仰賴同時包含方案好處與可能代價的資訊。",
+        "grammar": "關係子句",
+        "writingTip": "將好決策連結到全面資訊。",
+        "topic": "方案評估",
+        "source": "self-authored"
+      }
+    ],
+    "collocations": [
+      [
+        "make a decision",
+        "作決定",
+        "不用 do a decision。"
+      ],
+      [
+        "reach a decision",
+        "達成決定",
+        "強調經過討論或考慮。"
+      ],
+      [
+        "a decision about",
+        "關於某事的決定",
+        "about 引出事項。"
+      ],
+      [
+        "an informed decision",
+        "有充分資訊的決定",
+        "informed 表基於了解，而非收到通知而已。"
+      ]
+    ],
+    "usageNote": "可數名詞；decision to do 表決定採取的行動。也可指果斷的特質，但作文常先用決定義。"
+  },
+  "demonstrate": {
+    "plainMeaning": "示範做法；以資訊顯示或證明；也可指示威",
+    "examples": [
+      {
+        "text": "The instructor demonstrated how to fold the paper crane.",
+        "translationZh": "老師示範了如何摺紙鶴。",
+        "grammar": "how 加不定詞",
+        "writingTip": "用具體步驟表達示範。",
+        "topic": "手作學習",
+        "source": "self-authored"
+      },
+      {
+        "text": "A working prototype can demonstrate that an idea is feasible, although it cannot reveal every problem of large-scale use.",
+        "translationZh": "可運作的原型能顯示想法可行，但無法揭露大規模使用的所有問題。",
+        "grammar": "that 與讓步子句",
+        "writingTip": "肯定證據同時限定它能支持的結論。",
+        "topic": "創新設計",
+        "source": "self-authored"
+      }
+    ],
+    "collocations": [
+      [
+        "demonstrate how to",
+        "示範如何做",
+        "how to 後接原形動詞。"
+      ],
+      [
+        "demonstrate that",
+        "顯示某事",
+        "that 後接完整子句。"
+      ],
+      [
+        "demonstrate commitment to",
+        "展現對某事的承諾",
+        "to 為介系詞。"
+      ],
+      [
+        "demonstrate against a policy",
+        "抗議某政策",
+        "不及物示威義，接 against。"
+      ]
+    ],
+    "usageNote": "demonstrate that 不一定是嚴格數學證明；示範、顯示及示威須依受詞或介系詞辨義。"
+  },
+  "depend": {
+    "plainMeaning": "依靠；取決於某條件",
+    "examples": [
+      {
+        "text": "The outdoor lesson depends on the weather.",
+        "translationZh": "戶外課程取決於天氣。",
+        "grammar": "depend on",
+        "writingTip": "指出結果受哪項條件影響。",
+        "topic": "課程安排",
+        "source": "self-authored"
+      },
+      {
+        "text": "Whether a shared kitchen succeeds may depend on how clearly users divide the cleaning duties.",
+        "translationZh": "共用廚房能否成功，可能取決於使用者如何清楚分配清潔工作。",
+        "grammar": "whether 主詞與 how 子句",
+        "writingTip": "將成功條件寫成可改善的安排。",
+        "topic": "共同生活",
+        "source": "self-authored"
+      }
+    ],
+    "collocations": [
+      [
+        "depend on someone",
+        "依靠某人",
+        "通常接 on，不直接接人。"
+      ],
+      [
+        "depend on whether",
+        "取決於是否",
+        "whether 後接子句。"
+      ],
+      [
+        "depending on the situation",
+        "視情況而定",
+        "補充條件的分詞片語。"
+      ],
+      [
+        "it depends",
+        "要看情況",
+        "獨立回答，宜再說明條件。"
+      ]
+    ],
+    "usageNote": "depend on／upon 可表示依賴或取決；dependable 是可靠的，不是 dependent「依賴的」。"
+  },
+  "describe": {
+    "plainMeaning": "用言語描繪人物、事情或過程",
+    "examples": [
+      {
+        "text": "Please describe the bag you left on the train.",
+        "translationZh": "請描述你遺留在火車上的袋子。",
+        "grammar": "省略關係代詞",
+        "writingTip": "選取能辨識物品的具體特徵。",
+        "topic": "失物協尋",
+        "source": "self-authored"
+      },
+      {
+        "text": "Rather than describe the neighborhood as unsafe, the report should identify the crossings that need improvement.",
+        "translationZh": "與其籠統稱社區不安全，報告應指出需要改善的穿越路口。",
+        "grammar": "rather than 與關係子句",
+        "writingTip": "用具體描述取代沒有根據的標籤。",
+        "topic": "社區評估",
+        "source": "self-authored"
+      }
+    ],
+    "collocations": [
+      [
+        "describe something as",
+        "把某事描述為",
+        "as 後接名詞或形容詞。"
+      ],
+      [
+        "describe in detail",
+        "詳細描述",
+        "in detail 說明程度。"
+      ],
+      [
+        "describe how",
+        "描述如何",
+        "how 後接完整子句或不定詞。"
+      ],
+      [
+        "accurately describe",
+        "準確描述",
+        "不能只靠細節多就稱準確。"
+      ]
+    ],
+    "usageNote": "及物動詞，通常不用 describe about；向某人描述用 describe something to someone。"
+  },
+  "determine": {
+    "plainMeaning": "查明或決定；某因素左右結果",
+    "examples": [
+      {
+        "text": "We used a ruler to determine the shelf’s height.",
+        "translationZh": "我們用尺確認架子的高度。",
+        "grammar": "目的不定詞",
+        "writingTip": "此處 determine 表查明，不是自行決定高度。",
+        "topic": "生活測量",
+        "source": "self-authored"
+      },
+      {
+        "text": "A student’s future should not be determined by one exam, because opportunities to learn are not equally available.",
+        "translationZh": "學生的未來不應由一次考試決定，因為學習機會並非人人平等。",
+        "grammar": "被動與原因子句",
+        "writingTip": "以機會差異說明單次評量的限制。",
+        "topic": "教育公平",
+        "source": "self-authored"
+      }
+    ],
+    "collocations": [
+      [
+        "determine the cause of",
+        "查明某事的原因",
+        "以調查而非猜測為基礎。"
+      ],
+      [
+        "determine whether",
+        "確定是否",
+        "whether 後接子句。"
+      ],
+      [
+        "determine the outcome",
+        "決定結果",
+        "主詞可為關鍵因素。"
+      ],
+      [
+        "be determined to do",
+        "下定決心做某事",
+        "此處 determined 表決心。"
+      ]
+    ],
+    "usageNote": "可指查明、決定或左右結果；be determined to 不只表示被決定，而常表示有決心。"
+  },
+  "develop(ment)": {
+    "plainMeaning": "逐步發展、形成或培養；development 是發展",
+    "examples": [
+      {
+        "text": "I developed a habit of checking my bag before leaving.",
+        "translationZh": "我養成了出門前檢查袋子的習慣。",
+        "grammar": "of 動名詞",
+        "writingTip": "用可持續的具體行為說明習慣形成。",
+        "topic": "生活習慣",
+        "source": "self-authored"
+      },
+      {
+        "text": "A town can develop its tourist services without losing the local traditions that make it distinctive.",
+        "translationZh": "小鎮可以發展觀光服務，同時保留讓它獨特的地方傳統。",
+        "grammar": "without 動名詞與關係子句",
+        "writingTip": "表達發展與保存可以兼顧。",
+        "topic": "文化觀光",
+        "source": "self-authored"
+      }
+    ],
+    "collocations": [
+      [
+        "develop a skill",
+        "培養技能",
+        "技能隨練習逐步形成。"
+      ],
+      [
+        "develop a habit of",
+        "養成某習慣",
+        "of 後接動名詞。"
+      ],
+      [
+        "sustainable development",
+        "永續發展",
+        "development 此處不可數。"
+      ],
+      [
+        "develop photographs",
+        "沖洗照片",
+        "此義不同於發展。"
+      ]
+    ],
+    "usageNote": "可及物也可不及物；也可指沖洗照片、出現症狀等。development 可指發展過程或具體新進展。"
+  },
+  "differ": {
+    "plainMeaning": "在某方面不同；意見不一致",
+    "examples": [
+      {
+        "text": "The two recipes differ in the amount of sugar they use.",
+        "translationZh": "兩份食譜使用的糖量不同。",
+        "grammar": "in 與關係子句",
+        "writingTip": "用 in 指明差異面向。",
+        "topic": "飲食比較",
+        "source": "self-authored"
+      },
+      {
+        "text": "Although the neighbors differ on where to place the benches, they agree that the park should welcome older visitors.",
+        "translationZh": "鄰居雖對長椅位置意見不同，仍同意公園應歡迎年長訪客。",
+        "grammar": "讓步與疑問詞不定詞",
+        "writingTip": "在意見分歧中找共同目標。",
+        "topic": "社區協商",
+        "source": "self-authored"
+      }
+    ],
+    "collocations": [
+      [
+        "differ from",
+        "與某物不同",
+        "from 引出比較對象。"
+      ],
+      [
+        "differ in",
+        "在某方面不同",
+        "in 引出差異面向。"
+      ],
+      [
+        "differ on an issue",
+        "對議題意見不同",
+        "on 引出爭議事項。"
+      ],
+      [
+        "differ greatly",
+        "差異很大",
+        "greatly 是副詞。"
+      ]
+    ],
+    "usageNote": "通常不及物；不同於 different 形容詞。differ from A in B 同時交代對象與面向。"
+  },
+  "difference": {
+    "plainMeaning": "差異；造成的影響或不同結果",
+    "examples": [
+      {
+        "text": "There is a clear difference between the two fabrics.",
+        "translationZh": "這兩種布料有明顯差異。",
+        "grammar": "there is 與 between",
+        "writingTip": "比較時明確列出兩者。",
+        "topic": "物品選擇",
+        "source": "self-authored"
+      },
+      {
+        "text": "A simple handrail can make a difference to visitors who would otherwise avoid the stairs.",
+        "translationZh": "簡單的扶手能幫助原本會避開樓梯的訪客。",
+        "grammar": "關係子句與 would",
+        "writingTip": "以具體受益者解釋小改變的影響。",
+        "topic": "無障礙空間",
+        "source": "self-authored"
+      }
+    ],
+    "collocations": [
+      [
+        "a difference between A and B",
+        "A 與 B 的差異",
+        "between 後兩端並列。"
+      ],
+      [
+        "a difference in price",
+        "價格差異",
+        "in 引出差異面向。"
+      ],
+      [
+        "make a difference to",
+        "對某人或事產生影響",
+        "此義不是製造差異而已。"
+      ],
+      [
+        "settle your differences",
+        "解決彼此分歧",
+        "differences 常指意見不合。"
+      ]
+    ],
+    "usageNote": "可指具體差異，也可指影響；make no difference 表沒有影響，不能逐字譯為沒有不同。"
+  },
+  "difficult": {
+    "plainMeaning": "需要努力才能處理或完成的；難相處的",
+    "examples": [
+      {
+        "text": "The narrow path is difficult to walk along at night.",
+        "translationZh": "這條狹窄小路晚上很難走。",
+        "grammar": "形容詞加不定詞",
+        "writingTip": "指出造成困難的環境與情況。",
+        "topic": "戶外安全",
+        "source": "self-authored"
+      },
+      {
+        "text": "When instructions are difficult to understand, adding an example may help more than repeating the same words.",
+        "translationZh": "說明難以理解時，加上一個例子可能比重複同樣的話更有用。",
+        "grammar": "時間條件與比較",
+        "writingTip": "把問題連結到可行溝通方案。",
+        "topic": "教學方法",
+        "source": "self-authored"
+      }
+    ],
+    "collocations": [
+      [
+        "find it difficult to",
+        "覺得做某事困難",
+        "it 為形式受詞。"
+      ],
+      [
+        "be difficult to understand",
+        "難以理解",
+        "不定詞通常用主動形式。"
+      ],
+      [
+        "a difficult decision",
+        "難作的決定",
+        "通常有需權衡的選項。"
+      ],
+      [
+        "a difficult customer",
+        "難應對的顧客",
+        "此義描述互動，避免人身標籤。"
+      ]
+    ],
+    "usageNote": "difficult 不等於 impossible；difficulty 是名詞，如 have difficulty doing，不用 have difficult。"
+  },
+  "discuss": {
+    "plainMeaning": "討論、交換意見或詳細論述",
+    "examples": [
+      {
+        "text": "We discussed the budget at yesterday’s club meeting.",
+        "translationZh": "我們在昨天的社團會議討論預算。",
+        "grammar": "過去簡單式",
+        "writingTip": "直接接討論事項，不多加介系詞。",
+        "topic": "社團管理",
+        "source": "self-authored"
+      },
+      {
+        "text": "Before a policy is adopted, those affected should have a chance to discuss how it will change their daily routines.",
+        "translationZh": "政策採用前，受影響的人應有機會討論它將如何改變日常作息。",
+        "grammar": "被動與 how 子句",
+        "writingTip": "以參與程序支持政策公平性。",
+        "topic": "公共決策",
+        "source": "self-authored"
+      }
+    ],
+    "collocations": [
+      [
+        "discuss a problem",
+        "討論問題",
+        "不使用 discuss about。"
+      ],
+      [
+        "discuss something with someone",
+        "與某人討論某事",
+        "with 接討論對象。"
+      ],
+      [
+        "discuss whether",
+        "討論是否",
+        "whether 後接完整子句。"
+      ],
+      [
+        "discuss in detail",
+        "詳細討論",
+        "須有內容，不能只列名稱。"
+      ]
+    ],
+    "usageNote": "discuss 是及物動詞；名詞 discussion 可接 about／on，如 a discussion about transport。"
+  },
+  "effective": {
+    "plainMeaning": "能產生所希望效果的；正式生效的",
+    "examples": [
+      {
+        "text": "A short reminder is effective at helping me remember appointments.",
+        "translationZh": "簡短提醒能有效幫我記住約定。",
+        "grammar": "at 動名詞",
+        "writingTip": "指出在哪個目的上有效。",
+        "topic": "時間管理",
+        "source": "self-authored"
+      },
+      {
+        "text": "A recycling policy is unlikely to be effective unless residents know where different materials should be placed.",
+        "translationZh": "住戶若不知道不同材料應放在哪裡，回收政策便不太可能有效。",
+        "grammar": "unless 與名詞子句",
+        "writingTip": "把成效連結到清楚資訊這個必要條件。",
+        "topic": "社區環境",
+        "source": "self-authored"
+      }
+    ],
+    "collocations": [
+      [
+        "effective at doing",
+        "在做某事方面有效",
+        "at 後接動名詞。"
+      ],
+      [
+        "an effective solution",
+        "有效的解決方式",
+        "須能處理所指問題。"
+      ],
+      [
+        "effective communication",
+        "有效溝通",
+        "不只是傳出訊息，還需能理解。"
+      ],
+      [
+        "become effective on a date",
+        "在某日生效",
+        "法律或規則語境。"
+      ]
+    ],
+    "usageNote": "effective 看效果；efficient 看時間或資源利用。生效義不表示規則一定帶來好結果。"
+  },
+  "efficient": {
+    "plainMeaning": "以較少時間或資源把事情做好、有高效率的",
+    "examples": [
+      {
+        "text": "The kitchen’s labeled drawers make meal preparation more efficient.",
+        "translationZh": "廚房貼有標籤的抽屜讓備餐更有效率。",
+        "grammar": "make 加受詞與比較補語",
+        "writingTip": "以減少尋找時間的安排說明效率。",
+        "topic": "居家整理",
+        "source": "self-authored"
+      },
+      {
+        "text": "An efficient booking system should save staff time while allowing customers to request help when they need it.",
+        "translationZh": "有效率的預約系統應節省員工時間，同時讓有需要的顧客能求助。",
+        "grammar": "while 與時間子句",
+        "writingTip": "效率評估要兼顧服務可用性。",
+        "topic": "公共服務",
+        "source": "self-authored"
+      }
+    ],
+    "collocations": [
+      [
+        "efficient use of resources",
+        "有效率地運用資源",
+        "use 為名詞，接 of。"
+      ],
+      [
+        "an efficient system",
+        "高效率的系統",
+        "不等於所有使用者都滿意。"
+      ],
+      [
+        "be efficient at a task",
+        "有效率地處理任務",
+        "at 引出工作。"
+      ],
+      [
+        "energy-efficient equipment",
+        "節能設備",
+        "複合形容詞放名詞前常加連字號。"
+      ]
+    ],
+    "usageNote": "efficient 是少耗資源而完成目標；不能只因速度快就稱高效率，也須避免錯誤或浪費。"
+  },
+  "encourage(ment)": {
+    "plainMeaning": "鼓勵某人或促進某事；encouragement 是鼓勵",
+    "examples": [
+      {
+        "text": "My coach encouraged me to try again after I missed the shot.",
+        "translationZh": "我投籃失手後，教練鼓勵我再試一次。",
+        "grammar": "受詞加不定詞",
+        "writingTip": "指出受到挫折後的具體支持。",
+        "topic": "運動學習",
+        "source": "self-authored"
+      },
+      {
+        "text": "Encouragement that recognizes effort can help beginners continue, even when their progress is slow.",
+        "translationZh": "肯定努力的鼓勵能幫助初學者堅持，即使進步緩慢。",
+        "grammar": "關係子句與讓步",
+        "writingTip": "說明鼓勵如何維持學習，不只稱讚結果。",
+        "topic": "學習心理",
+        "source": "self-authored"
+      }
+    ],
+    "collocations": [
+      [
+        "encourage someone to do",
+        "鼓勵某人做某事",
+        "to 後接原形動詞。"
+      ],
+      [
+        "encourage participation",
+        "促進參與",
+        "participation 不可數。"
+      ],
+      [
+        "offer encouragement",
+        "給予鼓勵",
+        "encouragement 一般不可數。"
+      ],
+      [
+        "words of encouragement",
+        "鼓勵的話",
+        "of 引出話語性質。"
+      ]
+    ],
+    "usageNote": "encourage 可表示心理鼓勵或讓某行為更容易出現；名詞 encouragement 不必每次加 an。"
+  },
+  "engage(ment)": {
+    "plainMeaning": "吸引注意、使參與或投入；也可指聘用或訂婚",
+    "examples": [
+      {
+        "text": "The storyteller engaged the children with funny voices.",
+        "translationZh": "說故事的人用有趣的聲音吸引孩子。",
+        "grammar": "及物動詞",
+        "writingTip": "用具體方式說明如何吸引注意。",
+        "topic": "閱讀活動",
+        "source": "self-authored"
+      },
+      {
+        "text": "Students are more likely to engage in discussion when questions relate to experiences they can share.",
+        "translationZh": "問題與學生能分享的經驗有關時，他們較可能投入討論。",
+        "grammar": "時間條件與關係子句",
+        "writingTip": "把參與程度連結到題材的可親近性。",
+        "topic": "課堂教學",
+        "source": "self-authored"
+      }
+    ],
+    "collocations": [
+      [
+        "engage in an activity",
+        "參與某活動",
+        "in 後接名詞或動名詞。"
+      ],
+      [
+        "engage someone in discussion",
+        "讓某人參與討論",
+        "先接人，再接 in。"
+      ],
+      [
+        "engage with an idea",
+        "認真思考或回應想法",
+        "with 表主動互動，不只是看到。"
+      ],
+      [
+        "community engagement",
+        "社區參與",
+        "engagement 此義通常不可數。"
+      ]
+    ],
+    "usageNote": "engage 有投入、吸引、聘用等義；be engaged to someone 表訂婚，engaged in 指從事某事。"
+  },
+  "enhance(ment)": {
+    "plainMeaning": "提升品質、效果或程度；enhancement 是提升",
+    "examples": [
+      {
+        "text": "Better lighting enhanced the colors in the painting.",
+        "translationZh": "較好的照明讓畫中的色彩更鮮明。",
+        "grammar": "過去簡單式",
+        "writingTip": "說明改善的具體面向。",
+        "topic": "藝術展示",
+        "source": "self-authored"
+      },
+      {
+        "text": "A glossary can enhance readers’ understanding without interrupting the story, provided that its explanations are brief.",
+        "translationZh": "詞彙表能增進讀者理解而不打斷故事，前提是解釋簡短。",
+        "grammar": "without 與條件子句",
+        "writingTip": "提升效果需兼顧閱讀流暢度。",
+        "topic": "教材設計",
+        "source": "self-authored"
+      }
+    ],
+    "collocations": [
+      [
+        "enhance the quality of",
+        "提升某物品質",
+        "of 引出被改善的事物。"
+      ],
+      [
+        "enhance understanding",
+        "增進理解",
+        "understanding 此義不可數。"
+      ],
+      [
+        "enhance someone’s experience",
+        "改善某人的體驗",
+        "明確指出受益者。"
+      ],
+      [
+        "the enhancement of skills",
+        "技能的提升",
+        "enhancement 為名詞。"
+      ]
+    ],
+    "usageNote": "enhance 通常直接接受詞；不是所有增加都叫提升，若只增加數量可用 increase。"
+  },
+  "establish(ment)": {
+    "plainMeaning": "建立制度或關係；確立某事實",
+    "examples": [
+      {
+        "text": "The club established a weekly meeting time.",
+        "translationZh": "社團訂出了每週固定的開會時間。",
+        "grammar": "過去簡單式",
+        "writingTip": "用具體制度說明建立的內容。",
+        "topic": "社團管理",
+        "source": "self-authored"
+      },
+      {
+        "text": "Before judging the missing order, we need to establish whether the parcel reached the correct address.",
+        "translationZh": "判斷訂單遺失的原因前，我們需要查明包裹是否送到正確地址。",
+        "grammar": "whether 名詞子句",
+        "writingTip": "先確立關鍵事實，再提出責任判斷。",
+        "topic": "服務問題",
+        "source": "self-authored"
+      }
+    ],
+    "collocations": [
+      [
+        "establish a rule",
+        "訂立規則",
+        "及物動詞直接接受詞。"
+      ],
+      [
+        "establish a relationship",
+        "建立關係",
+        "relationship 可數。"
+      ],
+      [
+        "establish that",
+        "確立某事為真",
+        "that 後接完整子句，需要依據。"
+      ],
+      [
+        "the establishment of a school",
+        "學校的成立",
+        "名詞後接 of。"
+      ]
+    ],
+    "usageNote": "establish 可指創立或確立事實；an establishment 另可指機構，the establishment 可指既有權勢體制。"
+  },
+  "evaluate": {
+    "plainMeaning": "依標準評估品質、價值或成效",
+    "examples": [
+      {
+        "text": "The judges evaluated each dish for taste and presentation.",
+        "translationZh": "評審按味道與擺盤評估每道菜。",
+        "grammar": "過去簡單式",
+        "writingTip": "交代評估標準，使評價具體。",
+        "topic": "飲食活動",
+        "source": "self-authored"
+      },
+      {
+        "text": "A project should be evaluated against its original goals, not merely by how attractive its final report looks.",
+        "translationZh": "專案應按原始目標評估，而非只看最後的報告有多漂亮。",
+        "grammar": "被動與 how 子句",
+        "writingTip": "評量應回到目的，避免被呈現方式誤導。",
+        "topic": "學習評量",
+        "source": "self-authored"
+      }
+    ],
+    "collocations": [
+      [
+        "evaluate the effectiveness of",
+        "評估某事的成效",
+        "of 引出方案或方法。"
+      ],
+      [
+        "evaluate the risks",
+        "評估各項風險",
+        "宜區分可能性與嚴重程度。"
+      ],
+      [
+        "evaluate against criteria",
+        "依照標準評估",
+        "against 引出判準，非反對。"
+      ],
+      [
+        "objectively evaluate",
+        "客觀評估",
+        "需可說明的證據與標準。"
+      ]
+    ],
+    "usageNote": "evaluate 不只是稱好壞，應說明判準；evaluation 是名詞，與單次分數不完全相同。"
+  },
+  "evidence": {
+    "plainMeaning": "支持某說法的證據、跡象或根據",
+    "examples": [
+      {
+        "text": "The muddy footprints were evidence that someone had entered the shed.",
+        "translationZh": "泥腳印是有人進入棚子的證據。",
+        "grammar": "that 名詞子句",
+        "writingTip": "以可觀察線索支持有限結論。",
+        "topic": "生活觀察",
+        "source": "self-authored"
+      },
+      {
+        "text": "Evidence from one classroom may suggest a useful method, but it does not prove that the method will suit every learner.",
+        "translationZh": "一間教室的證據可能顯示某方法有用，但不能證明它適合所有學習者。",
+        "grammar": "情態與轉折",
+        "writingTip": "區分局部證據與普遍結論。",
+        "topic": "教學探究",
+        "source": "self-authored"
+      }
+    ],
+    "collocations": [
+      [
+        "evidence of change",
+        "變化的跡象／證據",
+        "evidence 通常不可數。"
+      ],
+      [
+        "evidence for a claim",
+        "支持主張的證據",
+        "for 表支持的方向。"
+      ],
+      [
+        "a piece of evidence",
+        "一項證據",
+        "不說 an evidence。"
+      ],
+      [
+        "the evidence suggests that",
+        "證據顯示可能",
+        "suggests 比 proves 謹慎。"
+      ]
+    ],
+    "usageNote": "通常不可數，不加 s；證據可能支持或削弱主張，未必完全證明。動詞 evidence 有顯示之意，較正式。"
+  },
+  "examine": {
+    "plainMeaning": "仔細檢查或研究；對人進行檢查或考試",
+    "examples": [
+      {
+        "text": "The mechanic examined the brakes before the trip.",
+        "translationZh": "技師在旅行前檢查了煞車。",
+        "grammar": "過去簡單式",
+        "writingTip": "指出預防問題所需的檢查。",
+        "topic": "交通安全",
+        "source": "self-authored"
+      },
+      {
+        "text": "To understand why an event attracted few visitors, organizers should examine its timing as well as its publicity.",
+        "translationZh": "為了解活動為何少人參加，主辦者應同時檢視時間安排與宣傳。",
+        "grammar": "目的與 why 子句",
+        "writingTip": "檢查多項因素，避免只怪單一原因。",
+        "topic": "活動評估",
+        "source": "self-authored"
+      }
+    ],
+    "collocations": [
+      [
+        "examine a document",
+        "仔細查看文件",
+        "直接接受詞。"
+      ],
+      [
+        "examine the causes of",
+        "研究某事的原因",
+        "of 引出問題。"
+      ],
+      [
+        "examine in detail",
+        "詳細檢視",
+        "指仔細分析，不只是看一眼。"
+      ],
+      [
+        "be examined by a doctor",
+        "接受醫生檢查",
+        "by 引出檢查者。"
+      ]
+    ],
+    "usageNote": "可指檢查、研究或考核；examination 在不同情境可指身體檢查、調查或考試。"
+  },
+  "explain": {
+    "plainMeaning": "把原因、意思或做法說清楚",
+    "examples": [
+      {
+        "text": "Please explain the game to the new players.",
+        "translationZh": "請向新玩家解釋遊戲規則。",
+        "grammar": "祈使與 to",
+        "writingTip": "事情作直接受詞，聽者放在 to 後。",
+        "topic": "團體活動",
+        "source": "self-authored"
+      },
+      {
+        "text": "A useful apology explains what will change, rather than merely asking the injured person to forget the incident.",
+        "translationZh": "有用的道歉會說明將作何改變，而非只要求受傷害者忘記事件。",
+        "grammar": "what 名詞子句與對比",
+        "writingTip": "把責任回應寫成具體改善。",
+        "topic": "人際關係",
+        "source": "self-authored"
+      }
+    ],
+    "collocations": [
+      [
+        "explain something to someone",
+        "向某人解釋某事",
+        "不說 explain someone something。"
+      ],
+      [
+        "explain why",
+        "解釋為何",
+        "why 後接原因相關子句。"
+      ],
+      [
+        "explain how to",
+        "解釋如何做",
+        "how to 後接原形動詞。"
+      ],
+      [
+        "explain away a mistake",
+        "為錯誤找理由開脫",
+        "away 帶削弱或掩飾之意。"
+      ]
+    ],
+    "usageNote": "explain 是讓人理解，不代表使人同意；explanation 是名詞，可用 an explanation for。"
+  },
+  "explore": {
+    "plainMeaning": "探索地點；深入了解想法、選項或可能性",
+    "examples": [
+      {
+        "text": "We explored the old streets on foot.",
+        "translationZh": "我們步行探索老街。",
+        "grammar": "過去簡單式",
+        "writingTip": "用具體場所說明探索活動。",
+        "topic": "文化旅行",
+        "source": "self-authored"
+      },
+      {
+        "text": "Before closing the local pool, officials should explore whether sharing its costs with nearby schools is possible.",
+        "translationZh": "關閉地方泳池前，官員應探討是否能與附近學校分擔費用。",
+        "grammar": "whether 子句與動名詞主詞",
+        "writingTip": "先探索替代方案，再作不可逆決定。",
+        "topic": "公共設施",
+        "source": "self-authored"
+      }
+    ],
+    "collocations": [
+      [
+        "explore the options",
+        "探索各種選項",
+        "不等於已採用某項。"
+      ],
+      [
+        "explore the possibility of",
+        "探討某事的可能性",
+        "of 後接名詞或動名詞。"
+      ],
+      [
+        "explore a city",
+        "探索城市",
+        "動詞直接接地點。"
+      ],
+      [
+        "explore an issue in depth",
+        "深入探討議題",
+        "in depth 表深度。"
+      ]
+    ],
+    "usageNote": "探索可為實地或抽象研究；不必然表示找到答案。exploration 是名詞。"
+  },
+  "express": {
+    "plainMeaning": "表達想法或感受；也可指快速、快遞或明確的",
+    "examples": [
+      {
+        "text": "I expressed my thanks to the volunteers after the fair.",
+        "translationZh": "園遊會後，我向志工表達感謝。",
+        "grammar": "過去簡單式",
+        "writingTip": "說明感謝的對象與情境。",
+        "topic": "校園活動",
+        "source": "self-authored"
+      },
+      {
+        "text": "People should be able to express disagreement without being excluded, provided that they treat others respectfully.",
+        "translationZh": "人們應能表達不同意見而不被排斥，前提是尊重他人。",
+        "grammar": "被動動名詞與條件",
+        "writingTip": "兼顧表達自由與互動責任。",
+        "topic": "公共討論",
+        "source": "self-authored"
+      }
+    ],
+    "collocations": [
+      [
+        "express concern about",
+        "表達對某事的擔憂",
+        "about 引出疑慮事項。"
+      ],
+      [
+        "express gratitude to",
+        "向某人表達感謝",
+        "to 接感謝對象。"
+      ],
+      [
+        "express a view",
+        "表達看法",
+        "view 可數。"
+      ],
+      [
+        "express delivery",
+        "快遞",
+        "express 此處形容速度。"
+      ]
+    ],
+    "usageNote": "動詞表達；express train 是快車，express permission 是明確許可，不能都譯成表達。"
+  },
+  "factor": {
+    "plainMeaning": "影響結果的一項因素；也可指數學因數",
+    "examples": [
+      {
+        "text": "Price was the main factor in our choice of hotel.",
+        "translationZh": "價格是我們選旅館的主要因素。",
+        "grammar": "名詞表語",
+        "writingTip": "指出決策中最重要的考量。",
+        "topic": "旅行規劃",
+        "source": "self-authored"
+      },
+      {
+        "text": "Travel distance is only one factor in attendance; the time of an event may matter just as much.",
+        "translationZh": "交通距離只是出席率的一項因素；活動時間可能同樣重要。",
+        "grammar": "分號與程度比較",
+        "writingTip": "提醒讀者結果往往有多重原因。",
+        "topic": "活動評估",
+        "source": "self-authored"
+      }
+    ],
+    "collocations": [
+      [
+        "a factor in",
+        "某事的一項因素",
+        "in 引出決策或結果。"
+      ],
+      [
+        "a contributing factor",
+        "促成因素",
+        "表示部分原因，非唯一原因。"
+      ],
+      [
+        "take a factor into account",
+        "把某因素納入考量",
+        "account 在此為固定片語。"
+      ],
+      [
+        "factor in the cost",
+        "將費用計入",
+        "factor in 是動詞片語。"
+      ]
+    ],
+    "usageNote": "可數名詞；數學 factor 指因數。一般說理要避免把一項因素當成唯一原因。"
+  },
+  "focus": {
+    "plainMeaning": "注意力的中心；把注意力集中於某事",
+    "examples": [
+      {
+        "text": "Please focus on the speaker while she explains the task.",
+        "translationZh": "她說明任務時，請專心聽講。",
+        "grammar": "時間子句",
+        "writingTip": "on 指注意力所在。",
+        "topic": "課堂學習",
+        "source": "self-authored"
+      },
+      {
+        "text": "When a report focuses only on average results, it may overlook the people whose needs remain unmet.",
+        "translationZh": "報告若只關注平均結果，就可能忽略需求仍未獲滿足的人。",
+        "grammar": "條件情境與關係子句",
+        "writingTip": "指出平均數可能遮蔽的差異。",
+        "topic": "資料判讀",
+        "source": "self-authored"
+      }
+    ],
+    "collocations": [
+      [
+        "focus on something",
+        "專注於某事",
+        "on 後接名詞或動名詞。"
+      ],
+      [
+        "focus attention on",
+        "把注意力集中在",
+        "attention 不可數。"
+      ],
+      [
+        "the main focus of",
+        "某事的主要重點",
+        "focus 為名詞。"
+      ],
+      [
+        "bring into focus",
+        "使某事清楚呈現",
+        "可指影像或問題輪廓。"
+      ]
+    ],
+    "usageNote": "可作名詞或動詞，也有相機聚焦義；focuses 和 focusses 皆見，複數可用 focuses 或 foci。"
+  },
+  "function": {
+    "plainMeaning": "作用或功能；正常運作，或起某種作用",
+    "examples": [
+      {
+        "text": "This button has no function when the screen is locked.",
+        "translationZh": "螢幕鎖定時，這個按鈕沒有作用。",
+        "grammar": "時間子句",
+        "writingTip": "用操作情境說明功能。",
+        "topic": "數位工具",
+        "source": "self-authored"
+      },
+      {
+        "text": "A school garden can function as an outdoor classroom where students observe changes that textbooks only describe.",
+        "translationZh": "校園花園能作為戶外教室，讓學生觀察課本只能描述的變化。",
+        "grammar": "as 補語與關係子句",
+        "writingTip": "以功能延伸支持資源利用方案。",
+        "topic": "自然學習",
+        "source": "self-authored"
+      }
+    ],
+    "collocations": [
+      [
+        "function as something",
+        "起某種作用",
+        "as 後接角色或用途。"
+      ],
+      [
+        "function properly",
+        "正常運作",
+        "動詞通常不及物。"
+      ],
+      [
+        "the main function of",
+        "某物的主要功能",
+        "of 引出裝置或制度。"
+      ],
+      [
+        "perform a function",
+        "發揮功能",
+        "function 為可數名詞。"
+      ]
+    ],
+    "usageNote": "名詞可指功能、數學函數或正式社交活動；動詞 function 多指運作，不直接接受詞。"
+  },
+  "goal": {
+    "plainMeaning": "想達成的目標；球門或進球",
+    "examples": [
+      {
+        "text": "Our goal is to make the playground safer.",
+        "translationZh": "我們的目標是讓遊樂場更安全。",
+        "grammar": "不定詞表語",
+        "writingTip": "以明確改善方向設定目標。",
+        "topic": "公共空間",
+        "source": "self-authored"
+      },
+      {
+        "text": "A long-term goal becomes easier to pursue when it is divided into steps that can be checked regularly.",
+        "translationZh": "長期目標若拆成可定期檢查的步驟，就更容易持續追求。",
+        "grammar": "被動與關係子句",
+        "writingTip": "把抽象目標轉成可追蹤的行動。",
+        "topic": "自我管理",
+        "source": "self-authored"
+      }
+    ],
+    "collocations": [
+      [
+        "set a goal",
+        "設定目標",
+        "goal 可數。"
+      ],
+      [
+        "achieve a goal",
+        "達成目標",
+        "achieve 直接接受詞。"
+      ],
+      [
+        "a long-term goal",
+        "長期目標",
+        "名詞前 long-term 加連字號。"
+      ],
+      [
+        "score a goal",
+        "射門得分",
+        "運動語境的 goal 是進球。"
+      ]
+    ],
+    "usageNote": "目標、球門與進球要依情境辨義；goalkeeper 才是守門員，普通 goal 不指守門員。"
+  },
+  "identify": {
+    "plainMeaning": "認出或找出；確認身分；產生認同",
+    "examples": [
+      {
+        "text": "The label helped us identify the owner of the umbrella.",
+        "translationZh": "標籤幫助我們確認雨傘的主人。",
+        "grammar": "help 加原形動詞",
+        "writingTip": "用可見線索說明辨識。",
+        "topic": "失物處理",
+        "source": "self-authored"
+      },
+      {
+        "text": "Before selecting a solution, the team should identify which part of the process causes the longest delay.",
+        "translationZh": "選擇方案前，團隊應找出流程中哪個部分造成最久的延誤。",
+        "grammar": "疑問詞名詞子句",
+        "writingTip": "先定位問題，再挑改善措施。",
+        "topic": "工作流程",
+        "source": "self-authored"
+      }
+    ],
+    "collocations": [
+      [
+        "identify the cause of",
+        "找出某事的原因",
+        "of 引出問題。"
+      ],
+      [
+        "identify someone as",
+        "確認某人的身分是",
+        "as 引出身分或角色。"
+      ],
+      [
+        "identify with a character",
+        "對某角色有共鳴",
+        "with 表情感認同。"
+      ],
+      [
+        "identify a difference",
+        "找出差異",
+        "直接接受詞。"
+      ]
+    ],
+    "usageNote": "identify 不只有認出身分；identify with 是有共鳴，identify A with B 可表示把兩者聯繫或等同。"
+  },
+  "illustrate": {
+    "plainMeaning": "用例子或圖像說明；替書加插圖",
+    "examples": [
+      {
+        "text": "The diagram illustrates how water moves through the filter.",
+        "translationZh": "這張圖說明水如何通過濾器。",
+        "grammar": "how 名詞子句",
+        "writingTip": "用圖像呈現過程而非只列名稱。",
+        "topic": "技術學習",
+        "source": "self-authored"
+      },
+      {
+        "text": "A familiar example can illustrate an abstract principle, but it should not be mistaken for proof of every possible case.",
+        "translationZh": "熟悉的例子能說明抽象原則，但不應被當成所有情況的證明。",
+        "grammar": "轉折與被動",
+        "writingTip": "區分解釋用途與證明效力。",
+        "topic": "論說寫作",
+        "source": "self-authored"
+      }
+    ],
+    "collocations": [
+      [
+        "illustrate a point",
+        "說明一個要點",
+        "常用例子或圖表。"
+      ],
+      [
+        "illustrate with examples",
+        "用例子說明",
+        "with 引出工具或材料。"
+      ],
+      [
+        "illustrate how",
+        "說明如何",
+        "how 後接完整子句。"
+      ],
+      [
+        "an illustrated book",
+        "有插圖的書",
+        "illustrated 是過去分詞形容詞。"
+      ]
+    ],
+    "usageNote": "可指舉例說明或繪製插圖；一個 illustration 能幫助理解，不一定足以證明普遍結論。"
+  },
+  "impact": {
+    "plainMeaning": "產生的明顯影響；撞擊或衝擊",
+    "examples": [
+      {
+        "text": "The fallen branch made a deep mark on impact.",
+        "translationZh": "樹枝落下撞擊時留下了深痕。",
+        "grammar": "on 加名詞",
+        "writingTip": "以物理情境理解撞擊義。",
+        "topic": "自然觀察",
+        "source": "self-authored"
+      },
+      {
+        "text": "Before extending the market’s hours, planners should consider its impact on residents who need quiet evenings.",
+        "translationZh": "延長市場營業時間前，規劃者應考慮對需要安靜夜晚的住戶有何影響。",
+        "grammar": "關係子句",
+        "writingTip": "同時評估營業便利與居民需求。",
+        "topic": "社區規劃",
+        "source": "self-authored"
+      }
+    ],
+    "collocations": [
+      [
+        "have an impact on",
+        "對某事有影響",
+        "on 引出受影響對象。"
+      ],
+      [
+        "environmental impact",
+        "環境影響",
+        "此義可概括整體後果。"
+      ],
+      [
+        "assess the impact of",
+        "評估某事的影響",
+        "of 引出原因或措施。"
+      ],
+      [
+        "on impact",
+        "撞擊時",
+        "物理碰撞的固定用法。"
+      ]
+    ],
+    "usageNote": "可為名詞或動詞；動詞 impact 可直接接受詞，但學習作文用 have an impact on 通常更清楚。"
+  },
+  "improve(ment)": {
+    "plainMeaning": "使變好或變得更好；improvement 是改善",
+    "examples": [
+      {
+        "text": "Daily stretching improved my flexibility and made exercise more comfortable.",
+        "translationZh": "每天伸展改善我的柔軟度，也讓運動更舒服。",
+        "grammar": "並列過去式",
+        "writingTip": "明確指出改善的面向。",
+        "topic": "運動習慣",
+        "source": "self-authored"
+      },
+      {
+        "text": "An improvement in service matters only if the people who need help can actually use it.",
+        "translationZh": "服務改善只有在需要幫助的人實際能使用時才有意義。",
+        "grammar": "only if 與關係子句",
+        "writingTip": "將成效判準放在實際使用者。",
+        "topic": "公共服務",
+        "source": "self-authored"
+      }
+    ],
+    "collocations": [
+      [
+        "improve a skill",
+        "改善某技能",
+        "及物用法直接接受詞。"
+      ],
+      [
+        "improve on a previous result",
+        "比先前結果更好",
+        "on 引出被超越的表現。"
+      ],
+      [
+        "an improvement in",
+        "某方面的改善",
+        "in 引出品質、成績等面向。"
+      ],
+      [
+        "room for improvement",
+        "仍有改善空間",
+        "room 此處不可數，不是房間。"
+      ]
+    ],
+    "usageNote": "improve 可及物或不及物；說明改善方向用 improve access，不用 improve to access。"
+  },
+  "include": {
+    "plainMeaning": "把某人或事列入範圍；包含",
+    "examples": [
+      {
+        "text": "The price includes breakfast and a bicycle rental.",
+        "translationZh": "價格包含早餐與腳踏車租借。",
+        "grammar": "現在簡單式",
+        "writingTip": "讓費用資訊明確，避免隱藏項目。",
+        "topic": "旅行消費",
+        "source": "self-authored"
+      },
+      {
+        "text": "A discussion about playground design should include children whose needs may differ from adults’ expectations.",
+        "translationZh": "遊樂場設計討論應納入需求可能不同於成人預期的兒童。",
+        "grammar": "關係子句與情態",
+        "writingTip": "說明誰的觀點應被納入決策。",
+        "topic": "兒童參與",
+        "source": "self-authored"
+      }
+    ],
+    "collocations": [
+      [
+        "include someone in an activity",
+        "讓某人參與活動",
+        "先接人，再接 in。"
+      ],
+      [
+        "include the cost of",
+        "包含某項費用",
+        "of 引出費用項目。"
+      ],
+      [
+        "including taxes",
+        "含稅",
+        "including 是補充包含範圍，不當主要謂語。"
+      ],
+      [
+        "include both A and B",
+        "同時包括 A 與 B",
+        "both 配 and。"
+      ]
+    ],
+    "usageNote": "include 表包含，未必列出全部；consist of 常用來列構成成分。included 為形容／被動形式。"
+  },
+  "indicate": {
+    "plainMeaning": "顯示跡象或指出資訊；指示",
+    "examples": [
+      {
+        "text": "The arrow on the wall indicates the nearest exit.",
+        "translationZh": "牆上的箭頭指出最近的出口。",
+        "grammar": "現在簡單式",
+        "writingTip": "用標記的具體用途說明指示義。",
+        "topic": "場地安全",
+        "source": "self-authored"
+      },
+      {
+        "text": "A longer waiting list may indicate a need for more classes, but it does not tell us which times students prefer.",
+        "translationZh": "候補名單較長可能表示需要更多課程，但無法告訴我們學生偏好哪些時段。",
+        "grammar": "情態與轉折",
+        "writingTip": "限制指標能支持的推論範圍。",
+        "topic": "課程規劃",
+        "source": "self-authored"
+      }
+    ],
+    "collocations": [
+      [
+        "indicate that",
+        "顯示某事",
+        "that 後接子句。"
+      ],
+      [
+        "indicate a need for",
+        "顯示有某需求",
+        "for 引出需要的事物。"
+      ],
+      [
+        "indicate where",
+        "指出在哪裡",
+        "where 後接位置子句。"
+      ],
+      [
+        "clearly indicate",
+        "清楚標示",
+        "常用於圖表、告示或規則。"
+      ]
+    ],
+    "usageNote": "indicate 常比 prove 謹慎；可表示線索、指示或示意，不一律代表確定證明。"
+  },
+  "influence": {
+    "plainMeaning": "影響他人的想法或結果；影響力",
+    "examples": [
+      {
+        "text": "My sister influenced my choice of music lessons.",
+        "translationZh": "姐姐影響了我選擇哪種音樂課。",
+        "grammar": "過去簡單式",
+        "writingTip": "動詞直接接受到影響的事項。",
+        "topic": "家庭經驗",
+        "source": "self-authored"
+      },
+      {
+        "text": "Advertising may influence what people buy, especially when it connects a product with the desire to belong.",
+        "translationZh": "廣告可能影響購物選擇，尤其當它把產品與歸屬需求連結時。",
+        "grammar": "what 名詞子句與時間條件",
+        "writingTip": "描述可能的影響機制，不宣稱所有人相同。",
+        "topic": "媒體與消費",
+        "source": "self-authored"
+      }
+    ],
+    "collocations": [
+      [
+        "have an influence on",
+        "對某事有影響",
+        "名詞後接 on。"
+      ],
+      [
+        "influence a decision",
+        "影響決定",
+        "動詞直接接受詞，不加 on。"
+      ],
+      [
+        "under the influence of",
+        "受某事影響",
+        "也可指酒精影響，依情境辨義。"
+      ],
+      [
+        "a positive influence",
+        "正面的影響／影響者",
+        "a 可指具體影響來源。"
+      ]
+    ],
+    "usageNote": "可作動詞或名詞；影響不等於控制。influential 是有影響力的形容詞。"
+  },
+  "information": {
+    "plainMeaning": "讓人知道事情的資訊、消息或資料",
+    "examples": [
+      {
+        "text": "The notice provides information about the swimming lessons.",
+        "translationZh": "公告提供游泳課程的資訊。",
+        "grammar": "現在簡單式",
+        "writingTip": "about 指出資訊主題。",
+        "topic": "社區服務",
+        "source": "self-authored"
+      },
+      {
+        "text": "Information that is easy to find may still be misleading if its source and date are not checked.",
+        "translationZh": "容易找到的資訊若未查核來源與日期，仍可能誤導人。",
+        "grammar": "關係子句與條件被動",
+        "writingTip": "區分取得便利與資訊可靠。",
+        "topic": "媒體識讀",
+        "source": "self-authored"
+      }
+    ],
+    "collocations": [
+      [
+        "information about a subject",
+        "關於某主題的資訊",
+        "information 不可數。"
+      ],
+      [
+        "a piece of information",
+        "一則資訊",
+        "不說 an information。"
+      ],
+      [
+        "provide information",
+        "提供資訊",
+        "provide something to someone 亦常用。"
+      ],
+      [
+        "reliable information",
+        "可靠資訊",
+        "需檢查來源、時效與依據。"
+      ]
+    ],
+    "usageNote": "通常不可數，不加 s；information desk 指服務臺，專業法律義另可指起訴書，不作日常消息使用。"
+  },
+  "innovation": {
+    "plainMeaning": "新方法、產品或制度的創新",
+    "examples": [
+      {
+        "text": "The refill station is a useful innovation in our cafeteria.",
+        "translationZh": "補充站是餐廳一項有用的創新。",
+        "grammar": "名詞表語",
+        "writingTip": "用具體服務說明創新而非只稱讚新穎。",
+        "topic": "校園環境",
+        "source": "self-authored"
+      },
+      {
+        "text": "An innovation deserves support when it solves a real problem without creating greater barriers for its users.",
+        "translationZh": "創新若能解決真實問題，又不為使用者製造更大障礙，就值得支持。",
+        "grammar": "when 與 without 動名詞",
+        "writingTip": "以實用與可近性評價創新。",
+        "topic": "設計評估",
+        "source": "self-authored"
+      }
+    ],
+    "collocations": [
+      [
+        "technological innovation",
+        "科技創新",
+        "概括活動時可不可數。"
+      ],
+      [
+        "an innovation in design",
+        "設計上的創新",
+        "具體新方法可數。"
+      ],
+      [
+        "encourage innovation",
+        "鼓勵創新",
+        "不只鼓勵模仿現有產品。"
+      ],
+      [
+        "introduce an innovation",
+        "引入一項創新",
+        "須說明新做法內容。"
+      ]
+    ],
+    "usageNote": "可指創新活動或具體成果；innovation 不保證比原方案更好，還須評估使用效果。"
+  },
+  "integrate": {
+    "plainMeaning": "把不同部分結合成能共同運作的整體",
+    "examples": [
+      {
+        "text": "The course integrates music with language practice.",
+        "translationZh": "課程把音樂與語言練習結合。",
+        "grammar": "integrate A with B",
+        "writingTip": "指出結合哪些元素。",
+        "topic": "跨科學習",
+        "source": "self-authored"
+      },
+      {
+        "text": "When new residents are integrated into local activities, the community can benefit from experiences it previously overlooked.",
+        "translationZh": "新住戶融入地方活動後，社區能受益於先前忽略的經驗。",
+        "grammar": "被動與關係子句",
+        "writingTip": "讓融入帶來雙向交流，不只要求單方改變。",
+        "topic": "社區融合",
+        "source": "self-authored"
+      }
+    ],
+    "collocations": [
+      [
+        "integrate A with B",
+        "把 A 與 B 結合",
+        "兩部分共同運作。"
+      ],
+      [
+        "integrate something into",
+        "把某物融入",
+        "into 引出較大的整體。"
+      ],
+      [
+        "an integrated system",
+        "整合系統",
+        "過去分詞形容詞。"
+      ],
+      [
+        "integrate into a community",
+        "融入社區",
+        "不及物用法可不列受詞。"
+      ]
+    ],
+    "usageNote": "常用動詞，指整合或融入；不是只把東西放一起，也不意味所有差異都消失。"
+  },
+  "interpret": {
+    "plainMeaning": "理解或解讀意思；口譯，或詮釋作品",
+    "examples": [
+      {
+        "text": "We interpreted the symbol as a warning.",
+        "translationZh": "我們把那個符號理解為警告。",
+        "grammar": "as 受詞補語",
+        "writingTip": "指出解讀內容，不把解讀當原意保證。",
+        "topic": "視覺訊息",
+        "source": "self-authored"
+      },
+      {
+        "text": "A message may be interpreted differently by people who do not share the sender’s sense of humor.",
+        "translationZh": "不認同發訊者幽默感的人，可能對訊息有不同解讀。",
+        "grammar": "被動與關係子句",
+        "writingTip": "用背景差異解釋溝通誤會。",
+        "topic": "數位溝通",
+        "source": "self-authored"
+      }
+    ],
+    "collocations": [
+      [
+        "interpret something as",
+        "把某事理解為",
+        "as 引出解讀結果。"
+      ],
+      [
+        "interpret the results",
+        "解讀結果",
+        "須依資料脈絡。"
+      ],
+      [
+        "interpret for someone",
+        "為某人口譯",
+        "for 接受服務者。"
+      ],
+      [
+        "interpret a role",
+        "詮釋角色",
+        "表演語境，不是翻譯文字。"
+      ]
+    ],
+    "usageNote": "解讀不一定正確；interpret 常指口譯，translate 較常指書面翻譯，但兩者依情境可重疊。"
+  },
+  "involve(ment)": {
+    "plainMeaning": "包含某事或讓人參與；牽涉其中",
+    "examples": [
+      {
+        "text": "The project involves interviewing local shop owners.",
+        "translationZh": "這個專案需要訪問地方店家。",
+        "grammar": "動名詞受詞",
+        "writingTip": "involve doing 說明工作包含哪些內容。",
+        "topic": "地方探究",
+        "source": "self-authored"
+      },
+      {
+        "text": "Parents should be involved in decisions that affect their children, without replacing the children’s own voices.",
+        "translationZh": "家長應參與影響孩子的決定，但不應取代孩子自己的聲音。",
+        "grammar": "被動與關係子句",
+        "writingTip": "兼顧支持者參與與當事人自主。",
+        "topic": "家庭與教育",
+        "source": "self-authored"
+      }
+    ],
+    "collocations": [
+      [
+        "involve doing something",
+        "包含做某事",
+        "involve 後接動名詞。"
+      ],
+      [
+        "involve someone in",
+        "讓某人參與",
+        "in 後接活動或議題。"
+      ],
+      [
+        "be involved in",
+        "參與／牽涉某事",
+        "須看情境，未必正面。"
+      ],
+      [
+        "parental involvement",
+        "家長參與",
+        "involvement 此義通常不可數。"
+      ]
+    ],
+    "usageNote": "involve 可指必要內容或人的參與；be involved in a dispute 表牽涉爭端，不等於主動支持。"
+  },
+  "issue": {
+    "plainMeaning": "待討論的問題或議題；發行、公布或發給",
+    "examples": [
+      {
+        "text": "The office issued new library cards this morning.",
+        "translationZh": "辦公室今天上午發了新的借書證。",
+        "grammar": "過去簡單式",
+        "writingTip": "動詞直接接發出的文件。",
+        "topic": "公共服務",
+        "source": "self-authored"
+      },
+      {
+        "text": "Access to safe paths is an issue that affects children and older residents in different ways.",
+        "translationZh": "安全通道的可近性是一項以不同方式影響兒童與年長住戶的議題。",
+        "grammar": "關係子句",
+        "writingTip": "界定議題及不同受影響群體。",
+        "topic": "交通公平",
+        "source": "self-authored"
+      }
+    ],
+    "collocations": [
+      [
+        "address an issue",
+        "處理議題",
+        "address 此處是動詞。"
+      ],
+      [
+        "an issue of concern",
+        "值得關注的問題",
+        "of concern 表重要疑慮。"
+      ],
+      [
+        "issue a statement",
+        "發布聲明",
+        "issue 作及物動詞。"
+      ],
+      [
+        "the latest issue of a magazine",
+        "雜誌最新一期",
+        "issue 為可數期數。"
+      ]
+    ],
+    "usageNote": "名詞可指議題或刊物期數；動詞可指發布、發給或流出，不把所有 issue 都譯成問題。"
+  },
+  "justify": {
+    "plainMeaning": "提出足夠理由，說明做法或判斷是合理的",
+    "examples": [
+      {
+        "text": "The extra storage space justifies the cabinet’s higher price.",
+        "translationZh": "額外的收納空間讓櫃子較高的價格有合理依據。",
+        "grammar": "現在簡單式",
+        "writingTip": "連結代價與實際增加的價值。",
+        "topic": "消費評估",
+        "source": "self-authored"
+      },
+      {
+        "text": "Convenience alone cannot justify a rule that excludes people who lack a smartphone.",
+        "translationZh": "單憑便利不能證明排除沒有智慧型手機者的規則合理。",
+        "grammar": "雙重關係子句",
+        "writingTip": "把行政好處與公平代價一起權衡。",
+        "topic": "數位服務",
+        "source": "self-authored"
+      }
+    ],
+    "collocations": [
+      [
+        "justify a decision",
+        "說明決定合理",
+        "須提供理由，不只是重複決定。"
+      ],
+      [
+        "justify doing something",
+        "證明做某事有理由",
+        "後接動名詞，不接 to do。"
+      ],
+      [
+        "justify the cost",
+        "證明花費值得",
+        "cost 是所需代價。"
+      ],
+      [
+        "be justified in doing",
+        "有正當理由做某事",
+        "in 後接動名詞。"
+      ]
+    ],
+    "usageNote": "justify 是使合理，不必表示道德上永遠正確；文字編排另可指左右對齊。"
+  },
+  "knowledge": {
+    "plainMeaning": "知道的事；累積的知識與了解",
+    "examples": [
+      {
+        "text": "My uncle has detailed knowledge of local plants.",
+        "translationZh": "叔叔對當地植物有深入了解。",
+        "grammar": "have knowledge of",
+        "writingTip": "用 of 指定知識領域。",
+        "topic": "自然觀察",
+        "source": "self-authored"
+      },
+      {
+        "text": "Technical knowledge is valuable, but a designer must also listen to people whose daily experiences reveal different needs.",
+        "translationZh": "專業知識很有價值，但設計者也須傾聽日常經驗反映不同需求的人。",
+        "grammar": "轉折與關係子句",
+        "writingTip": "將專業與生活經驗互補，避免排除使用者。",
+        "topic": "設計方法",
+        "source": "self-authored"
+      }
+    ],
+    "collocations": [
+      [
+        "knowledge of a subject",
+        "對某領域的了解",
+        "of 引出領域。"
+      ],
+      [
+        "gain knowledge",
+        "取得知識",
+        "knowledge 通常不可數。"
+      ],
+      [
+        "apply your knowledge",
+        "運用你的知識",
+        "需交代使用情境。"
+      ],
+      [
+        "to my knowledge",
+        "據我所知",
+        "限定說話者了解的範圍。"
+      ]
+    ],
+    "usageNote": "通常不可數，不說 knowledges；a working knowledge 是足以實際使用的程度，不等於完全精通。"
+  },
+  "lack": {
+    "plainMeaning": "缺乏或不足；沒有所需的東西",
+    "examples": [
+      {
+        "text": "The room lacks enough chairs for all the guests.",
+        "translationZh": "房間沒有足夠椅子供所有客人使用。",
+        "grammar": "及物動詞",
+        "writingTip": "動詞 lack 直接接缺少的事物。",
+        "topic": "活動準備",
+        "source": "self-authored"
+      },
+      {
+        "text": "A lack of confidence should not prevent students from sharing ideas that may improve the group’s work.",
+        "translationZh": "缺乏自信不應阻止學生分享可能改善團隊工作的想法。",
+        "grammar": "名詞主詞與關係子句",
+        "writingTip": "承認心理障礙，同時支持參與。",
+        "topic": "合作學習",
+        "source": "self-authored"
+      }
+    ],
+    "collocations": [
+      [
+        "lack experience",
+        "缺乏經驗",
+        "動詞不加 of。"
+      ],
+      [
+        "a lack of resources",
+        "資源不足",
+        "名詞後接 of。"
+      ],
+      [
+        "for lack of time",
+        "因時間不足",
+        "for 表原因。"
+      ],
+      [
+        "be lacking in detail",
+        "細節不足",
+        "lacking 常接 in。"
+      ]
+    ],
+    "usageNote": "動詞 lack something；名詞 a lack of something。勿混成 lack of something 作主要謂語。"
+  },
+  "limit": {
+    "plainMeaning": "限制或界限；可接受的最高範圍",
+    "examples": [
+      {
+        "text": "The swimming pool limits each booking to one hour.",
+        "translationZh": "泳池把每次預約限制為一小時。",
+        "grammar": "limit A to B",
+        "writingTip": "把限制項目與上限寫清楚。",
+        "topic": "公共設施",
+        "source": "self-authored"
+      },
+      {
+        "text": "While limits on noise can protect residents, they should leave room for children’s ordinary daytime activities.",
+        "translationZh": "噪音限制雖能保護住戶，仍應容許孩子正常的日間活動。",
+        "grammar": "讓步與情態",
+        "writingTip": "規範需要兼顧不同群體的合理需求。",
+        "topic": "社區生活",
+        "source": "self-authored"
+      }
+    ],
+    "collocations": [
+      [
+        "limit something to",
+        "把某事限制在",
+        "to 後接範圍或數量。"
+      ],
+      [
+        "set a limit on",
+        "對某事設限",
+        "on 引出被限制項目。"
+      ],
+      [
+        "within limits",
+        "在合理範圍內",
+        "固定複數片語。"
+      ],
+      [
+        "a speed limit",
+        "速限",
+        "limit 為可數名詞。"
+      ]
+    ],
+    "usageNote": "可作動詞或名詞；limited 是受限的，limiting 可指造成限制的。at the limit 表達到極限。"
+  },
+  "logical": {
+    "plainMeaning": "推理步驟合理、前後有道理的",
+    "examples": [
+      {
+        "text": "Putting the tools near the workbench is a logical choice.",
+        "translationZh": "把工具放在工作臺附近是合理的選擇。",
+        "grammar": "名詞表語",
+        "writingTip": "讓合理選擇與實際使用目的相連。",
+        "topic": "工作空間",
+        "source": "self-authored"
+      },
+      {
+        "text": "An argument may sound logical even if it begins with an assumption that has never been checked.",
+        "translationZh": "論證即使聽起來合理，也可能從未經查核的假設出發。",
+        "grammar": "讓步與關係子句被動",
+        "writingTip": "區分推理形式與前提是否真實。",
+        "topic": "批判思考",
+        "source": "self-authored"
+      }
+    ],
+    "collocations": [
+      [
+        "a logical explanation",
+        "合理的解釋",
+        "仍需檢查事實依據。"
+      ],
+      [
+        "a logical conclusion",
+        "合乎推理的結論",
+        "應由前提支持。"
+      ],
+      [
+        "a logical sequence",
+        "有條理的順序",
+        "sequence 可數。"
+      ],
+      [
+        "a logical next step",
+        "合理的下一步",
+        "常用於提出方案。"
+      ]
+    ],
+    "usageNote": "logical 強調推理或安排合理，不保證前提正確；logically 為副詞，logic 為名詞。"
+  },
+  "maintain": {
+    "plainMeaning": "維持狀況；保養；堅持某說法",
+    "examples": [
+      {
+        "text": "The caretaker maintains the bicycles used by visitors.",
+        "translationZh": "管理員保養供訪客使用的腳踏車。",
+        "grammar": "過去分詞修飾",
+        "writingTip": "清楚描述維護的對象。",
+        "topic": "觀光服務",
+        "source": "self-authored"
+      },
+      {
+        "text": "To maintain trust, a school should explain why a rule changes rather than announcing the change without context.",
+        "translationZh": "為維持信任，學校應解釋規則變動原因，而非沒有脈絡地直接宣布。",
+        "grammar": "目的與 why 子句",
+        "writingTip": "以透明溝通支持持續信任。",
+        "topic": "校園制度",
+        "source": "self-authored"
+      }
+    ],
+    "collocations": [
+      [
+        "maintain equipment",
+        "保養設備",
+        "equipment 不可數。"
+      ],
+      [
+        "maintain a balance",
+        "維持平衡",
+        "balance 可指需求間的平衡。"
+      ],
+      [
+        "maintain that",
+        "堅稱某觀點",
+        "that 後接完整子句，不表示已證明。"
+      ],
+      [
+        "maintain contact with",
+        "與某人保持聯絡",
+        "with 接聯絡對象。"
+      ]
+    ],
+    "usageNote": "可指維修、保持或主張；maintain that 是持續認為，不等同 objective evidence。"
+  },
+  "major": {
+    "plainMeaning": "主要的、重要的；主修科目或主修",
+    "examples": [
+      {
+        "text": "Rent is a major expense for students living away from home.",
+        "translationZh": "租金是離家住的學生一項主要開銷。",
+        "grammar": "現在分詞修飾",
+        "writingTip": "用具體費用說明主要負擔。",
+        "topic": "學生生活",
+        "source": "self-authored"
+      },
+      {
+        "text": "Students who major in design may benefit from learning how people with different abilities use everyday objects.",
+        "translationZh": "主修設計的學生可能受益於了解不同能力的人如何使用日常物品。",
+        "grammar": "關係子句與 how 子句",
+        "writingTip": "連結專業學習與使用者需求。",
+        "topic": "職涯學習",
+        "source": "self-authored"
+      }
+    ],
+    "collocations": [
+      [
+        "a major factor",
+        "主要因素",
+        "不能因重要就稱唯一原因。"
+      ],
+      [
+        "a major change",
+        "重大改變",
+        "major 修飾名詞。"
+      ],
+      [
+        "major in a subject",
+        "主修某科目",
+        "動詞接 in。"
+      ],
+      [
+        "a history major",
+        "主修歷史的學生／科系",
+        "須依句子分辨人或主修。"
+      ]
+    ],
+    "usageNote": "常見形容詞及學業主修義；軍階 a major 是少校。major 不等於 majority「大多數」。"
+  },
+  "measure(ment)": {
+    "plainMeaning": "測量或衡量；measurement 是測得的數值或測量",
+    "examples": [
+      {
+        "text": "We measured the window before ordering curtains.",
+        "translationZh": "我們訂窗簾前先量了窗戶。",
+        "grammar": "時間片語",
+        "writingTip": "測量先於採購，說明準備步驟。",
+        "topic": "居家安排",
+        "source": "self-authored"
+      },
+      {
+        "text": "A measurement taken only once may be misleading if the instrument was not placed on a level surface.",
+        "translationZh": "儀器若未放在水平表面，只測一次的數值可能誤導人。",
+        "grammar": "過去分詞與條件被動",
+        "writingTip": "說明測量品質取決於方法與條件。",
+        "topic": "自然探究",
+        "source": "self-authored"
+      }
+    ],
+    "collocations": [
+      [
+        "measure the length of",
+        "測量某物長度",
+        "of 引出物件。"
+      ],
+      [
+        "measure success by",
+        "以某標準衡量成功",
+        "by 引出判準。"
+      ],
+      [
+        "take a measurement",
+        "進行一次測量",
+        "measurement 可數。"
+      ],
+      [
+        "accurate measurements",
+        "準確測量值",
+        "複數可指多個數值。"
+      ]
+    ],
+    "usageNote": "measure 可測量或抽象衡量；名詞 measure 也有措施義，measurement 主要是測量或尺寸數值。"
+  },
+  "measure(s)": {
+    "plainMeaning": "為解決問題採取的措施；measure 另可指衡量或尺度",
+    "examples": [
+      {
+        "text": "The school introduced measures to keep the entrances clear.",
+        "translationZh": "學校採取措施讓出入口保持暢通。",
+        "grammar": "目的不定詞",
+        "writingTip": "措施後說明具體目的。",
+        "topic": "校園安全",
+        "source": "self-authored"
+      },
+      {
+        "text": "Safety measures should be reviewed regularly, because a rule designed for one setting may not suit another.",
+        "translationZh": "安全措施應定期檢討，因為為某環境設計的規則未必適合另一環境。",
+        "grammar": "被動與原因子句",
+        "writingTip": "措施需要隨場景重新評估。",
+        "topic": "制度評估",
+        "source": "self-authored"
+      }
+    ],
+    "collocations": [
+      [
+        "take measures to do",
+        "採取措施做某事",
+        "措施義通常用複數。"
+      ],
+      [
+        "preventive measures",
+        "預防措施",
+        "preventive 表事先避免風險。"
+      ],
+      [
+        "a measure of success",
+        "衡量成功的尺度",
+        "此義可用單數。"
+      ],
+      [
+        "as a temporary measure",
+        "作為暫時措施",
+        "a 表單項做法。"
+      ]
+    ],
+    "usageNote": "此 ID 聚焦措施；同形字也有測量、尺寸或程度義，須按 take measures／measure length 等搭配區分。"
+  },
+  "method": {
+    "plainMeaning": "做事情有步驟的辦法或方法",
+    "examples": [
+      {
+        "text": "My teacher showed me a method for remembering new words.",
+        "translationZh": "老師教我一種記新單字的方法。",
+        "grammar": "for 動名詞",
+        "writingTip": "用 for 指出方法的用途。",
+        "topic": "語言學習",
+        "source": "self-authored"
+      },
+      {
+        "text": "A teaching method that works in a small class may need adjustment when students have fewer chances to speak.",
+        "translationZh": "小班有效的教法，在學生發言機會較少時可能需要調整。",
+        "grammar": "關係子句與時間條件",
+        "writingTip": "限定方法適用場景，避免一體適用。",
+        "topic": "教學設計",
+        "source": "self-authored"
+      }
+    ],
+    "collocations": [
+      [
+        "a method of doing",
+        "做某事的方法",
+        "of 後接動名詞。"
+      ],
+      [
+        "a method for doing",
+        "用於做某事的方法",
+        "for 強調用途。"
+      ],
+      [
+        "a reliable method",
+        "可靠的方法",
+        "需能重複產生合理結果。"
+      ],
+      [
+        "trial-and-error methods",
+        "反覆嘗試修正的方法",
+        "名詞前複合形容詞加連字號。"
+      ]
+    ],
+    "usageNote": "method 常可數；方法的目的與實際成效分開。methodical 形容有條理，不是名詞方法。"
+  },
+  "motivate": {
+    "plainMeaning": "讓人有動力採取行動",
+    "examples": [
+      {
+        "text": "A shared reading goal motivated me to finish the novel.",
+        "translationZh": "共同的閱讀目標讓我有動力讀完小說。",
+        "grammar": "受詞加不定詞",
+        "writingTip": "指出動機來源及促成的行動。",
+        "topic": "閱讀習慣",
+        "source": "self-authored"
+      },
+      {
+        "text": "Students may be more motivated when they can choose a topic that connects with their own lives.",
+        "translationZh": "學生能選擇與自身生活相關的主題時，可能更有動力。",
+        "grammar": "被動形容詞與關係子句",
+        "writingTip": "以選擇權與相關性說明投入的可能來源。",
+        "topic": "自主學習",
+        "source": "self-authored"
+      }
+    ],
+    "collocations": [
+      [
+        "motivate someone to do",
+        "激勵某人做某事",
+        "to 後接原形動詞。"
+      ],
+      [
+        "be motivated by",
+        "受到某因素驅動",
+        "by 引出動機。"
+      ],
+      [
+        "highly motivated students",
+        "很有學習動力的學生",
+        "motivated 描述人的狀態。"
+      ],
+      [
+        "a motivating factor",
+        "激勵因素",
+        "motivating 表能使人產生動力。"
+      ]
+    ],
+    "usageNote": "motivated 是有動力，motivating 是能激勵他人；動機可能正負，不直接等同道德好壞。"
+  },
+  "objective": {
+    "plainMeaning": "想達成的具體目標；不偏私、依事實的",
+    "examples": [
+      {
+        "text": "The workshop’s objective is to teach basic repair skills.",
+        "translationZh": "工作坊的目標是教基本修理技能。",
+        "grammar": "不定詞表語",
+        "writingTip": "把活動目標寫成可辨識的能力。",
+        "topic": "社區教育",
+        "source": "self-authored"
+      },
+      {
+        "text": "An objective assessment should use the same criteria for everyone, even when the evaluator knows some participants personally.",
+        "translationZh": "客觀評估應對所有人採相同標準，即使評估者私下認識某些參與者。",
+        "grammar": "讓步子句",
+        "writingTip": "以一致標準說明避免偏私的方法。",
+        "topic": "公平評量",
+        "source": "self-authored"
+      }
+    ],
+    "collocations": [
+      [
+        "achieve an objective",
+        "達成目標",
+        "名詞義可數。"
+      ],
+      [
+        "the main objective",
+        "主要目標",
+        "需能對應具體行動。"
+      ],
+      [
+        "an objective assessment",
+        "客觀評估",
+        "objective 為形容詞。"
+      ],
+      [
+        "remain objective",
+        "保持客觀",
+        "remain 接形容詞。"
+      ]
+    ],
+    "usageNote": "名詞為目標，形容詞為客觀；與 subjective「主觀的」相對，客觀仍需要可靠判準。"
+  },
+  "observe": {
+    "plainMeaning": "仔細觀看或注意到；遵守規則；慶祝節日",
+    "examples": [
+      {
+        "text": "We observed ants carrying food back to their nest.",
+        "translationZh": "我們觀察螞蟻把食物搬回巢中。",
+        "grammar": "受詞加現在分詞",
+        "writingTip": "具體描述觀察到的進行動作。",
+        "topic": "自然學習",
+        "source": "self-authored"
+      },
+      {
+        "text": "Visitors should observe local customs, while hosts can explain practices that newcomers may not understand.",
+        "translationZh": "訪客應尊重地方習俗，主人也能解釋新人可能不理解的做法。",
+        "grammar": "while 與關係子句",
+        "writingTip": "把尊重文化寫成雙向理解。",
+        "topic": "文化交流",
+        "source": "self-authored"
+      }
+    ],
+    "collocations": [
+      [
+        "observe a change",
+        "觀察到變化",
+        "需描述實際現象。"
+      ],
+      [
+        "observe the rules",
+        "遵守規則",
+        "此義不是觀看規則。"
+      ],
+      [
+        "observe a holiday",
+        "慶祝／遵行節日",
+        "依習俗形式辨譯。"
+      ],
+      [
+        "observe that",
+        "注意到某事",
+        "that 後接完整子句。"
+      ]
+    ],
+    "usageNote": "observe 有觀察、遵守與紀念節日等義；observation 不是推論，應區分看見的與猜測的。"
+  },
+  "obtain": {
+    "plainMeaning": "透過努力、申請或查找取得",
+    "examples": [
+      {
+        "text": "You must obtain permission before using the workshop tools.",
+        "translationZh": "使用工作坊工具前，你必須取得許可。",
+        "grammar": "時間片語",
+        "writingTip": "把取得許可寫成行動前提。",
+        "topic": "場地規範",
+        "source": "self-authored"
+      },
+      {
+        "text": "Reliable information is easier to obtain when a notice explains who prepared it and when it was updated.",
+        "translationZh": "公告說明製作者與更新時間時，人們較容易取得可靠資訊。",
+        "grammar": "時間條件與間接問句",
+        "writingTip": "以資訊透明支持可信使用。",
+        "topic": "公共資訊",
+        "source": "self-authored"
+      }
+    ],
+    "collocations": [
+      [
+        "obtain permission",
+        "取得許可",
+        "permission 此義不可數。"
+      ],
+      [
+        "obtain information from",
+        "從某處取得資訊",
+        "from 引出來源。"
+      ],
+      [
+        "obtain a result",
+        "得到結果",
+        "result 可數。"
+      ],
+      [
+        "obtain access to",
+        "取得使用權",
+        "名詞 access 後接 to。"
+      ]
+    ],
+    "usageNote": "較 get 正式，常指取得所需事物；不及物「流行／成立」是罕見正式義，不用來描述一般獲得。"
+  },
+  "opportunity": {
+    "plainMeaning": "可以做某事的機會或時機",
+    "examples": [
+      {
+        "text": "The festival gave me an opportunity to try pottery.",
+        "translationZh": "節慶活動讓我有機會嘗試陶藝。",
+        "grammar": "名詞加不定詞",
+        "writingTip": "機會後接實際可嘗試的行動。",
+        "topic": "文化活動",
+        "source": "self-authored"
+      },
+      {
+        "text": "Equal opportunities require more than an open invitation if some students cannot afford the journey to an event.",
+        "translationZh": "若有學生負擔不起活動交通費，平等機會便不只是公開邀請。",
+        "grammar": "條件子句",
+        "writingTip": "指出形式開放與實際參與的差距。",
+        "topic": "教育公平",
+        "source": "self-authored"
+      }
+    ],
+    "collocations": [
+      [
+        "an opportunity to do",
+        "做某事的機會",
+        "to 後接原形動詞。"
+      ],
+      [
+        "an opportunity for learning",
+        "學習機會",
+        "for 後接名詞或動名詞。"
+      ],
+      [
+        "take the opportunity to",
+        "把握機會做某事",
+        "常用於具體場合。"
+      ],
+      [
+        "equal opportunities",
+        "平等機會",
+        "複數用於不同人的參與條件。"
+      ]
+    ],
+    "usageNote": "通常可數；opportunity 指機會，opportunist 是利用情勢謀利的人，語氣不同。"
+  },
+  "organize": {
+    "plainMeaning": "安排活動或把事物整理得有條理",
+    "examples": [
+      {
+        "text": "I organized my notes by topic before the exam.",
+        "translationZh": "考試前，我按主題整理筆記。",
+        "grammar": "by 分類片語",
+        "writingTip": "說明整理依據。",
+        "topic": "學習準備",
+        "source": "self-authored"
+      },
+      {
+        "text": "A neighborhood event is easier to organize when responsibilities are shared among people with different skills.",
+        "translationZh": "不同技能的人分擔責任時，社區活動較容易籌辦。",
+        "grammar": "被動與時間條件",
+        "writingTip": "以分工提升方案可行性。",
+        "topic": "社區活動",
+        "source": "self-authored"
+      }
+    ],
+    "collocations": [
+      [
+        "organize an event",
+        "籌辦活動",
+        "及物用法直接接受詞。"
+      ],
+      [
+        "organize notes by topic",
+        "按主題整理筆記",
+        "by 引出分類方法。"
+      ],
+      [
+        "organize into groups",
+        "分組整理／組織",
+        "into 引出分組結果。"
+      ],
+      [
+        "a well-organized team",
+        "組織良好的團隊",
+        "名詞前通常加連字號。"
+      ]
+    ],
+    "usageNote": "可指安排或整理；organise 為常見英式拼法，organization 可指組織機構或條理。"
+  },
+  "original": {
+    "plainMeaning": "最初的或原來的；有創意的；原作",
+    "examples": [
+      {
+        "text": "The original plan was to meet beside the station.",
+        "translationZh": "原本的計畫是在車站旁集合。",
+        "grammar": "過去簡單式",
+        "writingTip": "交代變更前的安排。",
+        "topic": "活動規劃",
+        "source": "self-authored"
+      },
+      {
+        "text": "An original idea is more valuable when it answers a real need than when it merely attracts attention.",
+        "translationZh": "原創想法若回應真實需求，比只是吸引目光更有價值。",
+        "grammar": "比較與時間條件",
+        "writingTip": "評價創意時連結實際用途。",
+        "topic": "設計與創作",
+        "source": "self-authored"
+      }
+    ],
+    "collocations": [
+      [
+        "the original plan",
+        "原本的計畫",
+        "與後來修改版本對比。"
+      ],
+      [
+        "an original idea",
+        "有創意的想法",
+        "不只是首次提出於當下。"
+      ],
+      [
+        "the original document",
+        "原始文件",
+        "非副本或改寫版本。"
+      ],
+      [
+        "a copy of the original",
+        "原作的複本",
+        "original 此處是名詞。"
+      ]
+    ],
+    "usageNote": "最初／原始與有創意是不同意思；original 不必代表歷史上從未有人想到，需依語境限定。"
+  },
+  "outcome": {
+    "plainMeaning": "事件、努力或決策最後產生的結果",
+    "examples": [
+      {
+        "text": "The outcome of the game surprised both teams.",
+        "translationZh": "比賽結果讓兩隊都驚訝。",
+        "grammar": "of 片語",
+        "writingTip": "指出哪項事件的最後結果。",
+        "topic": "校園運動",
+        "source": "self-authored"
+      },
+      {
+        "text": "A successful outcome should include the users’ experience, not just whether the project finished on time.",
+        "translationZh": "成功的結果應包括使用者的體驗，不只看專案是否準時完成。",
+        "grammar": "whether 子句與對比",
+        "writingTip": "擴充成效標準，不只追求交付速度。",
+        "topic": "專案評估",
+        "source": "self-authored"
+      }
+    ],
+    "collocations": [
+      [
+        "the outcome of an event",
+        "事件的結果",
+        "of 引出事件。"
+      ],
+      [
+        "a possible outcome",
+        "可能結果",
+        "表示預期，不是已發生事實。"
+      ],
+      [
+        "learning outcomes",
+        "學習成果",
+        "常指預期可展示的能力。"
+      ],
+      [
+        "influence the outcome",
+        "影響結果",
+        "不等於完全決定。"
+      ]
+    ],
+    "usageNote": "通常可數；outcome 聚焦結果，process 聚焦過程。普通用法不把 outcome 當實體出口。"
+  },
+  "participate": {
+    "plainMeaning": "加入活動或討論，實際參與",
+    "examples": [
+      {
+        "text": "Everyone can participate in the school clean-up.",
+        "translationZh": "每個人都能參與校園清潔活動。",
+        "grammar": "情態與 in",
+        "writingTip": "用 in 指活動範圍。",
+        "topic": "校園服務",
+        "source": "self-authored"
+      },
+      {
+        "text": "People are more willing to participate when they can see how their suggestions will be used.",
+        "translationZh": "人們能看見建議將如何被採用時，更願意參與。",
+        "grammar": "時間條件與被動",
+        "writingTip": "以回饋機制說明參與的誘因。",
+        "topic": "公共討論",
+        "source": "self-authored"
+      }
+    ],
+    "collocations": [
+      [
+        "participate in a discussion",
+        "參與討論",
+        "in 接活動，不直接接受詞。"
+      ],
+      [
+        "actively participate",
+        "積極參與",
+        "actively 為副詞。"
+      ],
+      [
+        "encourage someone to participate",
+        "鼓勵某人參與",
+        "encourage 加人與 to 不定詞。"
+      ],
+      [
+        "an opportunity to participate",
+        "參與機會",
+        "機會是否實際可用仍須看條件。"
+      ]
+    ],
+    "usageNote": "現代一般用法為不及物 participate in；不只到場，也可能包含實際互動。participation 是名詞。"
+  },
+  "perceive": {
+    "plainMeaning": "察覺或感受到；把某事理解為某種樣子",
+    "examples": [
+      {
+        "text": "The child perceived a faint sound behind the door.",
+        "translationZh": "孩子察覺門後有微弱聲音。",
+        "grammar": "過去簡單式",
+        "writingTip": "以感官線索說明察覺義。",
+        "topic": "生活觀察",
+        "source": "self-authored"
+      },
+      {
+        "text": "A delayed reply may be perceived as disrespectful, even when the sender is simply busy with another task.",
+        "translationZh": "回覆延遲可能被認為不尊重，即使發訊者只是忙於另一項工作。",
+        "grammar": "被動與讓步",
+        "writingTip": "區分他人的解讀與行為的實際原因。",
+        "topic": "數位溝通",
+        "source": "self-authored"
+      }
+    ],
+    "collocations": [
+      [
+        "perceive something as",
+        "把某事看作",
+        "as 引出解讀結果。"
+      ],
+      [
+        "perceive a difference",
+        "察覺差異",
+        "不保證已量化差異。"
+      ],
+      [
+        "perceive that",
+        "意識到某事",
+        "that 後接完整子句。"
+      ],
+      [
+        "perceive a threat",
+        "察覺威脅",
+        "可為主觀感受，需看證據。"
+      ]
+    ],
+    "usageNote": "可指感官察覺或主觀理解；perception 是名詞，perceived risk 不一定等於實際風險。"
+  },
+  "perspective": {
+    "plainMeaning": "看問題的角度；整體理解；透視或遠景",
+    "examples": [
+      {
+        "text": "Travel gave me a new perspective on my hometown.",
+        "translationZh": "旅行讓我以新角度看待家鄉。",
+        "grammar": "give 加雙受詞",
+        "writingTip": "以經驗連結觀點的改變。",
+        "topic": "文化體驗",
+        "source": "self-authored"
+      },
+      {
+        "text": "From a caregiver’s perspective, a convenient service must be available at times that fit family routines.",
+        "translationZh": "從照顧者角度看，方便的服務必須在符合家庭作息的時間提供。",
+        "grammar": "觀點片語與關係子句",
+        "writingTip": "明確標示立場，避免把自己需求當所有人需求。",
+        "topic": "公共服務",
+        "source": "self-authored"
+      }
+    ],
+    "collocations": [
+      [
+        "from the perspective of",
+        "從某人的角度",
+        "of 引出群體或角色。"
+      ],
+      [
+        "a perspective on an issue",
+        "對議題的觀點",
+        "on 引出主題。"
+      ],
+      [
+        "put something in perspective",
+        "把事情放入整體脈絡理解",
+        "常用於避免誇大單一事件。"
+      ],
+      [
+        "draw in perspective",
+        "以透視法繪畫",
+        "此義是視覺技法。"
+      ]
+    ],
+    "usageNote": "可數的觀點與不可數的透視法不同；保持整體尺度用 keep things in perspective。"
+  },
+  "policy": {
+    "plainMeaning": "機構或政府採行的方針；也可指保險契約",
+    "examples": [
+      {
+        "text": "The shop’s return policy allows exchanges within a week.",
+        "translationZh": "店家的退換貨政策允許一週內換貨。",
+        "grammar": "現在簡單式",
+        "writingTip": "說明政策對使用者的具體權利。",
+        "topic": "消費服務",
+        "source": "self-authored"
+      },
+      {
+        "text": "A policy intended to improve attendance may be unfair if it ignores students who need medical treatment.",
+        "translationZh": "為提高出席率制定的政策，若忽略需要醫療的學生，便可能不公平。",
+        "grammar": "分詞修飾與條件",
+        "writingTip": "檢查好目的是否產生不公平限制。",
+        "topic": "學校制度",
+        "source": "self-authored"
+      }
+    ],
+    "collocations": [
+      [
+        "adopt a policy",
+        "採用政策",
+        "adopt 不是 adapt。"
+      ],
+      [
+        "a policy on a subject",
+        "關於某事的政策",
+        "on 引出範圍。"
+      ],
+      [
+        "a return policy",
+        "退換貨政策",
+        "依店家條款確認實際權利。"
+      ],
+      [
+        "an insurance policy",
+        "保險單／契約",
+        "此義是保險文件。"
+      ]
+    ],
+    "usageNote": "通常可數；policy 是制度方針，politics 是政治活動。policy 可指單一保險契約。"
+  },
+  "potential": {
+    "plainMeaning": "可能發生的；尚可發展的潛力",
+    "examples": [
+      {
+        "text": "The empty room has potential as a small reading space.",
+        "translationZh": "空房間有成為小閱讀空間的潛力。",
+        "grammar": "名詞與 as",
+        "writingTip": "指出尚未實現的可行用途。",
+        "topic": "空間規劃",
+        "source": "self-authored"
+      },
+      {
+        "text": "Before introducing a new service, we should consider potential users who may have difficulty completing online forms.",
+        "translationZh": "推出新服務前，我們應考慮可能不易填寫線上表單的潛在使用者。",
+        "grammar": "形容詞與關係子句",
+        "writingTip": "將尚未服務到的人納入設計。",
+        "topic": "數位服務",
+        "source": "self-authored"
+      }
+    ],
+    "collocations": [
+      [
+        "have the potential to",
+        "有做某事的潛力",
+        "to 後接原形動詞。"
+      ],
+      [
+        "reach your full potential",
+        "發揮全部潛力",
+        "potential 通常不可數。"
+      ],
+      [
+        "a potential problem",
+        "潛在問題",
+        "表示可能發生，不是已證實。"
+      ],
+      [
+        "potential users",
+        "潛在使用者",
+        "形容詞置於名詞前。"
+      ]
+    ],
+    "usageNote": "名詞通常不可數；形容詞指可能的。科學 potential 另可指位能或電位，非一般才華。"
+  },
+  "practical": {
+    "plainMeaning": "可實際使用的；與真實操作相關的",
+    "examples": [
+      {
+        "text": "A small waterproof bag is practical for a rainy trip.",
+        "translationZh": "雨天旅行帶小防水袋很實用。",
+        "grammar": "for 用途片語",
+        "writingTip": "用具體情境判斷是否實用。",
+        "topic": "旅行用品",
+        "source": "self-authored"
+      },
+      {
+        "text": "A practical solution must fit the resources available, even if a more ambitious plan looks better on paper.",
+        "translationZh": "實用方案必須符合現有資源，即使更宏大的計畫書面上更好看。",
+        "grammar": "讓步子句",
+        "writingTip": "方案評價應包含資源與執行條件。",
+        "topic": "提案寫作",
+        "source": "self-authored"
+      }
+    ],
+    "collocations": [
+      [
+        "a practical solution",
+        "實用的解決方式",
+        "能在現實限制下實施。"
+      ],
+      [
+        "practical experience",
+        "實作經驗",
+        "experience 此義不可數。"
+      ],
+      [
+        "a practical application",
+        "實際應用",
+        "application 可數。"
+      ],
+      [
+        "a practical joke",
+        "惡作劇",
+        "固定搭配，不是實用的笑話。"
+      ]
+    ],
+    "usageNote": "practical 偏實用、實際操作；practicable 偏可行。a practical joke 是惡作劇，須另辨義。"
+  },
+  "predict": {
+    "plainMeaning": "依線索預測尚未發生的事",
+    "examples": [
+      {
+        "text": "Dark clouds led us to predict rain before evening.",
+        "translationZh": "烏雲讓我們預測傍晚前會下雨。",
+        "grammar": "lead 加受詞與不定詞",
+        "writingTip": "說明預測依據，避免當已發生事實。",
+        "topic": "天氣觀察",
+        "source": "self-authored"
+      },
+      {
+        "text": "It is difficult to predict how popular an event will be without knowing whether its timing suits local families.",
+        "translationZh": "不知道時間是否適合地方家庭，就很難預測活動會有多受歡迎。",
+        "grammar": "it 形式主詞與雙重間接問句",
+        "writingTip": "指出預測需要哪些關鍵資訊。",
+        "topic": "活動規劃",
+        "source": "self-authored"
+      }
+    ],
+    "collocations": [
+      [
+        "predict the outcome",
+        "預測結果",
+        "不等於保證結果。"
+      ],
+      [
+        "predict that",
+        "預測某事",
+        "that 後接完整子句。"
+      ],
+      [
+        "be difficult to predict",
+        "難以預測",
+        "不定詞用主動形式。"
+      ],
+      [
+        "accurately predict",
+        "準確預測",
+        "準確需由之後結果核對。"
+      ]
+    ],
+    "usageNote": "predict 指預測，不是 prevent「預防」；prediction 是預測內容或行為，應交代不確定性。"
+  },
+  "prefer": {
+    "plainMeaning": "相比之下更喜歡或更願意選擇",
+    "examples": [
+      {
+        "text": "I prefer a quiet café to a crowded restaurant.",
+        "translationZh": "比起擁擠餐廳，我更喜歡安靜咖啡館。",
+        "grammar": "prefer A to B",
+        "writingTip": "清楚列出偏好與比較對象。",
+        "topic": "生活選擇",
+        "source": "self-authored"
+      },
+      {
+        "text": "Some travelers prefer taking a slower train because it allows them to enjoy the scenery rather than rush between cities.",
+        "translationZh": "有些旅客較喜歡搭慢車，因為能欣賞風景，不必匆忙往返城市。",
+        "grammar": "動名詞與原因",
+        "writingTip": "用不同目的解釋偏好，不把快當唯一優點。",
+        "topic": "旅行方式",
+        "source": "self-authored"
+      }
+    ],
+    "collocations": [
+      [
+        "prefer A to B",
+        "比起 B 更喜歡 A",
+        "此 to 是介系詞。"
+      ],
+      [
+        "prefer doing to doing",
+        "較喜歡做前者",
+        "兩端都用動名詞。"
+      ],
+      [
+        "prefer to do rather than do",
+        "寧願做前者",
+        "rather than 後可接原形動詞。"
+      ],
+      [
+        "would prefer someone to do",
+        "希望某人做某事",
+        "人作受詞，後接 to。"
+      ]
+    ],
+    "usageNote": "不說 prefer A than B；較正式法律 prefer charges 是提出控罪，與日常偏好義不同。"
+  },
+  "prevent": {
+    "plainMeaning": "事先阻止某事發生或某人做某事",
+    "examples": [
+      {
+        "text": "The cover prevents dust from entering the camera.",
+        "translationZh": "保護蓋防止灰塵進入相機。",
+        "grammar": "prevent A from doing",
+        "writingTip": "分清被阻止的事物與動作。",
+        "topic": "物品保養",
+        "source": "self-authored"
+      },
+      {
+        "text": "Clear signs can help prevent accidents, but they should not replace repairs to a damaged path.",
+        "translationZh": "清楚標示能幫忙預防事故，但不應取代破損路面的修繕。",
+        "grammar": "情態與轉折",
+        "writingTip": "指出資訊措施能做的與仍需處理的問題。",
+        "topic": "公共安全",
+        "source": "self-authored"
+      }
+    ],
+    "collocations": [
+      [
+        "prevent someone from doing",
+        "阻止某人做某事",
+        "from 後接動名詞。"
+      ],
+      [
+        "prevent damage",
+        "防止損害",
+        "damage 此義不可數。"
+      ],
+      [
+        "prevent the spread of",
+        "防止某事擴散",
+        "of 引出疾病、火等。"
+      ],
+      [
+        "help prevent accidents",
+        "幫助預防事故",
+        "help 後可接原形動詞。"
+      ]
+    ],
+    "usageNote": "prevent 著重讓事件不發生；protect 著重使人或物免受傷害。防止不代表能保證零風險。"
+  },
+  "principle": {
+    "plainMeaning": "做事遵循的原則；解釋運作的基本原理",
+    "examples": [
+      {
+        "text": "Honesty is a guiding principle in our club.",
+        "translationZh": "誠實是我們社團的指導原則。",
+        "grammar": "名詞表語",
+        "writingTip": "提出價值後宜用行動展示。",
+        "topic": "社團倫理",
+        "source": "self-authored"
+      },
+      {
+        "text": "The principle of equal access means little unless people can actually reach and use the services offered.",
+        "translationZh": "平等使用的原則若不能讓人實際取得並使用服務，就缺乏意義。",
+        "grammar": "unless 與過去分詞",
+        "writingTip": "把抽象原則轉成實際可檢查條件。",
+        "topic": "公共公平",
+        "source": "self-authored"
+      }
+    ],
+    "collocations": [
+      [
+        "a guiding principle",
+        "指導原則",
+        "可數名詞。"
+      ],
+      [
+        "the principle of equality",
+        "平等原則",
+        "of 引出核心理念。"
+      ],
+      [
+        "in principle",
+        "原則上",
+        "常保留實際執行條件。"
+      ],
+      [
+        "as a matter of principle",
+        "基於原則",
+        "表示非單純利益考量。"
+      ]
+    ],
+    "usageNote": "principle 是原則／原理；principal 是校長、主要的或本金，拼法與意思不同。"
+  },
+  "priority": {
+    "plainMeaning": "應先處理或較重視的事；優先權",
+    "examples": [
+      {
+        "text": "Repairing the leaking roof is our first priority.",
+        "translationZh": "修好漏水屋頂是我們最優先的事。",
+        "grammar": "動名詞主詞",
+        "writingTip": "把有限資源優先投入明確需要。",
+        "topic": "家庭計畫",
+        "source": "self-authored"
+      },
+      {
+        "text": "When funds are limited, safety should take priority over improvements that merely make a building look newer.",
+        "translationZh": "經費有限時，安全應比只是讓建築看起來更新的改善更優先。",
+        "grammar": "條件情境與關係子句",
+        "writingTip": "以需求重要性比較資源配置。",
+        "topic": "公共預算",
+        "source": "self-authored"
+      }
+    ],
+    "collocations": [
+      [
+        "give priority to",
+        "優先考慮某事",
+        "to 是介系詞。"
+      ],
+      [
+        "a top priority",
+        "最重要的優先事項",
+        "具體事項可數。"
+      ],
+      [
+        "set priorities",
+        "排定優先順序",
+        "常用複數。"
+      ],
+      [
+        "take priority over",
+        "比某事優先",
+        "over 引出較後處理的事項。"
+      ]
+    ],
+    "usageNote": "可指優先權或具體優先事項；多個 priorities 應有次序，不宜全部說同樣最高優先。"
+  },
+  "problem": {
+    "plainMeaning": "需要解決的困難或問題",
+    "examples": [
+      {
+        "text": "The loose cable was the problem with the printer.",
+        "translationZh": "鬆脫的線是印表機出問題的原因。",
+        "grammar": "名詞與 with",
+        "writingTip": "明確定位問題，不只描述壞掉。",
+        "topic": "生活工具",
+        "source": "self-authored"
+      },
+      {
+        "text": "A problem that appears personal may require a shared solution if it results from the way a service is organized.",
+        "translationZh": "若問題源自服務安排，看似個人的困難可能需要共同解決方式。",
+        "grammar": "關係子句與條件被動",
+        "writingTip": "區分個人表現與制度造成的障礙。",
+        "topic": "社會理解",
+        "source": "self-authored"
+      }
+    ],
+    "collocations": [
+      [
+        "a problem with something",
+        "某物的問題",
+        "with 引出裝置、安排等。"
+      ],
+      [
+        "solve a problem",
+        "解決問題",
+        "solve 直接接受詞。"
+      ],
+      [
+        "pose a problem",
+        "造成問題",
+        "pose 此處不是擺姿勢。"
+      ],
+      [
+        "an underlying problem",
+        "深層問題",
+        "需區分原因與表面症狀。"
+      ]
+    ],
+    "usageNote": "可指困難或待解題目；question 可只是提問，不一定是 problem。problem child 是形容用法，避免草率貼人標籤。"
+  },
+  "process": {
+    "plainMeaning": "逐步進行的過程；處理資料或加工材料",
+    "examples": [
+      {
+        "text": "The application process takes about a week.",
+        "translationZh": "申請流程約需一週。",
+        "grammar": "現在簡單式",
+        "writingTip": "清楚交代流程與所需時間。",
+        "topic": "學生服務",
+        "source": "self-authored"
+      },
+      {
+        "text": "Before personal data is processed, users should understand how it will be stored and who can access it.",
+        "translationZh": "處理個人資料前，使用者應了解資料將如何儲存及誰能讀取。",
+        "grammar": "被動與並列間接問句",
+        "writingTip": "以清楚資訊說明資料使用的責任。",
+        "topic": "數位素養",
+        "source": "self-authored"
+      }
+    ],
+    "collocations": [
+      [
+        "the process of doing",
+        "做某事的過程",
+        "of 後接動名詞。"
+      ],
+      [
+        "go through a process",
+        "經歷流程",
+        "through 表經過各步驟。"
+      ],
+      [
+        "process data",
+        "處理資料",
+        "動詞直接接受詞。"
+      ],
+      [
+        "processed food",
+        "加工食品",
+        "過去分詞作形容詞。"
+      ]
+    ],
+    "usageNote": "process 可作名詞或動詞；食品加工與資料處理是不同情境，不能由加工一詞直接判健康或安全。"
+  },
+  "propose": {
+    "plainMeaning": "提出計畫或建議，供大家討論；propose to someone 也可指向某人求婚。",
+    "usageNote": "propose doing 表示提議做某事；propose that 後可用原形動詞。不要把 propose 與 purpose 混淆。",
+    "examples": [
+      {
+        "text": "Students propose creating a quiet room where classmates can rest during their lunch break.",
+        "translationZh": "學生提議設置一間安靜的房間，讓同學能在午休時休息。",
+        "source": "self-authored",
+        "grammar": "propose＋V-ing；where 關係副詞",
+        "writingTip": "提出方案後補上使用者與用途，讓建議具體可行。",
+        "topic": "校園健康"
+      },
+      {
+        "text": "What I propose is that the school publish its energy use so that students can evaluate the effects of conservation.",
+        "translationZh": "我的提議是讓學校公布能源用量，以便學生評估節能的效果。",
+        "source": "self-authored",
+        "grammar": "What 名詞子句；that 子句原形動詞；目的子句",
+        "writingTip": "用 What I propose is… 明確呈現主張，再以 so that 說明目的。",
+        "topic": "能源透明"
+      }
+    ],
+    "collocations": [
+      [
+        "propose a solution",
+        "提出解決方案",
+        "solution 後常接 to a problem。"
+      ],
+      [
+        "propose a plan",
+        "提出計畫",
+        "說明計畫的對象、步驟或目的。"
+      ],
+      [
+        "propose doing something",
+        "提議做某事",
+        "doing 用動名詞，不寫 propose someone to do。"
+      ],
+      [
+        "propose that…",
+        "提議……",
+        "正式建議句可用 that＋主詞＋原形動詞。"
+      ]
+    ]
+  },
+  "protect": {
+    "plainMeaning": "保護，讓人或事物免受傷害；也可指維護權利、環境或資料。",
+    "usageNote": "protect A from B 表示保護 A 免受 B 傷害；prevent A from doing 則是阻止 A 做某事。",
+    "examples": [
+      {
+        "text": "Using a different password for each account can protect your personal information if one website is attacked.",
+        "translationZh": "若某個網站遭到攻擊，每個帳號使用不同密碼能保護你的個人資料。",
+        "source": "self-authored",
+        "grammar": "條件子句；can 表可能效果",
+        "writingTip": "以具體做法搭配可能效果，避免把防護寫成百分之百保證。",
+        "topic": "數位安全"
+      },
+      {
+        "text": "Although a new sea wall may protect homes from flooding, it should be designed with the surrounding ecosystem in mind.",
+        "translationZh": "雖然新的海堤可能保護住家免於淹水，設計時仍應考慮周圍的生態系。",
+        "source": "self-authored",
+        "grammar": "Although 讓步子句；被動語態",
+        "writingTip": "以讓步句承認方案的好處，再補上環境條件。",
+        "topic": "氣候調適"
+      }
+    ],
+    "collocations": [
+      [
+        "protect personal information",
+        "保護個人資料",
+        "information 為不可數名詞。"
+      ],
+      [
+        "protect A from B",
+        "保護 A 免受 B 傷害",
+        "from 後接危害來源或動名詞。"
+      ],
+      [
+        "protect the environment",
+        "保護環境",
+        "可接具體做法，避免只有口號。"
+      ],
+      [
+        "protect the rights of…",
+        "維護……的權利",
+        "rights 常用複數。"
+      ]
+    ]
+  },
+  "purpose": {
+    "plainMeaning": "目的：為什麼要做某件事；用途：某樣東西可以拿來做什麼。",
+    "usageNote": "purpose 強調意圖；result 強調實際結果。on purpose 是故意，不是「為了某個目的」。",
+    "examples": [
+      {
+        "text": "The purpose of this survey is to find out which school spaces students find difficult to use.",
+        "translationZh": "這份調查的目的是了解學生覺得哪些校園空間不方便使用。",
+        "source": "self-authored",
+        "grammar": "The purpose of… is to…；嵌入問句",
+        "writingTip": "在報告開頭交代調查目的，which 子句用直述句語序。",
+        "topic": "校園無障礙"
+      },
+      {
+        "text": "Unless the purpose of collecting data is clearly explained, people may hesitate to share information that could identify them.",
+        "translationZh": "除非蒐集資料的目的得到清楚說明，否則人們可能不願分享能辨認其身分的資訊。",
+        "source": "self-authored",
+        "grammar": "Unless 條件子句；被動語態；關係子句",
+        "writingTip": "把民眾的疑慮連結到原因與條件，適合隱私議題。",
+        "topic": "資料倫理"
+      }
+    ],
+    "collocations": [
+      [
+        "the purpose of…",
+        "……的目的",
+        "of 後可接名詞或動名詞。"
+      ],
+      [
+        "for educational purposes",
+        "為了教育用途",
+        "此慣用表達常用 purposes 複數。"
+      ],
+      [
+        "serve a purpose",
+        "發揮某種用途",
+        "可搭配 useful、practical 等形容詞。"
+      ],
+      [
+        "on purpose",
+        "故意地",
+        "常放在動作後，與 by accident 相對。"
+      ]
+    ]
+  },
+  "reasonable": {
+    "plainMeaning": "合乎道理、可接受的；人也可形容為願意聽道理；價格 reasonable 表示不過高。",
+    "usageNote": "reasonable 不等於便宜，也不表示所有人都同意。a reasonable price 與 a reasonable explanation 的意思依名詞而變。",
+    "examples": [
+      {
+        "text": "A reasonable deadline gives students enough time to check their sources without delaying the group project.",
+        "translationZh": "合理的期限讓學生有足夠時間查核資料來源，同時不拖延小組作業。",
+        "source": "self-authored",
+        "grammar": "give＋受詞＋名詞；without＋V-ing",
+        "writingTip": "以時間安排及其效果解釋什麼叫合理。",
+        "topic": "學習管理"
+      },
+      {
+        "text": "It is reasonable to restrict phone use during lessons, provided that students can still contact their families in an emergency.",
+        "translationZh": "只要學生在緊急情況下仍能聯絡家人，上課時限制手機使用就是合理的。",
+        "source": "self-authored",
+        "grammar": "It is＋形容詞＋to V；provided that 條件子句",
+        "writingTip": "提出立場時補上例外條件，能讓論證更完整。",
+        "topic": "校園規範"
+      }
+    ],
+    "collocations": [
+      [
+        "a reasonable price",
+        "合理的價格",
+        "表示價格可接受，未必最低。"
+      ],
+      [
+        "a reasonable explanation",
+        "合理的解釋",
+        "可進一步說明支持此解釋的理由。"
+      ],
+      [
+        "a reasonable amount of…",
+        "適量的……",
+        "amount of 通常接不可數名詞。"
+      ],
+      [
+        "It is reasonable to…",
+        "做……是合理的",
+        "it 為形式主詞，後接 to V。"
+      ]
+    ]
+  },
+  "recognize": {
+    "plainMeaning": "認出曾見過的人或事物；承認、了解某個事實或價值；正式認可。",
+    "usageNote": "recognize someone 是認出某人；recognize that… 是承認或察覺事實；recognize A as B 是認定 A 為 B。",
+    "examples": [
+      {
+        "text": "I recognized my former teacher by her voice before I saw her face.",
+        "translationZh": "我還沒看到以前老師的臉，就先從聲音認出了她。",
+        "source": "self-authored",
+        "grammar": "before 時間子句",
+        "writingTip": "用辨識線索區分認出與承認兩個意思。",
+        "topic": "人物重逢"
+      },
+      {
+        "text": "We can design welcoming parks only when we recognize how differently people use public spaces.",
+        "translationZh": "只有了解人們使用公共空間的方式有多不同，我們才能設計友善的公園。",
+        "source": "self-authored",
+        "grammar": "only when 條件限制；how 名詞子句",
+        "writingTip": "先了解不同需求，才有條件設計包容的空間。",
+        "topic": "包容城市"
+      }
+    ],
+    "collocations": [
+      [
+        "recognize a problem",
+        "察覺問題",
+        "辨識問題是後續處理的第一步。"
+      ],
+      [
+        "recognize that…",
+        "承認／意識到……",
+        "that 後接完整主詞與動詞。"
+      ],
+      [
+        "recognize A as B",
+        "認定 A 為 B",
+        "as 後接角色、身分或性質。"
+      ],
+      [
+        "recognize the importance of…",
+        "認識到……的重要性",
+        "of 後接名詞或動名詞。"
+      ]
+    ]
+  },
+  "reduce": {
+    "plainMeaning": "把數量、程度、成本等減少或降低；某些語境也指縮小或使變成較簡單的形式。",
+    "usageNote": "reduce by 表減少了多少；reduce to 表減少後剩多少。避免把 reduce 與 reuse「重複使用」混淆。",
+    "examples": [
+      {
+        "text": "Repairing a damaged backpack instead of replacing it can reduce waste and save money at the same time.",
+        "translationZh": "修理損壞的背包而不直接換新，可以同時減少廢棄物並省錢。",
+        "source": "self-authored",
+        "grammar": "動名詞主詞；instead of＋V-ing",
+        "writingTip": "讓同一項做法連結環境與經濟兩種效益。",
+        "topic": "永續消費"
+      },
+      {
+        "text": "By offering clear bus routes and frequent service, a city may reduce the need for residents to drive short distances.",
+        "translationZh": "城市若提供清楚的公車路線與密集班次，可能降低居民短程開車的需求。",
+        "source": "self-authored",
+        "grammar": "By＋V-ing 表方法；for＋受詞＋to V",
+        "writingTip": "用方法、需求與行為連成合理的因果鏈。",
+        "topic": "公共運輸"
+      }
+    ],
+    "collocations": [
+      [
+        "reduce waste",
+        "減少廢棄物",
+        "waste 此處通常作不可數名詞。"
+      ],
+      [
+        "reduce costs",
+        "降低成本",
+        "costs 常用複數表示各種支出。"
+      ],
+      [
+        "reduce the risk of…",
+        "降低……的風險",
+        "of 後可接事件或動名詞。"
+      ],
+      [
+        "reduce emissions",
+        "減少排放",
+        "emissions 常指氣體排放量。"
+      ]
+    ]
+  },
+  "reflect": {
+    "plainMeaning": "反射光、映出影像；反映某種情況或想法；reflect on 表示回想並深入思考。",
+    "usageNote": "reflect a situation 是反映情況；reflect on an experience 是反思經驗。反思義不可漏掉 on。",
+    "examples": [
+      {
+        "text": "The window reflected the evening light onto the opposite wall.",
+        "translationZh": "窗戶把傍晚的光反射到對面的牆上。",
+        "source": "self-authored",
+        "grammar": "過去式與方向片語",
+        "writingTip": "透過反射物、光與方向說清楚物理義。",
+        "topic": "建築觀察"
+      },
+      {
+        "text": "Having received feedback on her first draft, Mia began to reflect on why some of her arguments had failed to convince readers.",
+        "translationZh": "收到初稿的回饋後，Mia 開始反思，為什麼部分論點未能說服讀者。",
+        "source": "self-authored",
+        "grammar": "Having＋過去分詞；why 名詞子句；過去完成式",
+        "writingTip": "寫作反思可依序交代回饋、思考與較早發生的問題。",
+        "topic": "作文修訂"
+      }
+    ],
+    "collocations": [
+      [
+        "reflect on an experience",
+        "反思一段經驗",
+        "反思義使用 reflect on。"
+      ],
+      [
+        "reflect public opinion",
+        "反映民意",
+        "說明意見來源與代表性。"
+      ],
+      [
+        "reflect a change",
+        "反映某種變化",
+        "可連結觀察與背景變化。"
+      ],
+      [
+        "reflect light",
+        "反射光線",
+        "light 此處為不可數名詞。"
+      ]
+    ]
+  },
+  "relate": {
+    "plainMeaning": "把事物連結起來；講述經歷；relate to 表示與……有關，也可指能理解他人的感受。",
+    "usageNote": "relate A to B 是把 A 與 B 連結；be related to 表示有關。relate to a person 也可表示有共鳴。",
+    "examples": [
+      {
+        "text": "Grandfather related a story about his first job while we prepared dinner.",
+        "translationZh": "祖父在我們準備晚餐時，講述了他第一份工作的故事。",
+        "source": "self-authored",
+        "grammar": "while 時間子句",
+        "writingTip": "relate 可正式地表達講述經歷，不只有連結義。",
+        "topic": "家庭敘事"
+      },
+      {
+        "text": "The more clearly a writer can relate personal experience to a wider issue, the more meaningful the essay becomes.",
+        "translationZh": "作者越能清楚地把個人經驗連結到較廣泛的議題，文章就越有意義。",
+        "source": "self-authored",
+        "grammar": "The＋比較級…, the＋比較級…",
+        "writingTip": "從個人故事延伸社會議題，而不是只列出經過。",
+        "topic": "敘事寫作"
+      }
+    ],
+    "collocations": [
+      [
+        "relate A to B",
+        "把 A 與 B 連結",
+        "to 是介系詞，後接名詞或動名詞。"
+      ],
+      [
+        "be related to…",
+        "與……有關",
+        "related 在此為形容詞用法。"
+      ],
+      [
+        "relate to someone",
+        "理解某人的感受／與其有共鳴",
+        "適合談閱讀人物或同理心。"
+      ],
+      [
+        "relate an experience",
+        "講述一段經驗",
+        "較正式的敘述用法。"
+      ]
+    ]
+  },
+  "relevant": {
+    "plainMeaning": "與當前問題或主題有直接關係，因此值得使用或考慮。",
+    "usageNote": "relevant to 表示與……相關；important 強調重要，不一定切合目前討論。",
+    "examples": [
+      {
+        "text": "Choose evidence that is relevant to your claim rather than adding facts merely because they sound impressive.",
+        "translationZh": "選擇與你的主張相關的證據，不要只是因為某些事實聽起來厲害就加進去。",
+        "source": "self-authored",
+        "grammar": "祈使句；關係子句；rather than 對比",
+        "writingTip": "作文引用資料時，先確認資料真的支持主張。",
+        "topic": "論證寫作"
+      },
+      {
+        "text": "However interesting an example may be, it will weaken the paragraph if it is not relevant to the main idea.",
+        "translationZh": "例子不論多有趣，若與主旨無關，都會削弱段落的力量。",
+        "source": "self-authored",
+        "grammar": "However＋形容詞＋主詞＋動詞；if 條件子句",
+        "writingTip": "讓步句可強調「有趣」不能取代「切題」。",
+        "topic": "段落組織"
+      }
+    ],
+    "collocations": [
+      [
+        "relevant to the topic",
+        "與主題相關",
+        "固定介系詞為 to。"
+      ],
+      [
+        "relevant information",
+        "相關資訊",
+        "information 不加複數 s。"
+      ],
+      [
+        "relevant evidence",
+        "相關證據",
+        "evidence 通常不可數。"
+      ],
+      [
+        "directly relevant",
+        "直接相關的",
+        "directly 可強調與問題的連結。"
+      ]
+    ]
+  },
+  "reliable": {
+    "plainMeaning": "值得信任、能提供準確資訊的；工具或服務也可指運作穩定、不易出問題。",
+    "usageNote": "reliable 可形容人、資料、工具或服務；popular「受歡迎」不等於 reliable。",
+    "examples": [
+      {
+        "text": "The reliable bus service helps my grandmother reach the clinic on time.",
+        "translationZh": "可靠的公車服務幫助祖母準時抵達診所。",
+        "source": "self-authored",
+        "grammar": "help 加受詞與原形動詞",
+        "writingTip": "以準時到達的實際用途說明可靠服務。",
+        "topic": "日常交通"
+      },
+      {
+        "text": "Even if a message is shared by someone you trust, you should check whether its original source is reliable.",
+        "translationZh": "即使訊息是你信任的人分享的，你仍應查核原始來源是否可靠。",
+        "source": "self-authored",
+        "grammar": "Even if 讓步條件子句；whether 名詞子句",
+        "writingTip": "把對人的信任與對資訊的查核分開，建立細緻論證。",
+        "topic": "社群媒體"
+      }
+    ],
+    "collocations": [
+      [
+        "a reliable source",
+        "可靠的來源",
+        "可用於文章、報告或數據的來源。"
+      ],
+      [
+        "reliable information",
+        "可信的資訊",
+        "information 為不可數名詞。"
+      ],
+      [
+        "a reliable method",
+        "可靠的方法",
+        "描述方法時可補上穩定或一致的原因。"
+      ],
+      [
+        "reliable public transport",
+        "可靠的公共運輸",
+        "可指班次與運作的穩定性。"
+      ]
+    ]
+  },
+  "require(ment)": {
+    "plainMeaning": "require：需要或要求；requirement：必須符合的條件、規定或所需事物。",
+    "usageNote": "require someone to do 要求某人做；require doing 表某事需要被做。requirement 是名詞，不可直接當動詞。",
+    "examples": [
+      {
+        "text": "Community projects require careful planning because volunteers may have different schedules and levels of experience.",
+        "translationZh": "社區計畫需要仔細規劃，因為志工可能有不同的時間安排與經驗程度。",
+        "source": "self-authored",
+        "grammar": "because 原因子句；may 表可能",
+        "writingTip": "不要只說某事很難，指出需要規劃的具體原因。",
+        "topic": "社區服務"
+      },
+      {
+        "text": "Before introducing a new requirement, the school should consider whether students have the resources needed to meet it.",
+        "translationZh": "學校在增訂規定前，應考慮學生是否具備符合該規定所需的資源。",
+        "source": "self-authored",
+        "grammar": "Before＋V-ing；whether 子句；過去分詞後位修飾",
+        "writingTip": "討論政策時同時檢視要求與執行條件。",
+        "topic": "教育公平"
+      }
+    ],
+    "collocations": [
+      [
+        "require someone to do something",
+        "要求某人做某事",
+        "受詞後接 to V。"
+      ],
+      [
+        "require careful planning",
+        "需要仔細規劃",
+        "planning 此處為不可數名詞。"
+      ],
+      [
+        "meet a requirement",
+        "符合一項要求",
+        "meet 在此不是見面。"
+      ],
+      [
+        "an entry requirement",
+        "入學／加入的必要條件",
+        "依申請情境判斷 entry 的意思。"
+      ]
+    ]
+  },
+  "research": {
+    "plainMeaning": "研究：有系統地蒐集、分析資料以回答問題；動詞也表示進行研究。",
+    "usageNote": "一般研究工作 research 為不可數名詞，用 do／conduct research；個別研究可用 a study，不寫 a research。",
+    "examples": [
+      {
+        "text": "We did research into local festivals before designing our exhibition.",
+        "translationZh": "我們設計展覽前先研究地方節慶。",
+        "source": "self-authored",
+        "grammar": "do research；before 動名詞",
+        "writingTip": "先了解主題再創作，說明研究的用途。",
+        "topic": "文化展覽"
+      },
+      {
+        "text": "Although online tools can help us conduct research, the questions we ask still determine what information we need.",
+        "translationZh": "雖然線上工具能協助研究，我們提出的問題仍會決定需要哪些資訊。",
+        "source": "self-authored",
+        "grammar": "Although 讓步子句；省略關係代名詞；what 子句",
+        "writingTip": "承認科技的便利，同時說明人的判斷與提問仍不可少。",
+        "topic": "探究學習"
+      }
+    ],
+    "collocations": [
+      [
+        "conduct research",
+        "進行研究",
+        "較正式；research 通常不可數。"
+      ],
+      [
+        "do research into…",
+        "研究……",
+        "into 後接研究問題或對象。"
+      ],
+      [
+        "research findings",
+        "研究結果",
+        "findings 指研究得到的發現，不等於所有猜測。"
+      ],
+      [
+        "further research",
+        "進一步研究",
+        "適合指出尚需查證之處。"
+      ]
+    ]
+  },
+  "resolve": {
+    "plainMeaning": "解決問題或爭議；resolve to do 表示下定決心做某事；名詞 resolve 是堅定的決心。",
+    "usageNote": "resolve a conflict 是處理衝突；resolve to do 是下決心，兩者句型不同。",
+    "examples": [
+      {
+        "text": "The neighbors resolved their disagreement by agreeing to share the parking space.",
+        "translationZh": "鄰居同意共用停車位，解決了分歧。",
+        "source": "self-authored",
+        "grammar": "by 動名詞表方法",
+        "writingTip": "用具體協議說明如何解決衝突。",
+        "topic": "社區協商"
+      },
+      {
+        "text": "Rather than dismissing the complaint, the manager resolved to explain the policy and revise the parts that were unfair.",
+        "translationZh": "經理沒有忽視申訴，而是下定決心說明政策並修正不公平的部分。",
+        "source": "self-authored",
+        "grammar": "Rather than＋V-ing；resolved to V；關係子句",
+        "writingTip": "以回應與修正取代空泛道歉，適合人物敘事或問題解決作文。",
+        "topic": "負責任領導"
+      }
+    ],
+    "collocations": [
+      [
+        "resolve a conflict",
+        "解決衝突",
+        "可交代雙方如何協商。"
+      ],
+      [
+        "resolve a dispute",
+        "解決爭議",
+        "dispute 常指具體意見或權益爭議。"
+      ],
+      [
+        "resolve an issue",
+        "處理／解決問題",
+        "issue 可指待處理事項。"
+      ],
+      [
+        "resolve to do something",
+        "下定決心做某事",
+        "to 後接原形動詞。"
+      ]
+    ]
+  },
+  "resource": {
+    "plainMeaning": "可供利用的資源，如時間、金錢、人力、材料或學習工具；資源通常用複數 resources。",
+    "usageNote": "resources 可為有形或無形；人力資源是 human resources。談水或能源等，常用 natural resources。",
+    "examples": [
+      {
+        "text": "A shared online calendar can be a useful resource for students who need to coordinate a group project.",
+        "translationZh": "共用的線上行事曆對需要協調小組作業的學生來說，可以是有用的資源。",
+        "source": "self-authored",
+        "grammar": "for 表適用對象；who 關係子句",
+        "writingTip": "說明工具對誰有用，以及它解決的具體困難。",
+        "topic": "團隊學習"
+      },
+      {
+        "text": "With limited resources available, the library must decide which services would benefit the greatest number of residents.",
+        "translationZh": "由於可用資源有限，圖書館必須決定哪些服務能讓最多居民受益。",
+        "source": "self-authored",
+        "grammar": "With＋名詞＋形容詞；which 名詞子句",
+        "writingTip": "資源分配作文可加入限制條件，再比較方案的受益對象。",
+        "topic": "公共服務"
+      }
+    ],
+    "collocations": [
+      [
+        "natural resources",
+        "自然資源",
+        "如水、森林與礦產。"
+      ],
+      [
+        "learning resources",
+        "學習資源",
+        "可包括教材、人員與工具。"
+      ],
+      [
+        "limited resources",
+        "有限的資源",
+        "可用於說明方案的限制。"
+      ],
+      [
+        "allocate resources",
+        "分配資源",
+        "allocate 強調依需求或計畫分配。"
+      ]
+    ]
+  },
+  "respond": {
+    "plainMeaning": "回答、回應；對事件、需求或刺激產生反應。",
+    "usageNote": "respond to a question／request；不用 respond a question。response 是名詞。",
+    "examples": [
+      {
+        "text": "The librarian responded to my question with a helpful example.",
+        "translationZh": "圖書館員用實用的例子回答我的問題。",
+        "source": "self-authored",
+        "grammar": "respond to；with 表方式",
+        "writingTip": "交代回答的方式，使回應更具體。",
+        "topic": "圖書館服務"
+      },
+      {
+        "text": "How a school chooses to respond to bullying matters as much as the rules it writes to prevent it.",
+        "translationZh": "學校選擇如何回應霸凌，與它訂下的防制規則同樣重要。",
+        "source": "self-authored",
+        "grammar": "How 名詞子句作主詞；as…as 等量比較",
+        "writingTip": "比較規定與實際行動，避免作文只討論口號。",
+        "topic": "校園安全"
+      }
+    ],
+    "collocations": [
+      [
+        "respond to a question",
+        "回答問題",
+        "respond 後接 to。"
+      ],
+      [
+        "respond to a request",
+        "回應請求",
+        "不一定表示答應該請求。"
+      ],
+      [
+        "respond quickly",
+        "迅速回應",
+        "quickly 是修飾動詞的副詞。"
+      ],
+      [
+        "respond to a crisis",
+        "因應危機",
+        "可補上具體應對措施。"
+      ]
+    ]
+  },
+  "result": {
+    "plainMeaning": "結果或成績；作動詞時，result in 是導致，result from 是由……造成。",
+    "usageNote": "result in＋結果；result from＋原因。as a result 表因此；as a result of 後接原因。",
+    "examples": [
+      {
+        "text": "A rushed decision may result in unnecessary costs if the group has not checked what it actually needs.",
+        "translationZh": "若小組尚未確認真正需要什麼，倉促的決定可能導致不必要的支出。",
+        "source": "self-authored",
+        "grammar": "result in；if 子句；現在完成式",
+        "writingTip": "把決策方式連結到可能後果，避免使用沒有條件的斷言。",
+        "topic": "理性決策"
+      },
+      {
+        "text": "The poor result did not necessarily mean that the idea was useless; it might have resulted from unclear instructions.",
+        "translationZh": "結果不佳不一定代表這個想法毫無用途；也可能是指示不清楚所造成的。",
+        "source": "self-authored",
+        "grammar": "not necessarily；might have＋過去分詞；result from",
+        "writingTip": "區分觀察到的結果與可能原因，示範審慎推論。",
+        "topic": "問題分析"
+      }
+    ],
+    "collocations": [
+      [
+        "result in…",
+        "導致……",
+        "in 後接結果。"
+      ],
+      [
+        "result from…",
+        "由……造成",
+        "from 後接原因。"
+      ],
+      [
+        "as a result",
+        "因此／結果",
+        "作連接副詞時常以逗號與主句分隔。"
+      ],
+      [
+        "a direct result of…",
+        "……的直接結果",
+        "of 後接原因。"
+      ]
+    ]
+  },
+  "review": {
+    "plainMeaning": "複習或重新檢查；回顧、評論；名詞可指書評、影評或評估。",
+    "usageNote": "review a lesson 是複習；review a policy 是重新檢視；a review of a book 是書評。",
+    "examples": [
+      {
+        "text": "Review your first draft with a partner who can point out ideas that need clearer explanations.",
+        "translationZh": "和能指出哪些想法需要更清楚說明的同伴一起檢查初稿。",
+        "source": "self-authored",
+        "grammar": "祈使句；兩層關係子句",
+        "writingTip": "修稿不只查拼字，也要檢查論點是否說明充分。",
+        "topic": "同儕修稿"
+      },
+      {
+        "text": "After the policy had been in place for a month, the school held a review to see whether it was working as intended.",
+        "translationZh": "政策實施一個月後，學校進行檢視，確認它是否達到原先預期的效果。",
+        "source": "self-authored",
+        "grammar": "過去完成式；whether 名詞子句；as intended",
+        "writingTip": "呈現政策實施、事後檢查的順序，強調可追蹤的效果。",
+        "topic": "政策評估"
+      }
+    ],
+    "collocations": [
+      [
+        "review a lesson",
+        "複習課程內容",
+        "可搭配 before a test。"
+      ],
+      [
+        "review a policy",
+        "重新檢視政策",
+        "檢視後可能保留或修改。"
+      ],
+      [
+        "write a review",
+        "撰寫評論",
+        "說明評價的依據而不只給喜好。"
+      ],
+      [
+        "a review of…",
+        "對……的評論／檢視",
+        "依對象判斷是哪一種 review。"
+      ]
+    ]
+  },
+  "risk": {
+    "plainMeaning": "風險：可能發生壞事的機會或危險；動詞 risk 表示冒著某種危險做事。",
+    "usageNote": "risk doing something 用動名詞；at risk 表處於風險之中；risk 與 certainty「確定」不同。",
+    "examples": [
+      {
+        "text": "We did not risk crossing the river after the heavy rain.",
+        "translationZh": "大雨後，我們沒有冒險渡河。",
+        "source": "self-authored",
+        "grammar": "否定過去式；risk 動名詞",
+        "writingTip": "透過具體選擇表達風險判斷。",
+        "topic": "戶外安全"
+      },
+      {
+        "text": "If we ignore small disagreements, we risk allowing them to grow into conflicts that are much harder to resolve.",
+        "translationZh": "如果忽略小小的意見分歧，我們就可能讓它們演變成更難解決的衝突。",
+        "source": "self-authored",
+        "grammar": "if 條件子句；risk＋V-ing；比較級",
+        "writingTip": "問題解決作文可描述不採取行動的代價。",
+        "topic": "衝突管理"
+      }
+    ],
+    "collocations": [
+      [
+        "at risk",
+        "處於風險之中",
+        "常接 of＋名詞或動名詞。"
+      ],
+      [
+        "take a risk",
+        "冒險",
+        "可指為了機會而承擔風險。"
+      ],
+      [
+        "reduce the risk of…",
+        "降低……的風險",
+        "降低不等於完全消除。"
+      ],
+      [
+        "risk doing something",
+        "冒險做某事",
+        "不用 risk to do。"
+      ]
+    ]
+  },
+  "significant": {
+    "plainMeaning": "重要、影響明顯或值得注意的；研究中的 statistically significant 指統計檢定結果。",
+    "usageNote": "significant 不等於巨大，也不一定表示 statistically significant。作文應解釋影響何在，避免把形容詞當證據。",
+    "examples": [
+      {
+        "text": "Moving the bench into the shade made a significant difference to our comfort.",
+        "translationZh": "把長椅移到陰涼處，讓我們舒服許多。",
+        "source": "self-authored",
+        "grammar": "動名詞主詞；make a difference to",
+        "writingTip": "以實際感受說明變化重要，不冒稱統計顯著。",
+        "topic": "社區休憩"
+      },
+      {
+        "text": "What makes the change significant is not its cost but the greater independence it gives people with limited mobility.",
+        "translationZh": "讓這項改變重要的，不是它的費用，而是它讓行動不便者獲得更多自主能力。",
+        "source": "self-authored",
+        "grammar": "What 名詞子句；not… but… 對比",
+        "writingTip": "用具體的人本效果解釋重要性，而不是只談金額。",
+        "topic": "無障礙設計"
+      }
+    ],
+    "collocations": [
+      [
+        "a significant difference",
+        "顯著／重要的差異",
+        "應補充差異的方向與意義。"
+      ],
+      [
+        "a significant impact on…",
+        "對……的重要影響",
+        "on 後接受影響的對象。"
+      ],
+      [
+        "a significant improvement",
+        "明顯的改善",
+        "說明改善的是哪項表現。"
+      ],
+      [
+        "statistically significant",
+        "達統計顯著的",
+        "專門研究術語，不等同效果大或實用。"
+      ]
+    ]
+  },
+  "similar": {
+    "plainMeaning": "相似的、類似的，但不表示完全相同。",
+    "usageNote": "similar to 固定接 to；the same as 則接 as。比較相似處時也可補充差異。",
+    "examples": [
+      {
+        "text": "The two jackets look similar, but one has a removable hood.",
+        "translationZh": "兩件外套看起來相似，但其中一件有可拆的帽子。",
+        "source": "self-authored",
+        "grammar": "連綴動詞；but 對比",
+        "writingTip": "指出相似之後再交代重要差異。",
+        "topic": "購物選擇"
+      },
+      {
+        "text": "Although their goals are similar, the two plans differ in how much time they require and whom they are intended to help.",
+        "translationZh": "雖然兩個計畫的目標相似，它們所需時間與預定幫助的對象卻不同。",
+        "source": "self-authored",
+        "grammar": "Although 讓步；how much／whom 名詞子句並列",
+        "writingTip": "以相似處開場，再選明確標準比較方案。",
+        "topic": "方案比較"
+      }
+    ],
+    "collocations": [
+      [
+        "similar to…",
+        "與……相似",
+        "固定使用 to，不用 similar with。"
+      ],
+      [
+        "a similar situation",
+        "相似的情況",
+        "相似仍可存在重要差異。"
+      ],
+      [
+        "similar interests",
+        "相近的興趣",
+        "interests 常用複數。"
+      ],
+      [
+        "a similar approach",
+        "類似的做法",
+        "可用於比較處理問題的方法。"
+      ]
+    ]
+  },
+  "solution": {
+    "plainMeaning": "問題的解法、答案或改善方法；化學上也指溶液。",
+    "usageNote": "a solution to a problem 的介系詞是 to；方案提出後仍需考慮成本與限制。",
+    "examples": [
+      {
+        "text": "The mechanic found a simple solution to the bicycle’s noisy brakes.",
+        "translationZh": "技師找出了腳踏車煞車異音的簡單解法。",
+        "source": "self-authored",
+        "grammar": "solution to 介系詞補語",
+        "writingTip": "solution 後指明解決的問題。",
+        "topic": "物品維修"
+      },
+      {
+        "text": "Rather than assuming that one solution will suit everyone, we should ask which needs each proposal addresses and which it overlooks.",
+        "translationZh": "我們不應假設一個方案適合所有人，而應詢問每個提案照顧了哪些需求、又忽略了哪些需求。",
+        "source": "self-authored",
+        "grammar": "Rather than＋V-ing；which 名詞子句並列",
+        "writingTip": "評估方案時把受益者與被忽略的需求都寫出來。",
+        "topic": "公共政策"
+      }
+    ],
+    "collocations": [
+      [
+        "a solution to a problem",
+        "問題的解決方法",
+        "to 為介系詞。"
+      ],
+      [
+        "find a solution",
+        "找出解決方案",
+        "可接 to＋具體問題。"
+      ],
+      [
+        "a practical solution",
+        "可行而實用的解法",
+        "practical 強調執行上的可行性。"
+      ],
+      [
+        "a long-term solution",
+        "長期的解決方案",
+        "可與 a temporary measure 對比。"
+      ]
+    ]
+  },
+  "specific": {
+    "plainMeaning": "明確、具體的；特定的，而不是泛指所有；專業語境也可指某物特有的。",
+    "usageNote": "specific examples 是具體例子；a specific group 是特定群體。不要與 special「特別的」完全混用。",
+    "examples": [
+      {
+        "text": "Please give me a specific date rather than saying you will visit soon.",
+        "translationZh": "請給我確切日期，別只說你很快會來。",
+        "source": "self-authored",
+        "grammar": "祈使句；rather than 動名詞",
+        "writingTip": "以可安排的日期區分具體與模糊資訊。",
+        "topic": "行程安排"
+      },
+      {
+        "text": "To make the plan useful, we need to be specific about who will carry it out and how its success will be measured.",
+        "translationZh": "要讓計畫實用，我們必須明確說明由誰執行，以及如何衡量成效。",
+        "source": "self-authored",
+        "grammar": "To V 表目的；嵌入問句；被動語態",
+        "writingTip": "建議型作文可交代執行者與評估方式。",
+        "topic": "行動計畫"
+      }
+    ],
+    "collocations": [
+      [
+        "a specific example",
+        "具體例子",
+        "例子要能直接支持段落主旨。"
+      ],
+      [
+        "specific information",
+        "明確的資訊",
+        "information 通常不可數。"
+      ],
+      [
+        "be specific about…",
+        "明確說明……",
+        "about 後可接問題或疑問子句。"
+      ],
+      [
+        "a specific purpose",
+        "特定用途／目的",
+        "強調有明確使用目標。"
+      ]
+    ]
+  },
+  "strategy": {
+    "plainMeaning": "為了達成目標所設計的做法或整體安排；常包含多個步驟。",
+    "usageNote": "strategy 比單一步驟更強調達成目標的安排；a strategy for doing 常見。",
+    "examples": [
+      {
+        "text": "A checklist is part of my strategy for packing without forgetting essentials.",
+        "translationZh": "檢查表是我避免漏帶必需品的打包策略之一。",
+        "source": "self-authored",
+        "grammar": "for 與 without 動名詞",
+        "writingTip": "把策略連結到實際步驟與目標。",
+        "topic": "旅行準備"
+      },
+      {
+        "text": "No matter how carefully a strategy is planned, it should be adjusted when new information reveals that its assumptions were mistaken.",
+        "translationZh": "策略不論規劃得多仔細，都應在新資訊顯示原先假設有誤時調整。",
+        "source": "self-authored",
+        "grammar": "No matter how 讓步；被動語態；that 子句",
+        "writingTip": "說明好策略需要根據資訊修正，而不是固執照做。",
+        "topic": "彈性決策"
+      }
+    ],
+    "collocations": [
+      [
+        "develop a strategy",
+        "擬定策略",
+        "說明策略想達成的目標。"
+      ],
+      [
+        "a strategy for doing something",
+        "做某事的策略",
+        "for 後用動名詞。"
+      ],
+      [
+        "a long-term strategy",
+        "長期策略",
+        "可與短期措施比較。"
+      ],
+      [
+        "adjust a strategy",
+        "調整策略",
+        "依回饋或條件改變做法。"
+      ]
+    ]
+  },
+  "strength": {
+    "plainMeaning": "力量、強度或耐力；人的優點與擅長之處也叫 strengths；另可指濃度等程度。",
+    "usageNote": "physical strength 是體力；strengths and weaknesses 是優缺點。strong 是形容詞，strength 是名詞。",
+    "examples": [
+      {
+        "text": "The bag’s main strength is its sturdy handle, which makes it easy to carry.",
+        "translationZh": "這個袋子的主要優點是結實的提把，方便提拿。",
+        "source": "self-authored",
+        "grammar": "非限定關係子句",
+        "writingTip": "用具體設計特點說明 strength 的優點義。",
+        "topic": "商品設計"
+      },
+      {
+        "text": "One strength of the proposal is that it helps not only confident speakers but also students who prefer to contribute in writing.",
+        "translationZh": "這項提案的一個優點，是它不只幫助善於發言的學生，也照顧較喜歡用書寫參與的學生。",
+        "source": "self-authored",
+        "grammar": "that 子句作補語；not only… but also…",
+        "writingTip": "評估提案時用受益對象說明優點，而非空泛稱讚。",
+        "topic": "包容學習"
+      }
+    ],
+    "collocations": [
+      [
+        "physical strength",
+        "體力／身體力量",
+        "與 mental strength 心理韌性區分。"
+      ],
+      [
+        "strengths and weaknesses",
+        "優點與缺點",
+        "談特質時兩者常用複數。"
+      ],
+      [
+        "build on one’s strengths",
+        "以自身優勢為基礎繼續發展",
+        "build on 是延續並擴充。"
+      ],
+      [
+        "gain strength",
+        "變得更有力量／恢復體力",
+        "依對象判斷具體意思。"
+      ]
+    ]
+  },
+  "structure": {
+    "plainMeaning": "結構：各部分如何安排與連結；也可指建築構造；動詞表示有系統地安排。",
+    "usageNote": "the structure of an essay 指文章的組織，不只是句子數。structure 作動詞可直接接活動、課程或文章。",
+    "examples": [
+      {
+        "text": "The tower’s wooden structure was repaired before it opened to visitors.",
+        "translationZh": "這座塔的木製結構在開放參觀前修好了。",
+        "source": "self-authored",
+        "grammar": "被動語態；before 時間子句",
+        "writingTip": "structure 可描述實體構造，不只文章組織。",
+        "topic": "歷史建築"
+      },
+      {
+        "text": "By changing the structure of her report, Lena made it easier for readers to see why the final recommendation followed from the evidence.",
+        "translationZh": "Lena 調整報告結構後，讓讀者更容易看出最後的建議為何能從證據推導而來。",
+        "source": "self-authored",
+        "grammar": "By＋V-ing；make it＋形容詞＋for…to V",
+        "writingTip": "修稿可改善論證順序，不必一味增加華麗詞彙。",
+        "topic": "報告修訂"
+      }
+    ],
+    "collocations": [
+      [
+        "the structure of…",
+        "……的結構",
+        "可用於文章、組織或建築。"
+      ],
+      [
+        "sentence structure",
+        "句子結構",
+        "如主詞、動詞與子句安排。"
+      ],
+      [
+        "a clear structure",
+        "清楚的結構",
+        "能讓讀者理解各部分關係。"
+      ],
+      [
+        "structure an essay",
+        "安排文章結構",
+        "structure 在此是及物動詞。"
+      ]
+    ]
+  },
+  "suggest": {
+    "plainMeaning": "提出建議；資訊、表情等也可暗示某種可能性。",
+    "usageNote": "建議用 suggest doing 或 suggest that＋主詞＋原形動詞；不用 suggest someone to do。證據 suggest that 表暗示，不能當作證明。",
+    "examples": [
+      {
+        "text": "I suggest comparing several sources before sharing a surprising claim with friends on social media.",
+        "translationZh": "我建議先比較幾個來源，再把令人驚訝的說法分享給社群媒體上的朋友。",
+        "source": "self-authored",
+        "grammar": "suggest＋V-ing；before＋V-ing",
+        "writingTip": "提出可執行的查核步驟，適合網路資訊議題。",
+        "topic": "資訊查核"
+      },
+      {
+        "text": "The teacher suggested that each group explain not only what it planned to change but also why the change would matter.",
+        "translationZh": "老師建議每組不只說明計畫改變什麼，也解釋這項改變為何重要。",
+        "source": "self-authored",
+        "grammar": "suggest that＋原形動詞；not only… but also…；過去觀點的 would",
+        "writingTip": "建議型寫作應同時交代行動與理由。",
+        "topic": "校園提案"
+      }
+    ],
+    "collocations": [
+      [
+        "suggest doing something",
+        "建議做某事",
+        "suggest 後用動名詞。"
+      ],
+      [
+        "suggest that…",
+        "建議／暗示……",
+        "建議義可用原形動詞；暗示義依事實使用正常時態。"
+      ],
+      [
+        "suggest a solution",
+        "提出一個解法",
+        "solution 後可接 to a problem。"
+      ],
+      [
+        "strongly suggest",
+        "強烈建議／有力暗示",
+        "依主詞與後文判斷是哪一種意思。"
+      ]
+    ]
+  },
+  "support": {
+    "plainMeaning": "支持主張或人；提供援助、資源或經費；支撐物體；證據也可支持某種說法。",
+    "usageNote": "support a claim 是用證據支持主張；support someone 可為情感或實際援助。support 為及物動詞，不加 to。",
+    "examples": [
+      {
+        "text": "The shelf needs a metal support to hold the heavy books.",
+        "translationZh": "架子需要金屬支撐物，才能承受那些重書。",
+        "source": "self-authored",
+        "grammar": "目的不定詞",
+        "writingTip": "以實物功能說明名詞 support 的支撐物意思。",
+        "topic": "居家收納"
+      },
+      {
+        "text": "Even students who disagree with a proposal can support a fair discussion in which each side has time to explain its concerns.",
+        "translationZh": "即使不同意提案的學生，也能支持公平的討論，讓雙方都有時間說明疑慮。",
+        "source": "self-authored",
+        "grammar": "Even 表強調；who／in which 關係子句",
+        "writingTip": "區分支持某個結論與支持公平討論的程序。",
+        "topic": "公民討論"
+      }
+    ],
+    "collocations": [
+      [
+        "support a claim",
+        "支持一項主張",
+        "可用證據、例子與推理支持。"
+      ],
+      [
+        "provide support for…",
+        "提供對……的支持",
+        "support 作名詞時可接 for。"
+      ],
+      [
+        "emotional support",
+        "情感支持",
+        "如聆聽、陪伴與鼓勵。"
+      ],
+      [
+        "support someone financially",
+        "在金錢上援助某人",
+        "financially 修飾 support。"
+      ]
+    ]
+  },
+  "target": {
+    "plainMeaning": "想達成的目標；攻擊、行動或廣告所針對的對象；也可指練習射擊的靶。",
+    "usageNote": "set a target 是訂目標；target a group 是以該群體為對象，不一定是攻擊。",
+    "examples": [
+      {
+        "text": "Our target is to finish the garden path before the summer festival.",
+        "translationZh": "我們的目標是在夏季節慶前完成花園步道。",
+        "source": "self-authored",
+        "grammar": "不定詞表語；期限片語",
+        "writingTip": "以具體成果及期限設定目標。",
+        "topic": "社區工程"
+      },
+      {
+        "text": "If a campaign is designed to target young readers, its message should be clear without treating them as unable to understand complex issues.",
+        "translationZh": "如果一項宣導的對象是年輕讀者，訊息應清楚，但不應把他們當成無法理解複雜議題的人。",
+        "source": "self-authored",
+        "grammar": "if 子句；被動語態；without＋V-ing",
+        "writingTip": "談溝通設計時兼顧清楚與尊重讀者。",
+        "topic": "公共溝通"
+      }
+    ],
+    "collocations": [
+      [
+        "set a target",
+        "設定目標",
+        "可補上期限或衡量方式。"
+      ],
+      [
+        "reach a target",
+        "達成目標",
+        "reach 後直接接 target。"
+      ],
+      [
+        "a target audience",
+        "目標讀者／觀眾",
+        "指訊息主要想傳達給的人。"
+      ],
+      [
+        "target a specific group",
+        "以特定群體為對象",
+        "target 在此為動詞。"
+      ]
+    ]
+  },
+  "tend": {
+    "plainMeaning": "tend to do：往往或傾向做某事；tend someone／something 也可指照顧、照料。",
+    "usageNote": "tend to 表一般傾向，不代表永遠如此；照料義可用 tend a garden 或 tend to a patient。",
+    "examples": [
+      {
+        "text": "My neighbor tends the garden while its owner is away.",
+        "translationZh": "主人不在時，鄰居照料花園。",
+        "source": "self-authored",
+        "grammar": "while 時間子句",
+        "writingTip": "照料義直接接受詞，與 tend to do 的傾向義分開。",
+        "topic": "社區互助"
+      },
+      {
+        "text": "When feedback focuses only on mistakes, students tend to overlook the progress they have made and may become reluctant to try again.",
+        "translationZh": "當回饋只著重錯誤時，學生往往忽略自己已經取得的進步，也可能不願再試。",
+        "source": "self-authored",
+        "grammar": "when 子句；tend to V；現在完成式",
+        "writingTip": "用 tend to 與 may 保留個人差異，不把可能結果寫成必然。",
+        "topic": "學習回饋"
+      }
+    ],
+    "collocations": [
+      [
+        "tend to do something",
+        "往往／傾向做某事",
+        "不是一定會做。"
+      ],
+      [
+        "tend a garden",
+        "照料花園",
+        "照料義可直接接名詞。"
+      ],
+      [
+        "tend to a patient",
+        "照顧病人",
+        "to 在此為介系詞，後接名詞。"
+      ],
+      [
+        "tend to be…",
+        "往往是……",
+        "to 後為原形 be。"
+      ]
+    ]
+  },
+  "theory": {
+    "plainMeaning": "用來解釋現象的理論或學說；日常對話也可指某人的推測。",
+    "usageNote": "in theory 是理論上；in practice 是實際上。科學 theory 不應簡化為沒有依據的猜測。",
+    "examples": [
+      {
+        "text": "My theory is that the cat hides when it hears the vacuum cleaner.",
+        "translationZh": "我的猜測是貓聽到吸塵器就躲起來。",
+        "source": "self-authored",
+        "grammar": "that 表語子句；when 時間子句",
+        "writingTip": "日常 theory 可指推測，不能冒稱已證實科學理論。",
+        "topic": "家庭觀察"
+      },
+      {
+        "text": "What seems efficient in theory may fail in practice if the people expected to use it have not been consulted.",
+        "translationZh": "若沒有徵詢預定使用者的意見，理論上有效率的做法在實際上可能失敗。",
+        "source": "self-authored",
+        "grammar": "What 名詞子句作主詞；if 子句；現在完成被動",
+        "writingTip": "以使用者需求說明理論與實際可能不同。",
+        "topic": "設計與實踐"
+      }
+    ],
+    "collocations": [
+      [
+        "in theory",
+        "理論上",
+        "常與 in practice 對照。"
+      ],
+      [
+        "test a theory",
+        "檢驗理論",
+        "以證據檢查解釋或預測。"
+      ],
+      [
+        "develop a theory",
+        "建立理論",
+        "說明理論解釋的現象。"
+      ],
+      [
+        "a theory about…",
+        "關於……的理論／推測",
+        "依語境判斷正式程度。"
+      ]
+    ]
+  },
+  "topic": {
+    "plainMeaning": "談話、文章或討論的主題；topic sentence 是交代段落主旨的句子。",
+    "usageNote": "topic 是正在談的題目；main idea 是作者針對題目提出的主要意思。主題相同的文章可有不同主張。",
+    "examples": [
+      {
+        "text": "The topic of today’s discussion is how to make the playground safer.",
+        "translationZh": "今天討論的主題是如何讓遊樂場更安全。",
+        "source": "self-authored",
+        "grammar": "how 加不定詞表語",
+        "writingTip": "topic 後明確限定討論問題。",
+        "topic": "班級討論"
+      },
+      {
+        "text": "Although two paragraphs may discuss the same topic, each should develop a distinct point rather than repeat the same general statement.",
+        "translationZh": "雖然兩個段落可能討論同一主題，每段仍應發展不同要點，而不是重複相同的概括說法。",
+        "source": "self-authored",
+        "grammar": "Although 讓步；each 作主詞；rather than＋原形動詞",
+        "writingTip": "讓段落各有分工，避免只是換句話重複主張。",
+        "topic": "段落發展"
+      }
+    ],
+    "collocations": [
+      [
+        "a topic sentence",
+        "主旨句",
+        "說明該段要發展的重點。"
+      ],
+      [
+        "a topic of discussion",
+        "討論的主題",
+        "of 後接 discussion。"
+      ],
+      [
+        "stay on topic",
+        "不離題",
+        "常用於討論或寫作提醒。"
+      ],
+      [
+        "choose a topic",
+        "選擇主題",
+        "可依目的、資料與讀者選擇。"
+      ]
+    ]
+  },
+  "transform": {
+    "plainMeaning": "使事物明顯改變，成為不同的樣子、用途或狀態；也可指自身轉變。",
+    "usageNote": "transform A into B 表使 A 轉變成 B；change 較一般，transform 通常強調明顯轉變。",
+    "examples": [
+      {
+        "text": "Residents hope to transform an empty lot into a shared garden where neighbors can grow vegetables and meet one another.",
+        "translationZh": "居民希望把一塊空地改造成共用花園，讓鄰居種菜並彼此交流。",
+        "source": "self-authored",
+        "grammar": "transform A into B；where 關係子句",
+        "writingTip": "以可想像的空間變化說明計畫目的；hope 不冒充已完成的事實。",
+        "topic": "社區營造"
+      },
+      {
+        "text": "It is the way teachers and students use a tool that can transform learning, rather than the tool alone.",
+        "translationZh": "能改變學習的是師生使用工具的方式，而不只是工具本身。",
+        "source": "self-authored",
+        "grammar": "It is…that 強調句；省略關係副詞的 way 子句",
+        "writingTip": "科技作文可用強調句把焦點放在使用方法，而不只列舉工具。",
+        "topic": "教育科技"
+      }
+    ],
+    "collocations": [
+      [
+        "transform A into B",
+        "把 A 轉變成 B",
+        "into 表轉變後的狀態。"
+      ],
+      [
+        "transform a community",
+        "改變一個社區",
+        "應具體說明生活或空間如何改變。"
+      ],
+      [
+        "transform the way…",
+        "改變……的方式",
+        "way 後可接完整子句。"
+      ],
+      [
+        "be transformed by…",
+        "因……而改變",
+        "被動用法指出改變的因素。"
+      ]
+    ]
+  },
+  "understand": {
+    "plainMeaning": "理解意思、情況或原因；懂得如何做；也可表示體諒他人的感受。",
+    "usageNote": "understand why／how＋主詞＋動詞；understand someone 可表示理解其想法，不只是聽懂字句。",
+    "examples": [
+      {
+        "text": "I understand the instructions better after watching the short demonstration.",
+        "translationZh": "看過簡短示範後，我更明白說明內容。",
+        "source": "self-authored",
+        "grammar": "after 動名詞；程度比較",
+        "writingTip": "指出哪種補充幫助理解。",
+        "topic": "生活學習"
+      },
+      {
+        "text": "We need to understand what prevents some students from participating before we can judge whether an activity is truly inclusive.",
+        "translationZh": "判斷活動是否真正包容所有人前，我們需要了解什麼阻礙部分學生參與。",
+        "source": "self-authored",
+        "grammar": "what 與 whether 名詞子句；before 時間子句",
+        "writingTip": "判斷前先掌握參與障礙，讓包容有具體標準。",
+        "topic": "包容教育"
+      }
+    ],
+    "collocations": [
+      [
+        "understand the importance of…",
+        "理解……的重要性",
+        "of 後接名詞或動名詞。"
+      ],
+      [
+        "understand how…",
+        "理解如何……",
+        "後接直述句語序的子句。"
+      ],
+      [
+        "understand someone’s point of view",
+        "理解某人的觀點",
+        "理解不等於完全同意。"
+      ],
+      [
+        "be difficult to understand",
+        "難以理解",
+        "to understand 的受詞指回主詞。"
+      ]
+    ]
+  },
+  "value": {
+    "plainMeaning": "價值或重要性；values 可指價值觀；動詞 value 表重視，也可指估計金錢價值。",
+    "usageNote": "value something 是重視某事物；the value of… 是……的價值；values 複數常表示信念與行事原則。",
+    "examples": [
+      {
+        "text": "I value the advice my cousin gives me about finding a job.",
+        "translationZh": "我重視表親給我的求職建議。",
+        "source": "self-authored",
+        "grammar": "省略關係代名詞；about 動名詞",
+        "writingTip": "用具體求助情境說明 value 作動詞時表示重視。",
+        "topic": "職涯交流"
+      },
+      {
+        "text": "The value of community service lies not only in the hours completed but also in what students learn about the people they serve.",
+        "translationZh": "社區服務的價值不只在完成的時數，也在學生對服務對象學到了什麼。",
+        "source": "self-authored",
+        "grammar": "not only… but also…；過去分詞修飾；what 子句",
+        "writingTip": "用實際學習與理解補充可量化指標，讓議論更深入。",
+        "topic": "服務學習"
+      }
+    ],
+    "collocations": [
+      [
+        "value someone’s opinion",
+        "重視某人的意見",
+        "value 在此為及物動詞。"
+      ],
+      [
+        "the value of…",
+        "……的價值",
+        "依語境可指金額或重要性。"
+      ],
+      [
+        "shared values",
+        "共同的價值觀",
+        "values 常用複數。"
+      ],
+      [
+        "good value for money",
+        "花費相當划算／物有所值",
+        "不是單指售價低。"
+      ]
+    ]
+  },
+  "vary": {
+    "plainMeaning": "有所不同或發生變化；作及物動詞可指改變安排，使內容更多樣。",
+    "usageNote": "vary from A to B 表因對象而異；vary with 表隨某因素而變；various 是形容詞。",
+    "examples": [
+      {
+        "text": "Ticket prices vary according to the day and the type of seat.",
+        "translationZh": "票價會隨日期與座位種類不同。",
+        "source": "self-authored",
+        "grammar": "according to 介系詞片語",
+        "writingTip": "明確指出造成差異的項目。",
+        "topic": "文化消費"
+      },
+      {
+        "text": "Since the time needed to learn a skill can vary from person to person, progress should be judged against individual goals.",
+        "translationZh": "由於學會一項技能所需的時間因人而異，進步應依個人目標來評估。",
+        "source": "self-authored",
+        "grammar": "Since 原因子句；過去分詞修飾；被動語態",
+        "writingTip": "先說明個人差異，再提出公平的評估原則。",
+        "topic": "個別化學習"
+      }
+    ],
+    "collocations": [
+      [
+        "vary from person to person",
+        "因人而異",
+        "from…to… 指不同對象之間的差異。"
+      ],
+      [
+        "vary widely",
+        "差異很大",
+        "widely 修飾 vary。"
+      ],
+      [
+        "vary with…",
+        "隨……而變化",
+        "with 後接影響因素。"
+      ],
+      [
+        "vary the activities",
+        "變換活動內容",
+        "及物用法，表示主動使活動多樣。"
+      ]
+    ]
+  }
+}

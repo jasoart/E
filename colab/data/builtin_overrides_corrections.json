@@ -1,0 +1,838 @@
+{
+  "neither adj./adv./pron./": {
+    "plainMeaning": "兩者都不；兩者中的任何一個也不（只談兩個對象）",
+    "usageNote": "原詞條 ID 保留。neither…nor… 表示兩者皆不；neither of 接複數名詞／代名詞，正式用法通常接單數動詞。",
+    "examples": [
+      {
+        "text": "Neither of the two proposals addresses the needs of students who live far from school.",
+        "translationZh": "這兩項提案都沒有處理住得離學校很遠的學生的需求。",
+        "source": "self-authored",
+        "grammar": "neither of + 複數名詞，單數動詞；who 關係子句",
+        "writingTip": "比較兩種方案時，先指出共同缺口，再提出第三種做法。",
+        "topic": "教育與交通"
+      },
+      {
+        "text": "The app collects neither names nor addresses, although it still records how often each feature is used.",
+        "translationZh": "這個應用程式既不收集姓名，也不收集地址，但仍會記錄各項功能的使用頻率。",
+        "source": "self-authored",
+        "grammar": "neither…nor… 平行受詞；although 讓步子句",
+        "writingTip": "用平行結構說清楚不收集哪些資料，再補充隱私限制。",
+        "topic": "數位隱私"
+      }
+    ],
+    "collocations": [
+      [
+        "neither A nor B",
+        "A 和 B 都不",
+        "A、B 的句法形式應平行。"
+      ],
+      [
+        "neither of the two options",
+        "兩個選項都不",
+        "只適用於兩個對象。"
+      ],
+      [
+        "neither side",
+        "雙方都不／任何一方也不",
+        "neither 後的可數名詞用單數。"
+      ],
+      [
+        "neither do I",
+        "我也不",
+        "回應現在式否定句；助動詞依前句調整。"
+      ]
+    ]
+  },
+  "am/a.m.": {
+    "plainMeaning": "am：與 I 搭配的 be 動詞；a.m.：午夜到中午之前的時間（上午）",
+    "usageNote": "兩種形式不能混為一義。I am 可縮為 I'm；a.m. 是時間標記，12 a.m. 指午夜，12 p.m. 指中午。",
+    "examples": [
+      {
+        "text": "I am responsible for checking the sources before our class shares a news report.",
+        "translationZh": "在班上分享新聞報導之前，我負責查核消息來源。",
+        "source": "self-authored",
+        "grammar": "I am + 形容詞；before 時間子句",
+        "writingTip": "清楚說明個人在團隊中的責任與行動順序。",
+        "topic": "媒體素養"
+      },
+      {
+        "text": "If the library opens at 8 a.m., students can study there before their first class.",
+        "translationZh": "如果圖書館上午八點開門，學生就能在第一堂課之前到那裡讀書。",
+        "source": "self-authored",
+        "grammar": "if 現在式條件子句；can 表可能性",
+        "writingTip": "用明確時間說明一項校園方案如何改善學生生活。",
+        "topic": "校園生活"
+      }
+    ],
+    "collocations": [
+      [
+        "I am responsible for",
+        "我負責……",
+        "for 後接名詞或 V-ing。"
+      ],
+      [
+        "I am aware of",
+        "我知道／察覺……",
+        "of 後接名詞。"
+      ],
+      [
+        "at 8 a.m.",
+        "在上午八點",
+        "精確時刻前用 at。"
+      ],
+      [
+        "from 9 a.m. to noon",
+        "從上午九點到中午",
+        "from…to… 描述時間範圍。"
+      ]
+    ]
+  },
+  "abnormal": {
+    "plainMeaning": "異常的；與一般狀況或正常範圍不同的",
+    "usageNote": "描述檢測、數值或現象較清楚；不應把原釋意中的舊称直接當成人的身分名稱。",
+    "examples": [
+      {
+        "text": "An abnormal reading on the sensor does not always mean that the water is unsafe.",
+        "translationZh": "感測器出現異常讀數，不一定就表示水不安全。",
+        "source": "self-authored",
+        "grammar": "not always 表部分否定；that 名詞子句",
+        "writingTip": "區分警示訊號與確定結論，避免把單一數值當成完整證據。",
+        "topic": "環境監測"
+      },
+      {
+        "text": "When abnormal temperatures are recorded, researchers check the equipment before explaining the results.",
+        "translationZh": "記錄到異常溫度時，研究人員會先檢查設備，再解釋結果。",
+        "source": "self-authored",
+        "grammar": "when 時間子句；被動語態",
+        "writingTip": "依檢查、排除誤差、解釋結果的順序描寫研究流程。",
+        "topic": "科學研究"
+      }
+    ],
+    "collocations": [
+      [
+        "abnormal results",
+        "異常結果",
+        "常用於檢驗或測試。"
+      ],
+      [
+        "abnormal behavior",
+        "異常行為",
+        "須交代與何種基準比較。"
+      ],
+      [
+        "abnormal temperatures",
+        "異常溫度",
+        "數值異常不等於原因已確定。"
+      ],
+      [
+        "an abnormal reading",
+        "一個異常讀數",
+        "reading 在此指儀器顯示值。"
+      ]
+    ]
+  },
+  "aboriginal": {
+    "plainMeaning": "原住民的；與一地原住民族有關的",
+    "usageNote": "用於族群時應尊重具體名稱及當事人偏好的稱呼；Aboriginal 在特定專名中大寫。原釋意保留作比較。",
+    "examples": [
+      {
+        "text": "The school invited an aboriginal artist to explain the stories behind her paintings.",
+        "translationZh": "學校邀請了一位原住民藝術家，說明她的畫作背後的故事。",
+        "source": "self-authored",
+        "grammar": "invite + 人 + to V；behind 表背景",
+        "writingTip": "讓文化創作者自行說明作品，避免只描述外觀。",
+        "topic": "文化與教育"
+      },
+      {
+        "text": "A museum that displays aboriginal art should explain who created it and how permission was obtained.",
+        "translationZh": "展示原住民藝術的博物館，應說明作品由誰創作，以及如何取得展示許可。",
+        "source": "self-authored",
+        "grammar": "that 關係子句；間接問句與被動語態",
+        "writingTip": "提出文化展示原則時，具體交代作者與同意程序。",
+        "topic": "文化參與"
+      }
+    ],
+    "collocations": [
+      [
+        "aboriginal art",
+        "原住民藝術",
+        "art 一般為不可數名詞。"
+      ],
+      [
+        "aboriginal communities",
+        "原住民社群",
+        "可用具體族名使描述更精確。"
+      ],
+      [
+        "aboriginal languages",
+        "原住民族語言",
+        "說明所指語言而非把所有族群混作一類。"
+      ],
+      [
+        "aboriginal culture",
+        "原住民族文化",
+        "culture 可依語境用複數 cultures。"
+      ]
+    ]
+  },
+  "female": {
+    "plainMeaning": "女性的；雌性的；作名詞可指女性或雌性動物",
+    "usageNote": "人類語境常作形容詞，如 female students；作名詞時須考慮語域。描述性別差距時交代情境，不把差異當成能力定論。",
+    "examples": [
+      {
+        "text": "The workshop encouraged female students to present their engineering projects to the community.",
+        "translationZh": "這場工作坊鼓勵女學生向社區展示她們的工程專題。",
+        "source": "self-authored",
+        "grammar": "encourage + 人 + to V",
+        "writingTip": "用參與機會與具體活動說明平等，而非只寫口號。",
+        "topic": "教育平等"
+      },
+      {
+        "text": "The researcher observed a female bird that returned to the same nesting site each year.",
+        "translationZh": "研究人員觀察到一隻每年都返回同一築巢地點的雌鳥。",
+        "source": "self-authored",
+        "grammar": "that 關係子句修飾 bird",
+        "writingTip": "自然觀察先寫可觀察到的行為，再討論可能原因。",
+        "topic": "野生動物"
+      }
+    ],
+    "collocations": [
+      [
+        "female students",
+        "女學生",
+        "female 作形容詞。"
+      ],
+      [
+        "a female scientist",
+        "一位女性科學家",
+        "描述職業時核心名詞仍是 scientist。"
+      ],
+      [
+        "a female bird",
+        "一隻雌鳥",
+        "生物語境的性別描述。"
+      ],
+      [
+        "female participation",
+        "女性參與",
+        "說明參與何種活動更具體。"
+      ]
+    ]
+  },
+  "male": {
+    "plainMeaning": "男性的；雄性的；作名詞可指男性或雄性動物",
+    "usageNote": "作形容詞可搭配 students、nurses、animals；不要由性別推論個人的能力或興趣。",
+    "examples": [
+      {
+        "text": "A male nurse showed the students how to respond calmly during an emergency.",
+        "translationZh": "一位男性護理師示範如何在緊急情況下冷靜應對。",
+        "source": "self-authored",
+        "grammar": "how to + 原形動詞",
+        "writingTip": "以實際工作行動描寫人物，避免性別刻板印象。",
+        "topic": "公共健康"
+      },
+      {
+        "text": "The male bird stays near the nest while its partner searches for food.",
+        "translationZh": "當另一隻成鳥尋找食物時，這隻雄鳥留在巢邊。",
+        "source": "self-authored",
+        "grammar": "while 表同時進行的行動",
+        "writingTip": "用同時發生的兩個行動描述合作，不把單一例子泛化到所有物種。",
+        "topic": "生物觀察"
+      }
+    ],
+    "collocations": [
+      [
+        "male students",
+        "男學生",
+        "male 作形容詞。"
+      ],
+      [
+        "a male nurse",
+        "一位男性護理師",
+        "nurse 可指任何性別。"
+      ],
+      [
+        "a male bird",
+        "一隻雄鳥",
+        "生物語境的性別描述。"
+      ],
+      [
+        "male participants",
+        "男性參與者",
+        "統計描述須交代研究情境。"
+      ]
+    ]
+  },
+  "cripple": {
+    "plainMeaning": "使嚴重受損或無法正常運作；也可指造成嚴重身體損傷",
+    "usageNote": "現代一般寫作用動詞描述系統、經濟或運作受損較常見；作人稱名詞有冒犯風險，原釋意僅保留供理解舊用法。",
+    "examples": [
+      {
+        "text": "A single damaged cable can cripple a network if no backup connection is available.",
+        "translationZh": "如果沒有備用連線，一條受損電纜就可能讓整個網路無法正常運作。",
+        "source": "self-authored",
+        "grammar": "can 表可能性；if 條件子句",
+        "writingTip": "用具體故障與備援條件說明系統風險。",
+        "topic": "數位韌性"
+      },
+      {
+        "text": "The small business was crippled by debt, even though demand for its products remained strong.",
+        "translationZh": "這家小企業因債務而難以運作，儘管市場對其產品的需求仍很強。",
+        "source": "self-authored",
+        "grammar": "被動語態；even though 讓步子句",
+        "writingTip": "區分市場需求與財務狀況，說明表面繁榮中的限制。",
+        "topic": "經濟與工作"
+      }
+    ],
+    "collocations": [
+      [
+        "cripple a network",
+        "使網路無法正常運作",
+        "動詞指嚴重妨礙運作。"
+      ],
+      [
+        "cripple the economy",
+        "使經濟嚴重受損",
+        "避免沒有證據的過度推論。"
+      ],
+      [
+        "be crippled by debt",
+        "因債務而難以運作",
+        "被動形態；by 引出原因。"
+      ],
+      [
+        "a crippling shortage",
+        "造成嚴重影響的短缺",
+        "crippling 為分詞形容詞。"
+      ]
+    ]
+  },
+  "dumb": {
+    "plainMeaning": "口語：愚蠢的、不明智的；舊用法也有不能說話的意思",
+    "usageNote": "正式作文通常改用 unwise、unreasonable 或不精確之處的具體描述；不要用此詞當成不能說話者的身分名稱。",
+    "examples": [
+      {
+        "text": "Calling an idea dumb does not explain why it would fail or how it could be improved.",
+        "translationZh": "把一個想法說成很蠢，並不能解釋它為何會失敗，或可以如何改善。",
+        "source": "self-authored",
+        "grammar": "V-ing 當主詞；why／how 名詞子句",
+        "writingTip": "批評方案時提出理由與改善方向，避免只有負面標籤。",
+        "topic": "討論與思辨"
+      },
+      {
+        "text": "I felt dumb after sharing the fake message, but I learned to check its source before passing it on.",
+        "translationZh": "轉傳假訊息後，我覺得自己很傻，但也學會在轉傳之前查核來源。",
+        "source": "self-authored",
+        "grammar": "after + V-ing；but 連接反省與改變",
+        "writingTip": "個人經驗作文可從失誤轉向具體的學習行動。",
+        "topic": "媒體素養"
+      }
+    ],
+    "collocations": [
+      [
+        "a dumb mistake",
+        "一個愚蠢的錯誤",
+        "口語評語，正式論證需說明錯在哪裡。"
+      ],
+      [
+        "feel dumb",
+        "覺得自己很傻",
+        "feel 後接形容詞。"
+      ],
+      [
+        "call an idea dumb",
+        "說一個想法很蠢",
+        "call + 受詞 + 形容詞。"
+      ],
+      [
+        "a dumb question",
+        "一個被說成很蠢的問題",
+        "語氣可能使人不願提問，慎用。"
+      ]
+    ]
+  },
+  "queer": {
+    "plainMeaning": "奇怪的、古怪的（較舊用法）；也可作部分 LGBTQ+ 人士使用的身分詞",
+    "usageNote": "現代身分用法依當事人的自我稱呼與語境判斷；並非任何人都接受此詞。表示奇怪時，strange 或 unusual 通常更清楚。",
+    "examples": [
+      {
+        "text": "The narrator described a queer sound coming from the empty room, creating a sense of uncertainty.",
+        "translationZh": "敘述者描寫空房間傳來的奇怪聲音，營造出不確定的感受。",
+        "source": "self-authored",
+        "grammar": "coming 分詞修飾 sound；creating 補充結果",
+        "writingTip": "敘事中用具體感官線索營造氣氛，而非只說事情很奇怪。",
+        "topic": "文學與敘事"
+      },
+      {
+        "text": "Some students identify as queer, while others prefer more specific terms when describing themselves.",
+        "translationZh": "有些學生以 queer 描述自己的身分，也有人偏好用更具體的詞稱呼自己。",
+        "source": "self-authored",
+        "grammar": "while 對比；when + V-ing 的省略子句",
+        "writingTip": "談身分時呈現個人選擇的差異，避免把一種稱呼套用到所有人。",
+        "topic": "語言與身分"
+      }
+    ],
+    "collocations": [
+      [
+        "a queer sound",
+        "奇怪的聲音",
+        "此義偏文學或較舊語域。"
+      ],
+      [
+        "identify as queer",
+        "以 queer 自我認同",
+        "自我稱呼的語境。"
+      ],
+      [
+        "queer literature",
+        "酷兒文學",
+        "指相關文化與學術領域。"
+      ],
+      [
+        "queer communities",
+        "酷兒社群",
+        "須尊重具體對象偏好的稱呼。"
+      ]
+    ]
+  },
+  "homosexual": {
+    "plainMeaning": "同性戀的；作名詞指同性戀者（較正式或臨床語域）",
+    "usageNote": "一般人際語境常依當事人偏好用 gay、lesbian 等詞；婚姻政策常用 same-sex marriage，並非任何同性戀者都以同一詞自稱。",
+    "examples": [
+      {
+        "text": "The survey asked homosexual participants whether they felt safe seeking support at school.",
+        "translationZh": "這份問卷詢問同性戀參與者，在學校尋求支持時是否感到安全。",
+        "source": "self-authored",
+        "grammar": "whether 名詞子句；seeking 分詞補充活動",
+        "writingTip": "研究寫作交代對象與問題，不把假設問卷當成已證實的調查結果。",
+        "topic": "校園支持"
+      },
+      {
+        "text": "A person who is homosexual should not have to hide that part of their identity to be treated fairly.",
+        "translationZh": "同性戀者不應必須隱藏這部分身分，才能獲得公平對待。",
+        "source": "self-authored",
+        "grammar": "who 關係子句；should not have to；目的不定詞",
+        "writingTip": "提出平等原則時，說明不應被附加的條件。",
+        "topic": "社會與公民"
+      }
+    ],
+    "collocations": [
+      [
+        "homosexual participants",
+        "同性戀參與者",
+        "正式研究語域。"
+      ],
+      [
+        "homosexual couples",
+        "同性伴侶",
+        "一般文脈常用 same-sex couples。"
+      ],
+      [
+        "homosexual orientation",
+        "同性戀性傾向",
+        "orientation 指性傾向，不是行為定論。"
+      ],
+      [
+        "homosexual identity",
+        "同性戀身分認同",
+        "描述應以當事人的自我認同為準。"
+      ]
+    ]
+  },
+  "gay": {
+    "plainMeaning": "同性戀的；常指男同性戀者，也可依語境作較廣義描述；舊義：快樂的、鮮豔的",
+    "usageNote": "原義保留。現代身分語境與文學中的舊義須分開；不可把 gay 當成『不好』的評語。",
+    "examples": [
+      {
+        "text": "The student group welcomes gay students and anyone else who wants to build a more inclusive campus.",
+        "translationZh": "這個學生團體歡迎同性戀學生，以及任何希望建立更包容校園的人。",
+        "source": "self-authored",
+        "grammar": "anyone + who 關係子句；more 比較級",
+        "writingTip": "用具體參與方式說明包容，讓主張連結到行動。",
+        "topic": "校園與社群"
+      },
+      {
+        "text": "When reading an older novel, students should check whether gay describes happiness or sexual identity.",
+        "translationZh": "閱讀較舊的小說時，學生應確認 gay 是在描述快樂，還是在描述性身分。",
+        "source": "self-authored",
+        "grammar": "when + V-ing 省略子句；whether…or…",
+        "writingTip": "語詞解讀應考慮年代與上下文，不能只套用今日最常見字義。",
+        "topic": "語域與閱讀"
+      }
+    ],
+    "collocations": [
+      [
+        "gay students",
+        "同性戀學生",
+        "依對象偏好的稱呼使用。"
+      ],
+      [
+        "gay rights",
+        "同性戀者的權利",
+        "rights 通常為複數。"
+      ],
+      [
+        "a gay couple",
+        "一對同性伴侶",
+        "表示伴侶組合；語境常指男性。"
+      ],
+      [
+        "gay and cheerful",
+        "快樂而愉悅的",
+        "較舊語域，通常需年代語境。"
+      ]
+    ]
+  },
+  "medium": {
+    "plainMeaning": "中等的；名詞：媒介、傳播工具或材料；烹調：中等熟度",
+    "usageNote": "media 常作 medium『媒介』的複數；a medium for 表達『用來……的媒介』。熟度用法依食物與店家標準，不代表固定百分比。",
+    "examples": [
+      {
+        "text": "The school uses video as a medium for teaching students how to recognize misleading messages.",
+        "translationZh": "學校用影片作為教學媒介，教學生辨識誤導訊息。",
+        "source": "self-authored",
+        "grammar": "use A as B；for + V-ing；how to V",
+        "writingTip": "介紹科技工具時，要連結媒介、教學活動與學習目標。",
+        "topic": "媒體素養"
+      },
+      {
+        "text": "Although the company is medium in size, it can test new ideas without waiting for several layers of approval.",
+        "translationZh": "雖然這家公司規模中等，但它可以測試新想法，不必等待層層核准。",
+        "source": "self-authored",
+        "grammar": "although 讓步子句；without + V-ing",
+        "writingTip": "用對比說明規模與組織效率的關係；避免宣稱所有中型公司都如此。",
+        "topic": "工作與創新"
+      }
+    ],
+    "collocations": [
+      [
+        "a medium for communication",
+        "溝通媒介",
+        "for 後接名詞或 V-ing。"
+      ],
+      [
+        "a medium of expression",
+        "表達媒介",
+        "medium 為可數名詞。"
+      ],
+      [
+        "medium in size",
+        "中等大小／規模",
+        "in 引出衡量面向。"
+      ],
+      [
+        "medium heat",
+        "中火",
+        "烹調語境；heat 一般不可數。"
+      ]
+    ]
+  },
+  "dense": {
+    "plainMeaning": "密集的、稠密的；內容難懂的",
+    "usageNote": "dense 是形容詞；densely 是副詞，兩者不能當成同一個句中詞形。",
+    "examples": [
+      {
+        "text": "The dense forest provides shelter for animals during the hottest part of the day.",
+        "translationZh": "這片茂密的森林在一天最熱的時段為動物提供遮蔭與棲身處。",
+        "source": "self-authored",
+        "grammar": "形容詞修飾名詞；during + 時段",
+        "writingTip": "先描寫環境特徵，再說明它對動物的作用。",
+        "topic": "森林與氣候"
+      },
+      {
+        "text": "Although the report is dense, its conclusion can be understood if readers examine the examples carefully.",
+        "translationZh": "雖然這份報告很難讀，但讀者若仔細查看例子，仍能理解它的結論。",
+        "source": "self-authored",
+        "grammar": "although 讓步；if 條件；被動語態",
+        "writingTip": "承認閱讀障礙後，提出具體可行的理解策略。",
+        "topic": "研究與閱讀"
+      }
+    ],
+    "collocations": [
+      [
+        "dense forest",
+        "茂密的森林",
+        "dense 修飾 forest。"
+      ],
+      [
+        "dense population",
+        "密集的人口",
+        "說明所指地區。"
+      ],
+      [
+        "dense fog",
+        "濃霧",
+        "fog 一般為不可數名詞。"
+      ],
+      [
+        "a dense report",
+        "內容密集而難讀的報告",
+        "指資訊或論述複雜，不是紙張厚度。"
+      ]
+    ]
+  },
+  "flake": {
+    "plainMeaning": "薄片、碎片；剝落（動詞）",
+    "usageNote": "snowflake 是雪花的複合詞；標準例句仍需直接示範 flake 的用法。",
+    "examples": [
+      {
+        "text": "A small flake of paint fell from the wall while we were cleaning the classroom.",
+        "translationZh": "我們打掃教室時，一小片油漆從牆上剝落下來。",
+        "source": "self-authored",
+        "grammar": "a flake of + 物質；while 時間子句",
+        "writingTip": "用具體細節描述觀察到的問題。",
+        "topic": "校園維護"
+      },
+      {
+        "text": "Before removing each flake of old paint, the workers checked whether the material could be handled safely.",
+        "translationZh": "移除每一片舊油漆前，工人先確認這種材料能否安全處理。",
+        "source": "self-authored",
+        "grammar": "before + V-ing；whether 名詞子句；被動",
+        "writingTip": "描寫維修流程時，先交代安全檢查再說明動作。",
+        "topic": "環境安全"
+      }
+    ],
+    "collocations": [
+      [
+        "a flake of paint",
+        "一小片油漆",
+        "flake 為可數名詞。"
+      ],
+      [
+        "flakes of ice",
+        "冰的薄片",
+        "複數 flakes。"
+      ],
+      [
+        "corn flakes",
+        "玉米片",
+        "固定食品名稱，通常用複數。"
+      ],
+      [
+        "flake off",
+        "剝落",
+        "動詞片語；可描述表面材料。"
+      ]
+    ]
+  },
+  "imprison(ment)": {
+    "plainMeaning": "imprison：監禁；imprisonment：監禁這件事或刑罰",
+    "usageNote": "保留原合併 ID；imprison 為動詞，imprisonment 為名詞，prison 為監獄。",
+    "examples": [
+      {
+        "text": "If judges imprison people without fair trials, public trust in the legal system may decline.",
+        "translationZh": "如果法官未經公平審判就監禁人民，大眾對司法制度的信任可能下降。",
+        "source": "self-authored",
+        "grammar": "if 條件；may 表可能後果",
+        "writingTip": "用條件與可能結果討論制度風險，避免過度絕對化。",
+        "topic": "法治與公民"
+      },
+      {
+        "text": "The novel explores how imprisonment affects a family whose members must learn to support one another.",
+        "translationZh": "這部小說探討監禁如何影響一個必須學會彼此支持的家庭。",
+        "source": "self-authored",
+        "grammar": "how 名詞子句；whose 關係子句",
+        "writingTip": "文學分析可從個人遭遇連結到家庭與社會影響。",
+        "topic": "閱讀與家庭"
+      }
+    ],
+    "collocations": [
+      [
+        "imprison someone",
+        "監禁某人",
+        "直接接受詞。"
+      ],
+      [
+        "be imprisoned for",
+        "因……被監禁",
+        "for 後說明事由，內容仍須符合語境。"
+      ],
+      [
+        "a term of imprisonment",
+        "一段監禁刑期",
+        "term 指期間。"
+      ],
+      [
+        "life imprisonment",
+        "無期徒刑",
+        "法律制度的具體適用須查明地區。"
+      ]
+    ]
+  },
+  "liner": {
+    "plainMeaning": "定期航線上的大型客輪；襯裡或內襯材料",
+    "usageNote": "liner 有船隻與內襯等義；eyeliner 是另一個複合詞，不作 liner 本身的標準示範。",
+    "examples": [
+      {
+        "text": "The passenger liner offers travelers a place to rest during the long journey between ports.",
+        "translationZh": "這艘定期客輪讓旅客在港口之間的長途航程中有地方休息。",
+        "source": "self-authored",
+        "grammar": "offer + 人 + 物；不定詞修飾 place",
+        "writingTip": "旅行描寫可連結交通工具與旅客需求。",
+        "topic": "交通與旅行"
+      },
+      {
+        "text": "A reusable liner placed inside the container keeps it clean without adding another disposable plastic bag.",
+        "translationZh": "放在容器內的可重複使用內襯，可以保持容器清潔，而不用再加一個拋棄式塑膠袋。",
+        "source": "self-authored",
+        "grammar": "placed 分詞修飾 liner；without + V-ing",
+        "writingTip": "先說明物品放在哪裡，再交代它如何減少一次性用品。",
+        "topic": "永續生活"
+      }
+    ],
+    "collocations": [
+      [
+        "a passenger liner",
+        "定期航線客輪",
+        "passenger 說明用途。"
+      ],
+      [
+        "an ocean liner",
+        "遠洋定期客輪",
+        "與泛指觀光航程的 cruise ship 用法不同。"
+      ],
+      [
+        "a reusable liner",
+        "可重複使用的內襯",
+        "說明使用材質與用途更清楚。"
+      ],
+      [
+        "a container liner",
+        "容器內襯",
+        "container 作名詞修飾語。"
+      ]
+    ]
+  },
+  "literal": {
+    "plainMeaning": "字面的；按文字表面意思的",
+    "usageNote": "literal 是形容詞；literally 是副詞。literal meaning 與 figurative meaning（比喻義）相對。",
+    "examples": [
+      {
+        "text": "The literal meaning of the sign is clear, but visitors may still need directions to the entrance.",
+        "translationZh": "告示的字面意思很清楚，但訪客可能仍需要前往入口的指引。",
+        "source": "self-authored",
+        "grammar": "but 對比；may 表可能需求",
+        "writingTip": "區分資訊寫得清楚與使用者真正能採取行動。",
+        "topic": "公共資訊"
+      },
+      {
+        "text": "Readers who take every expression in the poem as literal may miss the feelings suggested by its images.",
+        "translationZh": "把詩中每個表達都當成字面意思的讀者，可能會錯過意象所暗示的情感。",
+        "source": "self-authored",
+        "grammar": "who 關係子句；suggested 分詞修飾",
+        "writingTip": "分析文本時，區分字面敘述與意象的情感作用。",
+        "topic": "文學閱讀"
+      }
+    ],
+    "collocations": [
+      [
+        "literal meaning",
+        "字面意思",
+        "形容詞修飾名詞。"
+      ],
+      [
+        "a literal translation",
+        "直譯",
+        "未必自然，需要檢查語境。"
+      ],
+      [
+        "a literal interpretation",
+        "字面解讀",
+        "interpretation 指解讀方式。"
+      ],
+      [
+        "take something as literal",
+        "把某事理解為字面意思",
+        "此處 take 表理解。"
+      ]
+    ]
+  },
+  "prosper": {
+    "plainMeaning": "興旺、繁榮；發展順利",
+    "usageNote": "prosper 為不及物動詞，通常不直接接受詞；prosperous 是形容詞。",
+    "examples": [
+      {
+        "text": "Small shops can prosper when residents choose to buy useful products from local businesses.",
+        "translationZh": "居民選擇向在地商家購買實用商品時，小店就有機會蓬勃發展。",
+        "source": "self-authored",
+        "grammar": "can 表可能；when 時間／條件語境",
+        "writingTip": "從消費行動連結到在地經濟，而不保證任何單一方案必然成功。",
+        "topic": "在地經濟"
+      },
+      {
+        "text": "For a community to prosper, economic growth should be accompanied by fair access to education and healthcare.",
+        "translationZh": "社區若要繁榮，經濟成長應伴隨公平取得教育與醫療的機會。",
+        "source": "self-authored",
+        "grammar": "for + 主詞 + to V；被動語態",
+        "writingTip": "把繁榮的條件寫具體，納入成長之外的公共服務。",
+        "topic": "社會與福祉"
+      }
+    ],
+    "collocations": [
+      [
+        "prosper economically",
+        "在經濟上繁榮",
+        "副詞修飾動詞。"
+      ],
+      [
+        "prosper in a changing market",
+        "在變動的市場中發展順利",
+        "in 後接環境。"
+      ],
+      [
+        "help a community prosper",
+        "幫助社區繁榮",
+        "help + 受詞 + 原形動詞。"
+      ],
+      [
+        "continue to prosper",
+        "持續繁榮",
+        "continue to + 原形動詞。"
+      ]
+    ]
+  },
+  "simultaneous": {
+    "plainMeaning": "同時發生的、同步進行的",
+    "usageNote": "simultaneous 是形容詞；simultaneously 是副詞。是否同步需交代比較的事件。",
+    "examples": [
+      {
+        "text": "The simultaneous arrival of several buses made the station crowded for a few minutes.",
+        "translationZh": "幾輛公車同時抵達，讓車站短暫變得擁擠。",
+        "source": "self-authored",
+        "grammar": "名詞主詞；make + 受詞 + 形容詞",
+        "writingTip": "用事件發生的時間關係解釋具體影響。",
+        "topic": "都市交通"
+      },
+      {
+        "text": "By comparing simultaneous measurements from different locations, students can investigate how conditions vary across a city.",
+        "translationZh": "比較不同地點同時測得的數值，學生就能研究城市各處的狀況如何不同。",
+        "source": "self-authored",
+        "grammar": "by + V-ing；how 名詞子句",
+        "writingTip": "研究設計先控制時間，再比較地點，以減少比較上的混淆。",
+        "topic": "科學與環境"
+      }
+    ],
+    "collocations": [
+      [
+        "simultaneous events",
+        "同時發生的事件",
+        "形容詞修飾複數名詞。"
+      ],
+      [
+        "simultaneous measurements",
+        "同時測得的數值",
+        "需說明地點與測量方法。"
+      ],
+      [
+        "simultaneous arrival",
+        "同時抵達",
+        "arrival 為名詞。"
+      ],
+      [
+        "simultaneous interpretation",
+        "同步口譯",
+        "固定專業用語。"
+      ]
+    ]
+  }
+}

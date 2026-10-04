@@ -1,0 +1,4 @@
+# Preserve upstream runtime bytes and their recorded hashes.
+assets/vendor/kokoro/kokoro.bundle.mjs -whitespace
+assets/vendor/kokoro/ort-wasm-simd-threaded.jsep.mjs -whitespace
+*.wasm binary
