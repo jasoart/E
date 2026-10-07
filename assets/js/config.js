@@ -7,6 +7,17 @@ const SEARCH_FEEDBACK_KEY = "gsat-v2-search-feedback-v1";
 const PRACTICE_KEY = "gsat-v2-collocation-practice-v1";
 const RECENT_SEARCH_KEY = "gsat-v3-recent-searches-v1";
 const REVIEW_KEY = "gsat-v3-review-queue-v1";
+const PRONUNCIATION_CONFIG = Object.freeze({
+  dictionaryEndpoint: "https://api.dictionaryapi.dev/api/v2/entries/en/",
+  audioHosts: Object.freeze(["api.dictionaryapi.dev", "upload.wikimedia.org"]),
+  lookupTimeoutMs: 3500,
+  audioStartTimeoutMs: 5000,
+  audioEndTimeoutMs: 18000,
+  voiceWaitMs: 1200,
+  speechTimeoutMs: 30000,
+  maxTextLength: 600,
+  cacheSize: 128
+});
 const CURRENT_EXAM_MODEL = Object.freeze({
   version:"GSAT V6 · 111–115 真題＋自編情境",
   effectiveFrom:"111–115 真題語料＋現行詞表",

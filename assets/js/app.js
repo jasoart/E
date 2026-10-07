@@ -13,6 +13,7 @@ searchSuggestions.addEventListener("click",event=>acceptSuggestion(event.target.
 document.addEventListener("click",event=>{if(!event.target.closest(".search-wrap"))hideSuggestions()});
 clearSearch.addEventListener("click",()=>{searchInput.value="";state.query="";clearSearch.hidden=true;searchKey.hidden=false;applyFilters();searchInput.focus();renderSuggestions()});
 byId("allTab").addEventListener("click",()=>setListMode("all"));
+if(byId("notebookTab"))byId("notebookTab").addEventListener("click",()=>setListMode("notebook"));
 byId("examTab").addEventListener("click",()=>setListMode("exam"));
 byId("collocationTab").addEventListener("click",()=>setListMode("collocations"));
 byId("reviewTab").addEventListener("click",()=>setListMode("review"));
@@ -22,15 +23,27 @@ document.addEventListener("keydown",event=>{if((event.key==="k"||event.key==="K"
 byId("commandButton").addEventListener("click",()=>{searchInput.focus();renderSuggestions()});
 if("speechSynthesis" in window)window.speechSynthesis.getVoices();
 
-buildLevelFilters();buildCategoryFilters();buildExamYearFilters();byId("totalCount").textContent=VOCABULARY.length.toLocaleString();byId("collocationCount").textContent=GSAT_COLLOCATION_GUIDE.length.toLocaleString();byId("collocationTabCount").textContent=GSAT_COLLOCATION_GUIDE.length.toLocaleString();const examCount=GSAT_EXAM_COLLOCATIONS.length;byId("examPointCount").textContent=examCount.toLocaleString();byId("examTabCount").textContent=examCount.toLocaleString();updateReviewCount();
+const officialWordCount=typeof GSAT_OFFICIAL_VOCABULARY_COUNT==="number"?GSAT_OFFICIAL_VOCABULARY_COUNT:VOCABULARY.length;
+buildLevelFilters();buildCategoryFilters();buildExamYearFilters();byId("totalCount").textContent=officialWordCount.toLocaleString();byId("collocationCount").textContent=GSAT_COLLOCATION_GUIDE.length.toLocaleString();byId("collocationTabCount").textContent=GSAT_COLLOCATION_GUIDE.length.toLocaleString();const examCount=GSAT_EXAM_COLLOCATIONS.length;byId("examPointCount").textContent=examCount.toLocaleString();byId("examTabCount").textContent=examCount.toLocaleString();updateReviewCount();
 state.selectedIndex=Math.max(0,VOCABULARY.findIndex(entry=>entry.word==="challenge"));
 applyFilters();selectEntry(state.selectedIndex);setupDaily();
 
 setupFavoriteBackup();setTimeout(warmSearchIndex,100);
 const builtinStats=builtinStudyStats();
+const notebookCounts=typeof notebookStats==="function"?notebookStats():{words:0,examples:0,collocations:0,supplemental:Math.max(0,VOCABULARY.length-officialWordCount)};
 for(const [id,value] of [["builtinWordCount",builtinStats.words],["builtinExampleCount",builtinStats.examples],["builtinCollocationCount",builtinStats.collocations]])if(byId(id))byId(id).textContent=value.toLocaleString();
-if(byId("headerDataCount"))byId("headerDataCount").textContent=`${VOCABULARY.length.toLocaleString()} 詞條 · ${builtinStats.examples.toLocaleString()} 內建例句 · ${builtinStats.collocations.toLocaleString()} 內建搭配`;
-document.addEventListener("localvoicestatus",event=>{const host=byId("audioStatus");if(host)host.textContent=event.detail.message;});
+for(const [id,value] of [["supplementalCount",notebookCounts.supplemental],["notebookWordCount",notebookCounts.words],["notebookTabCount",notebookCounts.listedWords??notebookCounts.words],["notebookCollocationCount",notebookCounts.collocations]])if(byId(id))byId(id).textContent=Number(value||0).toLocaleString();
+if(byId("headerDataCount"))byId("headerDataCount").textContent=`${officialWordCount.toLocaleString()} 官方詞條 · ${notebookCounts.supplemental.toLocaleString()} 補充詞 · ${builtinStats.examples.toLocaleString()} 內建例句 · ${builtinStats.collocations.toLocaleString()} 內建搭配`;
+document.addEventListener("localvoicestatus",event=>{
+  const status=event.detail,host=byId("audioStatus"),sourceLink=byId("audioSourceLink");
+  if(host){host.textContent=status.message;host.dataset.source=status.source||"none";}
+  if(sourceLink){
+    const url=status.source==="dictionary"?safePronunciationSourceUrl(status.sourceUrl):"";
+    sourceLink.hidden=!url;
+    if(url){sourceLink.href=url;sourceLink.textContent=`錄音出處${status.licenseName?" · "+status.licenseName:""}`;}
+    else sourceLink.removeAttribute("href");
+  }
+});
 byId("bootStatus").hidden=true;
 
 setupDiagnostics();

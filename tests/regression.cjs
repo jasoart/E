@@ -2,7 +2,7 @@
 // Run: node --test tests/regression.cjs (Node 20+). No third-party packages.
 const {test}=require('node:test'),assert=require('node:assert/strict'),fs=require('node:fs'),path=require('node:path'),vm=require('node:vm');
 const root=path.resolve(__dirname,'..');
-const files=['js/config.js','data/vocabulary.js','data/collocations.js','data/learning.js','data/builtin-study.js','js/state.js','js/builtin.js','js/search.js','js/examples.js','js/audio.js','js/ui.js','js/diagnostics.js','js/favorites.js','js/online.js'];
+const files=['js/config.js','data/vocabulary.js','data/collocations.js','data/learning.js','data/builtin-study.js','js/exam-notes.js','js/state.js','js/builtin.js','js/search.js','js/examples.js','js/audio.js','js/ui.js','js/diagnostics.js','js/favorites.js','js/online.js'];
 const pause=ms=>new Promise(r=>setTimeout(r,ms));
 function element(){const classes=new Set();return {textContent:'',innerHTML:'',hidden:false,value:'',dataset:{},style:{},children:[],isConnected:true,disabled:false,addEventListener(){},setAttribute(){},querySelectorAll(){return []},querySelector(){return element()},appendChild(el){this.children.push(el)},scrollTo(){},scrollIntoView(){},focus(){},blur(){},select(){},remove(){},canPlayType(){return 'probably'},classList:{add:x=>classes.add(x),remove:x=>classes.delete(x),contains:x=>classes.has(x),toggle(x,on){const flag=on??!classes.has(x);flag?classes.add(x):classes.delete(x);return flag}}};}
 function environment({fetch,stored={},indexedDB}={}){

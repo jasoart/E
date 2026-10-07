@@ -11,7 +11,7 @@ function environment(){
     {text:'Finding enough clean water is a serious challenge for many families.',translationZh:'取得足夠的乾淨水對許多家庭而言是重大挑戰。',source:'self-authored',grammar:'V-ing 作主詞。',writingTip:'寫出具體問題與受影響者。'}],collocations:[['take on a challenge','接受挑戰','常搭配 take on。']]};
   const context={console,URL,URLSearchParams,setTimeout,clearTimeout,performance,innerWidth:1280,matchMedia:()=>({matches:false}),navigator:{},BUILTIN_STUDY_DATA:{version:'fixture',entries:{challenge:study}},localStorage:{getItem:key=>data.get(key)||null,setItem(key,value){writes.push(key);data.set(key,value)}},document:{getElementById:get,querySelectorAll:()=>[],addEventListener(){},activeElement:{tagName:'BODY'}},fetch(){requests++;throw Error('Unexpected request')},stopPronunciation(){stops++},localVoiceStatus:()=>({message:'裝置本機英文語音'}),speakWord(){},speakSentence(){},loadLocalVoice(){}};
   context.window=context;vm.createContext(context);
-  for(const file of ['js/config.js','data/vocabulary.js','data/collocations.js','data/learning.js','js/state.js','js/builtin.js','js/search.js','js/examples.js','js/ui.js','js/favorites.js','js/online.js'])vm.runInContext(fs.readFileSync(path.join(root,'assets',file),'utf8'),context,{filename:file});
+  for(const file of ['js/config.js','data/vocabulary.js','data/collocations.js','data/learning.js','js/exam-notes.js','js/state.js','js/builtin.js','js/search.js','js/examples.js','js/ui.js','js/favorites.js','js/online.js'])vm.runInContext(fs.readFileSync(path.join(root,'assets',file),'utf8'),context,{filename:file});
   const run=code=>vm.runInContext(code,context);
   run('state.selectedIndex=VOCABULARY.findIndex(entry=>entry.word==="challenge");');
   return {get,run,data,writes,context,get requests(){return requests},get stops(){return stops}};
@@ -38,7 +38,7 @@ test('Unicode headwords, dotted times and malformed legacy neither ID mask corre
 });
 test('irregular verbs and adjective comparison keep exact words rather than derived word families',()=>{
   const e=environment();
-  for(const [word,partOfSpeech,text,answer] of [['become','v.','She became a professional dancer after years of training.','became'],['easy','adj.','This test was easier than I expected.','easier'],['fisherman','n.','Fishermen leave before dawn and return in the afternoon.','Fishermen']]){
+  for(const [word,partOfSpeech,text,answer] of [['become','v.','She became a professional dancer after years of training.','became'],['mean','v.','The unexpected delay meant that we had to change our plans.','meant'],['easy','adj.','This test was easier than I expected.','easier'],['fisherman','n.','Fishermen leave before dawn and return in the afternoon.','Fishermen']]){
     e.context.caseData={word,partOfSpeech,text};assert.equal(e.run('builtinClozeQuestion(caseData,{text:caseData.text}).answer'),answer);
   }
   assert.equal(e.run('builtinClozeQuestion({word:"diversity",partOfSpeech:"n."},{text:"Biodiversity is essential for a healthy ecosystem."})'),null);
@@ -51,8 +51,19 @@ test('wrong answer requires correction and retry; progress never changes old fav
   assert.match(e.get('builtinClozeFeedback').textContent,/答案是 challenge/);
   e.get('builtinClozeRetry').emit();assert.equal(e.get('builtinClozeInput').value,'');assert.equal(e.get('builtinClozeCheck').disabled,false);
   e.get('builtinClozeInput').value='CHALLENGE';e.get('builtinClozeCheck').emit();assert.equal(e.get('builtinClozeFeedback').dataset.correct,'true');assert.equal(e.get('builtinClozeNext').hidden,false);
-  const saved=JSON.parse(e.data.get('gsat-builtin-retrieval-v1'));assert.equal(saved['challenge::0'].attempts,2);assert.equal(saved['challenge::0'].needsRetry,false);
+  const saved=JSON.parse(e.data.get('gsat-builtin-retrieval-v1')),key=e.run('builtinPracticeId(VOCABULARY[state.selectedIndex],0)');assert.equal(saved[key].attempts,2);assert.equal(saved[key].needsRetry,false);
   assert.equal(e.data.get('gsat-standalone-favorites-v1'),favorite);assert.equal(e.data.get('gsat-v3-review-queue-v1'),review);assert.deepEqual([...new Set(e.writes)],['gsat-builtin-retrieval-v1']);
+});
+test('replacement sentences use distinct practice IDs and retain prior indexed progress',()=>{
+  const e=environment();e.data.set('gsat-builtin-retrieval-v1',JSON.stringify({'challenge::0':{attempts:7,correct:5,needsRetry:false}}));
+  const first=e.run('builtinPracticeId(VOCABULARY[state.selectedIndex],0)');
+  e.run('saveBuiltinAttempt(VOCABULARY[state.selectedIndex],0,true)');
+  e.context.BUILTIN_STUDY_DATA.entries.challenge.examples[0].text='The challenge taught us to cooperate when our plans suddenly changed.';
+  const replacement=e.run('builtinPracticeId(VOCABULARY[state.selectedIndex],0)');assert.notEqual(replacement,first);
+  e.run('saveBuiltinAttempt(VOCABULARY[state.selectedIndex],0,false)');
+  const saved=JSON.parse(e.data.get('gsat-builtin-retrieval-v1'));
+  assert.equal(saved['challenge::0'].attempts,7);assert.equal(saved[first].correct,1);assert.equal(saved[replacement].correct,0);
+  assert.equal(e.data.get('gsat-standalone-favorites-v1'),'["challenge","legacy"]');
 });
 test('new meaning, uploaded meaning, examples and bilingual collocations enter local search',()=>{
   const e=environment();const fields=e.run('searchFields(VOCABULARY[state.selectedIndex])');assert.match(fields.meaning,/艱鉅工作/);assert.match(fields.pattern,/take on a challenge/);assert.match(fields.notes,/取得足夠的乾淨水/);

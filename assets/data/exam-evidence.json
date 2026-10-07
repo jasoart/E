@@ -1,0 +1,2841 @@
+{
+  "schemaVersion": 1,
+  "title": "111–115 學測英文上傳試卷短引文核對集",
+  "descriptionZh": "各條保留可逐頁核對的原文搭配與短引文；中文義與 headword 是教學索引。題組中出現不等於該題正式考點，選項出現不等於官方答案。",
+  "verification": {
+    "method": "pdftotext -layout; normalize whitespace only; case-insensitive pattern containment; page-level excerpt containment; SHA-256 source identity",
+    "officialAnswerKeysIncluded": false,
+    "checkedAgainstUploadedPdfs": true,
+    "entryCount": 127
+  },
+  "sources": [
+    {
+      "year": 111,
+      "sha256": "5877adb44710601bd1e9580e063d00f702acd7229a0fa97425290fe90044c358",
+      "pdf_pages": 12,
+      "fileName": "02-111學測英文試卷.pdf"
+    },
+    {
+      "year": 112,
+      "sha256": "79f8f0a5822b9fbdc424cccbf88fdff124c80b9cf0bd8a56913901cd1bb0f741",
+      "pdf_pages": 12,
+      "fileName": "02-112學測英文試卷 下午9.28.48.pdf"
+    },
+    {
+      "year": 113,
+      "sha256": "09d35c2ed8561e0845dbbe305e12f5342b27f209fb44d801ff7f9f1f9e519ecf",
+      "pdf_pages": 12,
+      "fileName": "02-113學測英文科定稿 下午9.28.48.pdf"
+    },
+    {
+      "year": 114,
+      "sha256": "51c8d9f7c2715adf74cae808bde4906cfadee19d0ec379df3b33881c35960a78",
+      "pdf_pages": 12,
+      "fileName": "02-114學測英文試題 下午9.28.48.pdf"
+    },
+    {
+      "year": 115,
+      "sha256": "e5a644f0133482a86f0befb3dfd9aaa2161be2685a00620950581db7ad6bc3f2",
+      "pdf_pages": 12,
+      "fileName": "02-115學測英文試卷 下午9.28.48.pdf"
+    }
+  ],
+  "verifiedClaims": [
+    {
+      "id": "115-q1-tight-schedule",
+      "year": 115,
+      "pdfPage": 2,
+      "printedPage": 1,
+      "questionLabel": "第 1 題",
+      "pattern": "tight schedule",
+      "status": "context-supported-not-official-answer",
+      "evidence": [
+        {
+          "sourceKind": "stem",
+          "text": "The mayor has such a ______ schedule that it takes weeks to arrange an interview with her."
+        },
+        {
+          "sourceKind": "option",
+          "text": "(B) tight"
+        }
+      ],
+      "explanationZh": "題幹空格修飾 schedule，選項 B 是 tight；tight schedule 是合理的搭配解讀。試題 PDF 未附答案，不標成已核對官方答案。"
+    },
+    {
+      "id": "115-q9-elbow",
+      "year": 115,
+      "pdfPage": 2,
+      "printedPage": 1,
+      "questionLabel": "第 9 題",
+      "pattern": "elbow my way through the crowd",
+      "status": "context-supported-not-official-answer",
+      "evidence": [
+        {
+          "sourceKind": "stem",
+          "text": "There were so many people at the bus station that I had to ______ my way through the crowd to board the bus in time."
+        },
+        {
+          "sourceKind": "option",
+          "text": "(C) elbow"
+        }
+      ],
+      "explanationZh": "had to 後需接原形動詞，elbow 是選項 C；elbow one’s way through 表示用手肘擠過人群。此完成片語是教學解讀，不是試卷原文完整句或已核對官方答案。"
+    },
+    {
+      "id": "115-q15-responsive-to",
+      "year": 115,
+      "pdfPage": 3,
+      "printedPage": 2,
+      "questionLabel": "第 15 題",
+      "pattern": "responsive to",
+      "status": "option-text-confirmed",
+      "evidence": [
+        {
+          "sourceKind": "option",
+          "text": "(A) responsive to"
+        },
+        {
+          "sourceKind": "passage",
+          "text": "The males sniff it for longer duration and come back to the same spot more frequently, a clear sign that they are gathering information about mating opportunities from the poop."
+        }
+      ],
+      "explanationZh": "選項 A 原文為 responsive to；文章描述雄性犀牛對氣味作出反應，可作為形容詞＋介系詞的搭配練習。"
+    },
+    {
+      "id": "115-q36-exacerbate-idiom",
+      "year": 115,
+      "pdfPage": 6,
+      "printedPage": 5,
+      "questionLabel": "第 36 題",
+      "pattern": "exacerbated the situation / Added fuel to the fire",
+      "status": "question-and-option-text-confirmed",
+      "evidence": [
+        {
+          "sourceKind": "passage",
+          "text": "Freezing water rushed in and exacerbated the situation."
+        },
+        {
+          "sourceKind": "stem",
+          "text": "Which of the following idioms is closest in meaning to “exacerbated the situation” in the third paragraph?"
+        },
+        {
+          "sourceKind": "option",
+          "text": "(D) Added fuel to the fire."
+        }
+      ],
+      "explanationZh": "題目確實要求找意思相近的慣用語，D 選項為 Added fuel to the fire。exacerbate 使惡化與 add fuel to the fire 火上加油的語意連結是本站教學解讀。"
+    },
+    {
+      "id": "115-q47-48-word-form",
+      "year": 115,
+      "pdfPage": 11,
+      "printedPage": 10,
+      "questionLabel": "第 47–48 題",
+      "status": "instruction-text-confirmed",
+      "evidence": [
+        {
+          "sourceKind": "instruction",
+          "text": "並視句型結構需要做適當的字形變化，使句子語意完整、語法正確，並符合全文文意。每格 限填一個單詞（word）。"
+        }
+      ],
+      "explanationZh": "作答說明確實要求依句型調整字形，支持將詞性與衍生字納入筆記；這項要求也見於先前年份，不能據此宣稱只有 115 年才開始。"
+    },
+    {
+      "id": "115-writing-pets",
+      "year": 115,
+      "pdfPage": 12,
+      "printedPage": 11,
+      "questionLabel": "英文作文",
+      "status": "writing-prompt-confirmed",
+      "evidence": [
+        {
+          "sourceKind": "instruction",
+          "text": "近年來養寵物的風氣在臺灣日漸普遍，而寵物在人們生活中的角色也與過去不同。"
+        },
+        {
+          "sourceKind": "instruction",
+          "text": "第一段描述這些圖片中所呈現的現象； 第二段則根據你自身的經驗或觀察，說明此現象的原因以及可能的影響。"
+        }
+      ],
+      "explanationZh": "題目要求依圖片說明養寵物現象，並分析原因及影響。Pets have become an integral part of modern families. 是示範自編句，未出現在這份試卷；companionship 也不是這份試卷的原文字。"
+    }
+  ],
+  "records": [
+    {
+      "headwords": [
+        "feel"
+      ],
+      "location": "第 1 題／詞彙題",
+      "role": "stem",
+      "filename": "02-111學測英文試卷.pdf",
+      "id": "gsat-111-001",
+      "headword": "feel",
+      "pattern": "feel like cooking",
+      "meaningZh": "想做飯",
+      "year": 111,
+      "pdfPage": 2,
+      "printedPage": 1,
+      "questionLabel": "第 1 題",
+      "section": "詞彙題",
+      "sourceKind": "stem",
+      "excerpt": "When Jeffery doesn’t feel like cooking, he often orders pizza online and has it ______ to his house.",
+      "interpretation": "teaching-gloss",
+      "officialAnswerVerified": false
+    },
+    {
+      "headwords": [
+        "effect"
+      ],
+      "location": "第 4 題／詞彙題",
+      "role": "stem",
+      "filename": "02-111學測英文試卷.pdf",
+      "id": "gsat-111-002",
+      "headword": "effect",
+      "pattern": "fatal side effects",
+      "meaningZh": "致命副作用",
+      "year": 111,
+      "pdfPage": 2,
+      "printedPage": 1,
+      "questionLabel": "第 4 題",
+      "section": "詞彙題",
+      "sourceKind": "stem",
+      "excerpt": "The new vaccine was banned by the Food and Drug Administration due to its fatal side effects.",
+      "interpretation": "teaching-gloss",
+      "officialAnswerVerified": false
+    },
+    {
+      "headwords": [
+        "agreeable"
+      ],
+      "location": "第 6 題／詞彙題",
+      "role": "stem",
+      "filename": "02-111學測英文試卷.pdf",
+      "id": "gsat-111-003",
+      "headword": "agreeable",
+      "pattern": "easy to get along with",
+      "meaningZh": "容易相處",
+      "year": 111,
+      "pdfPage": 2,
+      "printedPage": 1,
+      "questionLabel": "第 6 題",
+      "section": "詞彙題",
+      "sourceKind": "stem",
+      "excerpt": "An ______ person is usually pleasant and easy to get along with, but don’t expect that he or she will always say “yes” to everything.",
+      "interpretation": "teaching-gloss",
+      "officialAnswerVerified": false
+    },
+    {
+      "headwords": [
+        "sustainable"
+      ],
+      "location": "第 11–15 題／綜合測驗",
+      "role": "passage",
+      "filename": "02-111學測英文試卷.pdf",
+      "id": "gsat-111-004",
+      "headword": "sustainable",
+      "pattern": "sustainable rural development",
+      "meaningZh": "永續農村發展",
+      "year": 111,
+      "pdfPage": 2,
+      "printedPage": 1,
+      "questionLabel": "第 11–15 題題組",
+      "section": "綜合測驗",
+      "sourceKind": "passage",
+      "excerpt": "Following him, many local people opened their own bookshops, and the small town soon became a model of sustainable rural development and tourism.",
+      "interpretation": "teaching-gloss",
+      "officialAnswerVerified": false
+    },
+    {
+      "headwords": [
+        "complement"
+      ],
+      "location": "第 11–15 題／綜合測驗",
+      "role": "passage",
+      "filename": "02-111學測英文試卷.pdf",
+      "id": "gsat-111-005",
+      "headword": "complement",
+      "pattern": "a complement to technology",
+      "meaningZh": "科技的補充",
+      "year": 111,
+      "pdfPage": 3,
+      "printedPage": 2,
+      "questionLabel": "第 11–15 題題組",
+      "section": "綜合測驗",
+      "sourceKind": "passage",
+      "excerpt": "The feel of a book, the smell, the weight, and the knowledge that a particular book might be more than a hundred years old—all these highlight the importance of preserving the physical book as a complement to technology.",
+      "interpretation": "teaching-gloss",
+      "officialAnswerVerified": false
+    },
+    {
+      "headwords": [
+        "subject"
+      ],
+      "location": "第 16–20 題／綜合測驗",
+      "role": "passage",
+      "filename": "02-111學測英文試卷.pdf",
+      "id": "gsat-111-006",
+      "headword": "subject",
+      "pattern": "subjected to repeated pressurization",
+      "meaningZh": "承受反覆加壓",
+      "year": 111,
+      "pdfPage": 3,
+      "printedPage": 2,
+      "questionLabel": "第 16–20 題題組",
+      "section": "綜合測驗",
+      "sourceKind": "passage",
+      "excerpt": "When subjected to repeated pressurization high in the sky, the four corners on a square window may 19 .",
+      "interpretation": "teaching-gloss",
+      "officialAnswerVerified": false
+    },
+    {
+      "headwords": [
+        "likelihood"
+      ],
+      "location": "第 16–20 題／綜合測驗",
+      "role": "passage",
+      "filename": "02-111學測英文試卷.pdf",
+      "id": "gsat-111-007",
+      "headword": "likelihood",
+      "pattern": "reducing the likelihood of cracks or breaks",
+      "meaningZh": "降低龜裂或破裂的可能性",
+      "year": 111,
+      "pdfPage": 3,
+      "printedPage": 2,
+      "questionLabel": "第 16–20 題題組",
+      "section": "綜合測驗",
+      "sourceKind": "passage",
+      "excerpt": "Curved windows, on the other hand, distribute stress around more evenly, reducing the likelihood of cracks or breaks.",
+      "interpretation": "teaching-gloss",
+      "officialAnswerVerified": false
+    },
+    {
+      "headwords": [
+        "mistake"
+      ],
+      "location": "第 21–30 題／文意選填",
+      "role": "passage",
+      "filename": "02-111學測英文試卷.pdf",
+      "id": "gsat-111-008",
+      "headword": "mistake",
+      "pattern": "learn from their own mistakes",
+      "meaningZh": "從自己的錯誤學習",
+      "year": 111,
+      "pdfPage": 4,
+      "printedPage": 3,
+      "questionLabel": "第 21–30 題題組",
+      "section": "文意選填",
+      "sourceKind": "passage",
+      "excerpt": "They had to learn from their own mistakes, which 25 some their lives, and almost all suffered light or severe injuries.",
+      "interpretation": "teaching-gloss",
+      "officialAnswerVerified": false
+    },
+    {
+      "headwords": [
+        "demand"
+      ],
+      "location": "第 21–30 題／文意選填",
+      "role": "passage",
+      "filename": "02-111學測英文試卷.pdf",
+      "id": "gsat-111-009",
+      "headword": "demand",
+      "pattern": "a demand for the realism",
+      "meaningZh": "對真實感的需求",
+      "year": 111,
+      "pdfPage": 4,
+      "printedPage": 3,
+      "questionLabel": "第 21–30 題題組",
+      "section": "文意選填",
+      "sourceKind": "passage",
+      "excerpt": "However, CGI has difficulties of its own, and there will always be a demand for the realism and thrilling 30 of an actual stunt.",
+      "interpretation": "teaching-gloss",
+      "officialAnswerVerified": false
+    },
+    {
+      "headwords": [
+        "die"
+      ],
+      "location": "第 21–30 題／文意選填",
+      "role": "passage",
+      "filename": "02-111學測英文試卷.pdf",
+      "id": "gsat-111-010",
+      "headword": "die",
+      "pattern": "dying off",
+      "meaningZh": "逐漸消失",
+      "year": 111,
+      "pdfPage": 4,
+      "printedPage": 3,
+      "questionLabel": "第 21–30 題題組",
+      "section": "文意選填",
+      "sourceKind": "passage",
+      "excerpt": "So the stunt industry is probably in no immediate danger of dying off.",
+      "interpretation": "teaching-gloss",
+      "officialAnswerVerified": false
+    },
+    {
+      "headwords": [
+        "vary"
+      ],
+      "location": "第 31–34 題／篇章結構",
+      "role": "passage",
+      "filename": "02-111學測英文試卷.pdf",
+      "id": "gsat-111-011",
+      "headword": "vary",
+      "pattern": "varies from region to region",
+      "meaningZh": "因地區而異",
+      "year": 111,
+      "pdfPage": 5,
+      "printedPage": 4,
+      "questionLabel": "第 31–34 題題組",
+      "section": "篇章結構",
+      "sourceKind": "passage",
+      "excerpt": "The style of the dances varies from region to region but is normally based on the rhythms of taiko drums.",
+      "interpretation": "teaching-gloss",
+      "officialAnswerVerified": false
+    },
+    {
+      "headwords": [
+        "symbol"
+      ],
+      "location": "第 31–34 題／篇章結構",
+      "role": "passage",
+      "filename": "02-111學測英文試卷.pdf",
+      "id": "gsat-111-012",
+      "headword": "symbol",
+      "pattern": "a symbol of the summer festival",
+      "meaningZh": "夏日祭典的象徵",
+      "year": 111,
+      "pdfPage": 5,
+      "printedPage": 4,
+      "questionLabel": "第 31–34 題題組",
+      "section": "篇章結構",
+      "sourceKind": "passage",
+      "excerpt": "Originally dedicated to the deceased, the dances have now become a symbol of the summer festival themselves.",
+      "interpretation": "teaching-gloss",
+      "officialAnswerVerified": false
+    },
+    {
+      "headwords": [
+        "dedicate"
+      ],
+      "location": "第 31–34 題／篇章結構",
+      "role": "passage",
+      "filename": "02-111學測英文試卷.pdf",
+      "id": "gsat-111-013",
+      "headword": "dedicate",
+      "pattern": "dedicated to the deceased",
+      "meaningZh": "獻給逝者",
+      "year": 111,
+      "pdfPage": 5,
+      "printedPage": 4,
+      "questionLabel": "第 31–34 題題組",
+      "section": "篇章結構",
+      "sourceKind": "passage",
+      "excerpt": "Originally dedicated to the deceased, the dances have now become a symbol of the summer festival themselves.",
+      "interpretation": "teaching-gloss",
+      "officialAnswerVerified": false
+    },
+    {
+      "headwords": [
+        "retain"
+      ],
+      "location": "第 35–38 題／閱讀測驗",
+      "role": "passage",
+      "filename": "02-111學測英文試卷.pdf",
+      "id": "gsat-111-014",
+      "headword": "retain",
+      "pattern": "retained most of their traditions",
+      "meaningZh": "保留了大部分傳統",
+      "year": 111,
+      "pdfPage": 6,
+      "printedPage": 5,
+      "questionLabel": "第 35–38 題題組",
+      "section": "閱讀測驗",
+      "sourceKind": "passage",
+      "excerpt": "In fact, they are one of the few tribes that have retained most of their traditions.",
+      "interpretation": "teaching-gloss",
+      "officialAnswerVerified": false
+    },
+    {
+      "headwords": [
+        "opt"
+      ],
+      "location": "第 35–38 題／閱讀測驗",
+      "role": "passage",
+      "filename": "02-111學測英文試卷.pdf",
+      "id": "gsat-111-015",
+      "headword": "opt",
+      "pattern": "opt for checked, striped, or patterned pieces of cloth",
+      "meaningZh": "選擇格紋、條紋或花紋布料",
+      "year": 111,
+      "pdfPage": 6,
+      "printedPage": 5,
+      "questionLabel": "第 35–38 題題組",
+      "section": "閱讀測驗",
+      "sourceKind": "passage",
+      "excerpt": "Red is a popular color, and women generally opt for checked, striped, or patterned pieces of cloth.",
+      "interpretation": "teaching-gloss",
+      "officialAnswerVerified": false
+    },
+    {
+      "headwords": [
+        "stand"
+      ],
+      "location": "第 35–38 題／閱讀測驗",
+      "role": "passage",
+      "filename": "02-111學測英文試卷.pdf",
+      "id": "gsat-111-016",
+      "headword": "stand",
+      "pattern": "stands for peace",
+      "meaningZh": "代表和平",
+      "year": 111,
+      "pdfPage": 6,
+      "printedPage": 5,
+      "questionLabel": "第 35–38 題題組",
+      "section": "閱讀測驗",
+      "sourceKind": "passage",
+      "excerpt": "Each color holds a special meaning: White stands for peace, green for land and production, while red—the most favored color among the Maasai—is the symbol of unity and bravery.",
+      "interpretation": "teaching-gloss",
+      "officialAnswerVerified": false
+    },
+    {
+      "headwords": [
+        "impact"
+      ],
+      "location": "第 39–42 題／閱讀測驗",
+      "role": "passage",
+      "filename": "02-111學測英文試卷.pdf",
+      "id": "gsat-111-017",
+      "headword": "impact",
+      "pattern": "reduce impact",
+      "meaningZh": "降低衝擊",
+      "year": 111,
+      "pdfPage": 8,
+      "printedPage": 7,
+      "questionLabel": "第 39–42 題題組",
+      "section": "閱讀測驗",
+      "sourceKind": "passage",
+      "excerpt": "The Hard Boiled Hat was thus born, using steamed canvas and leather, covered with black paint, and featuring a suspension system to reduce impact.",
+      "interpretation": "teaching-gloss",
+      "officialAnswerVerified": false
+    },
+    {
+      "headwords": [
+        "mandatory"
+      ],
+      "location": "第 39–42 題／閱讀測驗",
+      "role": "passage",
+      "filename": "02-111學測英文試卷.pdf",
+      "id": "gsat-111-018",
+      "headword": "mandatory",
+      "pattern": "made mandatory at construction sites",
+      "meaningZh": "在工地被列為強制規定",
+      "year": 111,
+      "pdfPage": 8,
+      "printedPage": 7,
+      "questionLabel": "第 39–42 題題組",
+      "section": "閱讀測驗",
+      "sourceKind": "passage",
+      "excerpt": "The headgear was later made mandatory at construction sites in major construction projects, such as the Hoover Dam in 1931 and the Golden Gate Bridge in 1933.",
+      "interpretation": "teaching-gloss",
+      "officialAnswerVerified": false
+    },
+    {
+      "headwords": [
+        "need"
+      ],
+      "location": "第 39–42 題／閱讀測驗",
+      "role": "passage",
+      "filename": "02-111學測英文試卷.pdf",
+      "id": "gsat-111-019",
+      "headword": "need",
+      "pattern": "meet the needs of laborers",
+      "meaningZh": "符合工人的需求",
+      "year": 111,
+      "pdfPage": 8,
+      "printedPage": 7,
+      "questionLabel": "第 39–42 題題組",
+      "section": "閱讀測驗",
+      "sourceKind": "passage",
+      "excerpt": "Recently, new models have been introduced and accessories added to meet the needs of laborers working on various job sites.",
+      "interpretation": "teaching-gloss",
+      "officialAnswerVerified": false
+    },
+    {
+      "headwords": [
+        "captivity"
+      ],
+      "location": "第 43–46 題／閱讀測驗",
+      "role": "passage",
+      "filename": "02-111學測英文試卷.pdf",
+      "id": "gsat-111-020",
+      "headword": "captivity",
+      "pattern": "breed easily in captivity",
+      "meaningZh": "容易在圈養環境繁殖",
+      "year": 111,
+      "pdfPage": 9,
+      "printedPage": 8,
+      "questionLabel": "第 43–46 題題組",
+      "section": "閱讀測驗",
+      "sourceKind": "passage",
+      "excerpt": "Only a few centimeters in length, the fish breed easily in captivity, grow quickly, and their transparent body makes it easy to study their organs.",
+      "interpretation": "teaching-gloss",
+      "officialAnswerVerified": false
+    },
+    {
+      "headwords": [
+        "associate"
+      ],
+      "location": "第 43–46 題／閱讀測驗",
+      "role": "passage",
+      "filename": "02-111學測英文試卷.pdf",
+      "id": "gsat-111-021",
+      "headword": "associate",
+      "pattern": "associated with disease",
+      "meaningZh": "與疾病相關",
+      "year": 111,
+      "pdfPage": 9,
+      "printedPage": 8,
+      "questionLabel": "第 43–46 題題組",
+      "section": "閱讀測驗",
+      "sourceKind": "passage",
+      "excerpt": "Moreover, 84 percent of human genes associated with disease find a counterpart in zebrafish.",
+      "interpretation": "teaching-gloss",
+      "officialAnswerVerified": false
+    },
+    {
+      "headwords": [
+        "identical"
+      ],
+      "location": "第 43–46 題／閱讀測驗",
+      "role": "passage",
+      "filename": "02-111學測英文試卷.pdf",
+      "id": "gsat-111-022",
+      "headword": "identical",
+      "pattern": "almost identical to those of humans",
+      "meaningZh": "與人類的幾乎完全相同",
+      "year": 111,
+      "pdfPage": 9,
+      "printedPage": 8,
+      "questionLabel": "第 43–46 題題組",
+      "section": "閱讀測驗",
+      "sourceKind": "passage",
+      "excerpt": "The structure and cell types of zebrafish retinas are almost identical to those of humans.",
+      "interpretation": "teaching-gloss",
+      "officialAnswerVerified": false
+    },
+    {
+      "headwords": [
+        "rise"
+      ],
+      "location": "第 43–46 題／閱讀測驗",
+      "role": "passage",
+      "filename": "02-111學測英文試卷.pdf",
+      "id": "gsat-111-023",
+      "headword": "rise",
+      "pattern": "give rise to new treatments",
+      "meaningZh": "催生新的療法",
+      "year": 111,
+      "pdfPage": 9,
+      "printedPage": 8,
+      "questionLabel": "第 43–46 題題組",
+      "section": "閱讀測驗",
+      "sourceKind": "passage",
+      "excerpt": "If the process can be replicated in humans, it may give rise to new treatments for blindness caused by retinal damage.",
+      "interpretation": "teaching-gloss",
+      "officialAnswerVerified": false
+    },
+    {
+      "headwords": [
+        "trigger"
+      ],
+      "location": "第 43–46 題／閱讀測驗",
+      "role": "passage",
+      "filename": "02-111學測英文試卷.pdf",
+      "id": "gsat-111-024",
+      "headword": "trigger",
+      "pattern": "trigger retina regeneration",
+      "meaningZh": "引發視網膜再生",
+      "year": 111,
+      "pdfPage": 9,
+      "printedPage": 8,
+      "questionLabel": "第 43–46 題題組",
+      "section": "閱讀測驗",
+      "sourceKind": "passage",
+      "excerpt": "They found that lowering GABA levels in zebrafish can trigger retina regeneration, while a high level of GABA concentration will suppress the regeneration process.",
+      "interpretation": "teaching-gloss",
+      "officialAnswerVerified": false
+    },
+    {
+      "headwords": [
+        "fulfill"
+      ],
+      "location": "第 47 題／混合題",
+      "role": "stem",
+      "filename": "02-111學測英文試卷.pdf",
+      "id": "gsat-111-025",
+      "headword": "fulfill",
+      "pattern": "fulfill her dream",
+      "meaningZh": "實現她的夢想",
+      "year": 111,
+      "pdfPage": 11,
+      "printedPage": 10,
+      "questionLabel": "第 47 題",
+      "section": "混合題",
+      "sourceKind": "stem",
+      "excerpt": "With her amazing courage and swimming skills, Yusra Mardini was not only able to save lives but also fulfill her dream of (A) in the Olympic Games.",
+      "interpretation": "teaching-gloss",
+      "officialAnswerVerified": false
+    },
+    {
+      "headwords": [
+        "burden"
+      ],
+      "location": "第 8 題／詞彙題",
+      "role": "stem",
+      "filename": "02-112學測英文試卷 下午9.28.48.pdf",
+      "id": "gsat-112-001",
+      "headword": "burden",
+      "pattern": "burdened its people with enormous foreign debts",
+      "meaningZh": "使人民背負龐大外債",
+      "year": 112,
+      "pdfPage": 2,
+      "printedPage": 1,
+      "questionLabel": "第 8 題",
+      "section": "詞彙題",
+      "sourceKind": "stem",
+      "excerpt": "Corrupt officials and misguided policies have the country’s economy and burdened its people with enormous foreign debts.",
+      "interpretation": "teaching-gloss",
+      "officialAnswerVerified": false
+    },
+    {
+      "headwords": [
+        "protect"
+      ],
+      "location": "第 11–15 題／綜合測驗",
+      "role": "passage",
+      "filename": "02-112學測英文試卷 下午9.28.48.pdf",
+      "id": "gsat-112-002",
+      "headword": "protect",
+      "pattern": "protect their branches from breakage",
+      "meaningZh": "保護樹枝免於斷裂",
+      "year": 112,
+      "pdfPage": 3,
+      "printedPage": 2,
+      "questionLabel": "第 11–15 題題組",
+      "section": "綜合測驗",
+      "sourceKind": "passage",
+      "excerpt": "In order to protect their branches from breakage, trees maintain “shyness gaps”—spaces large enough to prevent them from touching their neighbors.",
+      "interpretation": "teaching-gloss",
+      "officialAnswerVerified": false
+    },
+    {
+      "headwords": [
+        "limit"
+      ],
+      "location": "第 11–15 題／綜合測驗",
+      "role": "passage",
+      "filename": "02-112學測英文試卷 下午9.28.48.pdf",
+      "id": "gsat-112-003",
+      "headword": "limit",
+      "pattern": "limit the spread of leaf-eating insects",
+      "meaningZh": "限制食葉昆蟲蔓延",
+      "year": 112,
+      "pdfPage": 3,
+      "printedPage": 2,
+      "questionLabel": "第 11–15 題題組",
+      "section": "綜合測驗",
+      "sourceKind": "passage",
+      "excerpt": "Additionally, by having branches that do not touch those of their neighbors, trees may be able to limit the spread of leaf-eating insects, and potentially also the transmission of diseases from tree to tree.",
+      "interpretation": "teaching-gloss",
+      "officialAnswerVerified": false
+    },
+    {
+      "headwords": [
+        "consensus"
+      ],
+      "location": "第 11–15 題／綜合測驗",
+      "role": "passage",
+      "filename": "02-112學測英文試卷 下午9.28.48.pdf",
+      "id": "gsat-112-004",
+      "headword": "consensus",
+      "pattern": "no consensus on exactly what causes",
+      "meaningZh": "對確切成因沒有共識",
+      "year": 112,
+      "pdfPage": 3,
+      "printedPage": 2,
+      "questionLabel": "第 11–15 題題組",
+      "section": "綜合測驗",
+      "sourceKind": "passage",
+      "excerpt": "there is no consensus on exactly what causes the beautiful and mysterious phenomenon of crown shyness.",
+      "interpretation": "teaching-gloss",
+      "officialAnswerVerified": false
+    },
+    {
+      "headwords": [
+        "overcome"
+      ],
+      "location": "第 16–20 題／綜合測驗",
+      "role": "passage",
+      "filename": "02-112學測英文試卷 下午9.28.48.pdf",
+      "id": "gsat-112-005",
+      "headword": "overcome",
+      "pattern": "overcome the force of gravity",
+      "meaningZh": "克服重力",
+      "year": 112,
+      "pdfPage": 3,
+      "printedPage": 2,
+      "questionLabel": "第 16–20 題題組",
+      "section": "綜合測驗",
+      "sourceKind": "passage",
+      "excerpt": "In the earlier days of space travel, scientists tried to overcome the force of gravity so that a rocket could shoot 16 Earth’s pull in order to land humans on the moon.",
+      "interpretation": "teaching-gloss",
+      "officialAnswerVerified": false
+    },
+    {
+      "headwords": [
+        "absence"
+      ],
+      "location": "第 16–20 題／綜合測驗",
+      "role": "passage",
+      "filename": "02-112學測英文試卷 下午9.28.48.pdf",
+      "id": "gsat-112-006",
+      "headword": "absence",
+      "pattern": "the absence of gravity",
+      "meaningZh": "缺乏重力",
+      "year": 112,
+      "pdfPage": 3,
+      "printedPage": 2,
+      "questionLabel": "第 16–20 題題組",
+      "section": "綜合測驗",
+      "sourceKind": "passage",
+      "excerpt": "However, with the absence of gravity in the outer space, our body fluids 18 , shifting toward the upper body and the head.",
+      "interpretation": "teaching-gloss",
+      "officialAnswerVerified": false
+    },
+    {
+      "headwords": [
+        "figure"
+      ],
+      "location": "第 16–20 題／綜合測驗",
+      "role": "passage",
+      "filename": "02-112學測英文試卷 下午9.28.48.pdf",
+      "id": "gsat-112-007",
+      "headword": "figure",
+      "pattern": "figure out how it may be prevented",
+      "meaningZh": "弄清楚如何預防",
+      "year": 112,
+      "pdfPage": 3,
+      "printedPage": 2,
+      "questionLabel": "第 16–20 題題組",
+      "section": "綜合測驗",
+      "sourceKind": "passage",
+      "excerpt": "Such a syndrome is considered the top health risk for the astronauts, and scientists are still trying to figure out how it may be prevented.",
+      "interpretation": "teaching-gloss",
+      "officialAnswerVerified": false
+    },
+    {
+      "headwords": [
+        "make"
+      ],
+      "location": "第 21–30 題／文意選填",
+      "role": "passage",
+      "filename": "02-112學測英文試卷 下午9.28.48.pdf",
+      "id": "gsat-112-008",
+      "headword": "make",
+      "pattern": "makes up more than half of our body weight",
+      "meaningZh": "占體重的一半以上",
+      "year": 112,
+      "pdfPage": 4,
+      "printedPage": 3,
+      "questionLabel": "第 21–30 題題組",
+      "section": "文意選填",
+      "sourceKind": "passage",
+      "excerpt": "Water makes up more than half of our body weight.",
+      "interpretation": "teaching-gloss",
+      "officialAnswerVerified": false
+    },
+    {
+      "headwords": [
+        "rid"
+      ],
+      "location": "第 21–30 題／文意選填",
+      "role": "passage",
+      "filename": "02-112學測英文試卷 下午9.28.48.pdf",
+      "id": "gsat-112-009",
+      "headword": "rid",
+      "pattern": "get rid of water",
+      "meaningZh": "排出水分",
+      "year": 112,
+      "pdfPage": 4,
+      "printedPage": 3,
+      "questionLabel": "第 21–30 題題組",
+      "section": "文意選填",
+      "sourceKind": "passage",
+      "excerpt": "To 23 things out, the body will get rid of water by producing urine.",
+      "interpretation": "teaching-gloss",
+      "officialAnswerVerified": false
+    },
+    {
+      "headwords": [
+        "take"
+      ],
+      "location": "第 21–30 題／文意選填",
+      "role": "passage",
+      "filename": "02-112學測英文試卷 下午9.28.48.pdf",
+      "id": "gsat-112-010",
+      "headword": "take",
+      "pattern": "take in fluid",
+      "meaningZh": "攝取水分",
+      "year": 112,
+      "pdfPage": 4,
+      "printedPage": 3,
+      "questionLabel": "第 21–30 題題組",
+      "section": "文意選填",
+      "sourceKind": "passage",
+      "excerpt": "At that point, it might be well past the best moment to take in fluid.",
+      "interpretation": "teaching-gloss",
+      "officialAnswerVerified": false
+    },
+    {
+      "headwords": [
+        "run"
+      ],
+      "location": "第 31–34 題／篇章結構",
+      "role": "passage",
+      "filename": "02-112學測英文試卷 下午9.28.48.pdf",
+      "id": "gsat-112-011",
+      "headword": "run",
+      "pattern": "runs in families",
+      "meaningZh": "家族中相傳／具有家族遺傳傾向",
+      "year": 112,
+      "pdfPage": 5,
+      "printedPage": 4,
+      "questionLabel": "第 31–34 題題組",
+      "section": "篇章結構",
+      "sourceKind": "passage",
+      "excerpt": "Scientists agree that synesthesia has a genetic basis, because it frequently runs in families.",
+      "interpretation": "teaching-gloss",
+      "officialAnswerVerified": false
+    },
+    {
+      "headwords": [
+        "often"
+      ],
+      "location": "第 31–34 題／篇章結構",
+      "role": "passage",
+      "filename": "02-112學測英文試卷 下午9.28.48.pdf",
+      "id": "gsat-112-012",
+      "headword": "often",
+      "pattern": "more often than not",
+      "meaningZh": "往往；通常",
+      "year": 112,
+      "pdfPage": 5,
+      "printedPage": 4,
+      "questionLabel": "第 31–34 題題組",
+      "section": "篇章結構",
+      "sourceKind": "passage",
+      "excerpt": "Also, people with color-music synesthesia more often than not have had early musical training.",
+      "interpretation": "teaching-gloss",
+      "officialAnswerVerified": false
+    },
+    {
+      "headwords": [
+        "associate"
+      ],
+      "location": "第 31–34 題／篇章結構",
+      "role": "passage",
+      "filename": "02-112學測英文試卷 下午9.28.48.pdf",
+      "id": "gsat-112-013",
+      "headword": "associate",
+      "pattern": "associate lower notes with darker colors",
+      "meaningZh": "將較低音與較深顏色聯想在一起",
+      "year": 112,
+      "pdfPage": 5,
+      "printedPage": 4,
+      "questionLabel": "第 31–34 題題組",
+      "section": "篇章結構",
+      "sourceKind": "passage",
+      "excerpt": "As is often observed, most of us tend to associate lower notes with darker colors and higher notes with brighter colors.",
+      "interpretation": "teaching-gloss",
+      "officialAnswerVerified": false
+    },
+    {
+      "headwords": [
+        "trace"
+      ],
+      "location": "第 35–38 題／閱讀測驗",
+      "role": "passage",
+      "filename": "02-112學測英文試卷 下午9.28.48.pdf",
+      "id": "gsat-112-014",
+      "headword": "trace",
+      "pattern": "can be traced back to ancient times",
+      "meaningZh": "可追溯至古代",
+      "year": 112,
+      "pdfPage": 6,
+      "printedPage": 5,
+      "questionLabel": "第 35–38 題題組",
+      "section": "閱讀測驗",
+      "sourceKind": "passage",
+      "excerpt": "toy hoops twirled around the waist, limbs, or neck can be traced back to ancient times.",
+      "interpretation": "teaching-gloss",
+      "officialAnswerVerified": false
+    },
+    {
+      "headwords": [
+        "result"
+      ],
+      "location": "第 35–38 題／閱讀測驗",
+      "role": "passage",
+      "filename": "02-112學測英文試卷 下午9.28.48.pdf",
+      "id": "gsat-112-015",
+      "headword": "result",
+      "pattern": "resulted in dislocated backs and heart attacks",
+      "meaningZh": "導致背部脫臼與心臟病發",
+      "year": 112,
+      "pdfPage": 6,
+      "printedPage": 5,
+      "questionLabel": "第 35–38 題題組",
+      "section": "閱讀測驗",
+      "sourceKind": "passage",
+      "excerpt": "The craze for hoops even resulted in dislocated backs and heart attacks, according to medical records.",
+      "interpretation": "teaching-gloss",
+      "officialAnswerVerified": false
+    },
+    {
+      "headwords": [
+        "popularity"
+      ],
+      "location": "第 35–38 題／閱讀測驗",
+      "role": "passage",
+      "filename": "02-112學測英文試卷 下午9.28.48.pdf",
+      "id": "gsat-112-016",
+      "headword": "popularity",
+      "pattern": "gained international popularity",
+      "meaningZh": "在國際間廣受歡迎",
+      "year": 112,
+      "pdfPage": 6,
+      "printedPage": 5,
+      "questionLabel": "第 35–38 題題組",
+      "section": "閱讀測驗",
+      "sourceKind": "passage",
+      "excerpt": "The hula hoop gained international popularity in the late 1950s, when a plastic version was successfully marketed by California’s Wham-O toy company.",
+      "interpretation": "teaching-gloss",
+      "officialAnswerVerified": false
+    },
+    {
+      "headwords": [
+        "strong"
+      ],
+      "location": "第 35–38 題／閱讀測驗",
+      "role": "passage",
+      "filename": "02-112學測英文試卷 下午9.28.48.pdf",
+      "id": "gsat-112-017",
+      "headword": "strong",
+      "pattern": "going strong today",
+      "meaningZh": "至今仍然興盛",
+      "year": 112,
+      "pdfPage": 6,
+      "printedPage": 5,
+      "questionLabel": "第 35–38 題題組",
+      "section": "閱讀測驗",
+      "sourceKind": "passage",
+      "excerpt": "The hula hoop “fad” is still going strong today.",
+      "interpretation": "teaching-gloss",
+      "officialAnswerVerified": false
+    },
+    {
+      "headwords": [
+        "prevent"
+      ],
+      "location": "第 39–42 題／閱讀測驗",
+      "role": "passage",
+      "filename": "02-112學測英文試卷 下午9.28.48.pdf",
+      "id": "gsat-112-018",
+      "headword": "prevent",
+      "pattern": "prevent water from accumulating",
+      "meaningZh": "防止水分積聚",
+      "year": 112,
+      "pdfPage": 7,
+      "printedPage": 6,
+      "questionLabel": "第 39–42 題題組",
+      "section": "閱讀測驗",
+      "sourceKind": "passage",
+      "excerpt": "Much of the forest land where tea is grown in Assam is flat and thus farmers must dig drainage trenches to prevent water from accumulating and hurting the shrubs.",
+      "interpretation": "teaching-gloss",
+      "officialAnswerVerified": false
+    },
+    {
+      "headwords": [
+        "reluctant"
+      ],
+      "location": "第 39–42 題／閱讀測驗",
+      "role": "passage",
+      "filename": "02-112學測英文試卷 下午9.28.48.pdf",
+      "id": "gsat-112-019",
+      "headword": "reluctant",
+      "pattern": "reluctant to move on",
+      "meaningZh": "不願繼續前進",
+      "year": 112,
+      "pdfPage": 7,
+      "printedPage": 6,
+      "questionLabel": "第 39–42 題題組",
+      "section": "閱讀測驗",
+      "sourceKind": "passage",
+      "excerpt": "Furthermore, elephants are known to resist leaving their sick or dying behind, and a herd may linger at a trench with a trapped baby for hours, reluctant to move on until all hope is lost.",
+      "interpretation": "teaching-gloss",
+      "officialAnswerVerified": false
+    },
+    {
+      "headwords": [
+        "initiative"
+      ],
+      "location": "第 39–42 題／閱讀測驗",
+      "role": "passage",
+      "filename": "02-112學測英文試卷 下午9.28.48.pdf",
+      "id": "gsat-112-020",
+      "headword": "initiative",
+      "pattern": "takes the initiative",
+      "meaningZh": "主動採取行動",
+      "year": 112,
+      "pdfPage": 7,
+      "printedPage": 6,
+      "questionLabel": "第 39–42 題題組",
+      "section": "閱讀測驗",
+      "sourceKind": "passage",
+      "excerpt": "Elephant Friendly Tea is an organization that takes the initiative to make it possible.",
+      "interpretation": "teaching-gloss",
+      "officialAnswerVerified": false
+    },
+    {
+      "headwords": [
+        "precaution"
+      ],
+      "location": "第 39–42 題／閱讀測驗",
+      "role": "passage",
+      "filename": "02-112學測英文試卷 下午9.28.48.pdf",
+      "id": "gsat-112-021",
+      "headword": "precaution",
+      "pattern": "take precautions to protect elephants",
+      "meaningZh": "採取預防措施保護大象",
+      "year": 112,
+      "pdfPage": 7,
+      "printedPage": 6,
+      "questionLabel": "第 39–42 題題組",
+      "section": "閱讀測驗",
+      "sourceKind": "passage",
+      "excerpt": "The organization encourages consumers to choose brands that take precautions to protect elephants and has set up a certification program to reward tea growers who are doing it right.",
+      "interpretation": "teaching-gloss",
+      "officialAnswerVerified": false
+    },
+    {
+      "headwords": [
+        "rise"
+      ],
+      "location": "第 43–46 題／閱讀測驗",
+      "role": "passage",
+      "filename": "02-112學測英文試卷 下午9.28.48.pdf",
+      "id": "gsat-112-022",
+      "headword": "rise",
+      "pattern": "gave rise to the Spice Route",
+      "meaningZh": "促成香料之路",
+      "year": 112,
+      "pdfPage": 8,
+      "printedPage": 7,
+      "questionLabel": "第 43–46 題題組",
+      "section": "閱讀測驗",
+      "sourceKind": "passage",
+      "excerpt": "At the close of the 15th century, Europeans’ craze for spices gave rise to the Spice Route, a network of sea lanes joining Europe with the Far East, where most spices came from.",
+      "interpretation": "teaching-gloss",
+      "officialAnswerVerified": false
+    },
+    {
+      "headwords": [
+        "rule"
+      ],
+      "location": "第 43–46 題／閱讀測驗",
+      "role": "passage",
+      "filename": "02-112學測英文試卷 下午9.28.48.pdf",
+      "id": "gsat-112-023",
+      "headword": "rule",
+      "pattern": "come under the rule of the Portuguese",
+      "meaningZh": "受到葡萄牙人統治",
+      "year": 112,
+      "pdfPage": 8,
+      "printedPage": 7,
+      "questionLabel": "第 43–46 題題組",
+      "section": "閱讀測驗",
+      "sourceKind": "passage",
+      "excerpt": "Since the 16th century, Zanzibar has come under the rule of the Portuguese, the Arabians, and then the British, each leaving a mark on the place.",
+      "interpretation": "teaching-gloss",
+      "officialAnswerVerified": false
+    },
+    {
+      "headwords": [
+        "stick"
+      ],
+      "location": "第 47–50 題／混合題",
+      "role": "passage",
+      "filename": "02-112學測英文試卷 下午9.28.48.pdf",
+      "id": "gsat-112-024",
+      "headword": "stick",
+      "pattern": "stick to plant food",
+      "meaningZh": "堅持吃植物性食物",
+      "year": 112,
+      "pdfPage": 10,
+      "printedPage": 9,
+      "questionLabel": "第 47–50 題題組",
+      "section": "混合題",
+      "sourceKind": "passage",
+      "excerpt": "Being vegan means I try to stick to plant food.",
+      "interpretation": "teaching-gloss",
+      "officialAnswerVerified": false
+    },
+    {
+      "headwords": [
+        "trick"
+      ],
+      "location": "第 47–50 題／混合題",
+      "role": "passage",
+      "filename": "02-112學測英文試卷 下午9.28.48.pdf",
+      "id": "gsat-112-025",
+      "headword": "trick",
+      "pattern": "does the trick",
+      "meaningZh": "達到目的；奏效",
+      "year": 112,
+      "pdfPage": 10,
+      "printedPage": 9,
+      "questionLabel": "第 47–50 題題組",
+      "section": "混合題",
+      "sourceKind": "passage",
+      "excerpt": "Especially when a burger craving hits…a GreenBurger does the trick.",
+      "interpretation": "teaching-gloss",
+      "officialAnswerVerified": false
+    },
+    {
+      "headwords": [
+        "maintain"
+      ],
+      "location": "第 1 題／詞彙題",
+      "role": "stem",
+      "filename": "02-113學測英文科定稿 下午9.28.48.pdf",
+      "id": "gsat-113-001",
+      "headword": "maintain",
+      "pattern": "maintain healthy eating habits",
+      "meaningZh": "維持健康飲食習慣",
+      "year": 113,
+      "pdfPage": 2,
+      "printedPage": 1,
+      "questionLabel": "第 1 題",
+      "section": "詞彙題",
+      "sourceKind": "stem",
+      "excerpt": "People who desire a ______ figure should exercise regularly and maintain healthy eating habits.",
+      "interpretation": "teaching-gloss",
+      "officialAnswerVerified": false
+    },
+    {
+      "headwords": [
+        "refer"
+      ],
+      "location": "第 11–15 題／綜合測驗",
+      "role": "passage",
+      "filename": "02-113學測英文科定稿 下午9.28.48.pdf",
+      "id": "gsat-113-002",
+      "headword": "refer",
+      "pattern": "referred to as secret shoppers",
+      "meaningZh": "被稱為秘密客",
+      "year": 113,
+      "pdfPage": 2,
+      "printedPage": 1,
+      "questionLabel": "第 11–15 題題組",
+      "section": "綜合測驗",
+      "sourceKind": "passage",
+      "excerpt": "Sometimes referred to as secret shoppers, mystery shoppers 11 regular customers to purchase items, eat in restaurants, make inquiries, or return items.",
+      "interpretation": "teaching-gloss",
+      "officialAnswerVerified": false
+    },
+    {
+      "headwords": [
+        "procedure"
+      ],
+      "location": "第 11–15 題／綜合測驗",
+      "role": "passage",
+      "filename": "02-113學測英文科定稿 下午9.28.48.pdf",
+      "id": "gsat-113-003",
+      "headword": "procedure",
+      "pattern": "follow certain standard procedures",
+      "meaningZh": "遵循特定標準程序",
+      "year": 113,
+      "pdfPage": 3,
+      "printedPage": 2,
+      "questionLabel": "第 11–15 題題組",
+      "section": "綜合測驗",
+      "sourceKind": "passage",
+      "excerpt": "When evaluating a business, mystery shoppers have to follow certain standard procedures to avoid 13 .",
+      "interpretation": "teaching-gloss",
+      "officialAnswerVerified": false
+    },
+    {
+      "headwords": [
+        "competitive"
+      ],
+      "location": "第 11–15 題／綜合測驗",
+      "role": "passage",
+      "filename": "02-113學測英文科定稿 下午9.28.48.pdf",
+      "id": "gsat-113-004",
+      "headword": "competitive",
+      "pattern": "gain a competitive edge",
+      "meaningZh": "取得競爭優勢",
+      "year": 113,
+      "pdfPage": 3,
+      "printedPage": 2,
+      "questionLabel": "第 11–15 題題組",
+      "section": "綜合測驗",
+      "sourceKind": "passage",
+      "excerpt": "In this way, these secret shoppers may help a business gain a competitive edge.",
+      "interpretation": "teaching-gloss",
+      "officialAnswerVerified": false
+    },
+    {
+      "headwords": [
+        "rely"
+      ],
+      "location": "第 16–20 題／綜合測驗",
+      "role": "passage",
+      "filename": "02-113學測英文科定稿 下午9.28.48.pdf",
+      "id": "gsat-113-005",
+      "headword": "rely",
+      "pattern": "relied on a human alarm clock",
+      "meaningZh": "依賴真人鬧鐘",
+      "year": 113,
+      "pdfPage": 3,
+      "printedPage": 2,
+      "questionLabel": "第 16–20 題題組",
+      "section": "綜合測驗",
+      "sourceKind": "passage",
+      "excerpt": "British workers thus relied on a human alarm clock known as a “knocker-up.”",
+      "interpretation": "teaching-gloss",
+      "officialAnswerVerified": false
+    },
+    {
+      "headwords": [
+        "grieve"
+      ],
+      "location": "第 21–30 題／文意選填",
+      "role": "passage",
+      "filename": "02-113學測英文科定稿 下午9.28.48.pdf",
+      "id": "gsat-113-006",
+      "headword": "grieve",
+      "pattern": "grieving over the death of his cousin",
+      "meaningZh": "為表親離世哀傷",
+      "year": 113,
+      "pdfPage": 4,
+      "printedPage": 3,
+      "questionLabel": "第 21–30 題題組",
+      "section": "文意選填",
+      "sourceKind": "passage",
+      "excerpt": "The idea for the wind phone was first 23 by a Japanese garden designer named Itaru Sasaki, who was grieving over the death of his cousin in 2010, before the tsunami.",
+      "interpretation": "teaching-gloss",
+      "officialAnswerVerified": false
+    },
+    {
+      "headwords": [
+        "cope"
+      ],
+      "location": "第 21–30 題／文意選填",
+      "role": "passage",
+      "filename": "02-113學測英文科定稿 下午9.28.48.pdf",
+      "id": "gsat-113-007",
+      "headword": "cope",
+      "pattern": "coping with loss of a loved one",
+      "meaningZh": "調適失去親人的悲傷",
+      "year": 113,
+      "pdfPage": 4,
+      "printedPage": 3,
+      "questionLabel": "第 21–30 題題組",
+      "section": "文意選填",
+      "sourceKind": "passage",
+      "excerpt": "Grieving is a natural 29 for coping with loss of a loved one, and people grieve in various ways.",
+      "interpretation": "teaching-gloss",
+      "officialAnswerVerified": false
+    },
+    {
+      "headwords": [
+        "rule"
+      ],
+      "location": "第 31–34 題／篇章結構",
+      "role": "passage",
+      "filename": "02-113學測英文科定稿 下午9.28.48.pdf",
+      "id": "gsat-113-008",
+      "headword": "rule",
+      "pattern": "The rule of thumb",
+      "meaningZh": "概略原則；經驗法則",
+      "year": 113,
+      "pdfPage": 5,
+      "printedPage": 4,
+      "questionLabel": "第 31–34 題題組",
+      "section": "篇章結構",
+      "sourceKind": "passage",
+      "excerpt": "The rule of thumb, however, is to see a doctor first and get an accurate diagnosis.",
+      "interpretation": "teaching-gloss",
+      "officialAnswerVerified": false
+    },
+    {
+      "headwords": [
+        "diagnosis"
+      ],
+      "location": "第 31–34 題／篇章結構",
+      "role": "passage",
+      "filename": "02-113學測英文科定稿 下午9.28.48.pdf",
+      "id": "gsat-113-009",
+      "headword": "diagnosis",
+      "pattern": "get an accurate diagnosis",
+      "meaningZh": "取得準確診斷",
+      "year": 113,
+      "pdfPage": 5,
+      "printedPage": 4,
+      "questionLabel": "第 31–34 題題組",
+      "section": "篇章結構",
+      "sourceKind": "passage",
+      "excerpt": "The rule of thumb, however, is to see a doctor first and get an accurate diagnosis.",
+      "interpretation": "teaching-gloss",
+      "officialAnswerVerified": false
+    },
+    {
+      "headwords": [
+        "rule"
+      ],
+      "location": "第 31–34 題／篇章結構",
+      "role": "passage",
+      "filename": "02-113學測英文科定稿 下午9.28.48.pdf",
+      "id": "gsat-113-010",
+      "headword": "rule",
+      "pattern": "ruled out",
+      "meaningZh": "被排除",
+      "year": 113,
+      "pdfPage": 5,
+      "printedPage": 4,
+      "questionLabel": "第 31–34 題題組",
+      "section": "篇章結構",
+      "sourceKind": "passage",
+      "excerpt": "If a serious injury is ruled out and the pain is not getting worse after exercising, then the exercise “makes a lot of sense.”",
+      "interpretation": "teaching-gloss",
+      "officialAnswerVerified": false
+    },
+    {
+      "headwords": [
+        "sense"
+      ],
+      "location": "第 31–34 題／篇章結構",
+      "role": "passage",
+      "filename": "02-113學測英文科定稿 下午9.28.48.pdf",
+      "id": "gsat-113-011",
+      "headword": "sense",
+      "pattern": "makes a lot of sense",
+      "meaningZh": "相當合理",
+      "year": 113,
+      "pdfPage": 5,
+      "printedPage": 4,
+      "questionLabel": "第 31–34 題題組",
+      "section": "篇章結構",
+      "sourceKind": "passage",
+      "excerpt": "If a serious injury is ruled out and the pain is not getting worse after exercising, then the exercise “makes a lot of sense.”",
+      "interpretation": "teaching-gloss",
+      "officialAnswerVerified": false
+    },
+    {
+      "headwords": [
+        "naked"
+      ],
+      "location": "第 35–38 題／閱讀測驗",
+      "role": "passage",
+      "filename": "02-113學測英文科定稿 下午9.28.48.pdf",
+      "id": "gsat-113-012",
+      "headword": "naked",
+      "pattern": "the naked eye",
+      "meaningZh": "肉眼",
+      "year": 113,
+      "pdfPage": 6,
+      "printedPage": 5,
+      "questionLabel": "第 35–38 題題組",
+      "section": "閱讀測驗",
+      "sourceKind": "passage",
+      "excerpt": "Upon closer examination, de Mestral observed that the burrs, which appeared straight to the naked eye, actually contained many small hooks that clung firmly to the loops in the fabric of his pants.",
+      "interpretation": "teaching-gloss",
+      "officialAnswerVerified": false
+    },
+    {
+      "headwords": [
+        "cling"
+      ],
+      "location": "第 35–38 題／閱讀測驗",
+      "role": "passage",
+      "filename": "02-113學測英文科定稿 下午9.28.48.pdf",
+      "id": "gsat-113-013",
+      "headword": "cling",
+      "pattern": "clung firmly to the loops",
+      "meaningZh": "牢牢黏附在環圈上",
+      "year": 113,
+      "pdfPage": 6,
+      "printedPage": 5,
+      "questionLabel": "第 35–38 題題組",
+      "section": "閱讀測驗",
+      "sourceKind": "passage",
+      "excerpt": "Upon closer examination, de Mestral observed that the burrs, which appeared straight to the naked eye, actually contained many small hooks that clung firmly to the loops in the fabric of his pants.",
+      "interpretation": "teaching-gloss",
+      "officialAnswerVerified": false
+    },
+    {
+      "headwords": [
+        "settle"
+      ],
+      "location": "第 35–38 題／閱讀測驗",
+      "role": "passage",
+      "filename": "02-113學測英文科定稿 下午9.28.48.pdf",
+      "id": "gsat-113-014",
+      "headword": "settle",
+      "pattern": "settled on heat-treated nylon",
+      "meaningZh": "最後選定熱處理尼龍",
+      "year": 113,
+      "pdfPage": 6,
+      "printedPage": 5,
+      "questionLabel": "第 35–38 題題組",
+      "section": "閱讀測驗",
+      "sourceKind": "passage",
+      "excerpt": "After years of research and testing, he learned that synthetics worked best and eventually settled on heat-treated nylon, a strong and durable substance.",
+      "interpretation": "teaching-gloss",
+      "officialAnswerVerified": false
+    },
+    {
+      "headwords": [
+        "limit"
+      ],
+      "location": "第 35–38 題／閱讀測驗",
+      "role": "passage",
+      "filename": "02-113學測英文科定稿 下午9.28.48.pdf",
+      "id": "gsat-113-015",
+      "headword": "limit",
+      "pattern": "limited to athletic equipment",
+      "meaningZh": "限於運動設備",
+      "year": 113,
+      "pdfPage": 6,
+      "printedPage": 5,
+      "questionLabel": "第 35–38 題題組",
+      "section": "閱讀測驗",
+      "sourceKind": "passage",
+      "excerpt": "As most fashion critics considered it ugly and cheap-looking, the use of Velcro was limited to athletic equipment.",
+      "interpretation": "teaching-gloss",
+      "officialAnswerVerified": false
+    },
+    {
+      "headwords": [
+        "stage"
+      ],
+      "location": "第 39–42 題／閱讀測驗",
+      "role": "passage",
+      "filename": "02-113學測英文科定稿 下午9.28.48.pdf",
+      "id": "gsat-113-016",
+      "headword": "stage",
+      "pattern": "setting the stage for the regions",
+      "meaningZh": "為這些地區鋪路",
+      "year": 113,
+      "pdfPage": 8,
+      "printedPage": 7,
+      "questionLabel": "第 39–42 題題組",
+      "section": "閱讀測驗",
+      "sourceKind": "passage",
+      "excerpt": "His vivid paintings brought the splendor of the extraordinary landscapes before the eyes of American people, thus setting the stage for the regions to be widely recognized and officially established as national parks.",
+      "interpretation": "teaching-gloss",
+      "officialAnswerVerified": false
+    },
+    {
+      "headwords": [
+        "talent"
+      ],
+      "location": "第 39–42 題／閱讀測驗",
+      "role": "passage",
+      "filename": "02-113學測英文科定稿 下午9.28.48.pdf",
+      "id": "gsat-113-017",
+      "headword": "talent",
+      "pattern": "Showing great talent in painting",
+      "meaningZh": "展現繪畫天分",
+      "year": 113,
+      "pdfPage": 8,
+      "printedPage": 7,
+      "questionLabel": "第 39–42 題題組",
+      "section": "閱讀測驗",
+      "sourceKind": "passage",
+      "excerpt": "Showing great talent in painting, Moran was soon hired as an illustrator at Scribner’s Monthly, and later appointed chief illustrator by age 34.",
+      "interpretation": "teaching-gloss",
+      "officialAnswerVerified": false
+    },
+    {
+      "headwords": [
+        "fire"
+      ],
+      "location": "第 39–42 題／閱讀測驗",
+      "role": "passage",
+      "filename": "02-113學測英文科定稿 下午9.28.48.pdf",
+      "id": "gsat-113-018",
+      "headword": "fire",
+      "pattern": "fired the imagination",
+      "meaningZh": "激發想像力",
+      "year": 113,
+      "pdfPage": 8,
+      "printedPage": 7,
+      "questionLabel": "第 39–42 題題組",
+      "section": "閱讀測驗",
+      "sourceKind": "passage",
+      "excerpt": "His powerful images of Yellowstone fired the imagination of Congress members.",
+      "interpretation": "teaching-gloss",
+      "officialAnswerVerified": false
+    },
+    {
+      "headwords": [
+        "utilization"
+      ],
+      "location": "第 43–46 題／閱讀測驗",
+      "role": "passage",
+      "filename": "02-113學測英文科定稿 下午9.28.48.pdf",
+      "id": "gsat-113-019",
+      "headword": "utilization",
+      "pattern": "full utilization of each fish caught",
+      "meaningZh": "充分利用每條漁獲",
+      "year": 113,
+      "pdfPage": 9,
+      "printedPage": 8,
+      "questionLabel": "第 43–46 題題組",
+      "section": "閱讀測驗",
+      "sourceKind": "passage",
+      "excerpt": "It aims to encourage full utilization of each fish caught, and to strengthen innovation in seafood products.",
+      "interpretation": "teaching-gloss",
+      "officialAnswerVerified": false
+    },
+    {
+      "headwords": [
+        "face"
+      ],
+      "location": "第 43–46 題／閱讀測驗",
+      "role": "passage",
+      "filename": "02-113學測英文科定稿 下午9.28.48.pdf",
+      "id": "gsat-113-020",
+      "headword": "face",
+      "pattern": "faced with food crises",
+      "meaningZh": "面臨糧食危機",
+      "year": 113,
+      "pdfPage": 9,
+      "printedPage": 8,
+      "questionLabel": "第 43–46 題題組",
+      "section": "閱讀測驗",
+      "sourceKind": "passage",
+      "excerpt": "Reducing waste of fish catch has become a serious issue today, when many countries are faced with food crises.",
+      "interpretation": "teaching-gloss",
+      "officialAnswerVerified": false
+    },
+    {
+      "headwords": [
+        "initiative"
+      ],
+      "location": "第 43–46 題／閱讀測驗",
+      "role": "passage",
+      "filename": "02-113學測英文科定稿 下午9.28.48.pdf",
+      "id": "gsat-113-021",
+      "headword": "initiative",
+      "pattern": "takes the initiative to show",
+      "meaningZh": "主動向人說明",
+      "year": 113,
+      "pdfPage": 9,
+      "printedPage": 8,
+      "questionLabel": "第 43–46 題題組",
+      "section": "閱讀測驗",
+      "sourceKind": "passage",
+      "excerpt": "100% Fish takes the initiative to show seafood companies the importance of collaboration, and facilitate valuable connections between fishing companies and other participants of the project, including academia, start-ups, and research and development teams.",
+      "interpretation": "teaching-gloss",
+      "officialAnswerVerified": false
+    },
+    {
+      "headwords": [
+        "come"
+      ],
+      "location": "第 43–46 題／閱讀測驗",
+      "role": "passage",
+      "filename": "02-113學測英文科定稿 下午9.28.48.pdf",
+      "id": "gsat-113-022",
+      "headword": "come",
+      "pattern": "come up with improved processing and handling",
+      "meaningZh": "想出更完善的加工與處理方法",
+      "year": 113,
+      "pdfPage": 9,
+      "printedPage": 8,
+      "questionLabel": "第 43–46 題題組",
+      "section": "閱讀測驗",
+      "sourceKind": "passage",
+      "excerpt": "By sharing knowledge and information, the different sectors are able to come up with improved processing and handling, through which creation of various innovative products was made possible.",
+      "interpretation": "teaching-gloss",
+      "officialAnswerVerified": false
+    },
+    {
+      "headwords": [
+        "safe"
+      ],
+      "location": "第 47–50 題／混合題",
+      "role": "passage",
+      "filename": "02-113學測英文科定稿 下午9.28.48.pdf",
+      "id": "gsat-113-023",
+      "headword": "safe",
+      "pattern": "keep a safe distance",
+      "meaningZh": "保持安全距離",
+      "year": 113,
+      "pdfPage": 10,
+      "printedPage": 9,
+      "questionLabel": "第 47–50 題題組",
+      "section": "混合題",
+      "sourceKind": "passage",
+      "excerpt": "keep a safe distance",
+      "interpretation": "teaching-gloss",
+      "officialAnswerVerified": false
+    },
+    {
+      "headwords": [
+        "strategy"
+      ],
+      "location": "第 47–50 題／混合題",
+      "role": "passage",
+      "filename": "02-113學測英文科定稿 下午9.28.48.pdf",
+      "id": "gsat-113-024",
+      "headword": "strategy",
+      "pattern": "search strategies",
+      "meaningZh": "搜尋策略",
+      "year": 113,
+      "pdfPage": 10,
+      "printedPage": 9,
+      "questionLabel": "第 47–50 題題組",
+      "section": "混合題",
+      "sourceKind": "passage",
+      "excerpt": "search strategies",
+      "interpretation": "teaching-gloss",
+      "officialAnswerVerified": false
+    },
+    {
+      "headwords": [
+        "adapt"
+      ],
+      "location": "第 47–50 題／混合題",
+      "role": "passage",
+      "filename": "02-113學測英文科定稿 下午9.28.48.pdf",
+      "id": "gsat-113-025",
+      "headword": "adapt",
+      "pattern": "adapt to their ever-changing environment",
+      "meaningZh": "適應不斷變化的環境",
+      "year": 113,
+      "pdfPage": 10,
+      "printedPage": 9,
+      "questionLabel": "第 47–50 題題組",
+      "section": "混合題",
+      "sourceKind": "passage",
+      "excerpt": "adapt to their ever-changing environment",
+      "interpretation": "teaching-gloss",
+      "officialAnswerVerified": false
+    },
+    {
+      "headwords": [
+        "variety"
+      ],
+      "location": "第 2 題／詞彙題",
+      "role": "stem",
+      "filename": "02-114學測英文試題 下午9.28.48.pdf",
+      "id": "gsat-114-001",
+      "headword": "variety",
+      "pattern": "a variety of fresh seasonal",
+      "meaningZh": "各種當季新鮮的",
+      "year": 114,
+      "pdfPage": 2,
+      "printedPage": 1,
+      "questionLabel": "第 2 題",
+      "section": "詞彙題",
+      "sourceKind": "stem",
+      "excerpt": "The local farmers’ market is popular as it offers a variety of fresh seasonal ______ to people in the community.",
+      "interpretation": "teaching-gloss",
+      "officialAnswerVerified": false
+    },
+    {
+      "headwords": [
+        "nature"
+      ],
+      "location": "第 4 題／詞彙題",
+      "role": "stem",
+      "filename": "02-114學測英文試題 下午9.28.48.pdf",
+      "id": "gsat-114-002",
+      "headword": "nature",
+      "pattern": "by nature",
+      "meaningZh": "本質上；天生",
+      "year": 114,
+      "pdfPage": 2,
+      "printedPage": 1,
+      "questionLabel": "第 4 題",
+      "section": "詞彙題",
+      "sourceKind": "stem",
+      "excerpt": "Racist remarks are by nature ______ and hurtful, and should be avoided on all occasions.",
+      "interpretation": "teaching-gloss",
+      "officialAnswerVerified": false
+    },
+    {
+      "headwords": [
+        "lack"
+      ],
+      "location": "第 8 題／詞彙題",
+      "role": "stem",
+      "filename": "02-114學測英文試題 下午9.28.48.pdf",
+      "id": "gsat-114-003",
+      "headword": "lack",
+      "pattern": "a lack of resources",
+      "meaningZh": "資源不足",
+      "year": 114,
+      "pdfPage": 2,
+      "printedPage": 1,
+      "questionLabel": "第 8 題",
+      "section": "詞彙題",
+      "sourceKind": "stem",
+      "excerpt": "Publicly financed projects are often ______ or delayed during tough economic times due to a lack of resources.",
+      "interpretation": "teaching-gloss",
+      "officialAnswerVerified": false
+    },
+    {
+      "headwords": [
+        "course"
+      ],
+      "location": "第 11–15 題／綜合測驗",
+      "role": "passage",
+      "filename": "02-114學測英文試題 下午9.28.48.pdf",
+      "id": "gsat-114-004",
+      "headword": "course",
+      "pattern": "Over the course of the morning",
+      "meaningZh": "在整個上午的過程中",
+      "year": 114,
+      "pdfPage": 3,
+      "printedPage": 2,
+      "questionLabel": "第 11–15 題題組",
+      "section": "綜合測驗",
+      "sourceKind": "passage",
+      "excerpt": "Over the course of the morning, the innovative discussion process 14 a new form of collective effort that transformed the depth, scope, and quality of their discussion.",
+      "interpretation": "teaching-gloss",
+      "officialAnswerVerified": false
+    },
+    {
+      "headwords": [
+        "apply"
+      ],
+      "location": "第 11–15 題／綜合測驗",
+      "role": "passage",
+      "filename": "02-114學測英文試題 下午9.28.48.pdf",
+      "id": "gsat-114-005",
+      "headword": "apply",
+      "pattern": "applied to multi-group discussions",
+      "meaningZh": "運用於多組討論",
+      "year": 114,
+      "pdfPage": 3,
+      "printedPage": 2,
+      "questionLabel": "第 11–15 題題組",
+      "section": "綜合測驗",
+      "sourceKind": "passage",
+      "excerpt": "Since that rainy morning in Mill Valley, the World Café approach has been applied to multi-group discussions and cooperative actions by businesses, industries, and educational institutions around the world.",
+      "interpretation": "teaching-gloss",
+      "officialAnswerVerified": false
+    },
+    {
+      "headwords": [
+        "lead"
+      ],
+      "location": "第 16–20 題／綜合測驗",
+      "role": "passage",
+      "filename": "02-114學測英文試題 下午9.28.48.pdf",
+      "id": "gsat-114-006",
+      "headword": "lead",
+      "pattern": "lead to dizziness, nausea, and vomiting",
+      "meaningZh": "導致頭暈、噁心與嘔吐",
+      "year": 114,
+      "pdfPage": 3,
+      "printedPage": 2,
+      "questionLabel": "第 16–20 題題組",
+      "section": "綜合測驗",
+      "sourceKind": "passage",
+      "excerpt": "Soon, it can lead to dizziness, nausea, and vomiting.",
+      "interpretation": "teaching-gloss",
+      "officialAnswerVerified": false
+    },
+    {
+      "headwords": [
+        "conflict"
+      ],
+      "location": "第 16–20 題／綜合測驗",
+      "role": "passage",
+      "filename": "02-114學測英文試題 下午9.28.48.pdf",
+      "id": "gsat-114-007",
+      "headword": "conflict",
+      "pattern": "conflicting information",
+      "meaningZh": "互相矛盾的資訊",
+      "year": 114,
+      "pdfPage": 3,
+      "printedPage": 2,
+      "questionLabel": "第 16–20 題題組",
+      "section": "綜合測驗",
+      "sourceKind": "passage",
+      "excerpt": "Your brain doesn’t know whether you are stationary or moving when these parts send conflicting information: One part of your balance-sensing system detects that your body is moving, but the other parts 18 .",
+      "interpretation": "teaching-gloss",
+      "officialAnswerVerified": false
+    },
+    {
+      "headwords": [
+        "size"
+      ],
+      "location": "第 21–30 題／文意選填",
+      "role": "passage",
+      "filename": "02-114學測英文試題 下午9.28.48.pdf",
+      "id": "gsat-114-008",
+      "headword": "size",
+      "pattern": "vary in size",
+      "meaningZh": "大小各異",
+      "year": 114,
+      "pdfPage": 4,
+      "printedPage": 3,
+      "questionLabel": "第 21–30 題題組",
+      "section": "文意選填",
+      "sourceKind": "passage",
+      "excerpt": "The 10 bells vary in size, each 23 a name.",
+      "interpretation": "teaching-gloss",
+      "officialAnswerVerified": false
+    },
+    {
+      "headwords": [
+        "generation"
+      ],
+      "location": "第 21–30 題／文意選填",
+      "role": "passage",
+      "filename": "02-114學測英文試題 下午9.28.48.pdf",
+      "id": "gsat-114-009",
+      "headword": "generation",
+      "pattern": "for generations to come",
+      "meaningZh": "為後代；世世代代",
+      "year": 114,
+      "pdfPage": 4,
+      "printedPage": 3,
+      "questionLabel": "第 21–30 題題組",
+      "section": "文意選填",
+      "sourceKind": "passage",
+      "excerpt": "The sounds of Notre-Dame bells once again filled the air in Paris, and will be heard for generations to come.",
+      "interpretation": "teaching-gloss",
+      "officialAnswerVerified": false
+    },
+    {
+      "headwords": [
+        "equip"
+      ],
+      "location": "第 31–34 題／篇章結構",
+      "role": "passage",
+      "filename": "02-114學測英文試題 下午9.28.48.pdf",
+      "id": "gsat-114-010",
+      "headword": "equip",
+      "pattern": "equipped with a comfortable mattress",
+      "meaningZh": "配備舒適的床墊",
+      "year": 114,
+      "pdfPage": 5,
+      "printedPage": 4,
+      "questionLabel": "第 31–34 題題組",
+      "section": "篇章結構",
+      "sourceKind": "passage",
+      "excerpt": "Each capsule is equipped with a comfortable mattress, a small light, and sometimes a television or other entertainment options.",
+      "interpretation": "teaching-gloss",
+      "officialAnswerVerified": false
+    },
+    {
+      "headwords": [
+        "appeal"
+      ],
+      "location": "第 31–34 題／篇章結構",
+      "role": "passage",
+      "filename": "02-114學測英文試題 下午9.28.48.pdf",
+      "id": "gsat-114-011",
+      "headword": "appeal",
+      "pattern": "appeals to digitally connected travelers",
+      "meaningZh": "吸引使用數位科技的旅客",
+      "year": 114,
+      "pdfPage": 5,
+      "printedPage": 4,
+      "questionLabel": "第 31–34 題題組",
+      "section": "篇章結構",
+      "sourceKind": "passage",
+      "excerpt": "Instead of the traditional bare pod-sized style, new chains now feature interior design that appeals to digitally connected travelers from around the world.",
+      "interpretation": "teaching-gloss",
+      "officialAnswerVerified": false
+    },
+    {
+      "headwords": [
+        "suitable"
+      ],
+      "location": "第 31–34 題／篇章結構",
+      "role": "passage",
+      "filename": "02-114學測英文試題 下午9.28.48.pdf",
+      "id": "gsat-114-012",
+      "headword": "suitable",
+      "pattern": "suitable for everyone",
+      "meaningZh": "適合每一個人",
+      "year": 114,
+      "pdfPage": 5,
+      "printedPage": 4,
+      "questionLabel": "第 31–34 題題組",
+      "section": "篇章結構",
+      "sourceKind": "passage",
+      "excerpt": "While offering budget-conscious travelers a unique option, capsule hotels may not be suitable for everyone.",
+      "interpretation": "teaching-gloss",
+      "officialAnswerVerified": false
+    },
+    {
+      "headwords": [
+        "twice"
+      ],
+      "location": "第 31–34 題／篇章結構",
+      "role": "passage",
+      "filename": "02-114學測英文試題 下午9.28.48.pdf",
+      "id": "gsat-114-013",
+      "headword": "twice",
+      "pattern": "think twice before making a reservation",
+      "meaningZh": "訂房前要三思",
+      "year": 114,
+      "pdfPage": 5,
+      "printedPage": 4,
+      "questionLabel": "第 31–34 題題組",
+      "section": "篇章結構",
+      "sourceKind": "passage",
+      "excerpt": "And, if you’re worried about feeling claustrophobic in small spaces, you’d better think twice before making a reservation.",
+      "interpretation": "teaching-gloss",
+      "officialAnswerVerified": false
+    },
+    {
+      "headwords": [
+        "specialize"
+      ],
+      "location": "第 35–38 題／閱讀測驗",
+      "role": "passage",
+      "filename": "02-114學測英文試題 下午9.28.48.pdf",
+      "id": "gsat-114-014",
+      "headword": "specialize",
+      "pattern": "specialized in designing",
+      "meaningZh": "專精於設計",
+      "year": 114,
+      "pdfPage": 6,
+      "printedPage": 5,
+      "questionLabel": "第 35–38 題題組",
+      "section": "閱讀測驗",
+      "sourceKind": "passage",
+      "excerpt": "A railway manager, Knight specialized in designing the signaling system for Britain’s growing railway network in the 1860s.",
+      "interpretation": "teaching-gloss",
+      "officialAnswerVerified": false
+    },
+    {
+      "headwords": [
+        "caution"
+      ],
+      "location": "第 35–38 題／閱讀測驗",
+      "role": "passage",
+      "filename": "02-114學測英文試題 下午9.28.48.pdf",
+      "id": "gsat-114-015",
+      "headword": "caution",
+      "pattern": "proceed with caution",
+      "meaningZh": "謹慎前進",
+      "year": 114,
+      "pdfPage": 6,
+      "printedPage": 5,
+      "questionLabel": "第 35–38 題題組",
+      "section": "閱讀測驗",
+      "sourceKind": "passage",
+      "excerpt": "Installed in Detroit in 1920, Potts’ three-color system allowed for the added signal “proceed with caution” to be displayed.",
+      "interpretation": "teaching-gloss",
+      "officialAnswerVerified": false
+    },
+    {
+      "headwords": [
+        "safe"
+      ],
+      "location": "第 35–38 題／閱讀測驗",
+      "role": "passage",
+      "filename": "02-114學測英文試題 下午9.28.48.pdf",
+      "id": "gsat-114-016",
+      "headword": "safe",
+      "pattern": "maintaining safe distances",
+      "meaningZh": "保持安全距離",
+      "year": 114,
+      "pdfPage": 6,
+      "printedPage": 5,
+      "questionLabel": "第 35–38 題題組",
+      "section": "閱讀測驗",
+      "sourceKind": "passage",
+      "excerpt": "Intersections will operate in a way that cars automatically adjust their speed to cross through, while maintaining safe distances from other vehicles.",
+      "interpretation": "teaching-gloss",
+      "officialAnswerVerified": false
+    },
+    {
+      "headwords": [
+        "revolve"
+      ],
+      "location": "第 39–42 題／閱讀測驗",
+      "role": "passage",
+      "filename": "02-114學測英文試題 下午9.28.48.pdf",
+      "id": "gsat-114-017",
+      "headword": "revolve",
+      "pattern": "revolves around the concept",
+      "meaningZh": "以此概念為核心",
+      "year": 114,
+      "pdfPage": 8,
+      "printedPage": 7,
+      "questionLabel": "第 39–42 題題組",
+      "section": "閱讀測驗",
+      "sourceKind": "passage",
+      "excerpt": "One benefit of horror movies revolves around the concept of so-called “safe fear.”",
+      "interpretation": "teaching-gloss",
+      "officialAnswerVerified": false
+    },
+    {
+      "headwords": [
+        "relief"
+      ],
+      "location": "第 39–42 題／閱讀測驗",
+      "role": "passage",
+      "filename": "02-114學測英文試題 下午9.28.48.pdf",
+      "id": "gsat-114-018",
+      "headword": "relief",
+      "pattern": "a sense of relief",
+      "meaningZh": "一種鬆了一口氣的感受",
+      "year": 114,
+      "pdfPage": 8,
+      "printedPage": 7,
+      "questionLabel": "第 39–42 題題組",
+      "section": "閱讀測驗",
+      "sourceKind": "passage",
+      "excerpt": "In addition, studies show that the thrill and excitement linked with scary films can be therapeutic: It allows viewers to release bottled-up emotions and experience a sense of relief after the movie is over.",
+      "interpretation": "teaching-gloss",
+      "officialAnswerVerified": false
+    },
+    {
+      "headwords": [
+        "sensitive"
+      ],
+      "location": "第 39–42 題／閱讀測驗",
+      "role": "passage",
+      "filename": "02-114學測英文試題 下午9.28.48.pdf",
+      "id": "gsat-114-019",
+      "headword": "sensitive",
+      "pattern": "sensitive to anxiety",
+      "meaningZh": "容易受焦慮影響",
+      "year": 114,
+      "pdfPage": 8,
+      "printedPage": 7,
+      "questionLabel": "第 39–42 題題組",
+      "section": "閱讀測驗",
+      "sourceKind": "passage",
+      "excerpt": "People who are more sensitive to anxiety can panic after viewing a thriller.",
+      "interpretation": "teaching-gloss",
+      "officialAnswerVerified": false
+    },
+    {
+      "headwords": [
+        "exposure"
+      ],
+      "location": "第 39–42 題／閱讀測驗",
+      "role": "passage",
+      "filename": "02-114學測英文試題 下午9.28.48.pdf",
+      "id": "gsat-114-020",
+      "headword": "exposure",
+      "pattern": "exposure to graphic violence and bloodshed",
+      "meaningZh": "接觸血腥暴力畫面",
+      "year": 114,
+      "pdfPage": 8,
+      "printedPage": 7,
+      "questionLabel": "第 39–42 題題組",
+      "section": "閱讀測驗",
+      "sourceKind": "passage",
+      "excerpt": "Worse yet, exposure to graphic violence and bloodshed can make them less sensitive to real-life violence and more accepting of aggression.",
+      "interpretation": "teaching-gloss",
+      "officialAnswerVerified": false
+    },
+    {
+      "headwords": [
+        "indulge"
+      ],
+      "location": "第 43–46 題／閱讀測驗",
+      "role": "passage",
+      "filename": "02-114學測英文試題 下午9.28.48.pdf",
+      "id": "gsat-114-021",
+      "headword": "indulge",
+      "pattern": "indulge in excessive drinking",
+      "meaningZh": "沉溺於過量飲酒",
+      "year": 114,
+      "pdfPage": 9,
+      "printedPage": 8,
+      "questionLabel": "第 43–46 題題組",
+      "section": "閱讀測驗",
+      "sourceKind": "passage",
+      "excerpt": "Some documents noted that Russians “indulge in excessive drinking whenever the occasion arises,” while others claimed that Russians “rarely drink wine.”",
+      "interpretation": "teaching-gloss",
+      "officialAnswerVerified": false
+    },
+    {
+      "headwords": [
+        "sharp"
+      ],
+      "location": "第 43–46 題／閱讀測驗",
+      "role": "passage",
+      "filename": "02-114學測英文試題 下午9.28.48.pdf",
+      "id": "gsat-114-022",
+      "headword": "sharp",
+      "pattern": "drop sharply",
+      "meaningZh": "急遽下跌",
+      "year": 114,
+      "pdfPage": 9,
+      "printedPage": 8,
+      "questionLabel": "第 43–46 題題組",
+      "section": "閱讀測驗",
+      "sourceKind": "passage",
+      "excerpt": "The situation worsened when the industrial production of vodka began in the country, causing its prices to drop sharply and making it available to even low-income citizens.",
+      "interpretation": "teaching-gloss",
+      "officialAnswerVerified": false
+    },
+    {
+      "headwords": [
+        "per"
+      ],
+      "location": "第 43–46 題／閱讀測驗",
+      "role": "passage",
+      "filename": "02-114學測英文試題 下午9.28.48.pdf",
+      "id": "gsat-114-023",
+      "headword": "per",
+      "pattern": "alcohol consumption per capita",
+      "meaningZh": "人均酒精消耗量",
+      "year": 114,
+      "pdfPage": 9,
+      "printedPage": 8,
+      "questionLabel": "第 43–46 題題組",
+      "section": "閱讀測驗",
+      "sourceKind": "passage",
+      "excerpt": "Although Russia does not occupy first place when it comes to alcohol consumption per capita, it is still close to the top.",
+      "interpretation": "teaching-gloss",
+      "officialAnswerVerified": false
+    },
+    {
+      "headwords": [
+        "outweigh"
+      ],
+      "location": "第 47–50 題／混合題",
+      "role": "passage",
+      "filename": "02-114學測英文試題 下午9.28.48.pdf",
+      "id": "gsat-114-024",
+      "headword": "outweigh",
+      "pattern": "outweighs the benefits",
+      "meaningZh": "弊大於利／超過好處",
+      "year": 114,
+      "pdfPage": 10,
+      "printedPage": 9,
+      "questionLabel": "第 47–50 題題組",
+      "section": "混合題",
+      "sourceKind": "passage",
+      "excerpt": "Still, many animal rights activists believe the cost of confining animals outweighs the benefits.",
+      "interpretation": "teaching-gloss",
+      "officialAnswerVerified": false
+    },
+    {
+      "headwords": [
+        "case"
+      ],
+      "location": "第 47–50 題／混合題",
+      "role": "passage",
+      "filename": "02-114學測英文試題 下午9.28.48.pdf",
+      "id": "gsat-114-025",
+      "headword": "case",
+      "pattern": "making a case for or against zoos",
+      "meaningZh": "提出支持或反對動物園的理由",
+      "year": 114,
+      "pdfPage": 10,
+      "printedPage": 9,
+      "questionLabel": "第 47–50 題題組",
+      "section": "混合題",
+      "sourceKind": "passage",
+      "excerpt": "In making a case for or against zoos, both sides argue that they’re saving animals.",
+      "interpretation": "teaching-gloss",
+      "officialAnswerVerified": false
+    },
+    {
+      "headwords": [
+        "afraid"
+      ],
+      "location": "第 6 題／詞彙題",
+      "role": "stem",
+      "filename": "02-115學測英文試卷 下午9.28.48.pdf",
+      "id": "gsat-115-001",
+      "headword": "afraid",
+      "pattern": "afraid of making public appearances",
+      "meaningZh": "害怕公開露面",
+      "year": 115,
+      "pdfPage": 2,
+      "printedPage": 1,
+      "questionLabel": "第 6 題",
+      "section": "詞彙題",
+      "sourceKind": "stem",
+      "excerpt": "As a shy boy afraid of making public appearances, Timmy ______ the thought of speaking before large audiences.",
+      "interpretation": "teaching-gloss",
+      "officialAnswerVerified": false
+    },
+    {
+      "headwords": [
+        "devote"
+      ],
+      "location": "第 7 題／詞彙題",
+      "role": "stem",
+      "filename": "02-115學測英文試卷 下午9.28.48.pdf",
+      "id": "gsat-115-002",
+      "headword": "devote",
+      "pattern": "devoted himself to whole-heartedly",
+      "meaningZh": "全心投入",
+      "year": 115,
+      "pdfPage": 2,
+      "printedPage": 1,
+      "questionLabel": "第 7 題",
+      "section": "詞彙題",
+      "sourceKind": "stem",
+      "excerpt": "To the newly-crowned winner of the piano competition, music is his life’s ______, which he has devoted himself to whole-heartedly.",
+      "interpretation": "teaching-gloss",
+      "officialAnswerVerified": false
+    },
+    {
+      "headwords": [
+        "responsive"
+      ],
+      "location": "第 11–15 題／綜合測驗",
+      "role": "option",
+      "filename": "02-115學測英文試卷 下午9.28.48.pdf",
+      "id": "gsat-115-003",
+      "headword": "responsive",
+      "pattern": "responsive to",
+      "meaningZh": "對……有反應",
+      "year": 115,
+      "pdfPage": 3,
+      "printedPage": 2,
+      "questionLabel": "第 11–15 題題組",
+      "section": "綜合測驗",
+      "sourceKind": "option",
+      "excerpt": "responsive to",
+      "interpretation": "teaching-gloss",
+      "officialAnswerVerified": false,
+      "optionLabel": "A",
+      "noteZh": "此片語出現在試題選項；上傳檔案未含官方解答。中文解釋為本站教學整理。"
+    },
+    {
+      "headwords": [
+        "significance"
+      ],
+      "location": "第 11–15 題／綜合測驗",
+      "role": "passage",
+      "filename": "02-115學測英文試卷 下午9.28.48.pdf",
+      "id": "gsat-115-004",
+      "headword": "significance",
+      "pattern": "of great significance",
+      "meaningZh": "意義重大",
+      "year": 115,
+      "pdfPage": 3,
+      "printedPage": 2,
+      "questionLabel": "第 11–15 題題組",
+      "section": "綜合測驗",
+      "sourceKind": "passage",
+      "excerpt": "This is of great significance for the peace and harmony in the group.",
+      "interpretation": "teaching-gloss",
+      "officialAnswerVerified": false
+    },
+    {
+      "headwords": [
+        "spring"
+      ],
+      "location": "第 16–20 題／綜合測驗",
+      "role": "passage",
+      "filename": "02-115學測英文試卷 下午9.28.48.pdf",
+      "id": "gsat-115-005",
+      "headword": "spring",
+      "pattern": "sprang up",
+      "meaningZh": "大量出現",
+      "year": 115,
+      "pdfPage": 3,
+      "printedPage": 2,
+      "questionLabel": "第 16–20 題題組",
+      "section": "綜合測驗",
+      "sourceKind": "passage",
+      "excerpt": "Teahouses thus sprang up to 16 the weary travelers, offering them a cup of tea to help them regain energy.",
+      "interpretation": "teaching-gloss",
+      "officialAnswerVerified": false
+    },
+    {
+      "headwords": [
+        "digestion"
+      ],
+      "location": "第 16–20 題／綜合測驗",
+      "role": "passage",
+      "filename": "02-115學測英文試卷 下午9.28.48.pdf",
+      "id": "gsat-115-006",
+      "headword": "digestion",
+      "pattern": "aid in digestion",
+      "meaningZh": "幫助消化",
+      "year": 115,
+      "pdfPage": 3,
+      "printedPage": 2,
+      "questionLabel": "第 16–20 題題組",
+      "section": "綜合測驗",
+      "sourceKind": "passage",
+      "excerpt": "Centuries later, the ability of tea to aid in digestion finally became known.",
+      "interpretation": "teaching-gloss",
+      "officialAnswerVerified": false
+    },
+    {
+      "headwords": [
+        "enhance"
+      ],
+      "location": "第 21–30 題／文意選填",
+      "role": "passage",
+      "filename": "02-115學測英文試卷 下午9.28.48.pdf",
+      "id": "gsat-115-007",
+      "headword": "enhance",
+      "pattern": "enhance memory and learning",
+      "meaningZh": "增進記憶與學習",
+      "year": 115,
+      "pdfPage": 4,
+      "printedPage": 3,
+      "questionLabel": "第 21–30 題題組",
+      "section": "文意選填",
+      "sourceKind": "passage",
+      "excerpt": "Neurologists also confirm that naps can enhance memory and learning.",
+      "interpretation": "teaching-gloss",
+      "officialAnswerVerified": false
+    },
+    {
+      "headwords": [
+        "reap"
+      ],
+      "location": "第 21–30 題／文意選填",
+      "role": "passage",
+      "filename": "02-115學測英文試卷 下午9.28.48.pdf",
+      "id": "gsat-115-008",
+      "headword": "reap",
+      "pattern": "reaping its benefits",
+      "meaningZh": "獲得其益處",
+      "year": 115,
+      "pdfPage": 4,
+      "printedPage": 3,
+      "questionLabel": "第 21–30 題題組",
+      "section": "文意選填",
+      "sourceKind": "passage",
+      "excerpt": "Understanding how to perfect your nap is vital for reaping its benefits.",
+      "interpretation": "teaching-gloss",
+      "officialAnswerVerified": false
+    },
+    {
+      "headwords": [
+        "bring"
+      ],
+      "location": "第 21–30 題／文意選填",
+      "role": "passage",
+      "filename": "02-115學測英文試卷 下午9.28.48.pdf",
+      "id": "gsat-115-009",
+      "headword": "bring",
+      "pattern": "bring about",
+      "meaningZh": "帶來；造成",
+      "year": 115,
+      "pdfPage": 4,
+      "printedPage": 3,
+      "questionLabel": "第 21–30 題題組",
+      "section": "文意選填",
+      "sourceKind": "passage",
+      "excerpt": "For some people, even a five-minute nap can bring about surprisingly 28 benefits.",
+      "interpretation": "teaching-gloss",
+      "officialAnswerVerified": false
+    },
+    {
+      "headwords": [
+        "precedence"
+      ],
+      "location": "第 31–34 題／篇章結構",
+      "role": "passage",
+      "filename": "02-115學測英文試卷 下午9.28.48.pdf",
+      "id": "gsat-115-010",
+      "headword": "precedence",
+      "pattern": "take precedence over",
+      "meaningZh": "優先於",
+      "year": 115,
+      "pdfPage": 5,
+      "printedPage": 4,
+      "questionLabel": "第 31–34 題題組",
+      "section": "篇章結構",
+      "sourceKind": "passage",
+      "excerpt": "These are often places where the needs and rights of the individual take precedence over those of the group.",
+      "interpretation": "teaching-gloss",
+      "officialAnswerVerified": false
+    },
+    {
+      "headwords": [
+        "resort"
+      ],
+      "location": "第 31–34 題／篇章結構",
+      "role": "passage",
+      "filename": "02-115學測英文試卷 下午9.28.48.pdf",
+      "id": "gsat-115-011",
+      "headword": "resort",
+      "pattern": "resort to smiling",
+      "meaningZh": "藉由微笑／訴諸微笑",
+      "year": 115,
+      "pdfPage": 5,
+      "printedPage": 4,
+      "questionLabel": "第 31–34 題題組",
+      "section": "篇章結構",
+      "sourceKind": "passage",
+      "excerpt": "Without a shared language, they often resort to smiling to get along with others.",
+      "interpretation": "teaching-gloss",
+      "officialAnswerVerified": false
+    },
+    {
+      "headwords": [
+        "stem"
+      ],
+      "location": "第 31–34 題／篇章結構",
+      "role": "passage",
+      "filename": "02-115學測英文試卷 下午9.28.48.pdf",
+      "id": "gsat-115-012",
+      "headword": "stem",
+      "pattern": "stemmed partly from",
+      "meaningZh": "部分源自",
+      "year": 115,
+      "pdfPage": 5,
+      "printedPage": 4,
+      "questionLabel": "第 31–34 題題組",
+      "section": "篇章結構",
+      "sourceKind": "passage",
+      "excerpt": "The absence of smiles stemmed partly from the attempt to hide their decayed teeth caused by poor dental hygiene.",
+      "interpretation": "teaching-gloss",
+      "officialAnswerVerified": false
+    },
+    {
+      "headwords": [
+        "perseverance"
+      ],
+      "location": "第 35–38 題／閱讀測驗",
+      "role": "passage",
+      "filename": "02-115學測英文試卷 下午9.28.48.pdf",
+      "id": "gsat-115-013",
+      "headword": "perseverance",
+      "pattern": "extraordinary courage and perseverance",
+      "meaningZh": "非凡勇氣與毅力",
+      "year": 115,
+      "pdfPage": 6,
+      "printedPage": 5,
+      "questionLabel": "第 35–38 題題組",
+      "section": "閱讀測驗",
+      "sourceKind": "passage",
+      "excerpt": "The news made headlines around the world, not only for the incredible achievement of the search team, but because the discovery marked the final chapter in a legendary story of extraordinary courage and perseverance.",
+      "interpretation": "teaching-gloss",
+      "officialAnswerVerified": false
+    },
+    {
+      "headwords": [
+        "exacerbate"
+      ],
+      "location": "第 35–38 題／閱讀測驗",
+      "role": "passage",
+      "filename": "02-115學測英文試卷 下午9.28.48.pdf",
+      "id": "gsat-115-014",
+      "headword": "exacerbate",
+      "pattern": "exacerbated the situation",
+      "meaningZh": "使情況惡化",
+      "year": 115,
+      "pdfPage": 6,
+      "printedPage": 5,
+      "questionLabel": "第 35–38 題題組",
+      "section": "閱讀測驗",
+      "sourceKind": "passage",
+      "excerpt": "Freezing water rushed in and exacerbated the situation.",
+      "interpretation": "teaching-gloss",
+      "officialAnswerVerified": false
+    },
+    {
+      "headwords": [
+        "fuel",
+        "exacerbate"
+      ],
+      "location": "第 36 題／閱讀測驗",
+      "role": "option",
+      "filename": "02-115學測英文試卷 下午9.28.48.pdf",
+      "id": "gsat-115-015",
+      "headword": "fuel",
+      "pattern": "Added fuel to the fire",
+      "meaningZh": "火上加油",
+      "year": 115,
+      "pdfPage": 6,
+      "printedPage": 5,
+      "questionLabel": "第 36 題",
+      "section": "閱讀測驗",
+      "sourceKind": "option",
+      "excerpt": "Added fuel to the fire",
+      "interpretation": "teaching-gloss",
+      "officialAnswerVerified": false,
+      "optionLabel": "D",
+      "noteZh": "此片語出現在試題選項；上傳檔案未含官方解答。中文解釋為本站教學整理。"
+    },
+    {
+      "headwords": [
+        "hand"
+      ],
+      "location": "第 35–38 題／閱讀測驗",
+      "role": "passage",
+      "filename": "02-115學測英文試卷 下午9.28.48.pdf",
+      "id": "gsat-115-016",
+      "headword": "hand",
+      "pattern": "at hand",
+      "meaningZh": "即將到來；近在手邊",
+      "year": 115,
+      "pdfPage": 6,
+      "printedPage": 5,
+      "questionLabel": "第 35–38 題題組",
+      "section": "閱讀測驗",
+      "sourceKind": "passage",
+      "excerpt": "Help was almost at hand, but ice and bad weather hindered their return.",
+      "interpretation": "teaching-gloss",
+      "officialAnswerVerified": false
+    },
+    {
+      "headwords": [
+        "defend"
+      ],
+      "location": "第 39–42 題／閱讀測驗",
+      "role": "passage",
+      "filename": "02-115學測英文試卷 下午9.28.48.pdf",
+      "id": "gsat-115-017",
+      "headword": "defend",
+      "pattern": "defend against attackers",
+      "meaningZh": "防禦攻擊者",
+      "year": 115,
+      "pdfPage": 8,
+      "printedPage": 7,
+      "questionLabel": "第 39–42 題題組",
+      "section": "閱讀測驗",
+      "sourceKind": "passage",
+      "excerpt": "Throughout the Middle Ages, winding staircases became a well-established feature of European castles, mainly for their advantages in helping to defend against attackers.",
+      "interpretation": "teaching-gloss",
+      "officialAnswerVerified": false
+    },
+    {
+      "headwords": [
+        "cope"
+      ],
+      "location": "第 39–42 題／閱讀測驗",
+      "role": "passage",
+      "filename": "02-115學測英文試卷 下午9.28.48.pdf",
+      "id": "gsat-115-018",
+      "headword": "cope",
+      "pattern": "cope with customers’ needs",
+      "meaningZh": "因應顧客的需求",
+      "year": 115,
+      "pdfPage": 8,
+      "printedPage": 7,
+      "questionLabel": "第 39–42 題題組",
+      "section": "閱讀測驗",
+      "sourceKind": "passage",
+      "excerpt": "Being associated with medieval castles and kings, spiral staircases gradually won popularity in European architecture, with new materials emerging to cope with customers’ needs.",
+      "interpretation": "teaching-gloss",
+      "officialAnswerVerified": false
+    },
+    {
+      "headwords": [
+        "familiar"
+      ],
+      "location": "第 39–42 題／閱讀測驗",
+      "role": "passage",
+      "filename": "02-115學測英文試卷 下午9.28.48.pdf",
+      "id": "gsat-115-019",
+      "headword": "familiar",
+      "pattern": "familiar with the stair pattern",
+      "meaningZh": "熟悉階梯配置",
+      "year": 115,
+      "pdfPage": 8,
+      "printedPage": 7,
+      "questionLabel": "第 39–42 題題組",
+      "section": "閱讀測驗",
+      "sourceKind": "passage",
+      "excerpt": "The defenders, living in the castles, were familiar with the stair pattern and could retreat up them very swiftly; while the attackers were much more likely to stumble and fall, particularly in the dimly lit confines of the staircase.",
+      "interpretation": "teaching-gloss",
+      "officialAnswerVerified": false
+    },
+    {
+      "headwords": [
+        "refer"
+      ],
+      "location": "第 43–46 題／閱讀測驗",
+      "role": "passage",
+      "filename": "02-115學測英文試卷 下午9.28.48.pdf",
+      "id": "gsat-115-020",
+      "headword": "refer",
+      "pattern": "referred to as the “Orient”",
+      "meaningZh": "被稱為「東方」",
+      "year": 115,
+      "pdfPage": 9,
+      "printedPage": 8,
+      "questionLabel": "第 43–46 題題組",
+      "section": "閱讀測驗",
+      "sourceKind": "passage",
+      "excerpt": "Ample evidences from the Old Testament also suggest that east was at the top of maps in pre-Biblical and Biblical eras, a reason why east is still referred to as the “Orient” today.",
+      "interpretation": "teaching-gloss",
+      "officialAnswerVerified": false
+    },
+    {
+      "headwords": [
+        "rely"
+      ],
+      "location": "第 43–46 題／閱讀測驗",
+      "role": "passage",
+      "filename": "02-115學測英文試卷 下午9.28.48.pdf",
+      "id": "gsat-115-021",
+      "headword": "rely",
+      "pattern": "relied on the North Star",
+      "meaningZh": "依靠北極星",
+      "year": 115,
+      "pdfPage": 9,
+      "printedPage": 8,
+      "questionLabel": "第 43–46 題題組",
+      "section": "閱讀測驗",
+      "sourceKind": "passage",
+      "excerpt": "At the time, sailors relied on the North Star to find their way across the Mediterranean and later the Atlantic.",
+      "interpretation": "teaching-gloss",
+      "officialAnswerVerified": false
+    },
+    {
+      "headwords": [
+        "friendly"
+      ],
+      "location": "第 47–50 題／混合題",
+      "role": "passage",
+      "filename": "02-115學測英文試卷 下午9.28.48.pdf",
+      "id": "gsat-115-022",
+      "headword": "friendly",
+      "pattern": "environmentally friendly items",
+      "meaningZh": "環保用品",
+      "year": 115,
+      "pdfPage": 10,
+      "printedPage": 9,
+      "questionLabel": "第 47–50 題題組",
+      "section": "混合題",
+      "sourceKind": "passage",
+      "excerpt": "She sells environmentally friendly items such as reusable bottles, bamboo toothbrushes, and soy candles.",
+      "interpretation": "teaching-gloss",
+      "officialAnswerVerified": false
+    },
+    {
+      "headwords": [
+        "community"
+      ],
+      "location": "第 47–50 題／混合題",
+      "role": "passage",
+      "filename": "02-115學測英文試卷 下午9.28.48.pdf",
+      "id": "gsat-115-023",
+      "headword": "community",
+      "pattern": "a sense of community",
+      "meaningZh": "社區凝聚感",
+      "year": 115,
+      "pdfPage": 10,
+      "printedPage": 9,
+      "questionLabel": "第 47–50 題題組",
+      "section": "混合題",
+      "sourceKind": "passage",
+      "excerpt": "“There’s a sense of community in the area.”",
+      "interpretation": "teaching-gloss",
+      "officialAnswerVerified": false
+    },
+    {
+      "headwords": [
+        "kind"
+      ],
+      "location": "第 50 題／混合題",
+      "role": "passage",
+      "filename": "02-115學測英文試卷 下午9.28.48.pdf",
+      "id": "gsat-115-024",
+      "headword": "kind",
+      "pattern": "one of a kind",
+      "meaningZh": "獨一無二",
+      "year": 115,
+      "pdfPage": 10,
+      "printedPage": 9,
+      "questionLabel": "第 50 題",
+      "section": "混合題",
+      "sourceKind": "passage",
+      "excerpt": "Owner Joseph Tang says he knew the idea would work well in this unique district: “Each store is one of a kind in Wonder Village,” he states.",
+      "interpretation": "teaching-gloss",
+      "officialAnswerVerified": false
+    },
+    {
+      "headwords": [
+        "characterize"
+      ],
+      "location": "第 47–48 題／混合題",
+      "role": "stem",
+      "filename": "02-115學測英文試卷 下午9.28.48.pdf",
+      "id": "gsat-115-025",
+      "headword": "characterize",
+      "pattern": "characterized by its diversity and uniqueness",
+      "meaningZh": "以多樣性與獨特性為特色",
+      "year": 115,
+      "pdfPage": 11,
+      "printedPage": 10,
+      "questionLabel": "第 47–48 題題組",
+      "section": "混合題",
+      "sourceKind": "stem",
+      "excerpt": "Wonder Village, a famous tourist site, is characterized by its diversity and uniqueness.",
+      "interpretation": "teaching-gloss",
+      "officialAnswerVerified": false
+    },
+    {
+      "id": "gsat-115-026",
+      "headword": "tight",
+      "headwords": [
+        "tight"
+      ],
+      "pattern": "schedule",
+      "meaningZh": "緊湊行程：tight schedule（由題幹與選項 B 作教學解讀）",
+      "year": 115,
+      "pdfPage": 2,
+      "printedPage": 1,
+      "questionLabel": "第 1 題",
+      "location": "第 1 題／詞彙題",
+      "section": "詞彙題",
+      "sourceKind": "stem",
+      "role": "stem",
+      "filename": "02-115學測英文試卷 下午9.28.48.pdf",
+      "excerpt": "The mayor has such a ______ schedule that it takes weeks to arrange an interview with her.",
+      "interpretation": "teaching-gloss",
+      "officialAnswerVerified": false,
+      "candidateOption": "B: tight",
+      "noteZh": "引文保留原題空格；完成搭配是本站根據題幹與選項的教學解讀，並未核對官方答案。"
+    },
+    {
+      "id": "gsat-115-027",
+      "headword": "elbow",
+      "headwords": [
+        "elbow"
+      ],
+      "pattern": "my way through the crowd",
+      "meaningZh": "用手肘擠過人群：elbow one’s way through（由題幹與選項 C 作教學解讀）",
+      "year": 115,
+      "pdfPage": 2,
+      "printedPage": 1,
+      "questionLabel": "第 9 題",
+      "location": "第 9 題／詞彙題",
+      "section": "詞彙題",
+      "sourceKind": "stem",
+      "role": "stem",
+      "filename": "02-115學測英文試卷 下午9.28.48.pdf",
+      "excerpt": "There were so many people at the bus station that I had to ______ my way through the crowd to board the bus in time.",
+      "interpretation": "teaching-gloss",
+      "officialAnswerVerified": false,
+      "candidateOption": "C: elbow",
+      "noteZh": "引文保留原題空格；完成搭配是本站根據題幹與選項的教學解讀，並未核對官方答案。"
+    }
+  ]
+}

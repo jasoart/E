@@ -4,7 +4,7 @@ const BUILTIN_PRACTICE_KEY = "gsat-builtin-retrieval-v1";
 const BUILTIN_IRREGULAR_FORMS = {
   arise:["arose","arisen"],awake:["awoke","awoken"],bear:["bore","borne","born"],become:["became"],bend:["bent"],
   bid:["bade","bidden"],bind:["bound"],bite:["bit","bitten"],bleed:["bled"],blow:["blew","blown"],catch:["caught"],
-  cling:["clung"],creep:["crept"],deal:["dealt"],dig:["dug"],draw:["drew","drawn"],fisherman:["fishermen"],
+  cling:["clung"],creep:["crept"],deal:["dealt"],dig:["dug"],draw:["drew","drawn"],mean:["meant"],fisherman:["fishermen"],
   flee:["fled"],forbid:["forbade","forbidden"],forget:["forgot","forgotten"],forgive:["forgave","forgiven"],
   forsake:["forsook","forsaken"],freeze:["froze","frozen"],freshman:["freshmen"],grind:["ground"],hang:["hung"],
   hide:["hid","hidden"],kneel:["knelt"],leaf:["leaves"],lend:["lent"],mislead:["misled"],misunderstand:["misunderstood"],
@@ -78,8 +78,16 @@ function readBuiltinPractice() {
   try { const value = JSON.parse(localStorage.getItem(BUILTIN_PRACTICE_KEY) || "{}"); return value && typeof value === "object" && !Array.isArray(value) ? value : {}; }
   catch { return {}; }
 }
+function builtinPracticeId(entry, index) {
+  const example = builtinExampleResult(entry).examples[index];
+  if (!example) return null;
+  // A replacement/reordered sentence must not inherit an older sentence's score.
+  return entry.word + "::" + example.source + "::" + encodeURIComponent(example.text);
+}
 function saveBuiltinAttempt(entry, index, correct) {
-  const progress = readBuiltinPractice(), key = entry.word + "::" + index;
+  const key = builtinPracticeId(entry, index);
+  if (!key) return null;
+  const progress = readBuiltinPractice();
   const old = progress[key] || {};
   progress[key] = { attempts: Number(old.attempts || 0) + 1, correct: Number(old.correct || 0) + Number(correct),
     needsRetry: !correct, lastAttempt: new Date().toISOString() };
