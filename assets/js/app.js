@@ -35,14 +35,21 @@ for(const [id,value] of [["builtinWordCount",builtinStats.words],["builtinExampl
 for(const [id,value] of [["supplementalCount",notebookCounts.supplemental],["notebookWordCount",notebookCounts.words],["notebookTabCount",notebookCounts.listedWords??notebookCounts.words],["notebookCollocationCount",notebookCounts.collocations]])if(byId(id))byId(id).textContent=Number(value||0).toLocaleString();
 if(byId("headerDataCount"))byId("headerDataCount").textContent=`${officialWordCount.toLocaleString()} 官方詞條 · ${notebookCounts.supplemental.toLocaleString()} 補充詞 · ${builtinStats.examples.toLocaleString()} 內建例句 · ${builtinStats.collocations.toLocaleString()} 內建搭配`;
 document.addEventListener("localvoicestatus",event=>{
-  const status=event.detail,host=byId("audioStatus"),sourceLink=byId("audioSourceLink");
+  const status=event.detail,host=byId("audioStatus"),sourceLink=byId("audioSourceLink"),licenseLink=byId("audioLicenseLink"),attribution=byId("audioAttribution");
   if(host){host.textContent=status.message;host.dataset.source=status.source||"none";}
   if(sourceLink){
-    const url=status.source==="dictionary"?safePronunciationSourceUrl(status.sourceUrl):"";
+    const url=["dictionary","commons"].includes(status.source)?safePronunciationSourceUrl(status.sourceUrl):"";
     sourceLink.hidden=!url;
     if(url){sourceLink.href=url;sourceLink.textContent=`錄音出處${status.licenseName?" · "+status.licenseName:""}`;}
     else sourceLink.removeAttribute("href");
   }
+  if(licenseLink){
+    const url=["dictionary","commons"].includes(status.source)?safePronunciationSourceUrl(status.licenseUrl):"";
+    licenseLink.hidden=!url;
+    if(url){licenseLink.href=url;licenseLink.textContent=status.licenseName||"錄音授權";}
+    else licenseLink.removeAttribute("href");
+  }
+  if(attribution){attribution.textContent=status.attribution?`錄音作者：${status.attribution}`:"";attribution.hidden=!status.attribution;}
 });
 byId("bootStatus").hidden=true;
 

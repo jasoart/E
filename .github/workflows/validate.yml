@@ -1,0 +1,67 @@
+name: Validate static learning site
+
+on:
+  push:
+    branches: [main, restore-old-site]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: validate-${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  data-and-code:
+    name: Data, code, and deployable assets
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@6044e13b5dc448c55e2357c09f80417699197238 # v6.2.0
+        with:
+          node-version: '24'
+          package-manager-cache: false
+      - uses: actions/setup-python@a309ff8b426b58ec0e2a45f0f869d46889d02405 # v6.2.0
+        with:
+          python-version: '3.12'
+      - name: JavaScript regressions (including retained legacy modules)
+        run: node --test tests/*.cjs
+      - name: Data pipelines and static validator regressions
+        run: python3 -m unittest discover -s tests -p 'test_*.py' -q
+      - name: Generated data is reproducible
+        run: |
+          python3 research/build_exam_notebook.py --check
+          python3 research/build_exam_evidence_index.py --check
+      - name: HTML parity, asset links, hashes, and data counts
+        run: python3 tools/validate_site.py
+
+  browser:
+    name: Desktop and mobile Chromium
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@a309ff8b426b58ec0e2a45f0f869d46889d02405 # v6.2.0
+        with:
+          python-version: '3.12'
+      - name: Install browser test tools
+        run: |
+          python3 -m pip install --disable-pip-version-check -r .github/requirements-browser.txt
+          python3 -m playwright install --with-deps chromium
+      - name: Expose pinned Chromium at the existing test path
+        run: |
+          browser_path="$(python3 -c 'from playwright.sync_api import sync_playwright; p = sync_playwright().start(); print(p.chromium.executable_path); p.stop()')"
+          test -x "$browser_path"
+          sudo ln -sf "$browser_path" /usr/bin/chromium
+      - name: Local learning, notebook, persistence, and audio fallback
+        run: |
+          python3 tests/browser_builtin.py
+          python3 tests/browser_notebook.py
+          python3 tests/browser_learning.py

@@ -137,14 +137,20 @@ function startCollocationPractice(entry){const host=byId("collocationPractice"),
 
 function notebookPartOfSpeech(entry){
   const note=typeof getExamNotebook==="function"?getExamNotebook(entry):null;
-  return note?.senses?.length?[...new Set(note.senses.map(item=>item.pos).filter(Boolean))].join(" / ")||entry.partOfSpeech:entry.partOfSpeech;
+  const original=String(entry.partOfSpeech||"").split("/"),meaningPositions=String(entry.meaning||"").match(/\b(?:vt\.|vi\.|adj\.|adv\.|prep\.|conj\.|pron\.|interj\.|art\.|num\.|aux\.|v\.|n\.|a\.)/g)||[];
+  return [...new Set([...original,...meaningPositions,...(note?.senses||[]).flatMap(item=>String(item.pos||"").split("/"))].filter(Boolean).map(pos=>pos==="a."?"adj.":pos))].join(" / ")||entry.partOfSpeech;
 }
 function notebookShortMeaning(entry){
   return (typeof getBuiltinStudy==="function"?getBuiltinStudy(entry)?.plainMeaning:null)||entry.meaning;
 }
 function renderNotebookSenses(entry,study,note){
-  if(!note?.senses?.length)return `<h3>${escapeHtml(study?.plainMeaning||entry.meaning)}</h3><p class="card-note">原有釋意；尚未新增逐義用法整理。</p>`;
-  return `<div class="notebook-senses">${note.senses.map(item=>`<div class="notebook-sense"><span class="sense-pos">${escapeHtml(item.pos)}</span><div><h3>${escapeHtml(item.meaning)}</h3>${item.usage?`<p>${escapeHtml(item.usage)}</p>`:""}</div></div>`).join("")}</div>`;
+  const original=renderCompleteOriginalMeaning(entry,study);
+  if(!note?.senses?.length)return original+`<p class="card-note">以上為完整原釋意；此詞尚未新增逐義情境整理。</p>`;
+  return original+`<h4 class="notebook-senses-heading">學測情境補充與用法</h4><div class="notebook-senses">${note.senses.map(item=>`<div class="notebook-sense"><span class="sense-pos">${escapeHtml(item.pos)}</span><div><h3>${escapeHtml(item.meaning)}</h3>${item.usage?`<p>${escapeHtml(item.usage)}</p>`:""}</div></div>`).join("")}</div>`;
+}
+function renderCompleteOriginalMeaning(entry,study){
+  const original=typeof getOriginalStudy==="function"?getOriginalStudy(entry)||study:study;
+  return `<div class="original-meaning complete-original-meaning"><h4>原詞表完整釋意</h4><p class="original-meaning-text">${escapeHtml(entry.meaning||"原詞表未附釋意")}</p>${original?.plainMeaning&&original.plainMeaning!==entry.meaning?`<p><strong>原教材簡要說明：</strong>${escapeHtml(original.plainMeaning)}</p>`:""}${original?.ankiMeaning?`<p><strong>上傳教材釋意：</strong>${escapeHtml(original.ankiMeaning)}</p>`:""}<p class="card-note">原釋意完整保留；部分譯法或專門義較少用，可對照情境與字典核對。</p></div>`;
 }
 function highlightChunk(value){
   return String(value||"").split(/\b(to|for|of|with|on|in|at|by|from|into|about|as|over|under|through|against|upon|out|off|up)\b/gi).map(part=>/^(to|for|of|with|on|in|at|by|from|into|about|as|over|under|through|against|upon|out|off|up)$/i.test(part)?`<mark class="chunk-preposition">${escapeHtml(part)}</mark>`:escapeHtml(part)).join("");
@@ -168,6 +174,11 @@ function renderNotebookPhonetic(entry,note){
 function renderPronunciationDetails(entry){
   const data=typeof GSAT_KK_PRONUNCIATION!=="undefined"?GSAT_KK_PRONUNCIATION:null,rows=data?.entries?.[entry.word]||[],url=data&&safeExternalUrl(data.sourceUrl);
   return `<details class="pronunciation-details"><summary>音標來源、其他讀音與原音標</summary>${rows.length?`<p>${escapeHtml(data.notation)}。本頁音標為美式音段轉寫，並非來源字典原刊的 KK 標記；未將多種讀音自行指定給詞性。</p><div class="pronunciation-variants">${rows.map(item=>`<span><strong lang="en">${escapeHtml(item.word)}</strong> ${escapeHtml(item.value)}</span>`).join("")}</div><p>${url?`<a href="${escapeHtml(url)}" target="_blank" rel="noreferrer">${escapeHtml(data.source)}</a> · `:""}<a href="./assets/data/cmudict.LICENSE.txt">授權說明</a></p>`:'<p>尚未收錄可轉寫的 KK 美式音段；可由下方字典連結核對發音。</p>'}<p>原詞表音標（原樣保留）：${escapeHtml(entry.pronunciation||"未收錄")}</p></details>`;
+}
+function renderPronunciationPreferences(){
+  const prefs=typeof getPronunciationPreferences==="function"?getPronunciationPreferences():{source:"auto",accent:"en-US",rate:0.82};
+  const options=(items,current)=>items.map(([value,label])=>`<option value="${value}"${String(value)===String(current)?" selected":""}>${label}</option>`).join("");
+  return `<fieldset class="pronunciation-preferences"><legend>發音偏好</legend><label for="pronunciationSource">來源<select id="pronunciationSource">${options([["auto","自動備援"],["dictionary","字典錄音優先"],["commons","Wikimedia 錄音優先"],["device","只用裝置語音"]],prefs.source)}</select></label><label for="pronunciationAccent">偏好口音<select id="pronunciationAccent">${options([["en-US","美式英文"],["en-GB","英式英文"]],prefs.accent)}</select></label><label for="pronunciationRate">朗讀速度<select id="pronunciationRate">${options([[0.7,"慢速"],[0.82,"學習速度"],[1,"正常速度"]],prefs.rate)}</select></label></fieldset>`;
 }
 function renderNotebookArchive(entry,note){
   const original=typeof getOriginalStudy==="function"?getOriginalStudy(entry):null;
@@ -195,10 +206,11 @@ function renderDetail(entry,index){
   const word=encodeURIComponent(spokenForm(entry.word)),supplement=!!entry.supplemental;
   wordDetail.className=`detail theme-l${entry.level}`;
   wordDetail.innerHTML=`<div class="topline"><span class="badge">${supplement?"補充詞彙":`LEVEL ${entry.level}`}</span><span>${supplement?"原 6,012 詞條以外的學測延伸":levelName(entry.level)}</span><div class="review-actions"><span class="review-status" id="reviewStatus">${review?`下次 ${escapeHtml(review.due)}`:"尚未安排複習"}</span><button class="review-button again" id="reviewAgain" type="button">再複習</button><button class="review-button good" id="reviewGood" type="button">記住了</button></div><button class="favorite ${saved?"saved":""}" id="favoriteButton" type="button">${saved?"★ 已收藏":"☆ 收藏"}</button></div>
-    <div class="title-row"><div><h2>${escapeHtml(entry.word)}</h2><p class="phonetic"><em id="primaryPos">${escapeHtml(notebookPartOfSpeech(entry))}</em>${renderNotebookPhonetic(entry,note)}</p>${renderPronunciationDetails(entry)}<p class="audio-status" id="audioStatus">${escapeHtml(typeof localVoiceStatus==="function"?localVoiceStatus().message:"裝置英文語音")}</p><a id="audioSourceLink" class="audio-source-link" target="_blank" rel="noopener noreferrer" hidden>錄音出處</a></div><button class="speak" id="speakButton" type="button" aria-label="播放 ${escapeHtml(entry.word)} 的發音"><span>🔊</span><small>字典發音</small></button></div>
-    <div class="pronunciation-controls"><button class="accent-choice" id="stopLocalVoiceButton" type="button">停止發音</button><div><p>點按單字發音取得字典錄音；無可用錄音時使用裝置英文語音。例句使用裝置語音。</p><p class="dictionary-links">人工核對：<a href="https://dictionary.cambridge.org/dictionary/english/${word}" target="_blank" rel="noreferrer">Cambridge Dictionary</a><a href="https://www.merriam-webster.com/dictionary/${word}" target="_blank" rel="noreferrer">Merriam-Webster</a></p></div></div>
+    <div class="title-row"><div><h2>${escapeHtml(entry.word)}</h2><p class="phonetic"><em id="primaryPos">${escapeHtml(notebookPartOfSpeech(entry))}</em>${renderNotebookPhonetic(entry,note)}</p>${renderPronunciationDetails(entry)}<p class="audio-status" id="audioStatus">${escapeHtml(typeof localVoiceStatus==="function"?localVoiceStatus().message:"裝置英文語音")}</p><div class="audio-provenance"><a id="audioSourceLink" class="audio-source-link" target="_blank" rel="noopener noreferrer" hidden>錄音出處</a><a id="audioLicenseLink" class="audio-source-link" target="_blank" rel="noopener noreferrer" hidden>授權</a><span id="audioAttribution" hidden></span></div></div><button class="speak" id="speakButton" type="button" aria-label="播放 ${escapeHtml(entry.word)} 的發音"><span>🔊</span><small>播放發音</small></button></div>
+    ${renderPronunciationPreferences()}<div class="pronunciation-controls"><button class="accent-choice" id="stopLocalVoiceButton" type="button">停止發音</button><div><p>點按才查詢錄音。自動模式依序嘗試字典、Wikimedia 與裝置語音；指定錄音來源失敗時改用裝置語音。口音以實際標示為準，例句使用裝置語音。</p><p class="dictionary-links">人工核對：<a href="https://dictionary.cambridge.org/dictionary/english/${word}" target="_blank" rel="noreferrer">Cambridge Dictionary</a><a href="https://www.merriam-webster.com/dictionary/${word}" target="_blank" rel="noreferrer">Merriam-Webster</a></p></div></div>
     <div class="notebook-intro"><p class="kicker">單字筆記 V2.0${note?" · 學測情境新編":" · 原有教材"}</p><p>${note?"從字義到搭配，再把同一用法放入自己的作文。":"此詞保留原有教材；新增的五欄筆記會標示在已整理詞條。"}</p><nav class="notebook-navigation" aria-label="單字筆記欄位"><a href="#notebookSenses">1 字義</a><a href="#notebookCollocations">2 搭配</a><a href="#notebookRelations">3 替換</a><a href="#notebookFamily">4 字族</a><a href="#exampleCard">5 情境句</a></nav></div>
-    <section class="definition notebook-field" id="notebookSenses"><p class="kicker"><span class="notebook-number">01</span> 詞性與多重字義</p>${renderNotebookSenses(entry,study,note)}<details class="original-meaning"><summary>保留的原釋意${study?.ankiMeaning?"與上傳教材釋意":""}</summary><p>${escapeHtml(entry.meaning)}</p>${study?.ankiMeaning?`<p><strong>上傳教材：</strong>${escapeHtml(study.ankiMeaning)}</p>`:""}</details>${note?.usageNote?`<p class="notebook-usage-note"><strong>用法提醒：</strong>${escapeHtml(note.usageNote)}</p>`:""}</section>
+    <section id="retrievalPractice" class="retrieval-practice" aria-label="搭配回想練習"></section>
+    <section class="definition notebook-field" id="notebookSenses"><p class="kicker"><span class="notebook-number">01</span> 詞性與多重字義</p>${renderNotebookSenses(entry,study,note)}${note?.usageNote?`<p class="notebook-usage-note"><strong>用法提醒：</strong>${escapeHtml(note.usageNote)}</p>`:""}</section>
     <section class="study-card notebook-field" id="notebookCollocations"><p class="kicker"><span class="notebook-number">02</span> 高頻搭配詞與介系詞</p><p class="card-note">以整個搭配記憶；標示的介系詞與副詞小詞一起練習。</p><div id="builtinCollocations">${renderBuiltinCollocations(study)}</div>${!note&&study?.usageNote?`<p>${escapeHtml(study.usageNote)}</p>`:""}</section>
     <section class="study-card notebook-field" id="notebookRelations"><p class="kicker"><span class="notebook-number">03</span> 同義字與進階慣用語</p>${renderNotebookRelations(note)}</section>
     <section class="study-card notebook-field" id="notebookFamily"><p class="kicker"><span class="notebook-number">04</span> 衍生字與詞性轉換</p>${renderNotebookFamily(note)}</section>
@@ -213,6 +225,10 @@ function renderDetail(entry,index){
   byId("reviewGood").addEventListener("click",()=>{const item=markReview(entry.word,"good");byId("reviewStatus").textContent=`下次 ${item.due}`;if(state.reviewOnly)applyFilters()});
   byId("speakButton").addEventListener("click",event=>speakWord(entry.word,event.currentTarget));
   byId("stopLocalVoiceButton").addEventListener("click",stopPronunciation);
+  for(const [id,key] of [["pronunciationSource","source"],["pronunciationAccent","accent"],["pronunciationRate","rate"]]){
+    const control=byId(id);
+    if(control&&typeof setPronunciationPreferences==="function")control.addEventListener("change",()=>setPronunciationPreferences({[key]:key==="rate"?Number(control.value):control.value}));
+  }
   byId("practiceButton").addEventListener("click",()=>startCollocationPractice(entry));
   byId("collocationContent").addEventListener("toggle",event=>{if(event.target?.matches?.("details.pattern-references"))loadPatternReferenceDetails(event.target)},true);
   wordDetail.querySelectorAll(".notebook-evidence").forEach(details=>details.addEventListener("toggle",()=>loadNotebookEvidence(details)));
@@ -222,6 +238,7 @@ function renderDetail(entry,index){
     byId("builtinWritingFeedback").textContent=problems.length?problems.join("；")+"。這些是形式提醒，請再檢查詞義與文法。":"已找到目標詞、句末標點與至少 8 個詞。請自行核對搭配、時態與邏輯，或請老師評閱。";
   });
   syncFavoriteButton();showExampleResult(builtinExampleResult(entry),entry,index);renderBuiltinPractice(entry);
+  if(typeof renderRetrievalPractice==="function")renderRetrievalPractice(entry);
 }
 function renderBuiltinCollocations(study){
   const rows=study?.collocations||[];

@@ -1,0 +1,40 @@
+.retrieval-practice {
+  margin: 20px 0;
+  padding: 20px;
+  border: 1px solid var(--line, #d8e0da);
+  border-left: 4px solid var(--accent, #24644a);
+  border-radius: 14px;
+  background: var(--paper, #fff);
+  color: var(--ink, #20352b);
+}
+.retrieval-practice[hidden], [data-retrieval-concealed="true"] { display: none !important; }
+.retrieval-practice h3 { margin: 0 0 10px; font-size: 1.1rem; line-height: 1.5; }
+.retrieval-practice p { margin: 8px 0; line-height: 1.7; overflow-wrap: anywhere; }
+.retrieval-kicker { font-size: .8rem; font-weight: 700; }
+.retrieval-actions { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 12px; }
+.retrieval-practice button {
+  min-height: 44px;
+  max-width: 100%;
+  padding: 9px 13px;
+  border: 1px solid #647d70;
+  border-radius: 9px;
+  background: #f3f7f4;
+  color: #234735;
+  font: inherit;
+  font-size: .9rem;
+  line-height: 1.4;
+  cursor: pointer;
+}
+.retrieval-practice button:disabled { opacity: .55; cursor: default; }
+.retrieval-practice .retrieval-start, .retrieval-practice .retrieval-reveal { background: #285c43; color: #fff; }
+.retrieval-practice .retrieval-exit { background: transparent; }
+.retrieval-practice :focus-visible { outline: 3px solid #397bdb; outline-offset: 3px; }
+.retrieval-form label { display: block; font-size: .9rem; font-weight: 700; margin: 12px 0 6px; }
+.retrieval-form input { display: block; box-sizing: border-box; width: 100%; min-width: 0; min-height: 44px; padding: 10px; border: 1px solid #647d70; border-radius: 8px; font-size: 1rem; }
+.retrieval-reference { padding: 12px; border-radius: 8px; background: #eff5ee; color: #183c28; font-size: 1.2rem; font-weight: 700; }
+.retrieval-practice .retrieval-note { font-size: .82rem; color: #526159; }
+.retrieval-storage-note, .retrieval-feedback { color: #855214; }
+@media (max-width: 480px) {
+  .retrieval-practice { padding: 15px; }
+  .retrieval-actions button { flex: 1 1 140px; }
+}

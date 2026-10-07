@@ -319,3 +319,39 @@ test('the notebook-only view reaches all curated live IDs and respects search an
   assert.equal(e.run('state.notebookOnly'), false);
   assert.equal(e.run('state.filtered.length'), e.run('VOCABULARY.length'));
 });
+
+test('all live words show the complete original meaning in the primary senses field', () => {
+  const e = environment();
+  assert.equal(e.run(`VOCABULARY.every(entry => {
+    const html=renderNotebookSenses(entry,getBuiltinStudy(entry),getExamNotebook(entry));
+    return html.includes('<p class="original-meaning-text">'+escapeHtml(entry.meaning||"原詞表未附釋意")+'</p>')
+      && !html.includes('<details') && !html.includes(' hidden');
+  })`), true);
+  e.run('renderDetail(VOCABULARY.find(entry=>entry.word==="challenge"),0)');
+  const html=e.get('wordDetail').innerHTML;
+  const senses=html.slice(html.indexOf('id="notebookSenses"'),html.indexOf('id="notebookCollocations"'));
+  for(const meaning of ['盤問','要求','懷疑','表示異議'])assert.ok(senses.includes(meaning),meaning);
+  assert.ok(senses.includes(e.originalStudies.challenge.plainMeaning));
+  e.context.originalStudies=e.originalStudies;
+  assert.equal(e.run(`VOCABULARY.every(entry => {
+    const original=originalStudies[entry.word];
+    if(!original)return true;
+    const html=renderNotebookSenses(entry,getBuiltinStudy(entry),getExamNotebook(entry));
+    return (!original.plainMeaning||html.includes(escapeHtml(original.plainMeaning)))
+      && (!original.ankiMeaning||html.includes(escapeHtml(original.ankiMeaning)));
+  })`),true);
+  assert.ok(senses.includes('學測情境補充與用法'));
+  assert.match(e.run('notebookPartOfSpeech(VOCABULARY.find(entry=>entry.word==="mean"))'),/n\./);
+  assert.match(e.run('notebookPartOfSpeech(VOCABULARY.find(entry=>entry.word==="right"))'),/vt\./);
+});
+
+test('full original and uploaded meanings stay escaped alongside curated senses', () => {
+  const e=environment();
+  e.context.meaningEntry={meaning:'n. 全部原義 <img src=x onerror=alert(1)>',partOfSpeech:'n.'};
+  e.context.meaningStudy={ankiMeaning:'<script>上傳釋意</script>'};
+  const html=e.run('renderNotebookSenses(meaningEntry,meaningStudy,{senses:[{pos:"n.",meaning:"補充義",usage:"語境"}]})');
+  assert.ok(html.includes('全部原義 &lt;img'));
+  assert.ok(html.includes('&lt;script&gt;上傳釋意&lt;/script&gt;'));
+  assert.ok(html.includes('補充義'));
+  assert.doesNotMatch(html,/<img|<script|<details/);
+});

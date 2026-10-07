@@ -108,18 +108,20 @@ def main():
             page.screenshot(path='/tmp/e-notebook-mobile.png', full_page=True)
             outcomes.append('390px and 320px notebook layout without horizontal overflow')
 
-            # The only external request is a deliberate pronunciation click. Abort
-            # it to verify fallback status; headless Chrome has no installed voice.
+            # Only a deliberate pronunciation click contacts providers. Abort both
+            # metadata requests to verify fallback; this is not real audio validation.
             page.locator('#speakButton').click()
             page.wait_for_function("() => ['unavailable','playing','ready'].includes(localVoiceStatus().state)")
-            assert external and all(url.startswith('https://api.dictionaryapi.dev/') for url in external), external
+            assert len(external) == 2, external
+            assert external[0] == 'https://api.dictionaryapi.dev/api/v2/entries/en/exacerbate', external
+            assert external[1].startswith('https://commons.wikimedia.org/w/api.php?'), external
             assert '模型' not in page.locator('#audioStatus').inner_text()
-            outcomes.append('lazy dictionary request and explicit offline/device outcome')
+            outcomes.append('explicit dictionary then Commons requests and offline/device outcome')
             assert not errors, errors
             assert not failed_local, failed_local
             browser.close()
         print(json.dumps({'passed': outcomes, 'notebook': stats, 'pageErrors': errors, 'failedLocalResources': failed_local,
-                          'audio': 'dictionary request deliberately aborted; real audio/device quality untested'}, ensure_ascii=False, indent=2))
+                          'audio': 'both recording providers deliberately aborted; real audio/device quality untested'}, ensure_ascii=False, indent=2))
     finally:
         server.shutdown()
         server.server_close()

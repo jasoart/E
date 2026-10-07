@@ -47,4 +47,10 @@ HLR 使用 `p = 2^(-Δ/h)`、`h = 2^(θ·x)`：Δ 是距上次練習的時間，
 
 ## 語音角色另見文件
 
-Kokoro、ONNX Runtime、Hugging Face 與 Safari／WebKit 的角色、下載及執行限制另見 [LOCAL_VOICE.md](LOCAL_VOICE.md)。語音合成負責朗讀，不負責例句正確性；瀏覽器工具或機構名稱不等於 iPhone 效能保證。本研究文件沒有進行 GPU 訓練、語音效能或 iPhone 13 實機測量。
+目前頁面使用公開單字錄音及裝置本機英文語音，來源、口音、授權與降級方式見 [PRONUNCIATION_SOURCES.md](PRONUNCIATION_SOURCES.md)；KK 轉換規則見 [KK_NOTATION.md](KK_NOTATION.md)。[LOCAL_VOICE.md](LOCAL_VOICE.md) 留存較早的模型引擎研究，不能當成目前頁面已載入該引擎。語音合成負責朗讀，不負責例句正確性；瀏覽器工具或機構名稱不等於 iPhone 效能保證。
+
+## 2026-10-08 來源查核與頁面落地
+
+新增的 [TECHNOLOGY_RESEARCH_2026.md](TECHNOLOGY_RESEARCH_2026.md) 記錄 CMU／Edinburgh 原始語音專案、Kyle Mahowald 作者書目與可下載的詞記憶實驗資料、SSP-MMC／FSRS 評估方法，以及使用者指定的 GitHub 架構來源。區分已讀的 README、已解析的 CSV 與遭代理拒絕而未取得的正式論文／講義，不引用未讀全文的效果量。
+
+`assets/js/retrieval-practice.js` 已把主動回想接到五欄筆記：暫時收起教材，先用中文提示寫完整英文搭配，核對後再自評，不熟的搭配在本次練習末尾重試。選「想不起來」後不能直接標成成功；自評只表示本次回想，安排複習仍沿用現有透明間隔規則。每次最多三題是操作負擔的產品選擇，並非論文證明的最佳題數；沒有引入 FSRS、AI 模型或新的學習效果宣稱。

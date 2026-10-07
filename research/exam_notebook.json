@@ -738,13 +738,23 @@
       "senses": [
         {
           "pos": "n.",
-          "meaning": "敘述；帳戶",
-          "usage": ""
+          "meaning": "敘述；報告",
+          "usage": "a detailed account of an event。"
         },
         {
-          "pos": "v.",
-          "meaning": "解釋；占比",
-          "usage": ""
+          "pos": "n.",
+          "meaning": "帳戶；帳目",
+          "usage": "a bank account；複數 accounts 可指帳目。"
+        },
+        {
+          "pos": "vi.",
+          "meaning": "解釋；說明原因",
+          "usage": "account for the difference；for 不可省略。"
+        },
+        {
+          "pos": "vi.",
+          "meaning": "占某比例",
+          "usage": "account for twenty percent of the total；不是解釋百分比的成因。"
         }
       ],
       "collocations": [
@@ -778,7 +788,7 @@
         {
           "en": "explain",
           "zh": "解釋",
-          "note": "account for 可表示解釋原因或比例"
+          "note": "只對應 account for 的「解釋原因」義；表占比時可用 make up，不能換成 explain。"
         }
       ],
       "idioms": [
@@ -822,6 +832,166 @@
           "grammar": "gave an account of + 事故；helping 補充敘述的作用。",
           "writingTip": "交代目擊者資訊如何幫助理解事件經過。",
           "topic": "事故敘述"
+        }
+      ]
+    },
+    "accurate": {
+      "senses": [
+        {
+          "pos": "adj.",
+          "meaning": "正確的；精確的",
+          "usage": "形容資料、描述或測量結果與實際情況相符。"
+        }
+      ],
+      "collocations": [
+        {
+          "en": "accurate information",
+          "zh": "正確的資訊",
+          "note": ""
+        },
+        {
+          "en": "an accurate description of the event",
+          "zh": "對事件的準確描述",
+          "note": "of 接描述對象。"
+        },
+        {
+          "en": "accurate measurements",
+          "zh": "精確的測量結果",
+          "note": ""
+        },
+        {
+          "en": "an accurate prediction",
+          "zh": "準確的預測",
+          "note": "預測是否準確須事後比對。"
+        }
+      ],
+      "synonyms": [
+        {
+          "en": "correct",
+          "zh": "正確的",
+          "note": "適用答案或資訊，不一定強調細節精確。"
+        },
+        {
+          "en": "precise",
+          "zh": "精確的",
+          "note": "強調明確或細緻；測量很精細仍可能不準確。"
+        }
+      ],
+      "idioms": [],
+      "family": [
+        {
+          "word": "accuracy",
+          "pos": "n.",
+          "meaning": "準確性"
+        },
+        {
+          "word": "accurately",
+          "pos": "adv.",
+          "meaning": "準確地"
+        },
+        {
+          "word": "inaccurate",
+          "pos": "adj.",
+          "meaning": "不正確的；不準確的"
+        }
+      ],
+      "usageNote": "accurate 指符合事實；precise 指精密或明確。報告數字時也應交代資料來源與測量方式。",
+      "examples": [
+        {
+          "text": "Before sharing the chart, we checked whether its figures gave an accurate picture of local recycling habits.",
+          "translationZh": "分享圖表前，我們檢查其中數字是否準確呈現當地的回收習慣。",
+          "grammar": "whether 引導檢查的內容；an accurate picture of 表準確呈現。",
+          "writingTip": "圖表作文可用 give an accurate picture of 說明資料是否反映現況。",
+          "topic": "圖表與查證",
+          "source": "self-authored"
+        },
+        {
+          "text": "An accurate description of the missing bag helped station staff return it to its owner that afternoon.",
+          "translationZh": "對遺失提袋的準確描述，幫助車站人員在當天下午將它歸還失主。",
+          "grammar": "description of + 事物；help + 人 + 原形動詞 return。",
+          "writingTip": "用物品細節如何促成解決問題，取代籠統描述。",
+          "topic": "遺失物協尋",
+          "source": "self-authored"
+        }
+      ]
+    },
+    "achieve": {
+      "senses": [
+        {
+          "pos": "vt.",
+          "meaning": "達成；實現",
+          "usage": "常接目標、成果或某種水準。"
+        }
+      ],
+      "collocations": [
+        {
+          "en": "achieve a goal",
+          "zh": "達成目標",
+          "note": ""
+        },
+        {
+          "en": "achieve a balance between work and rest",
+          "zh": "在工作與休息間取得平衡",
+          "note": "between A and B。"
+        },
+        {
+          "en": "achieve success",
+          "zh": "獲得成功",
+          "note": "success 在此不可數。"
+        },
+        {
+          "en": "achieve better results",
+          "zh": "取得更好的成果",
+          "note": ""
+        }
+      ],
+      "synonyms": [
+        {
+          "en": "accomplish",
+          "zh": "完成；達成",
+          "note": "常接任務或目標，強調完成。"
+        },
+        {
+          "en": "attain",
+          "zh": "達到",
+          "note": "較正式，常接水準或目標。"
+        }
+      ],
+      "idioms": [],
+      "family": [
+        {
+          "word": "achievement",
+          "pos": "n.",
+          "meaning": "成就；達成"
+        },
+        {
+          "word": "achievable",
+          "pos": "adj.",
+          "meaning": "可以達成的"
+        },
+        {
+          "word": "achiever",
+          "pos": "n.",
+          "meaning": "有成就的人"
+        }
+      ],
+      "usageNote": "achieve 後直接接目標；不寫 achieve to do。achievement 可數時指一項成就，不可數時指達成的過程。",
+      "examples": [
+        {
+          "text": "By setting smaller weekly goals, I achieved better results without feeling overwhelmed by the work ahead.",
+          "translationZh": "透過訂定較小的每週目標，我取得更好的成果，也未因眼前工作而感到不知所措。",
+          "grammar": "By + V-ing 表方法；without feeling 是介系詞接動名詞。",
+          "writingTip": "描寫大目標如何拆成每週可做的小行動。",
+          "topic": "目標管理",
+          "source": "self-authored"
+        },
+        {
+          "text": "The team hopes to achieve a balance between attracting visitors and protecting the village from excessive development.",
+          "translationZh": "團隊希望在吸引遊客與保護村莊免於過度開發之間取得平衡。",
+          "grammar": "hope to V；between 後並列 attracting 與 protecting。",
+          "writingTip": "討論發展的取捨時，具體列出需要兼顧的兩端。",
+          "topic": "觀光與保育",
+          "source": "self-authored"
         }
       ]
     },
@@ -1069,13 +1239,33 @@
       "senses": [
         {
           "pos": "n.",
-          "meaning": "地址；演說",
-          "usage": ""
+          "meaning": "地址；住址；電子郵件地址",
+          "usage": "a home / mailing / email address；可數名詞，不同種類的地址由前面的修飾語決定。"
         },
         {
-          "pos": "v.",
-          "meaning": "處理問題；向某人說話",
-          "usage": ""
+          "pos": "n.",
+          "meaning": "演說；正式致詞",
+          "usage": "give / deliver an address；an opening address = 開幕致詞，語氣較正式。"
+        },
+        {
+          "pos": "vt.",
+          "meaning": "向……說話；向……致詞",
+          "usage": "address the audience / a meeting；直接接聽眾或會議，不說 address to the audience。"
+        },
+        {
+          "pos": "vt.",
+          "meaning": "處理；著手解決",
+          "usage": "address a problem / a concern / an issue；表示面對並採取處理行動，不保證問題已完全解決。"
+        },
+        {
+          "pos": "vt.",
+          "meaning": "在……上寫收件地址；寄給",
+          "usage": "address an envelope to someone；to 在此引出收件人，不是演說的聽眾結構。"
+        },
+        {
+          "pos": "vt.",
+          "meaning": "稱呼",
+          "usage": "address someone as + 稱謂，如 address the teacher as Ms. Lin；as 指使用的稱呼。"
         }
       ],
       "collocations": [
@@ -1098,6 +1288,16 @@
           "en": "an opening address",
           "zh": "開幕致詞",
           "note": ""
+        },
+        {
+          "en": "address an envelope to someone",
+          "zh": "在信封上寫給某人的收件地址",
+          "note": "address + 信封 + to + 收件人；與 address the audience 的直接受詞不同。"
+        },
+        {
+          "en": "address someone as Ms. Lin",
+          "zh": "稱呼某人為林女士",
+          "note": "as 後接所用稱謂，可用於稱呼禮貌的情境。"
         }
       ],
       "synonyms": [
@@ -1125,7 +1325,7 @@
           "meaning": "可處理或可定址的"
         }
       ],
-      "usageNote": "address a problem 是著手處理，不保證已解決；動詞後直接接受詞，不需 to。",
+      "usageNote": "address a problem 是著手處理問題；address the audience 是向聽眾致詞，兩者直接接受詞。address a letter to someone 中 to 接收件人；address someone as + 稱謂 表稱呼。原字典的舉止、靈巧、求愛等較舊義保留於原釋義，現代學測寫作優先使用地址、致詞與處理問題等語義。",
       "examples": [
         {
           "text": "Instead of blaming students for being late, the school addressed the problem by improving bus connections and opening the gate earlier.",
@@ -1786,6 +1986,166 @@
         }
       ]
     },
+    "analyze": {
+      "senses": [
+        {
+          "pos": "vt.",
+          "meaning": "分析",
+          "usage": "把資料或問題拆開檢視，以理解其結構或原因。"
+        }
+      ],
+      "collocations": [
+        {
+          "en": "analyze the data",
+          "zh": "分析資料",
+          "note": ""
+        },
+        {
+          "en": "analyze the causes of a problem",
+          "zh": "分析問題的成因",
+          "note": ""
+        },
+        {
+          "en": "analyze survey results",
+          "zh": "分析調查結果",
+          "note": ""
+        },
+        {
+          "en": "analyze a text in detail",
+          "zh": "詳細分析文本",
+          "note": ""
+        }
+      ],
+      "synonyms": [
+        {
+          "en": "examine",
+          "zh": "仔細檢視",
+          "note": "範圍較廣，未必拆解結構。"
+        },
+        {
+          "en": "investigate",
+          "zh": "調查",
+          "note": "重點是查明事實或原因，不一定分析既有資料。"
+        }
+      ],
+      "idioms": [],
+      "family": [
+        {
+          "word": "analysis",
+          "pos": "n.",
+          "meaning": "分析"
+        },
+        {
+          "word": "analytical",
+          "pos": "adj.",
+          "meaning": "分析的；善於分析的"
+        },
+        {
+          "word": "analyst",
+          "pos": "n.",
+          "meaning": "分析人員"
+        }
+      ],
+      "usageNote": "analyze 為美式拼字，analyse 為英式；analysis 的複數是 analyses，不能寫 analysises。",
+      "examples": [
+        {
+          "text": "We analyzed the survey results before deciding which changes would make the school library more welcoming.",
+          "translationZh": "決定哪些改變能讓校圖書館更親切之前，我們先分析了調查結果。",
+          "grammar": "before deciding 省略相同主詞；which 引導間接問句。",
+          "writingTip": "先寫分析資料，再寫依資料作決定的過程。",
+          "topic": "校園調查",
+          "source": "self-authored"
+        },
+        {
+          "text": "Rather than blame one person, the group analyzed how unclear instructions had contributed to the misunderstanding.",
+          "translationZh": "小組沒有責怪一個人，而是分析不清楚的指示如何造成誤解。",
+          "grammar": "how 引導分析的內容；had contributed 表較早發生的原因。",
+          "writingTip": "人際衝突作文可分析流程問題，避免只歸咎個人。",
+          "topic": "合作反思",
+          "source": "self-authored"
+        }
+      ]
+    },
+    "anticipate": {
+      "senses": [
+        {
+          "pos": "vt.",
+          "meaning": "預期；預料",
+          "usage": "後接名詞、V-ing 或 that 子句，常含事先準備的意思。"
+        }
+      ],
+      "collocations": [
+        {
+          "en": "anticipate difficulties",
+          "zh": "預料困難",
+          "note": ""
+        },
+        {
+          "en": "anticipate a rise in demand",
+          "zh": "預期需求上升",
+          "note": ""
+        },
+        {
+          "en": "anticipate having to wait",
+          "zh": "預料會需要等候",
+          "note": "anticipate + V-ing。"
+        },
+        {
+          "en": "anticipate the needs of visitors",
+          "zh": "預先考慮訪客需求",
+          "note": ""
+        }
+      ],
+      "synonyms": [
+        {
+          "en": "expect",
+          "zh": "預期",
+          "note": "範圍較廣，expect 可接 to V，anticipate 通常不行。"
+        },
+        {
+          "en": "foresee",
+          "zh": "預見",
+          "note": "強調事先看出將發生的情況。"
+        }
+      ],
+      "idioms": [],
+      "family": [
+        {
+          "word": "anticipation",
+          "pos": "n.",
+          "meaning": "預期；期待"
+        },
+        {
+          "word": "anticipated",
+          "pos": "adj.",
+          "meaning": "預期中的"
+        },
+        {
+          "word": "unanticipated",
+          "pos": "adj.",
+          "meaning": "未預料到的"
+        }
+      ],
+      "usageNote": "用 anticipate doing 或 anticipate that，不寫 anticipate to do。可預期好事，也可預料困難。",
+      "examples": [
+        {
+          "text": "Because we anticipated heavy traffic, we left early and arrived at the interview with time to spare.",
+          "translationZh": "因為預料會塞車，我們提早出發，到達面試地點時還有充裕時間。",
+          "grammar": "Because 引導原因；with time to spare 表時間有餘裕。",
+          "writingTip": "敘述行前預判如何降低遲到的風險。",
+          "topic": "行程準備",
+          "source": "self-authored"
+        },
+        {
+          "text": "The organizers anticipated having to answer questions about accessibility, so they prepared a clear map of the venue.",
+          "translationZh": "主辦人預料需要回答無障礙設施的問題，因此準備了清楚的場地圖。",
+          "grammar": "anticipated having to V 為動名詞受詞；so 連接準備的結果。",
+          "writingTip": "用具體準備呈現對不同使用者需求的考量。",
+          "topic": "活動規畫",
+          "source": "self-authored"
+        }
+      ]
+    },
     "anxiety": {
       "senses": [
         {
@@ -2110,6 +2470,176 @@
         }
       ],
       "usageNote": "名詞 approach 後常接 to；動詞 approach 後直接接問題或人，不加 to。"
+    },
+    "appropriate": {
+      "senses": [
+        {
+          "pos": "adj.",
+          "meaning": "合適的；恰當的",
+          "usage": "常接 for + 對象或情境。"
+        },
+        {
+          "pos": "vt.",
+          "meaning": "撥用；挪用；擅自取用",
+          "usage": "較正式；須由受詞與語境判斷合法撥款或未經同意取用。"
+        }
+      ],
+      "collocations": [
+        {
+          "en": "appropriate for younger readers",
+          "zh": "適合年幼讀者",
+          "note": ""
+        },
+        {
+          "en": "take appropriate action",
+          "zh": "採取適當行動",
+          "note": ""
+        },
+        {
+          "en": "appropriate behavior",
+          "zh": "合宜的行為",
+          "note": ""
+        },
+        {
+          "en": "appropriate funds for repairs",
+          "zh": "撥款維修",
+          "note": "此處 appropriate 為動詞。"
+        }
+      ],
+      "synonyms": [
+        {
+          "en": "suitable",
+          "zh": "合適的",
+          "note": "對應形容詞義，常接 for。"
+        },
+        {
+          "en": "allocate",
+          "zh": "分配；撥出",
+          "note": "對應資源撥用義，不包含擅取的負面意思。"
+        }
+      ],
+      "idioms": [],
+      "family": [
+        {
+          "word": "appropriately",
+          "pos": "adv.",
+          "meaning": "適當地"
+        },
+        {
+          "word": "inappropriate",
+          "pos": "adj.",
+          "meaning": "不適當的"
+        },
+        {
+          "word": "appropriation",
+          "pos": "n.",
+          "meaning": "撥款；挪用"
+        }
+      ],
+      "usageNote": "形容詞與動詞拼字相同但尾音不同；閱讀時先依句型辨詞性。appropriate for 指適合對象，不是對所有人都有效。",
+      "examples": [
+        {
+          "text": "Teachers chose examples appropriate for younger readers without removing the important questions raised by the original article.",
+          "translationZh": "老師選擇適合年幼讀者的例子，同時保留原文提出的重要問題。",
+          "grammar": "appropriate for younger readers 後置修飾 examples；raised 為過去分詞。",
+          "writingTip": "說明簡化教材仍可保留值得討論的核心問題。",
+          "topic": "教材設計",
+          "source": "self-authored"
+        },
+        {
+          "text": "The council voted to appropriate funds for repairing the footbridge after residents reported several damaged wooden boards.",
+          "translationZh": "居民通報數塊木板損壞後，議會表決撥款修復人行橋。",
+          "grammar": "voted to appropriate 為不定詞；funds for + V-ing 表資金用途。",
+          "writingTip": "公共建設作文可具體寫出問題、資金與修復行動。",
+          "topic": "公共設施",
+          "source": "self-authored"
+        }
+      ]
+    },
+    "approve": {
+      "senses": [
+        {
+          "pos": "vi.",
+          "meaning": "贊成；認可",
+          "usage": "approve of + 人、事物或 V-ing。"
+        },
+        {
+          "pos": "vt.",
+          "meaning": "核准；批准",
+          "usage": "正式核准計畫或申請，直接接受詞。"
+        }
+      ],
+      "collocations": [
+        {
+          "en": "approve of a decision",
+          "zh": "贊成一項決定",
+          "note": "意見上的支持。"
+        },
+        {
+          "en": "approve of sharing resources",
+          "zh": "贊成共享資源",
+          "note": "of 後接 V-ing。"
+        },
+        {
+          "en": "approve a proposal",
+          "zh": "核准提案",
+          "note": "正式核准時不加 of。"
+        },
+        {
+          "en": "receive official approval",
+          "zh": "獲得正式核准",
+          "note": "名詞搭配。"
+        }
+      ],
+      "synonyms": [
+        {
+          "en": "endorse",
+          "zh": "支持；背書",
+          "note": "常指公開表態支持，不必具有核准權。"
+        },
+        {
+          "en": "authorize",
+          "zh": "授權；准許",
+          "note": "強調給予正式權限，通常需有權批准。"
+        }
+      ],
+      "idioms": [],
+      "family": [
+        {
+          "word": "approval",
+          "pos": "n.",
+          "meaning": "同意；核准"
+        },
+        {
+          "word": "approved",
+          "pos": "adj.",
+          "meaning": "已核准的"
+        },
+        {
+          "word": "disapprove",
+          "pos": "vi.",
+          "meaning": "不贊成"
+        }
+      ],
+      "usageNote": "approve of the plan 表示贊成；approve the plan 表示核准。approval 通常不可數，具體核准文件等語境另有用法。",
+      "examples": [
+        {
+          "text": "Most parents approved of the new reading program because children could choose books that matched their interests.",
+          "translationZh": "多數家長贊成新的閱讀計畫，因為孩子能選擇符合興趣的書。",
+          "grammar": "approve of + 名詞；that matched their interests 修飾 books。",
+          "writingTip": "交代支持教育措施的具體理由。",
+          "topic": "閱讀計畫",
+          "source": "self-authored"
+        },
+        {
+          "text": "The school approved our proposal only after we explained how volunteers would keep the playground safe.",
+          "translationZh": "直到我們說明志工會如何維持操場安全後，學校才核准提案。",
+          "grammar": "approved 直接接 proposal；how 引導安全措施的內容。",
+          "writingTip": "描述提案獲准前必須處理的實際條件。",
+          "topic": "校園提案",
+          "source": "self-authored"
+        }
+      ]
     },
     "argue": {
       "senses": [
@@ -2506,6 +3036,86 @@
         }
       ]
     },
+    "assumption": {
+      "senses": [
+        {
+          "pos": "n.",
+          "meaning": "假設；想當然的看法",
+          "usage": "尚未充分驗證的前提；不可直接當成事實。"
+        },
+        {
+          "pos": "n.",
+          "meaning": "承擔；取得",
+          "usage": "較正式，如 assumption of responsibility。"
+        }
+      ],
+      "collocations": [
+        {
+          "en": "make an assumption about someone",
+          "zh": "對某人作出假設",
+          "note": ""
+        },
+        {
+          "en": "challenge an assumption",
+          "zh": "質疑一項假設",
+          "note": ""
+        },
+        {
+          "en": "based on the assumption that",
+          "zh": "基於……的假設",
+          "note": "that 子句解釋假設內容。"
+        },
+        {
+          "en": "the assumption of responsibility",
+          "zh": "承擔責任",
+          "note": "另一個名詞義。"
+        }
+      ],
+      "synonyms": [
+        {
+          "en": "supposition",
+          "zh": "假定",
+          "note": "較正式，強調暫時相信但未證實。"
+        },
+        {
+          "en": "premise",
+          "zh": "前提",
+          "note": "論證的起點，可能有證據，也可能只是先行接受。"
+        }
+      ],
+      "idioms": [],
+      "family": [
+        {
+          "word": "assume",
+          "pos": "vt.",
+          "meaning": "假定；承擔"
+        },
+        {
+          "word": "assumed",
+          "pos": "adj.",
+          "meaning": "假定的；假裝的"
+        }
+      ],
+      "usageNote": "assumption that + 子句表假設內容；assumption of + 職務或責任表承擔。不要把假設自動當作研究結論。",
+      "examples": [
+        {
+          "text": "Our plan was based on the assumption that every student had reliable internet access at home.",
+          "translationZh": "我們的計畫建立在每位學生家中都有可靠網路的假設上。",
+          "grammar": "based on 為被動搭配；that 子句說明 assumption 的內容。",
+          "writingTip": "可用來指出計畫忽略不同家庭資源的問題。",
+          "topic": "數位落差",
+          "source": "self-authored"
+        },
+        {
+          "text": "Talking with older residents challenged my assumption that people of their generation were unwilling to learn new skills.",
+          "translationZh": "與年長居民交談，挑戰了我原以為那個世代不願學習新技能的看法。",
+          "grammar": "Talking 為動名詞主詞；that 子句補充假設內容。",
+          "writingTip": "寫個人經驗如何改變對某群體的刻板印象。",
+          "topic": "世代理解",
+          "source": "self-authored"
+        }
+      ]
+    },
     "atmosphere": {
       "senses": [
         {
@@ -2580,6 +3190,171 @@
         }
       ],
       "usageNote": "atmosphere 可指實體大氣，也可指抽象氣氛；依語境判讀。"
+    },
+    "attach": {
+      "senses": [
+        {
+          "pos": "vt.",
+          "meaning": "附上；繫上",
+          "usage": "attach A to B，把 A 附加或固定到 B。"
+        },
+        {
+          "pos": "vt.",
+          "meaning": "賦予；認為具有",
+          "usage": "attach importance to 重視。"
+        }
+      ],
+      "collocations": [
+        {
+          "en": "attach a file to an email",
+          "zh": "把檔案附在電子郵件中",
+          "note": ""
+        },
+        {
+          "en": "attach a label to a box",
+          "zh": "把標籤貼在箱子上",
+          "note": ""
+        },
+        {
+          "en": "attach importance to safety",
+          "zh": "重視安全",
+          "note": "importance 為不可數名詞。"
+        },
+        {
+          "en": "be attached to a pet",
+          "zh": "依戀寵物",
+          "note": "attached 形容情感依附。"
+        }
+      ],
+      "synonyms": [
+        {
+          "en": "fasten",
+          "zh": "繫牢；固定",
+          "note": "只對應實物連接義，常強調牢固。"
+        },
+        {
+          "en": "enclose",
+          "zh": "隨信附上",
+          "note": "通常指信函內附物；不等於所有 attach 用法。"
+        }
+      ],
+      "idioms": [],
+      "family": [
+        {
+          "word": "attachment",
+          "pos": "n.",
+          "meaning": "附件；依戀"
+        },
+        {
+          "word": "attached",
+          "pos": "adj.",
+          "meaning": "附加的；依戀的"
+        },
+        {
+          "word": "detach",
+          "pos": "vt.",
+          "meaning": "拆下；分離"
+        }
+      ],
+      "usageNote": "attach A to B 的 to 是介系詞；be attached to 可指附在某物上，也可指情感依戀。",
+      "examples": [
+        {
+          "text": "Please attach a recent photo to your application so that volunteers can recognize you at the meeting point.",
+          "translationZh": "請在申請表附上近照，讓志工能在集合地點認出你。",
+          "grammar": "attach A to B；so that 引導附照片的目的。",
+          "writingTip": "寫活動通知時交代要求及其用途。",
+          "topic": "活動報名",
+          "source": "self-authored"
+        },
+        {
+          "text": "Our club attaches great importance to safety, even when a shortcut would save time during an outdoor activity.",
+          "translationZh": "即使捷徑能在戶外活動中節省時間，我們社團仍非常重視安全。",
+          "grammar": "attach importance to + 名詞；even when 表即使在某情況下。",
+          "writingTip": "討論效率與安全時清楚表明優先考量。",
+          "topic": "戶外安全",
+          "source": "self-authored"
+        }
+      ]
+    },
+    "attempt": {
+      "senses": [
+        {
+          "pos": "n.",
+          "meaning": "嘗試",
+          "usage": "an attempt to V；可數名詞。"
+        },
+        {
+          "pos": "vt.",
+          "meaning": "嘗試",
+          "usage": "attempt to V，語氣較正式。"
+        }
+      ],
+      "collocations": [
+        {
+          "en": "make an attempt to improve",
+          "zh": "嘗試改善",
+          "note": ""
+        },
+        {
+          "en": "attempt to solve a problem",
+          "zh": "嘗試解決問題",
+          "note": ""
+        },
+        {
+          "en": "a successful attempt",
+          "zh": "成功的嘗試",
+          "note": "attempt 本身不保證成功。"
+        },
+        {
+          "en": "on the first attempt",
+          "zh": "第一次嘗試時",
+          "note": ""
+        }
+      ],
+      "synonyms": [
+        {
+          "en": "try",
+          "zh": "嘗試",
+          "note": "較日常；try doing 也可指試用方法。"
+        },
+        {
+          "en": "effort",
+          "zh": "努力；嘗試",
+          "note": "可強調付出的心力，不只是一次行動。"
+        }
+      ],
+      "idioms": [],
+      "family": [
+        {
+          "word": "attempted",
+          "pos": "adj.",
+          "meaning": "企圖進行而未遂的"
+        },
+        {
+          "word": "unattempted",
+          "pos": "adj.",
+          "meaning": "未嘗試過的"
+        }
+      ],
+      "usageNote": "attempt to do 並不保證做到；敘述成果時應另交代成功或失敗，不把嘗試直接寫成達成。",
+      "examples": [
+        {
+          "text": "My first attempt to explain the rules failed because I used terms that younger children did not understand.",
+          "translationZh": "我第一次嘗試解釋規則失敗了，因為用了年幼孩子不懂的詞。",
+          "grammar": "attempt to explain 修飾名詞；that 引導限定關係子句。",
+          "writingTip": "用失敗的具體原因引出後續調整。",
+          "topic": "教學經驗",
+          "source": "self-authored"
+        },
+        {
+          "text": "The students attempted to reduce food waste by letting classmates order smaller portions and return for more if needed.",
+          "translationZh": "學生嘗試讓同學先點較小份量，必要時再添餐，以減少食物浪費。",
+          "grammar": "attempted to V；let + 人 + 原形 order 與 return。",
+          "writingTip": "環境作文可提出可操作的改善方式，並保留成效驗證空間。",
+          "topic": "惜食行動",
+          "source": "self-authored"
+        }
+      ]
     },
     "attend": {
       "senses": [
@@ -2663,6 +3438,91 @@
           "grammar": "attended to + 病人；while 表同時的兩種行動。",
           "writingTip": "描寫專業照護與其他旅客合作的現場。",
           "topic": "月台互助"
+        }
+      ]
+    },
+    "attention": {
+      "senses": [
+        {
+          "pos": "n.",
+          "meaning": "注意；關注",
+          "usage": "一般不可數，常用 attention to。"
+        },
+        {
+          "pos": "n.",
+          "meaning": "照顧；處理",
+          "usage": "如 medical attention 表醫療處置。"
+        }
+      ],
+      "collocations": [
+        {
+          "en": "pay attention to details",
+          "zh": "注意細節",
+          "note": "to 是介系詞。"
+        },
+        {
+          "en": "draw attention to a problem",
+          "zh": "使人注意某個問題",
+          "note": ""
+        },
+        {
+          "en": "need medical attention",
+          "zh": "需要醫療處置",
+          "note": ""
+        },
+        {
+          "en": "capture the audience's attention",
+          "zh": "吸引觀眾注意",
+          "note": ""
+        }
+      ],
+      "synonyms": [
+        {
+          "en": "notice",
+          "zh": "注意",
+          "note": "take notice of 句型不同，不宜直接逐字替換。"
+        },
+        {
+          "en": "care",
+          "zh": "照料",
+          "note": "只對應處理或照顧義，不等於集中注意。"
+        }
+      ],
+      "idioms": [],
+      "family": [
+        {
+          "word": "attentive",
+          "pos": "adj.",
+          "meaning": "專心的；體貼的"
+        },
+        {
+          "word": "attentively",
+          "pos": "adv.",
+          "meaning": "專心地"
+        },
+        {
+          "word": "inattention",
+          "pos": "n.",
+          "meaning": "不注意"
+        }
+      ],
+      "usageNote": "pay attention to + 名詞／V-ing；不是 pay attention on。注意力集中不保證理解，還需要檢查自己能否說明內容。",
+      "examples": [
+        {
+          "text": "Instead of checking my phone between every paragraph, I paid attention to how each idea connected with the next.",
+          "translationZh": "我沒有每讀完一段就看手機，而是注意各個想法如何銜接。",
+          "grammar": "Instead of + V-ing；pay attention to 後接 how 子句。",
+          "writingTip": "學習經驗可寫具體閱讀行為的改變。",
+          "topic": "專注閱讀",
+          "source": "self-authored"
+        },
+        {
+          "text": "The photo exhibition drew attention to the challenges faced by families living far from hospitals and public transportation.",
+          "translationZh": "攝影展讓人注意住在遠離醫院與大眾運輸地區的家庭所面臨的挑戰。",
+          "grammar": "draw attention to + 名詞；faced 與 living 分別修飾 challenges、families。",
+          "writingTip": "以展覽或照片作為引發社會關注的具體媒介。",
+          "topic": "偏鄉生活",
+          "source": "self-authored"
         }
       ]
     },
@@ -2981,6 +3841,86 @@
         }
       ]
     },
+    "avoid": {
+      "senses": [
+        {
+          "pos": "vt.",
+          "meaning": "避免；避開",
+          "usage": "直接接名詞或 V-ing，不接 to V。"
+        }
+      ],
+      "collocations": [
+        {
+          "en": "avoid making mistakes",
+          "zh": "避免犯錯",
+          "note": ""
+        },
+        {
+          "en": "avoid unnecessary waste",
+          "zh": "避免不必要的浪費",
+          "note": ""
+        },
+        {
+          "en": "avoid heavy traffic",
+          "zh": "避開交通壅塞",
+          "note": ""
+        },
+        {
+          "en": "avoid contact with sick animals",
+          "zh": "避免接觸生病的動物",
+          "note": ""
+        }
+      ],
+      "synonyms": [
+        {
+          "en": "prevent",
+          "zh": "預防；阻止",
+          "note": "prevent something from happening 著重阻止事件發生。"
+        },
+        {
+          "en": "stay away from",
+          "zh": "遠離",
+          "note": "常指避開人或地方，不涵蓋所有避免結果的用法。"
+        }
+      ],
+      "idioms": [],
+      "family": [
+        {
+          "word": "avoidance",
+          "pos": "n.",
+          "meaning": "避免；迴避"
+        },
+        {
+          "word": "avoidable",
+          "pos": "adj.",
+          "meaning": "可避免的"
+        },
+        {
+          "word": "unavoidable",
+          "pos": "adj.",
+          "meaning": "無法避免的"
+        }
+      ],
+      "usageNote": "avoid doing 而非 avoid to do；avoid an accident 是設法避開事故，prevent an accident 是阻止事故發生。",
+      "examples": [
+        {
+          "text": "To avoid misunderstanding the assignment, I asked the teacher to explain what the final report should include.",
+          "translationZh": "為避免誤解作業要求，我請老師說明期末報告應包含哪些內容。",
+          "grammar": "To avoid 表目的；avoid + V-ing；what 引導間接問句。",
+          "writingTip": "描寫主動澄清如何減少後續錯誤。",
+          "topic": "作業澄清",
+          "source": "self-authored"
+        },
+        {
+          "text": "Shoppers can avoid unnecessary packaging by bringing their own containers when local stores allow them to do so.",
+          "translationZh": "當地商店允許時，消費者可自備容器，避免不必要的包裝。",
+          "grammar": "by bringing 表方法；when 子句交代做法適用的條件。",
+          "writingTip": "環保建議加上實際限制，比一概而論更周全。",
+          "topic": "消費與減廢",
+          "source": "self-authored"
+        }
+      ]
+    },
     "aware": {
       "senses": [
         {
@@ -3146,17 +4086,37 @@
         {
           "pos": "n.",
           "meaning": "熊",
-          "usage": ""
+          "usage": "可數名詞：a bear / bears；與動詞 bear 讀音相同，但詞義及變化不同。"
         },
         {
-          "pos": "v.",
-          "meaning": "承受；負擔",
-          "usage": ""
+          "pos": "vt.",
+          "meaning": "忍受；承受",
+          "usage": "bear pain / pressure；cannot bear + 名詞、V-ing 或 to V 表無法忍受。"
         },
         {
-          "pos": "v.",
-          "meaning": "帶有；產生",
-          "usage": ""
+          "pos": "vt.",
+          "meaning": "承擔；負擔",
+          "usage": "bear the cost / responsibility / burden，後接費用、責任或負擔。"
+        },
+        {
+          "pos": "vt.",
+          "meaning": "帶有；具有；懷有",
+          "usage": "bear a name / label / resemblance / grudge；依受詞可指標示、相似之處或怨恨。"
+        },
+        {
+          "pos": "vt.",
+          "meaning": "生育；生下",
+          "usage": "She has borne two children. 用 borne；出生用被動形式 be born，如 I was born in Taipei。"
+        },
+        {
+          "pos": "vt./vi.",
+          "meaning": "結果實；產生結果",
+          "usage": "Trees bear fruit. 可指植物結果實；努力 bear fruit 則指取得成果。"
+        },
+        {
+          "pos": "vi.",
+          "meaning": "向某方向行進；轉向",
+          "usage": "bear left / right = 向左／右轉或偏移，常見於路線指示。"
         }
       ],
       "collocations": [
@@ -3179,6 +4139,16 @@
           "en": "bear in mind",
           "zh": "記住；考慮到",
           "note": ""
+        },
+        {
+          "en": "bear a resemblance to someone",
+          "zh": "與某人相像",
+          "note": "resemblance 為名詞；to 後接比較對象，不等同於 bear someone。"
+        },
+        {
+          "en": "bear left at the junction",
+          "zh": "在岔路向左行",
+          "note": "bear 在此為不及物動詞，指轉向，與「忍受」無關。"
         }
       ],
       "synonyms": [
@@ -3215,9 +4185,24 @@
           "word": "bearing",
           "pos": "n.",
           "meaning": "姿態；關聯"
+        },
+        {
+          "word": "bore",
+          "pos": "v.",
+          "meaning": "bear 的過去式；注意 bore 另可作「使厭煩」的原形動詞"
+        },
+        {
+          "word": "borne",
+          "pos": "v.",
+          "meaning": "bear 的過去分詞：承擔、帶有或生育"
+        },
+        {
+          "word": "born",
+          "pos": "v./adj.",
+          "meaning": "用於 be born 出生；born in / on / into 等搭配"
         }
       ],
-      "usageNote": "動詞變化 bear–bore–borne；出生常用 born。bear fruit 可是結果實或努力有成果。",
+      "usageNote": "一般動詞變化 bear–bore–borne。主動談母親生育用 borne；描述某人出生用 be born。bearing 可指姿態、方向或關聯，have a bearing on = 對……有關聯／影響。與 bare「裸露的」不同。",
       "examples": [
         {
           "text": "When planning a group trip, we must bear in mind that some classmates cannot afford the same activities as others.",
@@ -3482,17 +4467,127 @@
       ],
       "usageNote": "benefit from 表主詞受益；benefit someone 表主詞讓別人受益。"
     },
+    "bias": {
+      "senses": [
+        {
+          "pos": "n.",
+          "meaning": "偏見；偏差",
+          "usage": "可指對群體的成見，也可指取樣或測量的系統性偏差。"
+        },
+        {
+          "pos": "vt.",
+          "meaning": "使產生偏見；使結果偏向",
+          "usage": "如 bias the results。"
+        }
+      ],
+      "collocations": [
+        {
+          "en": "bias against a group",
+          "zh": "對某群體的偏見",
+          "note": ""
+        },
+        {
+          "en": "bias in favor of one option",
+          "zh": "偏向某個選項",
+          "note": ""
+        },
+        {
+          "en": "sampling bias",
+          "zh": "取樣偏差",
+          "note": "樣本無法合理代表目標群體。"
+        },
+        {
+          "en": "reduce bias in a survey",
+          "zh": "減少調查偏差",
+          "note": ""
+        }
+      ],
+      "synonyms": [
+        {
+          "en": "prejudice",
+          "zh": "偏見",
+          "note": "常指對群體先入為主的負面判斷。"
+        },
+        {
+          "en": "partiality",
+          "zh": "偏袒",
+          "note": "較正式，強調偏向某一方。"
+        }
+      ],
+      "idioms": [],
+      "family": [
+        {
+          "word": "biased",
+          "pos": "adj.",
+          "meaning": "有偏見的；有偏差的"
+        },
+        {
+          "word": "unbiased",
+          "pos": "adj.",
+          "meaning": "無偏見的；無偏差的"
+        }
+      ],
+      "usageNote": "biased 可形容人、報導或樣本；統計偏差不一定來自惡意。be biased against／in favor of 要辨清方向。",
+      "examples": [
+        {
+          "text": "A survey conducted only online may contain bias because residents without internet access have little chance to participate.",
+          "translationZh": "只在線上進行的調查可能有偏差，因為無法上網的居民幾乎沒有機會參與。",
+          "grammar": "conducted 為過去分詞修飾 survey；because 交代取樣限制。",
+          "writingTip": "分析圖表時可指出誰沒有被納入調查。",
+          "topic": "取樣與資料",
+          "source": "self-authored"
+        },
+        {
+          "text": "To reduce bias in our discussion, we invited people with different experiences to explain how the policy affected them.",
+          "translationZh": "為減少討論中的偏見，我們邀請不同經驗的人說明政策如何影響他們。",
+          "grammar": "To reduce 表目的；invite + 人 + to V。",
+          "writingTip": "討論公平決策時，提出讓多方發言的具體方法。",
+          "topic": "公共討論",
+          "source": "self-authored"
+        }
+      ]
+    },
     "board": {
       "senses": [
         {
           "pos": "n.",
-          "meaning": "木板；公告板；董事會",
-          "usage": ""
+          "meaning": "木板；板材",
+          "usage": "a wooden board；可數名詞，指平整的板狀材料。"
         },
         {
-          "pos": "v.",
+          "pos": "n.",
+          "meaning": "公告板；黑板；遊戲板",
+          "usage": "a notice board / a whiteboard / a chessboard；用途通常由前面的名詞或複合字決定。"
+        },
+        {
+          "pos": "n.",
+          "meaning": "董事會；委員會",
+          "usage": "the board of directors / a school board；通常是具有管理或決策職能的一群人。"
+        },
+        {
+          "pos": "n.",
+          "meaning": "膳食；伙食",
+          "usage": "room and board = 住宿及膳食；board 在此通常不可數，不表示一塊木板。"
+        },
+        {
+          "pos": "vt.",
           "meaning": "登上交通工具",
-          "usage": ""
+          "usage": "board a plane / train / ship；直接接交通工具，不需 on。"
+        },
+        {
+          "pos": "vi.",
+          "meaning": "寄宿；搭伙",
+          "usage": "board with a family / at a school；表示寄宿並接受膳食，常見於 boarding school 的相關情境。"
+        },
+        {
+          "pos": "vt.",
+          "meaning": "提供膳食或食宿",
+          "usage": "board students / board pets；依受詞指供人食宿或寄養動物，與登上交通工具不同。"
+        },
+        {
+          "pos": "vt.",
+          "meaning": "用木板封住；覆蓋",
+          "usage": "board up a window / a building；常用 board up，指以板材封住開口。"
         }
       ],
       "collocations": [
@@ -3515,6 +4610,16 @@
           "en": "on board a ship",
           "zh": "在船上",
           "note": ""
+        },
+        {
+          "en": "room and board",
+          "zh": "住宿及膳食",
+          "note": "board 在此為不可數名詞；費用是否另含住宿需看表達。"
+        },
+        {
+          "en": "board up a window",
+          "zh": "用木板封住窗戶",
+          "note": "片語動詞；代名詞受詞置於中間，如 board it up。"
         }
       ],
       "synonyms": [
@@ -3547,7 +4652,7 @@
           "meaning": "登機證"
         }
       ],
-      "usageNote": "board 作動詞直接接交通工具；on board 常作介系詞或副詞片語。",
+      "usageNote": "board a plane 是登機，on board a plane 是在機上；board 可直接接受詞，on board 是介系詞或副詞片語。board of directors 表董事會；room and board 表住宿及膳食；boarding school 表寄宿學校。",
       "examples": [
         {
           "text": "Before boarding the train, we checked the platform number twice because several departures had been changed after the heavy rain.",
@@ -3611,7 +4716,7 @@
         {
           "en": "attachment",
           "zh": "依戀",
-          "note": "強调情感依附，不一定雙向"
+          "note": "強調情感依附，不一定雙向"
         }
       ],
       "idioms": [],
@@ -4047,13 +5152,48 @@
       "senses": [
         {
           "pos": "n.",
-          "meaning": "挑戰；難題",
-          "usage": "可數"
+          "meaning": "挑戰；難題；考驗",
+          "usage": "可數；a challenge for someone，指需要努力處理的情況。"
+        },
+        {
+          "pos": "n.",
+          "meaning": "挑戰邀請；要求競賽或證明",
+          "usage": "a challenge to a game，指邀請或要求對方較量。"
+        },
+        {
+          "pos": "n.",
+          "meaning": "質疑；異議",
+          "usage": "a challenge to a decision，對決定的正當性提出問題。"
+        },
+        {
+          "pos": "n.",
+          "meaning": "盤問；要求表明身分",
+          "usage": "如 a guard's challenge，要求陌生人說明來意或身分；語氣較正式。"
         },
         {
           "pos": "vt.",
-          "meaning": "挑戰；質疑",
-          "usage": "challenge a claim 或某人"
+          "meaning": "向……挑戰；要求……做某事",
+          "usage": "challenge someone to a contest／to prove a claim；to 後依結構接名詞或原形動詞。"
+        },
+        {
+          "pos": "vt.",
+          "meaning": "質疑；對……表示異議",
+          "usage": "challenge an assumption／a decision，懷疑其正確性、效力或正當性。"
+        },
+        {
+          "pos": "vt.",
+          "meaning": "考驗；激發……的能力",
+          "usage": "The task challenges students. 指任務要求學生運用能力。"
+        },
+        {
+          "pos": "vt.",
+          "meaning": "盤問；要求證明資格或身分",
+          "usage": "The guard challenged the visitor. 依語境可指要求說明來意，並非邀請競賽。"
+        },
+        {
+          "pos": "vi.",
+          "meaning": "提出挑戰或異議",
+          "usage": "對象已明確時可省略受詞；學習造句優先掌握 challenge a decision 等清楚表達。"
         }
       ],
       "collocations": [
@@ -4076,6 +5216,26 @@
           "en": "a challenging task",
           "zh": "有挑戰性的任務",
           "note": "形容詞形式"
+        },
+        {
+          "en": "challenge someone to a chess match",
+          "zh": "向某人挑戰下棋",
+          "note": "to 後接競賽名詞。"
+        },
+        {
+          "en": "challenge someone to prove a claim",
+          "zh": "要求某人證明主張",
+          "note": "to prove 為不定詞，說明要求做的事。"
+        },
+        {
+          "en": "a legal challenge to a decision",
+          "zh": "對決定提出的法律異議",
+          "note": "challenge 為可數名詞。"
+        },
+        {
+          "en": "challenge a visitor at the gate",
+          "zh": "在門口盤問訪客",
+          "note": "警衛要求表明身分或說明來意的語境。"
         }
       ],
       "synonyms": [
@@ -4121,19 +5281,59 @@
           "topic": "science"
         }
       ],
-      "usageNote": "challenge 作動詞可表示質疑觀點；challenging 表任務有難度，challenged 多描述受挑戰者。"
+      "usageNote": "challenge 可指難題、競賽邀請、質疑或盤問；challenge someone to V 可含「要求證明／挑戰去做」之意。challenging 描述任務有難度，不等於單純否定對方；具體意思須依受詞與語境判斷。"
     },
     "charge": {
       "senses": [
         {
           "pos": "n.",
-          "meaning": "費用；指控",
-          "usage": ""
+          "meaning": "費用；收費",
+          "usage": "an admission charge / a service charge；free of charge = 免費。"
         },
         {
-          "pos": "v.",
-          "meaning": "收費；充電；控告",
-          "usage": ""
+          "pos": "n.",
+          "meaning": "指控；控罪",
+          "usage": "a charge of theft / face criminal charges；法律指控不等於已被定罪。"
+        },
+        {
+          "pos": "n.",
+          "meaning": "管理責任；照管",
+          "usage": "in charge of + 人或事 = 負責；in the charge of + 人 = 由該人負責。"
+        },
+        {
+          "pos": "n.",
+          "meaning": "電荷；電量",
+          "usage": "an electric charge；a battery holds a charge 指電池可儲存電量。"
+        },
+        {
+          "pos": "n.",
+          "meaning": "衝鋒；猛衝",
+          "usage": "a charge toward the enemy；在戰鬥或快速衝向某處的情境使用。"
+        },
+        {
+          "pos": "vt./vi.",
+          "meaning": "收費；索價",
+          "usage": "charge someone an amount for something；charge for admission 也可省略付費者。"
+        },
+        {
+          "pos": "vt.",
+          "meaning": "替……充電",
+          "usage": "charge a phone / a battery；the battery is charging 為正在充電。"
+        },
+        {
+          "pos": "vt.",
+          "meaning": "正式指控；控告",
+          "usage": "charge someone with + 罪名／V-ing；with 後不是付費項目。"
+        },
+        {
+          "pos": "vt.",
+          "meaning": "交付任務；使負責",
+          "usage": "charge someone with a task / doing something；正式用法，須由受詞判斷是委託還是指控。"
+        },
+        {
+          "pos": "vi.",
+          "meaning": "衝向；衝鋒",
+          "usage": "charge at / toward someone；at 常指猛衝攻擊對象。"
         }
       ],
       "collocations": [
@@ -4156,6 +5356,16 @@
           "en": "free of charge",
           "zh": "免費",
           "note": ""
+        },
+        {
+          "en": "charge someone for a service",
+          "zh": "向某人收取服務費",
+          "note": "for + 付費項目；可加入金額：charge someone ten dollars for a service。"
+        },
+        {
+          "en": "charge someone with theft",
+          "zh": "指控某人竊盜",
+          "note": "with + 罪名；與 accuse someone of theft 的介系詞不同。"
         }
       ],
       "synonyms": [
@@ -4188,7 +5398,7 @@
           "meaning": "可充電的"
         }
       ],
-      "usageNote": "charge A for B = 為 B 向 A 收費；charge A with B = 指控 A 犯 B。",
+      "usageNote": "charge A for B 表向 A 收取 B 的費用；charge A with B 依 B 的內容表示正式指控或委託任務。in charge of 表主動負責；in the charge of 表交由某人負責。充電、收費與控告應分別依受詞及介系詞判義。",
       "examples": [
         {
           "text": "The museum charges no admission fee for students, making it easier for young people to explore local history and culture.",
@@ -4205,6 +5415,86 @@
           "grammar": "in charge of + 器材；checked/kept 為並列過去式。",
           "writingTip": "以器材檢查及備用物品描寫負責態度。",
           "topic": "表演準備"
+        }
+      ]
+    },
+    "clarify": {
+      "senses": [
+        {
+          "pos": "vt.",
+          "meaning": "澄清；說明清楚",
+          "usage": "使意思、規則或問題更容易理解。"
+        }
+      ],
+      "collocations": [
+        {
+          "en": "clarify a misunderstanding",
+          "zh": "澄清誤解",
+          "note": ""
+        },
+        {
+          "en": "clarify the meaning of a term",
+          "zh": "說明某個詞的意思",
+          "note": ""
+        },
+        {
+          "en": "clarify the rules",
+          "zh": "說明清楚規則",
+          "note": ""
+        },
+        {
+          "en": "ask for clarification",
+          "zh": "請求進一步說明",
+          "note": "名詞搭配。"
+        }
+      ],
+      "synonyms": [
+        {
+          "en": "explain",
+          "zh": "解釋",
+          "note": "範圍較廣，不一定處理原有模糊處。"
+        },
+        {
+          "en": "make clear",
+          "zh": "說清楚",
+          "note": "較日常，需依受詞調整句型。"
+        }
+      ],
+      "idioms": [],
+      "family": [
+        {
+          "word": "clarification",
+          "pos": "n.",
+          "meaning": "澄清；說明"
+        },
+        {
+          "word": "clarity",
+          "pos": "n.",
+          "meaning": "清楚；明確"
+        },
+        {
+          "word": "clear",
+          "pos": "adj.",
+          "meaning": "清楚的"
+        }
+      ],
+      "usageNote": "clarify 直接接需要釐清的內容；explain something to someone 與 clarify something for someone 常見，句型不要混用。",
+      "examples": [
+        {
+          "text": "Before dividing the work, we clarified what each member was expected to contribute and when the first draft was due.",
+          "translationZh": "分工前，我們釐清每位成員應貢獻什麼，以及初稿何時到期。",
+          "grammar": "clarified 後接 what 與 when 兩個間接問句；be expected to V。",
+          "writingTip": "團隊經驗可交代分工內容及期限，避免只寫大家努力。",
+          "topic": "小組分工",
+          "source": "self-authored"
+        },
+        {
+          "text": "A simple example helped clarify the difference between recycling a bottle and reducing the need to buy one.",
+          "translationZh": "一個簡單例子幫助說清楚回收瓶子與減少購買需求之間的差別。",
+          "grammar": "help + 原形 clarify；between 後並列兩個 V-ing 片語。",
+          "writingTip": "比較相近環保概念時，使用具體行動說明差異。",
+          "topic": "環境概念",
+          "source": "self-authored"
         }
       ]
     },
@@ -4282,6 +5572,161 @@
         }
       ],
       "usageNote": "weather 指短期天氣；climate 指長期氣候，也可比喻社會風氣。"
+    },
+    "collaboration": {
+      "senses": [
+        {
+          "pos": "n.",
+          "meaning": "合作；協作",
+          "usage": "常接 with + 夥伴或 between + 雙方。"
+        }
+      ],
+      "collocations": [
+        {
+          "en": "in collaboration with local artists",
+          "zh": "與當地藝術家合作",
+          "note": ""
+        },
+        {
+          "en": "close collaboration between schools",
+          "zh": "學校間的密切合作",
+          "note": ""
+        },
+        {
+          "en": "a collaborative project",
+          "zh": "合作專題",
+          "note": "形容詞搭配。"
+        },
+        {
+          "en": "encourage collaboration",
+          "zh": "鼓勵合作",
+          "note": ""
+        }
+      ],
+      "synonyms": [
+        {
+          "en": "cooperation",
+          "zh": "合作；配合",
+          "note": "可只是配合要求，collaboration 常含共同投入工作。"
+        },
+        {
+          "en": "teamwork",
+          "zh": "團隊合作",
+          "note": "著重團隊成員協調，通常不可數。"
+        }
+      ],
+      "idioms": [],
+      "family": [
+        {
+          "word": "collaborate",
+          "pos": "vi.",
+          "meaning": "合作"
+        },
+        {
+          "word": "collaborative",
+          "pos": "adj.",
+          "meaning": "合作的"
+        },
+        {
+          "word": "collaborator",
+          "pos": "n.",
+          "meaning": "合作者"
+        }
+      ],
+      "usageNote": "collaborate with someone on a project；collaboration 常不可數，也可指一項合作案。避免把合作等同每人各做一段而不交流。",
+      "examples": [
+        {
+          "text": "The exhibition was created in collaboration with local residents, whose photographs showed how the neighborhood had changed over time.",
+          "translationZh": "展覽與當地居民合作製作，他們的照片呈現社區隨時間的變化。",
+          "grammar": "in collaboration with 表合作對象；whose 表居民所擁有的照片。",
+          "writingTip": "用參與者提供的具體材料呈現社區合作。",
+          "topic": "地方記憶",
+          "source": "self-authored"
+        },
+        {
+          "text": "Successful collaboration requires more than dividing tasks; team members also need to listen carefully and discuss disagreements openly.",
+          "translationZh": "成功合作不只需要分工；團隊成員也須仔細聆聽並坦誠討論分歧。",
+          "grammar": "more than + V-ing 表不只是；listen 與 discuss 為並列動詞。",
+          "writingTip": "論述合作時補上溝通與處理分歧的行動。",
+          "topic": "團隊溝通",
+          "source": "self-authored"
+        }
+      ]
+    },
+    "combine": {
+      "senses": [
+        {
+          "pos": "vt./vi.",
+          "meaning": "結合；合併",
+          "usage": "combine A with B 或 combine A and B。"
+        }
+      ],
+      "collocations": [
+        {
+          "en": "combine theory with practice",
+          "zh": "結合理論與實踐",
+          "note": ""
+        },
+        {
+          "en": "combine efforts",
+          "zh": "共同努力",
+          "note": ""
+        },
+        {
+          "en": "combine two methods",
+          "zh": "結合兩種方法",
+          "note": ""
+        },
+        {
+          "en": "a combination of factors",
+          "zh": "多項因素的結合",
+          "note": "名詞搭配。"
+        }
+      ],
+      "synonyms": [
+        {
+          "en": "join",
+          "zh": "連結；加入",
+          "note": "範圍較廣，不一定形成一個整體。"
+        },
+        {
+          "en": "merge",
+          "zh": "合併",
+          "note": "常指組織或部分融成一體，程度可能更強。"
+        }
+      ],
+      "idioms": [],
+      "family": [
+        {
+          "word": "combination",
+          "pos": "n.",
+          "meaning": "組合；結合"
+        },
+        {
+          "word": "combined",
+          "pos": "adj.",
+          "meaning": "結合的；共同的"
+        }
+      ],
+      "usageNote": "combine A with B；combined efforts 指共同努力。結合方法需說明各自用途，不能只假設加得越多越有效。",
+      "examples": [
+        {
+          "text": "Our project combined interviews with old photographs to show how a railway station had shaped the town.",
+          "translationZh": "我們的專題結合訪談與老照片，呈現一座車站如何影響城鎮。",
+          "grammar": "combine A with B；to show 表資料整合的目的。",
+          "writingTip": "文化專題可交代不同材料如何互相補充。",
+          "topic": "地方研究",
+          "source": "self-authored"
+        },
+        {
+          "text": "By combining short walks with regular breaks, I found a daily routine that felt easier to maintain during exam preparation.",
+          "translationZh": "透過結合短程散步與規律休息，我找到備考期間較容易維持的日常安排。",
+          "grammar": "By combining 表方法；that felt easier 修飾 routine。",
+          "writingTip": "以個人經驗說明調整日常，不把感受當成普遍研究結論。",
+          "topic": "備考生活",
+          "source": "self-authored"
+        }
+      ]
     },
     "comfort": {
       "senses": [
@@ -4368,6 +5813,86 @@
         }
       ]
     },
+    "commitment": {
+      "senses": [
+        {
+          "pos": "n.",
+          "meaning": "承諾；投入",
+          "usage": "commitment to + 名詞／V-ing。"
+        },
+        {
+          "pos": "n.",
+          "meaning": "必須履行的事務",
+          "usage": "可數，常用複數 commitments。"
+        }
+      ],
+      "collocations": [
+        {
+          "en": "make a commitment",
+          "zh": "作出承諾",
+          "note": ""
+        },
+        {
+          "en": "show commitment to a goal",
+          "zh": "展現對目標的投入",
+          "note": ""
+        },
+        {
+          "en": "family commitments",
+          "zh": "家庭責任與事務",
+          "note": ""
+        },
+        {
+          "en": "a long-term commitment",
+          "zh": "長期承諾",
+          "note": ""
+        }
+      ],
+      "synonyms": [
+        {
+          "en": "dedication",
+          "zh": "奉獻；投入",
+          "note": "強調持續付出的精神。"
+        },
+        {
+          "en": "promise",
+          "zh": "承諾",
+          "note": "未必涉及長期投入，也不涵蓋已安排的事務義。"
+        }
+      ],
+      "idioms": [],
+      "family": [
+        {
+          "word": "commit",
+          "pos": "vt./vi.",
+          "meaning": "承諾；投入；犯下"
+        },
+        {
+          "word": "committed",
+          "pos": "adj.",
+          "meaning": "盡心盡力的；已承諾的"
+        }
+      ],
+      "usageNote": "commit oneself to doing；commitment to learning 中的 to 是介系詞。commit a crime 為另一動詞義，不是承諾犯罪。",
+      "examples": [
+        {
+          "text": "Her commitment to helping younger students continued even after the tutoring project was no longer part of her schoolwork.",
+          "translationZh": "即使課業已不再要求參與課輔計畫，她仍持續投入協助年幼學生。",
+          "grammar": "commitment to + V-ing；even after 表事情結束後仍持續。",
+          "writingTip": "以超出課業要求的行動表現長期投入。",
+          "topic": "服務與責任",
+          "source": "self-authored"
+        },
+        {
+          "text": "Because of family commitments, I could not attend every meeting, but I completed my share of the work at home.",
+          "translationZh": "因為家庭事務，我無法每次都出席會議，但會在家完成自己負責的工作。",
+          "grammar": "Because of 接名詞；my share of 指自己應負責的部分。",
+          "writingTip": "交代參與限制，同時說明履行責任的替代方式。",
+          "topic": "時間分配",
+          "source": "self-authored"
+        }
+      ]
+    },
     "companionship": {
       "senses": [
         {
@@ -4440,6 +5965,336 @@
           "grammar": "although 引導讓步；cannot always 表示並非總能取代。",
           "writingTip": "肯定科技聯繫的用途，再說明面對面陪伴的作用。",
           "topic": "線上與實體交流"
+        }
+      ]
+    },
+    "compare": {
+      "senses": [
+        {
+          "pos": "vt./vi.",
+          "meaning": "比較；比擬",
+          "usage": "compare A with B 常指比較；compare A to B 也可比喻兩者相似。"
+        }
+      ],
+      "collocations": [
+        {
+          "en": "compare prices",
+          "zh": "比較價格",
+          "note": ""
+        },
+        {
+          "en": "compare one method with another",
+          "zh": "比較兩種方法",
+          "note": ""
+        },
+        {
+          "en": "compared with last year",
+          "zh": "與去年相比",
+          "note": ""
+        },
+        {
+          "en": "beyond compare",
+          "zh": "無與倫比",
+          "note": "固定片語，語氣較強。"
+        }
+      ],
+      "synonyms": [
+        {
+          "en": "contrast",
+          "zh": "對照差異",
+          "note": "特別強調不同之處，compare 可談相同與不同。"
+        },
+        {
+          "en": "liken",
+          "zh": "比作",
+          "note": "liken A to B 只對應比擬義。"
+        }
+      ],
+      "idioms": [],
+      "family": [
+        {
+          "word": "comparison",
+          "pos": "n.",
+          "meaning": "比較"
+        },
+        {
+          "word": "comparable",
+          "pos": "adj.",
+          "meaning": "可比較的；相近的"
+        },
+        {
+          "word": "comparatively",
+          "pos": "adv.",
+          "meaning": "相對而言"
+        }
+      ],
+      "usageNote": "compare with 和 compare to 在比較義上均可使用；比喻某物像另一物時常用 compare to。比較數據應確認單位與範圍一致。",
+      "examples": [
+        {
+          "text": "Before buying a bicycle, I compared prices and checked whether each model was suitable for my daily route.",
+          "translationZh": "買自行車前，我比較價格，也檢查各款是否適合每天行經的路線。",
+          "grammar": "Before buying 省略相同主詞；whether 引導檢查內容。",
+          "writingTip": "比較選項時加入用途，避免只看價格。",
+          "topic": "消費決策",
+          "source": "self-authored"
+        },
+        {
+          "text": "Compared with last year, more students walked to school, although the survey did not explain why their habits had changed.",
+          "translationZh": "與去年相比，更多學生步行上學，但調查未說明習慣改變的原因。",
+          "grammar": "Compared with 為分詞片語；although 保留調查的限制。",
+          "writingTip": "圖表作文分開寫觀察到的變化與尚未證實的原因。",
+          "topic": "交通圖表",
+          "source": "self-authored"
+        }
+      ]
+    },
+    "compensate": {
+      "senses": [
+        {
+          "pos": "vt.",
+          "meaning": "賠償；補償某人",
+          "usage": "compensate someone for a loss。"
+        },
+        {
+          "pos": "vi.",
+          "meaning": "彌補",
+          "usage": "compensate for a disadvantage。"
+        }
+      ],
+      "collocations": [
+        {
+          "en": "compensate workers for lost wages",
+          "zh": "補償工人損失的薪資",
+          "note": ""
+        },
+        {
+          "en": "compensate for a lack of experience",
+          "zh": "彌補經驗不足",
+          "note": ""
+        },
+        {
+          "en": "receive compensation",
+          "zh": "獲得賠償",
+          "note": ""
+        },
+        {
+          "en": "adequate compensation for damage",
+          "zh": "足以彌補損害的賠償",
+          "note": ""
+        }
+      ],
+      "synonyms": [
+        {
+          "en": "make up for",
+          "zh": "彌補",
+          "note": "較口語，對應不足或損失，不必付錢。"
+        },
+        {
+          "en": "reimburse",
+          "zh": "償還費用",
+          "note": "通常歸還已支出的款項，範圍較窄。"
+        }
+      ],
+      "idioms": [],
+      "family": [
+        {
+          "word": "compensation",
+          "pos": "n.",
+          "meaning": "補償；賠償"
+        },
+        {
+          "word": "compensatory",
+          "pos": "adj.",
+          "meaning": "補償性的"
+        }
+      ],
+      "usageNote": "compensate someone for something；compensate for something。付出補償不一定能完全消除損害。",
+      "examples": [
+        {
+          "text": "The airline offered to compensate passengers for the extra transport costs caused by the canceled flight.",
+          "translationZh": "航空公司提出補償旅客因航班取消而額外支出的交通費。",
+          "grammar": "compensate + 人 + for + 損失；caused by 修飾 costs。",
+          "writingTip": "描述服務中斷時，明確交代補償涵蓋的費用。",
+          "topic": "交通與消費",
+          "source": "self-authored"
+        },
+        {
+          "text": "Careful preparation helped compensate for my lack of experience when I guided visitors through the community exhibition.",
+          "translationZh": "帶領訪客參觀社區展覽時，充分準備幫助我彌補經驗不足。",
+          "grammar": "helped + 原形；compensate for + 不足之處。",
+          "writingTip": "個人成長作文可寫出如何以準備補足弱點。",
+          "topic": "導覽經驗",
+          "source": "self-authored"
+        }
+      ]
+    },
+    "complex": {
+      "senses": [
+        {
+          "pos": "adj.",
+          "meaning": "複雜的",
+          "usage": "包含多個彼此關聯的部分。"
+        },
+        {
+          "pos": "n.",
+          "meaning": "綜合建築群",
+          "usage": "如 sports complex。"
+        },
+        {
+          "pos": "n.",
+          "meaning": "情結",
+          "usage": "常見於 inferiority complex 等固定搭配。"
+        }
+      ],
+      "collocations": [
+        {
+          "en": "a complex problem",
+          "zh": "複雜的問題",
+          "note": ""
+        },
+        {
+          "en": "a complex relationship",
+          "zh": "複雜的關係",
+          "note": ""
+        },
+        {
+          "en": "a sports complex",
+          "zh": "綜合運動中心",
+          "note": "名詞義。"
+        },
+        {
+          "en": "an inferiority complex",
+          "zh": "自卑情結",
+          "note": "不是所有缺乏自信都宜如此稱呼。"
+        }
+      ],
+      "synonyms": [
+        {
+          "en": "complicated",
+          "zh": "複雜的",
+          "note": "常強調難以處理或理解。"
+        },
+        {
+          "en": "intricate",
+          "zh": "錯綜細密的",
+          "note": "常形容具有許多細節的結構或設計。"
+        }
+      ],
+      "idioms": [],
+      "family": [
+        {
+          "word": "complexity",
+          "pos": "n.",
+          "meaning": "複雜性"
+        },
+        {
+          "word": "complexities",
+          "pos": "n. pl.",
+          "meaning": "複雜之處"
+        }
+      ],
+      "usageNote": "complex 可作形容詞或名詞；a complex problem 是問題，a sports complex 是建築設施，須看名詞組結構。",
+      "examples": [
+        {
+          "text": "A simple slogan cannot explain a complex problem involving housing costs, transport options, and the needs of different families.",
+          "translationZh": "一句簡單標語無法解釋涉及房價、交通選擇與不同家庭需求的複雜問題。",
+          "grammar": "involving 為分詞修飾 problem；三個名詞組並列。",
+          "writingTip": "公共議題寫作可列出問題涉及的多項因素。",
+          "topic": "居住議題",
+          "source": "self-authored"
+        },
+        {
+          "text": "The new sports complex provides an indoor pool and courts that residents can use even during heavy rain.",
+          "translationZh": "新的綜合運動中心提供室內游泳池與球場，居民大雨時也能使用。",
+          "grammar": "complex 為主詞中的名詞；that 引導限定關係子句。",
+          "writingTip": "介紹設施時把內容連結居民實際使用的情境。",
+          "topic": "公共空間",
+          "source": "self-authored"
+        }
+      ]
+    },
+    "concentrate": {
+      "senses": [
+        {
+          "pos": "vi.",
+          "meaning": "專注",
+          "usage": "concentrate on + 名詞／V-ing。"
+        },
+        {
+          "pos": "vt.",
+          "meaning": "集中；使濃縮",
+          "usage": "concentrate efforts；concentrate a liquid。"
+        },
+        {
+          "pos": "n.",
+          "meaning": "濃縮物",
+          "usage": "如果汁濃縮液。"
+        }
+      ],
+      "collocations": [
+        {
+          "en": "concentrate on a task",
+          "zh": "專注於任務",
+          "note": ""
+        },
+        {
+          "en": "concentrate efforts on improving safety",
+          "zh": "集中力量改善安全",
+          "note": ""
+        },
+        {
+          "en": "a high concentration of salt",
+          "zh": "高濃度的鹽",
+          "note": "名詞濃度義。"
+        },
+        {
+          "en": "juice made from concentrate",
+          "zh": "以濃縮液製成的果汁",
+          "note": "名詞義。"
+        }
+      ],
+      "synonyms": [
+        {
+          "en": "focus",
+          "zh": "專注；集中",
+          "note": "focus on 常可對應專注義。"
+        },
+        {
+          "en": "condense",
+          "zh": "濃縮；精簡",
+          "note": "只對應某些濃縮或縮減語境，不等於專心。"
+        }
+      ],
+      "idioms": [],
+      "family": [
+        {
+          "word": "concentration",
+          "pos": "n.",
+          "meaning": "專注；集中；濃度"
+        },
+        {
+          "word": "concentrated",
+          "pos": "adj.",
+          "meaning": "集中的；濃縮的"
+        }
+      ],
+      "usageNote": "concentrate on studying 的 on 是介系詞；concentration 也可指物質濃度或人口集中，不只指注意力。",
+      "examples": [
+        {
+          "text": "I turned off notifications so that I could concentrate on understanding the article before discussing it with my classmates.",
+          "translationZh": "我關閉通知，先專心理解文章，再與同學討論。",
+          "grammar": "so that 表目的；concentrate on + V-ing。",
+          "writingTip": "用可觀察的環境調整說明如何減少干擾。",
+          "topic": "專注學習",
+          "source": "self-authored"
+        },
+        {
+          "text": "The volunteers concentrated their efforts on clearing blocked drains before the next storm was expected to reach the village.",
+          "translationZh": "志工集中力量清理堵塞水溝，趕在下一場暴風雨預期抵達村莊之前完成。",
+          "grammar": "concentrate efforts on + V-ing；was expected to V 為被動。",
+          "writingTip": "災害準備作文交代有限人力優先投入何處。",
+          "topic": "社區防災",
+          "source": "self-authored"
         }
       ]
     },
@@ -4689,6 +6544,91 @@
       ],
       "usageNote": "confident 表有信心，confidential 表機密；兩者不是同一個形容詞。"
     },
+    "confirm": {
+      "senses": [
+        {
+          "pos": "vt.",
+          "meaning": "確認；證實",
+          "usage": "可接安排、身分或 that 子句。"
+        },
+        {
+          "pos": "vt.",
+          "meaning": "堅定；使更確信",
+          "usage": "confirm a belief。"
+        }
+      ],
+      "collocations": [
+        {
+          "en": "confirm a reservation",
+          "zh": "確認預訂",
+          "note": ""
+        },
+        {
+          "en": "confirm someone's identity",
+          "zh": "確認某人的身分",
+          "note": ""
+        },
+        {
+          "en": "confirm that a report is accurate",
+          "zh": "證實報導正確",
+          "note": ""
+        },
+        {
+          "en": "receive written confirmation",
+          "zh": "收到書面確認",
+          "note": "名詞搭配。"
+        }
+      ],
+      "synonyms": [
+        {
+          "en": "verify",
+          "zh": "核實",
+          "note": "強調查核真實性或準確性。"
+        },
+        {
+          "en": "corroborate",
+          "zh": "佐證",
+          "note": "較正式，指以獨立證據支持說法，未必完全證實。"
+        }
+      ],
+      "idioms": [],
+      "family": [
+        {
+          "word": "confirmation",
+          "pos": "n.",
+          "meaning": "確認；證實"
+        },
+        {
+          "word": "confirmed",
+          "pos": "adj.",
+          "meaning": "已確認的"
+        },
+        {
+          "word": "unconfirmed",
+          "pos": "adj.",
+          "meaning": "尚未證實的"
+        }
+      ],
+      "usageNote": "confirm a booking 可指確認安排；confirm a claim 則涉及證據。傳聞反覆出現不等於獲得確認。",
+      "examples": [
+        {
+          "text": "Before leaving home, we called the museum to confirm that the workshop would still take place despite the storm warning.",
+          "translationZh": "出門前，我們打電話向博物館確認，暴風雨警報發布後工作坊是否仍會舉行。",
+          "grammar": "to confirm 表致電目的；that 子句說明確認的內容。",
+          "writingTip": "行程作文可寫出出發前如何確認突發狀況。",
+          "topic": "活動確認",
+          "source": "self-authored"
+        },
+        {
+          "text": "The second interview helped confirm several details, but the reporter still needed evidence for the article's central claim.",
+          "translationZh": "第二次訪談幫助確認數項細節，但記者仍需要支持文章核心主張的證據。",
+          "grammar": "help + 原形 confirm；but 區分已確認與仍待查證的部分。",
+          "writingTip": "媒體識讀作文區分局部資訊與整體主張。",
+          "topic": "新聞查核",
+          "source": "self-authored"
+        }
+      ]
+    },
     "conflict": {
       "senses": [
         {
@@ -4925,6 +6865,176 @@
       ],
       "usageNote": "conserve 包含避免消耗及保護；conservation 才是名詞。"
     },
+    "consistent": {
+      "senses": [
+        {
+          "pos": "adj.",
+          "meaning": "一致的；相符的",
+          "usage": "consistent with + 證據或原則。"
+        },
+        {
+          "pos": "adj.",
+          "meaning": "穩定持續的",
+          "usage": "形容表現、做法或品質。"
+        }
+      ],
+      "collocations": [
+        {
+          "en": "consistent with the evidence",
+          "zh": "與證據相符",
+          "note": ""
+        },
+        {
+          "en": "consistent effort",
+          "zh": "持續穩定的努力",
+          "note": ""
+        },
+        {
+          "en": "maintain consistent standards",
+          "zh": "維持一致標準",
+          "note": ""
+        },
+        {
+          "en": "be consistent in applying the rules",
+          "zh": "一貫地執行規則",
+          "note": ""
+        }
+      ],
+      "synonyms": [
+        {
+          "en": "steady",
+          "zh": "穩定的",
+          "note": "對應持續或不突然變動的意思。"
+        },
+        {
+          "en": "compatible",
+          "zh": "相容的",
+          "note": "指可以共存或配合，不一定表示長期一致。"
+        }
+      ],
+      "idioms": [],
+      "family": [
+        {
+          "word": "consistency",
+          "pos": "n.",
+          "meaning": "一致性；穩定性"
+        },
+        {
+          "word": "consistently",
+          "pos": "adv.",
+          "meaning": "一貫地；持續地"
+        },
+        {
+          "word": "inconsistent",
+          "pos": "adj.",
+          "meaning": "不一致的"
+        }
+      ],
+      "usageNote": "consistent with 表相符；consistent in 表在某方面一貫。consistent 不等於 constant：穩定努力仍可包含休息。",
+      "examples": [
+        {
+          "text": "The witness gave an account consistent with the camera footage, although some details remained too unclear to explain.",
+          "translationZh": "目擊者的敘述與監視器畫面相符，但某些細節仍不清楚，無法解釋。",
+          "grammar": "consistent with 後置修飾 account；too + 形容詞 + to V。",
+          "writingTip": "證據寫作可承認吻合之處，同時保留不確定細節。",
+          "topic": "事件查證",
+          "source": "self-authored"
+        },
+        {
+          "text": "Consistent practice helped me speak with greater confidence, even though my progress from one week to the next was uneven.",
+          "translationZh": "持續練習幫助我更有信心開口，儘管每週進步的幅度並不一致。",
+          "grammar": "even though 引導讓步；from one week to the next 表週與週之間。",
+          "writingTip": "成長敘事可承認進步並非每次都看得見。",
+          "topic": "口說練習",
+          "source": "self-authored"
+        }
+      ]
+    },
+    "construct": {
+      "senses": [
+        {
+          "pos": "vt.",
+          "meaning": "建造；建構",
+          "usage": "可指實體建築、論證或解釋。"
+        },
+        {
+          "pos": "n.",
+          "meaning": "建構的概念",
+          "usage": "研究語境，如 a theoretical construct。"
+        }
+      ],
+      "collocations": [
+        {
+          "en": "construct a bridge",
+          "zh": "建橋",
+          "note": ""
+        },
+        {
+          "en": "construct an argument",
+          "zh": "建立論證",
+          "note": ""
+        },
+        {
+          "en": "construct a model",
+          "zh": "建構模型",
+          "note": ""
+        },
+        {
+          "en": "a theoretical construct",
+          "zh": "理論建構的概念",
+          "note": "名詞義，較正式。"
+        }
+      ],
+      "synonyms": [
+        {
+          "en": "build",
+          "zh": "建造；建立",
+          "note": "較日常，適用範圍廣。"
+        },
+        {
+          "en": "formulate",
+          "zh": "擬定；表述",
+          "note": "常接理論、計畫或說法，不指蓋實體建築。"
+        }
+      ],
+      "idioms": [],
+      "family": [
+        {
+          "word": "construction",
+          "pos": "n.",
+          "meaning": "建造；結構"
+        },
+        {
+          "word": "constructive",
+          "pos": "adj.",
+          "meaning": "有建設性的"
+        },
+        {
+          "word": "reconstruct",
+          "pos": "vt.",
+          "meaning": "重建；重現"
+        }
+      ],
+      "usageNote": "construct a sentence 是組織句子；constructive criticism 是有助改進的批評，不是「建築式批評」。",
+      "examples": [
+        {
+          "text": "Students constructed a small bridge from recycled materials and tested how much weight it could safely support.",
+          "translationZh": "學生用回收材料製作小橋，並測試它能安全承受多少重量。",
+          "grammar": "construct A from B；how much 引導測試的內容。",
+          "writingTip": "實作經驗可交代材料、作品與驗證方式。",
+          "topic": "科學實作",
+          "source": "self-authored"
+        },
+        {
+          "text": "To construct a convincing argument, writers need clear reasons and evidence that directly supports the point they want to make.",
+          "translationZh": "要建立有說服力的論證，作者需要清楚理由，以及直接支持其主張的證據。",
+          "grammar": "To construct 表目的；that supports 修飾 evidence。",
+          "writingTip": "作文可用理由與證據的關聯檢查段落是否完整。",
+          "topic": "議論寫作",
+          "source": "self-authored"
+        }
+      ]
+    },
     "consumption": {
       "senses": [
         {
@@ -5139,7 +7249,7 @@
         {
           "en": "shrink",
           "zh": "縮小",
-          "note": "常用於尺寸，非簽约義"
+          "note": "常用於尺寸，非簽約義"
         }
       ],
       "idioms": [],
@@ -5177,6 +7287,86 @@
           "grammar": "how muscles contract and relax；using 補充解說方式。",
           "writingTip": "描寫簡單模型如何使科學概念容易理解。",
           "topic": "科學解說"
+        }
+      ]
+    },
+    "contrast": {
+      "senses": [
+        {
+          "pos": "n.",
+          "meaning": "對比；差異",
+          "usage": "contrast between A and B。"
+        },
+        {
+          "pos": "vt./vi.",
+          "meaning": "對照；形成對比",
+          "usage": "contrast A with B；A contrasts with B。"
+        }
+      ],
+      "collocations": [
+        {
+          "en": "in contrast to the past",
+          "zh": "與過去相比之下",
+          "note": ""
+        },
+        {
+          "en": "a sharp contrast between two views",
+          "zh": "兩種觀點間的鮮明對比",
+          "note": ""
+        },
+        {
+          "en": "contrast the results with earlier findings",
+          "zh": "將結果與較早發現對照",
+          "note": ""
+        },
+        {
+          "en": "by contrast",
+          "zh": "相較之下",
+          "note": "銜接兩個相反情況。"
+        }
+      ],
+      "synonyms": [
+        {
+          "en": "difference",
+          "zh": "差異",
+          "note": "一般不同之處，未必強烈或經過對照。"
+        },
+        {
+          "en": "compare",
+          "zh": "比較",
+          "note": "可談異同；contrast 特別著重差異。"
+        }
+      ],
+      "idioms": [],
+      "family": [
+        {
+          "word": "contrasting",
+          "pos": "adj.",
+          "meaning": "形成對比的"
+        },
+        {
+          "word": "contrastive",
+          "pos": "adj.",
+          "meaning": "對比的"
+        }
+      ],
+      "usageNote": "in contrast to／with 後接比較對象；by contrast 可獨立銜接句子。避免比較不同統計單位而造成假對比。",
+      "examples": [
+        {
+          "text": "In contrast to the crowded city center, the riverside path offered a quiet place where neighbors could walk and talk.",
+          "translationZh": "與擁擠的市中心相較，河岸步道提供了鄰居可以散步交談的安靜空間。",
+          "grammar": "In contrast to + 名詞；where 修飾 place。",
+          "writingTip": "照片或地點比較可選擇同一面向描述差異。",
+          "topic": "城鄉空間",
+          "source": "self-authored"
+        },
+        {
+          "text": "The report contrasted students' expectations with their actual experiences, revealing a gap that school planners had not anticipated.",
+          "translationZh": "報告對照學生的期待與實際經驗，呈現校方規畫人員未預料到的落差。",
+          "grammar": "contrast A with B；revealing 補充對照揭示的結果。",
+          "writingTip": "比較期望與實況後，指出需要回應的落差。",
+          "topic": "校園調查",
+          "source": "self-authored"
         }
       ]
     },
@@ -5346,6 +7536,86 @@
       ],
       "usageNote": "convert A into B 常用於形態或用途轉換；貨幣、單位轉換也可用 to。"
     },
+    "convince": {
+      "senses": [
+        {
+          "pos": "vt.",
+          "meaning": "使信服；說服",
+          "usage": "convince someone of something／that...／to V。"
+        }
+      ],
+      "collocations": [
+        {
+          "en": "convince someone of the need for change",
+          "zh": "使某人相信改變的必要",
+          "note": ""
+        },
+        {
+          "en": "convince someone that a plan is practical",
+          "zh": "使某人相信計畫可行",
+          "note": ""
+        },
+        {
+          "en": "convince a friend to join",
+          "zh": "說服朋友加入",
+          "note": ""
+        },
+        {
+          "en": "be convinced of someone's honesty",
+          "zh": "深信某人的誠實",
+          "note": ""
+        }
+      ],
+      "synonyms": [
+        {
+          "en": "persuade",
+          "zh": "說服",
+          "note": "常著重促成行動，但與 convince 的用法有重疊。"
+        },
+        {
+          "en": "assure",
+          "zh": "使放心；保證",
+          "note": "常安撫疑慮，未必提供足以使人信服的證據。"
+        }
+      ],
+      "idioms": [],
+      "family": [
+        {
+          "word": "convinced",
+          "pos": "adj.",
+          "meaning": "確信的"
+        },
+        {
+          "word": "convincing",
+          "pos": "adj.",
+          "meaning": "有說服力的"
+        },
+        {
+          "word": "convincingly",
+          "pos": "adv.",
+          "meaning": "有說服力地"
+        }
+      ],
+      "usageNote": "convincing 形容理由等有說服力；convinced 形容人確信。convince someone to do 是通行用法，不應一律判錯。",
+      "examples": [
+        {
+          "text": "The trial results convinced the team that the simpler design could meet users' needs without adding unnecessary features.",
+          "translationZh": "試用結果使團隊相信，較簡單的設計不用加入多餘功能也能符合使用者需求。",
+          "grammar": "convince + 人 + that 子句；without adding 表不加入功能。",
+          "writingTip": "提案作文以試用結果支持選擇，避免只憑偏好。",
+          "topic": "產品設計",
+          "source": "self-authored"
+        },
+        {
+          "text": "I convinced my friend to try the hiking club by explaining that beginners could choose a shorter, easier route.",
+          "translationZh": "我說明初學者可以選較短較容易的路線，說服朋友試著參加健行社。",
+          "grammar": "convince + 人 + to V；by explaining 表說服方式。",
+          "writingTip": "描寫邀請活動時如何回應對方的具體顧慮。",
+          "topic": "社團參與",
+          "source": "self-authored"
+        }
+      ]
+    },
     "cooperate": {
       "senses": [
         {
@@ -5425,6 +7695,166 @@
         }
       ],
       "usageNote": "cooperate 為不及物動詞，不能直接寫 cooperate someone；應加 with。"
+    },
+    "coordinate": {
+      "senses": [
+        {
+          "pos": "vt./vi.",
+          "meaning": "協調；統籌",
+          "usage": "協調人員、時間或動作，使之配合。"
+        },
+        {
+          "pos": "n.",
+          "meaning": "座標",
+          "usage": "常用複數 coordinates。"
+        }
+      ],
+      "collocations": [
+        {
+          "en": "coordinate a rescue operation",
+          "zh": "協調救援行動",
+          "note": ""
+        },
+        {
+          "en": "coordinate with local volunteers",
+          "zh": "與當地志工協調",
+          "note": ""
+        },
+        {
+          "en": "coordinate schedules",
+          "zh": "協調時間安排",
+          "note": ""
+        },
+        {
+          "en": "geographical coordinates",
+          "zh": "地理座標",
+          "note": "名詞複數。"
+        }
+      ],
+      "synonyms": [
+        {
+          "en": "organize",
+          "zh": "組織；安排",
+          "note": "範圍較廣，未必強調各部分同步配合。"
+        },
+        {
+          "en": "synchronize",
+          "zh": "使同步",
+          "note": "強調時間一致，不涵蓋所有協調工作。"
+        }
+      ],
+      "idioms": [],
+      "family": [
+        {
+          "word": "coordination",
+          "pos": "n.",
+          "meaning": "協調"
+        },
+        {
+          "word": "coordinator",
+          "pos": "n.",
+          "meaning": "協調人"
+        },
+        {
+          "word": "coordinated",
+          "pos": "adj.",
+          "meaning": "協調一致的"
+        }
+      ],
+      "usageNote": "coordinate with + 合作對象；coordinate + 活動或安排。coordinates 是可定位的座標，與協調工作是不同詞義。",
+      "examples": [
+        {
+          "text": "A student coordinator helped us coordinate schedules so that volunteers could cover every shift without missing their regular classes.",
+          "translationZh": "學生協調人幫忙統籌時程，讓志工能支援每個班次，也不耽誤正常課程。",
+          "grammar": "help + 人 + 原形 coordinate；so that 表安排的目的。",
+          "writingTip": "志工經驗可說明如何兼顧服務與課業。",
+          "topic": "志工排班",
+          "source": "self-authored"
+        },
+        {
+          "text": "Rescue teams coordinated with local residents to identify roads that remained safe after the heavy rain.",
+          "translationZh": "救援團隊與當地居民協調，確認哪些道路在大雨後仍安全可行。",
+          "grammar": "coordinate with + 人；to identify 表合作目的。",
+          "writingTip": "防災作文可交代在地資訊如何協助救援。",
+          "topic": "災後協調",
+          "source": "self-authored"
+        }
+      ]
+    },
+    "cope": {
+      "senses": [
+        {
+          "pos": "vi.",
+          "meaning": "應付；因應",
+          "usage": "cope with + 困難或需求，不直接接困難作受詞。"
+        }
+      ],
+      "collocations": [
+        {
+          "en": "cope with stress",
+          "zh": "因應壓力",
+          "note": ""
+        },
+        {
+          "en": "cope with a sudden change",
+          "zh": "應付突發改變",
+          "note": ""
+        },
+        {
+          "en": "learn to cope",
+          "zh": "學習應對",
+          "note": "可不明說 with 的受詞。"
+        },
+        {
+          "en": "coping strategies",
+          "zh": "因應策略",
+          "note": "名詞組。"
+        }
+      ],
+      "synonyms": [
+        {
+          "en": "deal with",
+          "zh": "處理；應對",
+          "note": "範圍較廣，不一定表示困難。"
+        },
+        {
+          "en": "manage",
+          "zh": "設法應付",
+          "note": "可直接接受詞，句型不同。"
+        }
+      ],
+      "idioms": [],
+      "family": [
+        {
+          "word": "coping",
+          "pos": "n.",
+          "meaning": "因應；應對"
+        },
+        {
+          "word": "coping",
+          "pos": "adj.",
+          "meaning": "因應用的"
+        }
+      ],
+      "usageNote": "cope with a problem，不寫 cope a problem。cope 通常暗示情況有壓力或難度，不代表問題已完全解決。",
+      "examples": [
+        {
+          "text": "When the deadline changed unexpectedly, our group coped with the pressure by identifying the tasks that needed immediate attention.",
+          "translationZh": "期限突然改變時，我們先辨認急需處理的任務，以應對壓力。",
+          "grammar": "cope with + 壓力；by identifying 表方法；that 修飾 tasks。",
+          "writingTip": "臨時變動的敘事可用優先排序呈現解決方式。",
+          "topic": "期限與壓力",
+          "source": "self-authored"
+        },
+        {
+          "text": "Talking with a trusted adult helped me cope with disappointment after I failed to reach the final round.",
+          "translationZh": "未能進入決賽後，與可信任的成人談談，幫助我應對失望。",
+          "grammar": "Talking 為主詞；help + 人 + 原形 cope；after 表先後。",
+          "writingTip": "描寫挫折時可具體寫出求助對象及支持方式。",
+          "topic": "挫折與支持",
+          "source": "self-authored"
+        }
+      ]
     },
     "courage": {
       "senses": [
@@ -6477,6 +8907,70 @@
       ],
       "usageNote": "dependent 指依賴他人的；dependable 指值得依靠的，意思不同。"
     },
+    "despite": {
+      "senses": [
+        {
+          "pos": "prep.",
+          "meaning": "儘管；即使",
+          "usage": "後接名詞或 V-ing，不直接接完整子句。"
+        }
+      ],
+      "collocations": [
+        {
+          "en": "despite the rain",
+          "zh": "儘管下雨",
+          "note": ""
+        },
+        {
+          "en": "despite limited resources",
+          "zh": "儘管資源有限",
+          "note": ""
+        },
+        {
+          "en": "despite being tired",
+          "zh": "儘管疲倦",
+          "note": "後接 V-ing。"
+        },
+        {
+          "en": "despite the fact that",
+          "zh": "儘管……這個事實",
+          "note": "fact 後可接完整子句。"
+        }
+      ],
+      "synonyms": [
+        {
+          "en": "in spite of",
+          "zh": "儘管",
+          "note": "同樣後接名詞或 V-ing。"
+        },
+        {
+          "en": "although",
+          "zh": "雖然",
+          "note": "是連接詞，後接完整子句，不能直接原位互換。"
+        }
+      ],
+      "idioms": [],
+      "family": [],
+      "usageNote": "despite 後不加 of；despite + 名詞／V-ing 與 although + 主詞 + 動詞須分清。此常用介系詞不勉強衍生字族。",
+      "examples": [
+        {
+          "text": "Despite limited resources, the village library created a welcoming reading corner with donated books and furniture repaired by volunteers.",
+          "translationZh": "儘管資源有限，村立圖書館仍用捐書與志工修好的家具，打造親切的閱讀角落。",
+          "grammar": "Despite 後接名詞組；repaired 為過去分詞修飾 furniture。",
+          "writingTip": "讓步句先交代限制，再具體描述如何運用現有資源。",
+          "topic": "社區閱讀",
+          "source": "self-authored"
+        },
+        {
+          "text": "Despite feeling nervous, I introduced our project clearly and answered the questions I had practiced with my teammates.",
+          "translationZh": "儘管緊張，我仍清楚介紹專題，並回答先前和隊友練習過的問題。",
+          "grammar": "Despite + V-ing；had practiced 表較早完成的準備。",
+          "writingTip": "個人經驗可同時描寫情緒與準備帶來的作用。",
+          "topic": "上台報告",
+          "source": "self-authored"
+        }
+      ]
+    },
     "detect": {
       "senses": [
         {
@@ -6797,6 +9291,91 @@
       ],
       "usageNote": "discipline 不是只有處罰；academic discipline 指學科，disciplined 常表示自律。"
     },
+    "distinguish": {
+      "senses": [
+        {
+          "pos": "vt./vi.",
+          "meaning": "區分；辨別",
+          "usage": "distinguish A from B／distinguish between A and B。"
+        },
+        {
+          "pos": "vt.",
+          "meaning": "使具有特色；使出眾",
+          "usage": "如 distinguish oneself。"
+        }
+      ],
+      "collocations": [
+        {
+          "en": "distinguish fact from opinion",
+          "zh": "區分事實與意見",
+          "note": ""
+        },
+        {
+          "en": "distinguish between two sounds",
+          "zh": "辨別兩種聲音",
+          "note": ""
+        },
+        {
+          "en": "distinguish oneself in a field",
+          "zh": "在某領域表現出眾",
+          "note": "反身用法。"
+        },
+        {
+          "en": "a distinguishing feature",
+          "zh": "可供辨別的特徵",
+          "note": ""
+        }
+      ],
+      "synonyms": [
+        {
+          "en": "differentiate",
+          "zh": "區分",
+          "note": "較正式，句型可用 differentiate A from B。"
+        },
+        {
+          "en": "recognize",
+          "zh": "辨認",
+          "note": "強調認出身分或特徵，不必比較兩者。"
+        }
+      ],
+      "idioms": [],
+      "family": [
+        {
+          "word": "distinction",
+          "pos": "n.",
+          "meaning": "差別；卓越"
+        },
+        {
+          "word": "distinctive",
+          "pos": "adj.",
+          "meaning": "有特色的"
+        },
+        {
+          "word": "distinguished",
+          "pos": "adj.",
+          "meaning": "卓越的；傑出的"
+        }
+      ],
+      "usageNote": "distinctive 指易辨識的特色，distinguished 指傑出。distinguish between A and B，不寫 distinguish between A from B。",
+      "examples": [
+        {
+          "text": "Readers need to distinguish facts from opinions when an advertisement presents personal experiences as evidence that a product always works.",
+          "translationZh": "廣告把個人經驗當作產品永遠有效的證據時，讀者須區分事實與意見。",
+          "grammar": "distinguish A from B；as evidence 表被當成什麼。",
+          "writingTip": "媒體識讀作文可指出單一經驗與普遍主張的差別。",
+          "topic": "廣告判讀",
+          "source": "self-authored"
+        },
+        {
+          "text": "The guide taught us to distinguish between similar birds by observing their beaks, movements, and patterns of sound.",
+          "translationZh": "導覽員教我們觀察鳥喙、動作與鳴叫模式，辨別外形相似的鳥。",
+          "grammar": "teach + 人 + to V；by observing 後並列三種線索。",
+          "writingTip": "自然觀察經驗以具體辨識線索支持描述。",
+          "topic": "自然觀察",
+          "source": "self-authored"
+        }
+      ]
+    },
     "distribute": {
       "senses": [
         {
@@ -6877,17 +9456,137 @@
       ],
       "usageNote": "分給人用 distribute A to B；分散在某範圍可用 distribute A across an area。"
     },
+    "diverse": {
+      "senses": [
+        {
+          "pos": "adj.",
+          "meaning": "多樣的；不同的",
+          "usage": "形容群體、背景、觀點或種類。"
+        }
+      ],
+      "collocations": [
+        {
+          "en": "diverse backgrounds",
+          "zh": "多樣的背景",
+          "note": ""
+        },
+        {
+          "en": "a diverse range of activities",
+          "zh": "多元的活動",
+          "note": ""
+        },
+        {
+          "en": "diverse perspectives",
+          "zh": "不同的觀點",
+          "note": ""
+        },
+        {
+          "en": "culturally diverse communities",
+          "zh": "文化多元的社區",
+          "note": ""
+        }
+      ],
+      "synonyms": [
+        {
+          "en": "varied",
+          "zh": "多樣的",
+          "note": "強調種類多，不一定涉及群體代表性。"
+        },
+        {
+          "en": "heterogeneous",
+          "zh": "異質的",
+          "note": "較正式，強調組成部分不同。"
+        }
+      ],
+      "idioms": [],
+      "family": [
+        {
+          "word": "diversity",
+          "pos": "n.",
+          "meaning": "多樣性"
+        },
+        {
+          "word": "diversify",
+          "pos": "vt./vi.",
+          "meaning": "使多元化；多元發展"
+        },
+        {
+          "word": "diversification",
+          "pos": "n.",
+          "meaning": "多元化"
+        }
+      ],
+      "usageNote": "diverse 描述多樣，diversity 為名詞；多樣背景本身不保證每個人都有發言機會，寫作可再說明如何促進參與。",
+      "examples": [
+        {
+          "text": "Students from diverse backgrounds shared family recipes, turning a cooking activity into a chance to learn about one another.",
+          "translationZh": "不同背景的學生分享家傳食譜，讓烹飪活動成為彼此了解的機會。",
+          "grammar": "from diverse backgrounds 修飾 students；turning 補充活動結果。",
+          "writingTip": "文化作文可藉食物與分享過程呈現交流。",
+          "topic": "文化交流",
+          "source": "self-authored"
+        },
+        {
+          "text": "A group may include diverse perspectives yet still make poor decisions if only its most confident members are heard.",
+          "translationZh": "團體即使有多元觀點，若只聽見最有自信成員的聲音，仍可能作出不佳決定。",
+          "grammar": "yet 連接轉折；if 子句說明使多元失效的情況。",
+          "writingTip": "討論多元團隊時加入公平發言的實際條件。",
+          "topic": "團體決策",
+          "source": "self-authored"
+        }
+      ]
+    },
     "draw": {
       "senses": [
         {
-          "pos": "v.",
-          "meaning": "畫；吸引；得出",
-          "usage": ""
+          "pos": "vt./vi.",
+          "meaning": "畫；描繪",
+          "usage": "draw a picture / draw with a pencil；繪畫動作可不接受詞。"
+        },
+        {
+          "pos": "vt.",
+          "meaning": "拉；拖；拔出",
+          "usage": "draw the curtains = 拉動窗簾；draw a sword = 拔劍；draw 接具體物體時通常指拉動。"
+        },
+        {
+          "pos": "vt.",
+          "meaning": "吸引",
+          "usage": "draw a crowd / draw attention；draw attention to + 人或問題 = 引起對……的注意。"
+        },
+        {
+          "pos": "vt.",
+          "meaning": "得出；推論",
+          "usage": "draw a conclusion from evidence；from 後接據以推論的資料。"
+        },
+        {
+          "pos": "vt.",
+          "meaning": "提取；取得；汲取",
+          "usage": "draw money from a bank / draw support from friends；from 指金錢或支持的來源。"
+        },
+        {
+          "pos": "vt.",
+          "meaning": "抽出；抽籤選取",
+          "usage": "draw a name / a number；指隨機抽選，不是繪製名字或數字。"
+        },
+        {
+          "pos": "vt./vi.",
+          "meaning": "打成平手",
+          "usage": "The teams drew. / draw a match；drew 為過去式，平局名詞則用 a draw。"
         },
         {
           "pos": "n.",
-          "meaning": "平手；抽籤",
-          "usage": ""
+          "meaning": "平手；平局",
+          "usage": "end in a draw；可數名詞，常用於比賽結果。"
+        },
+        {
+          "pos": "n.",
+          "meaning": "抽籤；抽獎",
+          "usage": "a prize draw；指抽籤或抽獎活動。draw a number 中 draw 則是「抽出」的動詞。"
+        },
+        {
+          "pos": "vi.",
+          "meaning": "接近；臨近",
+          "usage": "draw near / draw to a close，常用於時間、活動或人接近某個階段。"
         }
       ],
       "collocations": [
@@ -6910,6 +9609,16 @@
           "en": "end in a draw",
           "zh": "以平手結束",
           "note": ""
+        },
+        {
+          "en": "draw up a plan",
+          "zh": "擬訂計畫",
+          "note": "draw up 表草擬文件；代名詞受詞放中間，如 draw it up。"
+        },
+        {
+          "en": "draw strength from an experience",
+          "zh": "從經驗中獲得力量",
+          "note": "from 表來源，可用於經驗反思類作文。"
         }
       ],
       "synonyms": [
@@ -6935,9 +9644,14 @@
           "word": "drawn",
           "pos": "adj.",
           "meaning": "憔悴的；被抽出的"
+        },
+        {
+          "word": "drew",
+          "pos": "v.",
+          "meaning": "draw 的過去式：畫；拉；吸引；得出"
         }
       ],
-      "usageNote": "不規則變化 draw–drew–drawn；draw attention to 的 to 是介系詞。",
+      "usageNote": "動詞 draw–drew–drawn。draw a conclusion 表由資料推論，draw a name 表抽籤選人，draw attention to 表引起對……的注意；draw up a plan 是草擬計畫。drawn 作形容詞也可指憔悴，如 a drawn face，應與過去分詞用途分辨。",
       "examples": [
         {
           "text": "We should not draw conclusions from a single photograph because it may show only a small part of a complicated event.",
@@ -6961,8 +9675,33 @@
       "senses": [
         {
           "pos": "adj.",
-          "meaning": "到期的；應付的；預定的",
-          "usage": ""
+          "meaning": "到期的；應付的",
+          "usage": "The payment is due tomorrow. 指付款到期。"
+        },
+        {
+          "pos": "adj.",
+          "meaning": "預定的；預期的",
+          "usage": "be due to arrive；此處 to 後接原形動詞。"
+        },
+        {
+          "pos": "adj.",
+          "meaning": "應得的；應給予的",
+          "usage": "due respect／give credit where it is due。"
+        },
+        {
+          "pos": "n.",
+          "meaning": "應得的東西或肯定",
+          "usage": "give someone their due；不可把 due 一律當形容詞。"
+        },
+        {
+          "pos": "n. pl.",
+          "meaning": "會費；應繳費用",
+          "usage": "pay membership dues；用複數 dues。"
+        },
+        {
+          "pos": "adv.",
+          "meaning": "正向某方位",
+          "usage": "due north 指正北方，不表示到期。"
         }
       ],
       "collocations": [
@@ -7012,7 +9751,7 @@
           "meaning": "逾期的；早該發生的"
         }
       ],
-      "usageNote": "due to + 名詞表原因；be due to + 原形動詞表預定；be due + 時間表期限。",
+      "usageNote": "due to + 名詞表原因；be due to + 原形動詞表預定；be due + 時間表期限。due 也有應得肯定的名詞義、dues 會費義，以及 due north 的方位副詞義。",
       "examples": [
         {
           "text": "The report is due tomorrow, so our group agreed to finish the charts tonight and check the final draft together.",
@@ -7029,6 +9768,91 @@
           "grammar": "due to + 大雨；where 引導體育館內的安排。",
           "writingTip": "交代活動更改原因及志工的具體協助。",
           "topic": "活動遇雨"
+        }
+      ]
+    },
+    "effective": {
+      "senses": [
+        {
+          "pos": "adj.",
+          "meaning": "有效的；能達到預期效果的",
+          "usage": "不等於 efficient（有效率的）。"
+        },
+        {
+          "pos": "adj.",
+          "meaning": "生效的",
+          "usage": "如 effective from Monday。"
+        }
+      ],
+      "collocations": [
+        {
+          "en": "an effective solution to a problem",
+          "zh": "有效的問題解決方案",
+          "note": ""
+        },
+        {
+          "en": "be effective in reducing waste",
+          "zh": "有效減少浪費",
+          "note": ""
+        },
+        {
+          "en": "an effective way to communicate",
+          "zh": "有效的溝通方式",
+          "note": ""
+        },
+        {
+          "en": "effective from next month",
+          "zh": "自下個月起生效",
+          "note": "規定或合約用語。"
+        }
+      ],
+      "synonyms": [
+        {
+          "en": "successful",
+          "zh": "成功的",
+          "note": "強調達成成果，不完全等於方法有效。"
+        },
+        {
+          "en": "in force",
+          "zh": "生效的",
+          "note": "只對應法規等已開始施行的意思。"
+        }
+      ],
+      "idioms": [],
+      "family": [
+        {
+          "word": "effectiveness",
+          "pos": "n.",
+          "meaning": "有效性"
+        },
+        {
+          "word": "effectively",
+          "pos": "adv.",
+          "meaning": "有效地；實際上"
+        },
+        {
+          "word": "ineffective",
+          "pos": "adj.",
+          "meaning": "無效的"
+        }
+      ],
+      "usageNote": "effective 著重能否達成目的；efficient 著重所花時間或資源。某方法有效不代表最省力，兩字不可一律互換。",
+      "examples": [
+        {
+          "text": "A clear sign proved more effective than repeated announcements in helping visitors find the correct entrance to the exhibition.",
+          "translationZh": "在幫助訪客找到展覽正確入口方面，清楚標示比反覆廣播更有效。",
+          "grammar": "proved + 形容詞表結果證明；more effective than + 比較對象。",
+          "writingTip": "比較措施時指明衡量的是哪一項具體效果。",
+          "topic": "公共指引",
+          "source": "self-authored"
+        },
+        {
+          "text": "The new library rules will be effective from Monday, giving students a week to return overdue books without paying fines.",
+          "translationZh": "圖書館新規則將於週一生效，學生因此有一週可歸還逾期書籍而免繳罰款。",
+          "grammar": "effective from 表生效時間；giving 補充新規則提供的機會。",
+          "writingTip": "通知或規範作文可清楚交代生效日與過渡安排。",
+          "topic": "圖書館規則",
+          "source": "self-authored"
         }
       ]
     },
@@ -7331,6 +10155,251 @@
         }
       ],
       "usageNote": "emission 是名詞；emit 為動詞；emissions 常用複數指排放的氣體。"
+    },
+    "emphasize": {
+      "senses": [
+        {
+          "pos": "vt.",
+          "meaning": "強調；著重",
+          "usage": "直接接重點或 that 子句，不加 on。"
+        }
+      ],
+      "collocations": [
+        {
+          "en": "emphasize the importance of practice",
+          "zh": "強調練習的重要",
+          "note": ""
+        },
+        {
+          "en": "emphasize a key point",
+          "zh": "強調重點",
+          "note": ""
+        },
+        {
+          "en": "place emphasis on safety",
+          "zh": "重視安全",
+          "note": "emphasis 是名詞，常接 on。"
+        },
+        {
+          "en": "emphasize that everyone can contribute",
+          "zh": "強調人人都能貢獻",
+          "note": ""
+        }
+      ],
+      "synonyms": [
+        {
+          "en": "stress",
+          "zh": "強調",
+          "note": "動詞義常相近，名詞 stress 另有壓力義。"
+        },
+        {
+          "en": "highlight",
+          "zh": "凸顯",
+          "note": "常藉視覺、選取或特別提及來突出。"
+        }
+      ],
+      "idioms": [],
+      "family": [
+        {
+          "word": "emphasis",
+          "pos": "n.",
+          "meaning": "強調；重點"
+        },
+        {
+          "word": "emphatic",
+          "pos": "adj.",
+          "meaning": "強調的；堅決的"
+        },
+        {
+          "word": "emphatically",
+          "pos": "adv.",
+          "meaning": "強調地；堅決地"
+        }
+      ],
+      "usageNote": "emphasize something 與 place emphasis on something 句型不同；不寫 emphasize on something。",
+      "examples": [
+        {
+          "text": "The coach emphasized that asking for help was a responsible choice, not a sign that someone had failed.",
+          "translationZh": "教練強調，求助是負責任的選擇，不代表一個人失敗了。",
+          "grammar": "emphasize + that 子句；asking for help 為子句主詞。",
+          "writingTip": "討論求助態度時，可重新說明它代表的正面行動。",
+          "topic": "心理支持",
+          "source": "self-authored"
+        },
+        {
+          "text": "Our poster emphasized the importance of sorting waste correctly by showing common mistakes beside pictures of the proper bins.",
+          "translationZh": "我們在海報上以常見錯誤對照正確垃圾桶圖片，強調正確分類的重要。",
+          "grammar": "importance of + V-ing；by showing 表傳達重點的方式。",
+          "writingTip": "宣導作文以海報如何呈現內容具體化做法。",
+          "topic": "回收宣導",
+          "source": "self-authored"
+        }
+      ]
+    },
+    "enable": {
+      "senses": [
+        {
+          "pos": "vt.",
+          "meaning": "使能夠；讓……得以",
+          "usage": "enable someone to V。"
+        },
+        {
+          "pos": "vt.",
+          "meaning": "啟用",
+          "usage": "如 enable a setting。"
+        }
+      ],
+      "collocations": [
+        {
+          "en": "enable students to participate",
+          "zh": "讓學生得以參與",
+          "note": ""
+        },
+        {
+          "en": "enable access to information",
+          "zh": "使人得以取得資訊",
+          "note": ""
+        },
+        {
+          "en": "enable a security feature",
+          "zh": "啟用安全功能",
+          "note": ""
+        },
+        {
+          "en": "enable independent learning",
+          "zh": "促進自主學習的實現",
+          "note": ""
+        }
+      ],
+      "synonyms": [
+        {
+          "en": "allow",
+          "zh": "讓；允許",
+          "note": "可能只是允許，enable 更強調提供能力或條件。"
+        },
+        {
+          "en": "make possible",
+          "zh": "使成為可能",
+          "note": "需依受詞調整句型，不可直接逐字替換。"
+        }
+      ],
+      "idioms": [],
+      "family": [
+        {
+          "word": "enabling",
+          "pos": "adj.",
+          "meaning": "提供條件的"
+        },
+        {
+          "word": "disable",
+          "pos": "vt.",
+          "meaning": "使失去功能；停用"
+        },
+        {
+          "word": "enabled",
+          "pos": "adj.",
+          "meaning": "已啟用的；具備某功能的"
+        }
+      ],
+      "usageNote": "enable A to do；不是 enable A do。可說工具提供條件，但實際成效仍須看人如何使用。",
+      "examples": [
+        {
+          "text": "Recorded instructions enabled students who missed the workshop to review each step before trying the experiment on their own.",
+          "translationZh": "錄製的說明讓錯過工作坊的學生，在獨自嘗試實驗前能複習每個步驟。",
+          "grammar": "enable + 人 + to V；who missed 修飾 students。",
+          "writingTip": "科技作文說明功能如何回應特定使用者需求。",
+          "topic": "學習支援",
+          "source": "self-authored"
+        },
+        {
+          "text": "The new ramp enables wheelchair users to enter the building through the same entrance as everyone else.",
+          "translationZh": "新的坡道讓輪椅使用者能與其他人一樣，從同一入口進入建築。",
+          "grammar": "enable + 使用者 + to enter；the same...as 表相同。",
+          "writingTip": "談無障礙設施時連結到平等使用的具體情況。",
+          "topic": "無障礙環境",
+          "source": "self-authored"
+        }
+      ]
+    },
+    "encounter": {
+      "senses": [
+        {
+          "pos": "vt.",
+          "meaning": "遇到；遭遇",
+          "usage": "直接接人、困難或意外情況。"
+        },
+        {
+          "pos": "n.",
+          "meaning": "相遇；遭遇",
+          "usage": "an encounter with + 人或事物。"
+        }
+      ],
+      "collocations": [
+        {
+          "en": "encounter difficulties",
+          "zh": "遇到困難",
+          "note": ""
+        },
+        {
+          "en": "encounter unexpected resistance",
+          "zh": "遭遇意外阻力",
+          "note": ""
+        },
+        {
+          "en": "a chance encounter",
+          "zh": "偶然相遇",
+          "note": ""
+        },
+        {
+          "en": "an encounter with wildlife",
+          "zh": "與野生動物的接觸",
+          "note": ""
+        }
+      ],
+      "synonyms": [
+        {
+          "en": "come across",
+          "zh": "偶然遇到；發現",
+          "note": "較口語，常強調無意間發現。"
+        },
+        {
+          "en": "face",
+          "zh": "面臨",
+          "note": "強調必須處理的情況，不必意外遇見。"
+        }
+      ],
+      "idioms": [],
+      "family": [
+        {
+          "word": "encountered",
+          "pos": "v.",
+          "meaning": "遇到（過去式與過去分詞）"
+        },
+        {
+          "word": "encountering",
+          "pos": "v.",
+          "meaning": "遇到（現在分詞）"
+        }
+      ],
+      "usageNote": "動詞 encounter problems 不加 with；名詞 an encounter with someone 則用 with。沒有常用衍生名詞可另造時，列詞形變化即可。",
+      "examples": [
+        {
+          "text": "During the interview, we encountered a question that made us reconsider how we had defined success in our project.",
+          "translationZh": "訪談時，我們遇到一個問題，讓我們重新思考原先如何定義專題的成功。",
+          "grammar": "encounter 直接接 question；made + 人 + 原形 reconsider。",
+          "writingTip": "反思作文可用具體提問引出觀念的轉變。",
+          "topic": "專題反思",
+          "source": "self-authored"
+        },
+        {
+          "text": "An unexpected encounter with a former teacher reminded me of the encouragement that had helped me through a difficult year.",
+          "translationZh": "意外遇見以前的老師，讓我想起曾幫我度過艱難一年的鼓勵。",
+          "grammar": "encounter 作名詞主詞；remind + 人 + of + 事物。",
+          "writingTip": "敘事以偶遇作為回憶過去支持的起點。",
+          "topic": "師生回憶",
+          "source": "self-authored"
+        }
+      ]
     },
     "encourage": {
       "senses": [
@@ -7956,6 +11025,86 @@
       ],
       "usageNote": "estimate 常指數量、費用或時間的大致估算；不可把估計值寫成精確事實。"
     },
+    "evaluate": {
+      "senses": [
+        {
+          "pos": "vt.",
+          "meaning": "評估；評價",
+          "usage": "依據準則檢視品質、效果或價值。"
+        }
+      ],
+      "collocations": [
+        {
+          "en": "evaluate the results",
+          "zh": "評估結果",
+          "note": ""
+        },
+        {
+          "en": "evaluate the effectiveness of a program",
+          "zh": "評估計畫的有效性",
+          "note": ""
+        },
+        {
+          "en": "evaluate different options",
+          "zh": "評估不同選項",
+          "note": ""
+        },
+        {
+          "en": "a careful evaluation of the evidence",
+          "zh": "對證據的審慎評估",
+          "note": "名詞搭配。"
+        }
+      ],
+      "synonyms": [
+        {
+          "en": "assess",
+          "zh": "評估",
+          "note": "常與 evaluate 相近，可接風險、能力或影響。"
+        },
+        {
+          "en": "appraise",
+          "zh": "評估價值；評價",
+          "note": "較正式，常指物品估價或工作表現。"
+        }
+      ],
+      "idioms": [],
+      "family": [
+        {
+          "word": "evaluation",
+          "pos": "n.",
+          "meaning": "評估；評價"
+        },
+        {
+          "word": "evaluative",
+          "pos": "adj.",
+          "meaning": "評估性的"
+        },
+        {
+          "word": "evaluator",
+          "pos": "n.",
+          "meaning": "評估者"
+        }
+      ],
+      "usageNote": "evaluate 不只是算出分數；需交代評估標準。evaluate the evidence 是判斷證據品質，並不自動證明某說法。",
+      "examples": [
+        {
+          "text": "Before expanding the program, teachers evaluated whether students could use the new vocabulary in sentences of their own.",
+          "translationZh": "擴大計畫前，老師評估學生能否把新單字用在自己造的句子中。",
+          "grammar": "evaluate + whether 子句；of their own 表自己創作的。",
+          "writingTip": "教育作文可用實際運用能力說明評估標準。",
+          "topic": "詞彙應用",
+          "source": "self-authored"
+        },
+        {
+          "text": "We evaluated the two designs according to cost, safety, and ease of use rather than appearance alone.",
+          "translationZh": "我們依成本、安全與易用性評估兩種設計，而不只看外觀。",
+          "grammar": "according to 後列評估準則；rather than 表比較取捨。",
+          "writingTip": "比較方案時先建立明確、可解釋的標準。",
+          "topic": "設計評估",
+          "source": "self-authored"
+        }
+      ]
+    },
     "evidence": {
       "senses": [
         {
@@ -8104,6 +11253,161 @@
           "grammar": "sharing 動名詞片語作主詞；add/exacerbate 為並列原形動詞。",
           "writingTip": "把分享未查證訊息連結到群體緊張的後果。",
           "topic": "網路謠言"
+        }
+      ]
+    },
+    "exception": {
+      "senses": [
+        {
+          "pos": "n.",
+          "meaning": "例外",
+          "usage": "an exception to + 規則；with the exception of 表除外。"
+        }
+      ],
+      "collocations": [
+        {
+          "en": "an exception to the rule",
+          "zh": "規則的例外",
+          "note": ""
+        },
+        {
+          "en": "make an exception for someone",
+          "zh": "為某人破例",
+          "note": ""
+        },
+        {
+          "en": "with the exception of Sunday",
+          "zh": "除了星期日之外",
+          "note": ""
+        },
+        {
+          "en": "without exception",
+          "zh": "無一例外",
+          "note": "語氣絕對，須有依據。"
+        }
+      ],
+      "synonyms": [
+        {
+          "en": "exclusion",
+          "zh": "排除",
+          "note": "指刻意不納入，未必是規則的特例。"
+        },
+        {
+          "en": "unusual case",
+          "zh": "特殊情況",
+          "note": "可解釋例外義，但不一定違反某項規則。"
+        }
+      ],
+      "idioms": [],
+      "family": [
+        {
+          "word": "exceptional",
+          "pos": "adj.",
+          "meaning": "傑出的；例外的"
+        },
+        {
+          "word": "exceptionally",
+          "pos": "adv.",
+          "meaning": "格外地；異常地"
+        }
+      ],
+      "usageNote": "exceptional 常表示格外出色，不一定是違反規則。區分 exception to a rule 與 with the exception of + 被排除項目。",
+      "examples": [
+        {
+          "text": "The museum is open every afternoon with the exception of Monday, when staff check the exhibits and clean the rooms.",
+          "translationZh": "博物館每天下午開放，星期一除外，工作人員當天會檢查展品並清理展間。",
+          "grammar": "with the exception of 接排除項目；when 修飾 Monday。",
+          "writingTip": "介紹開放時間時補充例外日期及其原因。",
+          "topic": "文化設施",
+          "source": "self-authored"
+        },
+        {
+          "text": "Although late entries were usually rejected, the organizers made an exception for students whose school had lost internet service.",
+          "translationZh": "主辦人通常不接受逾期報名，但對學校網路中斷的學生破例。",
+          "grammar": "make an exception for + 人；whose 表學生所屬學校。",
+          "writingTip": "討論公平時可分析特殊情況與一致規則的關係。",
+          "topic": "規則與公平",
+          "source": "self-authored"
+        }
+      ]
+    },
+    "exclude": {
+      "senses": [
+        {
+          "pos": "vt.",
+          "meaning": "排除；不包括",
+          "usage": "exclude A from B；也可指排除某種可能。"
+        }
+      ],
+      "collocations": [
+        {
+          "en": "exclude someone from an activity",
+          "zh": "不讓某人參與活動",
+          "note": ""
+        },
+        {
+          "en": "exclude unnecessary details",
+          "zh": "排除多餘細節",
+          "note": ""
+        },
+        {
+          "en": "exclude the possibility of error",
+          "zh": "排除出錯的可能",
+          "note": ""
+        },
+        {
+          "en": "a price excluding delivery",
+          "zh": "未含運費的價格",
+          "note": ""
+        }
+      ],
+      "synonyms": [
+        {
+          "en": "leave out",
+          "zh": "省略；未納入",
+          "note": "較口語，可能無意遺漏。"
+        },
+        {
+          "en": "rule out",
+          "zh": "排除可能",
+          "note": "只對應排除解釋或選項，不是排斥某人參與。"
+        }
+      ],
+      "idioms": [],
+      "family": [
+        {
+          "word": "exclusion",
+          "pos": "n.",
+          "meaning": "排除"
+        },
+        {
+          "word": "exclusive",
+          "pos": "adj.",
+          "meaning": "專有的；排他的"
+        },
+        {
+          "word": "excluded",
+          "pos": "adj.",
+          "meaning": "被排除的"
+        }
+      ],
+      "usageNote": "exclude 的反義詞 include；exclusive 可能指專屬，也可能使人難以加入，需依對象判斷。",
+      "examples": [
+        {
+          "text": "Holding every meeting late at night may exclude classmates who depend on limited bus services to get home.",
+          "translationZh": "每次都深夜開會，可能讓依賴有限公車班次回家的同學無法參與。",
+          "grammar": "Holding...為動名詞主詞；who depend on 修飾 classmates。",
+          "writingTip": "分析活動安排時，指出誰可能因交通條件而被排除。",
+          "topic": "參與與交通",
+          "source": "self-authored"
+        },
+        {
+          "text": "The survey excluded responses without a stated age because the researchers wanted to compare habits across different age groups.",
+          "translationZh": "調查排除未填年齡的回覆，因為研究者希望比較不同年齡層的習慣。",
+          "grammar": "exclude 直接接 responses；without a stated age 為修飾語。",
+          "writingTip": "描述資料處理時說明排除條件，讓讀者理解範圍。",
+          "topic": "調查方法",
+          "source": "self-authored"
         }
       ]
     },
@@ -8276,6 +11580,251 @@
         }
       ],
       "usageNote": "many experiences 指多次經歷；much experience 指大量經驗，須依意思選可數或不可數。"
+    },
+    "experiment": {
+      "senses": [
+        {
+          "pos": "n.",
+          "meaning": "實驗；試驗",
+          "usage": "a scientific experiment 或 an experiment in 新做法。"
+        },
+        {
+          "pos": "vi.",
+          "meaning": "做實驗；嘗試",
+          "usage": "experiment with + 材料或方法。"
+        }
+      ],
+      "collocations": [
+        {
+          "en": "conduct an experiment",
+          "zh": "進行實驗",
+          "note": ""
+        },
+        {
+          "en": "an experiment on plant growth",
+          "zh": "關於植物生長的實驗",
+          "note": ""
+        },
+        {
+          "en": "experiment with different materials",
+          "zh": "試用不同材料",
+          "note": ""
+        },
+        {
+          "en": "experimental results",
+          "zh": "實驗結果",
+          "note": "形容詞搭配。"
+        }
+      ],
+      "synonyms": [
+        {
+          "en": "test",
+          "zh": "測試；試驗",
+          "note": "範圍較廣，未必有控制變因。"
+        },
+        {
+          "en": "trial",
+          "zh": "試行；試驗",
+          "note": "常指正式採用前的一段試用。"
+        }
+      ],
+      "idioms": [],
+      "family": [
+        {
+          "word": "experimental",
+          "pos": "adj.",
+          "meaning": "實驗的；試驗性的"
+        },
+        {
+          "word": "experimentally",
+          "pos": "adv.",
+          "meaning": "以實驗方式"
+        },
+        {
+          "word": "experimentation",
+          "pos": "n.",
+          "meaning": "實驗；嘗試"
+        }
+      ],
+      "usageNote": "experiment 作動詞常不及物，用 experiment with。科學實驗應交代比較條件，不把一次結果宣稱為普遍規律。",
+      "examples": [
+        {
+          "text": "In our experiment, we changed the amount of light while keeping the soil and watering schedule the same.",
+          "translationZh": "在實驗中，我們改變光照量，同時維持相同土壤與澆水時程。",
+          "grammar": "while keeping 表同時維持；keep + 受詞 + the same。",
+          "writingTip": "科學寫作可清楚指出改變的變因與固定條件。",
+          "topic": "植物實驗",
+          "source": "self-authored"
+        },
+        {
+          "text": "The art club experimented with recycled paper to find a material that was inexpensive and strong enough for the display.",
+          "translationZh": "美術社試用回收紙，尋找價格低且足以支撐展示的材料。",
+          "grammar": "experiment with + 材料；strong enough for 表足夠適用。",
+          "writingTip": "實作敘事說明試用材料的具體標準。",
+          "topic": "材料試作",
+          "source": "self-authored"
+        }
+      ]
+    },
+    "explanation": {
+      "senses": [
+        {
+          "pos": "n.",
+          "meaning": "解釋；說明",
+          "usage": "explanation for + 現象或原因，of + 規則或內容。"
+        }
+      ],
+      "collocations": [
+        {
+          "en": "give a clear explanation",
+          "zh": "作清楚說明",
+          "note": ""
+        },
+        {
+          "en": "an explanation for the delay",
+          "zh": "延誤的原因說明",
+          "note": ""
+        },
+        {
+          "en": "an explanation of the rules",
+          "zh": "規則的說明",
+          "note": ""
+        },
+        {
+          "en": "seek an alternative explanation",
+          "zh": "尋找另一種解釋",
+          "note": ""
+        }
+      ],
+      "synonyms": [
+        {
+          "en": "account",
+          "zh": "敘述；解釋",
+          "note": "an account of 常指事件經過，不一定說明原因。"
+        },
+        {
+          "en": "reason",
+          "zh": "理由；原因",
+          "note": "可指成因本身，explanation 是用來說明的內容。"
+        }
+      ],
+      "idioms": [],
+      "family": [
+        {
+          "word": "explain",
+          "pos": "vt./vi.",
+          "meaning": "解釋"
+        },
+        {
+          "word": "explanatory",
+          "pos": "adj.",
+          "meaning": "解說的"
+        },
+        {
+          "word": "unexplained",
+          "pos": "adj.",
+          "meaning": "未獲解釋的"
+        }
+      ],
+      "usageNote": "explain something to someone；不寫 explain someone something。explanation 不等於 excuse，合理說明仍可承認責任。",
+      "examples": [
+        {
+          "text": "The guide gave a clear explanation of the rules before allowing visitors to handle the objects used in the demonstration.",
+          "translationZh": "導覽員先清楚說明規則，才讓訪客拿取示範所使用的物件。",
+          "grammar": "explanation of + 規則；allow + 人 + to V；used 為分詞。",
+          "writingTip": "活動敘事可交代操作之前的說明如何建立安全流程。",
+          "topic": "體驗導覽",
+          "source": "self-authored"
+        },
+        {
+          "text": "A rise in sales has several possible explanations, so we should not assume that the new advertisement caused it.",
+          "translationZh": "銷售上升可能有多種解釋，因此不能直接假設是新廣告造成的。",
+          "grammar": "several possible explanations 為複數；assume that 引導未經證實的因果。",
+          "writingTip": "圖表作文避免把同時發生的兩件事直接當成因果。",
+          "topic": "商業圖表",
+          "source": "self-authored"
+        }
+      ]
+    },
+    "expose": {
+      "senses": [
+        {
+          "pos": "vt.",
+          "meaning": "使接觸；使暴露",
+          "usage": "expose someone to + 經驗、刺激或危險。"
+        },
+        {
+          "pos": "vt.",
+          "meaning": "揭露",
+          "usage": "直接接問題、真相或不當行為。"
+        }
+      ],
+      "collocations": [
+        {
+          "en": "expose students to different viewpoints",
+          "zh": "讓學生接觸不同觀點",
+          "note": ""
+        },
+        {
+          "en": "be exposed to sunlight",
+          "zh": "曝曬於陽光下",
+          "note": ""
+        },
+        {
+          "en": "expose a hidden problem",
+          "zh": "揭露隱藏的問題",
+          "note": ""
+        },
+        {
+          "en": "expose personal information",
+          "zh": "暴露個人資訊",
+          "note": ""
+        }
+      ],
+      "synonyms": [
+        {
+          "en": "reveal",
+          "zh": "揭露",
+          "note": "對應使人知道原本不明的資訊。"
+        },
+        {
+          "en": "subject to",
+          "zh": "使遭受",
+          "note": "常含不利經驗；須用 subject A to B。"
+        }
+      ],
+      "idioms": [],
+      "family": [
+        {
+          "word": "exposure",
+          "pos": "n.",
+          "meaning": "接觸；暴露；揭露"
+        },
+        {
+          "word": "exposed",
+          "pos": "adj.",
+          "meaning": "暴露的；無遮蔽的"
+        }
+      ],
+      "usageNote": "expose A to B 可指有益經驗，也可指危險；判讀正負面要看 B，不可只背「使遭受」。",
+      "examples": [
+        {
+          "text": "Reading stories from different cultures exposes students to viewpoints they may not encounter in their immediate surroundings.",
+          "translationZh": "閱讀不同文化的故事，讓學生接觸身邊環境不一定會遇到的觀點。",
+          "grammar": "Reading 為主詞；expose A to B；viewpoints 後省略關係代名詞。",
+          "writingTip": "文化閱讀作文可說明內容如何擴展接觸觀點的範圍。",
+          "topic": "跨文化閱讀",
+          "source": "self-authored"
+        },
+        {
+          "text": "Sharing a photo of a ticket online may expose personal information that strangers could use without the owner's permission.",
+          "translationZh": "在網路分享票券照片，可能暴露陌生人可未經本人同意使用的個人資訊。",
+          "grammar": "Sharing 為動名詞主詞；that 引導關係子句修飾 information。",
+          "writingTip": "數位生活作文以票券等具體物件說明隱私風險。",
+          "topic": "網路隱私",
+          "source": "self-authored"
+        }
+      ]
     },
     "exposure": {
       "senses": [
@@ -8530,6 +12079,81 @@
           "grammar": "in the face of + 挫折；until 引導找到方案的時間。",
           "writingTip": "把堅持描寫成持續測試，而不只是口號。",
           "topic": "設計挫折"
+        }
+      ]
+    },
+    "facilitate": {
+      "senses": [
+        {
+          "pos": "vt.",
+          "meaning": "促進；使更容易",
+          "usage": "直接接受詞，指降低困難或提供條件。"
+        }
+      ],
+      "collocations": [
+        {
+          "en": "facilitate communication",
+          "zh": "促進溝通",
+          "note": ""
+        },
+        {
+          "en": "facilitate access to services",
+          "zh": "讓人更容易取得服務",
+          "note": ""
+        },
+        {
+          "en": "facilitate learning",
+          "zh": "促進學習",
+          "note": ""
+        },
+        {
+          "en": "facilitate a discussion",
+          "zh": "協助討論順利進行",
+          "note": ""
+        }
+      ],
+      "synonyms": [
+        {
+          "en": "ease",
+          "zh": "使容易；減輕",
+          "note": "較日常，也可接疼痛或負擔。"
+        },
+        {
+          "en": "enable",
+          "zh": "使能夠",
+          "note": "更強調使某事成為可能，句型常為 enable someone to V。"
+        }
+      ],
+      "idioms": [],
+      "family": [
+        {
+          "word": "facilitation",
+          "pos": "n.",
+          "meaning": "促進；協助"
+        },
+        {
+          "word": "facilitator",
+          "pos": "n.",
+          "meaning": "引導者；協調者"
+        }
+      ],
+      "usageNote": "facilitate learning，不寫 facilitate students to learn；可改 enable students to learn。促進不代表保證成功。",
+      "examples": [
+        {
+          "text": "Clear labels and a simple map facilitated communication between volunteers and visitors who spoke different languages at the event.",
+          "translationZh": "清楚標示與簡單地圖，促進活動中不同語言的志工與訪客之間的溝通。",
+          "grammar": "facilitate 直接接 communication；between A and B 表溝通雙方。",
+          "writingTip": "說明溝通改善時，交代採用何種共同線索。",
+          "topic": "活動溝通",
+          "source": "self-authored"
+        },
+        {
+          "text": "The teacher used short questions to facilitate discussion, giving quieter students time to organize their ideas before speaking.",
+          "translationZh": "老師用簡短問題協助討論，讓較安靜的學生有時間整理想法再發言。",
+          "grammar": "to facilitate 表目的；giving 補充問題安排的作用。",
+          "writingTip": "團體討論作文可寫出如何照顧不同發言節奏。",
+          "topic": "課堂討論",
+          "source": "self-authored"
         }
       ]
     },
@@ -9458,13 +13082,38 @@
       "senses": [
         {
           "pos": "adj.",
-          "meaning": "平坦的；沒氣的",
-          "usage": ""
+          "meaning": "平坦的；扁平的",
+          "usage": "a flat surface；不一定與地面水平。"
+        },
+        {
+          "pos": "adj.",
+          "meaning": "沒氣的；不再起泡的",
+          "usage": "a flat tire；flat soda。"
+        },
+        {
+          "pos": "adj.",
+          "meaning": "固定的；一律相同的",
+          "usage": "a flat fee 指固定收費，不隨用量變動。"
+        },
+        {
+          "pos": "adj.",
+          "meaning": "平淡的；無精打采的；景氣低迷的",
+          "usage": "a flat voice／a flat market，依所修飾事物判斷。"
+        },
+        {
+          "pos": "adj.",
+          "meaning": "斷然的；乾脆的",
+          "usage": "a flat refusal 是明確拒絕。"
+        },
+        {
+          "pos": "adv.",
+          "meaning": "平躺地；平貼地；斷然地",
+          "usage": "lie flat；turn someone down flat。"
         },
         {
           "pos": "n.",
-          "meaning": "公寓（英式用語）",
-          "usage": ""
+          "meaning": "公寓；一層的住家單位（英式）",
+          "usage": "rent a flat；美式常用 apartment。"
         }
       ],
       "collocations": [
@@ -9519,7 +13168,7 @@
           "meaning": "斷然地；平淡地"
         }
       ],
-      "usageNote": "flat fee 指不隨使用量變動的固定費用；flatly refuse 表斷然拒絕。",
+      "usageNote": "flat 可形容形狀、沒氣、固定費率或平淡狀態，也可作副詞或英式公寓名詞。a flat fee 是固定收費；flat 與 level 不完全相同，平面仍可能傾斜。",
       "examples": [
         {
           "text": "A flat tire delayed our trip, but a nearby mechanic helped us repair the bicycle before the afternoon rain began.",
@@ -10108,13 +13757,43 @@
       "senses": [
         {
           "pos": "n.",
-          "meaning": "頭；主管",
-          "usage": ""
+          "meaning": "頭；頭部",
+          "usage": "head 可指人的頭，也可指動物頭部；a headache 是頭痛，不可由 head 的每個義項推導。"
         },
         {
-          "pos": "v.",
-          "meaning": "前往；領導",
-          "usage": ""
+          "pos": "n.",
+          "meaning": "頭腦；思考或判斷能力",
+          "usage": "use your head = 動腦；keep a cool head = 保持冷靜。"
+        },
+        {
+          "pos": "n.",
+          "meaning": "主管；領導者",
+          "usage": "the head of a department / an organization；of 後接所主管的單位。"
+        },
+        {
+          "pos": "n.",
+          "meaning": "頂端；最前部；首位",
+          "usage": "the head of the table / the queue；依實體位置指頂端或最前的位置。"
+        },
+        {
+          "pos": "adj.",
+          "meaning": "主要的；居首位的",
+          "usage": "the head teacher / head office；常放在名詞前，表示主管或主要地位。"
+        },
+        {
+          "pos": "vt.",
+          "meaning": "領導；主管",
+          "usage": "head a committee / a research team；直接接受詞，意思是擔任領導者。"
+        },
+        {
+          "pos": "vi.",
+          "meaning": "朝……前進；前往",
+          "usage": "head for / toward / to + 地點；for 常指朝目的地前進。"
+        },
+        {
+          "pos": "vt.",
+          "meaning": "用頭頂球",
+          "usage": "head the ball；體育用法，通常指足球中用頭觸球。"
         }
       ],
       "collocations": [
@@ -10137,6 +13816,16 @@
           "en": "keep a cool head",
           "zh": "保持冷靜",
           "note": ""
+        },
+        {
+          "en": "head office",
+          "zh": "總公司；總部辦公室",
+          "note": "head 在此作置於名詞前的形容詞，意為主要的。"
+        },
+        {
+          "en": "head toward the exit",
+          "zh": "朝出口前進",
+          "note": "toward 後接方向或地點；head 在此不及物。"
         }
       ],
       "synonyms": [
@@ -10175,7 +13864,7 @@
           "meaning": "總部"
         }
       ],
-      "usageNote": "head for/toward + 地點；head + 團隊作及物動詞表示領導。",
+      "usageNote": "head a team 表領導團隊，head for/toward/to + 地點 表前往；head office 中 head 表主要的。headed、heading 是正常屈折變化；heading 也可單獨作名詞表示標題或行進方向。",
       "examples": [
         {
           "text": "When the fire alarm rang, our teacher kept a cool head and led the class toward the nearest safe exit.",
@@ -10275,6 +13964,91 @@
       ],
       "usageNote": "Don't hesitate to ask 常表示「有問題儘管問」，語氣是鼓勵而非批評遲疑。"
     },
+    "identify": {
+      "senses": [
+        {
+          "pos": "vt.",
+          "meaning": "辨識；確認；找出",
+          "usage": "identify a person／a cause／a need。"
+        },
+        {
+          "pos": "vi.",
+          "meaning": "產生共鳴；認同",
+          "usage": "identify with + 人或經驗。"
+        }
+      ],
+      "collocations": [
+        {
+          "en": "identify the cause of a problem",
+          "zh": "找出問題原因",
+          "note": ""
+        },
+        {
+          "en": "identify someone by their voice",
+          "zh": "憑聲音辨認某人",
+          "note": ""
+        },
+        {
+          "en": "identify areas for improvement",
+          "zh": "找出可改進之處",
+          "note": ""
+        },
+        {
+          "en": "identify with a character",
+          "zh": "對角色產生認同",
+          "note": "不及物片語。"
+        }
+      ],
+      "synonyms": [
+        {
+          "en": "recognize",
+          "zh": "認出；認可",
+          "note": "常帶先前見過或意識到的意思。"
+        },
+        {
+          "en": "pinpoint",
+          "zh": "精確指出",
+          "note": "強調位置或原因明確，比 identify 更精準。"
+        }
+      ],
+      "idioms": [],
+      "family": [
+        {
+          "word": "identification",
+          "pos": "n.",
+          "meaning": "辨識；身分證明"
+        },
+        {
+          "word": "identifiable",
+          "pos": "adj.",
+          "meaning": "可辨認的"
+        },
+        {
+          "word": "identity",
+          "pos": "n.",
+          "meaning": "身分；認同"
+        }
+      ],
+      "usageNote": "identify A as B 表確認 A 是 B；identify with A 表對 A 有共鳴。identity 不等於 personality（個性）。",
+      "examples": [
+        {
+          "text": "Instead of correcting every sentence at once, the teacher helped me identify the two mistakes that most often confused my readers.",
+          "translationZh": "老師沒有一次改完每句，而是幫我找出最常讓讀者困惑的兩項錯誤。",
+          "grammar": "help + 人 + 原形 identify；that 修飾 mistakes。",
+          "writingTip": "學習反思可把回饋轉成少量明確改善目標。",
+          "topic": "寫作回饋",
+          "source": "self-authored"
+        },
+        {
+          "text": "Many readers identify with the character because she wants to help her family while also pursuing a dream of her own.",
+          "translationZh": "許多讀者對角色有共鳴，因為她想幫助家人，也想追求自己的夢想。",
+          "grammar": "identify with + 人；while also pursuing 補充同時追求的目標。",
+          "writingTip": "閱讀心得可用角色面臨的兩難解釋共鳴。",
+          "topic": "閱讀與夢想",
+          "source": "self-authored"
+        }
+      ]
+    },
     "identity": {
       "senses": [
         {
@@ -10354,6 +14128,166 @@
         }
       ],
       "usageNote": "identity 是身分或認同；identification 也可指證明身分的證件或辨識程序。"
+    },
+    "ignore": {
+      "senses": [
+        {
+          "pos": "vt.",
+          "meaning": "忽視；不理會",
+          "usage": "常指未給應有注意或刻意不理。"
+        }
+      ],
+      "collocations": [
+        {
+          "en": "ignore a warning",
+          "zh": "忽視警告",
+          "note": ""
+        },
+        {
+          "en": "ignore someone's advice",
+          "zh": "不理會某人的建議",
+          "note": ""
+        },
+        {
+          "en": "ignore the needs of others",
+          "zh": "忽視他人需求",
+          "note": ""
+        },
+        {
+          "en": "a problem that cannot be ignored",
+          "zh": "不能忽視的問題",
+          "note": ""
+        }
+      ],
+      "synonyms": [
+        {
+          "en": "overlook",
+          "zh": "忽略",
+          "note": "可能是疏忽未察覺，也可表示不追究，與 ignore 不完全相同。"
+        },
+        {
+          "en": "disregard",
+          "zh": "不理會；不顧",
+          "note": "較正式，常強調不予考量。"
+        }
+      ],
+      "idioms": [],
+      "family": [
+        {
+          "word": "ignorance",
+          "pos": "n.",
+          "meaning": "無知；不了解"
+        },
+        {
+          "word": "ignorant",
+          "pos": "adj.",
+          "meaning": "無知的；不了解的"
+        }
+      ],
+      "usageNote": "ignore 是不理會；be ignorant of 是不知道，兩者不能直接互換。ignorant 作人身評語時可能帶貶意。",
+      "examples": [
+        {
+          "text": "Ignoring the warning signs, several visitors entered the closed trail and later needed help when the weather suddenly changed.",
+          "translationZh": "幾名遊客無視警告標誌，走入封閉步道，之後因天候突然改變而需要協助。",
+          "grammar": "Ignoring 分詞片語主詞同為 visitors；when 引導情況變化。",
+          "writingTip": "敘述風險時建立忽視警告與後續困境的關聯。",
+          "topic": "戶外風險",
+          "source": "self-authored"
+        },
+        {
+          "text": "A plan that ignores the needs of older residents may create new barriers even if it seems convenient to younger users.",
+          "translationZh": "忽視年長居民需求的計畫，即使看來方便年輕使用者，也可能製造新障礙。",
+          "grammar": "that ignores 修飾 plan；even if 表讓步條件。",
+          "writingTip": "科技服務作文檢查不同年齡使用者是否同樣受益。",
+          "topic": "高齡與科技",
+          "source": "self-authored"
+        }
+      ]
+    },
+    "illustrate": {
+      "senses": [
+        {
+          "pos": "vt.",
+          "meaning": "以例子說明",
+          "usage": "illustrate a point／how something works。"
+        },
+        {
+          "pos": "vt.",
+          "meaning": "加插圖；圖解",
+          "usage": "illustrate a book。"
+        }
+      ],
+      "collocations": [
+        {
+          "en": "illustrate a point with an example",
+          "zh": "舉例說明重點",
+          "note": ""
+        },
+        {
+          "en": "illustrate the difference between two ideas",
+          "zh": "說明兩個概念的差別",
+          "note": ""
+        },
+        {
+          "en": "a beautifully illustrated book",
+          "zh": "插圖精美的書",
+          "note": ""
+        },
+        {
+          "en": "illustrate how a system works",
+          "zh": "圖解或說明系統如何運作",
+          "note": ""
+        }
+      ],
+      "synonyms": [
+        {
+          "en": "demonstrate",
+          "zh": "說明；展示",
+          "note": "可透過操作或證據，不一定用圖或例子。"
+        },
+        {
+          "en": "depict",
+          "zh": "描繪",
+          "note": "強調呈現人事物的樣貌，不一定解說原理。"
+        }
+      ],
+      "idioms": [],
+      "family": [
+        {
+          "word": "illustration",
+          "pos": "n.",
+          "meaning": "插圖；例證"
+        },
+        {
+          "word": "illustrator",
+          "pos": "n.",
+          "meaning": "插畫家"
+        },
+        {
+          "word": "illustrative",
+          "pos": "adj.",
+          "meaning": "用於說明的"
+        }
+      ],
+      "usageNote": "illustrate 可用文字例子，不限圖片；an illustration 可能是一張圖，也可能是一個例證，須看上下文。",
+      "examples": [
+        {
+          "text": "The chart illustrates how the proportion of students using public transportation changed over the five years covered by the survey.",
+          "translationZh": "圖表說明調查涵蓋的五年間，使用大眾運輸的學生比例如何改變。",
+          "grammar": "illustrate + how 子句；covered 為分詞修飾 years。",
+          "writingTip": "圖表開頭可交代衡量項目與時間範圍。",
+          "topic": "交通圖表",
+          "source": "self-authored"
+        },
+        {
+          "text": "To illustrate her point about waste, the speaker displayed the packaging left after a single family meal.",
+          "translationZh": "為說明浪費的問題，講者展示一頓家庭餐後留下的包裝。",
+          "grammar": "To illustrate 表目的；left 為過去分詞修飾 packaging。",
+          "writingTip": "議論作文用具體可見的例子支撐抽象主張。",
+          "topic": "生活減廢",
+          "source": "self-authored"
+        }
+      ]
     },
     "impact": {
       "senses": [
@@ -10509,6 +14443,91 @@
         }
       ],
       "usageNote": "implement 作動詞指實施已規劃的措施；作名詞時指器具，尤見於農業。"
+    },
+    "implication": {
+      "senses": [
+        {
+          "pos": "n.",
+          "meaning": "可能的影響；含意",
+          "usage": "影響義常用複數 implications for。"
+        },
+        {
+          "pos": "n.",
+          "meaning": "暗示；牽涉",
+          "usage": "如 implication that... 或 implication in a crime。"
+        }
+      ],
+      "collocations": [
+        {
+          "en": "the implications of a decision",
+          "zh": "決定可能帶來的影響",
+          "note": ""
+        },
+        {
+          "en": "implications for public health",
+          "zh": "對公共衛生的潛在影響",
+          "note": ""
+        },
+        {
+          "en": "an implication that something is wrong",
+          "zh": "暗示某事有問題",
+          "note": ""
+        },
+        {
+          "en": "consider the wider implications",
+          "zh": "考慮更廣泛的影響",
+          "note": ""
+        }
+      ],
+      "synonyms": [
+        {
+          "en": "consequence",
+          "zh": "結果；後果",
+          "note": "較常指實際或直接後果，implication 可指推論出的影響。"
+        },
+        {
+          "en": "suggestion",
+          "zh": "暗示",
+          "note": "只對應間接透露的意思，也另有建議義。"
+        }
+      ],
+      "idioms": [],
+      "family": [
+        {
+          "word": "imply",
+          "pos": "vt.",
+          "meaning": "暗示；意味著"
+        },
+        {
+          "word": "implicit",
+          "pos": "adj.",
+          "meaning": "未明說的；隱含的"
+        },
+        {
+          "word": "implicate",
+          "pos": "vt.",
+          "meaning": "牽連；顯示與某事有關"
+        }
+      ],
+      "usageNote": "implications for 指對某對象的影響；imply 是訊息或說話者暗示，infer 是讀者根據線索推論。",
+      "examples": [
+        {
+          "text": "The rise in housing costs has important implications for young adults who hope to work near their families.",
+          "translationZh": "房價上升對希望在家人附近工作的年輕成人，有重要的潛在影響。",
+          "grammar": "have implications for + 對象；who hope 修飾 young adults。",
+          "writingTip": "分析現象時指出受影響的是哪一群人。",
+          "topic": "住房與職涯",
+          "source": "self-authored"
+        },
+        {
+          "text": "Before collecting students' personal data, schools should consider the implications for privacy as well as the possible benefits for learning.",
+          "translationZh": "蒐集學生個資前，學校應同時考慮隱私影響與可能的學習效益。",
+          "grammar": "Before collecting 省略主詞；as well as 並列兩項考量。",
+          "writingTip": "科技議題作文比較益處與資料使用造成的影響。",
+          "topic": "資料與隱私",
+          "source": "self-authored"
+        }
+      ]
     },
     "improve": {
       "senses": [
@@ -10676,7 +14695,7 @@
         {
           "pos": "vt.",
           "meaning": "顯示；指出",
-          "usage": "證据或數據表明"
+          "usage": "證據或數據表明"
         },
         {
           "pos": "vt.",
@@ -11246,6 +15265,91 @@
       ],
       "usageNote": "intend to do 常見於動詞句型；名詞可用 intention of doing 或 intention to do。"
     },
+    "interpret": {
+      "senses": [
+        {
+          "pos": "vt.",
+          "meaning": "理解；詮釋",
+          "usage": "interpret A as B，把 A 理解為 B。"
+        },
+        {
+          "pos": "vt./vi.",
+          "meaning": "口譯",
+          "usage": "為不同語言使用者口頭或手語傳譯。"
+        }
+      ],
+      "collocations": [
+        {
+          "en": "interpret the results",
+          "zh": "解讀結果",
+          "note": ""
+        },
+        {
+          "en": "interpret silence as agreement",
+          "zh": "把沉默理解為同意",
+          "note": ""
+        },
+        {
+          "en": "interpret a poem",
+          "zh": "詮釋詩作",
+          "note": ""
+        },
+        {
+          "en": "interpret for a visitor",
+          "zh": "為訪客口譯",
+          "note": ""
+        }
+      ],
+      "synonyms": [
+        {
+          "en": "explain",
+          "zh": "解釋",
+          "note": "範圍較廣，interpret 更強調賦予或判讀意義。"
+        },
+        {
+          "en": "translate",
+          "zh": "翻譯",
+          "note": "日常可泛稱翻譯；專業語境常區分筆譯與口譯。"
+        }
+      ],
+      "idioms": [],
+      "family": [
+        {
+          "word": "interpretation",
+          "pos": "n.",
+          "meaning": "解讀；詮釋；口譯"
+        },
+        {
+          "word": "interpreter",
+          "pos": "n.",
+          "meaning": "口譯員；解譯器"
+        },
+        {
+          "word": "misinterpret",
+          "pos": "vt.",
+          "meaning": "誤解"
+        }
+      ],
+      "usageNote": "interpret data 須看背景與限制；interpret A as B 是一種解讀，不保證 B 就是原意。",
+      "examples": [
+        {
+          "text": "We should not interpret a classmate's silence as agreement, especially when the discussion moves too quickly for everyone to respond.",
+          "translationZh": "不應把同學的沉默解讀為同意，尤其當討論太快、不是每個人都來得及回應時。",
+          "grammar": "interpret A as B；too quickly for everyone to V 表速度造成限制。",
+          "writingTip": "團體決策作文提醒讀者確認意見，而非只依沉默推斷。",
+          "topic": "溝通與參與",
+          "source": "self-authored"
+        },
+        {
+          "text": "The volunteer interpreted for a visitor at the clinic, helping the nurse understand which symptoms had started first.",
+          "translationZh": "志工在診所為訪客口譯，協助護理師了解哪些症狀最先出現。",
+          "grammar": "interpret for + 人；which 引導間接問句；had started 表較早發生。",
+          "writingTip": "服務經驗可具體寫出跨語言協助解決的需求。",
+          "topic": "醫療溝通",
+          "source": "self-authored"
+        }
+      ]
+    },
     "investigate": {
       "senses": [
         {
@@ -11410,13 +15514,33 @@
       "senses": [
         {
           "pos": "n.",
-          "meaning": "議題；問題；一期出版物",
-          "usage": ""
+          "meaning": "議題；爭論焦點",
+          "usage": "a social / environmental issue；可指需要討論的主題，不一定是故障或錯誤。"
         },
         {
-          "pos": "v.",
-          "meaning": "發出；發布",
-          "usage": ""
+          "pos": "n.",
+          "meaning": "問題；困難",
+          "usage": "a technical issue / an issue with the device；此義常與 problem 接近。"
+        },
+        {
+          "pos": "n.",
+          "meaning": "一期出版物；期號",
+          "usage": "the latest issue of a magazine；issue 指一期，article 指其中一篇文章。"
+        },
+        {
+          "pos": "n.",
+          "meaning": "發行；核發",
+          "usage": "the issue of a passport / new shares；較正式，指核發或發行的行為。"
+        },
+        {
+          "pos": "vt.",
+          "meaning": "正式發出；發布；核發",
+          "usage": "issue a warning / statement / ticket / passport；受詞是被發出的警告、文件或證件。"
+        },
+        {
+          "pos": "vi.",
+          "meaning": "流出；冒出",
+          "usage": "Smoke issued from the building.；issue from 表從某處出現或流出，偏正式書面語。"
         }
       ],
       "collocations": [
@@ -11439,6 +15563,16 @@
           "en": "raise an issue",
           "zh": "提出問題",
           "note": ""
+        },
+        {
+          "en": "take issue with a claim",
+          "zh": "對某個說法提出異議",
+          "note": "take issue with = disagree with；不表示接收一期刊物。"
+        },
+        {
+          "en": "issue a passport",
+          "zh": "核發護照",
+          "note": "issue 在此及物，政府或有權核發的機關通常作主詞。"
         }
       ],
       "synonyms": [
@@ -11466,7 +15600,7 @@
           "meaning": "發行者"
         }
       ],
-      "usageNote": "issue 作動詞表示正式發出；an issue of a magazine 不是雜誌的困難。",
+      "usageNote": "issue a warning 是正式發布警告；an issue of a magazine 是一期雜誌；an issue with a device 是裝置的問題。take issue with 表不同意，issue from 表正式語氣的流出或冒出；文法結構能幫助選義。",
       "examples": [
         {
           "text": "The class discussed a social issue from several perspectives before each student wrote a short essay explaining a personal position.",
@@ -11572,6 +15706,86 @@
       ],
       "usageNote": "judgment 為常見美式拼字，judgement 亦見於英式用法；judgmental 多帶負面批判意味。"
     },
+    "justify": {
+      "senses": [
+        {
+          "pos": "vt.",
+          "meaning": "證明合理；為……辯護",
+          "usage": "後接名詞或 V-ing，提出足夠理由。"
+        }
+      ],
+      "collocations": [
+        {
+          "en": "justify a decision",
+          "zh": "說明決定的合理性",
+          "note": ""
+        },
+        {
+          "en": "justify spending more money",
+          "zh": "提出多花錢的充分理由",
+          "note": ""
+        },
+        {
+          "en": "justify the cost",
+          "zh": "證明這筆費用值得",
+          "note": ""
+        },
+        {
+          "en": "be justified in asking questions",
+          "zh": "有理由提出疑問",
+          "note": ""
+        }
+      ],
+      "synonyms": [
+        {
+          "en": "defend",
+          "zh": "為……辯護",
+          "note": "可指維護立場，不一定已證明合理。"
+        },
+        {
+          "en": "provide grounds for",
+          "zh": "為……提供理由",
+          "note": "須改成名詞或 V-ing 結構，不能直接逐字替換。"
+        }
+      ],
+      "idioms": [],
+      "family": [
+        {
+          "word": "justification",
+          "pos": "n.",
+          "meaning": "正當理由；辯護"
+        },
+        {
+          "word": "justifiable",
+          "pos": "adj.",
+          "meaning": "有正當理由的"
+        },
+        {
+          "word": "unjustified",
+          "pos": "adj.",
+          "meaning": "沒有充分理由的"
+        }
+      ],
+      "usageNote": "justify doing，不寫 justify to do。說明原因不等於證明做法合理；理由仍須與代價、證據一起判斷。",
+      "examples": [
+        {
+          "text": "The team had to justify spending more money on durable materials instead of choosing the cheapest option available.",
+          "translationZh": "團隊必須說明，為何要多花錢選耐用材料，而不是最便宜的選項。",
+          "grammar": "justify + V-ing；instead of + V-ing；available 後置修飾 option。",
+          "writingTip": "比較成本時說明額外花費帶來的具體價值。",
+          "topic": "採購與永續",
+          "source": "self-authored"
+        },
+        {
+          "text": "A desire to finish quickly does not justify ignoring safety rules that protect both workers and visitors.",
+          "translationZh": "想快速完成工作，並不足以合理化忽視保障工作人員與訪客安全的規則。",
+          "grammar": "desire to V 修飾名詞；justify ignoring；both A and B。",
+          "writingTip": "議論文可評估效率理由是否足以支持某種做法。",
+          "topic": "效率與安全",
+          "source": "self-authored"
+        }
+      ]
+    },
     "last": {
       "senses": [
         {
@@ -11661,18 +15875,53 @@
       "senses": [
         {
           "pos": "n.",
-          "meaning": "光；燈",
-          "usage": ""
+          "meaning": "光；光線；日光",
+          "usage": "物理光線多作不可數名詞：natural light、the speed of light。"
+        },
+        {
+          "pos": "n.",
+          "meaning": "燈；光源",
+          "usage": "指一盞燈或一處光源時可數：turn on the lights；a traffic light = 交通號誌。"
         },
         {
           "pos": "adj.",
-          "meaning": "輕的；少量的",
-          "usage": ""
+          "meaning": "重量輕的",
+          "usage": "a light bag；反義為 heavy。比較級 lighter 依語境也可能表示顏色更淡。"
         },
         {
-          "pos": "v.",
-          "meaning": "點燃；照亮",
-          "usage": ""
+          "pos": "adj.",
+          "meaning": "少量的；輕微的",
+          "usage": "a light meal、light rain、light traffic，分別指餐點份量少、雨勢小、車流少。"
+        },
+        {
+          "pos": "adj.",
+          "meaning": "淡色的；明亮的",
+          "usage": "light blue = 淺藍色；a light room 可指光線充足的房間，需由後接名詞判義。"
+        },
+        {
+          "pos": "adj.",
+          "meaning": "輕鬆的；輕快的",
+          "usage": "light reading / light entertainment 指輕鬆的讀物或娛樂；a light step 可指輕快的步伐。"
+        },
+        {
+          "pos": "vt.",
+          "meaning": "點燃",
+          "usage": "light a candle / a fire；受詞為被點燃的物品。"
+        },
+        {
+          "pos": "vt.",
+          "meaning": "照亮；提供照明",
+          "usage": "Street lamps light the road.；受詞為被照亮的地方。"
+        },
+        {
+          "pos": "vi.",
+          "meaning": "點著；亮起",
+          "usage": "The candle will not light.；light up 也可指燈亮起或人的臉露出喜悅。"
+        },
+        {
+          "pos": "adv.",
+          "meaning": "輕裝地",
+          "usage": "travel light = 輕裝旅行；light 在此修飾 travel，不寫成 travel lightly。"
         }
       ],
       "collocations": [
@@ -11695,6 +15944,16 @@
           "en": "in light of new evidence",
           "zh": "考慮到新證據",
           "note": ""
+        },
+        {
+          "en": "travel light",
+          "zh": "輕裝旅行",
+          "note": "固定搭配，light 作副詞；表示少帶行李。"
+        },
+        {
+          "en": "light up the room",
+          "zh": "照亮房間",
+          "note": "light up 可為及物片語動詞；代名詞受詞放中間，如 light it up。"
         }
       ],
       "synonyms": [
@@ -11731,9 +15990,19 @@
           "word": "lightness",
           "pos": "n.",
           "meaning": "輕；明亮程度"
+        },
+        {
+          "word": "lit",
+          "pos": "v.",
+          "meaning": "light 的過去式與過去分詞：點燃；照亮"
+        },
+        {
+          "word": "lighted",
+          "pos": "v./adj.",
+          "meaning": "light 的另一過去式／過去分詞；點亮的"
         }
       ],
-      "usageNote": "動詞過去式 lit/lighted；light 作形容詞可表重量或程度，與亮度義不同。",
+      "usageNote": "動詞 light–lit/lighted–lit/lighted；lit 在一般敘事常見，lighted 也正確，如 a lighted candle。light 可指重量輕、程度小、顏色淡或光線亮，須看所修飾的名詞；travel light 中作副詞。",
       "examples": [
         {
           "text": "The interview shed light on why some teenagers avoided school activities even when they wanted to make new friends.",
@@ -12167,19 +16436,44 @@
     "mean": {
       "senses": [
         {
-          "pos": "v.",
-          "meaning": "意指；意味著",
-          "usage": ""
+          "pos": "vt.",
+          "meaning": "表示；意指",
+          "usage": "mean + 字詞、符號或子句，說明其意義：What does this sign mean?"
+        },
+        {
+          "pos": "vt.",
+          "meaning": "打算；有意做",
+          "usage": "mean to V = intend to V；I meant to call you 指原本打算打電話。"
+        },
+        {
+          "pos": "vt.",
+          "meaning": "意味著；必然涉及",
+          "usage": "mean + V-ing 或名詞，表示某事所帶來的結果或代價；mean changing the plan = 意味著要改變計畫。"
+        },
+        {
+          "pos": "vt.",
+          "meaning": "對某人有重要性",
+          "usage": "mean a lot / much / something to someone；to 後接感到其重要性的人。"
         },
         {
           "pos": "adj.",
-          "meaning": "刻薄的；吝嗇的",
-          "usage": ""
+          "meaning": "刻薄的；不友善的",
+          "usage": "be mean to someone = 對某人刻薄；形容態度，不能當作 mean to V「打算」解讀。"
+        },
+        {
+          "pos": "adj.",
+          "meaning": "吝嗇的",
+          "usage": "be mean with money = 不願花錢或給錢；與形容待人刻薄的語境不同。"
+        },
+        {
+          "pos": "adj.",
+          "meaning": "平均的",
+          "usage": "mean temperature / mean score 指統計平均值，修飾後面的名詞。"
         },
         {
           "pos": "n.",
           "meaning": "平均數",
-          "usage": ""
+          "usage": "the mean of the scores；通常指各數值相加後除以數量的算術平均數，與 median「中位數」不同。"
         }
       ],
       "collocations": [
@@ -12202,6 +16496,16 @@
           "en": "the mean score",
           "zh": "平均分數",
           "note": ""
+        },
+        {
+          "en": "be mean to someone",
+          "zh": "對某人刻薄",
+          "note": "to + 人；be mean to someone 與 mean to do something 的結構及詞性不同。"
+        },
+        {
+          "en": "calculate the mean",
+          "zh": "計算平均數",
+          "note": "mean 在此為可數名詞；常見於圖表與統計情境。"
         }
       ],
       "synonyms": [
@@ -12232,9 +16536,14 @@
           "word": "meaningless",
           "pos": "adj.",
           "meaning": "無意義的"
+        },
+        {
+          "word": "meant",
+          "pos": "v.",
+          "meaning": "mean 的過去式與過去分詞：意指；打算；意味著"
         }
       ],
-      "usageNote": "mean to V 表打算；mean V-ing 表意味著。mean 作形容詞也可表刻薄。",
+      "usageNote": "動詞 mean–meant–meant。mean to V 表打算，mean V-ing 表意味著；be mean to + 人 表對某人刻薄。mean、median、mode 分別是平均數、中位數、眾數。原釋義中的低劣、卑賤等較舊或特定語域用法仍保留於完整原釋義，日常寫作應依語境選義。",
       "examples": [
         {
           "text": "Taking care of a pet means giving up some free time, but it can also teach patience and responsibility.",
@@ -12844,6 +17153,101 @@
         }
       ]
     },
+    "observe": {
+      "senses": [
+        {
+          "pos": "vt.",
+          "meaning": "觀察；注意到",
+          "usage": "observe someone do／doing 可描述觀察動作。"
+        },
+        {
+          "pos": "vt.",
+          "meaning": "遵守",
+          "usage": "observe rules。"
+        },
+        {
+          "pos": "vt.",
+          "meaning": "慶祝；紀念",
+          "usage": "observe a holiday。"
+        },
+        {
+          "pos": "vt.",
+          "meaning": "評論；說到",
+          "usage": "observe that...，較正式。"
+        }
+      ],
+      "collocations": [
+        {
+          "en": "observe changes in behavior",
+          "zh": "觀察行為變化",
+          "note": ""
+        },
+        {
+          "en": "observe safety rules",
+          "zh": "遵守安全規則",
+          "note": ""
+        },
+        {
+          "en": "observe a minute of silence",
+          "zh": "默哀一分鐘",
+          "note": ""
+        },
+        {
+          "en": "observe that something has changed",
+          "zh": "指出某事已改變",
+          "note": ""
+        }
+      ],
+      "synonyms": [
+        {
+          "en": "watch",
+          "zh": "觀看；留意",
+          "note": "較日常，不涵蓋遵守或評論義。"
+        },
+        {
+          "en": "comply with",
+          "zh": "遵守",
+          "note": "只對應規則義，句型需加 with。"
+        }
+      ],
+      "idioms": [],
+      "family": [
+        {
+          "word": "observation",
+          "pos": "n.",
+          "meaning": "觀察；評論"
+        },
+        {
+          "word": "observer",
+          "pos": "n.",
+          "meaning": "觀察者"
+        },
+        {
+          "word": "observant",
+          "pos": "adj.",
+          "meaning": "善於觀察的"
+        }
+      ],
+      "usageNote": "observe 有觀察、遵守、紀念與評論等義。observant 指眼光敏銳；observed 可指被觀察到的，兩者不同。",
+      "examples": [
+        {
+          "text": "During the field trip, students observed how birds used different parts of the wetland for feeding and resting.",
+          "translationZh": "校外教學時，學生觀察鳥類如何利用濕地不同區域覓食與休息。",
+          "grammar": "observe + how 子句；for feeding and resting 表用途。",
+          "writingTip": "自然觀察作文交代行為與場所的關聯。",
+          "topic": "濕地觀察",
+          "source": "self-authored"
+        },
+        {
+          "text": "Visitors are asked to observe the quiet hours so that patients can rest without being disturbed by conversations in the hallway.",
+          "translationZh": "院方請訪客遵守安靜時段，讓病人不受走廊交談干擾而能休息。",
+          "grammar": "are asked to V 為被動；without being disturbed 為動名詞被動。",
+          "writingTip": "規範作文可把要求連結受到保護者的需求。",
+          "topic": "公共禮儀",
+          "source": "self-authored"
+        }
+      ]
+    },
     "obtain": {
       "senses": [
         {
@@ -13235,6 +17639,86 @@
       ],
       "usageNote": "option 是名詞；optional 是形容詞，表示非必選，不等同於可替換的 alternative。"
     },
+    "overcome": {
+      "senses": [
+        {
+          "pos": "vt.",
+          "meaning": "克服；戰勝",
+          "usage": "overcome a difficulty；不用 with 直接接困難。"
+        },
+        {
+          "pos": "vt.",
+          "meaning": "使承受不住",
+          "usage": "常用 be overcome by／with emotion。"
+        }
+      ],
+      "collocations": [
+        {
+          "en": "overcome a fear",
+          "zh": "克服恐懼",
+          "note": ""
+        },
+        {
+          "en": "overcome an obstacle",
+          "zh": "克服障礙",
+          "note": ""
+        },
+        {
+          "en": "overcome a language barrier",
+          "zh": "克服語言障礙",
+          "note": ""
+        },
+        {
+          "en": "be overcome with emotion",
+          "zh": "情緒激動得難以自已",
+          "note": "被動用法。"
+        }
+      ],
+      "synonyms": [
+        {
+          "en": "conquer",
+          "zh": "征服；克服",
+          "note": "語氣較強，可用於恐懼或困難。"
+        },
+        {
+          "en": "get over",
+          "zh": "克服；恢復",
+          "note": "較口語，可指從疾病或失落中恢復。"
+        }
+      ],
+      "idioms": [],
+      "family": [
+        {
+          "word": "overcame",
+          "pos": "v.",
+          "meaning": "克服（過去式）"
+        },
+        {
+          "word": "overcome",
+          "pos": "v.",
+          "meaning": "克服（原形與過去分詞）"
+        }
+      ],
+      "usageNote": "變化為 overcome–overcame–overcome。overcome obstacles 是克服；be overcome with grief 則是被悲傷壓倒。",
+      "examples": [
+        {
+          "text": "To overcome my fear of speaking in public, I first practiced explaining one idea to a small group of friends.",
+          "translationZh": "為克服公開說話的恐懼，我先練習向一小群朋友說明一個想法。",
+          "grammar": "To overcome 表目的；fear of + V-ing；practice + V-ing。",
+          "writingTip": "成長敘事寫出循序增加難度的第一步。",
+          "topic": "公開表達",
+          "source": "self-authored"
+        },
+        {
+          "text": "Clear pictures helped us overcome the language barrier when we worked with visitors who could not read the local signs.",
+          "translationZh": "與看不懂當地標示的訪客互動時，清楚圖片幫助我們克服語言障礙。",
+          "grammar": "help + 人 + 原形 overcome；who 修飾 visitors。",
+          "writingTip": "用具體溝通工具說明如何處理跨語言困難。",
+          "topic": "跨語言服務",
+          "source": "self-authored"
+        }
+      ]
+    },
     "participate": {
       "senses": [
         {
@@ -13477,6 +17961,171 @@
           "grammar": "asked + 人 + to explain；so that 引導作決定的目的。",
           "writingTip": "用再次詢問來描寫充分理解後的選擇。",
           "topic": "醫療決策"
+        }
+      ]
+    },
+    "perceive": {
+      "senses": [
+        {
+          "pos": "vt.",
+          "meaning": "察覺；感知",
+          "usage": "透過感官或理解注意到。"
+        },
+        {
+          "pos": "vt.",
+          "meaning": "認為；視為",
+          "usage": "perceive A as B。"
+        }
+      ],
+      "collocations": [
+        {
+          "en": "perceive a change",
+          "zh": "察覺改變",
+          "note": ""
+        },
+        {
+          "en": "perceive a threat",
+          "zh": "感到威脅",
+          "note": "不一定表示確有危險。"
+        },
+        {
+          "en": "perceive a mistake as a learning opportunity",
+          "zh": "把錯誤視為學習機會",
+          "note": ""
+        },
+        {
+          "en": "be perceived as unfair",
+          "zh": "被認為不公平",
+          "note": ""
+        }
+      ],
+      "synonyms": [
+        {
+          "en": "notice",
+          "zh": "注意到",
+          "note": "較日常，常指察覺某細節。"
+        },
+        {
+          "en": "regard as",
+          "zh": "視為",
+          "note": "只對應看待義，需用 regard A as B。"
+        }
+      ],
+      "idioms": [],
+      "family": [
+        {
+          "word": "perception",
+          "pos": "n.",
+          "meaning": "感知；看法"
+        },
+        {
+          "word": "perceptive",
+          "pos": "adj.",
+          "meaning": "敏銳的；有洞察力的"
+        },
+        {
+          "word": "perceptible",
+          "pos": "adj.",
+          "meaning": "可察覺的"
+        }
+      ],
+      "usageNote": "perceived danger 是被感受到的危險，未必已經證實；perceptive 形容人敏銳，perceptible 形容事物可被察覺。",
+      "examples": [
+        {
+          "text": "Students may perceive feedback as criticism if teachers point out errors without explaining how the work can be improved.",
+          "translationZh": "若老師只指出錯誤、卻不說明如何改善，學生可能把回饋視為批評。",
+          "grammar": "perceive A as B；without explaining 表缺少的步驟。",
+          "writingTip": "學習回饋作文可分析表達方式如何影響接受程度。",
+          "topic": "回饋與感受",
+          "source": "self-authored"
+        },
+        {
+          "text": "After spending time in the neighborhood, I began to perceive the old market as a place of connection rather than disorder.",
+          "translationZh": "在社區待了一段時間後，我開始把老市場視為人際連結之處，而非雜亂場所。",
+          "grammar": "began to perceive A as B；rather than 並列兩種看法。",
+          "writingTip": "敘述經驗如何改變對地方的第一印象。",
+          "topic": "地方印象",
+          "source": "self-authored"
+        }
+      ]
+    },
+    "perspective": {
+      "senses": [
+        {
+          "pos": "n.",
+          "meaning": "觀點；看法",
+          "usage": "from someone's perspective。"
+        },
+        {
+          "pos": "n.",
+          "meaning": "看待事物的比例感；全貌",
+          "usage": "put something in perspective。"
+        },
+        {
+          "pos": "n.",
+          "meaning": "透視法",
+          "usage": "美術中的空間表現方法。"
+        }
+      ],
+      "collocations": [
+        {
+          "en": "from a different perspective",
+          "zh": "從不同角度",
+          "note": ""
+        },
+        {
+          "en": "gain a new perspective on an issue",
+          "zh": "對議題獲得新看法",
+          "note": ""
+        },
+        {
+          "en": "put a setback in perspective",
+          "zh": "以適當眼光看待挫折",
+          "note": ""
+        },
+        {
+          "en": "draw in perspective",
+          "zh": "用透視法繪圖",
+          "note": ""
+        }
+      ],
+      "synonyms": [
+        {
+          "en": "viewpoint",
+          "zh": "觀點",
+          "note": "對應看待問題的立場，不包含繪圖義。"
+        },
+        {
+          "en": "outlook",
+          "zh": "看法；人生觀",
+          "note": "常指較整體的態度或未來展望。"
+        }
+      ],
+      "idioms": [],
+      "family": [
+        {
+          "word": "perspectival",
+          "pos": "adj.",
+          "meaning": "觀點的；透視的（較正式）"
+        }
+      ],
+      "usageNote": "perspective 可是看法，也可是理解某事相對重要性的能力。put in perspective 不等於否認問題，而是放回更完整的背景。",
+      "examples": [
+        {
+          "text": "Listening to commuters gave us a different perspective on the bus schedule and the difficulties caused by long gaps between services.",
+          "translationZh": "聽通勤者的想法，讓我們從不同角度理解公車時刻與班距過長造成的困難。",
+          "grammar": "Listening 為主詞；perspective on + 議題；caused 修飾 difficulties。",
+          "writingTip": "公共政策作文可透過使用者經驗補充數字以外的觀點。",
+          "topic": "通勤需求",
+          "source": "self-authored"
+        },
+        {
+          "text": "Remembering how much I had learned helped me put one disappointing test result in perspective and plan my next step.",
+          "translationZh": "回想自己已學會多少，幫我以較全面的眼光看待一次不理想成績，並規畫下一步。",
+          "grammar": "put + 事物 + in perspective；helped me 後並列 put 與 plan。",
+          "writingTip": "成長作文把單次失利放回長期學習歷程。",
+          "topic": "挫折調整",
+          "source": "self-authored"
         }
       ]
     },
@@ -13982,6 +18631,96 @@
         }
       ]
     },
+    "preserve": {
+      "senses": [
+        {
+          "pos": "vt.",
+          "meaning": "保存；維護",
+          "usage": "維持原貌、狀態或價值。"
+        },
+        {
+          "pos": "vt.",
+          "meaning": "保藏食物",
+          "usage": "透過冷藏、醃漬等延緩腐敗。"
+        },
+        {
+          "pos": "n.",
+          "meaning": "保護區；專有領域",
+          "usage": "如 a wildlife preserve；the preserve of。"
+        }
+      ],
+      "collocations": [
+        {
+          "en": "preserve local traditions",
+          "zh": "保存地方傳統",
+          "note": ""
+        },
+        {
+          "en": "preserve food in salt",
+          "zh": "用鹽保藏食物",
+          "note": ""
+        },
+        {
+          "en": "preserve a historic building",
+          "zh": "保存歷史建築",
+          "note": ""
+        },
+        {
+          "en": "a wildlife preserve",
+          "zh": "野生動物保護區",
+          "note": "名詞義。"
+        }
+      ],
+      "synonyms": [
+        {
+          "en": "conserve",
+          "zh": "保護；節約",
+          "note": "常強調妥善使用資源以免耗盡。"
+        },
+        {
+          "en": "maintain",
+          "zh": "維持",
+          "note": "較一般，不一定含保護原貌或避免受損。"
+        }
+      ],
+      "idioms": [],
+      "family": [
+        {
+          "word": "preservation",
+          "pos": "n.",
+          "meaning": "保存；維護"
+        },
+        {
+          "word": "preservative",
+          "pos": "n.",
+          "meaning": "防腐劑"
+        },
+        {
+          "word": "preserved",
+          "pos": "adj.",
+          "meaning": "保存的；醃製的"
+        }
+      ],
+      "usageNote": "preserve 保留狀態或使不受損；reserve 常指預訂或保留備用。preservative 是防腐劑，不是形容人的保守。",
+      "examples": [
+        {
+          "text": "The town preserved the old railway station while turning unused rooms into spaces for exhibitions and community meetings.",
+          "translationZh": "城鎮保存老火車站，同時把閒置房間改成展覽與社區會議空間。",
+          "grammar": "preserve 直接接建築；while turning 表同時改作新用途。",
+          "writingTip": "文化保存作文可兼談保留特色與增加使用價值。",
+          "topic": "文化保存",
+          "source": "self-authored"
+        },
+        {
+          "text": "Recording local stories can help preserve memories that might otherwise disappear as older residents move away or pass away.",
+          "translationZh": "記錄地方故事，有助保存可能隨年長居民搬離或過世而消失的記憶。",
+          "grammar": "help + 原形 preserve；might otherwise 表若不採取行動的可能情況。",
+          "writingTip": "文化議題可說明不記錄時可能失去什麼。",
+          "topic": "地方記憶",
+          "source": "self-authored"
+        }
+      ]
+    },
     "pressure": {
       "senses": [
         {
@@ -14146,6 +18885,86 @@
         }
       ],
       "usageNote": "prevent 後不接人 + to V；常用 prevent 人 from V-ing。"
+    },
+    "principle": {
+      "senses": [
+        {
+          "pos": "n.",
+          "meaning": "原則；準則",
+          "usage": "行事或判斷所依循的基準。"
+        },
+        {
+          "pos": "n.",
+          "meaning": "原理",
+          "usage": "解釋某現象的基本規律。"
+        }
+      ],
+      "collocations": [
+        {
+          "en": "a basic principle",
+          "zh": "基本原則或原理",
+          "note": "依語境判斷。"
+        },
+        {
+          "en": "stick to one's principles",
+          "zh": "堅守原則",
+          "note": ""
+        },
+        {
+          "en": "in principle",
+          "zh": "原則上",
+          "note": "未必已同意全部細節。"
+        },
+        {
+          "en": "the principle behind a device",
+          "zh": "裝置背後的原理",
+          "note": ""
+        }
+      ],
+      "synonyms": [
+        {
+          "en": "rule",
+          "zh": "規則",
+          "note": "可指具體規定；principle 通常較基本或抽象。"
+        },
+        {
+          "en": "standard",
+          "zh": "標準",
+          "note": "可指評量尺度，不一定是原理或信念。"
+        }
+      ],
+      "idioms": [],
+      "family": [
+        {
+          "word": "principled",
+          "pos": "adj.",
+          "meaning": "有原則的"
+        },
+        {
+          "word": "unprincipled",
+          "pos": "adj.",
+          "meaning": "無原則的；不道德的"
+        }
+      ],
+      "usageNote": "principle 是原則／原理；principal 作形容詞指主要的，作名詞可指校長，拼字勿混。in principle 不保證所有條件都談妥。",
+      "examples": [
+        {
+          "text": "We agreed with the proposal in principle but asked for more details about how the money would be spent.",
+          "translationZh": "我們原則上贊同提案，但要求提供更詳細的經費用途。",
+          "grammar": "agree with + 提案；in principle 限定同意程度；how 引導間接問句。",
+          "writingTip": "議論作文可表達基本支持，同時保留需要確認的細節。",
+          "topic": "提案討論",
+          "source": "self-authored"
+        },
+        {
+          "text": "The experiment helped students understand the principle behind a simple water filter rather than merely memorize the names of its parts.",
+          "translationZh": "實驗幫學生理解簡易濾水器的原理，而非只背零件名稱。",
+          "grammar": "principle behind + 裝置；rather than 連接 understand 與 memorize。",
+          "writingTip": "教育作文以理解運作方式說明學習目標。",
+          "topic": "科學理解",
+          "source": "self-authored"
+        }
+      ]
     },
     "priority": {
       "senses": [
@@ -14482,6 +19301,86 @@
       ],
       "usageNote": "promote 可指促進、推廣或升遷；依受詞與 to 後內容判讀。"
     },
+    "propose": {
+      "senses": [
+        {
+          "pos": "vt.",
+          "meaning": "提議；提出",
+          "usage": "propose a plan／doing／that 子句。"
+        },
+        {
+          "pos": "vi.",
+          "meaning": "求婚",
+          "usage": "propose to someone。"
+        }
+      ],
+      "collocations": [
+        {
+          "en": "propose a solution",
+          "zh": "提出解決方式",
+          "note": ""
+        },
+        {
+          "en": "propose making a change",
+          "zh": "提議改變",
+          "note": "後接 V-ing。"
+        },
+        {
+          "en": "propose that a rule be revised",
+          "zh": "提議修訂規則",
+          "note": "美式常用原形 be。"
+        },
+        {
+          "en": "propose to someone",
+          "zh": "向某人求婚",
+          "note": "另有 propose to V 表打算的用法。"
+        }
+      ],
+      "synonyms": [
+        {
+          "en": "suggest",
+          "zh": "建議",
+          "note": "常接 V-ing 或 that 子句，語氣可較輕。"
+        },
+        {
+          "en": "put forward",
+          "zh": "提出",
+          "note": "可接主張、計畫或解釋，較一般。"
+        }
+      ],
+      "idioms": [],
+      "family": [
+        {
+          "word": "proposal",
+          "pos": "n.",
+          "meaning": "提案；求婚"
+        },
+        {
+          "word": "proposed",
+          "pos": "adj.",
+          "meaning": "擬議中的"
+        }
+      ],
+      "usageNote": "propose doing 表提議做；propose to do 可表打算做，不能只當成同一句型。proposal 尚未必獲核准。",
+      "examples": [
+        {
+          "text": "Our class proposed setting up a repair corner where students could learn to fix simple problems with their belongings.",
+          "translationZh": "我們班提議設置修繕角，讓學生學習處理物品的簡單故障。",
+          "grammar": "propose + V-ing；where 修飾 corner 的用途。",
+          "writingTip": "環保提案可列出場地與可提供的具體學習活動。",
+          "topic": "校園修繕",
+          "source": "self-authored"
+        },
+        {
+          "text": "The residents proposed that the empty lot be turned into a shaded playground rather than another parking area.",
+          "translationZh": "居民提議把空地改成有遮蔭的遊戲場，而不是另一處停車場。",
+          "grammar": "propose that + 主詞 + 原形 be 為建議句型；rather than 表方案對比。",
+          "writingTip": "公共空間作文可比較同一土地的兩種用途。",
+          "topic": "公共空間",
+          "source": "self-authored"
+        }
+      ]
+    },
     "protect": {
       "senses": [
         {
@@ -14717,6 +19616,91 @@
       ],
       "usageNote": "range 作名詞可指範圍、種類或山脈；作動詞常搭配 from...to...。"
     },
+    "recall": {
+      "senses": [
+        {
+          "pos": "vt.",
+          "meaning": "回想；記起",
+          "usage": "recall doing／that...，不寫 recall to do。"
+        },
+        {
+          "pos": "vt.",
+          "meaning": "召回",
+          "usage": "召回有問題的產品或在外人員。"
+        },
+        {
+          "pos": "n.",
+          "meaning": "回憶能力；召回",
+          "usage": "如 product recall。"
+        }
+      ],
+      "collocations": [
+        {
+          "en": "recall a childhood memory",
+          "zh": "想起童年回憶",
+          "note": ""
+        },
+        {
+          "en": "recall seeing someone",
+          "zh": "記得見過某人",
+          "note": ""
+        },
+        {
+          "en": "recall a defective product",
+          "zh": "召回有瑕疵的產品",
+          "note": ""
+        },
+        {
+          "en": "active recall",
+          "zh": "主動回想",
+          "note": "不先看答案，試著從記憶提取。"
+        }
+      ],
+      "synonyms": [
+        {
+          "en": "remember",
+          "zh": "記得",
+          "note": "較日常；remember to do 另有記得去做的意思。"
+        },
+        {
+          "en": "retrieve",
+          "zh": "提取；找回",
+          "note": "可指從記憶提取，也可找回物品或資料。"
+        }
+      ],
+      "idioms": [],
+      "family": [
+        {
+          "word": "recollection",
+          "pos": "n.",
+          "meaning": "回憶；記憶"
+        },
+        {
+          "word": "recalled",
+          "pos": "v.",
+          "meaning": "回想；召回（過去式與過去分詞）"
+        }
+      ],
+      "usageNote": "recall doing 指回想做過；remember to do 指記得要去做。練習回想後仍須核對答案，避免把猜錯的內容當成正確記憶。",
+      "examples": [
+        {
+          "text": "Before checking my notes, I tried to recall the main argument and explain it in a few sentences of my own.",
+          "translationZh": "查看筆記前，我先試著回想主要論點，並用自己的幾句話解釋。",
+          "grammar": "try to recall；recall 與 explain 並列；of my own 表自己組織的。",
+          "writingTip": "學習經驗可描述先提取再核對的實際步驟。",
+          "topic": "主動回想",
+          "source": "self-authored"
+        },
+        {
+          "text": "The company recalled several models after tests showed that a faulty battery could become dangerously hot during normal use.",
+          "translationZh": "測試顯示故障電池在正常使用時也可能過熱後，公司召回數款產品。",
+          "grammar": "recall 為召回義；after tests showed that 引出召回原因。",
+          "writingTip": "消費安全作文把檢測問題與後續處置連結。",
+          "topic": "產品安全",
+          "source": "self-authored"
+        }
+      ]
+    },
     "recognize": {
       "senses": [
         {
@@ -14796,6 +19780,81 @@
         }
       ],
       "usageNote": "recognize 熟人指認出，不一定想起名字；recognize as 常表示認可某種地位。"
+    },
+    "recommend": {
+      "senses": [
+        {
+          "pos": "vt.",
+          "meaning": "建議；推薦",
+          "usage": "recommend doing／that...；recommend something to someone。"
+        }
+      ],
+      "collocations": [
+        {
+          "en": "recommend a book to a friend",
+          "zh": "向朋友推薦書",
+          "note": ""
+        },
+        {
+          "en": "recommend taking regular breaks",
+          "zh": "建議規律休息",
+          "note": ""
+        },
+        {
+          "en": "recommend that students keep a journal",
+          "zh": "建議學生寫日誌",
+          "note": "that 子句可用原形動詞。"
+        },
+        {
+          "en": "highly recommended",
+          "zh": "大力推薦的",
+          "note": ""
+        }
+      ],
+      "synonyms": [
+        {
+          "en": "suggest",
+          "zh": "建議",
+          "note": "未必帶對品質或適合性的推薦意味。"
+        },
+        {
+          "en": "advise",
+          "zh": "勸告；建議",
+          "note": "常用 advise someone to V，句型不同。"
+        }
+      ],
+      "idioms": [],
+      "family": [
+        {
+          "word": "recommendation",
+          "pos": "n.",
+          "meaning": "建議；推薦"
+        },
+        {
+          "word": "recommended",
+          "pos": "adj.",
+          "meaning": "建議的；推薦的"
+        }
+      ],
+      "usageNote": "學測寫作可用 recommend doing 或 recommend that someone do；advise someone to do 的結構不要直接套成 recommend someone do。",
+      "examples": [
+        {
+          "text": "The librarian recommended a novel to me after asking which topics I enjoyed and how much time I had for reading.",
+          "translationZh": "圖書館員詢問我喜歡的主題與可閱讀的時間後，向我推薦一本小說。",
+          "grammar": "recommend A to B；after asking 後接 which 與 how much 兩個問句。",
+          "writingTip": "閱讀經驗可說明推薦如何考量個人興趣與條件。",
+          "topic": "選書與閱讀",
+          "source": "self-authored"
+        },
+        {
+          "text": "Our teacher recommended reviewing the mistakes we had made before trying another set of questions on the same topic.",
+          "translationZh": "老師建議先複習犯過的錯誤，再做另一組相同主題的題目。",
+          "grammar": "recommend + V-ing；we had made 修飾 mistakes；before trying 表順序。",
+          "writingTip": "學習作文以先診斷錯誤、再練習呈現改善過程。",
+          "topic": "錯誤複習",
+          "source": "self-authored"
+        }
+      ]
     },
     "record": {
       "senses": [
@@ -15302,6 +20361,81 @@
         }
       ],
       "usageNote": "relationship 不一定是戀愛；the relationship between X and Y 常見於研究與圖表說明。"
+    },
+    "relevant": {
+      "senses": [
+        {
+          "pos": "adj.",
+          "meaning": "相關的；切題的",
+          "usage": "relevant to + 主題、問題或對象。"
+        }
+      ],
+      "collocations": [
+        {
+          "en": "relevant to the discussion",
+          "zh": "與討論有關",
+          "note": ""
+        },
+        {
+          "en": "relevant experience",
+          "zh": "相關經驗",
+          "note": ""
+        },
+        {
+          "en": "provide relevant information",
+          "zh": "提供相關資訊",
+          "note": ""
+        },
+        {
+          "en": "remain relevant to readers",
+          "zh": "對讀者仍有關聯與意義",
+          "note": ""
+        }
+      ],
+      "synonyms": [
+        {
+          "en": "pertinent",
+          "zh": "切題的",
+          "note": "較正式，強調直接關係到當前問題。"
+        },
+        {
+          "en": "applicable",
+          "zh": "適用的",
+          "note": "強調可實際套用；相關資訊未必直接適用。"
+        }
+      ],
+      "idioms": [],
+      "family": [
+        {
+          "word": "relevance",
+          "pos": "n.",
+          "meaning": "相關性；切題程度"
+        },
+        {
+          "word": "irrelevant",
+          "pos": "adj.",
+          "meaning": "不相關的；不切題的"
+        }
+      ],
+      "usageNote": "relevant to，不寫 relevant with。資料來自可信來源仍可能與此題無關，須同時判斷可信度與相關性。",
+      "examples": [
+        {
+          "text": "The article contained many interesting facts, but only a few were relevant to the question our group wanted to answer.",
+          "translationZh": "文章有很多有趣事實，但只有少數與我們小組想回答的問題相關。",
+          "grammar": "relevant to + 問題；our group wanted to answer 修飾 question。",
+          "writingTip": "專題寫作說明如何依研究問題篩選資料。",
+          "topic": "資料篩選",
+          "source": "self-authored"
+        },
+        {
+          "text": "When applying for the volunteer role, I described relevant experience instead of listing every activity I had joined.",
+          "translationZh": "申請志工職務時，我描述相關經驗，而非列出所有參加過的活動。",
+          "grammar": "When applying 為省略主詞結構；instead of + V-ing。",
+          "writingTip": "申請或自我介紹應挑選能說明適任性的經驗。",
+          "topic": "服務申請",
+          "source": "self-authored"
+        }
+      ]
     },
     "reliable": {
       "senses": [
@@ -15936,12 +21070,12 @@
       ],
       "examples": [
         {
-          "text": "Recent research suggests that regular physical activity can support both mental health and academic performance.",
-          "translationZh": "近期研究顯示，規律身體活動可能有助心理健康與學業表現。",
+          "text": "For our research project, we compared students' travel habits by collecting anonymous surveys and observing traffic near the school.",
+          "translationZh": "為了研究專題，我們蒐集匿名問卷並觀察學校附近交通，比較學生的通勤習慣。",
           "source": "self-authored",
-          "grammar": "research 不可數；suggest that + 子句",
-          "writingTip": "報告研究時保留適當推論程度。",
-          "topic": "health"
+          "grammar": "research 在 research project 中作名詞修飾語；by 後並列 collecting 與 observing 兩個 V-ing。",
+          "writingTip": "研究作文具體交代資料蒐集方式，避免用未註明來源的「近期研究顯示」充當證據。",
+          "topic": "交通研究"
         },
         {
           "text": "We researched a local tradition by interviewing craftspeople and examining objects preserved in the museum.",
@@ -16623,7 +21757,7 @@
           "text": "After completing the difficult section, I took a short rest before returning to the remaining questions with a clearer mind.",
           "translationZh": "完成困難部分後，我稍作休息，再以更清楚的頭腦回來作答剩餘題目。",
           "source": "self-authored",
-          "grammar": "after completing 表完成某部分後；before returning 表再继续前。",
+          "grammar": "after completing 表完成某部分後；before returning 表再继續前。",
           "writingTip": "描述短暫休息如何帮助完成後續題目。",
           "topic": "考試節奏"
         },
@@ -16716,6 +21850,171 @@
         }
       ],
       "usageNote": "restrict A to B 表將 A 限定於 B；restriction 作可數名詞常用複數。"
+    },
+    "retain": {
+      "senses": [
+        {
+          "pos": "vt.",
+          "meaning": "保留；維持",
+          "usage": "使某物、特徵或資格繼續存在。"
+        },
+        {
+          "pos": "vt.",
+          "meaning": "記住",
+          "usage": "保留學過的資訊。"
+        }
+      ],
+      "collocations": [
+        {
+          "en": "retain information",
+          "zh": "記住資訊",
+          "note": ""
+        },
+        {
+          "en": "retain a sense of identity",
+          "zh": "保有認同感",
+          "note": ""
+        },
+        {
+          "en": "retain moisture",
+          "zh": "保持水分",
+          "note": ""
+        },
+        {
+          "en": "retain the original features",
+          "zh": "保留原有特色",
+          "note": ""
+        }
+      ],
+      "synonyms": [
+        {
+          "en": "keep",
+          "zh": "保留",
+          "note": "較日常，適用範圍廣。"
+        },
+        {
+          "en": "preserve",
+          "zh": "保存；維護",
+          "note": "常含保護原有狀態免受損的意思。"
+        }
+      ],
+      "idioms": [],
+      "family": [
+        {
+          "word": "retention",
+          "pos": "n.",
+          "meaning": "保留；記憶保持"
+        },
+        {
+          "word": "retained",
+          "pos": "adj.",
+          "meaning": "保留下來的"
+        },
+        {
+          "word": "retentive",
+          "pos": "adj.",
+          "meaning": "記性好的；能保持的"
+        }
+      ],
+      "usageNote": "retain information 強調後來仍記得；理解當下的內容不等於日後能回想。retention 也可指員工留任或水分保持。",
+      "examples": [
+        {
+          "text": "I wanted to retain what I had learned, so I returned to the topic several days later and tested myself.",
+          "translationZh": "我希望記住學過的內容，因此隔幾天再回到這個主題，測試自己。",
+          "grammar": "retain 後接 what 名詞子句；several days later 表延後回顧。",
+          "writingTip": "學習作文寫出間隔後檢查記憶的行動，而非只說多讀。",
+          "topic": "延後複習",
+          "source": "self-authored"
+        },
+        {
+          "text": "The renovated market retained its original wooden signs while adding better lighting and wider paths for visitors with limited mobility.",
+          "translationZh": "整修後的市場保留原有木招牌，同時加強照明、拓寬走道，方便行動不便的訪客。",
+          "grammar": "retain 直接接 signs；while adding 表同時加入改良。",
+          "writingTip": "保存與更新作文可具體比較保留部分及改善部分。",
+          "topic": "市場更新",
+          "source": "self-authored"
+        }
+      ]
+    },
+    "revise": {
+      "senses": [
+        {
+          "pos": "vt.",
+          "meaning": "修訂；修改",
+          "usage": "根據檢視或新資訊改變內容。"
+        },
+        {
+          "pos": "vt./vi.",
+          "meaning": "複習",
+          "usage": "英式用法，如 revise for an exam；美式常用 review。"
+        }
+      ],
+      "collocations": [
+        {
+          "en": "revise a draft",
+          "zh": "修改草稿",
+          "note": ""
+        },
+        {
+          "en": "revise an estimate",
+          "zh": "修正估計",
+          "note": ""
+        },
+        {
+          "en": "a revised edition",
+          "zh": "修訂版",
+          "note": ""
+        },
+        {
+          "en": "revise for an exam",
+          "zh": "為考試複習",
+          "note": "英式用法。"
+        }
+      ],
+      "synonyms": [
+        {
+          "en": "amend",
+          "zh": "修訂",
+          "note": "常指法規、文件或正式細節的修改。"
+        },
+        {
+          "en": "review",
+          "zh": "複習；檢視",
+          "note": "檢視未必實際更動，revise 在修訂義下含修改。"
+        }
+      ],
+      "idioms": [],
+      "family": [
+        {
+          "word": "revision",
+          "pos": "n.",
+          "meaning": "修訂；複習"
+        },
+        {
+          "word": "revised",
+          "pos": "adj.",
+          "meaning": "已修訂的"
+        }
+      ],
+      "usageNote": "revise a draft 含修改，review a draft 可只是檢視。英式 revise for a test 是複習，不是修改考卷。",
+      "examples": [
+        {
+          "text": "After reading my classmates' comments, I revised the opening paragraph to make the main problem clearer to the reader.",
+          "translationZh": "讀完同學的評語後，我修改開頭段落，讓讀者更清楚主要問題。",
+          "grammar": "After reading 表先後；to make + 受詞 + 形容詞為修改目的。",
+          "writingTip": "寫作反思交代根據何種回饋修改哪個部分。",
+          "topic": "寫作修訂",
+          "source": "self-authored"
+        },
+        {
+          "text": "The organizers revised their estimate of attendance after more families registered than they had expected at the start.",
+          "translationZh": "報名家庭比最初預期更多後，主辦人修正了參加人數的估計。",
+          "grammar": "estimate of + 數量事項；more...than...表比較；had expected 表先前預期。",
+          "writingTip": "活動規畫作文說明新資料如何促使調整預估。",
+          "topic": "活動預估",
+          "source": "self-authored"
+        }
+      ]
     },
     "right": {
       "senses": [
@@ -18290,7 +23589,7 @@
           "text": "A classmate spotted a mistake in our chart before the presentation, giving us enough time to check the data and correct it.",
           "translationZh": "同學在簡報前發現圖表錯誤，讓我們有足夠時間查核資料並修正。",
           "source": "self-authored",
-          "grammar": "spotted + 錯誤；giving 補充发現及時的結果。",
+          "grammar": "spotted + 錯誤；giving 補充發現及時的結果。",
           "writingTip": "描述同儕查核如何讓團隊及時修正。",
           "topic": "簡報查核"
         },
@@ -18802,7 +24101,7 @@
           "translationZh": "若大雨使戶外活動無法在預定地點安全舉辦，行程可能變更。",
           "source": "self-authored",
           "grammar": "subject to + change；prevent + 活動 + from V-ing。",
-          "writingTip": "說明活動計畫必須依安全條件调整。",
+          "writingTip": "說明活動計畫必須依安全條件調整。",
           "topic": "天候與行程"
         },
         {
@@ -18949,7 +24248,7 @@
         {
           "en": "match",
           "zh": "相配",
-          "note": "強调搭配一致"
+          "note": "強調搭配一致"
         }
       ],
       "idioms": [
@@ -19770,7 +25069,7 @@
         {
           "en": "monitor",
           "zh": "監測",
-          "note": "強调持续觀察，track 也可追尋位置"
+          "note": "強調持續觀察，track 也可追尋位置"
         },
         {
           "en": "follow",
@@ -20168,6 +25467,91 @@
         }
       ]
     },
+    "valid": {
+      "senses": [
+        {
+          "pos": "adj.",
+          "meaning": "有效的；仍可使用的",
+          "usage": "如期限內的票券或證件。"
+        },
+        {
+          "pos": "adj.",
+          "meaning": "有根據的；合乎邏輯的",
+          "usage": "形容理由、批評或論證，須看使用標準。"
+        }
+      ],
+      "collocations": [
+        {
+          "en": "a valid ticket",
+          "zh": "有效票券",
+          "note": ""
+        },
+        {
+          "en": "a valid reason for concern",
+          "zh": "值得擔憂的充分理由",
+          "note": ""
+        },
+        {
+          "en": "remain valid for one year",
+          "zh": "一年內持續有效",
+          "note": ""
+        },
+        {
+          "en": "a valid argument",
+          "zh": "有效或有根據的論證",
+          "note": "邏輯效力與前提是否真實仍需區分。"
+        }
+      ],
+      "synonyms": [
+        {
+          "en": "legitimate",
+          "zh": "正當的；合法的",
+          "note": "著重正當性，未必指票券效期或邏輯效力。"
+        },
+        {
+          "en": "well-founded",
+          "zh": "有根據的",
+          "note": "對應理由或擔憂有依據，不用於票券效期。"
+        }
+      ],
+      "idioms": [],
+      "family": [
+        {
+          "word": "validity",
+          "pos": "n.",
+          "meaning": "有效性；效度"
+        },
+        {
+          "word": "validate",
+          "pos": "vt.",
+          "meaning": "確認有效；驗證"
+        },
+        {
+          "word": "invalid",
+          "pos": "adj.",
+          "meaning": "無效的；不成立的"
+        }
+      ],
+      "usageNote": "valid for + 有效期間；valid until + 截止點。邏輯上 valid 指結論由前提推出，並不保證前提為真。",
+      "examples": [
+        {
+          "text": "The ticket remains valid for thirty days, but passengers must reserve a seat before boarding the train on busy weekends.",
+          "translationZh": "票券三十天內有效，但忙碌週末搭車前，乘客必須先訂位。",
+          "grammar": "valid for + 期間；must reserve 表另外需要滿足的條件。",
+          "writingTip": "說明服務規則時，區分基本效期與使用限制。",
+          "topic": "交通規則",
+          "source": "self-authored"
+        },
+        {
+          "text": "Her concern about safety was valid, so the group changed the route instead of dismissing her as overly cautious.",
+          "translationZh": "她對安全的擔憂有根據，因此團隊改變路線，而沒有認為她過度小心就不予理會。",
+          "grammar": "valid 形容 concern 有根據；dismiss A as B 表以某標籤忽視。",
+          "writingTip": "團體經驗可描寫對合理疑慮作出具體回應。",
+          "topic": "風險與溝通",
+          "source": "self-authored"
+        }
+      ]
+    },
     "value": {
       "senses": [
         {
@@ -20392,7 +25776,7 @@
         {
           "en": "say",
           "zh": "說",
-          "note": "say 通常接內容子句，不一定強调公開意見"
+          "note": "say 通常接內容子句，不一定強調公開意見"
         }
       ],
       "idioms": [],
@@ -20817,7 +26201,7 @@
         {
           "en": "observe",
           "zh": "觀察",
-          "note": "witness 常強调親眼見到重要事件"
+          "note": "witness 常強調親眼見到重要事件"
         },
         {
           "en": "see",

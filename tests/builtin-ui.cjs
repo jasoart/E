@@ -18,7 +18,9 @@ function environment(){
 }
 test('all built-in UI files parse; entry identity, old meaning and provenance remain',()=>{
   const e=environment();e.run('renderDetail(VOCABULARY[state.selectedIndex],state.selectedIndex)');
-  assert.match(e.get('wordDetail').innerHTML,/遇到問題時需要克服的挑戰/);assert.match(e.get('wordDetail').innerHTML,/保留的原釋意/);
+  assert.match(e.get('wordDetail').innerHTML,/遇到問題時需要克服的挑戰/);assert.match(e.get('wordDetail').innerHTML,/原詞表完整釋意/);
+  assert.match(e.get('wordDetail').innerHTML,/<p class="original-meaning-text">n\. 挑戰， 盤問；vt\. 向\.\.\.挑戰， 要求， 懷疑；vi\. 挑戰， 對\(證據等\)表示異議<\/p>/);
+  assert.doesNotMatch(e.get('wordDetail').innerHTML,/<details class="original-meaning"/);
   assert.match(e.get('exampleResults').innerHTML,/上傳教材/);assert.match(e.get('exampleResults').innerHTML,/本站新編/);
   assert.doesNotMatch(e.get('exampleResults').innerHTML,/gold-score|品質評分|Google/);
   assert.equal(e.requests,0);assert.equal(e.writes.length,0);
