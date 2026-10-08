@@ -71,3 +71,14 @@
 | `Networks-Learning/spaced-selection` | `fb197043c287a3d4f76787a19c023b964e823c7d` |
 | `github/github-well-architected` | `19010cbd586be876e670c156fbc6ed91f5050b13` |
 | `donnemartin/system-design-primer` | `ae9bbd7b02d90b9866215de185217d33f39ab733` |
+
+
+## 5. 本輪補查：原生優先權排程與教材職責分離
+
+已取得並閱讀 WICG 官方儲存庫的 [Prioritized Task Scheduling 說明](https://github.com/WICG/scheduling-apis/blob/0e7fece76e188c05a9e6f415264acc4423b8de58/explainers/prioritized-post-task.md)，固定快照 `0e7fece76e188c05a9e6f415264acc4423b8de58`。文件說明分塊工作、事件迴圈及 `scheduler.postTask` 的三種優先權；這是 Web 平台提案與工程說明，不是學習成效論文。
+
+`warmSearchIndex` 在可用時使用 `scheduler.postTask(..., {priority: "background"})`，每輪沿用約 4 ms 的工作預算，讓瀏覽器安排使用者互動；不支援時依序使用 `requestIdleCallback`、計時器，排程拒絕也可回復計時器。測試檢查工作有界、只存在一個後續排程、拒絕備援，以及索引完成後停止排程。這不會把同步搜尋變成背景執行緒：過早發出的首次搜尋仍可能同步完成索引，不能宣稱已消除冷啟動延遲；此輪未重新宣稱 benchmark 提速。
+
+59 題自編題庫拆至 `assets/data/context-practice.js`；互動、短回合與錯題儲存留在 `diagnostics.js`。預設 10 題、可選 20 題或全部，跨能力輪流取題且不重複；中文提示按需展開、答後才顯示解釋。這是依既有回想練習設計作的可用性調整，10 題不是研究證實的最佳劑量，本站亦未進行學生成效實驗。既有 35 題 ID 與全部原釋義保持相容。
+
+`tools/check_site.py` 統一本機與 CI 的相同驗證命令，避免教材新增後只更新其中一處。網站維持無框架、無新增執行期套件、無外部模型；啟動資料均為同源靜態資源。

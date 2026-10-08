@@ -108,20 +108,21 @@ def main():
             page.screenshot(path='/tmp/e-notebook-mobile.png', full_page=True)
             outcomes.append('390px and 320px notebook layout without horizontal overflow')
 
-            # Only a deliberate pronunciation click contacts providers. Abort both
+            # Only a deliberate pronunciation click contacts providers. Abort all
             # metadata requests to verify fallback; this is not real audio validation.
             page.locator('#speakButton').click()
             page.wait_for_function("() => ['unavailable','playing','ready'].includes(localVoiceStatus().state)")
-            assert len(external) == 2, external
-            assert external[0] == 'https://api.dictionaryapi.dev/api/v2/entries/en/exacerbate', external
-            assert external[1].startswith('https://commons.wikimedia.org/w/api.php?'), external
+            assert len(external) == 3, external
+            assert external[0] == 'https://ssl.gstatic.com/dictionary/static/sounds/oxford/exacerbate--_us_1.mp3', external
+            assert external[1] == 'https://api.dictionaryapi.dev/api/v2/entries/en/exacerbate', external
+            assert external[2].startswith('https://commons.wikimedia.org/w/api.php?'), external
             assert '模型' not in page.locator('#audioStatus').inner_text()
-            outcomes.append('explicit dictionary then Commons requests and offline/device outcome')
+            outcomes.append('explicit Gstatic then dictionary then Commons requests and offline/device outcome')
             assert not errors, errors
             assert not failed_local, failed_local
             browser.close()
         print(json.dumps({'passed': outcomes, 'notebook': stats, 'pageErrors': errors, 'failedLocalResources': failed_local,
-                          'audio': 'both recording providers deliberately aborted; real audio/device quality untested'}, ensure_ascii=False, indent=2))
+                          'audio': 'all recording providers deliberately aborted; real audio/device quality untested'}, ensure_ascii=False, indent=2))
     finally:
         server.shutdown()
         server.server_close()

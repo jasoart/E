@@ -13,7 +13,7 @@ let pronunciationPreferences = readPronunciationPreferences();
 
 function sanitizePronunciationPreferences(value = {}) {
   return Object.freeze({
-    source: ["auto", "dictionary", "commons", "device"].includes(value.source) ? value.source : "auto",
+    source: ["auto", "gstatic", "dictionary", "commons", "device"].includes(value.source) ? value.source : "auto",
     accent: ["en-US", "en-GB"].includes(value.accent) ? value.accent : "en-US",
     rate: [0.7, 0.82, 1].includes(Number(value.rate)) ? Number(value.rate) : 0.82
   });
@@ -165,6 +165,15 @@ function dictionaryLookupKey(text) {
   const word = text.normalize("NFKC").toLowerCase().replace(/’/g, "'");
   return word.length <= 64 && /^[a-z]+(?:[-'][a-z]+)*$/.test(word) ? word : "";
 }
+// The user-selected static US filename pattern is a candidate, not a coverage guarantee.
+// No metadata fetch, guessed regional filenames, or inferred recording license.
+function gstaticPronunciationRecording(word) {
+  if (!word || dictionaryLookupKey(word) !== word) return null;
+  const audioUrl = PRONUNCIATION_CONFIG.gstaticEndpoint + encodeURIComponent(word) + "--_us_1.mp3";
+  return Object.freeze({ audioUrl, sourceUrl: audioUrl, source: "gstatic",
+    label: "Google 靜態字典音檔 · 美式", accent: "美式", accentCode: "en-US",
+    licenseName: "", licenseUrl: "", attribution: "" });
+}
 function orderPronunciationRecordings(recordings) {
   const preferred = pronunciationPreferences.accent;
   const priority = item => item.accentCode === preferred ? 0 : item.accentCode ? 1 : 2;
@@ -270,6 +279,10 @@ async function fetchPronunciationMetadata(url, session, deadline) {
   }
 }
 async function lookupPronunciationRecordings(provider, word, session, deadline) {
+  if (provider === "gstatic") {
+    const recording = gstaticPronunciationRecording(word);
+    return recording ? [recording] : [];
+  }
   const cache = provider === "commons" ? commonsRecordingCache : dictionaryRecordingCache;
   if (cache.has(word)) {
     const records = cache.get(word);
@@ -353,24 +366,27 @@ async function speakWord(word, button) {
   stopPronunciation();
   const session = state.audioSession;
   const key = dictionaryLookupKey(text);
-  if (pronunciationPreferences.source === "device" || !key || typeof fetch !== "function" || typeof window.Audio !== "function" || typeof AbortController !== "function") {
+  if (pronunciationPreferences.source === "device" || !key || typeof window.Audio !== "function") {
     await playDevicePronunciation(text, button, session);
     return;
   }
   markPronunciationButton(button, true);
   const recordingDeadline = pronunciationNow() + PRONUNCIATION_CONFIG.recordingBudgetMs;
-  const providers = pronunciationPreferences.source === "auto" ? ["dictionary", "commons"] : [pronunciationPreferences.source];
+  const providers = pronunciationPreferences.source === "auto" ? ["gstatic", "dictionary", "commons"] : [pronunciationPreferences.source];
   const attempted = new Set();
   let attempts = 0;
   for (const provider of providers) {
     if (session !== state.audioSession) return;
     if (pronunciationBudgetRemaining(recordingDeadline) <= 0 || attempts >= PRONUNCIATION_CONFIG.maxRecordingAttempts) break;
-    const label = provider === "commons" ? "Wikimedia Commons" : "Free Dictionary API";
+    if (provider !== "gstatic" && (typeof fetch !== "function" || typeof AbortController !== "function")) continue;
+    const label = provider === "gstatic" ? "Google 靜態字典音檔（美式）" : provider === "commons" ? "Wikimedia Commons" : "Free Dictionary API";
     announceLocalVoiceStatus({ state: "loading", message: `正在查詢 ${label} 公開錄音（免帳號、免 API 金鑰）` });
     try {
       const recordings = await lookupPronunciationRecordings(provider, key, session, recordingDeadline);
       if (session !== state.audioSession) return;
-      for (const recording of recordings.slice(0, PRONUNCIATION_CONFIG.maxRecordingsPerProvider)) {
+      // Reserve an attempt for each provider in automatic mode.
+      const providerLimit = pronunciationPreferences.source === "auto" ? 1 : PRONUNCIATION_CONFIG.maxRecordingsPerProvider;
+      for (const recording of recordings.slice(0, providerLimit)) {
         if (pronunciationBudgetRemaining(recordingDeadline) <= 0) break;
         if (attempted.has(recording.audioUrl) || attempts >= PRONUNCIATION_CONFIG.maxRecordingAttempts) continue;
         attempted.add(recording.audioUrl); attempts += 1;
@@ -380,7 +396,7 @@ async function speakWord(word, button) {
         } catch (error) {
           if (session !== state.audioSession || error?.code === "cancelled") return;
           // Evict the whole provider entry: a future explicit click retries fresh metadata.
-          (provider === "commons" ? commonsRecordingCache : dictionaryRecordingCache).delete(key);
+          if (provider !== "gstatic") (provider === "commons" ? commonsRecordingCache : dictionaryRecordingCache).delete(key);
         }
       }
     } catch (error) {

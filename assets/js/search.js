@@ -38,7 +38,13 @@ function warmSearchIndex(deadline){
   if(!BM25_INDEX.ready&&!bm25WarmScheduled){
     bm25WarmScheduled=true;
     const resume=nextDeadline=>{bm25WarmScheduled=false;warmSearchIndex(nextDeadline)};
-    if(window.requestIdleCallback)window.requestIdleCallback(resume,{timeout:800});
+    if(typeof window.scheduler?.postTask === "function"){
+      // Native priorities let user input precede bounded background indexing.
+      // Feature detection retains idle/timer support on older browsers.
+      try { window.scheduler.postTask(()=>resume(),{priority:"background"}).catch(()=>setTimeout(resume,24)); }
+      catch { setTimeout(resume,24); }
+    }
+    else if(window.requestIdleCallback)window.requestIdleCallback(resume,{timeout:800});
     else setTimeout(resume,24);
   }
 }

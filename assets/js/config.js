@@ -8,6 +8,7 @@ const PRACTICE_KEY = "gsat-v2-collocation-practice-v1";
 const RECENT_SEARCH_KEY = "gsat-v3-recent-searches-v1";
 const REVIEW_KEY = "gsat-v3-review-queue-v1";
 const PRONUNCIATION_CONFIG = Object.freeze({
+  gstaticEndpoint: "https://ssl.gstatic.com/dictionary/static/sounds/oxford/",
   dictionaryEndpoint: "https://api.dictionaryapi.dev/api/v2/entries/en/",
   commonsEndpoint: "https://commons.wikimedia.org/w/api.php",
   preferencesKey: "gsat-pronunciation-preferences-v1",

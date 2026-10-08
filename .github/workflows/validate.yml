@@ -29,16 +29,8 @@ jobs:
       - uses: actions/setup-python@a309ff8b426b58ec0e2a45f0f869d46889d02405 # v6.2.0
         with:
           python-version: '3.12'
-      - name: JavaScript regressions (including retained legacy modules)
-        run: node --test tests/*.cjs
-      - name: Data pipelines and static validator regressions
-        run: python3 -m unittest discover -s tests -p 'test_*.py' -q
-      - name: Generated data is reproducible
-        run: |
-          python3 research/build_exam_notebook.py --check
-          python3 research/build_exam_evidence_index.py --check
-      - name: HTML parity, asset links, hashes, and data counts
-        run: python3 tools/validate_site.py
+      - name: Validate code, curriculum, generated data, and deployable assets
+        run: python3 tools/check_site.py
 
   browser:
     name: Desktop and mobile Chromium
@@ -61,7 +53,4 @@ jobs:
           test -x "$browser_path"
           sudo ln -sf "$browser_path" /usr/bin/chromium
       - name: Local learning, notebook, persistence, and audio fallback
-        run: |
-          python3 tests/browser_builtin.py
-          python3 tests/browser_notebook.py
-          python3 tests/browser_learning.py
+        run: python3 tools/check_site.py --suite browser

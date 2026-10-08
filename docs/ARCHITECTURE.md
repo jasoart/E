@@ -12,6 +12,7 @@ flowchart TD
     UI --> Practice[搭配回想與遮字訂正]
     Practice --> Storage[瀏覽器 localStorage]
     Click[明確發音點擊] --> Audio[錄音來源轉接與逾時控制]
+    Audio --> Gstatic[Google 靜態美式音檔]
     Audio --> Dictionary[Free Dictionary API]
     Audio --> Commons[Wikimedia Commons]
     Audio --> Device[裝置英文語音]
@@ -34,11 +35,11 @@ HTML 使用本機 `defer` 腳本並依序載入：設定 → 靜態資料 → �
 
 搜尋欄位採 `WeakMap` 快取，保留英文單字、字族、中文釋意、搭配與情境文字。BM25 倒排清單只為命中 token 的文件計分，再與字面匹配、既有概念規則透過 reciprocal rank fusion 合併。英文字母拼寫近似使用三列、有距離界限的編輯距離計算，保留相鄰字母交換行為。
 
-閒置建立索引每段以約 4 ms 為預算，至少處理一個詞條；瀏覽器提供 idle callback 時使用其剩餘時間。使用者在索引完成前查詢，仍會同步補齊索引，因此首次查詢成本不可宣稱完全消除。字面及概念比對也仍遍歷詞條；這是目前約六千詞規模下的取捨。量測工具提供無查詢結果快取的 median／p95、索引時間與堆積記憶體，測試確保排序相容；測量結果與限制見 [SEARCH_PERFORMANCE.md](SEARCH_PERFORMANCE.md)。
+閒置建立索引每段以約 4 ms 為預算，至少處理一個詞條；優先使用原生 `scheduler.postTask` 的 background 優先權；不支援時使用 idle callback 的剩餘時間或計時器，排程拒絕亦可退回計時器。使用者在索引完成前查詢，仍會同步補齊索引，因此首次查詢成本不可宣稱完全消除。字面及概念比對也仍遍歷詞條；這是目前約六千詞規模下的取捨。量測工具提供無查詢結果快取的 median／p95、索引時間與堆積記憶體，測試確保排序相容；測量結果與限制見 [SEARCH_PERFORMANCE.md](SEARCH_PERFORMANCE.md)。
 
 ## 發音與故障控制
 
-`audio.js` 在使用者點擊後，依選擇查詢 Free Dictionary API 或 Wikimedia Commons；自動模式按順序使用來源，失敗後回到裝置英文語音。提供口音與來源選擇，並只儲存偏好。錄音使用 HTTPS 來源白名單，附可取得的出處／授權；若口音缺少可靠標記則明說未標示。
+`audio.js` 在使用者點擊後，依選擇嘗試指定 Gstatic 美式靜態音檔、Free Dictionary API 或 Wikimedia Commons；自動模式按順序使用來源，失敗後回到裝置英文語音。提供口音與來源選擇，並只儲存偏好。Gstatic 由固定 HTTPS 前綴與經驗證的詞形組成；其他錄音使用 HTTPS 來源白名單，附可取得的出處／授權，不推定靜態音檔的授權；若口音缺少可靠標記則明說未標示。
 
 查詢與播放各有逾時，整體錄音嘗試有總預算、來源數與次數限制。切詞／停止採會話識別與取消，避免舊查詢晚回覆覆蓋新狀態。錄音 metadata 使用有上限的記憶體快取，播放失敗可在下次明確點擊重查；不預取整份詞表、不自動下載音訊或模型。
 
@@ -52,10 +53,12 @@ HTML 使用本機 `defer` 腳本並依序載入：設定 → 靜態資料 → �
 
 複習沿用已有規則時程，並未訓練個人遺忘曲線、估計記憶機率或實作 FSRS 模型。研究支持的回想、訂正與隔時練習只作為互動設計依據，不能據此宣稱本網站已有實驗證明提分。
 
+情境題庫獨立存於 `assets/data/context-practice.js`，59 題保留永久 `ctx-` ID；`diagnostics.js` 管理題型篩選、10／20／全題回合、中文提示及錯題儲存。預設短回合按能力交錯取題，不重複選取，也不重編舊錯題識別碼。
+
 ## Repository 與驗證
 
 根目錄是唯一維護和部署入口；`index .html` 與 `index.html` 完全一致，舊重複目錄入口導回根目錄。每個本機 HTML 素材 URL 使用 SHA-256 前 12 位作 `v` 參數，避免更新後仍使用舊快取。`tools/validate_site.py --refresh-hashes` 可一次更新兩個入口，並檢查檔案存在、專案相對路徑、manifest 圖示、腳本順序、原詞條 ID 及教材統計。
 
-CI 的 `data-and-code` 工作驗證全部 Node 測試、Python 資料測試、生成結果及靜態素材。`browser` 工作以固定 Playwright／Chromium 測試桌面和手機尺寸、收藏相容、來源展開、回想流程，以及受控的音訊失敗備援。Actions 固定完整 commit SHA、唯讀 `contents` 權限、checkout 不留憑證、限時及重複執行取消；Dependabot 提出 Action／瀏覽器測試依賴更新供審查。
+`tools/check_site.py` 是本機與 CI 共用入口，保留子程序失敗狀態；`--suite core`／`browser`／`all` 選擇範圍。CI 的 `data-and-code` 工作驗證全部 Node 測試、Python 資料測試、生成結果及靜態素材。`browser` 工作以固定 Playwright／Chromium 測試桌面和手機尺寸、收藏相容、來源展開、回想流程，以及受控的音訊失敗備援。Actions 固定完整 commit SHA、唯讀 `contents` 權限、checkout 不留憑證、限時及重複執行取消；Dependabot 提出 Action／瀏覽器測試依賴更新供審查。
 
 工作流程不自動提交資料、不部署、不改動 Pages 設定。本次從已取得原文的 GitHub Well-Architected 與 System Design Primer 採用資料責任分離、驗證、延遲量測和快取取捨。指定的 GitHub agent-scale Git 文章未取得全文，不能聲稱實作了其中的內部 Git 技術；存取紀錄見研究文件。新增大量資料或複雜功能前應重新量測載入、查詢及可存取性需求。

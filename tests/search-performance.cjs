@@ -109,3 +109,23 @@ test('setTimeout fallback also bounds warm-up when requestIdleCallback is absent
   assert.equal(e.run('bm25Cursor'), 2);
   assert.equal(scheduled.length, 1);
 });
+
+test('native background scheduling bounds work and leaves only one continuation', async () => {
+  const tasks = []; let time = 0;
+  const e = environment(undefined, {performance: {now: () => (time += 5)}, scheduler: {postTask(callback, options) {
+    assert.equal(options.priority, 'background'); tasks.push(callback); return Promise.resolve();
+  }}});
+  e.run('warmSearchIndex()');
+  assert.equal(e.run('bm25Cursor'), 1); assert.equal(tasks.length, 1);
+  e.run('warmSearchIndex()'); assert.equal(tasks.length, 1);
+  tasks.shift()(); assert.equal(e.run('bm25Cursor'), 3); assert.equal(tasks.length, 1);
+  e.run('ensureBm25Index()'); tasks.shift()(); assert.equal(tasks.length, 0);
+});
+test('rejected native scheduler falls back to bounded timer work', async () => {
+  const tasks = []; let time = 0;
+  const e = environment(undefined, {performance: {now: () => (time += 5)}, setTimeout: callback => tasks.push(callback),
+    scheduler: {postTask: () => Promise.reject(new Error('Unavailable'))}});
+  e.run('warmSearchIndex()'); await new Promise(resolve => setImmediate(resolve));
+  assert.equal(tasks.length, 1); tasks.shift()();
+  assert.equal(e.run('bm25Cursor'), 2);
+});

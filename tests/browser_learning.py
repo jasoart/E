@@ -132,6 +132,41 @@ def main():
             assert page.locator('#audioSourceLink').is_hidden()
             outcomes.append('controlled Commons fixture plays through browser and shows recording-specific attribution/license')
 
+            # Gstatic success uses a controlled waveform, not a claim about live CDN availability.
+            gstatic_url = 'https://ssl.gstatic.com/dictionary/static/sounds/oxford/challenge--_us_1.mp3'
+            page.route(gstatic_url, lambda route: (external.append(route.request.url), route.fulfill(status=200, content_type='audio/wav', body=audio.getvalue())))
+            page.locator('#pronunciationSource').select_option('auto')
+            before = len(external)
+            page.locator('#speakButton').click()
+            page.wait_for_function("localVoiceStatus().source === 'gstatic' && ['playing','ready'].includes(localVoiceStatus().state)")
+            assert external[before:] == [gstatic_url]
+            assert page.locator('#audioSourceLink').get_attribute('href') == gstatic_url
+            assert page.locator('#audioLicenseLink').is_hidden()
+            assert '美式' in page.locator('#audioStatus').inner_text()
+            page.locator('#stopLocalVoiceButton').click()
+            outcomes.append('controlled Gstatic direct media, exact US URL, source link and no invented license')
+
+            # Short category sessions keep legacy mistakes and hide translations until requested.
+            page.evaluate("localStorage.setItem(GSAT_DIAG_KEY, '{}')")
+            page.locator('#diagnosticCategory').select_option('詞性轉換')
+            page.locator('#diagnosticStart').click()
+            assert page.evaluate('gsatDiagnosticSession.length') == 6
+            assert not page.locator('.diagnostic-hint .practice-meaning').is_visible()
+            page.locator('.diagnostic-hint summary').click()
+            assert page.locator('.diagnostic-hint .practice-meaning').is_visible()
+            q = page.evaluate('gsatDiagnosticSession[0]')
+            page.locator(f'[data-option="{(q["answer"] + 1) % 4}"]').click()
+            assert q['explanation'] in page.locator('.diagnostic-explain').inner_text()
+            assert page.evaluate('diagnosticWrongCount()') == 1
+            page.locator('#diagnosticReview').click()
+            assert page.evaluate('gsatDiagnosticSession.length') == 1
+            page.locator(f'[data-option="{q["answer"]}"]').click()
+            assert page.evaluate('diagnosticWrongCount()') == 0
+            page.locator('#diagnosticCategory').select_option('')
+            page.locator('#diagnosticStart').click()
+            assert page.evaluate('gsatDiagnosticSession.length') == 10
+            outcomes.append('category selection, ten-question sessions, optional hints, feedback and correct-only mistake removal')
+
             for width in (390, 320):
                 page.set_viewport_size({'width': width, 'height': 844})
                 assert page.evaluate('document.documentElement.scrollWidth <= innerWidth'), width
@@ -140,6 +175,7 @@ def main():
                 page.locator('.retrieval-exit').click()
                 assert page.locator('#notebookSenses .original-meaning-text').is_visible()
             page.screenshot(path='/tmp/e-learning-320.png', full_page=True)
+            page.locator('.diagnostic-panel').screenshot(path='/tmp/e-diagnostic-320.png')
             assert not errors, errors
             assert not failed_local, failed_local
             browser.close()

@@ -38,13 +38,13 @@ document.addEventListener("localvoicestatus",event=>{
   const status=event.detail,host=byId("audioStatus"),sourceLink=byId("audioSourceLink"),licenseLink=byId("audioLicenseLink"),attribution=byId("audioAttribution");
   if(host){host.textContent=status.message;host.dataset.source=status.source||"none";}
   if(sourceLink){
-    const url=["dictionary","commons"].includes(status.source)?safePronunciationSourceUrl(status.sourceUrl):"";
+    const url=["gstatic","dictionary","commons"].includes(status.source)?safePronunciationSourceUrl(status.sourceUrl):"";
     sourceLink.hidden=!url;
     if(url){sourceLink.href=url;sourceLink.textContent=`錄音出處${status.licenseName?" · "+status.licenseName:""}`;}
     else sourceLink.removeAttribute("href");
   }
   if(licenseLink){
-    const url=["dictionary","commons"].includes(status.source)?safePronunciationSourceUrl(status.licenseUrl):"";
+    const url=["gstatic","dictionary","commons"].includes(status.source)?safePronunciationSourceUrl(status.licenseUrl):"";
     licenseLink.hidden=!url;
     if(url){licenseLink.href=url;licenseLink.textContent=status.licenseName||"錄音授權";}
     else licenseLink.removeAttribute("href");

@@ -16,7 +16,7 @@ STARTUP_SCRIPTS = (
     "assets/data/exam-notebook.js", "assets/data/exam-evidence-index.js", "assets/js/exam-notes.js",
     "assets/js/state.js", "assets/js/builtin.js", "assets/js/search.js", "assets/js/examples.js",
     "assets/js/audio.js", "assets/js/retrieval-practice.js", "assets/js/ui.js", "assets/js/favorites.js",
-    "assets/js/online.js", "assets/js/diagnostics.js", "assets/js/local-coach.js", "assets/js/app.js",
+    "assets/js/online.js", "assets/data/context-practice.js", "assets/js/diagnostics.js", "assets/js/local-coach.js", "assets/js/app.js",
 )
 
 

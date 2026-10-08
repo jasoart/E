@@ -8,7 +8,8 @@
 2. 遵守原詞條 ID。原詞表的完整釋意在詞性與多重字義欄直接顯示；新編字義屬於補充，不得用短釋意取代或刪除原文。原教材的簡要說明與上傳 Anki 的原釋意也需完整保留並顯示。
 3. 搭配須符合對應字義、詞性及介系詞；近義字與慣用語須說明適用語境，不宣稱可在所有句子互換。字族不是同義字清單；不確定的形態請查核後再加入。
 4. 自編例句標為自編，不稱為試卷原文。新增試卷出處需記錄年份、題組、紙本／PDF 頁碼與短摘錄；題目選項不等於已核對的官方答案。
-5. 修改資料後執行相應生成器，並核對生成差異。保留教材授權、資料來源及已知限制。
+5. 情境題庫直接維護 `assets/data/context-practice.js`，既有 `ctx-001` 等 ID 永久保留。每題提供四個互異選項、唯一最合適答案、中文提示與解釋；新增題目使用新 ID，不把中文提示預先當成答案顯示。
+6. 修改資料後執行相應生成器，並核對生成差異。保留教材授權、資料來源及已知限制。
 
 ```sh
 python3 research/build_exam_notebook.py
@@ -21,7 +22,7 @@ python3 research/build_exam_evidence_index.py
 
 依 [啟動順序](docs/ARCHITECTURE.md) 修改 `assets/js/`，確保收藏及複習的舊儲存 key 相容。新練習使用獨立版本 key；資料解析需容忍損壞、儲存空間不足與瀏覽器停用儲存。顯示教材與輸入文字時使用既有跳脫函式。
 
-單字錄音只由明確播放動作查詢；句子使用裝置語音。新增來源需提供可核對的錄音與授權資訊，限制來源 URL、逾時、快取與重試數，並驗證切換單字會取消舊播放。不得把教授的講義、音標詞典或出版社查字連結稱為可直接串接的錄音 API。
+單字錄音只由明確播放動作查詢；句子使用裝置語音。新增來源需標明可核對的錄音出處；只有來源明確提供錄音授權時才顯示授權，不能推定，限制來源 URL、逾時、快取與重試數，並驗證切換單字會取消舊播放。不得把教授的講義、音標詞典或出版社查字連結稱為可直接串接的錄音 API。
 
 `index .html` 是相容入口，必須與 `index.html` 完全一致。更新網站素材後刷新兩個 HTML 的內容雜湊，再檢查所有引用：
 
@@ -34,15 +35,10 @@ python3 tools/validate_site.py --refresh-hashes
 ## 提交前驗證
 
 ```sh
-node --test tests/*.cjs
-python3 -m unittest discover -s tests -p 'test_*.py' -q
-python3 research/build_exam_notebook.py --check
-python3 research/build_exam_evidence_index.py --check
-python3 tools/validate_site.py
-python3 tests/browser_builtin.py
-python3 tests/browser_notebook.py
-python3 tests/browser_learning.py
+python3 tools/check_site.py --suite all
 ```
+
+`tools/check_site.py` 預設執行核心檢查，`--suite browser` 只執行瀏覽器，`--suite all` 執行全部；任何子程序失敗均回傳非零狀態。CI 與本機使用相同入口。
 
 瀏覽器測試使用 Python 3.12、`.github/requirements-browser.txt` 的固定 Playwright 版本及 `/usr/bin/chromium`。GitHub Actions 安裝對應 Chromium；本機需準備同一路徑。測試會啟動並關閉自己的本機伺服器。聽辨品質與 iPhone 實機需要另行驗證，模擬失敗備援不能證明外站一直可用。
 

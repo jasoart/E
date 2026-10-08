@@ -29,6 +29,7 @@ function environment(options = {}) {
     load() { this.loaded = true; }
     play() {
       this.playCount++;
+      if (options.failGstatic && this.src.includes('ssl.gstatic.com')) return Promise.reject(new Error('Static file missing'));
       if (options.audioResult) return options.audioResult(this, audio.length);
       if (options.audioMode === 'reject') return Promise.reject(new Error('Media unavailable'));
       if (options.audioMode === 'hang') return new Promise(() => {});
@@ -47,7 +48,9 @@ function environment(options = {}) {
     addEventListener(name, fn) { listeners.set(name, fn); },
     removeEventListener(name, fn) { if (listeners.get(name) === fn) listeners.delete(name); },
   };
-  const storage = new Map(options.storedPreferences ? [['gsat-pronunciation-preferences-v1', options.storedPreferences]] : []);
+  // Existing metadata-provider tests select dictionary explicitly; default-provider tests opt into empty storage.
+  const stored = options.storedPreferences ?? (options.auto ? null : JSON.stringify({source: 'dictionary'}));
+  const storage = new Map(stored ? [['gsat-pronunciation-preferences-v1', stored]] : []);
   const window = { Audio: FakeAudio, SpeechSynthesisUtterance: function(text) { this.text = text; }, speechSynthesis: synthesis,
     localStorage: { getItem: key => storage.get(key), setItem(key, value) { if (options.storageThrows) throw new Error('Storage denied'); storage.set(key, value); } } };
   if (options.noSpeech) { delete window.speechSynthesis; delete window.SpeechSynthesisUtterance; }
@@ -144,9 +147,9 @@ test('audio URL checks accept only HTTPS allowlisted hosts without embedded cred
   assert.equal(e.run("safeDictionaryAudioUrl('//upload.wikimedia.org/example.ogg')"), 'https://upload.wikimedia.org/example.ogg');
 });
 test('a hanging lookup times out, aborts the request, and falls back once', async () => {
-  const e = environment({ fetch: async () => new Promise(() => {}) });
+  const e = environment({ auto: true, failGstatic: true, fetch: async () => new Promise(() => {}) });
   const work = e.run("speakWord('study', primaryButton)"); await tick(); e.runTimers(3500); await tick(); e.runTimers(3500); await work;
-  assert.equal(e.requests[0].init.signal.aborted, true); assert.equal(e.spoken.length, 1); assert.equal(e.audio.length, 0);
+  assert.equal(e.requests[0].init.signal.aborted, true); assert.equal(e.spoken.length, 1); assert.equal(e.audio.length, 1);
   assert.equal(e.requests.length, 2); assert.ok(e.requests.every(request => request.init.signal.aborted));
   e.run('stopPronunciation()'); assert.equal(e.timers.size, 0);
 });
@@ -221,16 +224,16 @@ test('empty and oversized input cannot fetch audio or cancel currently playing a
 });
 
 test('automatic fallback uses independently validated Commons metadata and exposes recording attribution', async () => {
-  const e = environment({ fetch: async url => ({ ok: true, json: async () => url.includes('dictionaryapi.dev') ? [] : commonsRecording('study') }) });
+  const e = environment({ auto: true, failGstatic: true, fetch: async url => ({ ok: true, json: async () => url.includes('dictionaryapi.dev') ? [] : commonsRecording('study') }) });
   await e.run("speakWord('study', primaryButton)");
-  assert.equal(e.requests.length, 2); assert.equal(e.audio.length, 1); assert.equal(e.spoken.length, 0);
+  assert.equal(e.requests.length, 2); assert.equal(e.audio.length, 2); assert.equal(e.spoken.length, 0);
   const url = new URL(e.requests[1].url);
   assert.equal(url.hostname, 'commons.wikimedia.org'); assert.equal(url.searchParams.get('origin'), '*');
   assert.equal(url.searchParams.get('titles').split('|').length, 6); assert.equal(url.searchParams.has('redirects'), false);
   assert.ok(url.searchParams.get('titles').split('|').every(title => /^File:En-(?:us-|uk-)?study\.(?:ogg|mp3)$/.test(title)));
   assert.equal(e.run('localVoiceStatus().source'), 'commons'); assert.equal(e.run('localVoiceStatus().attribution'), 'Example Reader');
   assert.equal(e.run('localVoiceStatus().licenseName'), 'CC BY-SA 3.0');
-  assert.equal(e.audio[0].playbackRate, 0.82); assert.equal(e.audio[0].preservesPitch, true);
+  assert.equal(e.audio[1].playbackRate, 0.82); assert.equal(e.audio[1].preservesPitch, true);
   assert.equal(e.run('localVoiceStatus().accentCode'), 'en-US');
   await e.run("speakWord('study', primaryButton)");
   assert.equal(e.requests.filter(item => item.url.includes('commons.wikimedia.org')).length, 1);
@@ -321,7 +324,7 @@ test('failed first recording tries another verified recording before using the d
 });
 
 test('recording retries are deduplicated and bounded across providers', async () => {
-  const e = environment({ audioMode: 'reject', fetch: async url => ({ ok: true, json: async () => url.includes('dictionaryapi.dev') ? [{ word: 'study', phonetics: [
+  const e = environment({ auto: true, failGstatic: true, audioMode: 'reject', fetch: async url => ({ ok: true, json: async () => url.includes('dictionaryapi.dev') ? [{ word: 'study', phonetics: [
     ...recording('study')[0].phonetics, ...recording('study')[0].phonetics,
     { audio: 'https://api.dictionaryapi.dev/media/pronunciations/en/study-uk.mp3' }, { audio: 'https://api.dictionaryapi.dev/media/study.mp3' }
   ] }] : commonsRecording('study') }) });
@@ -332,20 +335,20 @@ test('recording retries are deduplicated and bounded across providers', async ()
 
 test('failed metadata lookups are retried by later clicks instead of being cached as missing forever', async () => {
   let available = false;
-  const e = environment({ fetch: async () => { if (!available) throw new Error('Temporary failure'); return { ok: true, json: async () => recording('study') }; } });
+  const e = environment({ auto: true, failGstatic: true, fetch: async () => { if (!available) throw new Error('Temporary failure'); return { ok: true, json: async () => recording('study') }; } });
   await e.run("speakWord('study', primaryButton)"); assert.equal(e.spoken.length, 1); assert.equal(e.requests.length, 2);
   available = true; await e.run("speakWord('study', primaryButton)");
-  assert.equal(e.audio.length, 1); assert.equal(e.requests.length, 3); assert.equal(e.run('localVoiceStatus().source'), 'dictionary');
+  assert.equal(e.audio.length, 3); assert.equal(e.requests.length, 3); assert.equal(e.run('localVoiceStatus().source'), 'dictionary');
 });
 
 test('changing preferences cancels a pending Commons request and discards its late response', async () => {
   let deliver;
-  const e = environment({ fetch: async url => url.includes('dictionaryapi.dev') ? { ok: true, json: async () => [] } : new Promise(resolve => { deliver = resolve; }) });
+  const e = environment({ auto: true, failGstatic: true, fetch: async url => url.includes('dictionaryapi.dev') ? { ok: true, json: async () => [] } : new Promise(resolve => { deliver = resolve; }) });
   const work = e.run("speakWord('study', primaryButton)"); await tick();
   assert.equal(e.requests.length, 2); e.run("setPronunciationPreferences({source:'device'})"); await work;
   assert.equal(e.requests[1].init.signal.aborted, true);
   deliver({ ok: true, json: async () => commonsRecording('study') }); await tick();
-  assert.equal(e.audio.length, 0); assert.equal(e.spoken.length, 0); assert.equal(e.timers.size, 0);
+  assert.equal(e.audio.length, 1); assert.equal(e.spoken.length, 0); assert.equal(e.timers.size, 0);
   assert.equal(e.run('localVoiceStatus().state'), 'idle'); assert.equal(e.run('commonsRecordingCache.size'), 0);
 });
 
@@ -365,7 +368,7 @@ test('one speech completion cannot overwrite a previous error or report an error
 });
 
 test('all recording retries share one deadline before local fallback, including stalled started media', async () => {
-  const e = environment({ audioMode: 'hang', fetch: async url => ({ ok: true, json: async () => url.includes('dictionaryapi.dev') ? [{ word: 'study', phonetics: [
+  const e = environment({ auto: true, audioMode: 'hang', fetch: async url => ({ ok: true, json: async () => url.includes('dictionaryapi.dev') ? [{ word: 'study', phonetics: [
     ...recording('study')[0].phonetics, { audio: 'https://api.dictionaryapi.dev/media/pronunciations/en/study-uk.mp3' }
   ] }] : commonsRecording('study') }) });
   const work = e.run("speakWord('study', primaryButton)"); await tick();
@@ -383,8 +386,8 @@ test('all recording retries share one deadline before local fallback, including 
 });
 
 test('a slow final metadata provider receives only the remaining recording budget', async () => {
-  const e = environment({ audioMode: 'hang', fetch: async url => url.includes('dictionaryapi.dev') ? { ok: true, json: async () => [{ word: 'study', phonetics: [
-    ...recording('study')[0].phonetics, { audio: 'https://api.dictionaryapi.dev/media/pronunciations/en/study-uk.mp3' }
+  const e = environment({ auto: true, audioMode: 'hang', fetch: async url => url.includes('dictionaryapi.dev') ? { ok: true, json: async () => [{ word: 'study', phonetics: [
+    ...recording('study')[0].phonetics
   ] }] } : new Promise(() => {}) });
   const work = e.run("speakWord('study', primaryButton)"); await tick();
   e.runTimers(5000); await tick(); e.runTimers(5000); await tick();
@@ -400,4 +403,51 @@ test('positive metadata caches retain recently reused entries and remain bounded
   await e.run("speakWord('study', primaryButton)"); await e.run("speakWord('challenge', primaryButton)");
   assert.equal(e.requests.length, 2); assert.equal(e.run('dictionaryRecordingCache.size'), 128);
   assert.equal(e.run("dictionaryRecordingCache.has('study')"), true); assert.equal(e.run("dictionaryRecordingCache.has('fixture0')"), false);
+});
+
+test('fresh preferences use the exact Gstatic US pattern without metadata requests or inferred license', async () => {
+  const e = environment({auto: true});
+  assert.equal(e.run('getPronunciationPreferences().source'), 'auto');
+  await e.run("speakWord(' CHALLENGE\\n', primaryButton)");
+  assert.equal(e.requests.length, 0); assert.equal(e.audio.length, 1);
+  const status = e.run('localVoiceStatus()');
+  assert.equal(status.source, 'gstatic');
+  assert.equal(status.audioUrl, 'https://ssl.gstatic.com/dictionary/static/sounds/oxford/challenge--_us_1.mp3');
+  assert.equal(status.sourceUrl, status.audioUrl); assert.equal(status.accentCode, 'en-US');
+  assert.equal(status.licenseName, ''); assert.equal(status.licenseUrl, '');
+  assert.equal(e.timers.size, 0);
+});
+test('Gstatic builders reject placeholders, URL injection, malformed words and sentences', () => {
+  const e = environment({auto: true});
+  for (const value of ['', '【單字】', '../study', 'study?x=1', 'study#hash', 'https://evil.example/a', 'two words', 'study\n', 'a'.repeat(65)]) {
+    e.context.value = value; assert.equal(e.run('gstaticPronunciationRecording(value)'), null, value);
+  }
+  assert.equal(e.run("new URL(gstaticPronunciationRecording('well-being').audioUrl).hostname"), 'ssl.gstatic.com');
+  assert.equal(e.requests.length, 0); assert.equal(e.audio.length, 0);
+});
+test('a missing Gstatic recording falls back to dictionary on the same explicit click', async () => {
+  const e = environment({auto: true, failGstatic: true});
+  await e.run("speakWord('study', primaryButton)");
+  assert.equal(e.audio.length, 2); assert.equal(e.requests.length, 1);
+  assert.equal(e.run('localVoiceStatus().source'), 'dictionary'); assert.equal(e.spoken.length, 0);
+  assert.ok(e.audio[0].loaded && e.audio[0].pauseCount > 0 && !e.audio[0].src);
+});
+test('explicit Gstatic stays US, persists without fetching, and fails directly to device', async () => {
+  const e = environment({failGstatic: true});
+  e.run("setPronunciationPreferences({source:'gstatic',accent:'en-GB',rate:0.7})");
+  assert.equal(e.audio.length, 0); assert.equal(e.requests.length, 0);
+  assert.equal(JSON.parse(e.storage.get('gsat-pronunciation-preferences-v1')).source, 'gstatic');
+  assert.equal(e.run("gstaticPronunciationRecording('study').accentCode"), 'en-US');
+  await e.run("speakWord('study', primaryButton)");
+  assert.equal(e.audio.length, 1); assert.equal(e.requests.length, 0); assert.equal(e.spoken.length, 1);
+  assert.equal(e.run('localVoiceStatus().source'), 'device');
+});
+test('Gstatic direct media works without fetch or AbortController and cancellation prevents late fallback', async () => {
+  const e = environment({auto: true, audioMode: 'hang'});
+  e.run('fetch=undefined;AbortController=undefined');
+  const work = e.run("speakWord('study', primaryButton)"); await tick();
+  assert.equal(e.audio.length, 1); const lateError = e.audio[0].onerror;
+  e.run('stopPronunciation()'); await work; lateError(); await tick();
+  assert.equal(e.requests.length, 0); assert.equal(e.spoken.length, 0);
+  assert.equal(e.run('localVoiceStatus().state'), 'idle'); assert.equal(e.timers.size, 0);
 });
