@@ -2,6 +2,7 @@
 from functools import partial
 import http.server
 import json
+import os
 from pathlib import Path
 import threading
 from playwright.sync_api import sync_playwright
@@ -22,7 +23,7 @@ def main():
     try:
         with sync_playwright() as playwright:
             browser = playwright.chromium.launch(
-                executable_path="/usr/bin/chromium",
+                executable_path=os.environ.get("CHROMIUM_EXECUTABLE", "/usr/bin/chromium"),
                 args=["--no-sandbox", "--disable-dev-shm-usage", "--no-proxy-server"])
             context = browser.new_context(viewport={"width": 390, "height": 844},
                                           is_mobile=True, has_touch=True)

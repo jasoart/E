@@ -14,6 +14,7 @@ document.addEventListener("click",event=>{if(!event.target.closest(".search-wrap
 clearSearch.addEventListener("click",()=>{searchInput.value="";state.query="";clearSearch.hidden=true;searchKey.hidden=false;applyFilters();searchInput.focus();renderSuggestions()});
 byId("allTab").addEventListener("click",()=>setListMode("all"));
 if(byId("notebookTab"))byId("notebookTab").addEventListener("click",()=>setListMode("notebook"));
+byId("notebookSource")?.addEventListener("change",event=>{state.notebookSource=event.target.value;applyFilters();});
 byId("examTab").addEventListener("click",()=>setListMode("exam"));
 byId("collocationTab").addEventListener("click",()=>setListMode("collocations"));
 byId("reviewTab").addEventListener("click",()=>setListMode("review"));
@@ -33,6 +34,7 @@ const builtinStats=builtinStudyStats();
 const notebookCounts=typeof notebookStats==="function"?notebookStats():{words:0,examples:0,collocations:0,supplemental:Math.max(0,VOCABULARY.length-officialWordCount)};
 for(const [id,value] of [["builtinWordCount",builtinStats.words],["builtinExampleCount",builtinStats.examples],["builtinCollocationCount",builtinStats.collocations]])if(byId(id))byId(id).textContent=value.toLocaleString();
 for(const [id,value] of [["supplementalCount",notebookCounts.supplemental],["notebookWordCount",notebookCounts.words],["notebookTabCount",notebookCounts.listedWords??notebookCounts.words],["notebookCollocationCount",notebookCounts.collocations]])if(byId(id))byId(id).textContent=Number(value||0).toLocaleString();
+for(const [id,value] of [["notebookCuratedCount",notebookCounts.curatedWords],["notebookGuidedCount",notebookCounts.guidedWords]])if(byId(id))byId(id).textContent=Number(value||0).toLocaleString();
 if(byId("headerDataCount"))byId("headerDataCount").textContent=`${officialWordCount.toLocaleString()} 官方詞條 · ${notebookCounts.supplemental.toLocaleString()} 補充詞 · ${builtinStats.examples.toLocaleString()} 內建例句 · ${builtinStats.collocations.toLocaleString()} 內建搭配`;
 document.addEventListener("localvoicestatus",event=>{
   const status=event.detail,host=byId("audioStatus"),sourceLink=byId("audioSourceLink"),licenseLink=byId("audioLicenseLink"),attribution=byId("audioAttribution");

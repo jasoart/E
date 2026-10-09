@@ -111,8 +111,8 @@ test('released notebook coverage is reachable and the displayed totals match its
   const e = environment();
   const result = JSON.parse(e.run(`JSON.stringify((()=>{
     const notes=Object.values(GSAT_EXAM_NOTEBOOK.entries||{});
-    const reachable=new Set(VOCABULARY.map(getExamNotebook).filter(Boolean));
-    return {heads:notes.length,reachable:reachable.size,listedWords:VOCABULARY.filter(entry=>getExamNotebook(entry)).length,
+    const reachable=new Set(VOCABULARY.map(getCuratedExamNotebook).filter(Boolean));
+    return {heads:notes.length,reachable:reachable.size,listedWords:VOCABULARY.filter(entry=>getCuratedExamNotebook(entry)).length,
       chunks:notes.reduce((sum,note)=>sum+(note.collocations?.length||0),0),
       examples:notes.reduce((sum,note)=>sum+(note.examples?.length||0),0),
       stats:notebookStats(), missing:notes.filter(note=>!reachable.has(note)).length};
@@ -122,10 +122,10 @@ test('released notebook coverage is reachable and the displayed totals match its
   assert.ok(result.examples >= 400, `Only ${result.examples} authored examples`);
   assert.equal(result.missing, 0, 'Curated entries must be reachable through actual vocabulary IDs');
   assert.equal(result.reachable, result.heads);
-  assert.equal(result.stats.words, result.heads);
-  assert.equal(result.stats.listedWords, result.listedWords);
-  assert.equal(result.stats.collocations, result.chunks);
-  assert.equal(result.stats.examples, result.examples);
+  assert.equal(result.stats.words, e.run("VOCABULARY.length"));
+  assert.equal(result.stats.curatedWords, result.listedWords);
+  assert.ok(result.stats.collocations >= result.chunks);
+  assert.ok(result.stats.authoredExamples >= result.examples);
   assert.equal(result.stats.supplemental, e.run('VOCABULARY.length-GSAT_OFFICIAL_VOCABULARY_COUNT'));
 });
 
@@ -134,7 +134,7 @@ test('every released replacement example can be practiced for its actual target 
   const result = JSON.parse(e.run(`JSON.stringify((()=>{
     const failures=[]; let checked=0,supplemental=0;
     for(const entry of VOCABULARY){
-      const note=getExamNotebook(entry); if(!note?.examples?.length)continue;
+      const note=getCuratedExamNotebook(entry); if(!note?.examples?.length)continue;
       for(const example of builtinExampleResult(entry).examples){
         checked++; if(entry.supplemental)supplemental++;
         const question=builtinClozeQuestion(entry,example);

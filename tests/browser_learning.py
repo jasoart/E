@@ -3,6 +3,7 @@ from functools import partial
 import http.server
 import io
 import json
+import os
 from pathlib import Path
 import threading
 import wave
@@ -24,7 +25,7 @@ def main():
     outcomes = []
     try:
         with sync_playwright() as playwright:
-            browser = playwright.chromium.launch(executable_path='/usr/bin/chromium', args=['--no-sandbox', '--disable-dev-shm-usage'])
+            browser = playwright.chromium.launch(executable_path=os.environ.get('CHROMIUM_EXECUTABLE', '/usr/bin/chromium'), args=['--no-sandbox', '--disable-dev-shm-usage'])
             context = browser.new_context(viewport={'width': 1280, 'height': 900})
             context.add_init_script("localStorage.setItem('gsat-standalone-favorites-v1', '[\"challenge\",\"legacy-word\"]');")
             page = context.new_page()

@@ -18,6 +18,8 @@ python3 research/build_exam_evidence_index.py
 
 上傳 PDF 可用 `python3 research/verify_uploaded_exams.py --pdf-dir <PDF目錄>` 核對。私人上傳檔案與本機絕對路徑不應加入 repository；CI 使用已提交的資料、索引與生成器。
 
+全詞表 V2 的導讀規則維護於 `assets/js/exam-notes.js`；請保留 `getCuratedExamNotebook` 與 `getExamNotebook` 的資料範圍差異。原卡句不能標成自編，整句回想不能計為獨立搭配，詞形觀察不能標成未核對的衍生字。全量測試見 `tests/notebook-all-words.cjs`。
+
 ## 修改程式
 
 依 [啟動順序](docs/ARCHITECTURE.md) 修改 `assets/js/`，確保收藏及複習的舊儲存 key 相容。新練習使用獨立版本 key；資料解析需容忍損壞、儲存空間不足與瀏覽器停用儲存。顯示教材與輸入文字時使用既有跳脫函式。
