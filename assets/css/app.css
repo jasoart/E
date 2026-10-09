@@ -138,3 +138,28 @@
 .row-notebook,.row-supplement{display:inline-block;border-radius:5px;font-size:8px;font-weight:900;padding:3px 5px;line-height:1.2}.row-notebook{background:#e8f2e8;color:#285642}.row-supplement{background:#f5e6d6;color:#80532f}
 .notebook-evidence-record .evidence-teaching-note{display:block;margin:8px 0;font-size:11px;line-height:1.75;color:var(--muted)}.evidence-teaching-note code{white-space:normal}
 @media(max-width:640px){.pronunciation-controls{display:block}.pronunciation-controls>div{margin-top:10px}.notebook-relation{grid-template-columns:1fr}.notebook-intro{padding:15px}.notebook-field.study-card{padding:16px}.notebook-sense h3{font-size:16px}.family-item{grid-template-columns:1fr auto}.family-item>span:last-child{grid-column:1/-1}.notebook-navigation a{padding:6px 8px}.notebook-field>.kicker{font-size:11px}.phonetic{flex-wrap:wrap}.pronunciation-details{max-width:100%}}
+
+/* V2 teaching flow applies to every word, including source-guided notes. */
+.notebook-roadmap{margin-top:18px;padding:18px 20px;background:#f2f6f3;border:1px solid #d8e4dc;border-radius:14px;color:#24483d;line-height:1.8}
+.notebook-roadmap>strong{display:block;font-size:17px;margin-top:7px}
+.notebook-roadmap ol{padding-left:22px;margin:10px 0}.notebook-roadmap li+li{margin-top:5px}
+.notebook-coverage{display:inline-block;background:#214e3d;color:#fff;font-size:11px;padding:2px 9px;border-radius:20px;letter-spacing:.04em}
+.notebook-contrast{margin:12px 0;padding:15px;border-left:3px solid #98b1a4;background:#f8faf8;border-radius:0 10px 10px 0}
+.notebook-contrast p{line-height:1.85;margin:6px 0;overflow-wrap:anywhere}
+.notebook-observed-forms{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0}
+.notebook-observed-forms code{background:#edf4ef;padding:5px 10px;border-radius:6px;overflow-wrap:anywhere}
+.notebook-sentence-guide{border-top:1px solid #dce7df;border-bottom:1px solid #dce7df;padding:11px 0;margin:12px 0;line-height:1.8}
+.notebook-sentence-guide summary{cursor:pointer;color:#315c48;font-weight:600}
+.notebook-sentence-guide p{margin:8px 0;overflow-wrap:anywhere}
+.notebook-sentence-guide code{white-space:normal;line-height:1.8}
+.notebook-lexical{margin:18px 0 0;padding:13px 15px;border:1px solid #d9e4dd;background:#f7faf8;border-radius:12px;font-size:12px;line-height:1.75}
+.notebook-lexical summary{cursor:pointer;font-weight:750;color:#275442}
+.notebook-lexical-items{margin-top:12px}.notebook-lexical-items .card-note{margin:9px 0}
+.notebook-dictionary-sense{display:grid;grid-template-columns:auto minmax(0,1fr);gap:10px;padding:10px 0;border-top:1px solid #dce9df}
+.notebook-dictionary-sense p{font-size:13px;line-height:1.7;margin:0;overflow-wrap:anywhere}
+.notebook-dictionary-sense small{display:block;color:var(--muted);line-height:1.7;margin-top:5px;overflow-wrap:anywhere}
+.notebook-dictionary-sense code{font-size:12px;white-space:normal}
+.notebook-source-filter:not([hidden]){display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-top:14px;font-size:14px}
+.notebook-source-filter select{padding:9px 12px;border:1px solid #c9d8ce;border-radius:8px;background:#fff;color:#17352d;max-width:100%}
+.context-pattern code{white-space:normal;line-height:1.8}
+@media(max-width:540px){.notebook-roadmap{padding:15px}.notebook-contrast{padding:12px}.notebook-roadmap li{font-size:14px}}

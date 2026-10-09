@@ -4,9 +4,9 @@
 
 ## 修改教材
 
-1. 五欄筆記修改 `research/exam_notebook.json`，不要直接編輯生成的 `assets/data/exam-notebook.js`。每詞至少四組雙語搭配、兩句含目標詞的自編情境句；句子需附翻譯、文法提示、作文用法與主題。
+1. 五欄筆記修改 `research/exam_notebook.json`；功能詞及這批補充詞修改 `research/function_word_notes.json`，不要直接編輯生成的 `assets/data/exam-notebook.js`。一般詞每詞至少四組雙語搭配；`kind: grammar` 詞每詞至少四組雙語 `grammarPatterns`，不填入 `collocations`。兩類都需至少兩句含目標詞的自編情境句；句子需附翻譯、文法提示、作文用法與主題。
 2. 遵守原詞條 ID。原詞表的完整釋意在詞性與多重字義欄直接顯示；新編字義屬於補充，不得用短釋意取代或刪除原文。原教材的簡要說明與上傳 Anki 的原釋意也需完整保留並顯示。
-3. 搭配須符合對應字義、詞性及介系詞；近義字與慣用語須說明適用語境，不宣稱可在所有句子互換。字族不是同義字清單；不確定的形態請查核後再加入。
+3. 搭配須符合對應字義、詞性及介系詞；近義字與慣用語須說明適用語境，不宣稱可在所有句子互換。`forms` 用於代名詞、拼法與單複數形式，與 `family` 的派生字族分開；`references` 記錄可核對的 HTTPS 詞典／文法來源。字族不是同義字清單；不確定的形態請查核後再加入。
 4. 自編例句標為自編，不稱為試卷原文。新增試卷出處需記錄年份、題組、紙本／PDF 頁碼與短摘錄；題目選項不等於已核對的官方答案。
 5. 情境題庫直接維護 `assets/data/context-practice.js`，既有 `ctx-001` 等 ID 永久保留。每題提供四個互異選項、唯一最合適答案、中文提示與解釋；新增題目使用新 ID，不把中文提示預先當成答案顯示。
 6. 修改資料後執行相應生成器，並核對生成差異。保留教材授權、資料來源及已知限制。
@@ -17,6 +17,8 @@ python3 research/build_exam_evidence_index.py
 ```
 
 上傳 PDF 可用 `python3 research/verify_uploaded_exams.py --pdf-dir <PDF目錄>` 核對。私人上傳檔案與本機絕對路徑不應加入 repository；CI 使用已提交的資料、索引與生成器。
+
+全詞表 V2 的導讀規則維護於 `assets/js/exam-notes.js`；請保留 `getCuratedExamNotebook` 與 `getExamNotebook` 的資料範圍差異。原卡句不能標成自編，整句回想不能計為獨立搭配，詞形觀察不能標成未核對的衍生字。全量測試見 `tests/notebook-all-words.cjs`。
 
 ## 修改程式
 

@@ -125,7 +125,7 @@ const result = vm.runInContext(`({
   notebook: GSAT_EXAM_NOTEBOOK.stats,
   computed: {
     headwords: Object.keys(GSAT_EXAM_NOTEBOOK.entries).length,
-    ...Object.fromEntries(['collocations', 'examples', 'senses', 'synonyms', 'idioms', 'family'].map(field => [
+    ...Object.fromEntries(['collocations', 'grammarPatterns', 'examples', 'senses', 'synonyms', 'idioms', 'family', 'forms'].map(field => [
       field, Object.values(GSAT_EXAM_NOTEBOOK.entries).reduce((sum, row) => sum + (row[field] || []).length, 0)
     ]))
   },

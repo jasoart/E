@@ -57,9 +57,12 @@ function retrievalQuestions(entry, progress = readRetrievalProgress()) {
   const word = retrievalText(entry?.word, 100);
   if (!word) return [];
   const records = new Map(progress.map(row => [retrievalQuestionId(row), row])), seen = new Set();
-  return (note?.collocations || []).map((row, index) => {
+  const chunks=(note?.collocations||[]).filter(row=>typeof builtinClozeQuestion!=="function"||builtinClozeQuestion(entry,{text:row.en}));
+  const patterns=(note?.grammarPatterns||[]).filter(row=>typeof builtinClozeQuestion!=="function"||builtinClozeQuestion(entry,{text:row.en})).map(row=>({...row,kind:"pattern"}));
+  const rows=chunks.length?chunks:patterns.length?patterns:(note?.examples||[]).slice(0,2).map(example=>({en:example.text,zh:example.translationZh,note:"以原例句核對語意、詞形與語序；其他合理寫法可自行比較。",kind:"sentence"}));
+  return rows.map((row, index) => {
     const question = {word, chunk: retrievalText(row.en, 240), meaning: retrievalText(row.zh, 240),
-      note: retrievalText(row.note, 600), index};
+      note: retrievalText(row.note, 600), kind:row.kind||"chunk", index};
     question.id = retrievalQuestionId(question);
     return question;
   }).filter(question => {
@@ -79,6 +82,7 @@ function renderRetrievalPractice(entry, host = document.getElementById("retrieva
   RETRIEVAL_HOST_CLEANUP.get(host)?.();
   RETRIEVAL_HOST_CLEANUP.delete(host);
   const initial = retrievalQuestions(entry);
+  const unit=initial[0]?.kind==="sentence"?"例句":initial[0]?.kind==="pattern"?"句型":"搭配";
   host.hidden = !initial.length;
   if (!initial.length) { host.innerHTML = ""; delete host.dataset.phase; return; }
   const escape = value => String(value ?? "").replace(/[&<>"']/g, char => ({"&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#039;"}[char]));
@@ -114,7 +118,7 @@ function renderRetrievalPractice(entry, host = document.getElementById("retrieva
   }
   function renderIdle() {
     phase = "idle"; host.dataset.phase = phase;
-    host.innerHTML = `<h3>先回想，再看筆記</h3><p>用 ${initial.length} 個中文提示回想完整英文搭配。想不起來也可以直接核對，再練一次。</p><button type="button" class="retrieval-start">開始搭配回想</button><p class="retrieval-note">回想時暫時收起下方教材；按 Esc 或結束按鈕即可返回。</p>`;
+    host.innerHTML = `<h3>先回想，再看筆記</h3><p>用 ${initial.length} 個中文提示回想完整英文${unit}。想不起來也可以直接核對，再練一次。</p><button type="button" class="retrieval-start">開始${unit}回想</button><p class="retrieval-note">回想時暫時收起下方教材；按 Esc 或結束按鈕即可返回。</p>`;
     listen(".retrieval-start", "click", () => {
       if (phase !== "idle") return;
       tasks = retrievalQuestions(entry).map(question => ({question, retry: false}));
@@ -125,12 +129,12 @@ function renderRetrievalPractice(entry, host = document.getElementById("retrieva
   function renderPrompt() {
     phase = "prompt"; host.dataset.phase = phase;
     const task = tasks[cursor], question = task.question;
-    host.innerHTML = `<div class="retrieval-session"><p class="retrieval-kicker">${task.retry ? "訂正後再回想" : `搭配回想 ${cursor + 1} / ${initial.length}`}</p><h3 id="retrievalPrompt">${escape(question.meaning)}</h3><p>請用 <strong lang="en">${escape(question.word)}</strong> 寫出一個符合意思的完整搭配。</p><form class="retrieval-form"><label for="retrievalAnswer">你的英文搭配</label><input id="retrievalAnswer" type="text" maxlength="240" autocomplete="off" autocapitalize="none" spellcheck="false" aria-describedby="retrievalPrompt retrievalPromptNote"><div class="retrieval-actions"><button type="submit" class="retrieval-reveal">核對參考搭配</button><button type="button" class="retrieval-forgot">想不起來，先訂正</button>${exitButton}</div><p class="retrieval-feedback" role="status" aria-live="polite"></p></form><p class="retrieval-note" id="retrievalPromptNote">先嘗試回想；教材搭配可能有其他合理寫法。</p>${message()}</div>`;
+    host.innerHTML = `<div class="retrieval-session"><p class="retrieval-kicker">${task.retry ? "訂正後再回想" : `${unit}回想 ${cursor + 1} / ${initial.length}`}</p><h3 id="retrievalPrompt">${escape(question.meaning)}</h3><p>請用 <strong lang="en">${escape(question.word)}</strong> 寫出一個符合意思的完整${unit}。</p><form class="retrieval-form"><label for="retrievalAnswer">你的英文${unit}</label><input id="retrievalAnswer" type="text" maxlength="240" autocomplete="off" autocapitalize="none" spellcheck="false" aria-describedby="retrievalPrompt retrievalPromptNote"><div class="retrieval-actions"><button type="submit" class="retrieval-reveal">核對參考${unit}</button><button type="button" class="retrieval-forgot">想不起來，先訂正</button>${exitButton}</div><p class="retrieval-feedback" role="status" aria-live="polite"></p></form><p class="retrieval-note" id="retrievalPromptNote">先嘗試回想；教材${unit}可能有其他合理寫法。</p>${message()}</div>`;
     listen(".retrieval-form", "submit", event => {
       event.preventDefault();
       if (phase !== "prompt") return;
       const answer = find("#retrievalAnswer").value.trim();
-      if (!answer) { find(".retrieval-feedback").textContent = "請先寫下想到的搭配，或選擇「想不起來，先訂正」。"; focus("#retrievalAnswer"); return; }
+      if (!answer) { find(".retrieval-feedback").textContent = `請先寫下想到的${unit}，或選擇「想不起來，先訂正」。`; focus("#retrievalAnswer"); return; }
       renderAnswer(task, answer, false);
     });
     listen("#retrievalAnswer", "keydown", event => { if (event.key === "Enter" && event.isComposing) event.preventDefault(); });
@@ -140,7 +144,7 @@ function renderRetrievalPractice(entry, host = document.getElementById("retrieva
   function renderAnswer(task, answer, forgot) {
     phase = "revealed"; host.dataset.phase = phase;
     const question = task.question;
-    host.innerHTML = `<div class="retrieval-session"><h3 class="retrieval-answer-heading" tabindex="-1">核對完整搭配</h3>${answer ? `<p>你的回想：<span lang="en">${escape(answer)}</span></p>` : "<p>先看訂正，再嘗試自行回想。</p>"}<p class="retrieval-reference" lang="en">${escape(question.chunk)}</p><p>${escape(question.meaning)}</p>${question.note ? `<p>${escape(question.note)}</p>` : ""}<p class="retrieval-note">按意思、介系詞與完整搭配核對；其他自然寫法也可能合理。看過答案才想起來，請選「還不熟」。</p><div class="retrieval-actions"><button type="button" class="retrieval-again">還不熟，再練</button><button type="button" class="retrieval-good" ${forgot ? "disabled" : ""}>這次回想到了</button>${exitButton}</div></div>`;
+    host.innerHTML = `<div class="retrieval-session"><h3 class="retrieval-answer-heading" tabindex="-1">核對完整${unit}</h3>${answer ? `<p>你的回想：<span lang="en">${escape(answer)}</span></p>` : "<p>先看訂正，再嘗試自行回想。</p>"}<p class="retrieval-reference" lang="en">${escape(question.chunk)}</p><p>${escape(question.meaning)}</p>${question.note ? `<p>${escape(question.note)}</p>` : ""}<p class="retrieval-note">按意思、詞形、介系詞與語序核對；其他自然寫法也可能合理。看過答案才想起來，請選「還不熟」。</p><div class="retrieval-actions"><button type="button" class="retrieval-again">還不熟，再練</button><button type="button" class="retrieval-good" ${forgot ? "disabled" : ""}>這次回想到了</button>${exitButton}</div></div>`;
     const rate = result => {
       if (phase !== "revealed" || task !== tasks[cursor] || (forgot && result === "good")) return;
       phase = "rated";
@@ -155,7 +159,7 @@ function renderRetrievalPractice(entry, host = document.getElementById("retrieva
   }
   function renderComplete() {
     phase = "complete"; host.dataset.phase = phase; restore();
-    host.innerHTML = `<div class="retrieval-session"><h3 class="retrieval-complete-heading" tabindex="-1">完成 ${initial.length} 個搭配的回想</h3><p>${hadAgain ? "有搭配需要提示，建議明天再試。" : "這次能回想起來；隔一段時間再試，確認是否仍記得。"}</p><div class="retrieval-actions"><button type="button" class="retrieval-schedule-again">明天再複習</button><button type="button" class="retrieval-schedule-good">安排下次複習</button>${exitButton}</div><p class="retrieval-schedule-status" role="status" aria-live="polite">可選擇加入現有的單字複習清單。</p><p class="retrieval-note">練習次數與自評只記在此瀏覽器；輸入的英文不儲存。完成回想不代表已長期記住。</p>${message()}</div>`;
+    host.innerHTML = `<div class="retrieval-session"><h3 class="retrieval-complete-heading" tabindex="-1">完成 ${initial.length} 個${unit}的回想</h3><p>${hadAgain ? `有${unit}需要提示，建議明天再試。` : "這次能回想起來；隔一段時間再試，確認是否仍記得。"}</p><div class="retrieval-actions"><button type="button" class="retrieval-schedule-again">明天再複習</button><button type="button" class="retrieval-schedule-good">安排下次複習</button>${exitButton}</div><p class="retrieval-schedule-status" role="status" aria-live="polite">可選擇加入現有的單字複習清單。</p><p class="retrieval-note">練習次數與自評只記在此瀏覽器；輸入的英文不儲存。完成回想不代表已長期記住。</p>${message()}</div>`;
     const schedule = rating => {
       if (phase !== "complete" || typeof markReview !== "function") return;
       phase = "scheduled"; host.dataset.phase = phase;
