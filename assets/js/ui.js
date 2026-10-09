@@ -85,7 +85,7 @@ function setListMode(mode){state.favoritesOnly=mode==="favorites";state.collocat
 function applyFilters(resetPage=true){
   const needle=normalizeSearchValue(state.query);
   const ranked=needle?(hybridSearch(needle)):VOCABULARY.map((entry,index)=>({entry,index,match:{score:0,reason:"",channels:[]}}));
-  state.filtered=ranked.filter(({entry})=>state.levels.has(Number(entry.level))).filter(({entry})=>!state.favoritesOnly||state.favorites.has(entry.word)).filter(({entry})=>!state.examOnly||getExamEvidenceYears(entry).some(year=>state.examYear==="all"||year===state.examYear)).filter(({entry})=>!state.reviewOnly||isReviewDue(entry.word)).filter(({entry})=>!state.notebookOnly||(typeof getExamNotebook==="function"&&getExamNotebook(entry))).filter(({entry})=>!state.notebookOnly||!state.notebookSource||(state.notebookSource==="curated"?!!getCuratedExamNotebook(entry):getExamNotebook(entry)?.provenance==="source-guided")).filter(({entry})=>!state.collocationsOnly||(state.category==="全部"&&getBuiltinStudy(entry)?.collocations?.length)||getGsatPoints(entry).some(point=>state.category==="全部"||(point.category||"核心辨析")===state.category));
+  state.filtered=ranked.filter(({entry})=>state.levels.has(Number(entry.level))).filter(({entry})=>!state.favoritesOnly||state.favorites.has(entry.word)).filter(({entry})=>!state.examOnly||getExamEvidenceYears(entry).some(year=>state.examYear==="all"||year===state.examYear)).filter(({entry})=>!state.reviewOnly||isReviewDue(entry.word)).filter(({entry})=>!state.notebookOnly||(typeof getExamNotebook==="function"&&getExamNotebook(entry))).filter(({entry})=>!state.notebookOnly||!state.notebookSource||(state.notebookSource==="curated"?!!getCuratedExamNotebook(entry):getExamNotebook(entry)?.provenance===(state.notebookSource==="authored"?"authored-scenarios":"source-guided"))).filter(({entry})=>!state.collocationsOnly||(state.category==="全部"&&getBuiltinStudy(entry)?.collocations?.length)||getGsatPoints(entry).some(point=>state.category==="全部"||(point.category||"核心辨析")===state.category));
   if(!needle)state.filtered.sort((a,b)=>state.reviewOnly?String(reviewInfo(a.entry.word)?.due||"").localeCompare(String(reviewInfo(b.entry.word)?.due||""))||a.entry.word.localeCompare(b.entry.word):state.examOnly?(getExamEvidenceYears(b.entry).length-getExamEvidenceYears(a.entry).length)||a.entry.word.localeCompare(b.entry.word):state.collocationsOnly?(getGsatPoints(b.entry).some(point=>point.priority==="必熟")?1:0)-(getGsatPoints(a.entry).some(point=>point.priority==="必熟")?1:0)||a.entry.word.localeCompare(b.entry.word):a.entry.word.localeCompare(b.entry.word));
   if(resetPage)state.page=1;
   renderList();
@@ -159,7 +159,7 @@ function renderNotebookRelations(note,entry){
   const group=(title,rows,kind)=>rows?.length?`<div class="notebook-relation-group"><h4>${title}</h4>${rows.map(item=>`<div class="notebook-relation ${kind}"><code lang="en">${escapeHtml(item.en)}</code><span>${escapeHtml(item.zh)}</span>${item.note?`<p>${escapeHtml(item.note)}</p>`:""}</div>`).join("")}</div>`:"";
   const content=group("近義字 · 對照語境",note?.synonyms,"synonym")+group("片語／慣用語 · 閱讀與作文替換",note?.idioms,"idiom");
   if(content)return content;
-  return `<h4>用原句比較語境</h4><p>比較這兩句的情境、對象與語氣：目標詞在兩句是否同義？若要換字，先說明必須保留哪一項意思。</p>${(note?.examples||[]).slice(0,2).map((item,index)=>`<div class="notebook-contrast"><strong>語境 ${index+1}</strong><p lang="en">${escapeHtml(item.text)}</p><p>${escapeHtml(item.translationZh)}</p></div>`).join("")}<p class="card-note">此處練習語境對照；尚無獨立核對的近義替換時，保留原詞。${entry?`「${escapeHtml(entry.word)}」的近義詞也必須符合本句詞性與搭配。`:""}</p>`;
+  return `<h4>用兩句比較語境</h4><p>比較這兩句的情境、對象與語氣：目標詞在兩句是否同義？若要換字，先說明必須保留哪一項意思。</p>${(note?.examples||[]).slice(0,2).map((item,index)=>`<div class="notebook-contrast"><strong>語境 ${index+1}</strong><p lang="en">${escapeHtml(item.text)}</p><p>${escapeHtml(item.translationZh)}</p></div>`).join("")}<p class="card-note">此處練習語境對照；尚無獨立核對的近義替換時，保留原詞。${entry?`「${escapeHtml(entry.word)}」的近義詞也必須符合本句詞性與搭配。`:""}</p>`;
 }
 let notebookLexicalPromise=null;
 function renderNotebookLexical(entry,kind){
@@ -210,20 +210,20 @@ function renderPronunciationPreferences(){
 function renderNotebookArchive(entry,note){
   const original=typeof getOriginalStudy==="function"?getOriginalStudy(entry):null;
   if(!note?.examples?.length||!original?.examples?.length)return "";
-  return `<details class="notebook-archive"><summary>原有與上傳教材例句（${original.examples.length} 句，備查）</summary><p class="card-note">主要練習已改用學測情境新編例句；以下保留原有資料與來源。</p>${original.examples.map(item=>`<article><span class="archive-source">${item.source==="uploaded-anki"?"上傳教材":item.source==="self-authored"?"本站原有新編":"原有例句 · 來源待核對"}</span><blockquote lang="en">${escapeHtml(item.text)}</blockquote><p>${escapeHtml(item.translationZh||"原句未附中文譯文")}</p></article>`).join("")}</details>`;
+  return `<details class="notebook-archive notebook-example-archive"><summary>原有與上傳教材例句（${original.examples.length} 句，備查）</summary><p class="card-note">主要練習已改用學測情境新編例句；以下保留原有資料與來源。</p>${original.examples.map(item=>`<article><span class="archive-source">${item.source==="uploaded-anki"?"上傳教材":item.source==="self-authored"?"本站原有新編":"原有例句 · 來源待核對"}</span><blockquote lang="en">${escapeHtml(item.text)}</blockquote><p>${escapeHtml(item.translationZh||"原句未附中文譯文")}</p></article>`).join("")}</details>`;
 }
 function renderNotebookContextPatterns(entry,note){
   const rows=note?.collocations||[];
   if(rows.length)return renderBuiltinCollocations({collocations:rows.map(item=>[item.en,item.zh,item.note||""])});
   if(note?.grammarPatterns?.length)return `<h4>文法句型</h4><p class="card-note">N＝名詞性成分；S＝主詞；V＝動詞；adj.＝形容詞；aux.＝助動詞；V-ing＝動名詞／分詞形式。請把句型位置換成自己的內容，再以情境核對。句型另行計數。</p>${renderBuiltinCollocations({collocations:note.grammarPatterns.map(item=>[item.en,item.zh,item.note||""])})}`;
-  return `<h4>從完整句記用法</h4><p class="card-note">以下是原例句與整句中譯；先圈出目標詞旁的限定詞、動詞或介系詞，再回想整句。</p>${(note?.examples||[]).slice(0,2).map(item=>`<div class="builtin-collocation context-pattern"><code lang="en">${highlightChunk(item.text)}</code><span>${escapeHtml(item.translationZh)}</span><small>來源：${item.source==="self-authored"?"本站新編":"上傳教材"} · 完整句，不計入搭配詞統計</small></div>`).join("")}`;
+  return `<h4>從完整句記用法</h4><p class="card-note">以下是情境例句與整句中譯；先圈出目標詞旁的限定詞、動詞或介系詞，再回想整句。</p>${(note?.examples||[]).slice(0,2).map(item=>`<div class="builtin-collocation context-pattern"><code lang="en">${highlightChunk(item.text)}</code><span>${escapeHtml(item.translationZh)}</span><small>來源：${item.source==="self-authored"?"本站新編":"上傳教材"} · 完整句，不計入搭配詞統計</small></div>`).join("")}`;
 }
 function renderNotebookReferences(note){
   const rows=(note?.references||[]).map(item=>({...item,url:safeExternalUrl(item.url)})).filter(item=>item.url&&item.label);
   return rows.length?`<p class="card-note notebook-reference-links">文法／詞義核對：${rows.map(item=>`<a href="${escapeHtml(item.url)}" target="_blank" rel="noreferrer">${escapeHtml(item.label)}</a>`).join(" · ")}。本頁句型與情境句由本站編寫。</p>`:"";
 }
 function renderNotebookRoadmap(entry,note){
-  return `<div class="notebook-roadmap"><span class="notebook-coverage">全詞表 V2</span><strong>先理解，再回想，最後仿寫</strong><ol><li><b>定位</b>：先讀原句，圈出 ${escapeHtml(entry.word)} 的上下文。</li><li><b>驗證</b>：說明詞性、用法與選這個字義的證據。</li><li><b>遷移</b>：遮字作答，訂正後再用自己的情境造句。</li></ol><p class="card-note">${note?.provenance==="source-guided"?"本詞使用既有例句配合 V2 導讀；例句保留上傳教材或本站新編的實際來源。":"本詞含專題新編字義、用法與雙語例句；原教材另行保留。"}</p></div>`;
+  return `<div class="notebook-roadmap"><span class="notebook-coverage">全詞表 V2</span><strong>先理解，再回想，最後仿寫</strong><ol><li><b>定位</b>：先讀情境句，圈出 ${escapeHtml(entry.word)} 的上下文。</li><li><b>驗證</b>：說明詞性、用法與選這個字義的證據。</li><li><b>遷移</b>：遮字作答，訂正後再用自己的情境造句。</li></ol><p class="card-note">${note?.provenance==="source-guided"?"本詞原創句改寫尚待補齊，目前使用既有例句配合 V2 導讀；來源依句標示。":"本詞主要例句已改用原創仿學測句，附中譯、句構與仿寫方向；原教材另行保留。"}</p></div>`;
 }
 function renderNotebookSource(entry,note){
   return note?`<details class="notebook-evidence" data-evidence-word="${escapeHtml(entry.word)}"><summary>核對此詞在 111–115 上傳試卷的出處</summary><div class="notebook-evidence-items"><p class="card-note">展開後讀取本站試卷摘錄。</p></div></details>`:"";

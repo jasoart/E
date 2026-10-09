@@ -44,6 +44,7 @@ python3 -m http.server 8000 --bind 127.0.0.1
 node --test tests/*.cjs
 python3 -m unittest discover -s tests -p 'test_*.py' -q
 python3 research/build_exam_notebook.py --check
+node research/build_authored_scenarios.cjs --check
 python3 research/build_exam_evidence_index.py --check
 python3 research/build_wordnet_learning.py --check
 python3 tools/validate_site.py
@@ -53,6 +54,10 @@ python3 tests/browser_learning.py
 ```
 
 筆記的可編輯原始資料為 `research/exam_notebook.json` 與 `research/function_word_notes.json`；修改後執行 `python3 research/build_exam_notebook.py` 重建 `assets/data/exam-notebook.js`。例句練習以來源及句子內容辨識，替換句子不會承接舊句子的作答統計；舊收藏、複習與原作答紀錄不被清除。修改素材後執行 `python3 tools/validate_site.py --refresh-hashes` 更新兩個 HTML 的素材版本。完整步驟見 [CONTRIBUTING.md](CONTRIBUTING.md)。
+
+原創句改寫進度：新增 503 句含繁中翻譯、句構說明、仿寫方向的情境句；連同既有專題教材，2,171 / 6,024 個詞條已套用原創雙句，其中 A 開頭詞條全部補齊。尚有 3,853 個詞條使用既有教材導讀，首頁與篩選器如實標示。這不是全詞表改寫完成的宣告。同一原創句可用於多個實際出現的目標詞，獨立句數與詞條顯示次數分開計算。
+
+新增句子的可編輯來源為 `research/authored_scenarios.txt`。執行 `node research/build_authored_scenarios.cjs` 產生原創句庫與 `research/authored_scenario_coverage.json`；只有找到兩個不同、包含本詞實際詞形的原創語境才切換主要練習，原句保留在備查區。
 
 全詞表英語字義、同義候選與明示派生關係的離線節錄見 [V2 全詞表教材設計](docs/NOTEBOOK_ALL_WORDS.md)。字典內容在學生展開時才載入，原詞表釋義、級別與上傳教材的來源標記保持獨立。
 

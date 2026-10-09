@@ -7,7 +7,7 @@ const path=require('node:path');
 const root=path.resolve(__dirname,'..');
 function environment(){
   const c=vm.createContext({console,URL,localStorage:{getItem:()=>null},document:{getElementById:()=>({})},setTimeout,clearTimeout});
-  for(const file of ['js/config','data/vocabulary','data/collocations','data/learning','data/builtin-study','data/exam-notebook',
+  for(const file of ['js/config','data/vocabulary','data/collocations','data/learning','data/builtin-study','data/exam-notebook','data/authored-scenarios',
     'js/exam-notes','js/state','js/builtin','js/search','js/examples','js/retrieval-practice','js/ui'])
     vm.runInContext(fs.readFileSync(path.join(root,'assets',file+'.js'),'utf8'),c,{filename:file});
   return {c,run:s=>vm.runInContext(s,c)};
@@ -44,6 +44,31 @@ test('source-guided notes preserve imported text and never relabel it as authore
   e.run(`var ordinary=VOCABULARY.find(entry=>getExamNotebook(entry).provenance==='source-guided'&&getExamNotebook(entry).examples[0].source==='uploaded-anki')`);
   const html=e.run('renderGsatExampleCard(builtinExampleResult(ordinary).examples[0],1,ordinary)');
   assert.match(html,/上傳教材/);assert.doesNotMatch(html,/仿學測自編|句子結構未分類|題材未分類/);
+});
+test('original scenario pairs contain the target and move unchanged imports into the archive',()=>{
+  const e=environment();
+  const failures=e.run(`VOCABULARY.flatMap(entry=>{
+    const note=getExamNotebook(entry);if(note.provenance!=='authored-scenarios')return [];
+    const errors=[],original=getOriginalStudy(entry);
+    if(!original?.examples.length)errors.push(entry.word+': missing original archive');
+    if(note.examples.length!==2||note.examples[0].text===note.examples[1].text)errors.push(entry.word+': need distinct pair');
+    for(const row of note.examples){
+      if(row.source!=='self-authored'||!row.examStyle||!builtinClozeQuestion(entry,row))errors.push(entry.word+': invalid original sentence');
+      if(!row.grammar||!row.writingTip||!row.translationZh)errors.push(entry.word+': missing contextual guidance');
+      if(original.examples.some(x=>x.source==='uploaded-anki'&&x.text===row.text))errors.push(entry.word+': imported sentence relabeled');
+    }
+    return errors;
+  })`);
+  assert.deepEqual(Array.from(failures),[]);
+  assert.equal(e.run('notebookStats().scenarioWords'),e.run('GSAT_AUTHORED_SCENARIOS.stats.sharedWords'));
+  assert.equal(e.run('notebookStats().originalPairWords+notebookStats().guidedWords'),6024);
+  assert.equal(e.run(`VOCABULARY.filter(row=>/^a/i.test(row.word)).every(row=>getExamNotebook(row).provenance!=='source-guided')`),true);
+});
+test('noun and pronoun abbreviations are not confused with verb and noun substrings',()=>{
+  const e=environment();
+  assert.match(e.run(`notebookPosPrompt({partOfSpeech:'adv.'})`),/修飾動作/);
+  assert.match(e.run(`notebookPosPrompt({partOfSpeech:'pron.'})`),/連接或指向/);
+  assert.match(e.run(`notebookPosPrompt({partOfSpeech:'vt./n.'})`),/時態與主被動/);
 });
 test('sentence recall is explicitly distinguished from a verified collocation',()=>{
   const e=environment();

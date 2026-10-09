@@ -21,21 +21,22 @@
   <script defer src="./assets/data/builtin-study.js?v=f8ed1bf9578d"></script>
   <script defer src="./assets/data/kk-pronunciation.js?v=5603b465216d"></script>
   <script defer src="./assets/data/exam-notebook.js?v=ed481fd0107d"></script>
+  <script defer src="./assets/data/authored-scenarios.js?v=69d0833a83e2"></script>
   <script defer src="./assets/data/exam-evidence-index.js?v=8ebd96765f5e"></script>
-  <script defer src="./assets/js/exam-notes.js?v=9a0652cbd65b"></script>
+  <script defer src="./assets/js/exam-notes.js?v=d6b894473aca"></script>
   <script defer src="./assets/js/state.js?v=b81115cc6519"></script>
   <script defer src="./assets/js/builtin.js?v=4270c7044c34"></script>
   <script defer src="./assets/js/search.js?v=f7e7a69bb259"></script>
   <script defer src="./assets/js/examples.js?v=4f21b06d22b2"></script>
   <script defer src="./assets/js/audio.js?v=43ff4b49f462"></script>
   <script defer src="./assets/js/retrieval-practice.js?v=251a504ddb48"></script>
-  <script defer src="./assets/js/ui.js?v=c6052c86e2c7"></script>
+  <script defer src="./assets/js/ui.js?v=237ba7a766b8"></script>
   <script defer src="./assets/js/favorites.js?v=569a332f0d3a"></script>
   <script defer src="./assets/js/online.js?v=0084ffa743cb"></script>
   <script defer src="./assets/data/context-practice.js?v=b9d6934ef50c"></script>
   <script defer src="./assets/js/diagnostics.js?v=45c5c9678975"></script>
   <script defer src="./assets/js/local-coach.js?v=8a1d78e15183"></script>
-  <script defer src="./assets/js/app.js?v=cc391c66f2b4"></script>
+  <script defer src="./assets/js/app.js?v=87a592aa85f9"></script>
 
 </head>
 <body>
@@ -53,14 +54,15 @@
     </div>
     <div class="search-wrap">
       <label class="search"><span class="magnify" aria-hidden="true"></span><input id="searchInput" type="search" autocomplete="off" placeholder="搜尋單字、中文概念或真題搭配（例：give rise to）…" aria-label="搜尋詞彙與搭配" aria-autocomplete="list" aria-controls="searchSuggestions" aria-expanded="false"><button id="clearSearch" class="clear" type="button" aria-label="清除搜尋" hidden>×</button><span id="searchKey" class="key">/</span></label><div class="search-suggestions" id="searchSuggestions" role="listbox" aria-label="搜尋建議" hidden></div>
-      <div class="stats"><span><strong id="totalCount">0</strong> 個官方詞條</span><span><strong id="supplementalCount">0</strong> 個補充詞條</span><span><strong id="notebookWordCount">0</strong> 詞有 V2 筆記</span><span><strong id="notebookCollocationCount">0</strong> 條整理搭配</span></div><details class="stats-extra"><summary>更多教材統計</summary><div class="stats"><span><strong>6</strong> 個官方級別</span><span><strong id="notebookCuratedCount">0</strong> 詞有專題新編</span><span><strong id="notebookGuidedCount">0</strong> 詞有教材導讀</span><span><strong id="notebookGrammarPatternCount">0</strong> 條文法句型</span><span><strong id="collocationCount">0</strong> 組搭配考點</span><span><strong id="examPointCount">0</strong> 組 111–115 真題搭配</span><span><strong id="builtinWordCount">0</strong> 詞有內建教材</span><span><strong id="builtinExampleCount">0</strong> 句雙語例句</span><span><strong id="builtinCollocationCount">0</strong> 條內建搭配</span></div></details>
+      <div class="stats"><span><strong id="totalCount">0</strong> 個官方詞條</span><span><strong id="supplementalCount">0</strong> 個補充詞條</span><span><strong id="notebookWordCount">0</strong> 詞有 V2 筆記</span><span><strong id="notebookCollocationCount">0</strong> 條整理搭配</span></div><details class="stats-extra"><summary>更多教材統計</summary><div class="stats"><span><strong>6</strong> 個官方級別</span><span><strong id="notebookCuratedCount">0</strong> 詞有專題新編</span><span><strong id="notebookScenarioCount">0</strong> 詞用原創情境句</span><span><strong id="notebookGuidedCount">0</strong> 詞仍待改寫</span><span><strong id="notebookGrammarPatternCount">0</strong> 條文法句型</span><span><strong id="collocationCount">0</strong> 組搭配考點</span><span><strong id="examPointCount">0</strong> 組 111–115 真題搭配</span><span><strong id="builtinWordCount">0</strong> 詞有內建教材</span><span><strong id="builtinExampleCount">0</strong> 句雙語例句</span><span><strong id="builtinCollocationCount">0</strong> 條內建搭配</span></div></details>
     </div>
   </section>
 
   <section class="tools" aria-label="詞彙篩選">
     <div class="levels" id="levelFilters"><span class="filter-label">級別</span></div>
     <div class="tabs"><button id="allTab" class="on" type="button">全部</button><button id="notebookTab" type="button">V2 筆記 <span id="notebookTabCount"></span></button><button id="examTab" type="button">111–115 真題 <span id="examTabCount"></span></button><button id="collocationTab" type="button">搭配考點 <span id="collocationTabCount"></span></button><button id="reviewTab" type="button">今日複習 <span id="reviewCount"></span></button><button id="favoriteTab" type="button">收藏 <span id="favoriteCount"></span></button></div>
-    <label id="notebookSourceFilter" class="notebook-source-filter" hidden for="notebookSource">教材內容 <select id="notebookSource"><option value="">全部 V2 筆記</option><option value="curated">專題新編</option><option value="guided">既有教材情境導讀</option></select></label>
+    <label id="notebookSourceFilter" class="notebook-source-filter" hidden for="notebookSource">教材內容 <select id="notebookSource"><option value="">全部 V2 筆記</option><option value="curated">專題新編</option><option value="authored">原創情境句</option><option value="guided">待改寫 · 教材導讀</option></select></label>
+    <p class="original-writing-progress" id="originalWritingProgress" aria-live="polite">正在讀取原創例句改寫進度…</p>
   </section>
 
   <section class="local-search-strip" aria-label="詞彙搜尋說明與快速搜尋">

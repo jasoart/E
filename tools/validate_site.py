@@ -13,7 +13,7 @@ ROOT = Path(__file__).resolve().parents[1]
 STARTUP_SCRIPTS = (
     "assets/js/config.js", "assets/data/vocabulary.js", "assets/data/collocations.js",
     "assets/data/learning.js", "assets/data/builtin-study.js", "assets/data/kk-pronunciation.js",
-    "assets/data/exam-notebook.js", "assets/data/exam-evidence-index.js", "assets/js/exam-notes.js",
+    "assets/data/exam-notebook.js", "assets/data/authored-scenarios.js", "assets/data/exam-evidence-index.js", "assets/js/exam-notes.js",
     "assets/js/state.js", "assets/js/builtin.js", "assets/js/search.js", "assets/js/examples.js",
     "assets/js/audio.js", "assets/js/retrieval-practice.js", "assets/js/ui.js", "assets/js/favorites.js",
     "assets/js/online.js", "assets/data/context-practice.js", "assets/js/diagnostics.js", "assets/js/local-coach.js", "assets/js/app.js",
