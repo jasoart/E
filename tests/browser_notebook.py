@@ -88,6 +88,32 @@ def main():
             page.locator('#notebookSource').select_option('')
             outcomes.append('all-word V2 coverage, provenance filters, guided reading and gated sentence recall')
 
+            assert stats['grammarPatterns'] == 232
+            page.locator('.stats-extra > summary').click()
+            assert page.locator('#notebookGrammarPatternCount').inner_text() == '232'
+            page.locator('.stats-extra > summary').click()
+            for word in ('although', 'to', 'which'):
+                lookup(word)
+                assert '文法句型' in page.locator('#notebookCollocations').inner_text()
+                assert '開始句型回想' in page.locator('.retrieval-start').inner_text()
+                assert page.locator('.notebook-reference-links a').count() >= 1
+                assert page.locator('.notebook-lexical').count() == 0
+            page.locator('.retrieval-start').click()
+            assert not page.locator('#notebookSenses').is_visible()
+            assert not page.locator('#notebookCollocations').is_visible()
+            assert page.locator('.retrieval-reference').count() == 0
+            page.locator('.retrieval-forgot').click()
+            assert 'which' in page.locator('.retrieval-reference').inner_text()
+            assert page.locator('.retrieval-good').is_disabled()
+            page.locator('.retrieval-exit').click()
+            assert page.locator('#notebookCollocations').is_visible()
+            lookup('she (her, hers, herself)')
+            assert '語法形式' in page.locator('#notebookFamily').inner_text()
+            assert 'herself' in page.locator('#notebookFamily').inner_text()
+            lookup('pajamas')
+            assert 'pair' in page.locator('#notebookFamily').inner_text()
+            outcomes.append('dedicated function-word grammar, pronoun forms, sources and gated pattern recall')
+
             lookup('bank')
             page.locator('#notebookRelations .notebook-lexical').evaluate('(element) => { element.open = true; }')
             page.wait_for_function("() => document.querySelector('#notebookRelations .notebook-lexical').dataset.lexicalLoaded === 'true'")
@@ -158,6 +184,10 @@ def main():
                 lookup(guided_word)
                 assert page.evaluate('document.documentElement.scrollWidth <= innerWidth'), f'{width}px guided notebook overflow'
                 assert page.locator('.retrieval-start').is_visible()
+                lookup('to')
+                assert page.evaluate('document.documentElement.scrollWidth <= innerWidth'), f'{width}px grammar pattern overflow'
+                lookup('she (her, hers, herself)')
+                assert page.evaluate('document.documentElement.scrollWidth <= innerWidth'), f'{width}px pronoun form overflow'
             page.screenshot(path='/tmp/e-notebook-mobile.png', full_page=True)
             outcomes.append('390px and 320px notebook layout without horizontal overflow')
 

@@ -46,7 +46,8 @@ function notebookStats() {
     guidedWords:entries.filter(note=>note.provenance==="source-guided").length,
     examples:entries.reduce((sum,item)=>sum+(item.examples?.length||0),0),
     authoredExamples:entries.reduce((sum,item)=>sum+(item.examples||[]).filter(row=>row.source==="self-authored").length,0),
-    collocations:entries.reduce((sum,item)=>sum+(item.collocations?.length||0),0),supplemental:VOCABULARY.length-GSAT_OFFICIAL_VOCABULARY_COUNT};
+    collocations:entries.reduce((sum,item)=>sum+(item.collocations?.length||0),0),
+    grammarPatterns:entries.reduce((sum,item)=>sum+(item.grammarPatterns?.length||0),0),supplemental:VOCABULARY.length-GSAT_OFFICIAL_VOCABULARY_COUNT};
 }
 if(typeof GSAT_EXAM_NOTEBOOK!=="undefined") {
   for(const [word,note] of Object.entries(GSAT_EXAM_NOTEBOOK.entries||{}))EXAM_NOTEBOOK_BY_WORD.set(examNotebookKey(word),note);

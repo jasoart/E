@@ -4,7 +4,7 @@
 
 ## 教材與學習功能
 
-- 「單字筆記 V2.0」覆蓋原有 6,012 詞與 12 個補充詞。335 組專題新編筆記對應 337 個詞條，另有 5,687 詞使用既有教材情境導讀；所有詞都可做搭配或例句回想。新編與原卡逐句標示來源，教材設計與覆蓋統計見 [全詞表 V2 說明](docs/NOTEBOOK_ALL_WORDS.md)。
+- 「單字筆記 V2.0」覆蓋原有 6,012 詞與 12 個補充詞。399 組專題新編筆記對應 402 個詞條，另有 5,622 詞使用既有教材情境導讀；所有詞都可做搭配、句型或例句回想。58 組功能詞另附文法句型，代名詞形式與派生字族分開整理。新編與原卡逐句標示來源，教材設計與覆蓋統計見 [全詞表 V2 說明](docs/NOTEBOOK_ALL_WORDS.md)。
 - 「詞性與多重字義」直接顯示原詞表的完整釋意、原教材簡要說明與存在的上傳教材釋意，再列出分詞性的新編情境補充。原字串不刪改、不藏在展開區；例如 `challenge` 的「盤問、要求、懷疑、表示異議」也完整保留。原例句可展開備查。
 - `elbow` 的動詞用法、`responsive to`、`tight schedule`、`exacerbate`／`add fuel to the fire` 與寵物作文語境分別整理。原 6,012 詞條以外的新增詞清楚標為「補充詞彙」。
 - 五份上傳試卷新增 127 條逐頁核對短引文，區分本文、題幹與選項；六個 115 年重點實例另附核對紀錄。細節見 [115 五欄筆記來源](docs/GSAT_115_NOTEBOOK_SOURCES.md)。
@@ -52,7 +52,7 @@ python3 tests/browser_notebook.py
 python3 tests/browser_learning.py
 ```
 
-筆記的可編輯原始資料為 `research/exam_notebook.json`；修改後執行 `python3 research/build_exam_notebook.py` 重建 `assets/data/exam-notebook.js`。例句練習以來源及句子內容辨識，替換句子不會承接舊句子的作答統計；舊收藏、複習與原作答紀錄不被清除。修改素材後執行 `python3 tools/validate_site.py --refresh-hashes` 更新兩個 HTML 的素材版本。完整步驟見 [CONTRIBUTING.md](CONTRIBUTING.md)。
+筆記的可編輯原始資料為 `research/exam_notebook.json` 與 `research/function_word_notes.json`；修改後執行 `python3 research/build_exam_notebook.py` 重建 `assets/data/exam-notebook.js`。例句練習以來源及句子內容辨識，替換句子不會承接舊句子的作答統計；舊收藏、複習與原作答紀錄不被清除。修改素材後執行 `python3 tools/validate_site.py --refresh-hashes` 更新兩個 HTML 的素材版本。完整步驟見 [CONTRIBUTING.md](CONTRIBUTING.md)。
 
 全詞表英語字義、同義候選與明示派生關係的離線節錄見 [V2 全詞表教材設計](docs/NOTEBOOK_ALL_WORDS.md)。字典內容在學生展開時才載入，原詞表釋義、級別與上傳教材的來源標記保持獨立。
 

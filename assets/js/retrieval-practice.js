@@ -58,7 +58,8 @@ function retrievalQuestions(entry, progress = readRetrievalProgress()) {
   if (!word) return [];
   const records = new Map(progress.map(row => [retrievalQuestionId(row), row])), seen = new Set();
   const chunks=(note?.collocations||[]).filter(row=>typeof builtinClozeQuestion!=="function"||builtinClozeQuestion(entry,{text:row.en}));
-  const rows=chunks.length?chunks:(note?.examples||[]).slice(0,2).map(example=>({en:example.text,zh:example.translationZh,note:"以原例句核對語意、詞形與語序；其他合理寫法可自行比較。",kind:"sentence"}));
+  const patterns=(note?.grammarPatterns||[]).filter(row=>typeof builtinClozeQuestion!=="function"||builtinClozeQuestion(entry,{text:row.en})).map(row=>({...row,kind:"pattern"}));
+  const rows=chunks.length?chunks:patterns.length?patterns:(note?.examples||[]).slice(0,2).map(example=>({en:example.text,zh:example.translationZh,note:"以原例句核對語意、詞形與語序；其他合理寫法可自行比較。",kind:"sentence"}));
   return rows.map((row, index) => {
     const question = {word, chunk: retrievalText(row.en, 240), meaning: retrievalText(row.zh, 240),
       note: retrievalText(row.note, 600), kind:row.kind||"chunk", index};
@@ -81,7 +82,7 @@ function renderRetrievalPractice(entry, host = document.getElementById("retrieva
   RETRIEVAL_HOST_CLEANUP.get(host)?.();
   RETRIEVAL_HOST_CLEANUP.delete(host);
   const initial = retrievalQuestions(entry);
-  const unit=initial[0]?.kind==="sentence"?"例句":"搭配";
+  const unit=initial[0]?.kind==="sentence"?"例句":initial[0]?.kind==="pattern"?"句型":"搭配";
   host.hidden = !initial.length;
   if (!initial.length) { host.innerHTML = ""; delete host.dataset.phase; return; }
   const escape = value => String(value ?? "").replace(/[&<>"']/g, char => ({"&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#039;"}[char]));

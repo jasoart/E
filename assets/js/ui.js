@@ -163,6 +163,7 @@ function renderNotebookRelations(note,entry){
 }
 let notebookLexicalPromise=null;
 function renderNotebookLexical(entry,kind){
+  if(getExamNotebook(entry)?.kind==="grammar")return "";
   return `<details class="notebook-lexical" data-lexical-word="${escapeHtml(entry.word)}" data-lexical-kind="${kind}"><summary>${kind==="senses"?"查字典詞義與近義候選":"查有來源的派生關係"} · WordNet 3.1</summary><div class="notebook-lexical-items"><p class="card-note">展開後載入此詞的字典資料。</p></div></details>`;
 }
 async function loadNotebookLexical(details){
@@ -183,6 +184,7 @@ async function loadNotebookLexical(details){
   }catch{host.innerHTML='<p class="card-note">字典節錄暫時無法載入；收合再展開可重試。原釋義與例句仍可使用。</p>';}
 }
 function renderNotebookFamily(note,entry){
+  if(note?.forms?.length)return `<h4>語法形式、拼法與單複數</h4><div class="notebook-family">${note.forms.map(item=>`<div class="family-item"><code lang="en">${escapeHtml(item.word)}</code><span class="sense-pos">${escapeHtml(item.pos)}</span><span>${escapeHtml(item.meaning)}</span></div>`).join("")}</div><p class="card-note">先看句中位置與所指對象，再選形式；這些是語法或拼法對照，與派生字族分開整理。</p>`;
   if(!note?.family?.length){
     const forms=entry?[...new Set((note?.examples||[]).map(example=>builtinClozeQuestion(entry,example)?.answer).filter(Boolean))]:[];
     return `<h4>先觀察句中實際詞形</h4><div class="notebook-observed-forms">${forms.map(form=>`<code lang="en">${escapeHtml(form)}</code>`).join("")}</div><p>${entry?escapeHtml(notebookPosPrompt(entry)):"從原句判斷空格詞性，觀察實際出現的字形。"}</p><p class="card-note">上列是例句實際用字，不等於衍生字清單。尚未整理獨立字族時，先練本詞在句中的位置與詞形。</p>`;
@@ -213,10 +215,15 @@ function renderNotebookArchive(entry,note){
 function renderNotebookContextPatterns(entry,note){
   const rows=note?.collocations||[];
   if(rows.length)return renderBuiltinCollocations({collocations:rows.map(item=>[item.en,item.zh,item.note||""])});
+  if(note?.grammarPatterns?.length)return `<h4>文法句型</h4><p class="card-note">N＝名詞性成分；S＝主詞；V＝動詞；adj.＝形容詞；aux.＝助動詞；V-ing＝動名詞／分詞形式。請把句型位置換成自己的內容，再以情境核對。句型另行計數。</p>${renderBuiltinCollocations({collocations:note.grammarPatterns.map(item=>[item.en,item.zh,item.note||""])})}`;
   return `<h4>從完整句記用法</h4><p class="card-note">以下是原例句與整句中譯；先圈出目標詞旁的限定詞、動詞或介系詞，再回想整句。</p>${(note?.examples||[]).slice(0,2).map(item=>`<div class="builtin-collocation context-pattern"><code lang="en">${highlightChunk(item.text)}</code><span>${escapeHtml(item.translationZh)}</span><small>來源：${item.source==="self-authored"?"本站新編":"上傳教材"} · 完整句，不計入搭配詞統計</small></div>`).join("")}`;
 }
+function renderNotebookReferences(note){
+  const rows=(note?.references||[]).map(item=>({...item,url:safeExternalUrl(item.url)})).filter(item=>item.url&&item.label);
+  return rows.length?`<p class="card-note notebook-reference-links">文法／詞義核對：${rows.map(item=>`<a href="${escapeHtml(item.url)}" target="_blank" rel="noreferrer">${escapeHtml(item.label)}</a>`).join(" · ")}。本頁句型與情境句由本站編寫。</p>`:"";
+}
 function renderNotebookRoadmap(entry,note){
-  return `<div class="notebook-roadmap"><span class="notebook-coverage">全詞表 V2</span><strong>先理解，再回想，最後仿寫</strong><ol><li><b>定位</b>：先讀原句，圈出 ${escapeHtml(entry.word)} 的上下文。</li><li><b>驗證</b>：說明詞性、搭配與選這個字義的證據。</li><li><b>遷移</b>：遮字作答，訂正後再用自己的情境造句。</li></ol><p class="card-note">${note?.provenance==="source-guided"?"本詞使用既有例句配合 V2 導讀；例句保留上傳教材或本站新編的實際來源。":"本詞含專題新編字義、搭配與雙語例句；原教材另行保留。"}</p></div>`;
+  return `<div class="notebook-roadmap"><span class="notebook-coverage">全詞表 V2</span><strong>先理解，再回想，最後仿寫</strong><ol><li><b>定位</b>：先讀原句，圈出 ${escapeHtml(entry.word)} 的上下文。</li><li><b>驗證</b>：說明詞性、用法與選這個字義的證據。</li><li><b>遷移</b>：遮字作答，訂正後再用自己的情境造句。</li></ol><p class="card-note">${note?.provenance==="source-guided"?"本詞使用既有例句配合 V2 導讀；例句保留上傳教材或本站新編的實際來源。":"本詞含專題新編字義、用法與雙語例句；原教材另行保留。"}</p></div>`;
 }
 function renderNotebookSource(entry,note){
   return note?`<details class="notebook-evidence" data-evidence-word="${escapeHtml(entry.word)}"><summary>核對此詞在 111–115 上傳試卷的出處</summary><div class="notebook-evidence-items"><p class="card-note">展開後讀取本站試卷摘錄。</p></div></details>`:"";
@@ -243,7 +250,7 @@ function renderDetail(entry,index){
     ${renderPronunciationPreferences()}<div class="pronunciation-controls"><button class="accent-choice" id="stopLocalVoiceButton" type="button">停止發音</button><div><p>點按才查詢錄音。自動模式依序嘗試 Google 美式音檔、字典、Wikimedia 與裝置語音；指定錄音來源失敗時改用裝置語音。Google 音檔固定為美式；口音偏好適用其他來源，例句使用裝置語音。</p><p class="dictionary-links">人工核對：<a href="https://dictionary.cambridge.org/dictionary/english/${word}" target="_blank" rel="noreferrer">Cambridge Dictionary</a><a href="https://www.merriam-webster.com/dictionary/${word}" target="_blank" rel="noreferrer">Merriam-Webster</a></p></div></div>
     <div class="notebook-intro"><p class="kicker">單字筆記 V2.0 · ${note?.provenance==="source-guided"?"學測情境導讀":"學測情境新編"}</p><p>從字義到搭配，再把同一用法放入自己的作文。</p><nav class="notebook-navigation" aria-label="單字筆記欄位"><a href="#notebookSenses">1 字義</a><a href="#notebookCollocations">2 搭配</a><a href="#notebookRelations">3 辨析</a><a href="#notebookFamily">4 詞形</a><a href="#exampleCard">5 情境句</a></nav>${renderNotebookRoadmap(entry,note)}</div>
     <section id="retrievalPractice" class="retrieval-practice" aria-label="搭配回想練習"></section>
-    <section class="definition notebook-field" id="notebookSenses"><p class="kicker"><span class="notebook-number">01</span> 詞性與多重字義</p>${renderNotebookSenses(entry,study,note)}${note?.usageNote?`<p class="notebook-usage-note"><strong>用法提醒：</strong>${escapeHtml(note.usageNote)}</p>`:""}</section>
+    <section class="definition notebook-field" id="notebookSenses"><p class="kicker"><span class="notebook-number">01</span> 詞性與多重字義</p>${renderNotebookSenses(entry,study,note)}${note?.usageNote?`<p class="notebook-usage-note"><strong>用法提醒：</strong>${escapeHtml(note.usageNote)}</p>`:""}${renderNotebookReferences(note)}</section>
     <section class="study-card notebook-field" id="notebookCollocations"><p class="kicker"><span class="notebook-number">02</span> 搭配詞、介系詞與句中用法</p><p class="card-note">以整組用法記憶；色標協助觀察小詞，to 的介系詞／不定詞功能仍需由上下文判斷。</p><div id="builtinCollocations">${renderNotebookContextPatterns(entry,note)}</div></section>
     <section class="study-card notebook-field" id="notebookRelations"><p class="kicker"><span class="notebook-number">03</span> 近義辨析與語境對照</p>${renderNotebookRelations(note,entry)}${renderNotebookLexical(entry,"senses")}</section>
     <section class="study-card notebook-field" id="notebookFamily"><p class="kicker"><span class="notebook-number">04</span> 字族與句中詞形</p>${renderNotebookFamily(note,entry)}${renderNotebookLexical(entry,"family")}</section>

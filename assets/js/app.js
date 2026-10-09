@@ -34,7 +34,7 @@ const builtinStats=builtinStudyStats();
 const notebookCounts=typeof notebookStats==="function"?notebookStats():{words:0,examples:0,collocations:0,supplemental:Math.max(0,VOCABULARY.length-officialWordCount)};
 for(const [id,value] of [["builtinWordCount",builtinStats.words],["builtinExampleCount",builtinStats.examples],["builtinCollocationCount",builtinStats.collocations]])if(byId(id))byId(id).textContent=value.toLocaleString();
 for(const [id,value] of [["supplementalCount",notebookCounts.supplemental],["notebookWordCount",notebookCounts.words],["notebookTabCount",notebookCounts.listedWords??notebookCounts.words],["notebookCollocationCount",notebookCounts.collocations]])if(byId(id))byId(id).textContent=Number(value||0).toLocaleString();
-for(const [id,value] of [["notebookCuratedCount",notebookCounts.curatedWords],["notebookGuidedCount",notebookCounts.guidedWords]])if(byId(id))byId(id).textContent=Number(value||0).toLocaleString();
+for(const [id,value] of [["notebookCuratedCount",notebookCounts.curatedWords],["notebookGuidedCount",notebookCounts.guidedWords],["notebookGrammarPatternCount",notebookCounts.grammarPatterns]])if(byId(id))byId(id).textContent=Number(value||0).toLocaleString();
 if(byId("headerDataCount"))byId("headerDataCount").textContent=`${officialWordCount.toLocaleString()} 官方詞條 · ${notebookCounts.supplemental.toLocaleString()} 補充詞 · ${builtinStats.examples.toLocaleString()} 內建例句 · ${builtinStats.collocations.toLocaleString()} 內建搭配`;
 document.addEventListener("localvoicestatus",event=>{
   const status=event.detail,host=byId("audioStatus"),sourceLink=byId("audioSourceLink"),licenseLink=byId("audioLicenseLink"),attribution=byId("audioAttribution");
