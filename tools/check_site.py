@@ -21,6 +21,7 @@ def main():
             ['node', '--test', *tests],
             [sys.executable, '-m', 'unittest', 'discover', '-s', 'tests', '-p', 'test_*.py', '-q'],
             [sys.executable, 'research/build_exam_notebook.py', '--check'],
+            ['node', 'research/build_authored_scenarios.cjs', '--check'],
             [sys.executable, 'research/build_exam_evidence_index.py', '--check'],
             [sys.executable, 'research/build_wordnet_learning.py', '--check'],
             [sys.executable, 'tools/validate_site.py'],

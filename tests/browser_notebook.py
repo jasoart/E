@@ -55,7 +55,10 @@ def main():
 
             # V2 must reach ordinary words as well as the editorial subset.
             assert stats['words'] == page.evaluate('VOCABULARY.length')
-            assert stats['guidedWords'] > 5000
+            assert stats['guidedWords'] > 3000
+            assert stats['originalPairWords'] > 2100
+            assert stats['newScenarioSentences'] >= 500
+            assert str(stats['originalPairWords']) in page.locator('#originalWritingProgress').inner_text().replace(',', '')
             page.locator('#notebookSource').select_option('guided')
             assert page.evaluate("state.filtered.every(({entry}) => getExamNotebook(entry).provenance === 'source-guided')")
             guided_word = page.evaluate("VOCABULARY.find(entry => getExamNotebook(entry).provenance === 'source-guided' && !getExamNotebook(entry).collocations.length).word")
@@ -86,7 +89,15 @@ def main():
             assert page.locator('#wordList .row').count() > 0
             assert page.evaluate('state.filtered.every(({entry}) => !!getCuratedExamNotebook(entry))')
             page.locator('#notebookSource').select_option('')
-            outcomes.append('all-word V2 coverage, provenance filters, guided reading and gated sentence recall')
+            page.locator('#notebookSource').select_option('authored')
+            assert page.evaluate("state.filtered.every(({entry}) => getExamNotebook(entry).provenance === 'authored-scenarios')")
+            lookup('abbreviate')
+            assert page.locator('#exampleResults .builtin-source').all_inner_texts() == ['仿學測自編', '仿學測自編']
+            assert page.locator('.notebook-example-archive').count() == 1
+            page.locator('.notebook-example-archive').evaluate('(element) => { element.open = true; }')
+            assert '上傳教材' in page.locator('.notebook-example-archive').inner_text()
+            page.locator('.notebook-example-archive').evaluate('(element) => { element.open = false; }')
+            outcomes.append('all-word V2 coverage, original scenario filter, preserved archive and recall')
 
             assert stats['grammarPatterns'] == 232
             page.locator('.stats-extra > summary').click()

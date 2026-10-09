@@ -41,7 +41,7 @@ function environment({loadIndex = true} = {}) {
   context.window = context;
   vm.createContext(context);
   const files = ['js/config.js', 'data/vocabulary.js', 'data/collocations.js',
-    'data/learning.js', 'data/builtin-study.js', 'data/exam-notebook.js'];
+    'data/learning.js', 'data/builtin-study.js', 'data/exam-notebook.js', 'data/authored-scenarios.js'];
   if (loadIndex) files.push('data/exam-evidence-index.js');
   files.push('js/exam-notes.js', 'js/state.js', 'js/builtin.js', 'js/search.js',
     'js/examples.js', 'js/ui.js', 'js/favorites.js');

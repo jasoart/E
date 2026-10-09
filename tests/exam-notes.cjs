@@ -65,7 +65,7 @@ function environment({fetchImpl} = {}) {
   for (const file of ['js/config.js', 'data/vocabulary.js', 'data/collocations.js', 'data/learning.js', 'data/builtin-study.js']) load(file);
   const originalVocabulary = run('JSON.stringify(VOCABULARY)');
   const originalStudies = JSON.parse(run('JSON.stringify(BUILTIN_STUDY_DATA.entries)'));
-  for (const file of ['data/kk-pronunciation.js', 'data/exam-notebook.js', 'data/exam-evidence-index.js', 'js/exam-notes.js', 'js/state.js', 'js/builtin.js', 'js/search.js', 'js/examples.js', 'js/ui.js', 'js/favorites.js']) load(file);
+  for (const file of ['data/kk-pronunciation.js', 'data/exam-notebook.js', 'data/authored-scenarios.js', 'data/exam-evidence-index.js', 'js/exam-notes.js', 'js/state.js', 'js/builtin.js', 'js/search.js', 'js/examples.js', 'js/ui.js', 'js/favorites.js']) load(file);
   return {run, context, get, requests, stored, writes, originalVocabulary, originalStudies};
 }
 

@@ -13,10 +13,13 @@
 
 ```sh
 python3 research/build_exam_notebook.py
+node research/build_authored_scenarios.cjs
 python3 research/build_exam_evidence_index.py
 ```
 
 上傳 PDF 可用 `python3 research/verify_uploaded_exams.py --pdf-dir <PDF目錄>` 核對。私人上傳檔案與本機絕對路徑不應加入 repository；CI 使用已提交的資料、索引與生成器。
+
+原創情境句維護於 `research/authored_scenarios.txt`，每行包含英文、繁中翻譯、句構說明、仿寫方向、題材五欄。請逐句編寫；不得把原卡句改名、套上固定前綴或以詞族代替目標詞後就宣稱完成。生成器只索引實際出現的詞形，沿用既有自編句時保留其來源；找到兩句後才切換主要練習。`research/authored_scenario_coverage.json` 列出尚待補寫的詞條，請逐步縮小缺口。共用句的顯示次數不是新增獨立句數，首頁統計須保持一致。
 
 全詞表 V2 的導讀規則維護於 `assets/js/exam-notes.js`；請保留 `getCuratedExamNotebook` 與 `getExamNotebook` 的資料範圍差異。原卡句不能標成自編，整句回想不能計為獨立搭配，詞形觀察不能標成未核對的衍生字。全量測試見 `tests/notebook-all-words.cjs`。
 

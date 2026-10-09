@@ -44,6 +44,10 @@ function notebookStats() {
   const entries=VOCABULARY.map(getExamNotebook).filter(Boolean);
   return {words:entries.length,listedWords:entries.length,curatedWords:VOCABULARY.filter(entry=>getCuratedExamNotebook(entry)).length,
     guidedWords:entries.filter(note=>note.provenance==="source-guided").length,
+    scenarioWords:entries.filter(note=>note.provenance==="authored-scenarios").length,
+    originalPairWords:entries.filter(note=>note.provenance!=="source-guided").length,
+    newScenarioSentences:typeof GSAT_AUTHORED_SCENARIOS!=="undefined"?GSAT_AUTHORED_SCENARIOS.stats.newlyWrittenSentences:0,
+    uniquePrimarySentences:new Set(entries.flatMap(note=>(note.examples||[]).map(example=>example.text))).size,
     examples:entries.reduce((sum,item)=>sum+(item.examples?.length||0),0),
     authoredExamples:entries.reduce((sum,item)=>sum+(item.examples||[]).filter(row=>row.source==="self-authored").length,0),
     collocations:entries.reduce((sum,item)=>sum+(item.collocations?.length||0),0),
@@ -79,11 +83,11 @@ function notebookSourceSenses(entry) {
     usage:"依原釋義的詞性分段；專門義需配合實際語境核對。"})).filter(item=>item.meaning);
 }
 function notebookPosPrompt(entry) {
-  const pos=String(entry.partOfSpeech||"");
-  if(/v\./.test(pos))return "找出 [S] 誰做、[V] 做什麼；有 [O] 時指出對象。圈出動詞後的介系詞，並檢查時態與主被動。";
-  if(/n\./.test(pos))return "找出包含目標詞的名詞片語，再判斷它作 [S]、[O] 或 [C]。觀察限定詞、數量與單複數，不以字尾猜可數性。";
-  if(/adj\.|a\./.test(pos))return "找出目標詞修飾的名詞，或它是否在連綴動詞後作 [C]；再圈出程度詞及後接介系詞。";
-  if(/adv\./.test(pos))return "指出目標詞修飾動作、形容詞，還是整個子句；觀察放置位置是否改變語氣或意思。";
+  const pos=new Set(String(entry.partOfSpeech||"").split(/[\s/]+/));
+  if(["v.","vt.","vi."].some(value=>pos.has(value)))return "找出 [S] 誰做、[V] 做什麼；有 [O] 時指出對象。圈出動詞後的介系詞，並檢查時態與主被動。";
+  if(pos.has("n."))return "找出包含目標詞的名詞片語，再判斷它作 [S]、[O] 或 [C]。觀察限定詞、數量與單複數，不以字尾猜可數性。";
+  if(pos.has("adj.")||pos.has("a."))return "找出目標詞修飾的名詞，或它是否在連綴動詞後作 [C]；再圈出程度詞及後接介系詞。";
+  if(pos.has("adv."))return "指出目標詞修飾動作、形容詞，還是整個子句；觀察放置位置是否改變語氣或意思。";
   return "先找 [S] 與 [V]，再判斷目標詞如何連接或指向其他成分；用完整上下文核對關係。";
 }
 function notebookExampleGuide(entry,example) {
@@ -143,8 +147,15 @@ function initializeAllWordNotebooks() {
     for(const alias of examNotebookAliases(entry.word))for(const row of patterns.get(alias)||[])add(row);
     const family=[];
     for(const alias of examNotebookAliases(entry.word))for(const row of relatives.get(alias)||[])if(!family.some(item=>item.word===row.word))family.push(row);
-    EXAM_NOTEBOOK_BY_ID.set(entry.word,{provenance:"source-guided",senses:notebookSourceSenses(entry),collocations,
-      synonyms:[],idioms:[],family,examples:study.examples||[],
+    const sentenceIds=typeof GSAT_AUTHORED_SCENARIOS!=="undefined"?GSAT_AUTHORED_SCENARIOS.byWord[entry.word]:null;
+    const authored=sentenceIds?.map(id=>GSAT_AUTHORED_SCENARIOS.sentences[id]).filter(Boolean)||[];
+    const hasOriginalPair=authored.length===2;
+    if(hasOriginalPair){
+      EXAM_ORIGINAL_STUDY.set(entry.word,study);
+      BUILTIN_STUDY_DATA.entries[entry.word]={...study,examples:authored};
+    }
+    EXAM_NOTEBOOK_BY_ID.set(entry.word,{provenance:hasOriginalPair?"authored-scenarios":"source-guided",senses:notebookSourceSenses(entry),collocations,
+      synonyms:[],idioms:[],family,examples:hasOriginalPair?authored:study.examples||[],
       usageNote:study.usageNote||entry.note||notebookPosPrompt(entry)});
   }
 }
