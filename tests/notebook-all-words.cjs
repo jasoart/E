@@ -33,7 +33,7 @@ test('every exact official and supplemental ID has usable V2 notes and a recall 
   assert.equal(e.run('VOCABULARY.slice(0,GSAT_OFFICIAL_VOCABULARY_COUNT).length'),6012);
   assert.equal(e.run('notebookStats().listedWords'),e.run('VOCABULARY.length'));
 });
-test('source-guided notes preserve imported text and never relabel it as authored',()=>{
+test('the completed corpus uses three original contexts for all words and retains imported text in the archive',()=>{
   const e=environment();
   assert.equal(e.run(`VOCABULARY.every(entry=>{
     const note=getExamNotebook(entry);
@@ -41,17 +41,21 @@ test('source-guided notes preserve imported text and never relabel it as authore
     return note.examples===BUILTIN_STUDY_DATA.entries[entry.word].examples&&
       builtinExampleResult(entry).examples.every(example=>example.source!=='uploaded-anki'||!example.examStyle);
   })`),true);
-  e.run(`var ordinary=VOCABULARY.find(entry=>getExamNotebook(entry).provenance==='source-guided'&&getExamNotebook(entry).examples[0].source==='uploaded-anki')`);
-  const html=e.run('renderGsatExampleCard(builtinExampleResult(ordinary).examples[0],1,ordinary)');
+  assert.equal(e.run('notebookStats().guidedWords'),0);
+  assert.equal(e.run('notebookStats().originalPairWords'),6024);
+  assert.equal(e.run('GSAT_AUTHORED_SCENARIOS.stats.remainingWords'),0);
+  assert.equal(e.run(`VOCABULARY.every(entry=>getExamNotebook(entry).examples.length===3&&getExamNotebook(entry).examples.every(row=>row.source==='self-authored'&&row.translationZh&&row.grammar&&row.writingTip&&builtinClozeQuestion(entry,row)))`),true);
+  e.run(`var ordinary=VOCABULARY.find(entry=>getOriginalStudy(entry)?.examples?.some(row=>row.source==='uploaded-anki'))`);
+  const html=e.run('renderGsatExampleCard(getOriginalStudy(ordinary).examples.find(row=>row.source==="uploaded-anki"),1,ordinary)');
   assert.match(html,/上傳教材/);assert.doesNotMatch(html,/仿學測自編|句子結構未分類|題材未分類/);
 });
-test('original scenario pairs contain the target and move unchanged imports into the archive',()=>{
+test('original scenario contexts contain the target and move unchanged imports into the archive',()=>{
   const e=environment();
   const failures=e.run(`VOCABULARY.flatMap(entry=>{
     const note=getExamNotebook(entry);if(note.provenance!=='authored-scenarios')return [];
     const errors=[],original=getOriginalStudy(entry);
     if(!original?.examples.length)errors.push(entry.word+': missing original archive');
-    if(note.examples.length!==2||note.examples[0].text===note.examples[1].text)errors.push(entry.word+': need distinct pair');
+    if(note.examples.length!==3||new Set(note.examples.map(row=>row.text)).size!==3)errors.push(entry.word+': need three distinct contexts');
     for(const row of note.examples){
       if(row.source!=='self-authored'||!row.examStyle||!builtinClozeQuestion(entry,row))errors.push(entry.word+': invalid original sentence');
       if(!row.grammar||!row.writingTip||!row.translationZh)errors.push(entry.word+': missing contextual guidance');

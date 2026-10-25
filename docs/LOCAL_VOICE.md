@@ -1,4 +1,6 @@
-# 本機單字與例句語音
+# 本機單字與例句語音（歷史設計）
+
+以下內容保留作先前版本的研究紀錄。現行正式網站的單字與例句播放器只使用 Google 音檔；請以 [Google 音檔與音標來源](PRONUNCIATION_SOURCES.md) 為準。
 
 網站的單字與內建例句共用一個播放入口。原先的 Dictionary API、Wiktionary／Wikimedia、Tatoeba 錄音播放路徑已從 `assets/js/audio.js` 移除；語音文字不傳送到 TTS 服務。未載入 Kokoro 時，網站選擇瀏覽器標示 `localService: true` 的英文裝置聲線。只有遠端聲線時會提示下載本機英文聲線，不會自動選用遠端聲線。
 

@@ -1,19 +1,19 @@
-# 學測英文：五欄實戰筆記與內建雙語教材
+# 學測英文：原創三句、五欄筆記與完整詞條
 
 本版直接修改 `jasoart/E` 的 `restore-old-site` 分支網站，以根目錄 `index.html` 為入口。搜尋、例句、中文說明、搭配、遮字練習與作文分析都在瀏覽器內運算，不需要語言模型、API Key 或外部句庫。原有 6,012 個詞條 ID、六級詞表、收藏與複習紀錄保留。
 
 ## 教材與學習功能
 
-- 「單字筆記 V2.0」覆蓋原有 6,012 詞與 12 個補充詞。399 組專題新編筆記對應 402 個詞條，另有 5,622 詞使用既有教材情境導讀；所有詞都可做搭配、句型或例句回想。58 組功能詞另附文法句型，代名詞形式與派生字族分開整理。新編與原卡逐句標示來源，教材設計與覆蓋統計見 [全詞表 V2 說明](docs/NOTEBOOK_ALL_WORDS.md)。
+- 「單字筆記 V2.0」覆蓋原有 6,012 詞與 12 個補充詞。每詞套用三個實際含目標詞形的原創情境句，各附繁中翻譯、句構說明和仿寫方向；原上傳教材句保留在備查區。58 組功能詞另附文法句型。教材設計、獨立句數與詞條覆蓋見 [全詞表 V2 說明](docs/NOTEBOOK_ALL_WORDS.md)及[原創句庫](docs/ORIGINAL_SCENARIOS.md)。
 - 「詞性與多重字義」直接顯示原詞表的完整釋意、原教材簡要說明與存在的上傳教材釋意，再列出分詞性的新編情境補充。原字串不刪改、不藏在展開區；例如 `challenge` 的「盤問、要求、懷疑、表示異議」也完整保留。原例句可展開備查。
 - `elbow` 的動詞用法、`responsive to`、`tight schedule`、`exacerbate`／`add fuel to the fire` 與寵物作文語境分別整理。原 6,012 詞條以外的新增詞清楚標為「補充詞彙」。
 - 五份上傳試卷新增 127 條逐頁核對短引文，區分本文、題幹與選項；六個 115 年重點實例另附核對紀錄。細節見 [115 五欄筆記來源](docs/GSAT_115_NOTEBOOK_SOURCES.md)。
 - KK 顯示使用 CMUdict 美式音段轉寫，明示來源與重音位置推估，保留原 ECDICT 音標；方法與授權見 [KK 音標說明](docs/KK_NOTATION.md)。
 
-- 每個詞條至少兩組內建英文例句與繁中翻譯，可直接閱讀、朗讀、遮字作答與訂正。
+- 每個詞條有三組 15–30 英文詞的原創情境句與繁中翻譯，可直接閱讀、朗讀、遮字作答與訂正。題材包含校園、公共生活、科學、環境與媒體；句中的因果、對比和線索供詞義辨識與仿寫練習。
 - 原中文釋意完整保留，另外提供易懂說明、上傳 Anki 的短釋意與用法提醒；不以單一短義取代所有原義。
 - 新編教材涵蓋說理、證據、比較、讓步、條件、方案與反思，以及數位素養、氣候、公共健康和社群等當代情境。新句與原有 Anki 教材分別標示，不宣稱為真題或已發生的新聞。
-- 原有雙語搭配與 111–115 年來源卡保留，另補詞性、介系詞、可數性與作文用法。新搭配可透過原有搜尋找到。
+- 全部 6,024 詞另有常用義、詞性與學習提示；有可核對資料時展示 WordNet 英語詞義、明示派生字族、近義候選和雙語搭配。動詞三態、第三人稱單數、V-ing、名詞複數及比較級分欄列出。原有雙語搭配與 111–115 年來源卡保留。
 - 學習助手以規則辨識查詢意圖，從內建教材找例句與搭配；TextRank 抽取學生短文的關鍵詞與原文重點句，另提示常見用法並提供修訂問題。它沒有通用聊天、文章事實查核或學測作文評分功能。
 - 遮字作答提供即時訂正，錯誤紀錄與收藏分開；另有「先回想，再看筆記」，以中文提示練完整英文搭配、訂正後再回想，完成時可安排下次複習。原有今日複習與情境診斷繼續使用；流程與驗證見 [搭配回想說明](docs/RETRIEVAL_PRACTICE.md)。
 - 本機搜尋使用 BM25 倒排清單、有限距離的拼字近似與分段索引預熱；保留原本字面、中文及搭配查詢。技術、學習研究及採用範圍見 [2026 研究與實作](docs/TECHNOLOGY_RESEARCH_2026.md)。
@@ -24,9 +24,9 @@
 
 ## 單字與例句朗讀
 
-不需要 API 金鑰，也不下載文字或語音模型。單字點按發音後，依偏好從 Free Dictionary API 或 Wikimedia Commons 取得公開錄音；可選擇自動依序備援、指定來源或只用裝置語音，以及美式／英式口音。缺少錄音、逾時或離線時使用裝置本機英文聲線。例句一律使用本機聲線，切換單字及停止會取消舊播放。
+不需要 API 金鑰，也不下載文字或語音模型。點按單字發音時，美式先試 Google 靜態字典音檔，再試 Google 語音音檔；英式、片語及例句使用 Google 語音音檔。可選口音和語速。長句按字詞邊界分段；切換單字或停止會取消舊播放。音檔無法取得時明確顯示錯誤供再次點按。
 
-錄音的實際來源與授權隨播放顯示。另提供 Cambridge、Merriam-Webster 詞條連結供人工核對，不冒稱公開社群錄音是這些出版社的官方發音。來源、錯誤備援與驗證範圍見 [發音說明](docs/PRONUNCIATION_SOURCES.md)。舊 Kokoro 實作保留作歷史紀錄，現行頁面不載入。
+播放器顯示實際 Google 音檔連結，不推定其開放授權。另提供 Cambridge、Merriam-Webster 詞條連結供人工核對。來源、錯誤處理與驗證範圍見 [發音說明](docs/PRONUNCIATION_SOURCES.md)。舊 Kokoro 實作保留作歷史紀錄，現行頁面不載入。
 
 ## 啟動與部署
 
@@ -45,6 +45,8 @@ node --test tests/*.cjs
 python3 -m unittest discover -s tests -p 'test_*.py' -q
 python3 research/build_exam_notebook.py --check
 node research/build_authored_scenarios.cjs --check
+node research/audit_scenario_difficulty.cjs --check
+node research/build_vocabulary_enrichment.cjs --check
 python3 research/build_exam_evidence_index.py --check
 python3 research/build_wordnet_learning.py --check
 python3 tools/validate_site.py
@@ -55,14 +57,14 @@ python3 tests/browser_learning.py
 
 筆記的可編輯原始資料為 `research/exam_notebook.json` 與 `research/function_word_notes.json`；修改後執行 `python3 research/build_exam_notebook.py` 重建 `assets/data/exam-notebook.js`。例句練習以來源及句子內容辨識，替換句子不會承接舊句子的作答統計；舊收藏、複習與原作答紀錄不被清除。修改素材後執行 `python3 tools/validate_site.py --refresh-hashes` 更新兩個 HTML 的素材版本。完整步驟見 [CONTRIBUTING.md](CONTRIBUTING.md)。
 
-原創句改寫進度：新增 503 句含繁中翻譯、句構說明、仿寫方向的情境句；連同既有專題教材，2,171 / 6,024 個詞條已套用原創雙句，其中 A 開頭詞條全部補齊。尚有 3,853 個詞條使用既有教材導讀，首頁與篩選器如實標示。這不是全詞表改寫完成的宣告。同一原創句可用於多個實際出現的目標詞，獨立句數與詞條顯示次數分開計算。
+原創句庫以每詞三句為完成條件，涵蓋原詞表與補充詞共 6,024 個 ID。完整詞形比對、生成時的缺口清單與獨立句數見 `research/authored_scenario_coverage.json`；同一原創句可教多個實際出現的目標詞，獨立句數與詞條顯示次數分開計算。
 
-新增句子的可編輯來源為 `research/authored_scenarios.txt`。執行 `node research/build_authored_scenarios.cjs` 產生原創句庫與 `research/authored_scenario_coverage.json`；只有找到兩個不同、包含本詞實際詞形的原創語境才切換主要練習，原句保留在備查區。
+新增句子的可編輯來源為 `research/authored_scenarios.txt` 與 `research/scenario-batch-*.txt`。執行 `node research/build_authored_scenarios.cjs` 產生原創句庫與缺口清單；只有找到三個不同、各含本詞實際詞形的 15–30 詞原創語境才切換主要練習，原句保留在備查區。
 
-全詞表英語字義、同義候選與明示派生關係的離線節錄見 [V2 全詞表教材設計](docs/NOTEBOOK_ALL_WORDS.md)。字典內容在學生展開時才載入，原詞表釋義、級別與上傳教材的來源標記保持獨立。
+全詞表的常用義、詞性、雙語搭配及有依據的 WordNet 英語字義、近義候選與明示派生關係由 `research/build_vocabulary_enrichment.cjs` 生成；來源為原雙語教材、專題筆記及 `research/vocabulary-editorial.json`。原詞表釋義、級別與上傳教材的來源標記保持獨立；完整設計見 [V2 全詞表教材設計](docs/NOTEBOOK_ALL_WORDS.md)。
 
 GitHub Actions 分開驗證資料／程式與桌面／手機 Chromium；採唯讀權限、完整 SHA 固定 Actions 版本與固定 Playwright，並提供 Dependabot 更新。流程不會自動部署或改動 Pages 設定。資料與模組界線、儲存相容及效能取捨見 [網站架構](docs/ARCHITECTURE.md)。
 
-瀏覽器測試使用桌面及手機尺寸的 Chromium，另檢查資料全覆蓋、完整原釋意可見、原詞條與收藏相容、同站素材、年度篩選、搭配回想及沒有自動外站請求。它不能代替 iPhone 實機及真人發音聽辨。本次結果見 [升級驗證](docs/UPGRADE_VALIDATION_2026.md)；先前版本的結果保留於 [五欄筆記驗證](docs/NOTEBOOK_V2_VALIDATION.md) 與 [內建教材驗證](docs/BUILTIN_VALIDATION.md)。
+瀏覽器測試使用桌面及手機尺寸的 Chromium，另檢查資料全覆蓋、完整原釋意可見、原詞條與收藏相容、同站素材、年度篩選、搭配回想及沒有自動外站請求。它不能代替 iPhone 實機及真人發音聽辨。本次結果見 [正式版驗證](docs/RELEASE_2026-10-25.md)；先前版本的結果保留於 [五欄筆記驗證](docs/NOTEBOOK_V2_VALIDATION.md) 與 [內建教材驗證](docs/BUILTIN_VALIDATION.md)。
 
 先前的 Danube／Colab 微調研究保留於 `colab/` 供研究紀錄；根目錄網站已撤下 MiniLM 語意模型及 Danube 生成介面。舊模型研究文件不代表目前網站仍載入那些模型。原站重複目錄 `gsat-lexicon-v6-github/` 的舊入口已導向根目錄，部署請使用根目錄。

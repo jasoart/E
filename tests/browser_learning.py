@@ -54,20 +54,22 @@ def main():
                 assert page.locator('#notebookSenses .original-meaning-text').inner_text() == page.evaluate('VOCABULARY[state.selectedIndex].meaning')
             outcomes.append('complete original meanings visible for curated and uncurated words')
 
-            # Selecting a source/accent/speed and clicking device-only playback cannot contact providers.
-            page.locator('#pronunciationSource').select_option('device')
+            # Preference changes stay local; playback uses only Google.
+            assert page.locator('#pronunciationSource').count() == 0
             page.locator('#pronunciationAccent').select_option('en-GB')
             page.locator('#pronunciationRate').select_option('0.7')
             before = len(external)
+            assert len(external) == 0
             page.locator('#speakButton').click()
-            page.wait_for_function("['ready','unavailable','error','playing'].includes(localVoiceStatus().state)")
-            assert len(external) == before
+            page.wait_for_function("localVoiceStatus().state === 'error'")
+            assert len(external) == before + 1
+            assert external[-1].startswith('https://translate.google.com/translate_tts?')
             page.reload(wait_until='load')
             page.locator('#bootStatus').wait_for(state='hidden')
-            assert page.locator('#pronunciationSource').input_value() == 'device'
+            assert page.evaluate('getPronunciationPreferences().source') == 'google'
             assert page.locator('#pronunciationAccent').input_value() == 'en-GB'
             assert page.locator('#pronunciationRate').input_value() == '0.7'
-            outcomes.append('pronunciation preferences persist; device-only mode sends no requests')
+            outcomes.append('Google-only preferences persist; settings send no requests')
 
             select('challenge')
             old_review = page.evaluate("localStorage.getItem('gsat-v3-review-queue-v1')")
@@ -107,36 +109,27 @@ def main():
             page.locator('.retrieval-exit').click()
             outcomes.append('recall conceals answers, requires an attempt, retries and schedules without touching favorites')
 
-            # Browser exercise of metadata/media/provenance UI with an explicit controlled recording.
-            recording_url = 'https://upload.wikimedia.org/wikipedia/commons/a/ab/En-us-challenge.ogg'
-            source_url = 'https://commons.wikimedia.org/wiki/File:En-us-challenge.ogg'
-            fixture = {'query': {'pages': {'9': {'pageid': 9, 'ns': 6, 'title': 'File:En-us-challenge.ogg', 'imageinfo': [{
-                'url': recording_url, 'descriptionurl': source_url, 'mime': 'audio/ogg', 'mediatype': 'AUDIO',
-                'extmetadata': {'LicenseShortName': {'value': 'CC BY-SA 4.0'}, 'LicenseUrl': {'value': 'https://creativecommons.org/licenses/by-sa/4.0/'}, 'Artist': {'value': '<b>Test Reader</b>'}}
-            }]}}}}
+            # Controlled waveform validates Google media playback and provenance.
             audio = io.BytesIO()
             with wave.open(audio, 'wb') as output:
                 output.setnchannels(1)
                 output.setsampwidth(2)
                 output.setframerate(8000)
                 output.writeframes(b'\x00\x00' * 2400)
-            page.route('https://commons.wikimedia.org/w/api.php**', lambda route: (external.append(route.request.url), route.fulfill(status=200, content_type='application/json', body=json.dumps(fixture), headers={'Access-Control-Allow-Origin': '*'})))
-            page.route(recording_url, lambda route: (external.append(route.request.url), route.fulfill(status=200, content_type='audio/wav', body=audio.getvalue(), headers={'Access-Control-Allow-Origin': '*'})))
-            page.locator('#pronunciationSource').select_option('commons')
+            page.route('https://translate.google.com/translate_tts?**', lambda route: (external.append(route.request.url), route.fulfill(status=200, content_type='audio/wav', body=audio.getvalue())))
             page.locator('#speakButton').click()
-            page.wait_for_function("localVoiceStatus().source === 'commons' && ['playing','ready'].includes(localVoiceStatus().state)")
-            assert page.locator('#audioSourceLink').get_attribute('href') == source_url
-            assert page.locator('#audioLicenseLink').get_attribute('href') == 'https://creativecommons.org/licenses/by-sa/4.0/'
-            assert 'Test Reader' in page.locator('#audioAttribution').inner_text()
-            assert page.locator('#audioAttribution b').count() == 0
+            page.wait_for_function("localVoiceStatus().source === 'google' && ['playing','ready'].includes(localVoiceStatus().state)")
+            assert page.locator('#audioSourceLink').get_attribute('href').startswith('https://translate.google.com/translate_tts?')
+            assert page.locator('#audioLicenseLink').is_hidden()
+            assert page.locator('#audioAttribution').is_hidden()
             page.locator('#stopLocalVoiceButton').click()
             assert page.locator('#audioSourceLink').is_hidden()
-            outcomes.append('controlled Commons fixture plays through browser and shows recording-specific attribution/license')
+            outcomes.append('controlled Google TTS waveform plays and shows its exact source')
 
             # Gstatic success uses a controlled waveform, not a claim about live CDN availability.
             gstatic_url = 'https://ssl.gstatic.com/dictionary/static/sounds/oxford/challenge--_us_1.mp3'
             page.route(gstatic_url, lambda route: (external.append(route.request.url), route.fulfill(status=200, content_type='audio/wav', body=audio.getvalue())))
-            page.locator('#pronunciationSource').select_option('auto')
+            page.locator('#pronunciationAccent').select_option('en-US')
             before = len(external)
             page.locator('#speakButton').click()
             page.wait_for_function("localVoiceStatus().source === 'gstatic' && ['playing','ready'].includes(localVoiceStatus().state)")

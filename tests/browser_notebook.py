@@ -55,19 +55,18 @@ def main():
 
             # V2 must reach ordinary words as well as the editorial subset.
             assert stats['words'] == page.evaluate('VOCABULARY.length')
-            assert stats['guidedWords'] > 3000
-            assert stats['originalPairWords'] > 2100
+            assert stats['guidedWords'] == 0
+            assert stats['originalPairWords'] == 6024
             assert stats['newScenarioSentences'] >= 500
             assert str(stats['originalPairWords']) in page.locator('#originalWritingProgress').inner_text().replace(',', '')
             page.locator('#notebookSource').select_option('guided')
-            assert page.evaluate("state.filtered.every(({entry}) => getExamNotebook(entry).provenance === 'source-guided')")
-            guided_word = page.evaluate("VOCABULARY.find(entry => getExamNotebook(entry).provenance === 'source-guided' && !getExamNotebook(entry).collocations.length).word")
+            assert page.evaluate('state.filtered.length') == 0
+            page.locator('#notebookSource').select_option('authored')
+            guided_word = 'baby'  # Formerly imported-card-only; now three original contexts.
             lookup(guided_word)
-            assert '學測情境導讀' in page.locator('.notebook-intro').inner_text()
-            assert page.locator('#notebookRelations .notebook-contrast').count() == 2
-            assert '完整句' in page.locator('#notebookCollocations').inner_text()
-            assert page.locator('.notebook-sentence-guide').count() >= 2
-            assert '仿學測自編' not in page.locator('#exampleResults').inner_text()
+            assert '學測情境新編' in page.locator('.notebook-intro').inner_text()
+            assert page.locator('.notebook-sentence-guide').count() == 3
+            assert page.locator('#exampleResults .builtin-source').all_inner_texts() == ['仿學測自編'] * 3
             assert not lexical_requests, lexical_requests
             page.locator('.notebook-sentence-guide').first.evaluate('(element) => { element.open = true; }')
             assert '原句鄰近字' in page.locator('.notebook-sentence-guide').first.inner_text()
@@ -92,7 +91,7 @@ def main():
             page.locator('#notebookSource').select_option('authored')
             assert page.evaluate("state.filtered.every(({entry}) => getExamNotebook(entry).provenance === 'authored-scenarios')")
             lookup('abbreviate')
-            assert page.locator('#exampleResults .builtin-source').all_inner_texts() == ['仿學測自編', '仿學測自編']
+            assert page.locator('#exampleResults .builtin-source').all_inner_texts() == ['仿學測自編'] * 3
             assert page.locator('.notebook-example-archive').count() == 1
             page.locator('.notebook-example-archive').evaluate('(element) => { element.open = true; }')
             assert '上傳教材' in page.locator('.notebook-example-archive').inner_text()
@@ -206,18 +205,17 @@ def main():
             # metadata requests to verify fallback; this is not real audio validation.
             lookup('exacerbate')
             page.locator('#speakButton').click()
-            page.wait_for_function("() => ['unavailable','playing','ready'].includes(localVoiceStatus().state)")
-            assert len(external) == 3, external
+            page.wait_for_function("() => ['unavailable','playing','ready','error'].includes(localVoiceStatus().state)")
+            assert len(external) == 2, external
             assert external[0] == 'https://ssl.gstatic.com/dictionary/static/sounds/oxford/exacerbate--_us_1.mp3', external
-            assert external[1] == 'https://api.dictionaryapi.dev/api/v2/entries/en/exacerbate', external
-            assert external[2].startswith('https://commons.wikimedia.org/w/api.php?'), external
+            assert external[1].startswith('https://translate.google.com/translate_tts?'), external
             assert '模型' not in page.locator('#audioStatus').inner_text()
-            outcomes.append('explicit Gstatic then dictionary then Commons requests and offline/device outcome')
+            outcomes.append('explicit Google static then Google TTS failure, with no other audio providers')
             assert not errors, errors
             assert not failed_local, failed_local
             browser.close()
         print(json.dumps({'passed': outcomes, 'notebook': stats, 'pageErrors': errors, 'failedLocalResources': failed_local,
-                          'audio': 'all recording providers deliberately aborted; real audio/device quality untested'}, ensure_ascii=False, indent=2))
+                          'audio': 'Google audio deliberately aborted; live Google availability untested'}, ensure_ascii=False, indent=2))
     finally:
         server.shutdown()
         server.server_close()

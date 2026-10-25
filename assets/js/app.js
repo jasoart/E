@@ -35,19 +35,19 @@ const notebookCounts=typeof notebookStats==="function"?notebookStats():{words:0,
 for(const [id,value] of [["builtinWordCount",builtinStats.words],["builtinExampleCount",builtinStats.examples],["builtinCollocationCount",builtinStats.collocations]])if(byId(id))byId(id).textContent=value.toLocaleString();
 for(const [id,value] of [["supplementalCount",notebookCounts.supplemental],["notebookWordCount",notebookCounts.words],["notebookTabCount",notebookCounts.listedWords??notebookCounts.words],["notebookCollocationCount",notebookCounts.collocations]])if(byId(id))byId(id).textContent=Number(value||0).toLocaleString();
 for(const [id,value] of [["notebookCuratedCount",notebookCounts.curatedWords],["notebookGuidedCount",notebookCounts.guidedWords],["notebookScenarioCount",notebookCounts.scenarioWords],["notebookGrammarPatternCount",notebookCounts.grammarPatterns]])if(byId(id))byId(id).textContent=Number(value||0).toLocaleString();
-if(byId("originalWritingProgress"))byId("originalWritingProgress").textContent=`原創雙句已套用 ${(notebookCounts.originalPairWords||0).toLocaleString()} / ${notebookCounts.words.toLocaleString()} 詞；${(notebookCounts.guidedWords||0).toLocaleString()} 詞待補齊。本輪新寫 ${(notebookCounts.newScenarioSentences||0).toLocaleString()} 句；同一情境可供多詞學習。`;
+if(byId("originalWritingProgress"))byId("originalWritingProgress").textContent=`原創三句已套用 ${(notebookCounts.completeWords||0).toLocaleString()} / ${notebookCounts.words.toLocaleString()} 詞${notebookCounts.incompleteWords?`；${notebookCounts.incompleteWords.toLocaleString()} 詞待補齊`:"，全詞表已補齊"}。原創句庫共 ${(notebookCounts.newScenarioSentences||0).toLocaleString()} 句；同一情境可供多詞學習。`;
 if(byId("headerDataCount"))byId("headerDataCount").textContent=`${officialWordCount.toLocaleString()} 官方詞條 · ${notebookCounts.supplemental.toLocaleString()} 補充詞 · ${builtinStats.examples.toLocaleString()} 內建例句 · ${builtinStats.collocations.toLocaleString()} 內建搭配`;
 document.addEventListener("localvoicestatus",event=>{
   const status=event.detail,host=byId("audioStatus"),sourceLink=byId("audioSourceLink"),licenseLink=byId("audioLicenseLink"),attribution=byId("audioAttribution");
   if(host){host.textContent=status.message;host.dataset.source=status.source||"none";}
   if(sourceLink){
-    const url=["gstatic","dictionary","commons"].includes(status.source)?safePronunciationSourceUrl(status.sourceUrl):"";
+    const url=["gstatic","google"].includes(status.source)?safePronunciationSourceUrl(status.sourceUrl):"";
     sourceLink.hidden=!url;
-    if(url){sourceLink.href=url;sourceLink.textContent=`錄音出處${status.licenseName?" · "+status.licenseName:""}`;}
+    if(url){sourceLink.href=url;sourceLink.textContent="Google 音檔來源";}
     else sourceLink.removeAttribute("href");
   }
   if(licenseLink){
-    const url=["gstatic","dictionary","commons"].includes(status.source)?safePronunciationSourceUrl(status.licenseUrl):"";
+    const url="";
     licenseLink.hidden=!url;
     if(url){licenseLink.href=url;licenseLink.textContent=status.licenseName||"錄音授權";}
     else licenseLink.removeAttribute("href");

@@ -13,52 +13,59 @@
   <title>學測英文專用詞典｜V2 單字筆記 × 情境搭配</title>
   <link rel="stylesheet" href="./assets/css/local-coach.css?v=9678e6098936">
   <link rel="stylesheet" href="./assets/css/retrieval-practice.css?v=fccb231d2194">
-  <link rel="stylesheet" href="./assets/css/app.css?v=a86281b90c08">
-  <script defer src="./assets/js/config.js?v=3c247cb5287e"></script>
+  <link rel="stylesheet" href="./assets/css/app.css?v=fd90c44ba08a">
+  <script defer src="./assets/js/config.js?v=eea935eb40ae"></script>
   <script defer src="./assets/data/vocabulary.js?v=f0471273feca"></script>
   <script defer src="./assets/data/collocations.js?v=9ca91a43390d"></script>
   <script defer src="./assets/data/learning.js?v=e9e970c406e3"></script>
   <script defer src="./assets/data/builtin-study.js?v=f8ed1bf9578d"></script>
   <script defer src="./assets/data/kk-pronunciation.js?v=5603b465216d"></script>
   <script defer src="./assets/data/exam-notebook.js?v=ed481fd0107d"></script>
-  <script defer src="./assets/data/authored-scenarios.js?v=69d0833a83e2"></script>
+  <script defer src="./assets/data/vocabulary-enrichment.js?v=646c76185801"></script>
+  <script defer src="./assets/data/authored-scenarios.js?v=2a11bd7df1a8"></script>
   <script defer src="./assets/data/exam-evidence-index.js?v=8ebd96765f5e"></script>
-  <script defer src="./assets/js/exam-notes.js?v=d6b894473aca"></script>
+  <script defer src="./assets/js/exam-notes.js?v=f946ccc8b8f6"></script>
   <script defer src="./assets/js/state.js?v=b81115cc6519"></script>
   <script defer src="./assets/js/builtin.js?v=4270c7044c34"></script>
   <script defer src="./assets/js/search.js?v=f7e7a69bb259"></script>
   <script defer src="./assets/js/examples.js?v=4f21b06d22b2"></script>
-  <script defer src="./assets/js/audio.js?v=43ff4b49f462"></script>
+  <script defer src="./assets/js/audio.js?v=8df633276a02"></script>
   <script defer src="./assets/js/retrieval-practice.js?v=251a504ddb48"></script>
-  <script defer src="./assets/js/ui.js?v=237ba7a766b8"></script>
+  <script defer src="./assets/js/ui.js?v=b24b325b9e67"></script>
   <script defer src="./assets/js/favorites.js?v=569a332f0d3a"></script>
   <script defer src="./assets/js/online.js?v=0084ffa743cb"></script>
   <script defer src="./assets/data/context-practice.js?v=b9d6934ef50c"></script>
   <script defer src="./assets/js/diagnostics.js?v=45c5c9678975"></script>
   <script defer src="./assets/js/local-coach.js?v=8a1d78e15183"></script>
-  <script defer src="./assets/js/app.js?v=87a592aa85f9"></script>
+  <script defer src="./assets/js/app.js?v=548f5a14766b"></script>
 
 </head>
 <body>
   <a class="skip-link" href="#wordDetail">跳到單字筆記</a>
   <header class="header">
     <div class="brand"><img class="brand-icon" src="./assets/icons/icon.svg?v=27427b00f5ce" width="41" height="41" alt="GSAT 詞典"><span class="brand-copy"><strong>學測英文字典</strong><small>GSAT LEXICON</small></span></div>
+    <nav class="header-nav" aria-label="主選單"><a href="#dict">單字筆記</a><a href="#drill">情境診斷</a><a href="#assist">學習助手</a></nav>
     <div class="header-actions"><div class="offline"><i aria-hidden="true"></i><span id="headerDataCount">正在讀取內建教材…</span></div><button class="header-shortcut" id="commandButton" type="button" aria-label="開啟搜尋">⌘K</button></div>
   </header>
 
   <section class="hero" id="top">
-    <div>
+    <div class="hero-page">
       <p class="eyebrow"><span>111–115 真題語料</span>大考中心六級詞彙 × 搭配學習</p>
       <h1>查一個字，<br><em>把學測用法一起記。</em></h1>
       <p class="lead">用五欄筆記串起多重字義、介系詞搭配、同義慣用語、詞性轉換與作文情境。全詞表都有五欄導讀與主動回想；專題新編例句和原卡例句逐句標示來源。展開試卷摘錄可核對 111–115 年的實際出處。</p>
-    </div>
     <div class="search-wrap">
-      <label class="search"><span class="magnify" aria-hidden="true"></span><input id="searchInput" type="search" autocomplete="off" placeholder="搜尋單字、中文概念或真題搭配（例：give rise to）…" aria-label="搜尋詞彙與搭配" aria-autocomplete="list" aria-controls="searchSuggestions" aria-expanded="false"><button id="clearSearch" class="clear" type="button" aria-label="清除搜尋" hidden>×</button><span id="searchKey" class="key">/</span></label><div class="search-suggestions" id="searchSuggestions" role="listbox" aria-label="搜尋建議" hidden></div>
+      <label class="search"><span class="magnify" aria-hidden="true"></span><input id="searchInput" type="search" autocomplete="off" placeholder="輸入單字、中文或搭配，例如 depend on、火上加油" aria-label="搜尋詞彙與搭配" aria-autocomplete="list" aria-controls="searchSuggestions" aria-expanded="false"><button id="clearSearch" class="clear" type="button" aria-label="清除搜尋" hidden>×</button><span id="searchKey" class="key">/</span></label><div class="search-suggestions" id="searchSuggestions" role="listbox" aria-label="搜尋建議" hidden></div>
+      <div class="quick-searches hero-hints" id="quickSearches"><button class="query-chip" type="button" data-query="responsive to">responsive to</button><button class="query-chip" type="button" data-query="tight schedule">tight schedule</button><button class="query-chip" type="button" data-query="add fuel to the fire">add fuel to the fire</button><button class="query-chip" type="button" data-query="depend on">depend on</button><button class="query-chip" type="button" data-query="prevent from">prevent from</button><button class="query-chip" type="button" data-query="be associated with">associated with</button><button class="query-chip" type="button" data-query="導致">導致</button><button class="query-chip" type="button" data-query="適應">適應</button></div>
       <div class="stats"><span><strong id="totalCount">0</strong> 個官方詞條</span><span><strong id="supplementalCount">0</strong> 個補充詞條</span><span><strong id="notebookWordCount">0</strong> 詞有 V2 筆記</span><span><strong id="notebookCollocationCount">0</strong> 條整理搭配</span></div><details class="stats-extra"><summary>更多教材統計</summary><div class="stats"><span><strong>6</strong> 個官方級別</span><span><strong id="notebookCuratedCount">0</strong> 詞有專題新編</span><span><strong id="notebookScenarioCount">0</strong> 詞用原創情境句</span><span><strong id="notebookGuidedCount">0</strong> 詞仍待改寫</span><span><strong id="notebookGrammarPatternCount">0</strong> 條文法句型</span><span><strong id="collocationCount">0</strong> 組搭配考點</span><span><strong id="examPointCount">0</strong> 組 111–115 真題搭配</span><span><strong id="builtinWordCount">0</strong> 詞有內建教材</span><span><strong id="builtinExampleCount">0</strong> 句雙語例句</span><span><strong id="builtinCollocationCount">0</strong> 條內建搭配</span></div></details>
     </div>
+    </div>
+  <aside class="daily" id="dailySection">
+    <div><span class="daily-label">WORD OF THE DAY</span><h2>今天，先記熟一個字。</h2></div>
+    <button id="dailyButton" type="button"></button>
+  </aside>
   </section>
 
-  <section class="tools" aria-label="詞彙篩選">
+  <section class="tools" id="dict" aria-label="詞彙篩選">
     <div class="levels" id="levelFilters"><span class="filter-label">級別</span></div>
     <div class="tabs"><button id="allTab" class="on" type="button">全部</button><button id="notebookTab" type="button">V2 筆記 <span id="notebookTabCount"></span></button><button id="examTab" type="button">111–115 真題 <span id="examTabCount"></span></button><button id="collocationTab" type="button">搭配考點 <span id="collocationTabCount"></span></button><button id="reviewTab" type="button">今日複習 <span id="reviewCount"></span></button><button id="favoriteTab" type="button">收藏 <span id="favoriteCount"></span></button></div>
     <label id="notebookSourceFilter" class="notebook-source-filter" hidden for="notebookSource">教材內容 <select id="notebookSource"><option value="">全部 V2 筆記</option><option value="curated">專題新編</option><option value="authored">原創情境句</option><option value="guided">待改寫 · 教材導讀</option></select></label>
@@ -71,7 +78,7 @@
       <p class="local-search-method"><strong>用法也能查：</strong>可搜尋單字、中文意思、整組搭配、近義慣用語與字族。從「responsive to」「火上加油」或「tight schedule」開始，直接看到可套用的情境句。</p>
       <div class="category-filters" id="categoryFilters" hidden aria-label="搭配分類"></div>
       <div class="category-filters exam-years" id="examYearFilters" hidden aria-label="真題年度篩選"></div>
-      <div class="quick-searches" id="quickSearches"><button class="query-chip" type="button" data-query="responsive to">responsive to</button><button class="query-chip" type="button" data-query="tight schedule">tight schedule</button><button class="query-chip" type="button" data-query="add fuel to the fire">add fuel to the fire</button><button class="query-chip" type="button" data-query="depend on">depend on</button><button class="query-chip" type="button" data-query="prevent from">prevent from</button><button class="query-chip" type="button" data-query="be associated with">associated with</button><button class="query-chip" type="button" data-query="導致">導致</button><button class="query-chip" type="button" data-query="適應">適應</button></div>
+
     </div>
   </section>
   <div class="study-path"><strong>讀懂 → 回想 → 到期再練</strong><p>先選一個詞，讀一組搭配與情境句；再用筆記中的「搭配回想」或「例句回想」遮住教材練習。完成後安排複習，到期從「今日複習」回來。<a href="#wordDetail">前往單字筆記 ↓</a></p></div>
@@ -89,7 +96,7 @@
   </main>
 
 
-  <section class="diagnostic-panel" aria-label="自編情境診斷與錯題複習">
+  <section class="diagnostic-panel" id="drill" aria-label="自編情境診斷與錯題複習">
     <div class="diagnostic-head"><div><span class="local-label">CONTEXT PRACTICE · 自編題</span><h2>情境診斷與錯題複習</h2><p>59 題自編練習涵蓋熟詞偏義、搭配、詞性轉換、語境替換、篇章與寫作。先用英文作答，需要時再展開中文提示。答錯自動收進本機錯題，答對再移出；不影響舊收藏與單字複習。</p></div><div class="diagnostic-actions"><button type="button" id="diagnosticStart">開始情境診斷</button><button type="button" id="diagnosticReview">只練錯題 <span id="diagnosticWrongCount">0</span></button></div></div>
     <div class="pronunciation-preferences"><label for="diagnosticCategory">練習範圍<select id="diagnosticCategory"><option value="">全部能力</option></select></label><label for="diagnosticLength">每輪題數<select id="diagnosticLength"><option value="10">10 題</option><option value="20">20 題</option><option value="999">全部題目</option></select></label></div>
     <div id="diagnosticContent" class="diagnostic-content" hidden></div>
@@ -98,7 +105,7 @@
   <p class="v3-note"><strong>來源標記：</strong>611 條句型附 111–115 試卷原文出處，共 636 筆紀錄。句型是教學整理，可展開核對年度、題組、頁碼與摘錄；選項用語另行標示，並非答案或官方出題頻率。</p>
 
 
-  <section class="coach-panel" aria-labelledby="coachHeading">
+  <section class="coach-panel" id="assist" aria-labelledby="coachHeading">
     <span class="local-label">本機學習助手</span>
     <h2 id="coachHeading">找用法、練仿寫、分析自己的短文</h2>
     <p>輸入單字或中文主題找內建教材；貼上英文短文可抽取重點並檢查部分常見用法。所有分析都在這個網頁完成。</p>
@@ -110,15 +117,12 @@
     <p class="coach-scope">用法提示涵蓋部分規則；原文重點句不代表事實已核實。可用於修訂練習，仍需自行或請教師檢查。</p>
   </section>
 
-  <section class="daily" id="dailySection">
-    <div><span class="daily-label">WORD OF THE DAY</span><h2>今天，先記熟一個字。</h2></div>
-    <button id="dailyButton" type="button"></button>
-  </section>
+
 
   <footer>
     <p>高中英文參考詞彙表 © 財團法人大學入學考試中心基金會。本工具供非營利學習使用；詞彙級別與詞性依原表整理，中文釋義與音標含 ECDICT（MIT）資料。</p>
-    <p>例句來源依句標示為「上傳教材」或「本站新編」，不冒充真題；新字義與文法提示供學習參考。原有真題來源與自編延伸保持區分。詞彙搜尋與練習在此瀏覽器執行；點按單字發音後，依偏好查詢免金鑰的字典或 Wikimedia 錄音；不可用時以裝置英文語音備援。也可選擇只用裝置語音。</p>
-    <p>考題來源與教學方法：<a href="./docs/TECHNOLOGY_RESEARCH_2026.md?v=3c88d0f4578f">研究與採用範圍</a> · <a href="./SOURCE_GUIDE.md?v=75f7f56d5d40">資料來源說明</a> · <a target="_blank" rel="noreferrer" href="https://www.ceec.edu.tw/xcepaper/cont?qperoid=0Q105359543716106563&amp;sid=0Q105583094870257539&amp;xsmsid=0J066588036013658199">大考中心 115 年試題特色</a> · <a target="_blank" rel="noreferrer" href="https://www.ceec.edu.tw/xmfile?xsmsid=0J052424829869345634">官方試卷</a> · <a target="_blank" rel="noreferrer" href="https://www.ehanlin.com.tw/infos/gsat/download.html">公開歷屆試題與解析索引（翰林）</a>。本包僅收錄自行整理的搭配與自編題，不轉載重考班付費教材。</p>
+    <p>原創情境句附繁中翻譯、句構說明與仿寫方向；原教材例句保留在備查區，真題另附來源。詞彙搜尋與練習在此瀏覽器執行；單字及例句發音只使用 Google 音檔，按下播放後才連線載入。</p>
+    <p>考題來源與教學方法：<a href="./docs/TECHNOLOGY_RESEARCH_2026.md?v=5c4497a3ece6">研究與採用範圍</a> · <a href="./SOURCE_GUIDE.md?v=75f7f56d5d40">資料來源說明</a> · <a target="_blank" rel="noreferrer" href="https://www.ceec.edu.tw/xcepaper/cont?qperoid=0Q105359543716106563&amp;sid=0Q105583094870257539&amp;xsmsid=0J066588036013658199">大考中心 115 年試題特色</a> · <a target="_blank" rel="noreferrer" href="https://www.ceec.edu.tw/xmfile?xsmsid=0J052424829869345634">官方試卷</a> · <a target="_blank" rel="noreferrer" href="https://www.ehanlin.com.tw/infos/gsat/download.html">公開歷屆試題與解析索引（翰林）</a>。本包僅收錄自行整理的搭配與自編題，不轉載重考班付費教材。</p>
   </footer>
   <div class="toast" id="toast" role="status"></div>
 

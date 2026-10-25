@@ -5,23 +5,23 @@
 ```mermaid
 flowchart TD
     Source[原詞表與上傳教材] --> Data[assets/data 靜態資料]
-    Notes[research/exam_notebook.json] --> Build[Python 資料生成與檢查]
+    Notes[research/exam_notebook.json] --> Build[資料生成與檢查]
+    Scenarios[research/scenario-batch-*.txt] --> Build
+    Enrichment[research/vocabulary-editorial.json] --> Build
     Build --> Data
     Data --> Index[本機查詢索引]
     Index --> UI[詞條與五欄教材]
     UI --> Practice[搭配回想與遮字訂正]
     Practice --> Storage[瀏覽器 localStorage]
-    Click[明確發音點擊] --> Audio[錄音來源轉接與逾時控制]
+    Click[明確發音點擊] --> Audio[Google 音檔播放與逾時控制]
     Audio --> Gstatic[Google 靜態美式音檔]
-    Audio --> Dictionary[Free Dictionary API]
-    Audio --> Commons[Wikimedia Commons]
-    Audio --> Device[裝置英文語音]
+    Audio --> GoogleTTS[Google 語音音檔]
     Repo[GitHub repository] --> CI[唯讀 CI 驗證]
 ```
 
 ## 資料與相容性
 
-`assets/data/vocabulary.js` 保有 6,012 個原詞條 ID；`builtin-study.js` 保存對應的原教材。`exam-notebook.js` 由可編輯 JSON 生成，提供情境字義、搭配、關聯、字族及自編例句。`exam-notes.js` 將筆記覆蓋於主要教學例句，同時把原教材存入 `EXAM_ORIGINAL_STUDY`。補充詞在執行時另行附加，不冒稱大考中心原詞表收錄。
+`assets/data/vocabulary.js` 保有 6,012 個原詞條 ID；`builtin-study.js` 保存對應的原教材。`exam-notebook.js` 由可編輯 JSON 生成，提供情境字義、搭配、關聯、字族及自編例句。`authored-scenarios.js` 索引每詞三個實際含目標詞形的原創情境句；`vocabulary-enrichment.js` 另提供常用義、詞性、學習提示與可核對的字典關係。`exam-notes.js` 整合筆記，同時把原教材存入 `EXAM_ORIGINAL_STUDY`。補充詞在執行時另行附加，不冒稱大考中心原詞表收錄。
 
 詞性與多重字義欄直接顯示原 `entry.meaning` 的完整字串，以及原教材的 `plainMeaning` 簡要說明、存在的完整 `ankiMeaning`。`getOriginalStudy(entry) || study` 取得覆蓋前的教材，避免用新的摘要取代原說明；原簡要說明與原釋意完全相同時僅顯示一次。其後才列出新編的分詞性情境說明。保留原文不代表所有舊譯法都適合當代作文，少用／專門義仍需對照情境與字典。原例句和原搭配可展開備查。
 
@@ -39,11 +39,11 @@ HTML 使用本機 `defer` 腳本並依序載入：設定 → 靜態資料 → �
 
 ## 發音與故障控制
 
-`audio.js` 在使用者點擊後，依選擇嘗試指定 Gstatic 美式靜態音檔、Free Dictionary API 或 Wikimedia Commons；自動模式按順序使用來源，失敗後回到裝置英文語音。提供口音與來源選擇，並只儲存偏好。Gstatic 由固定 HTTPS 前綴與經驗證的詞形組成；其他錄音使用 HTTPS 來源白名單，附可取得的出處／授權，不推定靜態音檔的授權；若口音缺少可靠標記則明說未標示。
+`audio.js` 在使用者點擊後，對美式單字先試 Gstatic 靜態音檔，再試 Google 語音音檔；英式讀音、片語和例句使用 Google 語音音檔。提供口音和語速選擇，沿用既有偏好儲存鍵。音檔網址須符合固定 HTTPS Google 主機與路徑；狀態顯示實際音檔連結，不推定其開放授權。
 
-查詢與播放各有逾時，整體錄音嘗試有總預算、來源數與次數限制。切詞／停止採會話識別與取消，避免舊查詢晚回覆覆蓋新狀態。錄音 metadata 使用有上限的記憶體快取，播放失敗可在下次明確點擊重查；不預取整份詞表、不自動下載音訊或模型。
+開始與播放各有逾時，長句按字詞邊界分段。切詞／停止採會話識別與取消，避免舊音檔晚回覆覆蓋新狀態；播放失敗可在下次明確點擊重試。不預取整份詞表或自動下載音訊。
 
-只有 `localService === true` 的已安裝英文聲線用於裝置備援；未安裝所選口音時顯示實際聲線。例句保持裝置朗讀，不發送完整例句至錄音供應商。詳見 [PRONUNCIATION_SOURCES.md](PRONUNCIATION_SOURCES.md)。
+播放需要連線至 Google 音檔服務；例句文字會作為 Google 語音音檔請求參數。詳見 [PRONUNCIATION_SOURCES.md](PRONUNCIATION_SOURCES.md)。
 
 ## 練習與瀏覽器紀錄
 

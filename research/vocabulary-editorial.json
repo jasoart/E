@@ -1,0 +1,513 @@
+{
+  "description": "本站常用義與易混淆用法整理；原詞表原文另行保留。不是官方出題頻率。",
+  "entries": {
+    "koala": {
+      "meaning": "n. 無尾熊；樹袋熊",
+      "tip": "koala 是無尾熊；wombat 才是袋熊。描寫動物時核對物種名稱，不直接沿用原表的舊譯。"
+    },
+    "mall": {
+      "meaning": "n. 購物中心；商場；林蔭步道",
+      "tip": "日常語境的 mall 常指購物中心；歷史或景觀語境也可指寬闊步道。由 shops、stores 或道路景物判斷。"
+    },
+    "guava": {
+      "meaning": "n. 番石榴；芭樂",
+      "tip": "guava 是番石榴，與 papaya（木瓜）不同。水果名稱作種類與作食物材料時，可數性須配合句意。"
+    },
+    "fine": {
+      "meaning": "adj. 好的；優良的；晴朗的；細微的；n. 罰款；v. 處以罰款",
+      "tip": "先看詞性：pay a fine 的 fine 是罰款；be fined for 是因某行為受罰。fine details 則表示細節。"
+    },
+    "address": {
+      "meaning": "n. 地址；演說；v. 處理問題；向……發表演說；寫上地址",
+      "tip": "address a problem 表處理問題，直接接受詞。信件語境才常與地址有關，不要看到 address 就固定翻成地址。"
+    },
+    "issue": {
+      "meaning": "n. 議題；問題；期刊的一期；v. 發布；發行",
+      "tip": "discuss an issue 的 issue 是議題；issue a warning 則是發布警告。先辨識它在句中是名詞還是動詞。"
+    },
+    "charge": {
+      "meaning": "n. 費用；指控；掌管；電荷；v. 收費；指控；充電",
+      "tip": "charge someone for something 表收費；charge someone with a crime 表指控。in charge of 表負責，be charged with 需依語境判斷。"
+    },
+    "spring": {
+      "meaning": "n. 春天；泉水；彈簧；v. 跳起；突然出現",
+      "tip": "季節、地形和機械文章可使用不同的 spring。由 water、season 或機件線索判斷，不只記春天。"
+    },
+    "bank": {
+      "meaning": "n. 銀行；河岸；v. 把錢存入銀行；傾斜轉彎",
+      "tip": "river bank 是河岸；bank account 是銀行帳戶。相同拼字的不同字義，近義詞不能跨義替換。"
+    },
+    "book": {
+      "meaning": "n. 書；v. 預訂；登記",
+      "tip": "book a room 或 book tickets 表預訂，book 此時是動詞。由受詞與動作順序判斷，不只看常見名詞義。"
+    },
+    "bear": {
+      "meaning": "n. 熊；v. 忍受；承擔；帶有；生育",
+      "tip": "bear responsibility 是承擔責任；cannot bear V-ing 表無法忍受。be born 常談出生，borne 則見於承擔或攜帶等用法。"
+    },
+    "plant": {
+      "meaning": "n. 植物；工廠；v. 種植；安置",
+      "tip": "a power plant 指發電廠，不是植物。文章主題、修飾詞與動詞共同決定 plant 的字義。"
+    },
+    "match": {
+      "meaning": "n. 比賽；火柴；相配的人或物；v. 配對；相配；比得上",
+      "tip": "match A with B 表配對；match 作相配的動詞時也可直接接受詞。球賽、火源與服裝語境要分開判讀。"
+    },
+    "light": {
+      "meaning": "n. 光；燈；adj. 輕的；淺色的；v. 點燃；照亮",
+      "tip": "light luggage 的 light 是輕的；light a candle 是點燃。點燃的過去式可用 lit 或 lighted，依搭配核對。"
+    },
+    "right": {
+      "meaning": "adj. 正確的；右邊的；適當的；n. 權利；右方；adv. 正好；向右",
+      "tip": "human rights 談權利；the right answer 談正確；turn right 談方向。不要把同一中文義套入所有詞性。"
+    },
+    "mean": {
+      "meaning": "v. 意指；打算；意味著；adj. 刻薄的；吝嗇的；平均的；n. 平均值",
+      "tip": "mean to V 是打算做；mean V-ing 是意味著做。be meant to V 常表示原本的目的或預期用途。"
+    },
+    "present": {
+      "meaning": "adj. 在場的；目前的；n. 禮物；現在；v. 提出；呈現；頒發",
+      "tip": "present a proposal 是提出方案；be present 是在場。名詞、形容詞與動詞的重音也可能不同，需配合詞性核對發音。"
+    },
+    "subject": {
+      "meaning": "n. 主題；學科；主詞；研究對象；adj. 易受……影響的；v. 使遭受",
+      "tip": "be subject to 常表示受規定約束或可能受影響。研究文章的 subjects 可能是研究參與者，不一定指學科。"
+    },
+    "object": {
+      "meaning": "n. 物體；目的；受詞；v. 反對",
+      "tip": "object to 後的 to 是介系詞，接名詞或 V-ing。物體與反對兩種用法的重音不同，先確認句中詞性。"
+    },
+    "conduct": {
+      "meaning": "v. 進行；指揮；引導；傳導；n. 行為；表現",
+      "tip": "conduct research 或 conduct a survey 表進行研究或調查。conduct electricity 談導電，不能只套用行為的名詞義。"
+    },
+    "record": {
+      "meaning": "n. 紀錄；唱片；最佳成績；v. 記錄；錄音；錄影",
+      "tip": "keep a record 是保留紀錄；record a speech 是錄下演說。破紀錄常用 break a record，留意搭配與詞性。"
+    },
+    "minute": {
+      "meaning": "n. 分鐘；會議紀錄（minutes）；adj. 極小的；細微的",
+      "tip": "minutes 可指會議紀錄；minute 作極小的形容詞時，讀音與分鐘不同。由尺寸或時間線索判讀。"
+    },
+    "close": {
+      "meaning": "v. 關閉；結束；adj. 接近的；親密的；adv. 靠近地",
+      "tip": "close the door 是關門；be close to 是接近。副詞 closely 常表示密切地或仔細地，不能在所有位置與 close 互換。"
+    },
+    "last": {
+      "meaning": "adj. 最後的；上一個的；adv. 最後；v. 持續",
+      "tip": "The meeting lasted two hours 的 last 是持續。last week 與 the last week 的時間範圍不同，需依整句判斷。"
+    },
+    "patient": {
+      "meaning": "n. 病人；adj. 有耐心的",
+      "tip": "a patient 與 be patient 的詞性不同。patient 是人或特質，patience 才是耐心的名詞；be patient with someone 表對某人有耐心。"
+    },
+    "novel": {
+      "meaning": "n. 長篇小說；adj. 新穎的；新奇的",
+      "tip": "a novel solution 指新穎的解法；read a novel 才是讀小說。留意 novel 是否修飾另一個名詞。"
+    },
+    "grave": {
+      "meaning": "n. 墳墓；adj. 嚴重的；嚴肅的",
+      "tip": "grave concerns 表嚴重的憂慮。形容詞義不能直接翻成墳墓，需利用問題或後果的線索。"
+    },
+    "elbow": {
+      "meaning": "n. 手肘；v. 用手肘推擠；擠出通道",
+      "tip": "elbow one's way through 表用手肘擠著穿過。名詞也可能轉作動詞，應看後方的受詞與路徑。"
+    },
+    "tight": {
+      "meaning": "adj. 緊的；緊密的；時間或預算緊湊的；adv. 緊緊地",
+      "tip": "a tight schedule 表行程緊湊；a tight budget 表預算吃緊。不要只記衣物過緊的具體意思。"
+    },
+    "run": {
+      "meaning": "v. 跑；經營；運作；流動；延續；n. 跑步；一段運行",
+      "tip": "run a business 是經營公司；a machine runs 是機器運作。run out of 後接用盡的資源，主詞通常是使用資源的人或團體。"
+    },
+    "raise": {
+      "meaning": "v. 舉起；提高；提出；籌募；養育",
+      "tip": "raise 是及物動詞，可用 raise funds 或 raise a question。rise 常表示自行上升，過去式 rose，與 raise 的用法不同。"
+    },
+    "rise": {
+      "meaning": "v. 上升；增加；起身；n. 上升；增加",
+      "tip": "rise 常作不及物動詞；raise 通常需要受詞。rise、rose、risen 與 raise、raised、raised 應分開記憶。"
+    },
+    "lie": {
+      "meaning": "v. 躺；位於；說謊；n. 謊言",
+      "tip": "躺是 lie、lay、lain；說謊是 lie、lied、lied。lay、laid、laid 則表示放置，通常需要受詞。"
+    },
+    "lay": {
+      "meaning": "v. 放置；鋪設；產卵；adj. 非專業的；俗人的",
+      "tip": "lay、laid、laid 常表示把東西放下，需留意受詞。不要與 lie 表躺下的過去式 lay 混淆。"
+    },
+    "adapt": {
+      "meaning": "v. 適應；調整；改編",
+      "tip": "adapt to 表適應，to 後接名詞或 V-ing；adapt A for B 表為用途調整。adopt 則常表示採用或收養。"
+    },
+    "adopt": {
+      "meaning": "v. 採用；收養；正式通過",
+      "tip": "adopt a method 是採用方法；adopt a child 是收養孩子。適應環境通常用 adapt to，不用 adopt to。"
+    },
+    "affect": {
+      "meaning": "v. 影響；使感動；假裝",
+      "tip": "affect 通常作影響的動詞；effect 常是效果或影響的名詞。effect 也可作促成的動詞，需依句型辨識。"
+    },
+    "effect": {
+      "meaning": "n. 效果；影響；v. 促成；使發生",
+      "tip": "have an effect on 表對……有影響。effect change 是促成改變，與 affect change 的動詞意思不同。"
+    },
+    "economic": {
+      "meaning": "adj. 經濟的；經濟學的",
+      "tip": "economic growth 指經濟成長；economical 指節省資源的。分辨談的是經濟體系還是使用成本。"
+    },
+    "economical": {
+      "meaning": "adj. 節省的；經濟實惠的",
+      "tip": "an economical car 指用油或費用較省的車；economic policy 才是經濟政策。注意 economic 與 economical 的語意差別。"
+    },
+    "sensible": {
+      "meaning": "adj. 明智的；合乎情理的",
+      "tip": "sensible advice 是明智的建議；sensitive 表敏感的。不要只因拼字接近就混用兩詞。"
+    },
+    "sensitive": {
+      "meaning": "adj. 敏感的；體貼的；需要謹慎處理的",
+      "tip": "sensitive to 後接敏感的對象；sensitive information 是敏感資訊。sensible 則表示明智的。"
+    },
+    "historic": {
+      "meaning": "adj. 歷史上重要的；具有歷史意義的",
+      "tip": "historic 常凸顯歷史上的重要性；historical 較廣泛地指與歷史有關。描述事件時先判斷是否強調其重要性。"
+    },
+    "historical": {
+      "meaning": "adj. 歷史的；與歷史有關的",
+      "tip": "historical records 是歷史紀錄，不必表示每份紀錄都劃時代。historic 則常強調歷史重要性。"
+    },
+    "advice": {
+      "meaning": "n. 建議；忠告",
+      "tip": "advice 通常不可數，可說 a piece of advice；advise 才是動詞。advise someone to V 與 suggest V-ing 的句型不同。"
+    },
+    "information": {
+      "meaning": "n. 資訊；消息；資料",
+      "tip": "information 通常不可數，不加 -s，也不直接接 an。可說 a piece of information；可數的 fact 則有複數 facts。"
+    },
+    "furniture": {
+      "meaning": "n. 家具",
+      "tip": "furniture 通常不可數，可用 a piece of furniture。chair 和 desk 是可數的個別家具，兩種範圍要分清楚。"
+    },
+    "news": {
+      "meaning": "n. 新聞；消息",
+      "tip": "news 雖以 -s 結尾，通常按不可數名詞使用，搭配單數動詞。a news report 可數，但 a news 不合一般用法。"
+    },
+    "research": {
+      "meaning": "n. 研究；v. 研究；調查",
+      "tip": "research 常用不可數義，可說 do 或 conduct research；a study 則可數。research a topic 的 research 是動詞。"
+    },
+    "evidence": {
+      "meaning": "n. 證據；跡象；v. 顯示；證明",
+      "tip": "evidence 在常用義通常不可數，可說 a piece of evidence。evidence that 後可接子句，但有證據不等於證明所有情況必然成立。"
+    },
+    "responsible": {
+      "meaning": "adj. 負責的；可靠的；造成某結果的",
+      "tip": "be responsible for 可表示負責某事，也可表示造成某結果。先由上下文分辨責任與原因，不固定翻成有責任感。"
+    },
+    "responsibility": {
+      "meaning": "n. 責任；職責",
+      "tip": "take responsibility for 表承擔責任；responsibilities 可指多項具體職責。responsible 是形容詞，不能直接當責任的名詞。"
+    },
+    "prevent": {
+      "meaning": "v. 預防；阻止",
+      "tip": "prevent someone from V-ing 表阻止某人做某事。from 是介系詞，後面的動詞應用 V-ing。"
+    },
+    "depend": {
+      "meaning": "v. 依賴；取決於",
+      "tip": "depend on 後接依賴或取決的對象；whether 子句常可作主詞。不要把搭配中的 on 改成 of。"
+    },
+    "despite": {
+      "meaning": "prep. 儘管；不管",
+      "tip": "despite 後接名詞、代名詞或 V-ing，不直接接完整主詞與動詞。若接完整子句，可用 although 或 despite the fact that。"
+    },
+    "although": {
+      "meaning": "conj. 雖然；儘管",
+      "tip": "although 引導讓步子句，主句通常不再加 but。與 despite 的差別在於後方接完整子句還是名詞性成分。"
+    },
+    "suggest": {
+      "meaning": "v. 建議；暗示；顯示",
+      "tip": "suggest V-ing 或 suggest that S (should) V 可表建議。suggest someone to V 不屬一般建議句型；顯示之義則需依語境判讀。"
+    },
+    "recommend": {
+      "meaning": "v. 推薦；建議",
+      "tip": "recommend V-ing 或 recommend that S (should) V 可表建議。推薦某物給某人可用 recommend something to someone，注意介系詞與受詞順序。"
+    },
+    "discuss": {
+      "meaning": "v. 討論；商量",
+      "tip": "discuss 通常直接接討論的議題，不加 about。若用名詞 discussion，則可說 a discussion about 或 on a topic。"
+    },
+    "participate": {
+      "meaning": "v. 參與；參加",
+      "tip": "participate in 表參與活動，常需介系詞 in。participant 是參與者，participation 是參與，依句中位置選詞性。"
+    },
+    "contribute": {
+      "meaning": "v. 貢獻；捐助；促成；投稿",
+      "tip": "contribute to 可表示促成某結果，to 是介系詞。不能只把所有 contribute to 都翻成捐款，需觀察後接內容。"
+    },
+    "access": {
+      "meaning": "n. 使用或進入的機會；通道；v. 取得；存取",
+      "tip": "have access to 的 access 是名詞，後接 to。access information 的 access 是動詞，直接接資訊作受詞。"
+    },
+    "approach": {
+      "meaning": "n. 方法；途徑；接近；v. 接近；著手處理",
+      "tip": "an approach to 的 to 是介系詞，可接 V-ing。approach 作接近的動詞時，通常直接接受詞。"
+    },
+    "used": {
+      "meaning": "adj. 用過的；二手的；習慣的；use 的過去式或過去分詞",
+      "tip": "used to V 表過去的習慣；be used to V-ing 表習慣於。be used to V 也可能表示被用來做某事，要看 to 的功能。"
+    },
+    "hard": {
+      "meaning": "adj. 困難的；堅硬的；adv. 努力地；猛烈地",
+      "tip": "work hard 是努力工作；hardly 是幾乎不，不是 hard 的一般程度副詞。hardly 本身帶有否定語意。"
+    },
+    "hardly": {
+      "meaning": "adv. 幾乎不；幾乎沒有",
+      "tip": "hardly 表接近沒有，與努力地的 hard 不同。閱讀時注意它對整個敘述的否定限制。"
+    },
+    "borrow": {
+      "meaning": "v. 借入；借用",
+      "tip": "borrow A from B 表向 B 借入 A；lend A to B 是借出給 B。由物品移動的方向選動詞。"
+    },
+    "lend": {
+      "meaning": "v. 借出；提供；增添",
+      "tip": "lend someone something 或 lend something to someone 表借出。不要與 borrow something from someone 的借入方向混淆。"
+    },
+    "spend": {
+      "meaning": "v. 花費時間或金錢；度過",
+      "tip": "spend time V-ing 或 spend money on something 都很常用。cost 與 take 的主詞和受詞安排不同，不宜直接替換。"
+    },
+    "cost": {
+      "meaning": "n. 費用；代價；v. 花費；使付出代價",
+      "tip": "某物 cost 某人金錢，主詞常是商品或事情。一般花費義的三態為 cost、cost、cost；costed 常見於估算成本的專門義。"
+    },
+    "look": {
+      "meaning": "v. 看；看起來；尋找；n. 神情；外觀；看一眼",
+      "tip": "look at 表看某物；look for 表尋找；look after 表照顧。look 作看起來的連綴動詞時，後面常接形容詞。"
+    },
+    "taste": {
+      "meaning": "n. 味道；品味；v. 品嚐；嚐起來",
+      "tip": "taste 作連綴動詞時，常接形容詞描述味道；作品嚐時可直接接受詞。名詞 taste 也能表示審美品味。"
+    },
+    "due": {
+      "meaning": "adj. 到期的；應得的；預定的",
+      "tip": "due to 可表因為；be due to V 可表預定做某事。先看 to 後是名詞成分還是原形動詞。"
+    },
+    "once": {
+      "meaning": "adv. 一次；曾經；conj. 一旦",
+      "tip": "once 作一旦時引導時間或條件子句；once a week 才表示頻率。句中位置有助於區分用法。"
+    },
+    "while": {
+      "meaning": "conj. 當……時；然而；雖然；n. 一段時間",
+      "tip": "while 可以表示同時，也能形成對比或讓步。不要看到 while 就一律翻成當……的時候。"
+    },
+    "since": {
+      "meaning": "prep./conj./adv. 自從；conj. 因為；既然",
+      "tip": "since 可表示起點時間，也可表示原因。時間義常與完成式相關，原因義則需看上下文的推論關係。"
+    },
+    "as": {
+      "meaning": "prep. 作為；conj. 當……時；因為；隨著；如同；adv. 同樣地",
+      "tip": "as 可能表身分、時間、原因或比較，必須觀察後方成分。as...as 與 as a student 的句法功能不同。"
+    },
+    "well": {
+      "meaning": "adv. 好地；充分地；adj. 健康的；n. 井",
+      "tip": "well 作副詞常修飾動作，作健康的形容詞可接在 be 或 feel 後。a well 則是井，不能只用讀音猜詞性。"
+    },
+    "fair": {
+      "meaning": "adj. 公平的；合理的；尚可的；晴朗的；淺色的；n. 市集；展覽會",
+      "tip": "a fair price 是合理價格；a book fair 是書展。形容詞 fair 與名詞展覽會的意思要分開判斷。"
+    },
+    "watch": {
+      "meaning": "v. 觀看；注意；看守；n. 手錶；監視",
+      "tip": "watch someone V 常觀察完整動作；watch someone V-ing 常強調進行中的動作。名詞 watch 可指手錶。"
+    },
+    "serve": {
+      "meaning": "v. 服務；供應；服役；擔任；發球",
+      "tip": "serve as 表擔任或用作；serve food 表供應食物。由受詞判讀功能，不只記服務他人的單一意思。"
+    },
+    "concern": {
+      "meaning": "n. 憂慮；關切的事；v. 使擔憂；涉及",
+      "tip": "be concerned about 常表擔心；be concerned with 常表涉及或關注某事。concerned 是形容詞，concern 是名詞或動詞。"
+    },
+    "culture": {
+      "meaning": "n. 文化；風氣；培養物；v. 培養",
+      "tip": "culture 在社會文章談文化，也可在科學語境談培養。cultural 是文化的形容詞，不是人有禮貌的唯一說法。"
+    },
+    "critical": {
+      "meaning": "adj. 關鍵的；嚴重的；批評的；批判思考的",
+      "tip": "critical thinking 是批判性思考，強調檢驗證據。a critical condition 談嚴重狀況，不等同於批評別人。"
+    },
+    "current": {
+      "meaning": "adj. 目前的；通用的；n. 水流；氣流；電流",
+      "tip": "current issues 談當前議題；ocean currents 是洋流。由修飾與搭配判斷它是形容詞還是名詞。"
+    },
+    "order": {
+      "meaning": "n. 順序；命令；訂單；秩序；v. 命令；訂購；排列",
+      "tip": "in order to V 表目的；place an order 表下訂單。order someone to V 是命令某人做事。"
+    },
+    "term": {
+      "meaning": "n. 術語；學期；期限；條件；v. 把……稱為",
+      "tip": "in terms of 表就某方面而言；terms 可指合約條件。學校語境的 term 則常是學期。"
+    },
+    "interest": {
+      "meaning": "n. 興趣；利益；利息；v. 使感興趣",
+      "tip": "interest in 談興趣；interest on a loan 談貸款利息。interested 描寫感興趣的人，interesting 描寫引起興趣的事物。"
+    },
+    "practice": {
+      "meaning": "n. 練習；慣例；實務；v. 練習；實行",
+      "tip": "practice V-ing 表練習某動作；put into practice 表付諸實行。practice 在美式英語也作動詞，英式常拼 practise。"
+    },
+    "figure": {
+      "meaning": "n. 數字；人物；圖形；身材；v. 認為；計算",
+      "tip": "figure out 表弄清楚；public figures 是公眾人物。圖表中的 figure 可是圖示，閱讀時需參考版面與上下文。"
+    },
+    "capital(ism)": {
+      "meaning": "capital：n. 首都；資本；大寫字母；adj. 首要的；capitalism：n. 資本主義",
+      "tip": "capital 與 capitalism 雖合列詞條，不能共用所有詞性與字義。資本、首都及大寫字母應分別看語境。"
+    },
+    "article": {
+      "meaning": "n. 文章；物品；條款；冠詞",
+      "tip": "a/an/the 是冠詞；an article of clothing 指一件衣物。先從搭配判斷 article 指文章、物品，還是文法名稱。"
+    },
+    "bill": {
+      "meaning": "n. 帳單；鈔票；法案；鳥喙；v. 開帳單；向……收費",
+      "tip": "pay a bill 是付帳，pass a bill 是通過法案，a dollar bill 是鈔票。判義時看動詞搭配，不把每個 bill 都翻成帳單。"
+    },
+    "coach": {
+      "meaning": "n. 教練；長途巴士；v. 指導；訓練",
+      "tip": "coach 作動詞可指指導或訓練；作名詞則可能是教練或長途巴士。先從主詞與受詞判斷詞性，再解讀情境。"
+    },
+    "date": {
+      "meaning": "n. 日期；約會；棗子；v. 與……約會；標註日期；追溯至",
+      "tip": "date back to 與 date from 表追溯至，常用主動形式。判斷 date 指日期還是約會時，要看安排、人物與事件的線索。"
+    },
+    "degree": {
+      "meaning": "n. 程度；度數；學位",
+      "tip": "a degree in biology 指生物學學位；to some degree 表在某種程度上。溫度、角度與學位的單位不同，翻譯時保留語境。"
+    },
+    "deposit": {
+      "meaning": "n. 存款；押金；訂金；沉積物；v. 存入；放置；使沉積",
+      "tip": "pay a deposit 常指先付訂金或押金，deposit money 則可指存款。科學語境中的 deposits 可指沉積物，不能一律翻成銀行存款。"
+    },
+    "fall": {
+      "meaning": "v. 落下；跌倒；下降；變成某狀態；n. 秋天；落下；下降",
+      "tip": "fall 的過去式是 fell，過去分詞是 fallen；fall asleep 表睡著，fall behind 表落後。作名詞可指秋天或下降，須用季節或數據線索分辨。"
+    },
+    "file": {
+      "meaning": "n. 檔案；文件夾；銼刀；v. 歸檔；提出申請或申訴；列隊行進",
+      "tip": "file a complaint 指正式提出申訴，computer files 則是電腦檔案。不要因為都可能提到文件，就忽略 file 在句中的動詞功能。"
+    },
+    "ground": {
+      "meaning": "n. 地面；土地；場地；理由；根據；v. 使停飛；使有根據",
+      "tip": "on the ground 指在地面上，on the grounds that 後接理由子句。grounds 常用複數表示理由或場地，不能只依字尾判義。"
+    },
+    "judge": {
+      "meaning": "n. 法官；裁判；評審；v. 判斷；評估；審判",
+      "tip": "judge by/from 表依某種線索判斷；judge a contest 指擔任比賽評審。名詞 judge 指人，judgment 則指判斷或判決。"
+    },
+    "leave": {
+      "meaning": "v. 離開；留下；使保持某狀態；交付；n. 休假；准假",
+      "tip": "leave 的過去式與過去分詞都是 left。leave the door open 是讓門保持開著，on leave 指休假，與離開某地的意思不同。"
+    },
+    "matter": {
+      "meaning": "n. 事情；問題；物質；v. 重要；有關係",
+      "tip": "What matters is... 表重要的是……；It does not matter 表沒有關係。a matter of time 指時間早晚的問題，科學語境中的 matter 可指物質。"
+    },
+    "mind": {
+      "meaning": "n. 心智；想法；記憶；v. 介意；留意；照看",
+      "tip": "mind 後接動作時用 V-ing，例如 mind waiting；Would you mind...? 是禮貌請求。keep in mind 表記住，make up one's mind 表下定決心。"
+    },
+    "note": {
+      "meaning": "n. 筆記；便條；音符；鈔票；v. 注意；記錄；指出",
+      "tip": "take notes 是做筆記，note that... 則用動詞指出資訊。pay attention to 與 take note of 也表注意，但後接結構不同。"
+    },
+    "plain": {
+      "meaning": "adj. 清楚的；明白的；簡單的；樸素的；n. 平原",
+      "tip": "plain instructions 指清楚的指示，plain clothing 指樸素的衣服，a plain 則是平原。先判斷詞性，再用所修飾的名詞區分形容詞字義。"
+    },
+    "point": {
+      "meaning": "n. 點；尖端；重點；觀點；分數；v. 指向；指出",
+      "tip": "point to 可指向事物或證據所顯示的方向；point out 表指出某事。the point of an argument 指論點重心，不能只翻成一個點。"
+    },
+    "post": {
+      "meaning": "n. 郵件；職位；崗位；柱子；貼文；v. 郵寄；張貼；發布",
+      "tip": "post a notice 是張貼公告，a job post 可指職位，an online post 指網路貼文。用郵件、工作或網路情境判義，避免只記一種中文。"
+    },
+    "project": {
+      "meaning": "n. 計畫；專題；工程；v. 投射；預測；規畫",
+      "tip": "project 作名詞時常指有目標的計畫或專題，作動詞可指投射影像或預測數據。名詞與動詞的重音位置可能不同，應分別核對讀音。"
+    },
+    "rate": {
+      "meaning": "n. 比率；速度；費率；v. 評價；評定等級",
+      "tip": "at a rate of 後接速度或比率；rate a service 則是評價服務。數據的量測對象不同，需讀清單位。"
+    },
+    "second": {
+      "meaning": "adj. 第二的；次要的；n. 秒；第二位或第二名；adv. 第二；其次",
+      "tip": "a second 表一秒，the second attempt 表第二次嘗試。a second chance 也可指再一次機會，a 與 the 會改變語意焦點。"
+    },
+    "sentence": {
+      "meaning": "n. 句子；判決；刑期；v. 判刑",
+      "tip": "write a sentence 指寫句子，serve a sentence 指服刑。sentence someone to... 表判某人……刑罰，必須從法律語境辨義。"
+    },
+    "set": {
+      "meaning": "v. 放置；設定；使處於某狀態；制定；n. 一套；一組；集合；adj. 固定的；準備好的",
+      "tip": "set 的原形、過去式與過去分詞相同，V-ing 是 setting。set a goal、set an example 與 a set of tools 的詞性和搭配不同，仿寫時保留整個片語。"
+    },
+    "sign": {
+      "meaning": "n. 記號；標誌；徵兆；招牌；手勢；v. 簽名；示意",
+      "tip": "a sign of 後接某現象的徵兆，sign a form 是在表格簽名。交通標誌與身體徵兆都可能用 sign，需讀清它所指的證據。"
+    },
+    "sound": {
+      "meaning": "n. 聲音；v. 聽起來；發出聲響；adj. 健全的；可靠的；充分的",
+      "tip": "sound 作連綴動詞時後接形容詞，例如 sound reasonable。sound advice 是可靠的建議，不能把形容詞 sound 都翻成聲音。"
+    },
+    "stage": {
+      "meaning": "n. 舞臺；階段；v. 舉辦；上演",
+      "tip": "at an early stage 表在早期階段，on stage 表在舞臺上。stage a performance 中的 stage 是動詞，表示安排上演。"
+    },
+    "stand": {
+      "meaning": "v. 站立；位於；忍受；持某種立場；n. 攤位；架；立場",
+      "tip": "stand 可指站立，也可表示忍受；stand for 表代表或支持。take a stand 指表明立場，須把搭配一起讀。"
+    },
+    "still": {
+      "meaning": "adv. 仍然；還；更；adj. 靜止的；安靜的；v. 使平靜",
+      "tip": "still waiting 表仍在等待，stand still 則是站著不動。still better 可表示更加好，需區分副詞修飾的範圍。"
+    },
+    "store": {
+      "meaning": "n. 商店；儲備；v. 儲存；存放",
+      "tip": "a store 通常是商店，store data 則是儲存資料。in store for someone 表等待某人的事，不能逐字解讀成商店。"
+    },
+    "supply": {
+      "meaning": "n. 供應；供給量；用品；v. 供應；提供",
+      "tip": "supply someone with something 與 supply something to someone 都可用。supplies 常指所需用品，supply and demand 則指供給與需求。"
+    },
+    "view": {
+      "meaning": "n. 景色；視野；觀點；v. 觀看；看待；視為",
+      "tip": "in my view 表在我看來，view A as B 表把 A 視為 B。區分景色與觀點時，留意人物的立場和後接介系詞。"
+    },
+    "will": {
+      "meaning": "aux. 將；願意；n. 意志；意願；遺囑",
+      "tip": "will 作助動詞時後接原形動詞，不加第三人稱 -s。a strong will 指堅強意志，a will 在法律語境中可指遺囑。"
+    },
+    "wind": {
+      "meaning": "n. 風；v. 纏繞；轉動上緊；蜿蜒前進",
+      "tip": "wind 指風時與表示纏繞的動詞讀音不同；動詞過去式及過去分詞為 wound。閱讀時用天氣或動作線索辨義，不把 wound 與傷口的讀音混在一起。"
+    },
+    "work": {
+      "meaning": "n. 工作；勞動；作品；v. 工作；運作；奏效",
+      "tip": "work 作工作意義時通常不可數，但作品可用 works。The plan works 表計畫奏效，不能總把 work 逐字翻成工作。"
+    },
+    "yield": {
+      "meaning": "v. 產生；出產；讓步；讓出；n. 產量；收益",
+      "tip": "yield to 後接讓步或讓路的對象，yield a result 則指產生結果。農業 yield 常指產量，財經語境則可能指收益。"
+    },
+    "equip(ment)": {
+      "meaning": "v. equip 裝備；配備；n. equipment 設備；器材（不可數）",
+      "tip": "equip A with B 表替 A 配備 B；equipment 為不可數名詞，可說 a piece of equipment，避免 equipments。動詞 equip 與名詞 equipment 的詞形表分開核對。"
+    },
+    "state(ment)": {
+      "meaning": "n. 狀態；州；國家；statement 陳述；聲明；v. 陳述；說明",
+      "tip": "state 作動詞時可直接接受詞或 that 子句，表示陳述；statement 是名詞。a state of mind 談心境，a government statement 則是政府聲明。"
+    }
+  }
+}

@@ -1,0 +1,1972 @@
+{
+  "policy": "Target aliases and inflections are exempt. Other known level6 words and reviewed advanced surroundings are excluded. Basic grammar and transparent derivatives are recorded separately; unclassified tokens are not assigned an invented CEEC level.",
+  "stats": {
+    "words": 6024,
+    "contextsPerWord": 3,
+    "appearances": 18072,
+    "knownLevel6Violations": 0,
+    "reviewedAdvancedViolations": 0,
+    "unclassifiedDistinct": 252
+  },
+  "violations": [],
+  "unclassified": [
+    {
+      "token": "careless",
+      "appearances": 29,
+      "exampleWords": [
+        "apology",
+        "awkward",
+        "bacteria"
+      ]
+    },
+    {
+      "token": "sunrise",
+      "appearances": 26,
+      "exampleWords": [
+        "awhile",
+        "cargo",
+        "chirp"
+      ]
+    },
+    {
+      "token": "sunset",
+      "appearances": 26,
+      "exampleWords": [
+        "addition",
+        "adequate",
+        "awe"
+      ]
+    },
+    {
+      "token": "everyday",
+      "appearances": 24,
+      "exampleWords": [
+        "abstraction",
+        "alien",
+        "astronaut"
+      ]
+    },
+    {
+      "token": "harmless",
+      "appearances": 18,
+      "exampleWords": [
+        "crawl",
+        "debris",
+        "gossip"
+      ]
+    },
+    {
+      "token": "fictional",
+      "appearances": 14,
+      "exampleWords": [
+        "addiction",
+        "admiral",
+        "affair"
+      ]
+    },
+    {
+      "token": "findings",
+      "appearances": 14,
+      "exampleWords": [
+        "digest",
+        "fundamental",
+        "grasp"
+      ]
+    },
+    {
+      "token": "affordable",
+      "appearances": 13,
+      "exampleWords": [
+        "broaden",
+        "cooperative",
+        "discipline"
+      ]
+    },
+    {
+      "token": "newcomers",
+      "appearances": 12,
+      "exampleWords": [
+        "alienate",
+        "brochure",
+        "citizenship"
+      ]
+    },
+    {
+      "token": "seedlings",
+      "appearances": 11,
+      "exampleWords": [
+        "gallon",
+        "nursery",
+        "sack"
+      ]
+    },
+    {
+      "token": "cleanup",
+      "appearances": 10,
+      "exampleWords": [
+        "ash",
+        "definite",
+        "generous"
+      ]
+    },
+    {
+      "token": "cyclist",
+      "appearances": 10,
+      "exampleWords": [
+        "ambulance",
+        "bounce",
+        "brake"
+      ]
+    },
+    {
+      "token": "fully",
+      "appearances": 10,
+      "exampleWords": [
+        "alive",
+        "compile",
+        "convey"
+      ]
+    },
+    {
+      "token": "handmade",
+      "appearances": 10,
+      "exampleWords": [
+        "arouse",
+        "array",
+        "ceramic"
+      ]
+    },
+    {
+      "token": "recordings",
+      "appearances": 10,
+      "exampleWords": [
+        "conceive",
+        "conception",
+        "dialect"
+      ]
+    },
+    {
+      "token": "reusable",
+      "appearances": 10,
+      "exampleWords": [
+        "amid/amidst",
+        "consensus",
+        "consumption"
+      ]
+    },
+    {
+      "token": "truly",
+      "appearances": 10,
+      "exampleWords": [
+        "induce",
+        "minority",
+        "neutral"
+      ]
+    },
+    {
+      "token": "teammate",
+      "appearances": 9,
+      "exampleWords": [
+        "confront",
+        "confrontation",
+        "cowardly"
+      ]
+    },
+    {
+      "token": "cyclists",
+      "appearances": 8,
+      "exampleWords": [
+        "alley",
+        "besides",
+        "dusk"
+      ]
+    },
+    {
+      "token": "coastal",
+      "appearances": 7,
+      "exampleWords": [
+        "bosom",
+        "interior",
+        "lobster"
+      ]
+    },
+    {
+      "token": "hillside",
+      "appearances": 7,
+      "exampleWords": [
+        "flock",
+        "penetrate",
+        "populate"
+      ]
+    },
+    {
+      "token": "manageable",
+      "appearances": 7,
+      "exampleWords": [
+        "arrogant",
+        "assistant",
+        "default"
+      ]
+    },
+    {
+      "token": "teammates",
+      "appearances": 7,
+      "exampleWords": [
+        "anthem",
+        "arrogant",
+        "aspire"
+      ]
+    },
+    {
+      "token": "unexpectedly",
+      "appearances": 7,
+      "exampleWords": [
+        "double",
+        "gray",
+        "policeman/cop"
+      ]
+    },
+    {
+      "token": "verified",
+      "appearances": 7,
+      "exampleWords": [
+        "distinguish",
+        "limitation",
+        "output"
+      ]
+    },
+    {
+      "token": "warnings",
+      "appearances": 7,
+      "exampleWords": [
+        "collision",
+        "gross",
+        "kidnap"
+      ]
+    },
+    {
+      "token": "seasonal",
+      "appearances": 6,
+      "exampleWords": [
+        "economics",
+        "elevate",
+        "evergreen"
+      ]
+    },
+    {
+      "token": "weaknesses",
+      "appearances": 6,
+      "exampleWords": [
+        "crisis",
+        "engage(ment)",
+        "hacker"
+      ]
+    },
+    {
+      "token": "wetland",
+      "appearances": 6,
+      "exampleWords": [
+        "inhabit",
+        "invade",
+        "outing"
+      ]
+    },
+    {
+      "token": "correction",
+      "appearances": 5,
+      "exampleWords": [
+        "diligent",
+        "haste",
+        "hasten"
+      ]
+    },
+    {
+      "token": "riverside",
+      "appearances": 5,
+      "exampleWords": [
+        "aesthetic",
+        "beautify",
+        "evacuate"
+      ]
+    },
+    {
+      "token": "backup",
+      "appearances": 4,
+      "exampleWords": [
+        "absolute",
+        "cellular",
+        "discharge"
+      ]
+    },
+    {
+      "token": "believable",
+      "appearances": 4,
+      "exampleWords": [
+        "imagination",
+        "novelist",
+        "thrill"
+      ]
+    },
+    {
+      "token": "flickered",
+      "appearances": 4,
+      "exampleWords": [
+        "dim",
+        "dusty",
+        "fireplace"
+      ]
+    },
+    {
+      "token": "footprint",
+      "appearances": 4,
+      "exampleWords": [
+        "balcony",
+        "burglar",
+        "detective"
+      ]
+    },
+    {
+      "token": "negotiators",
+      "appearances": 4,
+      "exampleWords": [
+        "mankind/humankind",
+        "meanwhile",
+        "missile"
+      ]
+    },
+    {
+      "token": "notifications",
+      "appearances": 4,
+      "exampleWords": [
+        "annoy",
+        "drawer",
+        "interfere"
+      ]
+    },
+    {
+      "token": "shoreline",
+      "appearances": 4,
+      "exampleWords": [
+        "drought",
+        "prediction",
+        "prolong"
+      ]
+    },
+    {
+      "token": "sugary",
+      "appearances": 4,
+      "exampleWords": [
+        "cafeteria",
+        "cola/Coke",
+        "college"
+      ]
+    },
+    {
+      "token": "usable",
+      "appearances": 4,
+      "exampleWords": [
+        "hydrogen",
+        "janitor",
+        "salvage"
+      ]
+    },
+    {
+      "token": "useless",
+      "appearances": 4,
+      "exampleWords": [
+        "dialect",
+        "hockey",
+        "latitude"
+      ]
+    },
+    {
+      "token": "worsen",
+      "appearances": 4,
+      "exampleWords": [
+        "bind",
+        "bound",
+        "breakthrough"
+      ]
+    },
+    {
+      "token": "animation",
+      "appearances": 3,
+      "exampleWords": [
+        "atom",
+        "atomic",
+        "enlarge(ment)"
+      ]
+    },
+    {
+      "token": "cancellation",
+      "appearances": 3,
+      "exampleWords": [
+        "abrupt",
+        "accommodation",
+        "airline"
+      ]
+    },
+    {
+      "token": "deleted",
+      "appearances": 3,
+      "exampleWords": [
+        "indispensable",
+        "surveillance",
+        "theft"
+      ]
+    },
+    {
+      "token": "distort",
+      "appearances": 3,
+      "exampleWords": [
+        "deprive",
+        "tendency",
+        "thorough"
+      ]
+    },
+    {
+      "token": "earnings",
+      "appearances": 3,
+      "exampleWords": [
+        "dividend",
+        "gross",
+        "prudent"
+      ]
+    },
+    {
+      "token": "eruption",
+      "appearances": 3,
+      "exampleWords": [
+        "depict",
+        "deputy",
+        "destructive"
+      ]
+    },
+    {
+      "token": "evaluator",
+      "appearances": 3,
+      "exampleWords": [
+        "assess(ment)",
+        "criterion/criteria",
+        "objective"
+      ]
+    },
+    {
+      "token": "factual",
+      "appearances": 3,
+      "exampleWords": [
+        "descriptive",
+        "expressive",
+        "fiction"
+      ]
+    },
+    {
+      "token": "foreground",
+      "appearances": 3,
+      "exampleWords": [
+        "blur",
+        "contrast",
+        "vivid"
+      ]
+    },
+    {
+      "token": "homemade",
+      "appearances": 3,
+      "exampleWords": [
+        "cookie",
+        "lemonade",
+        "soda"
+      ]
+    },
+    {
+      "token": "newcomer",
+      "appearances": 3,
+      "exampleWords": [
+        "foreigner",
+        "greeting(s)",
+        "sociable"
+      ]
+    },
+    {
+      "token": "projector",
+      "appearances": 3,
+      "exampleWords": [
+        "magic",
+        "plug",
+        "plural"
+      ]
+    },
+    {
+      "token": "recyclable",
+      "appearances": 3,
+      "exampleWords": [
+        "circular",
+        "economy",
+        "silly"
+      ]
+    },
+    {
+      "token": "roadside",
+      "appearances": 3,
+      "exampleWords": [
+        "bored",
+        "boredom",
+        "boring"
+      ]
+    },
+    {
+      "token": "secondhand",
+      "appearances": 3,
+      "exampleWords": [
+        "consumption",
+        "dime",
+        "worth"
+      ]
+    },
+    {
+      "token": "spoonful",
+      "appearances": 3,
+      "exampleWords": [
+        "pasta",
+        "paste",
+        "tongue"
+      ]
+    },
+    {
+      "token": "staircase's",
+      "appearances": 3,
+      "exampleWords": [
+        "stake",
+        "structural",
+        "supervisor"
+      ]
+    },
+    {
+      "token": "startup",
+      "appearances": 3,
+      "exampleWords": [
+        "compensate",
+        "founder",
+        "publicity"
+      ]
+    },
+    {
+      "token": "streetlights",
+      "appearances": 3,
+      "exampleWords": [
+        "hatch",
+        "reflective",
+        "turtle"
+      ]
+    },
+    {
+      "token": "toolbox",
+      "appearances": 3,
+      "exampleWords": [
+        "steal",
+        "steel",
+        "thief"
+      ]
+    },
+    {
+      "token": "understandable",
+      "appearances": 3,
+      "exampleWords": [
+        "enlighten(ment)",
+        "fearful",
+        "peculiar"
+      ]
+    },
+    {
+      "token": "verb",
+      "appearances": 3,
+      "exampleWords": [
+        "marker",
+        "outline",
+        "singular"
+      ]
+    },
+    {
+      "token": "wasteful",
+      "appearances": 3,
+      "exampleWords": [
+        "gown",
+        "graduation",
+        "vow"
+      ]
+    },
+    {
+      "token": "withdrawals",
+      "appearances": 3,
+      "exampleWords": [
+        "cash",
+        "casino",
+        "gamble"
+      ]
+    },
+    {
+      "token": "autumn",
+      "appearances": 2,
+      "exampleWords": [
+        "maple",
+        "pumpkin"
+      ]
+    },
+    {
+      "token": "battlefield",
+      "appearances": 2,
+      "exampleWords": [
+        "bronze",
+        "victim"
+      ]
+    },
+    {
+      "token": "bilingual",
+      "appearances": 2,
+      "exampleWords": [
+        "brochure",
+        "lousy"
+      ]
+    },
+    {
+      "token": "biologist",
+      "appearances": 2,
+      "exampleWords": [
+        "specimen",
+        "trace"
+      ]
+    },
+    {
+      "token": "caterers",
+      "appearances": 2,
+      "exampleWords": [
+        "cathedral",
+        "chapel"
+      ]
+    },
+    {
+      "token": "childcare",
+      "appearances": 2,
+      "exampleWords": [
+        "motherhood",
+        "spouse"
+      ]
+    },
+    {
+      "token": "countless",
+      "appearances": 2,
+      "exampleWords": [
+        "organism",
+        "vast"
+      ]
+    },
+    {
+      "token": "crumbs",
+      "appearances": 2,
+      "exampleWords": [
+        "beetle",
+        "bit"
+      ]
+    },
+    {
+      "token": "doorbell",
+      "appearances": 2,
+      "exampleWords": [
+        "parrot",
+        "riot"
+      ]
+    },
+    {
+      "token": "downstream",
+      "appearances": 2,
+      "exampleWords": [
+        "pollute",
+        "textile"
+      ]
+    },
+    {
+      "token": "dreamlike",
+      "appearances": 2,
+      "exampleWords": [
+        "realism",
+        "reality"
+      ]
+    },
+    {
+      "token": "experimentation",
+      "appearances": 2,
+      "exampleWords": [
+        "artistic",
+        "assure"
+      ]
+    },
+    {
+      "token": "fearless",
+      "appearances": 2,
+      "exampleWords": [
+        "mortal",
+        "revolt"
+      ]
+    },
+    {
+      "token": "firefighter",
+      "appearances": 2,
+      "exampleWords": [
+        "flashlight",
+        "stature"
+      ]
+    },
+    {
+      "token": "firefighters",
+      "appearances": 2,
+      "exampleWords": [
+        "blaze",
+        "suffocate"
+      ]
+    },
+    {
+      "token": "footpaths",
+      "appearances": 2,
+      "exampleWords": [
+        "interior",
+        "isle"
+      ]
+    },
+    {
+      "token": "footprints",
+      "appearances": 2,
+      "exampleWords": [
+        "mischief",
+        "tide"
+      ]
+    },
+    {
+      "token": "footsteps",
+      "appearances": 2,
+      "exampleWords": [
+        "alert",
+        "greenhouse"
+      ]
+    },
+    {
+      "token": "fundraising",
+      "appearances": 2,
+      "exampleWords": [
+        "pianist",
+        "sponsorship"
+      ]
+    },
+    {
+      "token": "grandson",
+      "appearances": 2,
+      "exampleWords": [
+        "custody",
+        "lullaby"
+      ]
+    },
+    {
+      "token": "grassland",
+      "appearances": 2,
+      "exampleWords": [
+        "livestock",
+        "zebra"
+      ]
+    },
+    {
+      "token": "handwashing",
+      "appearances": 2,
+      "exampleWords": [
+        "germ",
+        "infection"
+      ]
+    },
+    {
+      "token": "illustrator",
+      "appearances": 2,
+      "exampleWords": [
+        "curl",
+        "humid"
+      ]
+    },
+    {
+      "token": "inclusion",
+      "appearances": 2,
+      "exampleWords": [
+        "diversity",
+        "exclusive"
+      ]
+    },
+    {
+      "token": "leaflet",
+      "appearances": 2,
+      "exampleWords": [
+        "infectious",
+        "tiresome"
+      ]
+    },
+    {
+      "token": "m",
+      "appearances": 2,
+      "exampleWords": [
+        "plus",
+        "pneumonia"
+      ]
+    },
+    {
+      "token": "noun",
+      "appearances": 2,
+      "exampleWords": [
+        "countable",
+        "singular"
+      ]
+    },
+    {
+      "token": "nouns",
+      "appearances": 2,
+      "exampleWords": [
+        "plug",
+        "plural"
+      ]
+    },
+    {
+      "token": "outdated",
+      "appearances": 2,
+      "exampleWords": [
+        "allocate",
+        "hardware"
+      ]
+    },
+    {
+      "token": "outweighed",
+      "appearances": 2,
+      "exampleWords": [
+        "altogether",
+        "satisfaction"
+      ]
+    },
+    {
+      "token": "p",
+      "appearances": 2,
+      "exampleWords": [
+        "plus",
+        "pneumonia"
+      ]
+    },
+    {
+      "token": "paperwork",
+      "appearances": 2,
+      "exampleWords": [
+        "advisory",
+        "tiresome"
+      ]
+    },
+    {
+      "token": "puddle",
+      "appearances": 2,
+      "exampleWords": [
+        "plumber",
+        "tenant"
+      ]
+    },
+    {
+      "token": "punctuation",
+      "appearances": 2,
+      "exampleWords": [
+        "comic(s)",
+        "comma"
+      ]
+    },
+    {
+      "token": "racket",
+      "appearances": 2,
+      "exampleWords": [
+        "badminton",
+        "basics"
+      ]
+    },
+    {
+      "token": "readings",
+      "appearances": 2,
+      "exampleWords": [
+        "experimental",
+        "Fahrenheit"
+      ]
+    },
+    {
+      "token": "renovated",
+      "appearances": 2,
+      "exampleWords": [
+        "alley",
+        "alliance"
+      ]
+    },
+    {
+      "token": "repairable",
+      "appearances": 2,
+      "exampleWords": [
+        "circular",
+        "economy"
+      ]
+    },
+    {
+      "token": "restless",
+      "appearances": 2,
+      "exampleWords": [
+        "stimulation",
+        "symphony"
+      ]
+    },
+    {
+      "token": "rinsed",
+      "appearances": 2,
+      "exampleWords": [
+        "bait",
+        "basin"
+      ]
+    },
+    {
+      "token": "safeguards",
+      "appearances": 2,
+      "exampleWords": [
+        "institution",
+        "rapid"
+      ]
+    },
+    {
+      "token": "seaside",
+      "appearances": 2,
+      "exampleWords": [
+        "bead",
+        "bracelet"
+      ]
+    },
+    {
+      "token": "seedling",
+      "appearances": 2,
+      "exampleWords": [
+        "centimeter",
+        "transplant"
+      ]
+    },
+    {
+      "token": "setup",
+      "appearances": 2,
+      "exampleWords": [
+        "discourage(ment)",
+        "yesterday"
+      ]
+    },
+    {
+      "token": "shipwreck",
+      "appearances": 2,
+      "exampleWords": [
+        "survivor",
+        "swift"
+      ]
+    },
+    {
+      "token": "skyline",
+      "appearances": 2,
+      "exampleWords": [
+        "blur",
+        "comet"
+      ]
+    },
+    {
+      "token": "soulful",
+      "appearances": 2,
+      "exampleWords": [
+        "sorry",
+        "soul"
+      ]
+    },
+    {
+      "token": "stubbed",
+      "appearances": 2,
+      "exampleWords": [
+        "obstacle",
+        "toe"
+      ]
+    },
+    {
+      "token": "supplier",
+      "appearances": 2,
+      "exampleWords": [
+        "gamble",
+        "monopoly"
+      ]
+    },
+    {
+      "token": "suppliers",
+      "appearances": 2,
+      "exampleWords": [
+        "cripple",
+        "global"
+      ]
+    },
+    {
+      "token": "supportive",
+      "appearances": 2,
+      "exampleWords": [
+        "intent",
+        "potential"
+      ]
+    },
+    {
+      "token": "teammate's",
+      "appearances": 2,
+      "exampleWords": [
+        "bet",
+        "betray"
+      ]
+    },
+    {
+      "token": "timeline",
+      "appearances": 2,
+      "exampleWords": [
+        "emotion",
+        "intense"
+      ]
+    },
+    {
+      "token": "trainees",
+      "appearances": 2,
+      "exampleWords": [
+        "supervise",
+        "supervision"
+      ]
+    },
+    {
+      "token": "trousers",
+      "appearances": 2,
+      "exampleWords": [
+        "elastic",
+        "fasten"
+      ]
+    },
+    {
+      "token": "unavoidable",
+      "appearances": 2,
+      "exampleWords": [
+        "crazy",
+        "vice"
+      ]
+    },
+    {
+      "token": "unverified",
+      "appearances": 2,
+      "exampleWords": [
+        "inquire",
+        "exacerbate"
+      ]
+    },
+    {
+      "token": "visibility",
+      "appearances": 2,
+      "exampleWords": [
+        "dense",
+        "windshield"
+      ]
+    },
+    {
+      "token": "wetlands",
+      "appearances": 2,
+      "exampleWords": [
+        "framework",
+        "frog"
+      ]
+    },
+    {
+      "token": "wildfire",
+      "appearances": 2,
+      "exampleWords": [
+        "flame",
+        "flee"
+      ]
+    },
+    {
+      "token": "winters",
+      "appearances": 2,
+      "exampleWords": [
+        "adaptation",
+        "continental"
+      ]
+    },
+    {
+      "token": "woolen",
+      "appearances": 2,
+      "exampleWords": [
+        "ink",
+        "postcard"
+      ]
+    },
+    {
+      "token": "achievable",
+      "appearances": 1,
+      "exampleWords": [
+        "frustration"
+      ]
+    },
+    {
+      "token": "adjective",
+      "appearances": 1,
+      "exampleWords": [
+        "antonym"
+      ]
+    },
+    {
+      "token": "approachable",
+      "appearances": 1,
+      "exampleWords": [
+        "apprentice"
+      ]
+    },
+    {
+      "token": "artwork",
+      "appearances": 1,
+      "exampleWords": [
+        "sticky"
+      ]
+    },
+    {
+      "token": "avoidable",
+      "appearances": 1,
+      "exampleWords": [
+        "format"
+      ]
+    },
+    {
+      "token": "backstage",
+      "appearances": 1,
+      "exampleWords": [
+        "slap"
+      ]
+    },
+    {
+      "token": "beak",
+      "appearances": 1,
+      "exampleWords": [
+        "skull"
+      ]
+    },
+    {
+      "token": "bearable",
+      "appearances": 1,
+      "exampleWords": [
+        "woe"
+      ]
+    },
+    {
+      "token": "blister",
+      "appearances": 1,
+      "exampleWords": [
+        "heel"
+      ]
+    },
+    {
+      "token": "bookmarks",
+      "appearances": 1,
+      "exampleWords": [
+        "charitable"
+      ]
+    },
+    {
+      "token": "bookshelves",
+      "appearances": 1,
+      "exampleWords": [
+        "satisfaction"
+      ]
+    },
+    {
+      "token": "brackets",
+      "appearances": 1,
+      "exampleWords": [
+        "scan"
+      ]
+    },
+    {
+      "token": "bystanders",
+      "appearances": 1,
+      "exampleWords": [
+        "critical"
+      ]
+    },
+    {
+      "token": "caregivers",
+      "appearances": 1,
+      "exampleWords": [
+        "contribution"
+      ]
+    },
+    {
+      "token": "catalog",
+      "appearances": 1,
+      "exampleWords": [
+        "oriental"
+      ]
+    },
+    {
+      "token": "checklist",
+      "appearances": 1,
+      "exampleWords": [
+        "familiarity"
+      ]
+    },
+    {
+      "token": "checkout",
+      "appearances": 1,
+      "exampleWords": [
+        "beep"
+      ]
+    },
+    {
+      "token": "chicks",
+      "appearances": 1,
+      "exampleWords": [
+        "hen"
+      ]
+    },
+    {
+      "token": "chinese",
+      "appearances": 1,
+      "exampleWords": [
+        "metaphor"
+      ]
+    },
+    {
+      "token": "christmas",
+      "appearances": 1,
+      "exampleWords": [
+        "stocking(s)"
+      ]
+    },
+    {
+      "token": "clenched",
+      "appearances": 1,
+      "exampleWords": [
+        "fist"
+      ]
+    },
+    {
+      "token": "cloak",
+      "appearances": 1,
+      "exampleWords": [
+        "sculptor"
+      ]
+    },
+    {
+      "token": "clogged",
+      "appearances": 1,
+      "exampleWords": [
+        "prototype"
+      ]
+    },
+    {
+      "token": "completion",
+      "appearances": 1,
+      "exampleWords": [
+        "certify"
+      ]
+    },
+    {
+      "token": "corrections",
+      "appearances": 1,
+      "exampleWords": [
+        "multiply"
+      ]
+    },
+    {
+      "token": "craftspeople",
+      "appearances": 1,
+      "exampleWords": [
+        "splendor"
+      ]
+    },
+    {
+      "token": "crates",
+      "appearances": 1,
+      "exampleWords": [
+        "merchandise"
+      ]
+    },
+    {
+      "token": "crumb",
+      "appearances": 1,
+      "exampleWords": [
+        "ant"
+      ]
+    },
+    {
+      "token": "crumpled",
+      "appearances": 1,
+      "exampleWords": [
+        "exhaust"
+      ]
+    },
+    {
+      "token": "deception",
+      "appearances": 1,
+      "exampleWords": [
+        "wicked"
+      ]
+    },
+    {
+      "token": "decorative",
+      "appearances": 1,
+      "exampleWords": [
+        "infrastructure"
+      ]
+    },
+    {
+      "token": "dependence",
+      "appearances": 1,
+      "exampleWords": [
+        "migrant"
+      ]
+    },
+    {
+      "token": "disruption",
+      "appearances": 1,
+      "exampleWords": [
+        "minimize"
+      ]
+    },
+    {
+      "token": "drainage",
+      "appearances": 1,
+      "exampleWords": [
+        "density"
+      ]
+    },
+    {
+      "token": "droplets",
+      "appearances": 1,
+      "exampleWords": [
+        "vapor"
+      ]
+    },
+    {
+      "token": "effortless",
+      "appearances": 1,
+      "exampleWords": [
+        "motherhood"
+      ]
+    },
+    {
+      "token": "embroidered",
+      "appearances": 1,
+      "exampleWords": [
+        "garment"
+      ]
+    },
+    {
+      "token": "endless",
+      "appearances": 1,
+      "exampleWords": [
+        "brain"
+      ]
+    },
+    {
+      "token": "expressway",
+      "appearances": 1,
+      "exampleWords": [
+        "suitcase"
+      ]
+    },
+    {
+      "token": "faulty",
+      "appearances": 1,
+      "exampleWords": [
+        "liable"
+      ]
+    },
+    {
+      "token": "fieldwork",
+      "appearances": 1,
+      "exampleWords": [
+        "knowledgeable"
+      ]
+    },
+    {
+      "token": "filmmaker",
+      "appearances": 1,
+      "exampleWords": [
+        "acclaim"
+      ]
+    },
+    {
+      "token": "fireflies",
+      "appearances": 1,
+      "exampleWords": [
+        "magical"
+      ]
+    },
+    {
+      "token": "flicker",
+      "appearances": 1,
+      "exampleWords": [
+        "draught"
+      ]
+    },
+    {
+      "token": "floodwater",
+      "appearances": 1,
+      "exampleWords": [
+        "precious"
+      ]
+    },
+    {
+      "token": "flowerpot",
+      "appearances": 1,
+      "exampleWords": [
+        "snail"
+      ]
+    },
+    {
+      "token": "footbridge",
+      "appearances": 1,
+      "exampleWords": [
+        "appropriate"
+      ]
+    },
+    {
+      "token": "glorifying",
+      "appearances": 1,
+      "exampleWords": [
+        "brotherhood"
+      ]
+    },
+    {
+      "token": "guesthouse",
+      "appearances": 1,
+      "exampleWords": [
+        "lonesome"
+      ]
+    },
+    {
+      "token": "guitarist",
+      "appearances": 1,
+      "exampleWords": [
+        "guitar"
+      ]
+    },
+    {
+      "token": "halfway",
+      "appearances": 1,
+      "exampleWords": [
+        "falter"
+      ]
+    },
+    {
+      "token": "healthcare",
+      "appearances": 1,
+      "exampleWords": [
+        "thermometer"
+      ]
+    },
+    {
+      "token": "healthfulness",
+      "appearances": 1,
+      "exampleWords": [
+        "oatmeal"
+      ]
+    },
+    {
+      "token": "homeless",
+      "appearances": 1,
+      "exampleWords": [
+        "monstrous"
+      ]
+    },
+    {
+      "token": "hopeless",
+      "appearances": 1,
+      "exampleWords": [
+        "heroin"
+      ]
+    },
+    {
+      "token": "illnesses",
+      "appearances": 1,
+      "exampleWords": [
+        "cure"
+      ]
+    },
+    {
+      "token": "incorrectly",
+      "appearances": 1,
+      "exampleWords": [
+        "input"
+      ]
+    },
+    {
+      "token": "informally",
+      "appearances": 1,
+      "exampleWords": [
+        "initiate"
+      ]
+    },
+    {
+      "token": "interactive",
+      "appearances": 1,
+      "exampleWords": [
+        "engage(ment)"
+      ]
+    },
+    {
+      "token": "interface",
+      "appearances": 1,
+      "exampleWords": [
+        "navigate"
+      ]
+    },
+    {
+      "token": "investors",
+      "appearances": 1,
+      "exampleWords": [
+        "forthcoming"
+      ]
+    },
+    {
+      "token": "lena",
+      "appearances": 1,
+      "exampleWords": [
+        "recommendation"
+      ]
+    },
+    {
+      "token": "lifestyle",
+      "appearances": 1,
+      "exampleWords": [
+        "sustainable"
+      ]
+    },
+    {
+      "token": "longtime",
+      "appearances": 1,
+      "exampleWords": [
+        "fortune"
+      ]
+    },
+    {
+      "token": "lunchtime",
+      "appearances": 1,
+      "exampleWords": [
+        "dairy"
+      ]
+    },
+    {
+      "token": "misunderstandings",
+      "appearances": 1,
+      "exampleWords": [
+        "format"
+      ]
+    },
+    {
+      "token": "misused",
+      "appearances": 1,
+      "exampleWords": [
+        "allege"
+      ]
+    },
+    {
+      "token": "motionless",
+      "appearances": 1,
+      "exampleWords": [
+        "alligator"
+      ]
+    },
+    {
+      "token": "nightfall",
+      "appearances": 1,
+      "exampleWords": [
+        "formidable"
+      ]
+    },
+    {
+      "token": "offstage",
+      "appearances": 1,
+      "exampleWords": [
+        "stature"
+      ]
+    },
+    {
+      "token": "onstage",
+      "appearances": 1,
+      "exampleWords": [
+        "anticipation"
+      ]
+    },
+    {
+      "token": "outgrown",
+      "appearances": 1,
+      "exampleWords": [
+        "lap"
+      ]
+    },
+    {
+      "token": "outlast",
+      "appearances": 1,
+      "exampleWords": [
+        "mortal"
+      ]
+    },
+    {
+      "token": "outlasted",
+      "appearances": 1,
+      "exampleWords": [
+        "sorrowful"
+      ]
+    },
+    {
+      "token": "overdue",
+      "appearances": 1,
+      "exampleWords": [
+        "effective"
+      ]
+    },
+    {
+      "token": "parentheses",
+      "appearances": 1,
+      "exampleWords": [
+        "abbreviate"
+      ]
+    },
+    {
+      "token": "pronoun",
+      "appearances": 1,
+      "exampleWords": [
+        "ambiguity"
+      ]
+    },
+    {
+      "token": "railings",
+      "appearances": 1,
+      "exampleWords": [
+        "stability"
+      ]
+    },
+    {
+      "token": "rankings",
+      "appearances": 1,
+      "exampleWords": [
+        "tuition"
+      ]
+    },
+    {
+      "token": "readable",
+      "appearances": 1,
+      "exampleWords": [
+        "graphic"
+      ]
+    },
+    {
+      "token": "returnable",
+      "appearances": 1,
+      "exampleWords": [
+        "yogurt"
+      ]
+    },
+    {
+      "token": "rinse",
+      "appearances": 1,
+      "exampleWords": [
+        "yogurt"
+      ]
+    },
+    {
+      "token": "rinsing",
+      "appearances": 1,
+      "exampleWords": [
+        "detergent"
+      ]
+    },
+    {
+      "token": "runway",
+      "appearances": 1,
+      "exampleWords": [
+        "attendant"
+      ]
+    },
+    {
+      "token": "screenings",
+      "appearances": 1,
+      "exampleWords": [
+        "acclaim"
+      ]
+    },
+    {
+      "token": "seabirds",
+      "appearances": 1,
+      "exampleWords": [
+        "isle"
+      ]
+    },
+    {
+      "token": "seawater",
+      "appearances": 1,
+      "exampleWords": [
+        "smash"
+      ]
+    },
+    {
+      "token": "shoemaker",
+      "appearances": 1,
+      "exampleWords": [
+        "leather"
+      ]
+    },
+    {
+      "token": "shortcut",
+      "appearances": 1,
+      "exampleWords": [
+        "devil"
+      ]
+    },
+    {
+      "token": "simmers",
+      "appearances": 1,
+      "exampleWords": [
+        "staple"
+      ]
+    },
+    {
+      "token": "simulated",
+      "appearances": 1,
+      "exampleWords": [
+        "launch"
+      ]
+    },
+    {
+      "token": "snowstorm",
+      "appearances": 1,
+      "exampleWords": [
+        "shovel"
+      ]
+    },
+    {
+      "token": "soundproof",
+      "appearances": 1,
+      "exampleWords": [
+        "deafen"
+      ]
+    },
+    {
+      "token": "specifically",
+      "appearances": 1,
+      "exampleWords": [
+        "oriental"
+      ]
+    },
+    {
+      "token": "staircase",
+      "appearances": 1,
+      "exampleWords": [
+        "spiral"
+      ]
+    },
+    {
+      "token": "storyteller",
+      "appearances": 1,
+      "exampleWords": [
+        "woe"
+      ]
+    },
+    {
+      "token": "storyteller's",
+      "appearances": 1,
+      "exampleWords": [
+        "anticipation"
+      ]
+    },
+    {
+      "token": "storytellers",
+      "appearances": 1,
+      "exampleWords": [
+        "foundation"
+      ]
+    },
+    {
+      "token": "storytelling",
+      "appearances": 1,
+      "exampleWords": [
+        "fabulous"
+      ]
+    },
+    {
+      "token": "streetlight",
+      "appearances": 1,
+      "exampleWords": [
+        "lodge"
+      ]
+    },
+    {
+      "token": "stressful",
+      "appearances": 1,
+      "exampleWords": [
+        "brain"
+      ]
+    },
+    {
+      "token": "sunburn",
+      "appearances": 1,
+      "exampleWords": [
+        "tan"
+      ]
+    },
+    {
+      "token": "sundays",
+      "appearances": 1,
+      "exampleWords": [
+        "tennis"
+      ]
+    },
+    {
+      "token": "sunscreen",
+      "appearances": 1,
+      "exampleWords": [
+        "tan"
+      ]
+    },
+    {
+      "token": "sweetened",
+      "appearances": 1,
+      "exampleWords": [
+        "calculator"
+      ]
+    },
+    {
+      "token": "sweeteners",
+      "appearances": 1,
+      "exampleWords": [
+        "intake"
+      ]
+    },
+    {
+      "token": "tablecloth",
+      "appearances": 1,
+      "exampleWords": [
+        "saucer"
+      ]
+    },
+    {
+      "token": "toppings",
+      "appearances": 1,
+      "exampleWords": [
+        "sprinkle"
+      ]
+    },
+    {
+      "token": "tractor",
+      "appearances": 1,
+      "exampleWords": [
+        "cooperative"
+      ]
+    },
+    {
+      "token": "underwater",
+      "appearances": 1,
+      "exampleWords": [
+        "suffocate"
+      ]
+    },
+    {
+      "token": "unevenly",
+      "appearances": 1,
+      "exampleWords": [
+        "microwave"
+      ]
+    },
+    {
+      "token": "unmanageable",
+      "appearances": 1,
+      "exampleWords": [
+        "hardship"
+      ]
+    },
+    {
+      "token": "unwillingness",
+      "appearances": 1,
+      "exampleWords": [
+        "compile"
+      ]
+    },
+    {
+      "token": "upstream",
+      "appearances": 1,
+      "exampleWords": [
+        "entity"
+      ]
+    },
+    {
+      "token": "walkable",
+      "appearances": 1,
+      "exampleWords": [
+        "inner"
+      ]
+    },
+    {
+      "token": "walkway",
+      "appearances": 1,
+      "exampleWords": [
+        "petition"
+      ]
+    },
+    {
+      "token": "wartime",
+      "appearances": 1,
+      "exampleWords": [
+        "propaganda"
+      ]
+    },
+    {
+      "token": "washable",
+      "appearances": 1,
+      "exampleWords": [
+        "velvet"
+      ]
+    },
+    {
+      "token": "waterfront",
+      "appearances": 1,
+      "exampleWords": [
+        "carefree"
+      ]
+    },
+    {
+      "token": "wildflowers",
+      "appearances": 1,
+      "exampleWords": [
+        "abound"
+      ]
+    },
+    {
+      "token": "willow",
+      "appearances": 1,
+      "exampleWords": [
+        "ripple"
+      ]
+    },
+    {
+      "token": "wirelessly",
+      "appearances": 1,
+      "exampleWords": [
+        "transmit"
+      ]
+    },
+    {
+      "token": "workday",
+      "appearances": 1,
+      "exampleWords": [
+        "adore"
+      ]
+    },
+    {
+      "token": "worksheet",
+      "appearances": 1,
+      "exampleWords": [
+        "reproduce"
+      ]
+    }
+  ]
+}

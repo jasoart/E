@@ -14,12 +14,16 @@
 ```sh
 python3 research/build_exam_notebook.py
 node research/build_authored_scenarios.cjs
+node research/audit_scenario_difficulty.cjs
+node research/build_vocabulary_enrichment.cjs
 python3 research/build_exam_evidence_index.py
 ```
 
 上傳 PDF 可用 `python3 research/verify_uploaded_exams.py --pdf-dir <PDF目錄>` 核對。私人上傳檔案與本機絕對路徑不應加入 repository；CI 使用已提交的資料、索引與生成器。
 
-原創情境句維護於 `research/authored_scenarios.txt`，每行包含英文、繁中翻譯、句構說明、仿寫方向、題材五欄。請逐句編寫；不得把原卡句改名、套上固定前綴或以詞族代替目標詞後就宣稱完成。生成器只索引實際出現的詞形，沿用既有自編句時保留其來源；找到兩句後才切換主要練習。`research/authored_scenario_coverage.json` 列出尚待補寫的詞條，請逐步縮小缺口。共用句的顯示次數不是新增獨立句數，首頁統計須保持一致。
+原創情境句維護於 `research/authored_scenarios.txt` 與 `research/scenario-batch-*.txt`，每行包含英文、繁中翻譯、句構說明、仿寫方向、題材五欄。主要練習每句應為 15–30 個英文詞，三句使用不同語境；請逐句編寫，不得把原卡句改名、套上固定前綴或以詞族代替目標詞後就宣稱完成。生成器只索引實際出現的詞形，沿用既有自編句時保留其來源；找到三句後才切換主要練習。主要句子的周邊用字排除其他已知六級詞；目標詞本身及其實際詞形不受此限制。難度解析在 `research/scenario_difficulty.cjs`，基本語法詞與常見衍生形式另記錄，未辨識字不得憑空標上官方級別。`research/authored_scenario_coverage.json` 列出尚待補寫的詞條。共用句的顯示次數不是新增獨立句數，首頁統計須保持一致。
+
+全詞表常用義、學習提示與有明確關係的字族資料由 `research/build_vocabulary_enrichment.cjs` 生成。要逐詞修正常用義或用法，編輯 `research/vocabulary-editorial.json` 並查核原資料，不直接改生成檔。原詞表完整釋意保留可見；英語 WordNet 詞義和近義候選是語境參考，不自動等同相同中文義或可互換用法；不能把候選字另一字義的中文摘要配到目前詞義。主要雙語近義辨析須有逐義編輯依據。通用詞性提示和逐詞用法提醒分開標示。
 
 全詞表 V2 的導讀規則維護於 `assets/js/exam-notes.js`；請保留 `getCuratedExamNotebook` 與 `getExamNotebook` 的資料範圍差異。原卡句不能標成自編，整句回想不能計為獨立搭配，詞形觀察不能標成未核對的衍生字。全量測試見 `tests/notebook-all-words.cjs`。
 
@@ -27,7 +31,7 @@ python3 research/build_exam_evidence_index.py
 
 依 [啟動順序](docs/ARCHITECTURE.md) 修改 `assets/js/`，確保收藏及複習的舊儲存 key 相容。新練習使用獨立版本 key；資料解析需容忍損壞、儲存空間不足與瀏覽器停用儲存。顯示教材與輸入文字時使用既有跳脫函式。
 
-單字錄音只由明確播放動作查詢；句子使用裝置語音。新增來源需標明可核對的錄音出處；只有來源明確提供錄音授權時才顯示授權，不能推定，限制來源 URL、逾時、快取與重試數，並驗證切換單字會取消舊播放。不得把教授的講義、音標詞典或出版社查字連結稱為可直接串接的錄音 API。
+單字與例句只由明確播放動作載入 Google 音檔。播放來源限制為 Google 靜態字典音檔與 Google 語音；需標明實際音檔來源，不推定錄音授權。限制來源 URL、逾時與重試數，並驗證切換單字會取消舊播放。不得把教授的講義、音標詞典或出版社查字連結稱為可直接串接的錄音 API。
 
 `index .html` 是相容入口，必須與 `index.html` 完全一致。更新網站素材後刷新兩個 HTML 的內容雜湊，再檢查所有引用：
 

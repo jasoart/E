@@ -44,9 +44,9 @@
 
 ### 程式與驗證的對應
 
-- 教材來源及產物：`research/exam_notebook.json` → `research/build_exam_notebook.py` → `assets/data/exam-notebook.js`；原釋意的保留與呈現另外由資料及 UI 測試驗證。英文新編例句與歷屆原文各有標示，不混稱官方題目。
+- 教材來源及產物：`research/exam_notebook.json`、`research/scenario-batch-*.txt`、`research/vocabulary-editorial.json` 分別生成專題筆記、三句情境庫和全詞條學習資訊；原釋意的保留與呈現另外由資料及 UI 測試驗證。英文新編例句與歷屆原文各有標示，不混稱官方題目。
 - 搜尋：`assets/js/search.js`、`tests/search-performance.cjs`、`tools/benchmark_search.cjs`。基準工具在相同資料上比較指定 Git 版本，測未使用結果快取的查詢，回報中位數、P95 及索引記憶體；這是該機器的工程測量，不能直接換算 iPhone 速度。
-- 語音：`assets/js/audio.js` 與 `assets/js/config.js` 分離 provider、錄音授權、裝置合成及播放狀態。公開來源錄音與裝置語音各有標示，可選美式／英式及語速；詳見 [PRONUNCIATION_SOURCES.md](PRONUNCIATION_SOURCES.md)。只有點擊播放才請求錄音，切字或停止會取消舊請求。提供多個來源提高可選性；同樣不保證每個詞都有兩種口音。
+- 語音：`assets/js/audio.js` 與 `assets/js/config.js` 只處理 Google 靜態字典音檔和 Google 語音音檔；可選美式／英式及語速，只有點擊播放才請求音檔，切字或停止會取消舊請求。詳見 [PRONUNCIATION_SOURCES.md](PRONUNCIATION_SOURCES.md)。外站可用性仍由 Google 決定。
 - 回想：`assets/js/retrieval-practice.js` 使用獨立、有上限的本機紀錄，與收藏及既有排程分開；教材更動後不以陣列序號誤配舊題紀錄。
 - GitHub：`.github/workflows/validate.yml`、PR 範本與 Dependabot；`tools/validate_site.py` 檢查兩個入口 HTML 一致、資源存在、內容雜湊及教材產物。外部來源無法下載時，網站測試應驗證可理解的降級，不把阻斷環境下的模擬回應叫成真實錄音驗證。
 
