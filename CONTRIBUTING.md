@@ -29,6 +29,8 @@ python3 research/build_exam_evidence_index.py
 
 ## 修改程式
 
+閱讀詞彙另由 `research/reading_corpus_manifest.json` 的逐頁正文詞形清冊、`reading_editorial.json` 的閱讀義及 `reading_supplemental.json` 的新題材詞生成。修改後執行 `node research/build_reading_vocabulary.cjs`，不要直接改生成的 `assets/data/reading-vocabulary.js`。使用私人 PDF 可執行 `research/extract_reading_corpus.py --check --pdf-dir <目錄>` 重驗；完整擷取正文與 PDF 不提交 repository。閱讀補充詞不加入官方／V2 詞條計數，實際詞形、屈折變化和人工確認的複合詞成分須分別標示。細節見 [閱讀詞彙](docs/READING_VOCABULARY.md)。
+
 依 [啟動順序](docs/ARCHITECTURE.md) 修改 `assets/js/`，確保收藏及複習的舊儲存 key 相容。新練習使用獨立版本 key；資料解析需容忍損壞、儲存空間不足與瀏覽器停用儲存。顯示教材與輸入文字時使用既有跳脫函式。
 
 單字與例句只由明確播放動作載入 Google 音檔。播放來源限制為 Google 靜態字典音檔與 Google 語音；需標明實際音檔來源，不推定錄音授權。限制來源 URL、逾時與重試數，並驗證切換單字會取消舊播放。不得把教授的講義、音標詞典或出版社查字連結稱為可直接串接的錄音 API。

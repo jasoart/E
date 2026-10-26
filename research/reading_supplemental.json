@@ -1,0 +1,891 @@
+{
+  "affordable": {
+    "pos": "adj.",
+    "meaningZh": "負擔得起的；價格可接受的",
+    "note": "觀察 affordable for every worker 與旅館、樓梯材料的價格語境；不是單指價格低。",
+    "forms": [
+      "affordable"
+    ],
+    "passageIds": [
+      "gsat-111-reading-39-42",
+      "gsat-114-structure-31-34",
+      "gsat-115-reading-39-42"
+    ]
+  },
+  "archipelago": {
+    "pos": "n.",
+    "meaningZh": "群島",
+    "note": "以 several scattered islands 的同位說明辨義；指一群島嶼，不是單一島嶼。",
+    "forms": [
+      "archipelago"
+    ],
+    "passageIds": [
+      "gsat-112-reading-43-46"
+    ]
+  },
+  "artisan": {
+    "pos": "n.",
+    "meaningZh": "工藝師；手工藝人",
+    "note": "local makers 與 indigenous people 提供詞義線索；本文強調在地製作者的技藝。",
+    "forms": [
+      "artisans"
+    ],
+    "passageIds": [
+      "gsat-115-mixed-47-50"
+    ]
+  },
+  "asylum": {
+    "pos": "n.",
+    "meaningZh": "庇護；外國提供的保護",
+    "note": "觀察 be granted asylum；本文是難民獲得保護的語境，不是建築物名稱。",
+    "forms": [
+      "asylum"
+    ],
+    "passageIds": [
+      "gsat-111-mixed-47-49"
+    ]
+  },
+  "awareness": {
+    "pos": "n.",
+    "meaningZh": "意識；認知；察覺",
+    "note": "awareness is growing 指人們對茶園與大象風險的認識增加，不是茶園面積增加。",
+    "forms": [
+      "awareness"
+    ],
+    "passageIds": [
+      "gsat-112-reading-39-42"
+    ]
+  },
+  "beadwork": {
+    "pos": "n.",
+    "meaningZh": "珠飾工藝；串珠製品",
+    "note": "依材料、顏色與製作人辨識本義；注意文中顏色具有文化象徵意義。",
+    "forms": [
+      "beadwork"
+    ],
+    "passageIds": [
+      "gsat-111-reading-35-38"
+    ]
+  },
+  "blip": {
+    "pos": "n.",
+    "meaningZh": "短暫的小變化；一段短暫狀態",
+    "note": "最後一段以漫長製圖歷史比較「北朝上」的時間尺度；此處不採雷達亮點的字面義。",
+    "forms": [
+      "blip"
+    ],
+    "passageIds": [
+      "gsat-115-reading-43-46"
+    ]
+  },
+  "bonfire": {
+    "pos": "n.",
+    "meaningZh": "營火；慶典中燃起的火堆",
+    "note": "盂蘭盆節正文以屋前的小火堆引導祖靈返家；留意儀式與活動順序。",
+    "forms": [
+      "bonfire"
+    ],
+    "passageIds": [
+      "gsat-111-structure-31-34"
+    ]
+  },
+  "boutique": {
+    "pos": "n.",
+    "meaningZh": "精品小店；特色服飾店",
+    "note": "依店家販售的時尚用品與在地工藝品理解；不是百貨公司或一般大型商場。",
+    "forms": [
+      "boutique"
+    ],
+    "passageIds": [
+      "gsat-115-mixed-47-50"
+    ]
+  },
+  "burr": {
+    "pos": "n.",
+    "meaningZh": "帶刺或鉤、容易附著的植物果實",
+    "note": "本文以植物果實黏在毛皮與褲子上的現象引出魔鬼氈發明。",
+    "forms": [
+      "burrs"
+    ],
+    "passageIds": [
+      "gsat-113-reading-35-38"
+    ]
+  },
+  "carnivore": {
+    "pos": "n.",
+    "meaningZh": "肉食者；肉食動物",
+    "note": "討論區中發言者自稱喜歡吃肉；此處不是對人作動物學分類。",
+    "forms": [
+      "carnivore"
+    ],
+    "passageIds": [
+      "gsat-112-mixed-47-50"
+    ]
+  },
+  "certification": {
+    "pos": "n.",
+    "meaningZh": "認證；核證",
+    "note": "certification program 指依標準確認茶園做法；勿直接等同所有產品品質保證。",
+    "forms": [
+      "certification"
+    ],
+    "passageIds": [
+      "gsat-112-reading-39-42"
+    ]
+  },
+  "cinnamon": {
+    "pos": "n.",
+    "meaningZh": "肉桂",
+    "note": "與 cloves、vanilla 並列為香料；氣味描寫連結桑吉巴的貿易與文化。",
+    "forms": [
+      "cinnamon"
+    ],
+    "passageIds": [
+      "gsat-112-reading-43-46"
+    ]
+  },
+  "claustrophobic": {
+    "pos": "adj.",
+    "meaningZh": "在狹小或封閉空間感到恐懼的",
+    "note": "feeling claustrophobic in small spaces 描述住宿顧慮，不宜自行當成醫療診斷。",
+    "forms": [
+      "claustrophobic"
+    ],
+    "passageIds": [
+      "gsat-114-structure-31-34"
+    ]
+  },
+  "clove": {
+    "pos": "n.",
+    "meaningZh": "丁香（香料）",
+    "note": "與香草、肉桂並列；本文不是 cleave 的過去式，也不是 a clove of garlic 的蒜瓣義。",
+    "forms": [
+      "cloves"
+    ],
+    "passageIds": [
+      "gsat-112-reading-43-46"
+    ]
+  },
+  "coexist": {
+    "pos": "v.",
+    "meaningZh": "共存；共同存在",
+    "note": "coexist with 連結大象保育與茶葉產業；閱讀後文找出兼顧兩者的做法。",
+    "forms": [
+      "coexist"
+    ],
+    "passageIds": [
+      "gsat-112-reading-39-42"
+    ]
+  },
+  "contradictory": {
+    "pos": "adj.",
+    "meaningZh": "互相矛盾的；相抵觸的",
+    "note": "contradictory information 後接兩種相反史料；應分辨作者引述與作者結論。",
+    "forms": [
+      "contradictory"
+    ],
+    "passageIds": [
+      "gsat-114-reading-43-46"
+    ]
+  },
+  "cost-effective": {
+    "pos": "adj.",
+    "meaningZh": "符合成本效益的",
+    "note": "steel frames became cost-effective 指成本相對使用效益合理，不只是品質差或便宜。",
+    "forms": [
+      "cost-effective"
+    ],
+    "passageIds": [
+      "gsat-115-reading-39-42"
+    ]
+  },
+  "counterproductive": {
+    "pos": "adj.",
+    "meaningZh": "適得其反的；妨礙目標達成的",
+    "note": "與 outdated 並列評述一種做法；需讀出醫師反對何種既有處理方式。",
+    "forms": [
+      "counterproductive"
+    ],
+    "passageIds": [
+      "gsat-113-structure-31-34"
+    ]
+  },
+  "craving": {
+    "pos": "n.",
+    "meaningZh": "強烈渴望；很想吃某物的感覺",
+    "note": "a burger craving hits 表突然很想吃漢堡；辨別發言者的個人飲食偏好。",
+    "forms": [
+      "craving"
+    ],
+    "passageIds": [
+      "gsat-112-mixed-47-50"
+    ]
+  },
+  "craze": {
+    "pos": "n.",
+    "meaningZh": "狂熱；風潮",
+    "note": "a craze for 某事物；本文分別用於呼拉圈與香料，不宜只記單一題材。",
+    "forms": [
+      "craze"
+    ],
+    "passageIds": [
+      "gsat-112-reading-35-38",
+      "gsat-112-reading-43-46"
+    ]
+  },
+  "cutback": {
+    "pos": "n.",
+    "meaningZh": "削減；減量",
+    "note": "a cutback may be necessary 後以較短距離、較慢速度解釋，指調整運動量。",
+    "forms": [
+      "cutback"
+    ],
+    "passageIds": [
+      "gsat-113-structure-31-34"
+    ]
+  },
+  "detritus": {
+    "pos": "n.",
+    "meaningZh": "殘餘物；碎屑",
+    "note": "cod catch detritus 指原先未充分利用的漁獲剩餘部分，不必一律譯成垃圾污染。",
+    "forms": [
+      "detritus"
+    ],
+    "passageIds": [
+      "gsat-113-reading-43-46"
+    ]
+  },
+  "drainage": {
+    "pos": "n.",
+    "meaningZh": "排水；排水系統",
+    "note": "drainage trenches 說明農地溝渠的用途；把排水功能和對大象的風險分開。",
+    "forms": [
+      "drainage"
+    ],
+    "passageIds": [
+      "gsat-112-reading-39-42"
+    ]
+  },
+  "empathy": {
+    "pos": "n.",
+    "meaningZh": "同理心；理解他人感受的能力",
+    "note": "fostering empathy 是動物園論壇中的一方主張；理解立場，不把所有留言視為作者定論。",
+    "forms": [
+      "empathy"
+    ],
+    "passageIds": [
+      "gsat-114-mixed-47-50"
+    ]
+  },
+  "eschew": {
+    "pos": "v.",
+    "meaningZh": "刻意避開；拒絕採用",
+    "note": "eschew meat for ethical reasons 表基於倫理理由不吃肉；比單純不喜歡更強調選擇。",
+    "forms": [
+      "eschew"
+    ],
+    "passageIds": [
+      "gsat-112-mixed-47-50"
+    ]
+  },
+  "extinction": {
+    "pos": "n.",
+    "meaningZh": "滅絕",
+    "note": "facing extinction in the wild 指野外物種生存風險；與個別動物死亡不同。",
+    "forms": [
+      "extinction"
+    ],
+    "passageIds": [
+      "gsat-114-mixed-47-50"
+    ]
+  },
+  "fad": {
+    "pos": "n.",
+    "meaningZh": "一時流行；短暫風潮",
+    "note": "作者說呼拉圈風潮至今仍盛行，需連同 still going strong 理解語氣。",
+    "forms": [
+      "fad"
+    ],
+    "passageIds": [
+      "gsat-112-reading-35-38"
+    ]
+  },
+  "fastener": {
+    "pos": "n.",
+    "meaningZh": "扣件；用來固定物件的裝置",
+    "note": "以 hooks-and-loops 和 pull apart 理解魔鬼氈如何固定及分開。",
+    "forms": [
+      "fastener"
+    ],
+    "passageIds": [
+      "gsat-113-reading-35-38"
+    ]
+  },
+  "fiberglass": {
+    "pos": "n.",
+    "meaningZh": "玻璃纖維；玻璃纖維製品",
+    "note": "在安全帽與膠囊旅館文章中都是材料名稱；不要與普通玻璃混為一談。",
+    "forms": [
+      "fiberglass"
+    ],
+    "passageIds": [
+      "gsat-111-reading-39-42",
+      "gsat-114-structure-31-34"
+    ]
+  },
+  "focal": {
+    "pos": "adj.",
+    "meaningZh": "焦點的；中心的",
+    "note": "a focal point 指視線或注意力集中的位置；本文描述樓梯的視覺效果。",
+    "forms": [
+      "focal"
+    ],
+    "passageIds": [
+      "gsat-115-reading-39-42"
+    ]
+  },
+  "footwear": {
+    "pos": "n.",
+    "meaningZh": "鞋類",
+    "note": "與 clothing 並列為魔鬼氈的應用範圍；通常作鞋類的集合稱呼。",
+    "forms": [
+      "footwear"
+    ],
+    "passageIds": [
+      "gsat-113-reading-35-38"
+    ]
+  },
+  "gourmet": {
+    "pos": "adj.",
+    "meaningZh": "精緻美食的；講究烹調的",
+    "note": "gourmet pizzas 是店家餐點描述，並非官方認證或必然健康的意思。",
+    "forms": [
+      "gourmet"
+    ],
+    "passageIds": [
+      "gsat-115-mixed-47-50"
+    ]
+  },
+  "groundbreaking": {
+    "pos": "adj.",
+    "meaningZh": "開創性的；帶來新突破的",
+    "note": "修飾魚類資源再利用產品；先找出新用途，再理解其創新之處。",
+    "forms": [
+      "groundbreaking"
+    ],
+    "passageIds": [
+      "gsat-113-reading-43-46"
+    ]
+  },
+  "headgear": {
+    "pos": "n.",
+    "meaningZh": "頭部裝備；帽盔類用品",
+    "note": "在安全帽文章中與 hard hat、helmet 等互相指稱；注意代稱關係。",
+    "forms": [
+      "headgear"
+    ],
+    "passageIds": [
+      "gsat-111-reading-39-42"
+    ]
+  },
+  "hoop": {
+    "pos": "n.",
+    "meaningZh": "環；圈",
+    "note": "hula hoop 指呼拉圈；文章另談金屬、蘆葦與塑膠等不同材料的環。",
+    "forms": [
+      "hoop",
+      "hoops"
+    ],
+    "passageIds": [
+      "gsat-112-reading-35-38"
+    ]
+  },
+  "illustrator": {
+    "pos": "n.",
+    "meaningZh": "插畫家；繪圖者",
+    "note": "莫蘭受聘為 illustrator；與 painter 的身分相關，但此處強調為出版品繪圖的工作。",
+    "forms": [
+      "illustrator"
+    ],
+    "passageIds": [
+      "gsat-113-reading-39-42"
+    ]
+  },
+  "imperialism": {
+    "pos": "n.",
+    "meaningZh": "帝國主義",
+    "note": "European imperialism 的擴張被用來解釋地圖慣例的傳播；閱讀因果關係而非只背國名。",
+    "forms": [
+      "imperialism"
+    ],
+    "passageIds": [
+      "gsat-115-reading-43-46"
+    ]
+  },
+  "inclination": {
+    "pos": "n.",
+    "meaningZh": "傾向；意向",
+    "note": "inclination toward alcohol 指飲酒傾向；本文以相反史料檢驗過度概括。",
+    "forms": [
+      "inclination"
+    ],
+    "passageIds": [
+      "gsat-114-reading-43-46"
+    ]
+  },
+  "individualism": {
+    "pos": "n.",
+    "meaningZh": "個人主義；重視個人需求與權利的觀念",
+    "note": "對照 individual 與 group 的需求及優先關係，不直接把本詞等同自私。",
+    "forms": [
+      "individualism"
+    ],
+    "passageIds": [
+      "gsat-115-structure-31-34"
+    ]
+  },
+  "infancy": {
+    "pos": "n.",
+    "meaningZh": "嬰兒期；幼年初期",
+    "note": "the first months of their infancy 用時間範圍說明聯覺現象的觀察。",
+    "forms": [
+      "infancy"
+    ],
+    "passageIds": [
+      "gsat-112-structure-31-34"
+    ]
+  },
+  "irritability": {
+    "pos": "n.",
+    "meaningZh": "易怒；容易煩躁的狀態",
+    "note": "與 fatigue 並列為睡眠受影響後可能出現的狀態；注意文中的 may 語氣。",
+    "forms": [
+      "irritability"
+    ],
+    "passageIds": [
+      "gsat-114-reading-39-42"
+    ]
+  },
+  "lifeboat": {
+    "pos": "n.",
+    "meaningZh": "救生艇",
+    "note": "探險隊離開浮冰時使用 lifeboats；不要與原本的大船 Endurance 混淆。",
+    "forms": [
+      "lifeboats"
+    ],
+    "passageIds": [
+      "gsat-115-reading-35-38"
+    ]
+  },
+  "lifestyle": {
+    "pos": "n.",
+    "meaningZh": "生活方式",
+    "note": "a more modern lifestyle 是政府勸採的生活方式；作者接著對照部族保留的傳統。",
+    "forms": [
+      "lifestyle"
+    ],
+    "passageIds": [
+      "gsat-111-reading-35-38"
+    ]
+  },
+  "lightweight": {
+    "pos": "adj.",
+    "meaningZh": "輕量的；重量輕的",
+    "note": "lightweight enough to be worn all day long 把重量和使用需求連結。",
+    "forms": [
+      "lightweight"
+    ],
+    "passageIds": [
+      "gsat-111-reading-39-42"
+    ]
+  },
+  "livelihood": {
+    "pos": "n.",
+    "meaningZh": "生計；維持生活的來源",
+    "note": "the Nile, vital to Egyptian livelihood 說明河流對生活的作用，支持地圖方向的推論。",
+    "forms": [
+      "livelihood"
+    ],
+    "passageIds": [
+      "gsat-115-reading-43-46"
+    ]
+  },
+  "mandatory": {
+    "pos": "adj.",
+    "meaningZh": "強制的；規定必須遵守的",
+    "note": "be made mandatory at construction sites 表被列為工地強制要求，不只是建議。",
+    "forms": [
+      "mandatory"
+    ],
+    "passageIds": [
+      "gsat-111-reading-39-42"
+    ]
+  },
+  "minimalist": {
+    "pos": "adj.",
+    "meaningZh": "極簡的；只保留必要元素的",
+    "note": "minimalist design 後以 essential elements 解釋；抓取設計原則與價格的關係。",
+    "forms": [
+      "minimalist"
+    ],
+    "passageIds": [
+      "gsat-114-structure-31-34"
+    ]
+  },
+  "neuron": {
+    "pos": "n.",
+    "meaningZh": "神經元；神經細胞",
+    "note": "文章以 neurons 的活動解釋 GABA 的作用；不要和一般 cell 完全等同。",
+    "forms": [
+      "neurons"
+    ],
+    "passageIds": [
+      "gsat-111-reading-43-46"
+    ]
+  },
+  "neurotransmitter": {
+    "pos": "n.",
+    "meaningZh": "神經傳導物質",
+    "note": "後面的 a chemical messenger 是定義線索；本文用 GABA 作實例。",
+    "forms": [
+      "neurotransmitter"
+    ],
+    "passageIds": [
+      "gsat-111-reading-43-46"
+    ]
+  },
+  "nylon": {
+    "pos": "n.",
+    "meaningZh": "尼龍",
+    "note": "heat-treated nylon 是魔鬼氈實驗後選定的合成材料；對照 cotton 的限制。",
+    "forms": [
+      "nylon"
+    ],
+    "passageIds": [
+      "gsat-113-reading-35-38"
+    ]
+  },
+  "pandemic": {
+    "pos": "n./adj.",
+    "meaningZh": "大流行；全球性流行病的",
+    "note": "文中既指疫情時期，也修飾 thriller 題材；區分真實背景與電影內容。",
+    "forms": [
+      "pandemic"
+    ],
+    "passageIds": [
+      "gsat-114-reading-39-42"
+    ]
+  },
+  "perseverance": {
+    "pos": "n.",
+    "meaningZh": "毅力；堅持不懈",
+    "note": "與 courage 並列，後文以多次求生與救援行動提供具體證據。",
+    "forms": [
+      "perseverance"
+    ],
+    "passageIds": [
+      "gsat-115-reading-35-38"
+    ]
+  },
+  "pheromone": {
+    "pos": "n.",
+    "meaningZh": "費洛蒙；外激素",
+    "note": "a chemical substance 是同位說明；在螞蟻文章中用來標示路徑和傳遞訊息。",
+    "forms": [
+      "pheromone"
+    ],
+    "passageIds": [
+      "gsat-113-mixed-47-50"
+    ]
+  },
+  "picturesque": {
+    "pos": "adj.",
+    "meaningZh": "風景如畫的",
+    "note": "與前文 harsh、wild 的舊印象對照，說明畫作如何改變地方形象。",
+    "forms": [
+      "picturesque"
+    ],
+    "passageIds": [
+      "gsat-113-reading-39-42"
+    ]
+  },
+  "plant-based": {
+    "pos": "adj.",
+    "meaningZh": "以植物為基礎的；植物性的",
+    "note": "plant-based meat 是植物製作的肉類替代品；不由此直接推定所有產品都健康。",
+    "forms": [
+      "plant-based"
+    ],
+    "passageIds": [
+      "gsat-112-mixed-47-50"
+    ]
+  },
+  "rainforest": {
+    "pos": "n.",
+    "meaningZh": "雨林",
+    "note": "獨自穿越雨林是難民選手經歷的一部分；用敘事順序定位危險與獲救。",
+    "forms": [
+      "rainforest"
+    ],
+    "passageIds": [
+      "gsat-111-mixed-47-49"
+    ]
+  },
+  "reestablish": {
+    "pos": "v.",
+    "meaningZh": "重新建立；恢復建立",
+    "note": "reestablish the network 指螞蟻在路徑被打斷後重新連接，留意 re- 的「重新」義。",
+    "forms": [
+      "reestablish"
+    ],
+    "passageIds": [
+      "gsat-113-mixed-47-50"
+    ]
+  },
+  "regeneration": {
+    "pos": "n.",
+    "meaningZh": "再生；重新生長的過程",
+    "note": "區分再生過程、組織損傷與功能恢復；本文對人類療法的部分屬研究展望。",
+    "forms": [
+      "regeneration"
+    ],
+    "passageIds": [
+      "gsat-111-reading-43-46"
+    ]
+  },
+  "residual": {
+    "pos": "adj.",
+    "meaningZh": "殘留的；剩餘的",
+    "note": "residual fear and anxiety 指觀影後仍留下的感受，連結後續睡眠影響。",
+    "forms": [
+      "residual"
+    ],
+    "passageIds": [
+      "gsat-114-reading-39-42"
+    ]
+  },
+  "retina": {
+    "pos": "n.",
+    "meaningZh": "視網膜",
+    "note": "本文比較斑馬魚與人的視網膜及細胞；retinas 是複數；retinal 是相關形容詞，須另判詞性。",
+    "forms": [
+      "retina",
+      "retinas"
+    ],
+    "passageIds": [
+      "gsat-111-reading-43-46"
+    ]
+  },
+  "reusable": {
+    "pos": "adj.",
+    "meaningZh": "可重複使用的",
+    "note": "reusable bottles 是店家提供的環保用品；不要把此形容詞直接當成認證。",
+    "forms": [
+      "reusable"
+    ],
+    "passageIds": [
+      "gsat-115-mixed-47-50"
+    ]
+  },
+  "self-control": {
+    "pos": "n.",
+    "meaningZh": "自制力；自我控制",
+    "note": "歷史段落中的 lack of self-control 是當時社會對微笑的看法，非作者對微笑的評斷。",
+    "forms": [
+      "self-control"
+    ],
+    "passageIds": [
+      "gsat-115-structure-31-34"
+    ]
+  },
+  "self-driving": {
+    "pos": "adj.",
+    "meaningZh": "自動駕駛的",
+    "note": "self-driving cars 引出未來交通管理的可能變化；保留研究者提出建議的語氣。",
+    "forms": [
+      "self-driving"
+    ],
+    "passageIds": [
+      "gsat-114-reading-35-38"
+    ]
+  },
+  "serenity": {
+    "pos": "n.",
+    "meaningZh": "平靜；安寧",
+    "note": "與 discipline、commitment 並列，描寫柔道帶給當事人的心理支持。",
+    "forms": [
+      "serenity"
+    ],
+    "passageIds": [
+      "gsat-111-mixed-47-49"
+    ]
+  },
+  "short-lived": {
+    "pos": "adj.",
+    "meaningZh": "短暫的；維持不久的",
+    "note": "最早交通號誌系統因事故很快停用；不是指設計者的壽命。",
+    "forms": [
+      "short-lived"
+    ],
+    "passageIds": [
+      "gsat-114-reading-35-38"
+    ]
+  },
+  "showcase": {
+    "pos": "v.",
+    "meaningZh": "展示；充分展現",
+    "note": "products that showcase the skill and spirit 指商品展現在地工藝；本句作動詞。",
+    "forms": [
+      "showcase"
+    ],
+    "passageIds": [
+      "gsat-115-mixed-47-50"
+    ]
+  },
+  "sketchbook": {
+    "pos": "n.",
+    "meaningZh": "素描簿；速寫本",
+    "note": "莫蘭把景色畫進 sketchbook；後文再談水彩畫與照片呈交國會。",
+    "forms": [
+      "sketchbook"
+    ],
+    "passageIds": [
+      "gsat-113-reading-39-42"
+    ]
+  },
+  "sodium": {
+    "pos": "n.",
+    "meaningZh": "鈉",
+    "note": "與 calories 並列為留言者比較的食品成分；應區分人物評論與經查證營養結論。",
+    "forms": [
+      "sodium"
+    ],
+    "passageIds": [
+      "gsat-112-mixed-47-50"
+    ]
+  },
+  "staircase": {
+    "pos": "n.",
+    "meaningZh": "樓梯；整組階梯結構",
+    "note": "spiral staircase 是螺旋樓梯；比較歷史用途、材料與空間配置。",
+    "forms": [
+      "staircase",
+      "staircases"
+    ],
+    "passageIds": [
+      "gsat-115-reading-39-42"
+    ]
+  },
+  "synesthesia": {
+    "pos": "n.",
+    "meaningZh": "聯覺；不同感官經驗交互連結的現象",
+    "note": "依字母、數字、顏色或味覺的配對例子理解，不只泛譯成聯想。",
+    "forms": [
+      "synesthesia"
+    ],
+    "passageIds": [
+      "gsat-112-structure-31-34"
+    ]
+  },
+  "tendon": {
+    "pos": "n.",
+    "meaningZh": "肌腱",
+    "note": "與 muscle 並列說明運動傷害；不可只因並列就把兩者當成同一組織。",
+    "forms": [
+      "tendon"
+    ],
+    "passageIds": [
+      "gsat-113-structure-31-34"
+    ]
+  },
+  "therapeutic": {
+    "pos": "adj.",
+    "meaningZh": "有治療作用的；可能帶來療癒效果的",
+    "note": "文章說某些刺激 can be therapeutic；不推論所有恐怖片都有醫療效果。",
+    "forms": [
+      "therapeutic"
+    ],
+    "passageIds": [
+      "gsat-114-reading-39-42"
+    ]
+  },
+  "timeless": {
+    "pos": "adj.",
+    "meaningZh": "不受時代限制的；歷久不衰的",
+    "note": "timeless appeal 指古典設計持續吸引人，不是說樓梯沒有歷史年代。",
+    "forms": [
+      "timeless"
+    ],
+    "passageIds": [
+      "gsat-115-reading-39-42"
+    ]
+  },
+  "transplantation": {
+    "pos": "n.",
+    "meaningZh": "移植",
+    "note": "魚皮與人工心臟文章都出現本詞；要分辨移植材料、接受者與用途。",
+    "forms": [
+      "transplantation"
+    ],
+    "passageIds": [
+      "gsat-113-reading-35-38",
+      "gsat-113-reading-43-46"
+    ]
+  },
+  "trench": {
+    "pos": "n.",
+    "meaningZh": "狹長溝渠；壕溝",
+    "note": "本文指茶園排水溝，不是戰爭中的戰壕；以用途與地形確認字義。",
+    "forms": [
+      "trench",
+      "trenches"
+    ],
+    "passageIds": [
+      "gsat-112-reading-39-42"
+    ]
+  },
+  "trustworthy": {
+    "pos": "adj.",
+    "meaningZh": "值得信賴的；可信的",
+    "note": "與 reliable 並列描寫微笑傳遞的印象；理解文化語境，不概括所有人的品格。",
+    "forms": [
+      "trustworthy"
+    ],
+    "passageIds": [
+      "gsat-115-structure-31-34"
+    ]
+  },
+  "uninhabited": {
+    "pos": "adj.",
+    "meaningZh": "無人居住的",
+    "note": "uninhabited Elephant Island 說明登島後仍難求援；不是完全沒有生物。",
+    "forms": [
+      "uninhabited"
+    ],
+    "passageIds": [
+      "gsat-115-reading-35-38"
+    ]
+  },
+  "vegan": {
+    "pos": "n./adj.",
+    "meaningZh": "全素者；採純植物飲食的",
+    "note": "論壇中有人用 Being vegan 說明飲食選擇；與 vegetarian 的涵蓋範圍不同。",
+    "forms": [
+      "vegan"
+    ],
+    "passageIds": [
+      "gsat-112-mixed-47-50"
+    ]
+  },
+  "zebrafish": {
+    "pos": "n.",
+    "meaningZh": "斑馬魚",
+    "note": "文中以此魚的器官與再生能力為研究題材；單複數可同形。",
+    "forms": [
+      "zebrafish"
+    ],
+    "passageIds": [
+      "gsat-111-reading-43-46"
+    ]
+  }
+}

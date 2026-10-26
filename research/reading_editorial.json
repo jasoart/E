@@ -1,0 +1,1831 @@
+{
+  "abandon": {
+    "readingSense": "放棄、離開已不適合停留的物體或場所",
+    "collocations": [
+      [
+        "abandon the ship",
+        "棄船"
+      ]
+    ],
+    "note": "棄船後仍持續求生；不要把放棄船隻誤解為放棄整個救援行動。",
+    "passageIds": [
+      "gsat-115-reading-35-38"
+    ]
+  },
+  "access": {
+    "readingSense": "接觸、取得或利用某種資源的機會",
+    "collocations": [
+      [
+        "access to wealth",
+        "取得財富的管道"
+      ]
+    ],
+    "note": "控制桑吉巴的地理位置能帶來貿易利益；access to 的 to 是介系詞，後面接名詞。",
+    "passageIds": [
+      "gsat-112-reading-43-46"
+    ]
+  },
+  "accessory": {
+    "readingSense": "附加在主要用品上、補充功能的配件",
+    "collocations": [
+      [
+        "add accessories",
+        "增添配件"
+      ]
+    ],
+    "note": "安全帽篇的配件包含功能性裝置，不限於服裝飾品；用上下文列舉判定詞義範圍。",
+    "passageIds": [
+      "gsat-111-reading-39-42"
+    ]
+  },
+  "accommodation": {
+    "readingSense": "供短期停留的住宿",
+    "collocations": [
+      [
+        "affordable accommodation",
+        "價格負擔得起的住宿"
+      ]
+    ],
+    "note": "膠囊旅館文章用房型、設施與價格解釋此詞；不是抽象的「配合、調整」。",
+    "passageIds": [
+      "gsat-114-structure-31-34"
+    ]
+  },
+  "accompany": {
+    "readingSense": "陪同、伴隨某人前往",
+    "collocations": [
+      [
+        "accompany the ancestors",
+        "陪同祖先返回"
+      ]
+    ],
+    "note": "紙燈與供品象徵伴隨祖先返回安息之處；accompany 後直接接受詞，不另加 with。",
+    "passageIds": [
+      "gsat-111-structure-31-34"
+    ]
+  },
+  "accumulate": {
+    "readingSense": "逐漸聚積、累積",
+    "collocations": [
+      [
+        "water accumulates",
+        "水聚積"
+      ]
+    ],
+    "note": "排水溝的設置是為避免積水傷害茶樹；此處描述水的聚積，而非累積財富。",
+    "passageIds": [
+      "gsat-112-reading-39-42"
+    ]
+  },
+  "accurate": {
+    "readingSense": "正確而精確的；此處指診斷可靠",
+    "collocations": [
+      [
+        "an accurate diagnosis",
+        "準確的診斷"
+      ]
+    ],
+    "note": "與 diagnosis 連讀，掌握文章最後提出的安全前提，不把它簡化成一般的「小心」。",
+    "passageIds": [
+      "gsat-113-structure-31-34"
+    ]
+  },
+  "acquire": {
+    "readingSense": "後天獲得、形成某種特徵或能力",
+    "collocations": [
+      [
+        "acquired after birth",
+        "出生後獲得的"
+      ]
+    ],
+    "note": "讀到 inherited or acquired 時，先抓先天與後天的對比，再整理支持各方的證據。",
+    "passageIds": [
+      "gsat-112-structure-31-34"
+    ]
+  },
+  "adapt": {
+    "readingSense": "因應改變而調整、適應",
+    "collocations": [
+      [
+        "adapt to an environment",
+        "適應環境"
+      ]
+    ],
+    "note": "與後面的 to 搭配；本文是群體適應環境，不能和 adopt「採用」混淆。",
+    "passageIds": [
+      "gsat-113-mixed-47-50"
+    ]
+  },
+  "adjust(ment)": {
+    "readingSense": "調整以配合條件；此處指改變車速",
+    "collocations": [
+      [
+        "adjust speed",
+        "調整速度"
+      ]
+    ],
+    "note": "讀到自駕車時，將速度調整與維持車距一起理解；原卡 ID 的括號形式仍保留。",
+    "passageIds": [
+      "gsat-114-reading-35-38"
+    ]
+  },
+  "adopt": {
+    "readingSense": "採取、採用某種生活方式、做法或系統",
+    "collocations": [
+      [
+        "adopt a signaling system",
+        "採用號誌系統"
+      ],
+      [
+        "adopt a lifestyle",
+        "採用一種生活方式"
+      ]
+    ],
+    "note": "生活方式與號誌系統都可作 adopt 的受詞，表示採用；與 adapt「改造、適應」區分，也不是收養。",
+    "passageIds": [
+      "gsat-114-reading-35-38",
+      "gsat-111-reading-35-38"
+    ]
+  },
+  "agenda": {
+    "readingSense": "預定要處理的事項或工作計畫",
+    "collocations": [
+      [
+        "on the agenda",
+        "列入待辦計畫"
+      ]
+    ],
+    "note": "研究篇的下一步 on the agenda 表示預定工作，不代表該工作已完成。",
+    "passageIds": [
+      "gsat-111-reading-43-46"
+    ]
+  },
+  "alternative": {
+    "readingSense": "可作為原有方案之替代的、另一種可行選擇",
+    "collocations": [
+      [
+        "alternative routes",
+        "替代路線"
+      ],
+      [
+        "alternative meat",
+        "替代肉品"
+      ]
+    ],
+    "note": "螞蟻篇談替代路線，植物肉篇談替代食材；alternative 不自動保證新方案更有效或營養更好。",
+    "passageIds": [
+      "gsat-113-mixed-47-50",
+      "gsat-112-mixed-47-50"
+    ]
+  },
+  "ample": {
+    "readingSense": "充足、數量足夠的",
+    "collocations": [
+      [
+        "ample evidence",
+        "充足的證據"
+      ]
+    ],
+    "note": "ample 修飾證據的充足程度，不是「例子」sample；仍需分辨證據支持的是哪一主張。",
+    "passageIds": [
+      "gsat-115-reading-43-46"
+    ]
+  },
+  "antique": {
+    "readingSense": "古董；年代較久且具收藏價值的物件",
+    "collocations": [
+      [
+        "an antique store",
+        "古董店"
+      ]
+    ],
+    "note": "與傳統家居配件、櫃子及鏡子一起判讀；antique 不等於品質差或破舊。",
+    "passageIds": [
+      "gsat-115-mixed-47-50"
+    ]
+  },
+  "appeal": {
+    "readingSense": "吸引力；使某類人感興趣",
+    "collocations": [
+      [
+        "appeal to travelers",
+        "吸引旅客"
+      ]
+    ],
+    "note": "appeal to 後接被吸引的人；此處不是法庭「上訴」或呼籲民眾採取行動。",
+    "passageIds": [
+      "gsat-114-structure-31-34",
+      "gsat-115-reading-39-42"
+    ]
+  },
+  "appoint(ment)": {
+    "readingSense": "正式任命、指派某人擔任職務",
+    "collocations": [
+      [
+        "appoint an illustrator",
+        "任命插畫人員"
+      ]
+    ],
+    "note": "被動式 was appointed 表示被指派工作；不要與約定時間的 appointment 直接混為同義。",
+    "passageIds": [
+      "gsat-113-reading-39-42"
+    ]
+  },
+  "approach": {
+    "readingSense": "處理問題的方法；此處指受傷後是否繼續運動的治療思路",
+    "collocations": [
+      [
+        "an outdated approach",
+        "過時的處理方法"
+      ]
+    ],
+    "note": "看到 approach 先判斷詞性；此處不是「走近」，而是可被評估、比較的方法。",
+    "passageIds": [
+      "gsat-113-structure-31-34"
+    ]
+  },
+  "base": {
+    "readingSense": "基底；此處指熬湯的湯底或基礎材料",
+    "collocations": [
+      [
+        "the base of a soup",
+        "湯底"
+      ]
+    ],
+    "note": "與魚頭、魚骨及 protein-rich soup 連讀，排除軍事基地或棒球壘包等意思。",
+    "passageIds": [
+      "gsat-113-reading-43-46"
+    ]
+  },
+  "blend": {
+    "readingSense": "不同成分或特色的混合、結合",
+    "collocations": [
+      [
+        "a unique blend",
+        "獨特的結合"
+      ]
+    ],
+    "note": "餐飲介紹把配料組合成特色；此處不只是攪拌這個動作，也不是一種固定食物名稱。",
+    "passageIds": [
+      "gsat-115-mixed-47-50"
+    ]
+  },
+  "breed": {
+    "readingSense": "繁殖、產下後代",
+    "collocations": [
+      [
+        "breed in captivity",
+        "在人工飼養環境中繁殖"
+      ]
+    ],
+    "note": "此處 breed 是動詞，用來說明斑馬魚適合研究的條件；不要誤讀成名詞品種。",
+    "passageIds": [
+      "gsat-111-reading-43-46"
+    ]
+  },
+  "captivity": {
+    "readingSense": "動物受到人為圈養、不能自由活動的狀態",
+    "collocations": [
+      [
+        "in captivity",
+        "在圈養狀態中"
+      ]
+    ],
+    "note": "研究動物能在人工控制的環境繁殖，與野外自然棲地的敘述不同。",
+    "passageIds": [
+      "gsat-111-reading-43-46"
+    ]
+  },
+  "carry": {
+    "readingSense": "販售、備有某類商品",
+    "collocations": [
+      [
+        "carry local products",
+        "販售在地商品"
+      ]
+    ],
+    "note": "商店作主詞、products 作受詞時，carry 指銷售品項，不是把商品拿在手上。",
+    "passageIds": [
+      "gsat-115-mixed-47-50"
+    ]
+  },
+  "case": {
+    "readingSense": "個案、事例",
+    "collocations": [
+      [
+        "in this case",
+        "在這個案例中"
+      ]
+    ],
+    "note": "文章以 Oddsson 的治療個案說明魚皮用途；case 此處不是箱子，也不是法律訴訟。",
+    "passageIds": [
+      "gsat-113-reading-43-46"
+    ]
+  },
+  "cease": {
+    "readingSense": "停止、不再繼續",
+    "collocations": [
+      [
+        "cease to be important",
+        "不再那麼重要"
+      ]
+    ],
+    "note": "後接 to be，指出方向在該使用情境中的重要性改變，不表示所有方向知識從此消失。",
+    "passageIds": [
+      "gsat-115-reading-43-46"
+    ]
+  },
+  "character": {
+    "readingSense": "故事、電影中的人物角色",
+    "collocations": [
+      [
+        "the characters in a story",
+        "故事人物"
+      ]
+    ],
+    "note": "觀眾代入角色來演練情境，因此不是人的品格、英文字元或漢字。",
+    "passageIds": [
+      "gsat-114-reading-39-42"
+    ]
+  },
+  "claim": {
+    "readingSense": "聲稱、主張；在 claim a life 中則指奪去生命",
+    "collocations": [
+      [
+        "claim that ...",
+        "聲稱……"
+      ],
+      [
+        "claim a life",
+        "奪去一條生命"
+      ]
+    ],
+    "note": "114 酒類文章的 claimed 表文獻聲稱；111 難民故事的 claimed the life of 表造成死亡。相同動詞要由受詞與語境判義。",
+    "passageIds": [
+      "gsat-114-reading-43-46",
+      "gsat-111-mixed-47-49"
+    ]
+  },
+  "command": {
+    "readingSense": "命令、指示行動",
+    "collocations": [
+      [
+        "command drivers to stop",
+        "指示駕駛停車"
+      ]
+    ],
+    "note": "主詞是號誌伸出的手臂，表示其傳達的指令；不是電腦程式碼或軍階名稱。",
+    "passageIds": [
+      "gsat-114-reading-35-38"
+    ]
+  },
+  "commerce": {
+    "readingSense": "商品買賣與商業貿易活動",
+    "collocations": [
+      [
+        "commerce booms",
+        "商業貿易蓬勃發展"
+      ]
+    ],
+    "note": "香料路線帶動商業成長。沿時間線整理地理位置、航路與貿易興盛的因果關係。",
+    "passageIds": [
+      "gsat-112-reading-43-46"
+    ]
+  },
+  "concentration": {
+    "readingSense": "某種化學物質的濃度或含量",
+    "collocations": [
+      [
+        "a high concentration",
+        "高濃度"
+      ]
+    ],
+    "note": "GABA 的語境是物質濃度，不是注意力。比較高低濃度造成的相反作用，才能掌握實驗因果。",
+    "passageIds": [
+      "gsat-111-reading-43-46"
+    ]
+  },
+  "concern": {
+    "readingSense": "使人關心、擔憂的事；本文形容店主很在意商品真偽",
+    "collocations": [
+      [
+        "be concerned about",
+        "關心、擔憂"
+      ]
+    ],
+    "note": "concerned about 假環保商品是開店動機；不要把 concerned 誤讀為完全無關。",
+    "passageIds": [
+      "gsat-115-mixed-47-50"
+    ]
+  },
+  "concrete": {
+    "readingSense": "混凝土",
+    "collocations": [
+      [
+        "wood and concrete",
+        "木材與混凝土"
+      ]
+    ],
+    "note": "置於 steel、wood、glass 的材料清單中為名詞；不是「具體的」這個形容詞義。",
+    "passageIds": [
+      "gsat-115-reading-39-42"
+    ]
+  },
+  "condition": {
+    "readingSense": "某種生理或感知狀態",
+    "collocations": [
+      [
+        "a sensory condition",
+        "一種感知狀態"
+      ]
+    ],
+    "note": "聯覺篇用 condition 定義現象，不是如果句中的條件，也不宜直接推定為疾病。",
+    "passageIds": [
+      "gsat-112-structure-31-34"
+    ]
+  },
+  "consensus": {
+    "readingSense": "各方大致一致的看法、共識",
+    "collocations": [
+      [
+        "reach a consensus",
+        "達成共識"
+      ]
+    ],
+    "note": "前文醫師的具體建議不同，however 後才統整共同立場；不要把分歧誤讀成完全沒有共識。",
+    "passageIds": [
+      "gsat-113-structure-31-34"
+    ]
+  },
+  "consult": {
+    "readingSense": "向專業人士諮詢、請教",
+    "collocations": [
+      [
+        "consult a specialist",
+        "諮詢專科人士"
+      ]
+    ],
+    "note": "consult 後可直接接受諮詢的人；本文是病人向醫師請教，不是醫師去查閱資料。",
+    "passageIds": [
+      "gsat-113-structure-31-34"
+    ]
+  },
+  "consumption": {
+    "readingSense": "食用、消耗；在飲食議題中指人類消費食物",
+    "collocations": [
+      [
+        "human consumption",
+        "供人類食用"
+      ]
+    ],
+    "note": "先辨認消費對象；魚類文章談食用用途，酒類文章則談酒精攝取，不一定涉及購物。",
+    "passageIds": [
+      "gsat-113-reading-43-46",
+      "gsat-114-reading-43-46"
+    ]
+  },
+  "content": {
+    "readingSense": "某種成分的含量",
+    "collocations": [
+      [
+        "alcohol content",
+        "酒精含量"
+      ]
+    ],
+    "note": "在飲料與比例的語境中是成分含量，不是文章內容，也不是形容詞「滿足的」。",
+    "passageIds": [
+      "gsat-114-reading-43-46"
+    ]
+  },
+  "counterpart": {
+    "readingSense": "在另一個系統中具有對應關係的事物",
+    "collocations": [
+      [
+        "find a counterpart",
+        "找到對應項"
+      ]
+    ],
+    "note": "人體基因與斑馬魚基因的比較中，counterpart 指相對應者，不是對手，也不表示兩者完全相同。",
+    "passageIds": [
+      "gsat-111-reading-43-46"
+    ]
+  },
+  "credit": {
+    "readingSense": "把功勞、發明歸於某人",
+    "collocations": [
+      [
+        "credit an invention to someone",
+        "把發明歸功於某人"
+      ]
+    ],
+    "note": "句子是動詞 credit A to B；別把首段理解成信用卡、學分或貸款。",
+    "passageIds": [
+      "gsat-114-reading-35-38"
+    ]
+  },
+  "current": {
+    "readingSense": "電流",
+    "collocations": [
+      [
+        "an electrical current",
+        "電流"
+      ]
+    ],
+    "note": "文中有 volt、electrical shock 和燒傷等線索；此處不是形容詞「目前的」，也不是海流。",
+    "passageIds": [
+      "gsat-113-reading-43-46"
+    ]
+  },
+  "dedicate": {
+    "readingSense": "把某事獻給特定對象、用來紀念",
+    "collocations": [
+      [
+        "be dedicated to the deceased",
+        "用來紀念亡者"
+      ]
+    ],
+    "note": "dedicated to 後接紀念對象；原先目的與如今已成節慶象徵的轉變，要配合 originally 和 now 閱讀。",
+    "passageIds": [
+      "gsat-111-structure-31-34"
+    ]
+  },
+  "destination": {
+    "readingSense": "旅程要抵達的目的地",
+    "collocations": [
+      [
+        "a travel destination",
+        "旅行目的地"
+      ]
+    ],
+    "note": "最後一段將目的地放在地圖上方；不要與出發地或中途行經的地點混淆。",
+    "passageIds": [
+      "gsat-115-reading-43-46",
+      "gsat-115-mixed-47-50"
+    ]
+  },
+  "device": {
+    "readingSense": "為特定用途設計的裝置或工具",
+    "collocations": [
+      [
+        "a medical device",
+        "醫療裝置"
+      ],
+      [
+        "head protection device",
+        "頭部防護裝置"
+      ]
+    ],
+    "note": "安全帽、敘事表演工具與醫療裝置的具體所指不同；注意每篇如何用 device 與其他名詞回指同一事物。",
+    "passageIds": [
+      "gsat-113-reading-35-38",
+      "gsat-111-reading-39-42",
+      "gsat-112-reading-35-38"
+    ]
+  },
+  "discipline": {
+    "readingSense": "自律、遵守規範與持續訓練的能力",
+    "collocations": [
+      [
+        "gain discipline",
+        "培養自律"
+      ]
+    ],
+    "note": "柔道帶來的身心力量語境中，discipline 側重自律，不是學術領域或處罰。",
+    "passageIds": [
+      "gsat-111-mixed-47-49"
+    ]
+  },
+  "district": {
+    "readingSense": "具有某種共同特色的地區",
+    "collocations": [
+      [
+        "a commercial district",
+        "商業地區"
+      ]
+    ],
+    "note": "店家介紹以地理區域串起文化與商業活動；district 不等於其中某一家商店。",
+    "passageIds": [
+      "gsat-115-mixed-47-50"
+    ]
+  },
+  "disturbance": {
+    "readingSense": "打亂原有運作的干擾",
+    "collocations": [
+      [
+        "environmental disturbances",
+        "環境干擾"
+      ]
+    ],
+    "note": "兩種動物面對的干擾來源不同，須回各段找證據，不可把同一原因套在所有動物上。",
+    "passageIds": [
+      "gsat-113-mixed-47-50"
+    ]
+  },
+  "drift": {
+    "readingSense": "受水流、風或冰的力量推動而漂移",
+    "collocations": [
+      [
+        "drift north",
+        "向北漂移"
+      ]
+    ],
+    "note": "drift 說明不是完全自主控制的航行，方位詞也關係到路線題的理解。",
+    "passageIds": [
+      "gsat-115-reading-35-38"
+    ]
+  },
+  "durable": {
+    "readingSense": "耐用、能承受反覆使用的",
+    "collocations": [
+      [
+        "a durable material",
+        "耐用的材料"
+      ]
+    ],
+    "note": "原本棉布太柔軟，後來改用尼龍；材質比較提供 durable 的推論線索。",
+    "passageIds": [
+      "gsat-113-reading-35-38"
+    ]
+  },
+  "dynamic": {
+    "readingSense": "會隨情況持續改變的、動態的",
+    "collocations": [
+      [
+        "dynamic layouts",
+        "動態版面"
+      ]
+    ],
+    "note": "手機地圖隨行進方向調整，dynamic 描述布局可變；不是只說畫面生動漂亮。",
+    "passageIds": [
+      "gsat-115-reading-43-46"
+    ]
+  },
+  "emerge": {
+    "readingSense": "開始出現、形成",
+    "collocations": [
+      [
+        "a term emerges",
+        "一個用語開始出現"
+      ]
+    ],
+    "note": "呼拉圈篇區分玩具早已存在與名稱後來才出現；emerge 不只表示從某處走出來。",
+    "passageIds": [
+      "gsat-112-reading-35-38"
+    ]
+  },
+  "encounter": {
+    "readingSense": "途中遭遇、碰上",
+    "collocations": [
+      [
+        "encounter floating ice",
+        "遭遇浮冰"
+      ]
+    ],
+    "note": "此處是船遇到浮冰的事件，須接上後續受困結果，不是有計畫地拜訪對方。",
+    "passageIds": [
+      "gsat-115-reading-35-38"
+    ]
+  },
+  "establish(ment)": {
+    "readingSense": "設立、正式確立；此處指國家公園的成立",
+    "collocations": [
+      [
+        "establish a national park",
+        "設立國家公園"
+      ]
+    ],
+    "note": "原卡 ID 保留括號；文章同時用 establishment 與 established，閱讀時要辨識名詞與動詞的關係。",
+    "passageIds": [
+      "gsat-113-reading-39-42"
+    ]
+  },
+  "ethical": {
+    "readingSense": "與道德原則或價值判斷有關的",
+    "collocations": [
+      [
+        "ethical reasons",
+        "道德考量"
+      ]
+    ],
+    "note": "素食選擇的 ethical reasons 與味道、價格、熱量屬不同判準；分類意見時不要混成單一理由。",
+    "passageIds": [
+      "gsat-112-mixed-47-50"
+    ]
+  },
+  "evidence": {
+    "readingSense": "支持判斷的證據",
+    "collocations": [
+      [
+        "physical evidence",
+        "實物證據"
+      ]
+    ],
+    "note": "地圖文章分別提到實物與文獻線索；沒有實物證據不等於其他種類的證據也不存在。",
+    "passageIds": [
+      "gsat-115-reading-43-46"
+    ]
+  },
+  "evolve": {
+    "readingSense": "隨時間逐步發展、改變",
+    "collocations": [
+      [
+        "evolve from",
+        "由……逐步發展而來"
+      ]
+    ],
+    "note": "安全帽材料的變化屬技術發展；evolve 不只用於生物演化。可配合年代整理材料演進順序。",
+    "passageIds": [
+      "gsat-111-reading-39-42"
+    ]
+  },
+  "exacerbate": {
+    "readingSense": "使已存在的困境更加惡化",
+    "collocations": [
+      [
+        "exacerbate a situation",
+        "使情況惡化"
+      ]
+    ],
+    "note": "前文已有受困與船體損傷，冰水湧入使情況更糟；不是問題剛開始發生。",
+    "passageIds": [
+      "gsat-115-reading-35-38"
+    ]
+  },
+  "expedition": {
+    "readingSense": "有特定目的的探險、考察行動或隊伍",
+    "collocations": [
+      [
+        "an expedition team",
+        "探險隊"
+      ]
+    ],
+    "note": "與普通度假旅行區分；文章的成員、目的地和求援過程共同界定此詞。",
+    "passageIds": [
+      "gsat-115-reading-35-38"
+    ]
+  },
+  "exposure": {
+    "readingSense": "接觸到、受到某種內容影響的經驗",
+    "collocations": [
+      [
+        "exposure to violence",
+        "接觸暴力內容"
+      ]
+    ],
+    "note": "此處不是相機曝光或揭發醜聞；與兒童、影像和後續反應連讀。",
+    "passageIds": [
+      "gsat-114-reading-39-42"
+    ]
+  },
+  "fabric": {
+    "readingSense": "布料、織物",
+    "collocations": [
+      [
+        "loops in the fabric",
+        "布料中的環狀纖維"
+      ]
+    ],
+    "note": "本文以顯微鏡觀察布料結構，fabric 指實際材質，並非抽象的社會結構。",
+    "passageIds": [
+      "gsat-113-reading-35-38"
+    ]
+  },
+  "facilitate": {
+    "readingSense": "使某事更容易進行、促進",
+    "collocations": [
+      [
+        "facilitate connections",
+        "促進聯繫"
+      ]
+    ],
+    "note": "此處是幫助不同業界建立合作，不表示某一方單獨完成所有研發。",
+    "passageIds": [
+      "gsat-113-reading-43-46"
+    ]
+  },
+  "facility": {
+    "readingSense": "供某種活動使用的場所或設施",
+    "collocations": [
+      [
+        "youth facility",
+        "青少年活動或訓練設施"
+      ]
+    ],
+    "note": "運動員在 facility 持續訓練，詞義由場所功能判斷，不是某人的能力或熟練度。",
+    "passageIds": [
+      "gsat-111-mixed-47-49"
+    ]
+  },
+  "fare": {
+    "readingSense": "進展、表現；此處指商品上市後的市場表現",
+    "collocations": [
+      [
+        "fare well",
+        "表現良好"
+      ]
+    ],
+    "note": "fare 在此為動詞；did not fare well 表示起初銷售或接受度不佳，不能只套用名詞「車資」。",
+    "passageIds": [
+      "gsat-113-reading-35-38"
+    ]
+  },
+  "fatal": {
+    "readingSense": "可能導致死亡的、致命的",
+    "collocations": [
+      [
+        "fatal burns",
+        "致命的燒傷"
+      ]
+    ],
+    "note": "such 承接前面的深度燒傷；後文 but 引出救治轉折，並非說當事人已死亡。",
+    "passageIds": [
+      "gsat-113-reading-43-46"
+    ]
+  },
+  "feature": {
+    "readingSense": "以某特色呈現、占顯著地位；作名詞時表示特色",
+    "collocations": [
+      [
+        "feature interior design",
+        "以室內設計為特色"
+      ],
+      [
+        "feature prominently",
+        "占顯著地位"
+      ]
+    ],
+    "note": "112 儀式篇的 feature prominently 與114旅館篇的 feature interior design 都是動詞；115 建築篇的 a feature 則是名詞。",
+    "passageIds": [
+      "gsat-114-structure-31-34",
+      "gsat-115-reading-39-42",
+      "gsat-112-reading-35-38"
+    ]
+  },
+  "file": {
+    "readingSense": "正式提出、遞交申請",
+    "collocations": [
+      [
+        "file a patent application",
+        "提出專利申請"
+      ]
+    ],
+    "note": "本文是 patents were filed 的被動式；file 在此不是把資料存成電腦檔案。",
+    "passageIds": [
+      "gsat-114-reading-35-38"
+    ]
+  },
+  "fine": {
+    "readingSense": "還不錯、令人滿意地，常見於口語評價",
+    "collocations": [
+      [
+        "like it fine",
+        "覺得它還不錯"
+      ]
+    ],
+    "note": "liked it fine 表達對味道尚可接受，後文卻反對價格；讀轉折才能區分對不同面向的態度。",
+    "passageIds": [
+      "gsat-112-mixed-47-50"
+    ]
+  },
+  "foster": {
+    "readingSense": "促進、培養某種態度或能力",
+    "collocations": [
+      [
+        "foster empathy",
+        "培養同理心"
+      ]
+    ],
+    "note": "本文為培養對動物的同理心；不是寄養家庭中的形容詞 foster。",
+    "passageIds": [
+      "gsat-114-mixed-47-50"
+    ]
+  },
+  "frame": {
+    "readingSense": "支撐物體的骨架、框架",
+    "collocations": [
+      [
+        "steel frames",
+        "鋼製骨架"
+      ]
+    ],
+    "note": "材料演變段落談鋼構成本；frame 不只指照片外框，也不必然是完整建築物。",
+    "passageIds": [
+      "gsat-115-reading-39-42"
+    ]
+  },
+  "gesture": {
+    "readingSense": "傳達意思的動作、姿態",
+    "collocations": [
+      [
+        "a simple gesture",
+        "簡單的動作"
+      ]
+    ],
+    "note": "微笑文章強調同一動作可能有不同文化解讀；gesture 不能直接等同特定情緒。",
+    "passageIds": [
+      "gsat-115-structure-31-34"
+    ]
+  },
+  "grant": {
+    "readingSense": "由有權者正式給予、准予",
+    "collocations": [
+      [
+        "grant asylum",
+        "給予庇護"
+      ]
+    ],
+    "note": "was granted asylum 是被動結構，表示獲得政府庇護；此處不是名詞補助金。",
+    "passageIds": [
+      "gsat-111-mixed-47-49"
+    ]
+  },
+  "graphic": {
+    "readingSense": "具體而逼真的；此處指血腥暴力呈現得很寫實",
+    "collocations": [
+      [
+        "graphic violence",
+        "逼真的暴力畫面"
+      ]
+    ],
+    "note": "graphic 在此不是「圖表的」；注意它加強影像刺激程度，而非替電影作好壞評分。",
+    "passageIds": [
+      "gsat-114-reading-39-42"
+    ]
+  },
+  "ground": {
+    "readingSense": "地面；此處指幼象必須通過的地面",
+    "collocations": [
+      [
+        "rough ground",
+        "崎嶇地面"
+      ]
+    ],
+    "note": "茶園篇的 rough ground 是地面名詞；不要與別處 ground meat 中 grind 的過去分詞混同。判義時必須看詞性與搭配。",
+    "passageIds": [
+      "gsat-112-reading-39-42"
+    ]
+  },
+  "habitat": {
+    "readingSense": "動植物自然生活、繁衍的棲地",
+    "collocations": [
+      [
+        "natural habitats",
+        "自然棲地"
+      ],
+      [
+        "destroy habitats",
+        "破壞棲地"
+      ]
+    ],
+    "note": "茶園篇談人為開發壓縮棲地，動物園篇比較圈養與野外；habitat 指物種生存環境，不只是人造籠舍。",
+    "passageIds": [
+      "gsat-114-mixed-47-50",
+      "gsat-112-reading-39-42"
+    ]
+  },
+  "harsh": {
+    "readingSense": "嚴酷、令人畏懼的",
+    "collocations": [
+      [
+        "a harsh place",
+        "環境嚴酷的地方"
+      ]
+    ],
+    "note": "留意與後文 picturesque 的對比，判讀畫作如何改變大眾對黃石的印象。",
+    "passageIds": [
+      "gsat-113-reading-39-42"
+    ]
+  },
+  "hazard": {
+    "readingSense": "可能造成傷害的危險來源或情況",
+    "collocations": [
+      [
+        "a public hazard",
+        "公共安全危害"
+      ],
+      [
+        "see hazards",
+        "看見潛在危險"
+      ]
+    ],
+    "note": "安全帽與交通號誌兩篇都以具體危險連到防護措施；先找危險來源，再整理設計和因果。",
+    "passageIds": [
+      "gsat-114-reading-35-38",
+      "gsat-111-reading-39-42"
+    ]
+  },
+  "honor": {
+    "readingSense": "尊敬、紀念某人；此處指祭祀亡者",
+    "collocations": [
+      [
+        "honor the dead",
+        "紀念亡者"
+      ]
+    ],
+    "note": "文化節慶中的 honor 是動詞，指出活動目的；不是名詞榮譽，也不必然指頒獎。",
+    "passageIds": [
+      "gsat-111-structure-31-34"
+    ]
+  },
+  "illustrate": {
+    "readingSense": "繪圖、以圖畫呈現",
+    "collocations": [
+      [
+        "illustrate a story",
+        "為文章繪圖"
+      ]
+    ],
+    "note": "本文人物是畫家兼插畫家，因此 illustrate 不只可解作抽象的「舉例說明」。",
+    "passageIds": [
+      "gsat-113-reading-39-42"
+    ]
+  },
+  "impact": {
+    "readingSense": "物體碰撞造成的衝擊力",
+    "collocations": [
+      [
+        "reduce impact",
+        "減少衝擊"
+      ]
+    ],
+    "note": "安全帽懸吊構造的語境是物理撞擊，不宜只套抽象的影響義。",
+    "passageIds": [
+      "gsat-111-reading-39-42"
+    ]
+  },
+  "inherit": {
+    "readingSense": "經由遺傳而具有某種特徵",
+    "collocations": [
+      [
+        "genetically inherited",
+        "經由基因遺傳的"
+      ]
+    ],
+    "note": "聯覺篇把先天遺傳與出生後獲得並列比較；此處不涉及繼承財產。",
+    "passageIds": [
+      "gsat-112-structure-31-34"
+    ]
+  },
+  "initiative": {
+    "readingSense": "主動採取行動、率先著手推動某事",
+    "collocations": [
+      [
+        "take the initiative",
+        "主動採取行動"
+      ]
+    ],
+    "note": "take the initiative 強調先主動促成行動；魚類資源篇與茶園保育篇都要辨認誰先發起、如何連結不同參與者。",
+    "passageIds": [
+      "gsat-113-reading-43-46",
+      "gsat-112-reading-39-42"
+    ]
+  },
+  "interpretation": {
+    "readingSense": "對訊號、表情或事情的理解、解讀",
+    "collocations": [
+      [
+        "interpretations of smiling",
+        "對微笑的解讀"
+      ]
+    ],
+    "note": "vary from culture to culture 指解讀不同，並不是說所有文化中的人都以相同理由微笑。",
+    "passageIds": [
+      "gsat-115-structure-31-34"
+    ]
+  },
+  "issue": {
+    "readingSense": "需要面對或處理的議題、問題",
+    "collocations": [
+      [
+        "a serious issue",
+        "嚴重問題"
+      ]
+    ],
+    "note": "此處指漁獲浪費與糧食危機；issue 不是雜誌期數，也不是動詞「發行」。",
+    "passageIds": [
+      "gsat-113-reading-43-46"
+    ]
+  },
+  "justify": {
+    "readingSense": "證明某事合理、提出正當理由",
+    "collocations": [
+      [
+        "justify a restriction",
+        "為限制提出正當理由"
+      ]
+    ],
+    "note": "論壇以問句質疑限制動物自由是否合理；問句本身不等於作者贊同限制。",
+    "passageIds": [
+      "gsat-114-mixed-47-50"
+    ]
+  },
+  "market": {
+    "readingSense": "推廣並銷售商品",
+    "collocations": [
+      [
+        "market a product",
+        "行銷一項產品"
+      ]
+    ],
+    "note": "塑膠呼拉圈 was marketed 的 market 是動詞，可由被動結構與銷量資料判斷。",
+    "passageIds": [
+      "gsat-112-reading-35-38"
+    ]
+  },
+  "model": {
+    "readingSense": "可供仿效的做法、模式",
+    "collocations": [
+      [
+        "an effective model",
+        "有效且可借鏡的模式"
+      ]
+    ],
+    "note": "結尾把冰島經驗推廣到資源效率，model 是可供借鏡的作法，不是模特兒。",
+    "passageIds": [
+      "gsat-113-reading-43-46"
+    ]
+  },
+  "moderate": {
+    "readingSense": "適量、適度的；此處形容不過度的運動",
+    "collocations": [
+      [
+        "moderate exercise",
+        "適度運動"
+      ]
+    ],
+    "note": "把 moderate 與後面的 exercise 一起理解；文意並非鼓勵傷勢不明時勉強劇烈運動。",
+    "passageIds": [
+      "gsat-113-structure-31-34"
+    ]
+  },
+  "monopoly": {
+    "readingSense": "由單一機構掌控生產或銷售的專賣、壟斷",
+    "collocations": [
+      [
+        "a state monopoly",
+        "國家專賣"
+      ]
+    ],
+    "note": "only the government was permitted 提供定義線索；不要把 monopoly 僅解作某品牌很受歡迎。",
+    "passageIds": [
+      "gsat-114-reading-43-46"
+    ]
+  },
+  "navigate": {
+    "readingSense": "辨認方向並穿行某個環境",
+    "collocations": [
+      [
+        "navigate forests",
+        "在森林中辨路穿行"
+      ]
+    ],
+    "note": "大象利用地標辨路，navigate 不限於開船、駕機或操作網站。",
+    "passageIds": [
+      "gsat-112-reading-39-42"
+    ]
+  },
+  "negotiate": {
+    "readingSense": "設法通過難行的地面或障礙",
+    "collocations": [
+      [
+        "negotiate rough ground",
+        "通過崎嶇地面"
+      ]
+    ],
+    "note": "幼象在茶園行走的語境中，不是談判或議價。受詞 rough ground 是判義關鍵。",
+    "passageIds": [
+      "gsat-112-reading-39-42"
+    ]
+  },
+  "offering": {
+    "readingSense": "獻給神靈或祖先的供品",
+    "collocations": [
+      [
+        "food offerings",
+        "食物供品"
+      ]
+    ],
+    "note": "祭壇與寺廟提供語境線索；offering 在此是名詞，不是正在提出一般建議。",
+    "passageIds": [
+      "gsat-111-structure-31-34"
+    ]
+  },
+  "operation": {
+    "readingSense": "運作方式、運作機制",
+    "collocations": [
+      [
+        "the operation of a system",
+        "系統的運作"
+      ]
+    ],
+    "note": "此處問群體反應背後如何運作，不是醫院的手術，也不是軍事行動。",
+    "passageIds": [
+      "gsat-113-mixed-47-50"
+    ]
+  },
+  "orientation": {
+    "readingSense": "朝向、定向方式",
+    "collocations": [
+      [
+        "map orientation",
+        "地圖定向"
+      ]
+    ],
+    "note": "在地圖文章指圖面的方向安排，不能直接套作新生訓練或個人的人生志向。",
+    "passageIds": [
+      "gsat-115-reading-43-46"
+    ]
+  },
+  "patent": {
+    "readingSense": "專利；對發明的法律保障",
+    "collocations": [
+      [
+        "receive a patent",
+        "取得專利"
+      ]
+    ],
+    "note": "區分「完成改良產品」與「取得專利」兩個時間點；專利不等於商品從此立刻暢銷。",
+    "passageIds": [
+      "gsat-113-reading-35-38"
+    ]
+  },
+  "pattern": {
+    "readingSense": "反覆出現的模式、規律",
+    "collocations": [
+      [
+        "a flight pattern",
+        "飛行模式"
+      ]
+    ],
+    "note": "本文比較有無掠食者時的群飛方式；pattern 不限於衣物上的花樣。",
+    "passageIds": [
+      "gsat-113-mixed-47-50"
+    ]
+  },
+  "perspective": {
+    "readingSense": "看事情的觀點、角度",
+    "collocations": [
+      [
+        "take a character's perspective",
+        "採取角色的觀點"
+      ]
+    ],
+    "note": "恐怖片段落談代入角色觀點；地圖段落則從新的角度看定向方式，皆不是單純的視力。",
+    "passageIds": [
+      "gsat-114-reading-39-42",
+      "gsat-115-reading-43-46"
+    ]
+  },
+  "plant": {
+    "readingSense": "工廠、生產設施",
+    "collocations": [
+      [
+        "open plants",
+        "設立工廠"
+      ]
+    ],
+    "note": "同一篇開頭的植物與後段量產工廠形成多義對照；opening plants 指設廠，不是讓植物開花。",
+    "passageIds": [
+      "gsat-113-reading-35-38"
+    ]
+  },
+  "pose": {
+    "readingSense": "造成、帶來風險或問題",
+    "collocations": [
+      [
+        "pose a risk",
+        "構成風險"
+      ]
+    ],
+    "note": "茶產業對大象 pose risk 的 pose 不是擺姿勢；受詞 risk 提示負面影響義。",
+    "passageIds": [
+      "gsat-112-reading-39-42"
+    ]
+  },
+  "precaution": {
+    "readingSense": "為防止傷害而預先採取的措施",
+    "collocations": [
+      [
+        "take precautions",
+        "採取預防措施"
+      ]
+    ],
+    "note": "保護大象的措施需在意外發生前採行，與傷害後的補救處理不同。",
+    "passageIds": [
+      "gsat-112-reading-39-42"
+    ]
+  },
+  "preference": {
+    "readingSense": "偏好、傾向採用的選擇",
+    "collocations": [
+      [
+        "a preference for north",
+        "偏好北方朝上"
+      ]
+    ],
+    "note": "本文把北方朝上視為歷史形成的選擇，並非自然界唯一可能的標準。",
+    "passageIds": [
+      "gsat-115-reading-43-46"
+    ]
+  },
+  "proceed": {
+    "readingSense": "繼續前進、往前行動",
+    "collocations": [
+      [
+        "proceed with caution",
+        "小心前進"
+      ]
+    ],
+    "note": "黃燈多提供一種行車指示；with caution 不等於完全不需注意地通行。",
+    "passageIds": [
+      "gsat-114-reading-35-38"
+    ]
+  },
+  "process": {
+    "readingSense": "對食品進行加工處理",
+    "collocations": [
+      [
+        "heavily processed food",
+        "高度加工的食品"
+      ]
+    ],
+    "note": "processed 在食物語境是加工過的；聊天室中的營養評論屬發言者觀點，不能全部視為文章認證的事實。",
+    "passageIds": [
+      "gsat-112-mixed-47-50"
+    ]
+  },
+  "prominent": {
+    "readingSense": "醒目、容易引人注意的",
+    "collocations": [
+      [
+        "a prominent structure",
+        "醒目的建築結構"
+      ]
+    ],
+    "note": "與 focal point 呼應，說明樓梯在視覺上顯著，不是在說其主人很有名。",
+    "passageIds": [
+      "gsat-115-reading-39-42"
+    ]
+  },
+  "reference": {
+    "readingSense": "對某事的提及、記載",
+    "collocations": [
+      [
+        "make reference to",
+        "提及、記載"
+      ]
+    ],
+    "note": "此處是古老文獻提到螺旋樓梯，不是求職推薦人；歷史記載也不等於最早實物仍留存。",
+    "passageIds": [
+      "gsat-115-reading-39-42"
+    ]
+  },
+  "release": {
+    "readingSense": "釋放情緒；在動物議題中也指放回野外",
+    "collocations": [
+      [
+        "release emotions",
+        "釋放情緒"
+      ]
+    ],
+    "note": "對照兩篇：恐怖片談情緒紓解，動物園談動物野放；都須由受詞判斷具體意思。",
+    "passageIds": [
+      "gsat-114-reading-39-42",
+      "gsat-114-mixed-47-50"
+    ]
+  },
+  "reliable": {
+    "readingSense": "可被信任、值得依靠的",
+    "collocations": [
+      [
+        "reliable and trustworthy",
+        "可靠而值得信任的"
+      ]
+    ],
+    "note": "本文是微笑作為傳遞可信形象的方式，不是證明每個微笑者在事實上都可靠。",
+    "passageIds": [
+      "gsat-115-structure-31-34"
+    ]
+  },
+  "reluctant": {
+    "readingSense": "不情願、不願意採取某個行動的",
+    "collocations": [
+      [
+        "reluctant to leave",
+        "不願離開"
+      ]
+    ],
+    "note": "象群遲遲不離開受困幼象，是意願上的不願，不是身體上沒有能力離開。",
+    "passageIds": [
+      "gsat-112-reading-39-42"
+    ]
+  },
+  "representation": {
+    "readingSense": "以某種形式呈現或象徵另一事物",
+    "collocations": [
+      [
+        "symbolic representations",
+        "象徵性呈現"
+      ]
+    ],
+    "note": "舞者用圓環構成動物形象；representation 在此指象徵造形，不是政治代表權。",
+    "passageIds": [
+      "gsat-112-reading-35-38"
+    ]
+  },
+  "reservation": {
+    "readingSense": "預約、訂房",
+    "collocations": [
+      [
+        "make a reservation",
+        "預約住宿"
+      ]
+    ],
+    "note": "膠囊旅館段落談訂房前評估狹小空間，不是保留意見或野生動物保護區。",
+    "passageIds": [
+      "gsat-114-structure-31-34"
+    ]
+  },
+  "restore": {
+    "readingSense": "使失去的功能或狀態恢復",
+    "collocations": [
+      [
+        "restore vision",
+        "恢復視力"
+      ]
+    ],
+    "note": "被動式 vision is restored 聚焦功能恢復；判讀時要區分已在魚類觀察到的結果與對人類的未來期待。",
+    "passageIds": [
+      "gsat-111-reading-43-46"
+    ]
+  },
+  "restrict": {
+    "readingSense": "限制活動或自由",
+    "collocations": [
+      [
+        "restrict freedom",
+        "限制自由"
+      ]
+    ],
+    "note": "將限制自由與保育理由分開辨識，才能比較不同發言者的立場。",
+    "passageIds": [
+      "gsat-114-mixed-47-50"
+    ]
+  },
+  "retain": {
+    "readingSense": "保留原有的傳統、特質或事物",
+    "collocations": [
+      [
+        "retain traditions",
+        "保留傳統"
+      ]
+    ],
+    "note": "馬賽族文化篇以 retain 說明傳統延續；與採納新生活方式的 adopt 形成對照。",
+    "passageIds": [
+      "gsat-111-reading-35-38"
+    ]
+  },
+  "retreat": {
+    "readingSense": "撤退、向較安全的位置退去",
+    "collocations": [
+      [
+        "retreat up the stairs",
+        "沿樓梯向上撤退"
+      ]
+    ],
+    "note": "up 表示此處撤退的方向；不要以為 retreat 必定只能向後或向下。",
+    "passageIds": [
+      "gsat-115-reading-39-42"
+    ]
+  },
+  "revenue": {
+    "readingSense": "政府或組織取得的收入",
+    "collocations": [
+      [
+        "government revenue",
+        "政府收入"
+      ]
+    ],
+    "note": "酒類專賣使國庫收入增加；revenue 不是扣除成本後的利潤，也不是一般人的薪資。",
+    "passageIds": [
+      "gsat-114-reading-43-46"
+    ]
+  },
+  "ritual": {
+    "readingSense": "具有文化或宗教意義的儀式",
+    "collocations": [
+      [
+        "ritual dances",
+        "儀式舞蹈"
+      ]
+    ],
+    "note": "文化閱讀常用具體活動解釋其象徵意義；先辨認儀式的目的，再整理表演形式。",
+    "passageIds": [
+      "gsat-111-reading-35-38",
+      "gsat-112-reading-35-38"
+    ]
+  },
+  "sector": {
+    "readingSense": "產業部門、領域",
+    "collocations": [
+      [
+        "different sectors",
+        "不同產業領域"
+      ]
+    ],
+    "note": "對照漁業、學術界與新創等參與者，理解跨領域合作，而非公司內單一辦公室。",
+    "passageIds": [
+      "gsat-113-reading-43-46"
+    ]
+  },
+  "secure": {
+    "readingSense": "取得並確保獲得所需資源",
+    "collocations": [
+      [
+        "secure food",
+        "取得食物"
+      ]
+    ],
+    "note": "在 animals move in groups to secure food 中為動詞；不是直接形容「安全的食物」。",
+    "passageIds": [
+      "gsat-113-mixed-47-50"
+    ]
+  },
+  "sensation": {
+    "readingSense": "由感官產生的感覺",
+    "collocations": [
+      [
+        "a sensation of taste",
+        "味覺感受"
+      ]
+    ],
+    "note": "聯覺中的 sensation 是真實感受到的味覺，不是某人或事件引起轟動。",
+    "passageIds": [
+      "gsat-112-structure-31-34"
+    ]
+  },
+  "sensitive": {
+    "readingSense": "容易受到某種刺激影響、對其敏感",
+    "collocations": [
+      [
+        "sensitive to anxiety",
+        "容易受焦慮影響"
+      ]
+    ],
+    "note": "sensitive to 後接刺激或感受；本文也談反覆接觸暴力後變得較不敏感，方向不可讀反。",
+    "passageIds": [
+      "gsat-114-reading-39-42"
+    ]
+  },
+  "shelter": {
+    "readingSense": "提供安全保護的地方",
+    "collocations": [
+      [
+        "a safe shelter",
+        "安全的庇護場所"
+      ]
+    ],
+    "note": "母象選擇少有人活動的區域生產；shelter 在此是場所名詞。",
+    "passageIds": [
+      "gsat-112-reading-39-42"
+    ]
+  },
+  "spirit": {
+    "readingSense": "靈魂、亡靈",
+    "collocations": [
+      [
+        "the spirits of the dead",
+        "亡者的靈魂"
+      ]
+    ],
+    "note": "與祭壇、祖先及迎送亡者的習俗一起判義；此處不是團隊精神或振奮心情。",
+    "passageIds": [
+      "gsat-111-structure-31-34"
+    ]
+  },
+  "state(ment)": {
+    "readingSense": "國家或國家政權；另一篇的 states 則表示「說明」",
+    "collocations": [
+      [
+        "a state monopoly",
+        "國家專賣"
+      ]
+    ],
+    "note": "先看詞性：俄國酒業段落的 state 指政府力量；店主 states 的用法是動詞「表示」。",
+    "passageIds": [
+      "gsat-114-reading-43-46",
+      "gsat-115-mixed-47-50"
+    ]
+  },
+  "station": {
+    "readingSense": "派駐、安排某人在特定位置",
+    "collocations": [
+      [
+        "station an officer",
+        "派駐一名警員"
+      ]
+    ],
+    "note": "was stationed 是動詞被動式，表警員被安排操作號誌；不是名詞「車站」。",
+    "passageIds": [
+      "gsat-114-reading-35-38"
+    ],
+    "reviewedForms": [
+      "stationed"
+    ]
+  },
+  "status": {
+    "readingSense": "某人在群體中的身分或地位",
+    "collocations": [
+      [
+        "warrior status",
+        "戰士身分"
+      ]
+    ],
+    "note": "此處討論成為戰士的身分條件，不能直接解成身體狀態或事情進度。",
+    "passageIds": [
+      "gsat-111-reading-35-38"
+    ]
+  },
+  "subject": {
+    "readingSense": "接受研究或實驗的對象",
+    "collocations": [
+      [
+        "test subject",
+        "實驗對象"
+      ]
+    ],
+    "note": "斑馬魚篇的 subject 指研究對象，不是學科、文章主題或文法主詞。",
+    "passageIds": [
+      "gsat-111-reading-43-46"
+    ]
+  },
+  "substance": {
+    "readingSense": "物質、材料",
+    "collocations": [
+      [
+        "a strong substance",
+        "強韌的材質"
+      ]
+    ],
+    "note": "此處用來說明尼龍的材質特性；不是文章「主旨」或言論「實質內容」。",
+    "passageIds": [
+      "gsat-113-reading-35-38"
+    ]
+  },
+  "substitute": {
+    "readingSense": "可代替原有食材或產品的替代品",
+    "collocations": [
+      [
+        "meat substitutes",
+        "肉類替代品"
+      ]
+    ],
+    "note": "植物肉討論中的 substitute 是名詞；是否喜歡替代品與是否認同其理念，要分別判讀。",
+    "passageIds": [
+      "gsat-112-mixed-47-50"
+    ]
+  },
+  "suppress": {
+    "readingSense": "抑制某種活動或生理過程",
+    "collocations": [
+      [
+        "suppress a process",
+        "抑制一個過程"
+      ]
+    ],
+    "note": "斑馬魚篇用 suppress 與促使再生的 trigger 形成對比；抑制不等於永久消除。",
+    "passageIds": [
+      "gsat-111-reading-43-46"
+    ]
+  },
+  "survey": {
+    "readingSense": "實地調查、考察；此處為政府對地區的探查",
+    "collocations": [
+      [
+        "a government survey",
+        "政府考察"
+      ]
+    ],
+    "note": "Moran 隨考察隊前往黃石，survey 在此不是單純的民意問卷。",
+    "passageIds": [
+      "gsat-113-reading-39-42"
+    ]
+  },
+  "symbol": {
+    "readingSense": "代表某個文化概念或活動的象徵",
+    "collocations": [
+      [
+        "a symbol of a festival",
+        "節慶的象徵"
+      ]
+    ],
+    "note": "文末的舞蹈成為夏日節慶象徵；symbol 的具體意義由 of 後面的事物界定。",
+    "passageIds": [
+      "gsat-111-structure-31-34"
+    ]
+  },
+  "territory": {
+    "readingSense": "地區、領域；此處指尚待親自探索的地方",
+    "collocations": [
+      [
+        "explore a territory",
+        "探索一片地區"
+      ]
+    ],
+    "note": "先依前後景觀描述理解實際地域，不要逕自加入戰爭或主權爭議的意思。",
+    "passageIds": [
+      "gsat-113-reading-39-42"
+    ]
+  },
+  "trace": {
+    "readingSense": "追溯某事物的歷史或來源",
+    "collocations": [
+      [
+        "be traced back to",
+        "可追溯到"
+      ]
+    ],
+    "note": "can be traced back to 連到最早的歷史證據；不要把名稱產生的年代誤當物件出現的年代。",
+    "passageIds": [
+      "gsat-112-reading-35-38"
+    ]
+  },
+  "transaction": {
+    "readingSense": "商品或金錢的交易行為",
+    "collocations": [
+      [
+        "goods for transaction",
+        "供交易的貨物"
+      ]
+    ],
+    "note": "港口停靠的船隻帶來香料與貨物；transaction 是交易，不是交通運輸本身。",
+    "passageIds": [
+      "gsat-112-reading-43-46"
+    ]
+  },
+  "transparent": {
+    "readingSense": "透明的，能讓人看見內部的",
+    "collocations": [
+      [
+        "transparent body",
+        "透明的身體"
+      ]
+    ],
+    "note": "斑馬魚身體透明，因此便於觀察器官。此處是實體透明，不是資訊公開的引申義。",
+    "passageIds": [
+      "gsat-111-reading-43-46"
+    ]
+  },
+  "trial": {
+    "readingSense": "為檢驗效果而進行的試驗",
+    "collocations": [
+      [
+        "human trials",
+        "人體試驗"
+      ]
+    ],
+    "note": "醫療研究中的 trial 是試驗，不是法庭審判。文章把人體試驗列為後續步驟，不能讀成已證實對人有效。",
+    "passageIds": [
+      "gsat-111-reading-43-46"
+    ]
+  },
+  "trigger": {
+    "readingSense": "觸發、引發某種反應",
+    "collocations": [
+      [
+        "trigger trauma",
+        "觸發創傷反應"
+      ]
+    ],
+    "note": "may be triggered 表可能受刺激引發，不能自行推成每位觀眾都必然產生同樣反應。",
+    "passageIds": [
+      "gsat-114-reading-39-42"
+    ]
+  },
+  "version": {
+    "readingSense": "同一產品經調整後的版本",
+    "collocations": [
+      [
+        "an improved version",
+        "改良版本"
+      ]
+    ],
+    "note": "留意研究、試作與改良的時間線；version 不一定指電腦軟體版本。",
+    "passageIds": [
+      "gsat-113-reading-35-38"
+    ]
+  },
+  "vessel": {
+    "readingSense": "船、航行用的船隻",
+    "collocations": [
+      [
+        "a polar vessel",
+        "極地航行船隻"
+      ]
+    ],
+    "note": "在航海探險文章中指 Endurance；不是血管或盛裝液體的容器。",
+    "passageIds": [
+      "gsat-115-reading-35-38"
+    ]
+  }
+}

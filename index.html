@@ -13,7 +13,7 @@
   <title>學測英文專用詞典｜V2 單字筆記 × 情境搭配</title>
   <link rel="stylesheet" href="./assets/css/local-coach.css?v=9678e6098936">
   <link rel="stylesheet" href="./assets/css/retrieval-practice.css?v=fccb231d2194">
-  <link rel="stylesheet" href="./assets/css/app.css?v=f3ca3f58c596">
+  <link rel="stylesheet" href="./assets/css/app.css?v=72e03eb2a8c4">
   <script defer src="./assets/js/config.js?v=eea935eb40ae"></script>
   <script defer src="./assets/data/vocabulary.js?v=f0471273feca"></script>
   <script defer src="./assets/data/collocations.js?v=9ca91a43390d"></script>
@@ -27,17 +27,19 @@
   <script defer src="./assets/js/exam-notes.js?v=f946ccc8b8f6"></script>
   <script defer src="./assets/js/state.js?v=8ad1ebee5e7a"></script>
   <script defer src="./assets/js/builtin.js?v=4270c7044c34"></script>
-  <script defer src="./assets/js/search.js?v=b0bff200f0f5"></script>
+  <script defer src="./assets/data/reading-vocabulary.js?v=d01430584e2c"></script>
+  <script defer src="./assets/js/reading.js?v=998dfb149eb7"></script>
+  <script defer src="./assets/js/search.js?v=0d725e469f40"></script>
   <script defer src="./assets/js/examples.js?v=4f21b06d22b2"></script>
   <script defer src="./assets/js/audio.js?v=8df633276a02"></script>
   <script defer src="./assets/js/retrieval-practice.js?v=251a504ddb48"></script>
-  <script defer src="./assets/js/ui.js?v=23addcd52166"></script>
+  <script defer src="./assets/js/ui.js?v=1357fa0d2202"></script>
   <script defer src="./assets/js/favorites.js?v=569a332f0d3a"></script>
   <script defer src="./assets/js/online.js?v=0084ffa743cb"></script>
   <script defer src="./assets/data/context-practice.js?v=b9d6934ef50c"></script>
   <script defer src="./assets/js/diagnostics.js?v=45c5c9678975"></script>
   <script defer src="./assets/js/local-coach.js?v=38bf370a4352"></script>
-  <script defer src="./assets/js/app.js?v=548f5a14766b"></script>
+  <script defer src="./assets/js/app.js?v=5e21f34fd68d"></script>
 
 </head>
 <body>
@@ -67,8 +69,15 @@
 
   <section class="tools" id="dict" aria-label="詞彙篩選">
     <div class="levels" id="levelFilters"><span class="filter-label">級別</span></div>
-    <div class="tabs"><button id="allTab" class="on" type="button">全部</button><button id="notebookTab" type="button">V2 筆記 <span id="notebookTabCount"></span></button><button id="examTab" type="button">111–115 真題 <span id="examTabCount"></span></button><button id="collocationTab" type="button">搭配考點 <span id="collocationTabCount"></span></button><button id="reviewTab" type="button">今日複習 <span id="reviewCount"></span></button><button id="favoriteTab" type="button">收藏 <span id="favoriteCount"></span></button></div>
+    <div class="tabs"><button id="allTab" class="on" type="button">全部</button><button id="notebookTab" type="button">V2 筆記 <span id="notebookTabCount"></span></button><button id="examTab" type="button">111–115 真題 <span id="examTabCount"></span></button><button id="readingTab" type="button">閱讀詞彙 <span id="readingTabCount"></span></button><button id="collocationTab" type="button">搭配考點 <span id="collocationTabCount"></span></button><button id="reviewTab" type="button">今日複習 <span id="reviewCount"></span></button><button id="favoriteTab" type="button">收藏 <span id="favoriteCount"></span></button></div>
     <label id="notebookSourceFilter" class="notebook-source-filter" hidden for="notebookSource">教材內容 <select id="notebookSource"><option value="">全部 V2 筆記</option><option value="curated">專題新編</option><option value="authored">原創情境句</option><option value="guided">待改寫 · 教材導讀</option></select></label>
+    <div class="reading-search-notice" id="readingSearchNotice" hidden role="status"><span id="readingSearchNoticeText"></span><button id="viewReadingSupplemental" type="button">查看補充詞</button></div>
+    <div class="reading-filters" id="readingFilters" hidden aria-label="閱讀詞彙篩選">
+      <div class="reading-intro"><div><strong>從五年閱讀題組，整理下一輪複習</strong><p>依閱讀本文中的實際詞形、跨年出現與主題選詞；搭配與語境義另標為本站整理，不保證未來出題。</p></div><button id="exportReadingVocabulary" class="reading-export" type="button">匯出目前詞單 CSV</button></div>
+      <div class="reading-filter-grid"><label for="readingYear">年度<select id="readingYear"><option value="all">全部年度</option></select></label><label for="readingTopic">閱讀主題<select id="readingTopic"><option value="all">全部主題</option></select></label><label for="readingPriority">複習順序<select id="readingPriority"><option value="all">全部閱讀詞彙</option></select></label><label for="readingSection">題型<select id="readingSection"><option value="all">全部題型</option></select></label></div>
+      <p class="reading-filter-status" id="readingFilterStatus" role="status" aria-live="polite"></p>
+      <details class="reading-supplemental" id="readingSupplemental"><summary>閱讀題材補充詞 <span id="readingSupplementalCount">0</span> 詞</summary><p class="reading-supplemental-scope">這些詞實際出現在閱讀本文，另作題材詞彙準備；不列入官方 6,012 詞或 V2 三句計數，也不套用上方 L1–L6 級別篩選。搜尋、年度、主題、複習順序與題型仍會篩選此區。</p><div id="readingSupplementalContent"></div></details>
+    </div>
     <p class="original-writing-progress" id="originalWritingProgress" aria-live="polite">正在讀取原創例句改寫進度…</p>
   </section>
 

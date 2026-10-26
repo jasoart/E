@@ -27,11 +27,13 @@ flowchart TD
 
 `exam-evidence-index.js` 是小型年度索引，搜尋與年度篩選無需讀取所有引文。展開來源時才讀同站的 `exam-evidence.json`，並分別標示本文、題幹或選項。每個索引記錄來源檔案雜湊，生成器與驗證工具確認同步。
 
+`reading-vocabulary.js` 是閱讀正文詞彙的獨立覆蓋層：以既有精確 ID 連結出處、語境義與搭配；原詞表外的題材詞保存在獨立 `supplemental` 區，不附加至 `VOCABULARY`。`reading.js` 管理同篇出處交集、主題／年度篩選、補充詞呈現及 CSV 匯出。原 EXAM 出處索引與其計數不與閱讀清單混用；來源和生成流程見 [READING_VOCABULARY.md](READING_VOCABULARY.md)。
+
 `kk-pronunciation.js` 保存由固定 CMUdict 版本轉寫的美式 KK 音段。音標轉寫與實際錄音來源各自標示；不把 CMUdict 文字音段稱為真人錄音。原 ECDICT 音標也保留。轉寫及重音位置限制見 [KK_NOTATION.md](KK_NOTATION.md)。
 
 ## 執行順序與查詢
 
-HTML 使用本機 `defer` 腳本並依序載入：設定 → 靜態資料 → 筆記整合 → 狀態 → 內建教材工具 → 搜尋 → 例句及發音 → 搭配回想 → UI → 收藏、診斷與學習助手 → app 啟動。靜態驗證器保有完整預期順序；新增腳本須同步調整該清單。
+HTML 使用本機 `defer` 腳本並依序載入：設定 → 靜態資料 → 筆記整合 → 狀態 → 內建教材工具 → 閱讀資料與工具 → 搜尋 → 例句及發音 → 搭配回想 → UI → 收藏、診斷與學習助手 → app 啟動。靜態驗證器保有完整預期順序；新增腳本須同步調整該清單。
 
 搜尋欄位採 `WeakMap` 快取，保留英文單字、字族、中文釋意、搭配與情境文字。BM25 倒排清單只為命中 token 的文件計分，再與字面匹配、既有概念規則透過 reciprocal rank fusion 合併。英文字母拼寫近似使用三列、有距離界限的編輯距離計算，保留相鄰字母交換行為。
 
