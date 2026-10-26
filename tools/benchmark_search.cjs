@@ -1,5 +1,5 @@
 'use strict';
-// Run: node --expose-gc tools/benchmark_search.cjs [--compare-ref <git-ref>]
+// Run: node --expose-gc tools/benchmark_search.cjs [--compare-ref <git-ref> | --baseline-file <search.js>]
 // Uses the same released data for both search implementations. No network/dependencies.
 const fs = require('node:fs');
 const path = require('node:path');
@@ -8,7 +8,7 @@ const {performance} = require('node:perf_hooks');
 const {execFileSync, spawnSync} = require('node:child_process');
 const {createHash} = require('node:crypto');
 const root = path.resolve(__dirname, '..');
-const files = ['js/config.js', 'data/vocabulary.js', 'data/collocations.js', 'data/learning.js', 'data/builtin-study.js', 'data/exam-notebook.js', 'data/authored-scenarios.js', 'js/exam-notes.js', 'js/state.js', 'js/builtin.js'];
+const files = ['js/config.js', 'data/vocabulary.js', 'data/collocations.js', 'data/learning.js', 'data/builtin-study.js', 'data/exam-notebook.js', 'data/vocabulary-enrichment.js', 'data/authored-scenarios.js', 'js/exam-notes.js', 'js/state.js', 'js/builtin.js'];
 const queries = ['challenge', 'elbow', 'exacerbate', 'responsive', 'integration', '導致', '規律運動', '公開露面', '氣候', '陪伴', 'give rise to', 'add fuel to the fire', 'responsive to', 'tight schedule', 'take precedence over', 'challnege', 'enviroment', 'responsvie', 'compainonship', 'become aware', 'exacerbation', 'integral', 'a', 're', 'unlikelysearchterm'];
 function environment(searchSource, overrides = {}, snapshot) {
   const node = {addEventListener() {}, classList: {add() {}, remove() {}}};
@@ -17,7 +17,7 @@ function environment(searchSource, overrides = {}, snapshot) {
   vm.createContext(context);
   const run = source => vm.runInContext(source, context);
   for (const file of files) run(snapshot?.[file] ?? fs.readFileSync(path.join(root, 'assets', file), 'utf8'));
-  run(searchSource || fs.readFileSync(path.join(root, 'assets/js/search.js'), 'utf8'));
+  run(searchSource ?? fs.readFileSync(path.join(root, 'assets/js/search.js'), 'utf8'));
   return {run, context};
 }
 function percentile(values, p) { const sorted = [...values].sort((a, b) => a - b); return sorted[Math.ceil(p * sorted.length) - 1]; }
@@ -57,8 +57,13 @@ if (require.main === module) {
     console.log(JSON.stringify(measure(input.source, input.snapshot)));
     process.exit(0);
   }
-  const arg = process.argv.indexOf('--compare-ref');
-  const baseline = arg >= 0 ? execFileSync('git', ['show', `${process.argv[arg + 1]}:assets/js/search.js`], {cwd: root, encoding: 'utf8'}) : null;
+  const refArg = process.argv.indexOf('--compare-ref'), fileArg = process.argv.indexOf('--baseline-file');
+  if (refArg >= 0 && fileArg >= 0) throw new Error('Choose either --compare-ref or --baseline-file');
+  const arg = Math.max(refArg, fileArg);
+  if (arg >= 0 && (!process.argv[arg + 1] || process.argv[arg + 1].startsWith('--'))) throw new Error(`${process.argv[arg]} requires a value`);
+  // A source snapshot also works when the baseline commit is not in a shallow clone.
+  const baseline = fileArg >= 0 ? fs.readFileSync(path.resolve(process.argv[fileArg + 1]), 'utf8')
+    : refArg >= 0 ? execFileSync('git', ['show', `${process.argv[refArg + 1]}:assets/js/search.js`], {cwd: root, encoding: 'utf8'}) : null;
   const snapshot = Object.fromEntries(files.map(file => [file, fs.readFileSync(path.join(root, 'assets', file), 'utf8')]));
   const isolated = source => {
     // Separate V8 heaps prevent collection of a prior VM from distorting memory
@@ -69,8 +74,9 @@ if (require.main === module) {
     if (child.status !== 0) throw new Error(child.stderr || `Benchmark child exited ${child.status}`);
     return JSON.parse(child.stdout);
   };
-  const result = {node: process.version, rounds: 7, isolatedProcesses: true, gcExposed: true, materialSha256: createHash('sha256').update(JSON.stringify(snapshot)).digest('hex')};
-  if (baseline) result.baseline = isolated(baseline);
+  const result = {node: process.version, rounds: 7, isolatedProcesses: true, gcExposed: true, materialFiles: files, materialSha256: createHash('sha256').update(JSON.stringify(snapshot)).digest('hex')};
+  if (baseline !== null) result.baselineSourceSha256 = createHash('sha256').update(baseline).digest('hex');
+  if (baseline !== null) result.baseline = isolated(baseline);
   result.current = isolated(fs.readFileSync(path.join(root, 'assets/js/search.js'), 'utf8'));
   console.log(JSON.stringify(result, null, 2));
 }

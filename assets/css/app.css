@@ -219,3 +219,136 @@ body>footer{max-width:none;background:var(--ink);color:rgba(255,255,255,.82);mar
 .notebook-core-meaning{padding:14px 16px;border-left:3px solid var(--ink);background:rgba(23,53,45,.05);margin:10px 0 18px}.notebook-core-meaning h3{margin:0 0 6px;font-size:15px}.notebook-core-meaning p{margin:0;font-size:16px;line-height:1.9}.notebook-core-meaning small{display:block;margin-top:7px;color:var(--muted)}
 .notebook-core-dictionary{margin:12px 0;padding:12px;border:1px solid var(--line);border-radius:8px}.notebook-core-dictionary summary{cursor:pointer;font-size:13px;font-weight:650}.notebook-core-dictionary p{font-size:13px;line-height:1.7}
 .notebook-expert-tip{padding:14px 16px;margin-top:16px;border:1px solid var(--line);border-radius:9px;background:rgba(255,233,122,.18)}.notebook-expert-tip h3{font-size:14px;margin:0 0 6px}.notebook-expert-tip p{font-size:13px;line-height:1.85;margin:0}.gold-example blockquote strong{font-weight:750;background:linear-gradient(transparent 65%,rgba(255,222,61,.5) 65%)}
+
+/* Reading typography: installed fonts only, with separate text and phonetic stacks.
+   Latin serif faces precede CJK fallbacks so English retains clear word shapes.
+   Relative sizes respect the reader's browser text-size preference. */
+:root {
+  --sans: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang TC", "Noto Sans TC", "Noto Sans CJK TC", "Microsoft JhengHei", sans-serif;
+  --serif: "Iowan Old Style", Georgia, "Noto Serif TC", "Noto Serif CJK TC", "Source Han Serif TC", "Songti TC", serif;
+  --phonetic: "Charis SIL", "Doulos SIL", "DejaVu Sans", "Segoe UI", Arial, var(--sans);
+}
+html { font-size: 100%; }
+body { font-size: 1rem; line-height: 1.8; font-kerning: normal; }
+h1 { font-weight: 700; letter-spacing: -.015em; }
+.brand-copy strong, .hero .daily button strong, .coach-panel h2 { font-weight: 700; }
+.title-row h2 { letter-spacing: -.02em; }
+.row-copy strong { font-size: 1.25rem; line-height: 1.4; }
+.row-copy small { font-size: .875rem; line-height: 1.65; }
+.lead, .study-path, .coach-panel>p { font-size: 1rem; line-height: 1.85; }
+
+/* Main bilingual explanations have the same reading size on phones and desktops. */
+.notebook-sense h3 { font-size: 1.125rem; line-height: 1.55; }
+.notebook-sense p, .complete-original-meaning .original-meaning-text,
+.notebook-core-meaning p, .notebook-core-dictionary p, .notebook-expert-tip p,
+.notebook-usage-note, .notebook-relation>span, .family-item>span:last-child,
+.builtin-collocation, .example-translation, .builtin-example .builtin-analysis,
+.notebook-dictionary-sense p, .notebook-sentence-guide, .notebook-contrast,
+.notebook-archive article p, .notebook-evidence-record, .retrieval-practice p {
+  font-size: 1rem;
+  line-height: 1.85;
+}
+.builtin-collocation code, .notebook-relation code, .family-item code,
+.notebook-inflections td, .notebook-observed-forms code,
+.notebook-sentence-guide code, .context-pattern code, .exam-pattern code {
+  font-family: var(--serif);
+  font-size: 1.0625rem;
+  font-weight: 600;
+  line-height: 1.75;
+  white-space: normal;
+  overflow-wrap: anywhere;
+}
+.gold-example blockquote, .fallback-example blockquote,
+.notebook-archive blockquote, .notebook-evidence-record blockquote,
+.retrieval-practice .retrieval-reference {
+  font-family: var(--serif);
+  font-size: 1.1875rem;
+  font-weight: 400;
+  line-height: 1.8;
+  letter-spacing: normal;
+  overflow-wrap: anywhere;
+  hyphens: none;
+}
+.notebook-field>.kicker, .notebook-core-meaning h3, .notebook-expert-tip h3 {
+  font-size: .9375rem;
+  line-height: 1.65;
+}
+.notebook-inflections, .notebook-inflections caption,
+.notebook-intro>p:not(.kicker), .notebook-roadmap,
+.study-card .card-note, .builtin-collocation small, .notebook-relation p,
+.notebook-dictionary-sense small, .notebook-core-meaning small,
+.notebook-core-dictionary summary, .notebook-field .notebook-lexical summary,
+.notebook-archive, .notebook-evidence, .notebook-legacy-points {
+  font-size: .875rem;
+  line-height: 1.8;
+}
+
+/* Keep IPA/KK symbols upright and untracked; labels stay in the UI typeface. */
+.phonetic { font-size: 1rem; line-height: 1.8; }
+.phonetic>span:not(.phonetic-source), .pronunciation-variants>span {
+  font-family: var(--phonetic);
+  font-size: 1.0625rem;
+  font-style: normal;
+  font-weight: 400;
+  font-variant-ligatures: none;
+  letter-spacing: normal;
+}
+.phonetic em { font: 600 .875rem/1.6 var(--sans); }
+.phonetic-source, .pronunciation-details, .audio-status, .audio-source-link,
+.example-source, .builtin-example .example-source, .gold-example footer,
+.example-topic, .builtin-example .builtin-source, .gold-rank,
+.example-translation strong, .source, .v3-note, body>footer,
+.retrieval-practice .retrieval-note, .suggestion-copy small {
+  font-size: .8125rem;
+  line-height: 1.7;
+}
+.stats strong, .panel-head strong, .review-status { font-variant-numeric: tabular-nums; }
+
+.search input, .search input::placeholder, .notebook-source-filter select,
+.builtin-answer-row input, .builtin-writing textarea, .coach-panel textarea {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+.tabs button, .level-btn, .favorite, .review-button,
+.hero-hints button, .query-chip, .category-btn, .notebook-navigation a,
+.accent-choice, .example-tool, .backup-tools button {
+  font-size: .875rem;
+  line-height: 1.5;
+}
+.level-btn { height: auto; min-height: 2.25rem; }
+.tabs button, .notebook-navigation a { min-height: 2.5rem; }
+.title-row>div, .notebook-sense>div { min-width: 0; }
+.notebook-field, .notebook-archive, .coach-output { overflow-wrap: anywhere; }
+.speak small { font-size: .6875rem; line-height: 1.2; letter-spacing: normal; white-space: nowrap; }
+
+@media (max-width: 600px) {
+  .lead { font-size: 1rem; }
+  .title-row h2 { font-size: clamp(2rem, 9vw, 2.75rem); }
+  .hero-page { padding-left: 2rem; padding-right: 1rem; }
+  .hero-page:before { left: 1.125rem; }
+  .search input::placeholder { font-size: 1rem; }
+  .notebook-field, .notebook-field.study-card { padding: 1rem .75rem; }
+  .notebook-roadmap li { font-size: .875rem; }
+  .phonetic-source { margin-left: 0; }
+  .title-row .speak { width: 4rem; height: 4rem; }
+}
+
+/* Short control feedback complements the cancellable panel transitions in ui.js. */
+.tabs button, .level-btn, .category-btn, .query-chip, .favorite, .review-button,
+.accent-choice, .example-tool, .notebook-navigation a, .page-button,
+.retrieval-practice button, .coach-actions button, .coach-prompts button {
+  transition: background-color 140ms ease, color 140ms ease,
+    border-color 140ms ease, transform 120ms ease;
+}
+.row { transition: background-color 140ms ease, border-color 140ms ease; }
+.row .arrow { transition: transform 140ms ease, opacity 140ms ease; }
+.row.selected .arrow { transform: translateX(2px); }
+.tabs button:active, .level-btn:active, .category-btn:active, .query-chip:active,
+.favorite:active, .review-button:active, .accent-choice:active, .example-tool:active,
+.page-button:not(:disabled):active, .retrieval-practice button:not(:disabled):active,
+.coach-actions button:active, .coach-prompts button:active { transform: scale(.97); }
+.favorite.saved { background: #fff0a3; border-color: #a28c3e; }
+@media (prefers-reduced-motion: reduce) {
+  .row.selected .arrow { transform: none; }
+  button:active { transform: none !important; }
+}

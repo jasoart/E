@@ -16,17 +16,34 @@
     return (protectedText.match(/[^.!?\n]+(?:[.!?]+["')\]]*|$)/g) || [])
       .map(s => s.replace(/\uE000/g, ".").trim()).filter(Boolean).slice(0, 80);
   }
-  function pageRank(weights, damping = .85, tolerance = 1e-7, maxIterations = 100) {
+  function pageRank(weights, damping = .85, tolerance = 1e-7, maxIterations = 100, personalization) {
     const n = weights.length;
     if (!n) return [];
-    const out = weights.map(row => row.reduce((sum, v) => sum + Math.max(0, Number(v) || 0), 0));
-    let rank = Array(n).fill(1 / n);
+    const positive = value => Number.isFinite(Number(value)) && Number(value) > 0 ? Number(value) : 0;
+    damping = Number.isFinite(Number(damping)) ? Math.max(0, Math.min(1, Number(damping))) : .85;
+    tolerance = Number.isFinite(Number(tolerance)) ? Math.max(0, Number(tolerance)) : 1e-7;
+    maxIterations = Number.isFinite(Number(maxIterations)) ? Math.max(0, Math.floor(Number(maxIterations))) : 100;
+    let prior = Array.from({length: n}, (_, i) => positive(personalization?.[i]));
+    const scale = Math.max(...prior);
+    if (scale) {
+      // Scale before summing so even large finite weights normalize safely.
+      prior = prior.map(value => value / scale);
+      const total = prior.reduce((sum, value) => sum + value, 0);
+      prior = prior.map(value => value / total);
+    } else prior.fill(1 / n);
+    // Normalize nonzero transitions once, then iterate only actual edges.
+    const edges = weights.map(row => {
+      const values = Array.from({length: n}, (_, j) => positive(row?.[j]));
+      const maximum = Math.max(...values);
+      if (!maximum) return [];
+      const scaled = values.map(value => value / maximum), total = scaled.reduce((sum, value) => sum + value, 0);
+      return scaled.flatMap((value, j) => value ? [[j, value / total]] : []);
+    });
+    let rank = prior.slice();
     for (let iteration = 0; iteration < maxIterations; iteration++) {
-      const dangling = rank.reduce((sum, r, i) => sum + (!out[i] ? r : 0), 0);
-      const next = Array(n).fill((1 - damping) / n + damping * dangling / n);
-      for (let i = 0; i < n; i++) if (out[i]) {
-        for (let j = 0; j < n; j++) next[j] += damping * rank[i] * Math.max(0, Number(weights[i][j]) || 0) / out[i];
-      }
+      const dangling = rank.reduce((sum, r, i) => sum + (!edges[i].length ? r : 0), 0);
+      const next = prior.map(value => ((1 - damping) + damping * dangling) * value);
+      for (let i = 0; i < n; i++) for (const [j, probability] of edges[i]) next[j] += damping * rank[i] * probability;
       const difference = next.reduce((sum, r, i) => sum + Math.abs(r - rank[i]), 0);
       rank = next;
       if (difference < tolerance) break;
@@ -34,8 +51,12 @@
     return rank;
   }
   function keywordRank(text, limit = 8) {
-    const words = contentTokens(text).slice(0, 1200), frequency = new Map();
-    words.forEach(word => frequency.set(word, (frequency.get(word) || 0) + 1));
+    const words = tokens(text).slice(0, 1200), frequency = new Map(), positionWeight = new Map();
+    words.forEach((word, index) => {
+      if (word.length <= 2 || STOP.has(word)) return;
+      frequency.set(word, (frequency.get(word) || 0) + 1);
+      positionWeight.set(word, (positionWeight.get(word) || 0) + 1 / (index + 1));
+    });
     const nodes = [...frequency.keys()].sort((a, b) => frequency.get(b) - frequency.get(a) || a.localeCompare(b)).slice(0, 100);
     const positions = new Map(nodes.map((word, index) => [word, index]));
     const weights = nodes.map(() => Array(nodes.length).fill(0));
@@ -44,11 +65,40 @@
       if (a === undefined || b === undefined || a === b) continue;
       weights[a][b]++; weights[b][a]++;
     }
-    const rank = pageRank(weights);
+    // PositionRank-inspired word ranking: sum inverse original token positions.
+    // Stop words keep their offsets/window slots; no POS/keyphrase parser is used.
+    const rank = pageRank(weights, .85, 1e-7, 100, nodes.map(word => positionWeight.get(word)));
     return nodes.map((word, i) => ({ word, score: rank[i], count: frequency.get(word) }))
-      .sort((a, b) => b.score - a.score || b.count - a.count || a.word.localeCompare(b.word)).slice(0, limit);
+      .sort((a, b) => b.score - a.score || b.count - a.count || a.word.localeCompare(b.word)).slice(0, resultLimit(limit, nodes.length));
   }
-  function sentenceRank(text, limit = 3) {
+  function resultLimit(limit, size) { return Math.max(0, Math.min(size, Math.floor(Number(limit) || 0))); }
+  function cosineSimilarity(left, right, leftNorm, rightNorm) {
+    if (!leftNorm || !rightNorm) return 0;
+    let dot = 0;
+    for (const [word, value] of left) dot += value * (right.get(word) || 0);
+    return Math.max(0, Math.min(1, dot / (leftNorm * rightNorm)));
+  }
+  function mmrSelect(items, limit, relevance, similarity, lambda) {
+    const count = resultLimit(limit, items.length);
+    if (!count) return [];
+    lambda = Number.isFinite(Number(lambda)) ? Math.max(0, Math.min(1, Number(lambda))) : .7;
+    const scores = items.map(relevance), maximum = Math.max(...scores);
+    const selected = [], used = new Set(), redundancy = Array(items.length).fill(0);
+    while (selected.length < count) {
+      let best = -1, bestScore = -Infinity;
+      for (let i = 0; i < items.length; i++) if (!used.has(i)) {
+        // Normalize relevance to the same [0,1] range as cosine redundancy.
+        // The first choice always has the strongest relevance, even at lambda=0.
+        const score = selected.length ? lambda * (maximum ? scores[i] / maximum : 0) - (1 - lambda) * redundancy[i] : scores[i];
+        if (score > bestScore) { best = i; bestScore = score; }
+      }
+      used.add(best); selected.push(items[best]);
+      // Incremental maximum avoids recomputing similarity to earlier choices.
+      for (let i = 0; i < items.length; i++) if (!used.has(i)) redundancy[i] = Math.max(redundancy[i], similarity(items[i], items[best]));
+    }
+    return selected;
+  }
+  function sentenceRank(text, limit = 3, lambda = .7) {
     const sentences = splitSentences(text), df = new Map();
     const documents = sentences.map(sentence => {
       const counts = new Map(); contentTokens(sentence).forEach(word => counts.set(word, (counts.get(word) || 0) + 1));
@@ -59,17 +109,16 @@
     const norms = vectors.map(v => Math.sqrt([...v.values()].reduce((sum, x) => sum + x * x, 0)));
     const weights = sentences.map(() => Array(sentences.length).fill(0));
     for (let i = 0; i < sentences.length; i++) for (let j = i + 1; j < sentences.length; j++) {
-      let dot = 0; for (const [word, value] of vectors[i]) dot += value * (vectors[j].get(word) || 0);
-      const score = norms[i] && norms[j] ? dot / (norms[i] * norms[j]) : 0;
+      const score = cosineSimilarity(vectors[i], vectors[j], norms[i], norms[j]);
       weights[i][j] = score; weights[j][i] = score;
     }
-    const scores = pageRank(weights), seen = new Set(), selected = [];
-    const ranked = sentences.map((text, index) => ({ text, index, score: scores[index] }))
-      .sort((a, b) => b.score - a.score || a.index - b.index);
-    for (const item of ranked) {
-      const key = tokens(item.text).join(" "); if (seen.has(key) || !contentTokens(item.text).length) continue;
-      seen.add(key); selected.push(item); if (selected.length >= limit) break;
-    }
+    const scores = pageRank(weights), seen = new Set();
+    const candidates = sentences.map((text, index) => ({ text, index, score: scores[index] })).filter(item => {
+      const key = tokens(item.text).join(" ");
+      if (seen.has(key) || !documents[item.index].size) return false;
+      seen.add(key); return true;
+    });
+    const selected = mmrSelect(candidates, limit, item => item.score, (a, b) => weights[a.index][b.index], lambda);
     return selected.sort((a, b) => a.index - b.index);
   }
   const RULES = [
@@ -106,7 +155,7 @@
       scope: "規則只提示部分常見問題；重點句為原文抽取，須自行確認，不提供學測作文分數。"
     };
   }
-  function rankExamples(query, candidates, limit = 4) {
+  function rankExamples(query, candidates, limit = 4, lambda = .7) {
     const bilingualTerms = text => {
       const terms = contentTokens(text);
       for (const chunk of String(text || "").match(/[\u3400-\u9fff]+/g) || []) {
@@ -117,10 +166,27 @@
     };
     const q = new Set(bilingualTerms(query)), df = new Map(), records = candidates.map((record, originalIndex) => ({ ...record, originalIndex, terms: new Set(bilingualTerms(record.text + " " + (record.topic || "") + " " + (record.translationZh || ""))) }));
     records.forEach(record => record.terms.forEach(t => df.set(t, (df.get(t) || 0) + 1)));
-    return records.map(record => {
+    const scored = records.map(record => {
       let score = 0; q.forEach(t => { if (record.terms.has(t)) score += 1 + Math.log((records.length + 1) / ((df.get(t) || 0) + 1)); });
       return { ...record, relevance: score / Math.sqrt(Math.max(1, record.terms.size)) };
-    }).sort((a, b) => b.relevance - a.relevance || a.originalIndex - b.originalIndex).slice(0, limit);
+    });
+    if (!scored.some(record => record.relevance > 0)) return scored.slice(0, resultLimit(limit, scored.length));
+    // Gate on query evidence before diversity; novelty alone cannot promote an
+    // unrelated example. For duplicate text keep the strongest original record.
+    const unique = new Map();
+    for (const record of scored) if (record.relevance > 0) {
+      const normalized = String(record.text || "").normalize("NFKC").replace(/’/g, "'").toLowerCase();
+      const key = (normalized.match(/[a-z]+(?:[-'][a-z]+)*|[\u3400-\u9fff]+/g) || [normalized]).join(" ");
+      const previous = unique.get(key);
+      if (!previous || record.relevance > previous.relevance) unique.set(key, record);
+    }
+    const eligible = [...unique.values()].sort((a, b) => a.originalIndex - b.originalIndex);
+    const vectors = new Map(), norms = new Map();
+    for (const record of eligible) {
+      const vector = new Map([...record.terms].map(term => [term, 1 + Math.log((records.length + 1) / ((df.get(term) || 0) + 1))]));
+      vectors.set(record, vector); norms.set(record, Math.sqrt([...vector.values()].reduce((sum, value) => sum + value * value, 0)));
+    }
+    return mmrSelect(eligible, limit, record => record.relevance, (a, b) => cosineSimilarity(vectors.get(a), vectors.get(b), norms.get(a), norms.get(b)), lambda);
   }
   function detectIntent(input) {
     const value = String(input || "").trim();

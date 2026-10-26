@@ -1,5 +1,46 @@
 "use strict";
 
+// Brief, cancellable feedback. Rendering never waits for an animation, and no
+// opacity/transform is left on the DOM when the API is absent or motion is off.
+const UI_MOTION_PREFERENCE=typeof matchMedia==="function"?matchMedia("(prefers-reduced-motion: reduce)"):null;
+const UI_ACTIVE_MOTION=new Map(),UI_LIST_KEYS=new WeakMap(),UI_DETAILS_HOSTS=new WeakSet();
+function cancelInterfaceMotion(element){
+  const previous=UI_ACTIVE_MOTION.get(element);
+  if(previous){UI_ACTIVE_MOTION.delete(element);previous.cancel()}
+}
+function animateInterface(element,keyframes,kind,duration=180){
+  if(!element)return null;
+  cancelInterfaceMotion(element);
+  if(UI_MOTION_PREFERENCE?.matches||typeof element.animate!=="function")return null;
+  try{
+    const animation=element.animate(keyframes,{duration,easing:"cubic-bezier(.22,1,.36,1)"});
+    animation.id=`dictionary-${kind}`;UI_ACTIVE_MOTION.set(element,animation);
+    const cleanup=()=>{if(UI_ACTIVE_MOTION.get(element)===animation)UI_ACTIVE_MOTION.delete(element)};
+    animation.onfinish=cleanup;animation.oncancel=cleanup;return animation;
+  }catch{return null}
+}
+function stopInterfaceMotionWhenReduced(){
+  if(UI_MOTION_PREFERENCE?.matches)for(const element of [...UI_ACTIVE_MOTION.keys()])cancelInterfaceMotion(element);
+}
+if(UI_MOTION_PREFERENCE?.addEventListener)UI_MOTION_PREFERENCE.addEventListener("change",stopInterfaceMotionWhenReduced);
+else if(UI_MOTION_PREFERENCE?.addListener)UI_MOTION_PREFERENCE.addListener(stopInterfaceMotionWhenReduced);
+function animateListChange(rows){
+  const key=rows.map(row=>row.index).join(","),previous=UI_LIST_KEYS.get(wordList);
+  UI_LIST_KEYS.set(wordList,key);
+  if(previous!==undefined&&previous!==key)animateInterface(wordList,[{opacity:.78,transform:"translateY(3px)"},{opacity:1,transform:"translateY(0)"}],"list",150);
+}
+function setupDetailMotion(host){
+  if(UI_DETAILS_HOSTS.has(host))return;
+  UI_DETAILS_HOSTS.add(host);
+  host.addEventListener("toggle",event=>{
+    const details=event.target;
+    if(details?.tagName!=="DETAILS")return;
+    if(!details.open){cancelInterfaceMotion(details);return}
+    // Native details handles focus and disclosure immediately; only its paint fades.
+    animateInterface(details,[{opacity:.78},{opacity:1}],"disclosure",150);
+  },true);
+}
+
 function getVisibleGsatPoints(entry){
   const query=normalizeSearchValue(state.query);
   return getGsatPoints(entry).filter(point=>(!state.examOnly||(point.evidence.length&&(state.examYear==="all"||point.evidence.includes(state.examYear))))&&(!state.collocationsOnly||state.category==="全部"||point.category===state.category)).sort((a,b)=>{
@@ -105,16 +146,22 @@ function renderList(){
   byId("sortHint").textContent=state.query?"字詞、字義與用法":state.reviewOnly?"到期日優先":state.examOnly?"真題證據優先":state.collocationsOnly?"必熟優先":"";
   byId("favoriteCount").textContent=state.favorites.size?String(state.favorites.size):"";
   const totalPages=Math.max(1,Math.ceil(state.filtered.length/PAGE_SIZE));state.page=Math.min(Math.max(1,state.page),totalPages);const start=(state.page-1)*PAGE_SIZE,end=Math.min(state.filtered.length,start+PAGE_SIZE),rows=state.filtered.slice(start,end);
-  if(!rows.length){wordList.innerHTML='<div class="empty"><div><strong>找不到符合的詞彙</strong><p>試試其他拼法、中文關鍵字，或開啟更多級別。</p></div></div>';pagination.hidden=true;return}
+  if(!rows.length){wordList.innerHTML='<div class="empty"><div><strong>找不到符合的詞彙</strong><p>試試其他拼法、中文關鍵字，或開啟更多級別。</p></div></div>';pagination.hidden=true;animateListChange(rows);return}
   wordList.innerHTML=rows.map(({entry,index,match})=>`<button class="row level-row-${entry.level} ${state.selectedIndex===index?"selected":""}" type="button" data-index="${index}"><span class="dot l${entry.level}">${entry.supplemental?"＋":entry.level}</span><span class="row-copy"><span class="row-title"><strong>${escapeHtml(entry.word)}</strong>${entry.supplemental?'<span class="row-supplement">補充</span>':""}${typeof getExamNotebook==="function"&&getExamNotebook(entry)?'<span class="row-notebook">V2</span>':""}${getExamEvidenceYears(entry).length?'<span class="row-exam">EXAM</span>':""}${isReviewDue(entry.word)?'<span class="row-due">DUE</span>':""}${state.query&&match&&match.reason?`<span class="search-match">${escapeHtml(match.reason)}</span>`:""}</span><small>${escapeHtml(notebookPartOfSpeech(entry))} · ${escapeHtml(notebookShortMeaning(entry))}</small></span><span class="arrow" aria-hidden="true">→</span></button>`).join("");
   renderPagination(totalPages,start,end);
+  animateListChange(rows);
 }
 
 function goToPage(page){const totalPages=Math.max(1,Math.ceil(state.filtered.length/PAGE_SIZE));state.page=Math.min(Math.max(1,Number(page)||1),totalPages);renderList();wordList.scrollTo({top:0,behavior:matchMedia("(prefers-reduced-motion: reduce)").matches?"auto":"smooth"})}
 
 function selectEntry(index,scroll=false){
-  const entry=VOCABULARY[index];if(!entry)return;if(typeof stopPronunciation==="function")stopPronunciation();if(scroll&&state.query)recordSearchFeedback(state.query,entry.word);state.selectedIndex=index;renderDetail(entry,index);renderList();
-  if(scroll&&innerWidth<920)wordDetail.scrollIntoView({behavior:"smooth",block:"start"});
+  const entry=VOCABULARY[index];if(!entry)return;
+  const changed=state.selectedIndex!==index,restoreListFocus=wordList.contains?.(document.activeElement);
+  cancelInterfaceMotion(wordDetail);
+  if(typeof stopPronunciation==="function")stopPronunciation();if(scroll&&state.query)recordSearchFeedback(state.query,entry.word);state.selectedIndex=index;renderDetail(entry,index);renderList();
+  if(restoreListFocus)wordList.querySelector?.(`[data-index="${index}"]`)?.focus({preventScroll:true});
+  if(scroll&&innerWidth<920)wordDetail.scrollIntoView({behavior:UI_MOTION_PREFERENCE?.matches?"auto":"smooth",block:"start"});
+  if(changed)animateInterface(wordDetail,[{opacity:.8,transform:"translateY(5px)"},{opacity:1,transform:"translateY(0)"}],"detail");
 }
 
 function shuffled(values){const result=[...values];for(let i=result.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[result[i],result[j]]=[result[j],result[i]]}return result}
@@ -269,7 +316,10 @@ function renderDetail(entry,index){
     <details class="notebook-legacy-points"><summary>111–115 真題搭配與原有延伸</summary><section class="study-card exam-points"><div class="exam-point-header"><div><p class="kicker">真題出處與原有搭配</p><p class="card-note">原文、選項與自編延伸分別標示；紀錄數不代表出題頻率。</p></div><button class="practice-button" id="practiceButton" type="button" ${collocationPracticeCandidates(entry).length?"":"hidden"}>練習原有搭配</button></div><div id="collocationContent">${renderGsatPoint(entry)}</div></section></details>
     <section class="builtin-writing"><h3>作文仿寫：換成自己的情境</h3><p class="card-note">選一個例句，改寫人物、事件或立場，再核對目標詞的字義與搭配。</p><label for="builtinWritingInput">你的英文句子</label><textarea id="builtinWritingInput" rows="3" maxlength="1200" placeholder="用正在學的字，寫出自己的情境。"></textarea><button id="builtinWritingCheck" type="button">檢查可觀察的用字</button><p id="builtinWritingFeedback" role="status" aria-live="polite"></p></section>
     <details class="notebook-archive"><summary>原詞表搭配與易錯提醒</summary><div class="twocol"><section><p class="kicker">保留的詞表搭配</p><p>${escapeHtml(entry.collocations||"原詞表未收錄搭配")}</p></section><section><p class="kicker">原有易錯提醒</p><p>${escapeHtml(entry.note||"原詞表未收錄提醒")}</p></section></div></details><p class="source">${escapeHtml(entry.source)}</p>`;
-  byId("favoriteButton").addEventListener("click",()=>toggleFavorite(entry.word,index));
+  byId("favoriteButton").addEventListener("click",event=>{
+    const previous=state.favorites.has(entry.word);toggleFavorite(entry.word,index);
+    if(previous!==state.favorites.has(entry.word))animateInterface(event.currentTarget,[{transform:"scale(1)"},{transform:"scale(1.045)"},{transform:"scale(1)"}],"favorite",210);
+  });
   byId("reviewAgain").addEventListener("click",()=>{const item=markReview(entry.word,"again");byId("reviewStatus").textContent=`下次 ${item.due}`;if(state.reviewOnly)applyFilters()});
   byId("reviewGood").addEventListener("click",()=>{const item=markReview(entry.word,"good");byId("reviewStatus").textContent=`下次 ${item.due}`;if(state.reviewOnly)applyFilters()});
   byId("speakButton").addEventListener("click",event=>speakWord(entry.word,event.currentTarget));
@@ -289,6 +339,7 @@ function renderDetail(entry,index){
   });
   syncFavoriteButton();showExampleResult(builtinExampleResult(entry),entry,index);renderBuiltinPractice(entry);
   if(typeof renderRetrievalPractice==="function")renderRetrievalPractice(entry);
+  setupDetailMotion(wordDetail);
 }
 function renderBuiltinCollocations(study){
   const rows=study?.collocations||[];

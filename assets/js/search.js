@@ -10,12 +10,35 @@ function tokenizeSearch(value){const normalized=normalizeSearchValue(value),toke
 // Postings keep BM25 work proportional to matching documents. Field construction is
 // shared with lexical search; idle warm-up yields after ~4 ms (one document minimum).
 const BM25_POSTINGS=new Map(),SEARCH_WORD_INDEX=new Map();
+const FUZZY_TERM_IDS=new Map(),FUZZY_TERMS=[],FUZZY_LENGTH_BUCKETS=new Map(),FUZZY_BIGRAM_POSTINGS=new Map();
+let BM25_SCORES=new Float64Array(0);
+function searchBigrams(value){
+  const counts=new Map();
+  for(let i=0;i+1<value.length;i++){const gram=value.slice(i,i+2);counts.set(gram,(counts.get(gram)||0)+1)}
+  return counts;
+}
+function indexFuzzyFields(fields,index){
+  for(const value of new Set([fields.word,...fields.aliases])){
+    let id=FUZZY_TERM_IDS.get(value);
+    if(id===undefined){
+      id=FUZZY_TERMS.length;FUZZY_TERM_IDS.set(value,id);FUZZY_TERMS.push({value,words:[],aliases:[]});
+      if(!FUZZY_LENGTH_BUCKETS.has(value.length))FUZZY_LENGTH_BUCKETS.set(value.length,[]);
+      FUZZY_LENGTH_BUCKETS.get(value.length).push(id);
+      for(const [gram,count] of searchBigrams(value)){
+        if(!FUZZY_BIGRAM_POSTINGS.has(gram))FUZZY_BIGRAM_POSTINGS.set(gram,[]);
+        FUZZY_BIGRAM_POSTINGS.get(gram).push(id,count);
+      }
+    }
+    FUZZY_TERMS[id][value===fields.word?"words":"aliases"].push(index);
+  }
+}
 let bm25Cursor=0,bm25Total=0,bm25WarmScheduled=false;
 function buildBm25Chunk(limit,deadline){
   const end=Math.min(VOCABULARY.length,bm25Cursor+limit),started=performance.now(),first=bm25Cursor;
   for(;bm25Cursor<end;bm25Cursor++){
     if(bm25Cursor>first&&deadline&&(performance.now()-started>=4||deadline.timeRemaining()<=1))break;
-    const entry=VOCABULARY[bm25Cursor],tokens=tokenizeSearch(searchFields(entry).all),counts=new Map();
+    const entry=VOCABULARY[bm25Cursor],fields=searchFields(entry),tokens=tokenizeSearch(fields.all),counts=new Map();
+    indexFuzzyFields(fields,bm25Cursor);
     for(const token of tokens)counts.set(token,(counts.get(token)||0)+1);
     BM25_DOC_CACHE.set(entry,{counts,length:Math.max(1,tokens.length)});bm25Total+=Math.max(1,tokens.length);
     if(!SEARCH_WORD_INDEX.has(entry.word))SEARCH_WORD_INDEX.set(entry.word,bm25Cursor);
@@ -50,19 +73,23 @@ function warmSearchIndex(deadline){
 }
 function bm25Ranking(terms){
   if(!terms.length)return[];ensureBm25Index();
-  const scores=new Float64Array(VOCABULARY.length),N=VOCABULARY.length,k1=1.25,b=.72;
+  if(BM25_SCORES.length<VOCABULARY.length)BM25_SCORES=new Float64Array(VOCABULARY.length);
+  const scores=BM25_SCORES,touched=[],N=VOCABULARY.length,k1=1.25,b=.72;
   for(const term of terms){
     const postings=BM25_POSTINGS.get(term);if(postings===undefined)continue;
     const df=BM25_INDEX.df.get(term)||0,idf=Math.log(1+(N-df+.5)/(df+.5));
     const addScore=index=>{
       const doc=BM25_DOC_CACHE.get(VOCABULARY[index]),tf=doc.counts.get(term);
+      if(scores[index]===0)touched.push(index);
       scores[index]+=idf*(tf*(k1+1))/(tf+k1*(1-b+b*doc.length/BM25_INDEX.avgLength));
     };
     if(typeof postings==="number")addScore(postings);else for(const index of postings)addScore(index);
   }
   const ranking=[];
   // Original document order is retained for stable ties in reciprocal-rank fusion.
-  for(let index=0;index<scores.length;index++)if(scores[index]>0)ranking.push({entry:VOCABULARY[index],index,score:scores[index]});
+  // Reuse the accumulator and visit/reset only documents actually scored.
+  touched.sort((a,b)=>a-b);
+  for(const index of touched){ranking.push({entry:VOCABULARY[index],index,score:scores[index]});scores[index]=0}
   return ranking;
 }
 function expandedQueryTerms(query){const normalized=normalizeSearchValue(query),terms=tokenizeSearch(normalized),conceptTerms=[];for(const concept of SEARCH_CONCEPTS){if(concept.triggers.some(trigger=>{const t=normalizeSearchValue(trigger);return normalized===t||normalized.length>=2&&normalized.includes(t)||(/[\u3400-\u9fff]/.test(normalized)||normalized.length>=4)&&t.includes(normalized)})){for(const term of concept.terms)conceptTerms.push(...tokenizeSearch(term))}}return{base:[...new Set(terms)],expanded:[...new Set([...terms,...conceptTerms])],hasConcept:conceptTerms.length>0}}
@@ -94,11 +121,39 @@ function boundedDamerauLevenshtein(a,b,limit=2){
   }
   return Math.min(previous[b.length],overflow);
 }
+function fuzzySearchCandidates(query,limit){
+  ensureBm25Index();
+  const overlap=new Map(),candidates=new Set(),matches=new Map();
+  for(const [gram,count] of searchBigrams(query)){
+    const postings=FUZZY_BIGRAM_POSTINGS.get(gram)||[];
+    for(let i=0;i<postings.length;i+=2){
+      const id=postings[i];if(Math.abs(FUZZY_TERMS[id].value.length-query.length)>limit)continue;
+      overlap.set(id,(overlap.get(id)||0)+Math.min(count,postings[i+1]));
+    }
+  }
+  // One OSA edit changes at most three bigrams (an adjacent transposition).
+  // Count repeated grams as a multiset; short words with a nonpositive bound
+  // must use length buckets, including candidates with no shared bigram.
+  const minimumOverlap=length=>Math.max(0,query.length-1,length-1)-3*limit;
+  for(let length=Math.max(0,query.length-limit);length<=query.length+limit;length++){
+    if(minimumOverlap(length)<=0)for(const id of FUZZY_LENGTH_BUCKETS.get(length)||[])candidates.add(id);
+  }
+  for(const [id,count] of overlap)if(count>=minimumOverlap(FUZZY_TERMS[id].value.length))candidates.add(id);
+  for(const id of candidates){
+    const term=FUZZY_TERMS[id],distance=boundedDamerauLevenshtein(query,term.value,limit);
+    if(distance>limit)continue;
+    for(const channel of ["words","aliases"])for(const index of term[channel]){
+      const result=matches.get(index)||{wordDistance:limit+1,aliasDistance:limit+1},key=channel==="words"?"wordDistance":"aliasDistance";
+      result[key]=Math.min(result[key],distance);matches.set(index,result);
+    }
+  }
+  return matches;
+}
 function scoreSearchEntry(entry,rawQuery){
   const query=normalizeSearchValue(rawQuery);
   return scoreSearchFields(searchFields(entry),query,query.split(" ").filter(Boolean),/^[a-z'-]+$/i.test(query));
 }
-function scoreSearchFields(fields,query,terms,englishOnly){
+function scoreSearchFields(fields,query,terms,englishOnly,fuzzy){
   if(!query)return{score:0,reason:""};
   if(fields.word===query)return{score:1000,reason:"完全相符"};
   if(fields.aliases.some(alias=>alias===query))return{score:940,reason:"字族相符"};
@@ -109,22 +164,59 @@ function scoreSearchFields(fields,query,terms,englishOnly){
   if(fields.meaning.includes(query))return{score:540+Math.min(30,query.length),reason:"中文釋義"};
   if(terms.length>1&&terms.every(term=>fields.all.includes(term)))return{score:380+terms.length*12,reason:"多詞命中"};
   if(terms.length===1&&fields.all.includes(query))return{score:330,reason:"內容相符"};
-  if(englishOnly&&terms.length===1&&query.length>=4){const limit=query.length<=6?1:2,wordDistance=boundedDamerauLevenshtein(query,fields.word,limit);if(wordDistance<=limit)return{score:250-wordDistance*35,reason:`近似拼字 ${wordDistance} 處`};const aliasDistance=Math.min(...fields.aliases.filter(alias=>alias!==fields.word).map(alias=>boundedDamerauLevenshtein(query,alias,limit)),limit+1);if(aliasDistance<=limit)return{score:235-aliasDistance*30,reason:`近似字族 ${aliasDistance} 處`}}
+  if(englishOnly&&terms.length===1&&query.length>=4){
+    const limit=query.length<=6?1:2;
+    // Undefined keeps the standalone scorer as a full-scan reference. Null is
+    // an indexed miss; exact/substring matches above retain their precedence.
+    const wordDistance=fuzzy===undefined?boundedDamerauLevenshtein(query,fields.word,limit):fuzzy?.wordDistance??limit+1;
+    if(wordDistance<=limit)return{score:250-wordDistance*35,reason:`近似拼字 ${wordDistance} 處`};
+    const aliasDistance=fuzzy===undefined?Math.min(...fields.aliases.filter(alias=>alias!==fields.word).map(alias=>boundedDamerauLevenshtein(query,alias,limit)),limit+1):fuzzy?.aliasDistance??limit+1;
+    if(aliasDistance<=limit)return{score:235-aliasDistance*30,reason:`近似字族 ${aliasDistance} 處`};
+  }
   return null;
+}
+function topSearchRanking(items,limit=350){
+  if(limit<=0)return[];
+  const compare=(a,b)=>b.score-a.score||a.index-b.index;
+  if(items.length<=limit)return items.slice().sort(compare);
+  // The root is the worst retained result. Index resolves score ties exactly
+  // as the former stable sort over vocabulary order did.
+  const heap=[];
+  for(const item of items){
+    if(heap.length<limit){
+      heap.push(item);let child=heap.length-1;
+      while(child>0){const parent=(child-1)>>1;if(compare(heap[child],heap[parent])<=0)break;[heap[child],heap[parent]]=[heap[parent],heap[child]];child=parent}
+    }else if(compare(item,heap[0])<0){
+      heap[0]=item;let parent=0;
+      while(true){
+        let child=parent*2+1;if(child>=heap.length)break;
+        if(child+1<heap.length&&compare(heap[child+1],heap[child])>0)child++;
+        if(compare(heap[child],heap[parent])<=0)break;
+        [heap[child],heap[parent]]=[heap[parent],heap[child]];parent=child;
+      }
+    }
+  }
+  return heap.sort(compare);
 }
 const SEARCH_RESULT_CACHE=new Map();
 function hybridSearch(rawQuery){
-  const cacheKey=normalizeSearchValue(rawQuery);if(SEARCH_RESULT_CACHE.has(cacheKey))return SEARCH_RESULT_CACHE.get(cacheKey);
+  const cacheKey=normalizeSearchValue(rawQuery);
+  if(SEARCH_RESULT_CACHE.has(cacheKey)){
+    const results=SEARCH_RESULT_CACHE.get(cacheKey);
+    // Refresh recency so frequently revisited queries survive the bounded cache.
+    SEARCH_RESULT_CACHE.delete(cacheKey);SEARCH_RESULT_CACHE.set(cacheKey,results);return results;
+  }
   const results=computeHybridSearch(rawQuery);SEARCH_RESULT_CACHE.set(cacheKey,results);while(SEARCH_RESULT_CACHE.size>24)SEARCH_RESULT_CACHE.delete(SEARCH_RESULT_CACHE.keys().next().value);return results;
 }
 function computeHybridSearch(rawQuery){
   const query=normalizeSearchValue(rawQuery),queryInfo=expandedQueryTerms(query),terms=query.split(" ").filter(Boolean),englishOnly=/^[a-z'-]+$/i.test(query),lexical=[],sparse=bm25Ranking(queryInfo.expanded),conceptual=[];
-  VOCABULARY.forEach((entry,index)=>{const direct=scoreSearchFields(searchFields(entry),query,terms,englishOnly);if(direct)lexical.push({entry,index,score:direct.score,reason:direct.reason});const semantic=conceptScore(entry,queryInfo);if(semantic>0)conceptual.push({entry,index,score:semantic})});
-  lexical.sort((a,b)=>b.score-a.score);sparse.sort((a,b)=>b.score-a.score);conceptual.sort((a,b)=>b.score-a.score);
+  const fuzzy=englishOnly&&query.length>=4?fuzzySearchCandidates(query,query.length<=6?1:2):null;
+  VOCABULARY.forEach((entry,index)=>{const direct=scoreSearchFields(searchFields(entry),query,terms,englishOnly,fuzzy?.get(index)||null);if(direct)lexical.push({entry,index,score:direct.score,reason:direct.reason});const semantic=conceptScore(entry,queryInfo);if(semantic>0)conceptual.push({entry,index,score:semantic})});
   const fused=new Map(),lexicalByIndex=new Map(lexical.map(item=>[item.index,item]));
+  const lexicalTop=topSearchRanking(lexical),sparseTop=topSearchRanking(sparse),conceptualTop=topSearchRanking(conceptual);
   const addRanking=(items,weight,channel)=>items.slice(0,350).forEach((item,rank)=>{const record=fused.get(item.index)||{entry:item.entry,index:item.index,score:0,channels:new Set()};record.score+=weight/(60+rank+1);record.channels.add(channel);fused.set(item.index,record)});
-  addRanking(lexical,1.75,"字面");addRanking(sparse,1,"BM25");if(queryInfo.hasConcept)addRanking(conceptual,1.2,"概念");
-  lexical.slice(0,30).forEach(item=>{const record=fused.get(item.index);if(record&&item.score>=1000)record.score+=.09;else if(record&&item.score>=940)record.score+=.025});
+  addRanking(lexicalTop,1.75,"字面");addRanking(sparseTop,1,"BM25");if(queryInfo.hasConcept)addRanking(conceptualTop,1.2,"概念");
+  lexicalTop.slice(0,30).forEach(item=>{const record=fused.get(item.index);if(record&&item.score>=1000)record.score+=.09;else if(record&&item.score>=940)record.score+=.025});
   const feedback=state.searchFeedback[query]||{};Object.entries(feedback).sort((a,b)=>b[1]-a[1]).forEach(([word,count],rank)=>{if(!BM25_INDEX.ready)ensureBm25Index();const index=SEARCH_WORD_INDEX.get(word);if(index===undefined)return;const record=fused.get(index)||{entry:VOCABULARY[index],index,score:0,channels:new Set()};record.score+=Math.min(1.15,.7+Number(count)*.06)/(60+rank+1);record.channels.add("本機偏好");fused.set(index,record)});
   return[...fused.values()].map(record=>{const direct=lexicalByIndex.get(record.index),reason=direct&&direct.reason?direct.reason:record.channels.has("概念")?"概念擴展":record.channels.has("BM25")?"BM25 相關":"本機偏好";return{entry:record.entry,index:record.index,match:{score:record.score,reason,channels:[...record.channels]}}}).sort((a,b)=>b.match.score-a.match.score||a.entry.level-b.entry.level||a.entry.word.localeCompare(b.entry.word));
 }

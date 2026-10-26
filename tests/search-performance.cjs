@@ -1,7 +1,33 @@
 'use strict';
 const {test} = require('node:test');
 const assert = require('node:assert/strict');
+const fs = require('node:fs');
+const path = require('node:path');
+const vm = require('node:vm');
 const {environment, queries} = require('../tools/benchmark_search.cjs');
+
+// Controlled corpora exercise cutoff/tie cases without depending on released
+// learning content. Cache the supplied fields exactly as the production builder does.
+function fixtureEnvironment(fields, concepts = []) {
+  const context = {performance, console, fixtureFields: fields, fixtureConcepts: concepts};
+  vm.createContext(context);
+  const run = source => vm.runInContext(source, context);
+  run(`
+    const VOCABULARY=fixtureFields.map((fields,index)=>({word:fields.word,level:1,index}));
+    const SEARCH_FIELD_CACHE=new WeakMap(),BM25_DOC_CACHE=new WeakMap();
+    const BM25_INDEX={ready:false,df:new Map(),avgLength:1},state={searchFeedback:{}};
+    const SEARCH_CONCEPTS=fixtureConcepts;
+    function normalizeSearchValue(value){return String(value||'').normalize('NFKC').toLowerCase().replace(/’/g,"'").replace(/[^a-z0-9\\u3400-\\u9fff'-]+/gi,' ').replace(/\\s+/g,' ').trim()}
+    VOCABULARY.forEach((entry,index)=>{
+      const given=fixtureFields[index],fields={word:entry.word,aliases:[entry.word],pattern:'',meaning:'',notes:'',...given};
+      fields.all=[fields.word,fields.aliases.join(' '),fields.pattern,fields.meaning,fields.notes].join(' ').trim();
+      SEARCH_FIELD_CACHE.set(entry,fields);
+    });
+  `);
+  run(fs.readFileSync(path.join(__dirname, '../assets/js/search.js'), 'utf8'));
+  run(scanReference);
+  return {context, run};
+}
 
 // Full-matrix optimal string alignment reference, independent of the bounded path.
 function osa(a, b) {
@@ -79,6 +105,97 @@ test('inverted retrieval preserves full-scan scores, result order, match reasons
   assert.equal(e.run('hybridSearch("challenge")===hybridSearch("challenge")'), true);
   assert.equal(e.run('BM25_POSTINGS.get("任何一個")'), 0, 'Singleton document zero must not be mistaken for a missing posting');
   assert.equal(e.run('bm25Ranking(["任何一個"])[0].index'), 0);
+});
+
+test('spelling candidates retain every OSA match across short words, aliases and repeated bigrams', () => {
+  const words = [];
+  for (let length = 4; length <= 7; length++) for (let n = 0; n < 2 ** length; n++) {
+    let x = n, word = '';
+    for (let i = 0; i < length; i++) { word += 'ab'[x % 2]; x = Math.floor(x / 2); }
+    words.push(word);
+  }
+  words.push('challenge', 'responsive', 'environment', 'accommodate', 'bookkeeper', 'well-being', "doesn't", 'abcdefghij', 'badcfeghij');
+  const fields = words.map((word, index) => ({word, aliases: [word, words[(index * 13 + 7) % words.length]]}));
+  // Separate entries can share an alias; all of their IDs must survive retrieval.
+  fields.push({word:'other-entry', aliases:['other-entry', 'responsive', 'bookkeeper']});
+  const e = fixtureEnvironment(fields);
+  e.run('buildBm25Chunk(17);ensureBm25Index()');
+  const queries = new Set(words);
+  for (const word of words.slice(-9)) {
+    queries.add(word.slice(1));
+    queries.add('z' + word);
+    queries.add(word.slice(0, 2) + 'z' + word.slice(3));
+    queries.add(word[1] + word[0] + word.slice(2));
+    queries.add(word.slice(0, -2) + word.at(-1) + word.at(-2));
+  }
+  for (const query of queries) {
+    const limit = query.length <= 6 ? 1 : 2;
+    const expected = fields.flatMap((field, index) => field.aliases.some(alias => osa(query, alias) <= limit) ? [index] : []);
+    e.context.query = query; e.context.limit = limit;
+    const actual = Array.from(e.run('[...fuzzySearchCandidates(query,limit).keys()].sort((a,b)=>a-b)'));
+    assert.deepEqual(actual, expected, `${query}, limit ${limit}`);
+  }
+  for (const query of ['baaa', 'aaaaaa', 'aaaaaaa', 'challnege', 'responsvie', 'enviroment', 'acommodate', 'boookkeeper', 'badcfeghij']) {
+    e.context.query = query;
+    assert.equal(e.run('JSON.stringify(computeHybridSearch(query))'), e.run('JSON.stringify(referenceHybridSearch(query))'), query);
+  }
+});
+
+test('bounded ranking keeps stable cutoff ties and lexical reasons outside its top 350', () => {
+  const fields = Array.from({length:430}, (_, index) => ({word:`lemma${String(index).padStart(3,'0')}`, notes:'needle'}));
+  const e = fixtureEnvironment(fields, [{triggers:['conceptual'],terms:['needle']}]);
+  for (const query of ['', 'needle', 'conceptual']) {
+    e.context.query = query;
+    assert.equal(e.run('JSON.stringify(computeHybridSearch(query))'), e.run('JSON.stringify(referenceHybridSearch(query))'), query);
+    assert.equal(e.run('computeHybridSearch(query).length'), 350);
+  }
+  assert.deepEqual(Array.from(e.run('computeHybridSearch("needle").map(row=>row.index)')), Array.from({length:350}, (_, i) => i));
+  e.run(`state.searchFeedback.needle={lemma429:12}`);
+  assert.equal(e.run('JSON.stringify(computeHybridSearch("needle"))'), e.run('JSON.stringify(referenceHybridSearch("needle"))'));
+  assert.equal(e.run('computeHybridSearch("needle").find(row=>row.index===429).match.reason'), '搭配／提醒');
+  assert.deepEqual(Array.from(e.run('computeHybridSearch("needle").find(row=>row.index===429).match.channels')), ['本機偏好']);
+
+  const bm25Fields = fields.slice(0,350).map(field => ({...field, notes:`needle ${'filler '.repeat(30)}`}));
+  bm25Fields.push({word:'meaning-entry',meaning:'needle'});
+  const sparse = fixtureEnvironment(bm25Fields);
+  assert.equal(sparse.run('JSON.stringify(computeHybridSearch("needle"))'), sparse.run('JSON.stringify(referenceHybridSearch("needle"))'));
+  assert.equal(sparse.run('computeHybridSearch("needle").find(row=>row.index===350).match.reason'), '中文釋義');
+  assert.deepEqual(Array.from(sparse.run('computeHybridSearch("needle").find(row=>row.index===350).match.channels')), ['BM25']);
+});
+
+test('top-K selection equals a stable full sort for varied scores, ties and limits', () => {
+  const e = fixtureEnvironment([]);
+  const items = Array.from({length:1200}, (_, index) => ({index, score:(index * 37) % 19}));
+  // Reversed input makes the explicit vocabulary-index tie rule observable.
+  e.context.items = [...items].reverse();
+  for (const limit of [0, 1, 2, 17, 350, 1200, 1201]) {
+    e.context.limit = limit;
+    const actual = JSON.parse(e.run('JSON.stringify(topSearchRanking(items,limit))'));
+    assert.deepEqual(actual, [...items].sort((a,b)=>b.score-a.score||a.index-b.index).slice(0,limit), `limit ${limit}`);
+  }
+  assert.deepEqual(JSON.parse(e.run('JSON.stringify(items)')), [...items].reverse(), 'Selection must not mutate caller input');
+});
+
+test('sparse accumulation preserves document order and repeated-term scores', () => {
+  const e = fixtureEnvironment([{word:'first',notes:'beta'}, {word:'second',notes:'alpha beta'}, {word:'third',notes:'alpha'}]);
+  e.context.terms = ['alpha', 'missing', 'beta', 'alpha'];
+  assert.equal(e.run('JSON.stringify(bm25Ranking(terms))'), e.run('JSON.stringify(VOCABULARY.map((entry,index)=>({entry,index,score:bm25Score(entry,terms)})).filter(row=>row.score>0))'));
+  assert.equal(e.run('JSON.stringify(bm25Ranking(["missing"]))'), '[]');
+});
+
+test('query cache evicts the least recently accessed result and shares normalized keys', () => {
+  const e = fixtureEnvironment([{word:'alpha'}]);
+  e.run('const first=hybridSearch("query0"),second=hybridSearch("query1");for(let i=2;i<24;i++)hybridSearch("query"+i)');
+  assert.equal(e.run('SEARCH_RESULT_CACHE.size'), 24);
+  assert.equal(e.run('hybridSearch("  QUERY0  ")===first'), true, 'Normalized cache hits retain result identity');
+  assert.equal(e.run('SEARCH_RESULT_CACHE.size'), 24, 'Equivalent queries share one slot');
+  e.run('hybridSearch("query24")');
+  assert.equal(e.run('SEARCH_RESULT_CACHE.size'), 24);
+  assert.equal(e.run('SEARCH_RESULT_CACHE.has("query0")'), true, 'Access refreshes the oldest insertion');
+  assert.equal(e.run('SEARCH_RESULT_CACHE.has("query1")'), false, 'The least recently accessed query is evicted');
+  assert.equal(e.run('hybridSearch("query0")===first'), true);
+  assert.equal(e.run('hybridSearch("query1")===second'), false, 'An evicted query is recomputed');
+  assert.equal(e.run('SEARCH_RESULT_CACHE.size'), 24);
 });
 
 test('idle warm-up obeys elapsed budget, expired deadlines, and keeps one continuation', () => {
