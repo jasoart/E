@@ -55,8 +55,9 @@ function notebookStats() {
     guidedWords:entries.filter(note=>note.provenance==="source-guided").length,
     scenarioWords:entries.filter(note=>note.provenance==="authored-scenarios").length,
     originalPairWords:entries.filter(note=>note.provenance!=="source-guided").length,
-    completeWords:entries.filter(note=>note.examples?.length===3&&note.examples.every(row=>row.source==="self-authored")).length,
-    incompleteWords:entries.filter(note=>note.examples?.length!==3||note.examples.some(row=>row.source!=="self-authored")).length,
+    completeWords:entries.filter(note=>note.examples?.length>=3&&note.examples.every(row=>row.source==="self-authored")).length,
+    incompleteWords:entries.filter(note=>!note.examples||note.examples.length<3||note.examples.some(row=>row.source!=="self-authored")).length,
+    elevenContextWords:entries.filter(note=>note.examples?.length>=11&&note.examples.every(row=>row.source==="self-authored")).length,
     newScenarioSentences:typeof GSAT_AUTHORED_SCENARIOS!=="undefined"?GSAT_AUTHORED_SCENARIOS.stats.newlyWrittenSentences:0,
     uniquePrimarySentences:new Set(entries.flatMap(note=>(note.examples||[]).map(example=>example.text))).size,
     examples:entries.reduce((sum,item)=>sum+(item.examples?.length||0),0),
@@ -153,7 +154,7 @@ function initializeAllWordNotebooks() {
     const information=getVocabularyInformation(entry);
     const sentenceIds=typeof GSAT_AUTHORED_SCENARIOS!=="undefined"?GSAT_AUTHORED_SCENARIOS.byWord[entry.word]:null;
     const authored=sentenceIds?.map(id=>GSAT_AUTHORED_SCENARIOS.sentences[id]).filter(Boolean)||[];
-    const hasOriginalPair=authored.length===3;
+    const hasOriginalPair=authored.length>=3;
     if(curated){
       const note={...curated,coreMeaning:information?.commonMeaningZh||"",teacherTip:information?.teacherTip||"",examples:hasOriginalPair?authored:curated.examples};
       EXAM_NOTEBOOK_BY_ID.set(entry.word,note);

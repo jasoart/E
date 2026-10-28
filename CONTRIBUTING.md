@@ -14,6 +14,7 @@
 ```sh
 python3 research/build_exam_notebook.py
 node research/build_authored_scenarios.cjs
+node research/build_reference_sentences.cjs
 node research/audit_scenario_difficulty.cjs
 node research/build_vocabulary_enrichment.cjs
 python3 research/build_exam_evidence_index.py
@@ -21,7 +22,7 @@ python3 research/build_exam_evidence_index.py
 
 上傳 PDF 可用 `python3 research/verify_uploaded_exams.py --pdf-dir <PDF目錄>` 核對。私人上傳檔案與本機絕對路徑不應加入 repository；CI 使用已提交的資料、索引與生成器。
 
-原創情境句維護於 `research/authored_scenarios.txt` 與 `research/scenario-batch-*.txt`，每行包含英文、繁中翻譯、句構說明、仿寫方向、題材五欄。主要練習每句應為 15–30 個英文詞，三句使用不同語境；請逐句編寫，不得把原卡句改名、套上固定前綴或以詞族代替目標詞後就宣稱完成。生成器只索引實際出現的詞形，沿用既有自編句時保留其來源；找到三句後才切換主要練習。主要句子的周邊用字排除其他已知六級詞；目標詞本身及其實際詞形不受此限制。難度解析在 `research/scenario_difficulty.cjs`，基本語法詞與常見衍生形式另記錄，未辨識字不得憑空標上官方級別。`research/authored_scenario_coverage.json` 列出尚待補寫的詞條。共用句的顯示次數不是新增獨立句數，首頁統計須保持一致。
+原創情境句維護於 `research/authored_scenarios.txt` 與 `research/scenario-batch-*.txt`，每行包含英文、繁中翻譯、句構說明、仿寫方向、題材五欄。主要練習每句應為 15–30 個英文詞，至少三句使用不同語境，逐步朝十一句擴充；請逐句編寫，不得把原卡句改名、套上固定前綴或以詞族代替目標詞後就宣稱完成。生成器只索引實際出現的詞形，沿用既有自編句時保留其來源；找到三句後才切換主要練習。主要句子的周邊用字排除其他已知六級詞；目標詞本身及其實際詞形不受此限制。難度解析在 `research/scenario_difficulty.cjs`，基本語法詞與常見衍生形式另記錄，未辨識字不得憑空標上官方級別。`research/authored_scenario_coverage.json` 列出尚待補寫的詞條。共用句的顯示次數不是新增獨立句數，首頁統計須保持一致。
 
 全詞表常用義、學習提示與有明確關係的字族資料由 `research/build_vocabulary_enrichment.cjs` 生成。要逐詞修正常用義或用法，編輯 `research/vocabulary-editorial.json` 並查核原資料，不直接改生成檔。原詞表完整釋意保留可見；英語 WordNet 詞義和近義候選是語境參考，不自動等同相同中文義或可互換用法；不能把候選字另一字義的中文摘要配到目前詞義。主要雙語近義辨析須有逐義編輯依據。通用詞性提示和逐詞用法提醒分開標示。
 
@@ -60,3 +61,5 @@ node --expose-gc tools/benchmark_search.cjs --compare-ref <基準commit>
 ```
 
 PR 應交代使用者可見的結果、相關來源、資料重建與實際驗證。CI 只有讀取 repository 的權限，不部署網站；GitHub Pages 部署分支及目錄仍由 repository 設定管理。
+
+Tatoeba 參考句資料、授權、中文轉換與每詞缺口見 [參考句說明](docs/REFERENCE_SENTENCES.md)。更新原創句後也要重建參考句索引；參考句不得標為自編或官方試題。
