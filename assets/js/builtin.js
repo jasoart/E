@@ -24,8 +24,10 @@ function getBuiltinStudy(entry) {
 }
 function builtinExampleResult(entry) {
   const study = getBuiltinStudy(entry);
-  const examples = (study?.examples || []).filter(item => typeof item.text === "string" && item.text.trim()).map(item => ({
-    ...item, sourceLabel: item.source === "uploaded-anki" ? "上傳教材" : item.source === "self-authored" ? "本站新編" : "來源待核對",
+  const ids = typeof GSAT_REFERENCE_SENTENCES !== "undefined" ? GSAT_REFERENCE_SENTENCES.byWord[entry?.word] || [] : [];
+  const references = ids.map(id => GSAT_REFERENCE_SENTENCES.sentences[id]).filter(Boolean);
+  const examples = [...(study?.examples || []), ...references].filter(item => typeof item.text === "string" && item.text.trim()).map(item => ({
+    ...item, sourceLabel: item.source === "tatoeba" ? "Tatoeba 參考句" : item.source === "uploaded-anki" ? "上傳教材" : item.source === "self-authored" ? "本站新編" : "來源待核對",
     wordCount: (item.text.match(/[A-Za-z]+(?:[-’'][A-Za-z]+)*/g) || []).length,
   }));
   return { examples, partsOfSpeech: [entry.partOfSpeech], selectionTier: "builtin", candidateCount: examples.length };

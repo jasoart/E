@@ -62,11 +62,13 @@ def main():
             page.locator('#notebookSource').select_option('guided')
             assert page.evaluate('state.filtered.length') == 0
             page.locator('#notebookSource').select_option('authored')
-            guided_word = 'baby'  # Formerly imported-card-only; now three original contexts.
+            guided_word = 'baby'  # Formerly imported-card-only; now original contexts.
             lookup(guided_word)
             assert '學測情境新編' in page.locator('.notebook-intro').inner_text()
-            assert page.locator('.notebook-sentence-guide').count() == 3
-            assert page.locator('#exampleResults .builtin-source').all_inner_texts() == ['仿學測自編'] * 3
+            authored_count = page.evaluate('getExamNotebook(VOCABULARY[state.selectedIndex]).examples.length')
+            reference_count = page.evaluate("builtinExampleResult(VOCABULARY[state.selectedIndex]).examples.filter(x => x.source === 'tatoeba').length")
+            assert page.locator('.notebook-sentence-guide').count() == authored_count
+            assert page.locator('#exampleResults .builtin-source').all_inner_texts() == ['仿學測自編'] * authored_count + ['Tatoeba 參考句'] * reference_count
             assert not lexical_requests, lexical_requests
             page.locator('.notebook-sentence-guide').first.evaluate('(element) => { element.open = true; }')
             assert '原句鄰近字' in page.locator('.notebook-sentence-guide').first.inner_text()
@@ -91,7 +93,9 @@ def main():
             page.locator('#notebookSource').select_option('authored')
             assert page.evaluate("state.filtered.every(({entry}) => getExamNotebook(entry).provenance === 'authored-scenarios')")
             lookup('abbreviate')
-            assert page.locator('#exampleResults .builtin-source').all_inner_texts() == ['仿學測自編'] * 3
+            authored_count = page.evaluate('getExamNotebook(VOCABULARY[state.selectedIndex]).examples.length')
+            reference_count = page.evaluate("builtinExampleResult(VOCABULARY[state.selectedIndex]).examples.filter(x => x.source === 'tatoeba').length")
+            assert page.locator('#exampleResults .builtin-source').all_inner_texts() == ['仿學測自編'] * authored_count + ['Tatoeba 參考句'] * reference_count
             assert page.locator('.notebook-example-archive').count() == 1
             page.locator('.notebook-example-archive').evaluate('(element) => { element.open = true; }')
             assert '上傳教材' in page.locator('.notebook-example-archive').inner_text()
@@ -141,7 +145,9 @@ def main():
             assert '擠' in page.locator('#notebookSenses').inner_text()
             assert 'elbow' in page.locator('#notebookCollocations').inner_text()
             assert 'KK 美式' in page.locator('.title-row .phonetic').inner_text()
-            assert page.locator('#exampleResults .builtin-source').all_inner_texts() == ['仿學測自編'] * page.locator('#exampleResults .builtin-source').count()
+            authored_count = page.evaluate('getExamNotebook(VOCABULARY[state.selectedIndex]).examples.length')
+            reference_count = page.evaluate("builtinExampleResult(VOCABULARY[state.selectedIndex]).examples.filter(x => x.source === 'tatoeba').length")
+            assert page.locator('#exampleResults .builtin-source').all_inner_texts() == ['仿學測自編'] * authored_count + ['Tatoeba 參考句'] * reference_count
             page.locator('.notebook-evidence').evaluate('(element) => { element.open = true; }')
             page.wait_for_function("() => document.querySelector('.notebook-evidence-items').textContent.includes('elbow')")
             evidence = page.locator('.notebook-evidence-items').inner_text()

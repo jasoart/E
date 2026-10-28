@@ -33,7 +33,7 @@ test('every exact official and supplemental ID has usable V2 notes and a recall 
   assert.equal(e.run('VOCABULARY.slice(0,GSAT_OFFICIAL_VOCABULARY_COUNT).length'),6012);
   assert.equal(e.run('notebookStats().listedWords'),e.run('VOCABULARY.length'));
 });
-test('the completed corpus uses three original contexts for all words and retains imported text in the archive',()=>{
+test('all words retain at least three original contexts and coverage reports the eleven-context goal accurately',()=>{
   const e=environment();
   assert.equal(e.run(`VOCABULARY.every(entry=>{
     const note=getExamNotebook(entry);
@@ -43,8 +43,14 @@ test('the completed corpus uses three original contexts for all words and retain
   })`),true);
   assert.equal(e.run('notebookStats().guidedWords'),0);
   assert.equal(e.run('notebookStats().originalPairWords'),6024);
-  assert.equal(e.run('GSAT_AUTHORED_SCENARIOS.stats.remainingWords'),0);
-  assert.equal(e.run(`VOCABULARY.every(entry=>getExamNotebook(entry).examples.length===3&&getExamNotebook(entry).examples.every(row=>row.source==='self-authored'&&row.translationZh&&row.grammar&&row.writingTip&&builtinClozeQuestion(entry,row)))`),true);
+  assert.equal(e.run(`VOCABULARY.every(entry=>getExamNotebook(entry).examples.length>=3&&getExamNotebook(entry).examples.length<=11&&getExamNotebook(entry).examples.every(row=>row.source==='self-authored'&&row.translationZh&&row.grammar&&row.writingTip&&builtinClozeQuestion(entry,row)))`),true);
+  const coverage=JSON.parse(fs.readFileSync(path.join(root,'research/authored_scenario_coverage.json'),'utf8'));
+  assert.equal(coverage.stats.completedWords,e.run('notebookStats().elevenContextWords'));
+  assert.equal(coverage.stats.remainingWords,coverage.remaining.length);
+  assert.equal(coverage.stats.completedWords+coverage.stats.remainingWords,coverage.stats.totalWords);
+  assert.equal(coverage.stats.missingContexts,coverage.remaining.reduce((sum,row)=>sum+row.missingContexts,0));
+  assert.equal(coverage.stats.sharedSentenceAppearances,e.run('notebookStats().examples'));
+  assert.ok(coverage.remaining.every(row=>row.missingContexts===11-row.availableOriginalContexts));
   e.run(`var ordinary=VOCABULARY.find(entry=>getOriginalStudy(entry)?.examples?.some(row=>row.source==='uploaded-anki'))`);
   const html=e.run('renderGsatExampleCard(getOriginalStudy(ordinary).examples.find(row=>row.source==="uploaded-anki"),1,ordinary)');
   assert.match(html,/上傳教材/);assert.doesNotMatch(html,/仿學測自編|句子結構未分類|題材未分類/);
@@ -55,7 +61,7 @@ test('original scenario contexts contain the target and move unchanged imports i
     const note=getExamNotebook(entry);if(note.provenance!=='authored-scenarios')return [];
     const errors=[],original=getOriginalStudy(entry);
     if(!original?.examples.length)errors.push(entry.word+': missing original archive');
-    if(note.examples.length!==3||new Set(note.examples.map(row=>row.text)).size!==3)errors.push(entry.word+': need three distinct contexts');
+    if(note.examples.length<3||note.examples.length>11||new Set(note.examples.map(row=>row.text)).size!==note.examples.length)errors.push(entry.word+': need distinct contexts within the supported range');
     for(const row of note.examples){
       if(row.source!=='self-authored'||!row.examStyle||!builtinClozeQuestion(entry,row))errors.push(entry.word+': invalid original sentence');
       if(!row.grammar||!row.writingTip||!row.translationZh)errors.push(entry.word+': missing contextual guidance');

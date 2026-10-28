@@ -1,6 +1,14 @@
-# 學測英文：原創三句、五欄筆記與完整詞條
+# 學測英文：情境例句、五欄筆記與完整詞條
 
-本版直接修改 `jasoart/E` 的 `restore-old-site` 分支網站，以根目錄 `index.html` 為入口。搜尋、例句、中文說明、搭配、遮字練習與作文分析都在瀏覽器內運算，不需要語言模型、API Key 或外部句庫。原有 6,012 個詞條 ID、六級詞表、收藏與複習紀錄保留。
+本版直接修改 `jasoart/E` 的 `restore-old-site` 分支網站，以根目錄 `index.html` 為入口。搜尋、例句、中文說明、搭配、遮字練習與作文分析都在瀏覽器內運算，不需要語言模型、API Key 或即時連線查詢句庫。原有 6,012 個詞條 ID、六級詞表、收藏與複習紀錄保留。
+
+## 例句擴充與目前覆蓋
+
+6,024 個一般與筆記補充詞條原有的前三個自編句均保留；在既有自編句庫中重新索引實際詞形後，各詞可顯示 3–11 句。另加入有雙語作者、原句連結和授權的 Tatoeba 參考句，每詞最多 12 句；句子是離線資料，不冒稱本站新編或學測真題。
+
+目前使用 10,159 個不同自編句及 2,567 個不同參考句，分別帶來 31,068 與 8,194 次詞條例句顯示。合計 1,374 詞達到至少 11 句，另有 4,650 詞尚未達標，還缺 33,160 次不同句子配對；數字及逐詞缺口由 `research/reference_sentence_coverage.json` 提供。閱讀專區另有 80 個不在此 6,024 詞範圍內的題材補充詞，尚未納入例句計數。重複用於不同詞的同一句分開算顯示次數，不算新的獨立句。
+
+參考句為 9–30 詞的社群語料，與 15–30 詞的自編學測情境句分開標示；部分中文經字形自動轉換，可展開原文核對，句子與翻譯並未全部由專家逐句審定。來源與重建方式見 [參考句說明](docs/REFERENCE_SENTENCES.md)。
 
 ## 111–115 閱讀詞彙擴充
 
@@ -19,13 +27,13 @@
 
 ## 教材與學習功能
 
-- 「單字筆記 V2.0」覆蓋原有 6,012 詞與 12 個補充詞。每詞套用三個實際含目標詞形的原創情境句，各附繁中翻譯、句構說明和仿寫方向；原上傳教材句保留在備查區。58 組功能詞另附文法句型。教材設計、獨立句數與詞條覆蓋見 [全詞表 V2 說明](docs/NOTEBOOK_ALL_WORDS.md)及[原創句庫](docs/ORIGINAL_SCENARIOS.md)。
+- 「單字筆記 V2.0」覆蓋原有 6,012 詞與 12 個補充詞。每詞套用至少三個實際含目標詞形的原創情境句，各附繁中翻譯、句構說明和仿寫方向；原上傳教材句保留在備查區。58 組功能詞另附文法句型。教材設計、獨立句數與詞條覆蓋見 [全詞表 V2 說明](docs/NOTEBOOK_ALL_WORDS.md)及[原創句庫](docs/ORIGINAL_SCENARIOS.md)。
 - 「詞性與多重字義」直接顯示原詞表的完整釋意、原教材簡要說明與存在的上傳教材釋意，再列出分詞性的新編情境補充。原字串不刪改、不藏在展開區；例如 `challenge` 的「盤問、要求、懷疑、表示異議」也完整保留。原例句可展開備查。
 - `elbow` 的動詞用法、`responsive to`、`tight schedule`、`exacerbate`／`add fuel to the fire` 與寵物作文語境分別整理。原 6,012 詞條以外的新增詞清楚標為「補充詞彙」。
 - 五份上傳試卷新增 127 條逐頁核對短引文，區分本文、題幹與選項；六個 115 年重點實例另附核對紀錄。細節見 [115 五欄筆記來源](docs/GSAT_115_NOTEBOOK_SOURCES.md)。
 - KK 顯示使用 CMUdict 美式音段轉寫，明示來源與重音位置推估，保留原 ECDICT 音標；方法與授權見 [KK 音標說明](docs/KK_NOTATION.md)。
 
-- 每個詞條有三組 15–30 英文詞的原創情境句與繁中翻譯，可直接閱讀、朗讀、遮字作答與訂正。題材包含校園、公共生活、科學、環境與媒體；句中的因果、對比和線索供詞義辨識與仿寫練習。
+- 每個詞條有至少三組 15–30 英文詞的原創情境句與繁中翻譯，可直接閱讀、朗讀、遮字作答與訂正。題材包含校園、公共生活、科學、環境與媒體；句中的因果、對比和線索供詞義辨識與仿寫練習。
 - 原中文釋意完整保留，另外提供易懂說明、上傳 Anki 的短釋意與用法提醒；不以單一短義取代所有原義。
 - 新編教材涵蓋說理、證據、比較、讓步、條件、方案與反思，以及數位素養、氣候、公共健康和社群等當代情境。新句與原有 Anki 教材分別標示，不宣稱為真題或已發生的新聞。
 - 全部 6,024 詞另有常用義、詞性與學習提示；有可核對資料時展示 WordNet 英語詞義、明示派生字族、近義候選和雙語搭配。動詞三態、第三人稱單數、V-ing、名詞複數及比較級分欄列出。原有雙語搭配與 111–115 年來源卡保留。
@@ -60,6 +68,7 @@ node --test tests/*.cjs
 python3 -m unittest discover -s tests -p 'test_*.py' -q
 python3 research/build_exam_notebook.py --check
 node research/build_authored_scenarios.cjs --check
+node research/build_reference_sentences.cjs --check
 node research/audit_scenario_difficulty.cjs --check
 node research/build_vocabulary_enrichment.cjs --check
 python3 research/build_exam_evidence_index.py --check
@@ -72,9 +81,9 @@ python3 tests/browser_learning.py
 
 筆記的可編輯原始資料為 `research/exam_notebook.json` 與 `research/function_word_notes.json`；修改後執行 `python3 research/build_exam_notebook.py` 重建 `assets/data/exam-notebook.js`。例句練習以來源及句子內容辨識，替換句子不會承接舊句子的作答統計；舊收藏、複習與原作答紀錄不被清除。修改素材後執行 `python3 tools/validate_site.py --refresh-hashes` 更新兩個 HTML 的素材版本。完整步驟見 [CONTRIBUTING.md](CONTRIBUTING.md)。
 
-原創句庫以每詞三句為完成條件，涵蓋原詞表與補充詞共 6,024 個 ID。完整詞形比對、生成時的缺口清單與獨立句數見 `research/authored_scenario_coverage.json`；同一原創句可教多個實際出現的目標詞，獨立句數與詞條顯示次數分開計算。
+原創句庫以每詞至少三句作為基礎，並朝每詞 11 句擴充，涵蓋原詞表與筆記補充詞共 6,024 個 ID。完整詞形比對、生成時的缺口清單與獨立句數見 `research/authored_scenario_coverage.json`；同一原創句可教多個實際出現的目標詞，獨立句數與詞條顯示次數分開計算。
 
-新增句子的可編輯來源為 `research/authored_scenarios.txt` 與 `research/scenario-batch-*.txt`。執行 `node research/build_authored_scenarios.cjs` 產生原創句庫與缺口清單；只有找到三個不同、各含本詞實際詞形的 15–30 詞原創語境才切換主要練習，原句保留在備查區。
+新增句子的可編輯來源為 `research/authored_scenarios.txt` 與 `research/scenario-batch-*.txt`。執行 `node research/build_authored_scenarios.cjs` 產生原創句庫與缺口清單；只有找到三個不同、各含本詞實際詞形的 15–30 詞原創語境才切換主要練習，原句保留在備查區。Tatoeba 參考句另由 `node research/build_reference_sentences.cjs` 索引；其資料與缺口統計不混充自編句。
 
 全詞表的常用義、詞性、雙語搭配及有依據的 WordNet 英語字義、近義候選與明示派生關係由 `research/build_vocabulary_enrichment.cjs` 生成；來源為原雙語教材、專題筆記及 `research/vocabulary-editorial.json`。原詞表釋義、級別與上傳教材的來源標記保持獨立；完整設計見 [V2 全詞表教材設計](docs/NOTEBOOK_ALL_WORDS.md)。
 

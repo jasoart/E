@@ -4,6 +4,7 @@
 // inserting a target into a generic frame or relabel an imported Anki example.
 const fs=require('node:fs'),path=require('node:path'),vm=require('node:vm'),crypto=require('node:crypto');
 const root=path.resolve(__dirname,'..');
+const MIN_CONTEXTS=3, TARGET_CONTEXTS=11;
 const ctx=vm.createContext({console,localStorage:{getItem:()=>null},document:{getElementById:()=>({})}});
 for(const name of ['js/config','data/vocabulary','data/collocations','data/learning','data/builtin-study','data/exam-notebook','data/vocabulary-enrichment','js/exam-notes','js/state','js/builtin','js/examples'])
   vm.runInContext(fs.readFileSync(path.join(root,'assets',name+'.js'),'utf8'),ctx);
@@ -39,7 +40,7 @@ for(const example of [...fresh,...raw.filter(x=>x.source==='self-authored')]){
 const sentences=Object.fromEntries([...pool.values()].map(x=>[x.id,x]));
 ctx.pool=[...pool.values()];
 // Compile once per headword, then match real aliases/inflections at boundaries.
-const entries=JSON.parse(run(`JSON.stringify(VOCABULARY.map(entry=>({word:entry.word,curated:!!getCuratedExamNotebook(entry),forms:[...new Set(builtinTargetAliases(entry.word).flatMap(alias=>[...wordForms(alias.toLowerCase()),...(BUILTIN_IRREGULAR_FORMS[alias.toLowerCase()]||[])]))]})))`));
+const entries=JSON.parse(run(`JSON.stringify(VOCABULARY.map(entry=>({word:entry.word,partOfSpeech:entry.partOfSpeech,curated:!!getCuratedExamNotebook(entry),forms:[...new Set(builtinTargetAliases(entry.word).flatMap(alias=>[...wordForms(alias.toLowerCase()),...(BUILTIN_IRREGULAR_FORMS[alias.toLowerCase()]||[])]))]})))`));
 const escape=s=>s.replace(/[.*+?^${}()|[\]\\]/g,'\\$&');
 const assignments=entries.map(entry=>{
   const expression=new RegExp('(^|[^\\p{L}\\p{N}_])('+entry.forms.map(escape).sort((a,b)=>b.length-a.length).join('|')+')(?=$|[^\\p{L}\\p{N}_])','iu');
@@ -53,16 +54,30 @@ const assignments=entries.map(entry=>{
     if(entry.word==='May')return /\bMay\b/.test(row.text);
     return true;
   });
-  const cleanCandidates=candidates.map(row=>({row,assessment:difficulty.analyze(row.text,entry.word)})).filter(item=>!item.assessment.high.length).sort((a,b)=>a.assessment.unknown.length-b.assessment.unknown.length).map(item=>item.row);
+  const cleanCandidates=candidates.map(row=>({row,assessment:difficulty.analyze(row.text,entry.word)})).filter(item=>!item.assessment.high.length&&ctx.builtinClozeQuestion(entry,item.row)).sort((a,b)=>a.assessment.unknown.length-b.assessment.unknown.length).map(item=>item.row);
   const first=cleanCandidates.find(x=>/\b(?:because|although|despite|but|whereas|however|so that|therefore|since)\b/i.test(x.text))||cleanCandidates[0];
   const second=cleanCandidates.find(x=>x!==first&&x.topic!==first?.topic)||cleanCandidates[1];
   const third=cleanCandidates.find(x=>x!==first&&x!==second&&x.topic!==first?.topic&&x.topic!==second?.topic)||cleanCandidates.find(x=>x!==first&&x!==second);
-  return {word:entry.word,curated:entry.curated,ids:[first?.id,second?.id,third?.id].filter(Boolean)};
+  // Preserve the original three in order, so existing practice IDs and familiar
+  // cards remain stable. Prefer underrepresented topics for additional contexts.
+  const chosen=[first,second,third].filter(Boolean), chosenIds=new Set(chosen.map(row=>row.id));
+  const topicCounts=new Map();
+  for(const row of chosen)topicCounts.set(row.topic,(topicCounts.get(row.topic)||0)+1);
+  while(chosen.length<TARGET_CONTEXTS){
+    let best=null;
+    for(const row of cleanCandidates){
+      if(chosenIds.has(row.id))continue;
+      if(!best||(topicCounts.get(row.topic)||0)<(topicCounts.get(best.topic)||0))best=row;
+    }
+    if(!best)break;
+    chosen.push(best);chosenIds.add(best.id);topicCounts.set(best.topic,(topicCounts.get(best.topic)||0)+1);
+  }
+  return {word:entry.word,curated:entry.curated,ids:chosen.map(row=>row.id)};
 });
 const byWord={},remaining=[];
 for(const row of assignments){
-  if(row.ids.length===3)byWord[row.word]=row.ids;
-  else remaining.push({word:row.word,availableOriginalContexts:row.ids.length});
+  if(row.ids.length>=MIN_CONTEXTS)byWord[row.word]=row.ids;
+  if(row.ids.length<TARGET_CONTEXTS)remaining.push({word:row.word,availableOriginalContexts:row.ids.length,missingContexts:TARGET_CONTEXTS-row.ids.length});
 }
 // A build-time matcher must agree with the actual recall matcher, not just with
 // a looser candidate index. This also protects slash and parenthesized IDs.
@@ -70,9 +85,9 @@ ctx.assignments=byWord;ctx.sentences=sentences;
 const mismatches=run(`VOCABULARY.flatMap(e=>(assignments[e.word]||[]).filter(id=>!builtinClozeQuestion(e,sentences[id])).map(id=>e.word+': '+id))`);
 if(mismatches.length)throw Error(mismatches.join('\n'));
 const used=new Set(Object.values(byWord).flat()),selected=Object.fromEntries([...used].sort().map(id=>[id,sentences[id]]));
-const stats={contextsPerWord:3,newlyWrittenSentences:fresh.length,sharedWords:assignments.filter(x=>!x.curated&&x.ids.length===3).length,completedWords:Object.keys(byWord).length,sharedSentenceAppearances:used.size?Object.keys(byWord).length*3:0,
-  uniqueSharedSentences:used.size,curatedWords:assignments.filter(x=>x.curated).length,remainingWords:remaining.length,totalWords:assignments.length};
-const data={description:'Original practice, not examination quotations. Three distinct 15–30-word contexts per completed word; other known level6 and reviewed advanced surroundings excluded; a complete sentence may teach several words, so unique sentences and appearances are counted separately.',stats,sentences:selected,byWord};
+const stats={minimumContextsPerWord:MIN_CONTEXTS,targetContextsPerWord:TARGET_CONTEXTS,newlyWrittenSentences:fresh.length,sharedWords:assignments.filter(x=>!x.curated&&x.ids.length>=MIN_CONTEXTS).length,completedWords:assignments.filter(x=>x.ids.length>=TARGET_CONTEXTS).length,sharedSentenceAppearances:Object.values(byWord).reduce((sum,ids)=>sum+ids.length,0),
+  uniqueSharedSentences:used.size,curatedWords:assignments.filter(x=>x.curated).length,remainingWords:remaining.length,missingContexts:remaining.reduce((sum,row)=>sum+row.missingContexts,0),totalWords:assignments.length};
+const data={description:'Original practice, not examination quotations. Each word retains at least three distinct 15–30-word contexts, with a target of eleven when the existing corpus supports it. Other known level6 and reviewed advanced surroundings are excluded. A sentence may teach several words, so unique sentences and appearances are counted separately.',stats,sentences:selected,byWord};
 const outputs={
   'assets/data/authored-scenarios.js':'"use strict";\n// Generated by research/build_authored_scenarios.cjs.\nconst GSAT_AUTHORED_SCENARIOS = '+JSON.stringify(data)+';\n',
   'research/authored_scenario_coverage.json':JSON.stringify({stats,remaining},null,2)+'\n',
