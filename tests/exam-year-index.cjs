@@ -79,6 +79,9 @@ test('exam years union legacy citations with new citations through exact officia
   assert.ok(legacy.includes('113'));
   assert.ok(!legacy.includes('115'));
   assert.deepEqual(e.json('getExamEvidenceYears(target)'), ['113', '115']);
+  e.run('getExamEvidenceYears(target).pop()');
+  assert.deepEqual(e.json('getExamEvidenceYears(target)'), ['113', '115'], 'Callers receive independent arrays');
+  assert.deepEqual(e.json('getExamEvidenceYears(target.word)'), ['115'], 'An ID-only lookup still excludes legacy point citations');
   for (const word of ['tight', 'elbow', 'exacerbate']) {
     e.context.word = word;
     assert.deepEqual(e.json('getExamEvidenceYears(VOCABULARY.find(entry=>entry.word===word))'), ['115']);

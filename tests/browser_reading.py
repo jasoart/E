@@ -86,6 +86,16 @@ def main():
             assert page.locator("#readingFilterStatus").inner_text()
             outcomes.append("reading tab exposes the complete evidenced overlay without appending word IDs")
 
+            page.locator("#readingSupplemental > summary").click()
+            more = page.locator(".reading-supplemental-more")
+            more.locator(":scope > summary").click()
+            page.locator("#wordList .row").nth(1).click()
+            assert more.evaluate("node => node.open"), "Selecting a word closed the expanded supplemental list"
+            page.locator('#pageButtons [aria-label="下一頁"]').click()
+            assert more.evaluate("node => node.open"), "Pagination closed the expanded supplemental list"
+            page.locator("#readingSupplemental > summary").click()
+            outcomes.append("selecting a word and paging preserve the expanded supplemental list")
+
             passage = next(row for row in data["passages"] if row["year"] == 115 and row["section"] == "reading")
             topic = passage["topicId"]
             page.locator("#readingYear").select_option("115")

@@ -123,14 +123,51 @@ function syncLevelButtons(){document.querySelectorAll(".level-btn").forEach(butt
 function buildCategoryFilters(){const host=byId("categoryFilters"),categories=["全部",...new Set(GSAT_COLLOCATION_GUIDE.map(point=>point.category||"核心辨析"))];host.innerHTML=categories.map(category=>`<button type="button" class="category-btn ${category==="全部"?"on":""}" data-category="${escapeHtml(category)}">${escapeHtml(category)}</button>`).join("");host.addEventListener("click",event=>{const button=event.target.closest(".category-btn");if(!button)return;state.category=button.dataset.category||"全部";host.querySelectorAll(".category-btn").forEach(item=>item.classList.toggle("on",item===button));applyFilters();refreshCollocationPanel()})}
 function setListMode(mode){state.favoritesOnly=mode==="favorites";state.collocationsOnly=mode==="collocations";state.examOnly=mode==="exam";state.reviewOnly=mode==="review";state.notebookOnly=mode==="notebook";state.readingOnly=mode==="reading";for(const [id,value] of [["allTab","all"],["notebookTab","notebook"],["examTab","exam"],["readingTab","reading"],["collocationTab","collocations"],["reviewTab","review"],["favoriteTab","favorites"]])byId(id)?.classList.toggle("on",mode===value);byId("categoryFilters").hidden=!state.collocationsOnly;byId("examYearFilters").hidden=!state.examOnly;if(byId("notebookSourceFilter"))byId("notebookSourceFilter").hidden=!state.notebookOnly;if(byId("readingFilters"))byId("readingFilters").hidden=!state.readingOnly;applyFilters();refreshCollocationPanel();if(state.readingOnly&&typeof selectReadingMatch==="function")selectReadingMatch()}
 
+// Notebook supplements have already been appended. Keep the original indexes for
+// selection and the alphabetical order for browsing and ties in priority sorts.
+const ALPHABETICAL_ROWS=VOCABULARY.map((entry,index)=>({entry,index,match:{score:0,reason:"",channels:[]}}))
+  .sort((a,b)=>a.entry.word.localeCompare(b.entry.word));
+
+function matchesListFilters({entry}){
+  if(!state.levels.has(Number(entry.level)))return false;
+  if(state.favoritesOnly&&!state.favorites.has(entry.word))return false;
+  if(state.reviewOnly&&!isReviewDue(entry.word))return false;
+  if(state.examOnly){
+    const years=getExamEvidenceYears(entry);
+    if(!years.length||(state.examYear!=="all"&&!years.includes(state.examYear)))return false;
+  }
+  if(state.notebookOnly){
+    const note=typeof getExamNotebook==="function"&&getExamNotebook(entry);
+    if(!note)return false;
+    if(state.notebookSource==="curated"&&!getCuratedExamNotebook(entry))return false;
+    if(state.notebookSource&&state.notebookSource!=="curated"){
+      const provenance=state.notebookSource==="authored"?"authored-scenarios":"source-guided";
+      if(note.provenance!==provenance)return false;
+    }
+  }
+  if(state.collocationsOnly){
+    const all=state.category==="全部";
+    if(!(all&&getBuiltinStudy(entry)?.collocations?.length)&&
+       !getGsatPoints(entry).some(point=>all||(point.category||"核心辨析")===state.category))return false;
+  }
+  return !state.readingOnly||(typeof readingEntryMatches==="function"&&readingEntryMatches(entry,state));
+}
+
 function applyFilters(resetPage=true){
   const needle=normalizeSearchValue(state.query);
-  const ranked=needle?(hybridSearch(needle)):VOCABULARY.map((entry,index)=>({entry,index,match:{score:0,reason:"",channels:[]}}));
-  state.filtered=ranked.filter(({entry})=>state.levels.has(Number(entry.level))).filter(({entry})=>!state.favoritesOnly||state.favorites.has(entry.word)).filter(({entry})=>!state.examOnly||getExamEvidenceYears(entry).some(year=>state.examYear==="all"||year===state.examYear)).filter(({entry})=>!state.reviewOnly||isReviewDue(entry.word)).filter(({entry})=>!state.notebookOnly||(typeof getExamNotebook==="function"&&getExamNotebook(entry))).filter(({entry})=>!state.notebookOnly||!state.notebookSource||(state.notebookSource==="curated"?!!getCuratedExamNotebook(entry):getExamNotebook(entry)?.provenance===(state.notebookSource==="authored"?"authored-scenarios":"source-guided"))).filter(({entry})=>!state.collocationsOnly||(state.category==="全部"&&getBuiltinStudy(entry)?.collocations?.length)||getGsatPoints(entry).some(point=>state.category==="全部"||(point.category||"核心辨析")===state.category));
-  if(state.readingOnly)state.filtered=state.filtered.filter(({entry})=>typeof readingEntryMatches==="function"&&readingEntryMatches(entry,state));
-  if(!needle)state.filtered.sort((a,b)=>state.reviewOnly?String(reviewInfo(a.entry.word)?.due||"").localeCompare(String(reviewInfo(b.entry.word)?.due||""))||a.entry.word.localeCompare(b.entry.word):state.examOnly?(getExamEvidenceYears(b.entry).length-getExamEvidenceYears(a.entry).length)||a.entry.word.localeCompare(b.entry.word):state.collocationsOnly?(getGsatPoints(b.entry).some(point=>point.priority==="必熟")?1:0)-(getGsatPoints(a.entry).some(point=>point.priority==="必熟")?1:0)||a.entry.word.localeCompare(b.entry.word):a.entry.word.localeCompare(b.entry.word));
-  if(!needle&&state.readingOnly&&typeof compareReadingEntries==="function")state.filtered.sort((a,b)=>compareReadingEntries(a.entry,b.entry));
+  const rows=(needle?hybridSearch(needle):ALPHABETICAL_ROWS).filter(matchesListFilters);
+  if(!needle){
+    if(state.readingOnly&&typeof compareReadingEntries==="function")rows.sort((a,b)=>compareReadingEntries(a.entry,b.entry));
+    else if(state.reviewOnly)rows.sort((a,b)=>reviewInfo(a.entry.word).due.localeCompare(reviewInfo(b.entry.word).due));
+    else if(state.examOnly)rows.sort((a,b)=>getExamEvidenceYears(b.entry).length-getExamEvidenceYears(a.entry).length);
+    else if(state.collocationsOnly){
+      const required=({entry})=>getGsatPoints(entry).some(point=>point.priority==="必熟");
+      rows.sort((a,b)=>Number(required(b))-Number(required(a)));
+    }
+  }
+  state.filtered=rows;
   if(resetPage)state.page=1;
+  if(typeof updateReadingFilterStatus==="function")updateReadingFilterStatus();
   renderList();
 }
 
@@ -146,7 +183,6 @@ function renderList(){
   byId("resultCount").textContent=state.filtered.length.toLocaleString();
   byId("resultLabel").textContent=state.readingOnly?(state.query?"閱讀詞彙搜尋結果":"111–115 閱讀詞彙"):state.query?"詞彙搜尋結果":state.notebookOnly?"全詞表 V2 筆記":state.favoritesOnly?"我的收藏":state.reviewOnly?"今日到期複習":state.examOnly?`${state.examYear==="all"?"111–115":state.examYear} 真題搭配`:state.collocationsOnly?(state.category==="全部"?"搭配考點詞彙":state.category):"官方詞表＋補充詞彙";
   byId("sortHint").textContent=state.query?"字詞、字義與用法":state.readingOnly?"跨年與題組優先":state.reviewOnly?"到期日優先":state.examOnly?"真題證據優先":state.collocationsOnly?"必熟優先":"";
-  if(typeof updateReadingFilterStatus==="function")updateReadingFilterStatus();
   byId("favoriteCount").textContent=state.favorites.size?String(state.favorites.size):"";
   const totalPages=Math.max(1,Math.ceil(state.filtered.length/PAGE_SIZE));state.page=Math.min(Math.max(1,state.page),totalPages);const start=(state.page-1)*PAGE_SIZE,end=Math.min(state.filtered.length,start+PAGE_SIZE),rows=state.filtered.slice(start,end);
   if(!rows.length){wordList.innerHTML='<div class="empty"><div><strong>找不到符合的詞彙</strong><p>試試其他拼法、中文關鍵字，或開啟更多級別。</p></div></div>';pagination.hidden=true;animateListChange(rows);return}
