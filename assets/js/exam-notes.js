@@ -40,14 +40,21 @@ function notebookTeacherTip(entry,note) {
   const extra=information?.dictionarySenses?.length>1?"本詞有不同字義，先用前後文選義；近義候選不能跨詞義直接替換。":"仿寫時保留原來的語意與搭配，再補上原因、對比或結果。";
   return notebookPosPrompt(entry)+" "+extra;
 }
+const EXAM_YEARS_BY_ENTRY = new WeakMap();
 function getExamEvidenceYears(entry) {
   // Keep legacy point citations and newly verified notebook citations searchable
   // together. The small index contains no excerpts and triggers no requests.
+  const hasPoints=entry&&typeof entry==="object"&&typeof getGsatPoints==="function";
+  if(hasPoints&&EXAM_YEARS_BY_ENTRY.has(entry))return EXAM_YEARS_BY_ENTRY.get(entry).slice();
   const word=typeof entry==="string"?entry:entry?.word;
   const indexed=typeof GSAT_EXAM_EVIDENCE_INDEX!=="undefined"?GSAT_EXAM_EVIDENCE_INDEX.yearsByHeadword||{}:{};
-  const years=typeof getGsatPoints==="function"&&entry&&typeof entry==="object"?getGsatPoints(entry).flatMap(point=>point.evidence||[]):[];
-  for(const alias of examNotebookAliases(word))years.push(...(indexed[alias]||[]));
-  return [...new Set(years.map(String))].sort((a,b)=>Number(a)-Number(b));
+  const years=hasPoints?getGsatPoints(entry).flatMap(point=>point.evidence||[]):[];
+  for(const alias of examNotebookAliases(word))if(Object.prototype.hasOwnProperty.call(indexed,alias))years.push(...indexed[alias]);
+  const result=[...new Set(years.map(String))].sort((a,b)=>Number(a)-Number(b));
+  // String lookups omit legacy point citations. Cache only complete entry lookups
+  // and keep the returned arrays independent for callers.
+  if(hasPoints)EXAM_YEARS_BY_ENTRY.set(entry,result.slice());
+  return result;
 }
 function notebookStats() {
   const entries=VOCABULARY.map(getExamNotebook).filter(Boolean);

@@ -107,6 +107,42 @@ test('inverted retrieval preserves full-scan scores, result order, match reasons
   assert.equal(e.run('bm25Ranking(["任何一個"])[0].index'), 0);
 });
 
+test('lexical candidates preserve infixes, mixed scripts, split fields and spelling-only hits', () => {
+  const fields = [
+    {word:'integration', notes:"課程涵蓋氣候變化 school well-being don't"},
+    {word:'observer', aliases:['observer','reintegrate'], meaning:'校園', pattern:'public forum'},
+    {word:'editor', notes:'read', meaning:'the journal', pattern:'校園活動'},
+    {word:'climate', notes:'co--operate r2d2', meaning:'氣候'},
+    ...Array.from({length:100}, (_, i) => ({word:'item'+i, notes:'ordinary content'})),
+  ];
+  const e = fixtureEnvironment(fields);
+  e.run('buildBm25Chunk(1)');
+  for (const query of ['tegrat','read journal','公共','園活','氣候','氣候 school','read 校園',
+    'ｒ２ｄ２','well-be',"on't",'co--oper','editorial','climte','課','re','--',"'"]) {
+    e.context.query = query;
+    assert.equal(e.run('JSON.stringify(computeHybridSearch(query))'), e.run('JSON.stringify(referenceHybridSearch(query))'), query);
+  }
+  e.run('let inspected=0;const originalScorer=scoreSearchFields;scoreSearchFields=(...args)=>{inspected++;return originalScorer(...args)}');
+  assert.deepEqual(Array.from(e.run('computeHybridSearch("tegrat").map(row=>row.entry.word).sort()')), ['integration','observer']);
+  assert.equal(e.run('inspected'), 2, 'Only entries containing the infix or a qualifying fuzzy match need lexical scoring');
+  e.run('inspected=0');
+  assert.equal(e.run('computeHybridSearch("候變").some(row=>row.index===0)'), true);
+  assert.equal(e.run('inspected'), 1, 'A single Chinese bigram posting can point to vocabulary index zero');
+});
+
+test('concept expansion counts each term once and verifies complete Chinese and hyphenated terms', () => {
+  const e = fixtureEnvironment([
+    {word:'first', notes:'integration reintegrate 氣候變化 re-use'},
+    {word:'second', notes:'氣候 改變 變化 in use'},
+    {word:'third', notes:'introduction 氣候變遷 reuse'},
+    {word:'fourth', notes:'absent'},
+  ], [{triggers:['主題'],terms:['tegrat','in','氣候變化','氣','re-use']}]);
+  e.run('ensureBm25Index(); const info=expandedQueryTerms("主題")');
+  const expected = e.run('JSON.stringify(VOCABULARY.map((entry,index)=>({entry,index,score:conceptScore(entry,info)})).filter(row=>row.score>0))');
+  assert.equal(e.run('JSON.stringify(conceptRanking(info))'), expected);
+  assert.equal(e.run('JSON.stringify(computeHybridSearch("主題"))'), e.run('JSON.stringify(referenceHybridSearch("主題"))'));
+});
+
 test('spelling candidates retain every OSA match across short words, aliases and repeated bigrams', () => {
   const words = [];
   for (let length = 4; length <= 7; length++) for (let n = 0; n < 2 ** length; n++) {
