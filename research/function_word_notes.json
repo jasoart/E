@@ -1,0 +1,4500 @@
+{
+  "version": 1,
+  "sourceLabel": "本站逐詞新編；文法句型與詞彙搭配分開計數；例句非試卷原文",
+  "entries": {
+    "against": {
+      "kind": "grammar",
+      "senses": [
+        {
+          "pos": "prep.",
+          "meaning": "反對；對抗；倚靠；以……為背景",
+          "usage": "先判斷是立場、競爭還是接觸位置；against 後接名詞性成分，不能把每個用法都譯為反對。"
+        }
+      ],
+      "collocations": [],
+      "grammarPatterns": [
+        {
+          "en": "vote against a proposal",
+          "zh": "投票反對提案",
+          "note": "本站整理的文法句型；N、S、V 等為句型位置，非試卷引文。"
+        },
+        {
+          "en": "protect N against damage",
+          "zh": "保護某物免受損害",
+          "note": "本站整理的文法句型；N、S、V 等為句型位置，非試卷引文。"
+        },
+        {
+          "en": "lean against a wall",
+          "zh": "靠著牆",
+          "note": "本站整理的文法句型；N、S、V 等為句型位置，非試卷引文。"
+        },
+        {
+          "en": "compete against a team",
+          "zh": "與某隊競爭",
+          "note": "本站整理的文法句型；N、S、V 等為句型位置，非試卷引文。"
+        }
+      ],
+      "synonyms": [
+        {
+          "en": "opposed to",
+          "zh": "反對……",
+          "note": "opposed 是形容詞；against 是介系詞，替換時須重建句構。"
+        }
+      ],
+      "idioms": [],
+      "family": [],
+      "forms": [],
+      "usageNote": "先判斷是立場、競爭還是接觸位置；against 後接名詞性成分，不能把每個用法都譯為反對。",
+      "references": [
+        {
+          "label": "Cambridge 語法／詞義核對",
+          "url": "https://dictionary.cambridge.org/grammar/british-grammar/against"
+        }
+      ],
+      "examples": [
+        {
+          "text": "Several students voted against the proposal because it would leave younger children without a safe playground.",
+          "translationZh": "幾位學生投票反對提案，因為它會讓年幼孩子失去安全的遊戲場所。",
+          "grammar": "[S] Several students [V] voted；against the proposal 表立場；because 子句說明原因。",
+          "writingTip": "說明反對的具體理由，避免只寫自己不喜歡。",
+          "topic": "語法與篇章",
+          "source": "self-authored"
+        },
+        {
+          "text": "After the long hike, Mia leaned against a tree while her friends checked the route home.",
+          "translationZh": "長途健行後，Mia 靠著樹，朋友們則查看回家的路線。",
+          "grammar": "leaned against + N 表接觸支撐，這裡沒有反對的意思。",
+          "writingTip": "用動作與空間位置描寫疲憊。",
+          "topic": "語法與篇章",
+          "source": "self-authored"
+        }
+      ]
+    },
+    "although": {
+      "kind": "grammar",
+      "senses": [
+        {
+          "pos": "conj.",
+          "meaning": "雖然；儘管",
+          "usage": "although 引導讓步子句；同一句通常不用 but 再連主句。先找出「本來預期」與「實際結果」的差異。"
+        }
+      ],
+      "collocations": [],
+      "grammarPatterns": [
+        {
+          "en": "although S + V, S + V",
+          "zh": "雖然……，但……",
+          "note": "本站整理的文法句型；N、S、V 等為句型位置，非試卷引文。"
+        },
+        {
+          "en": "S + V although S + V",
+          "zh": "……，雖然……",
+          "note": "本站整理的文法句型；N、S、V 等為句型位置，非試卷引文。"
+        },
+        {
+          "en": "although it is difficult",
+          "zh": "雖然很困難",
+          "note": "本站整理的文法句型；N、S、V 等為句型位置，非試卷引文。"
+        },
+        {
+          "en": "although some people disagree",
+          "zh": "雖然有些人不同意",
+          "note": "本站整理的文法句型；N、S、V 等為句型位置，非試卷引文。"
+        }
+      ],
+      "synonyms": [
+        {
+          "en": "despite + N / V-ing",
+          "zh": "儘管……",
+          "note": "意思可近似，後接結構不同；不能直接換成 despite + 完整子句。"
+        }
+      ],
+      "idioms": [],
+      "family": [],
+      "forms": [],
+      "usageNote": "although 引導讓步子句；同一句通常不用 but 再連主句。先找出「本來預期」與「實際結果」的差異。",
+      "references": [
+        {
+          "label": "Cambridge 語法／詞義核對",
+          "url": "https://dictionary.cambridge.org/grammar/british-grammar/conjunctions"
+        }
+      ],
+      "examples": [
+        {
+          "text": "Although the library was crowded, its quiet study room allowed me to finish my essay on time.",
+          "translationZh": "雖然圖書館很擁擠，安靜的自習室仍讓我準時完成作文。",
+          "grammar": "Although 引導讓步；[S] its quiet study room [V] allowed [O] me + to V。",
+          "writingTip": "以一項不利條件搭配仍達成的結果。",
+          "topic": "語法與篇章",
+          "source": "self-authored"
+        },
+        {
+          "text": "The volunteers continued cleaning the beach although the wind made their work much harder than expected.",
+          "translationZh": "志工們繼續清理海灘，雖然強風讓工作比預期困難許多。",
+          "grammar": "主句在前；although 子句補上逆境，沒有另加 but。",
+          "writingTip": "用讓步結構呈現持續努力。",
+          "topic": "語法與篇章",
+          "source": "self-authored"
+        }
+      ]
+    },
+    "amid": {
+      "kind": "grammar",
+      "senses": [
+        {
+          "pos": "prep.",
+          "meaning": "在……之中；在……情況下",
+          "usage": "amid／amidst 後接名詞片語，常描寫被某種環境、情緒或事件包圍；不要直接接完整子句。"
+        }
+      ],
+      "collocations": [],
+      "grammarPatterns": [
+        {
+          "en": "amid growing concern",
+          "zh": "在日益增加的憂慮中",
+          "note": "本站整理的文法句型；N、S、V 等為句型位置，非試卷引文。"
+        },
+        {
+          "en": "amid the noise",
+          "zh": "在噪音中",
+          "note": "本站整理的文法句型；N、S、V 等為句型位置，非試卷引文。"
+        },
+        {
+          "en": "amid a heated debate",
+          "zh": "在激烈討論之中",
+          "note": "本站整理的文法句型；N、S、V 等為句型位置，非試卷引文。"
+        },
+        {
+          "en": "amid uncertainty",
+          "zh": "在不確定的情勢下",
+          "note": "本站整理的文法句型；N、S、V 等為句型位置，非試卷引文。"
+        }
+      ],
+      "synonyms": [
+        {
+          "en": "amidst",
+          "zh": "在……之中",
+          "note": "amid 的變體；句構同樣接名詞性成分。"
+        }
+      ],
+      "idioms": [],
+      "family": [],
+      "forms": [],
+      "usageNote": "amid／amidst 後接名詞片語，常描寫被某種環境、情緒或事件包圍；不要直接接完整子句。",
+      "references": [
+        {
+          "label": "Cambridge 語法／詞義核對",
+          "url": "https://dictionary.cambridge.org/us/grammar/british-grammar/prepositions_2"
+        }
+      ],
+      "examples": [
+        {
+          "text": "Amid growing concern about waste, our school introduced reusable containers at the annual food fair.",
+          "translationZh": "在大家愈來愈擔心浪費的情況下，學校在年度園遊會引入可重複使用的容器。",
+          "grammar": "Amid + N 交代背景；[S] our school [V] introduced [O] reusable containers。",
+          "writingTip": "先交代社會背景，再寫具體回應。",
+          "topic": "語法與篇章",
+          "source": "self-authored"
+        },
+        {
+          "text": "The teacher remained calm amid the noise and helped the frightened students leave the building safely.",
+          "translationZh": "老師在吵鬧聲中保持冷靜，協助受驚學生安全離開建築物。",
+          "grammar": "amid the noise 是背景片語；remained 後接形容詞 calm。",
+          "writingTip": "以環境與人物反應形成對照。",
+          "topic": "語法與篇章",
+          "source": "self-authored"
+        }
+      ]
+    },
+    "among": {
+      "kind": "grammar",
+      "senses": [
+        {
+          "pos": "prep.",
+          "meaning": "在……之中；在某群體內",
+          "usage": "among 表群體中的成員、分布或包圍；between 強調可分辨的對象或關係，不能只靠「兩個／三個」決定。"
+        }
+      ],
+      "collocations": [],
+      "grammarPatterns": [
+        {
+          "en": "among the students",
+          "zh": "在學生之間／之中",
+          "note": "本站整理的文法句型；N、S、V 等為句型位置，非試卷引文。"
+        },
+        {
+          "en": "share N among friends",
+          "zh": "把某物分給朋友們",
+          "note": "本站整理的文法句型；N、S、V 等為句型位置，非試卷引文。"
+        },
+        {
+          "en": "among other things",
+          "zh": "除了其他事項外",
+          "note": "本站整理的文法句型；N、S、V 等為句型位置，非試卷引文。"
+        },
+        {
+          "en": "be popular among teenagers",
+          "zh": "在青少年之間受歡迎",
+          "note": "本站整理的文法句型；N、S、V 等為句型位置，非試卷引文。"
+        }
+      ],
+      "synonyms": [
+        {
+          "en": "between",
+          "zh": "在可分辨的對象之間",
+          "note": "可用於清楚區分的多個對象；不是永遠只能兩個。"
+        }
+      ],
+      "idioms": [],
+      "family": [],
+      "forms": [],
+      "usageNote": "among 表群體中的成員、分布或包圍；between 強調可分辨的對象或關係，不能只靠「兩個／三個」決定。",
+      "references": [
+        {
+          "label": "Cambridge 語法／詞義核對",
+          "url": "https://dictionary.cambridge.org/us/grammar/british-grammar/between-or-among"
+        }
+      ],
+      "examples": [
+        {
+          "text": "The survey revealed growing interest in public transport among students who lived far from the school.",
+          "translationZh": "調查顯示，住得離學校較遠的學生對大眾運輸愈來愈有興趣。",
+          "grammar": "among students 指調查群體；who 子句修飾 students。",
+          "writingTip": "界定調查或主張涵蓋的群體。",
+          "topic": "語法與篇章",
+          "source": "self-authored"
+        },
+        {
+          "text": "We shared the remaining food among the volunteers so everyone could rest before the final task.",
+          "translationZh": "我們把剩下的食物分給志工們，讓每個人能在最後一項任務前休息。",
+          "grammar": "shared [O] the remaining food；among + 群體表示分配對象。",
+          "writingTip": "寫出資源分配的對象與目的。",
+          "topic": "語法與篇章",
+          "source": "self-authored"
+        }
+      ]
+    },
+    "and": {
+      "kind": "grammar",
+      "senses": [
+        {
+          "pos": "conj.",
+          "meaning": "和；而且；連接並列成分",
+          "usage": "確認 and 兩側是否並列名詞、動作或子句；並列不自動證明因果。列舉時保持結構一致。"
+        }
+      ],
+      "collocations": [],
+      "grammarPatterns": [
+        {
+          "en": "N and N",
+          "zh": "兩個並列名詞",
+          "note": "本站整理的文法句型；N、S、V 等為句型位置，非試卷引文。"
+        },
+        {
+          "en": "V and V",
+          "zh": "兩個並列動作",
+          "note": "本站整理的文法句型；N、S、V 等為句型位置，非試卷引文。"
+        },
+        {
+          "en": "both A and B",
+          "zh": "A 和 B 兩者都",
+          "note": "本站整理的文法句型；N、S、V 等為句型位置，非試卷引文。"
+        },
+        {
+          "en": "S + V, and S + V",
+          "zh": "連接兩個主句",
+          "note": "本站整理的文法句型；N、S、V 等為句型位置，非試卷引文。"
+        }
+      ],
+      "synonyms": [
+        {
+          "en": "as well as",
+          "zh": "以及",
+          "note": "主詞由 A as well as B 組成時，不能直接套 A and B 的動詞一致規則。"
+        }
+      ],
+      "idioms": [],
+      "family": [],
+      "forms": [],
+      "usageNote": "確認 and 兩側是否並列名詞、動作或子句；並列不自動證明因果。列舉時保持結構一致。",
+      "references": [
+        {
+          "label": "Cambridge 語法／詞義核對",
+          "url": "https://dictionary.cambridge.org/grammar/british-grammar/conjunctions"
+        }
+      ],
+      "examples": [
+        {
+          "text": "The students collected old books and sold them to raise money for the local animal shelter.",
+          "translationZh": "學生收集舊書並出售，替當地動物收容所募款。",
+          "grammar": "collected 與 sold 共用主詞 students；them 回指 books。",
+          "writingTip": "用平行動作交代計畫如何完成。",
+          "topic": "語法與篇章",
+          "source": "self-authored"
+        },
+        {
+          "text": "Clean water and reliable electricity are essential when families return home after a severe storm.",
+          "translationZh": "家戶在強烈暴風雨後返家時，乾淨的水與穩定供電都很重要。",
+          "grammar": "[S] Clean water and reliable electricity 是並列主詞，故用 are。",
+          "writingTip": "把兩項具體需求並列，檢查動詞單複數。",
+          "topic": "語法與篇章",
+          "source": "self-authored"
+        }
+      ]
+    },
+    "anyone": {
+      "kind": "grammar",
+      "senses": [
+        {
+          "pos": "pron.",
+          "meaning": "任何人；有人",
+          "usage": "anyone／anybody 作主詞時用單數動詞；疑問、否定與不限定身分的肯定句皆可用。any one 則強調一個成員。"
+        }
+      ],
+      "collocations": [],
+      "grammarPatterns": [
+        {
+          "en": "anyone who + V",
+          "zh": "任何……的人",
+          "note": "本站整理的文法句型；N、S、V 等為句型位置，非試卷引文。"
+        },
+        {
+          "en": "Does anyone know N?",
+          "zh": "有人知道……嗎？",
+          "note": "本站整理的文法句型；N、S、V 等為句型位置，非試卷引文。"
+        },
+        {
+          "en": "not know anyone",
+          "zh": "不認識任何人",
+          "note": "本站整理的文法句型；N、S、V 等為句型位置，非試卷引文。"
+        },
+        {
+          "en": "anyone else",
+          "zh": "其他人",
+          "note": "本站整理的文法句型；N、S、V 等為句型位置，非試卷引文。"
+        }
+      ],
+      "synonyms": [
+        {
+          "en": "someone",
+          "zh": "某個人",
+          "note": "常用來指某個未指明的人；不一定具有任何人皆可的意思。"
+        }
+      ],
+      "idioms": [],
+      "family": [],
+      "forms": [],
+      "usageNote": "anyone／anybody 作主詞時用單數動詞；疑問、否定與不限定身分的肯定句皆可用。any one 則強調一個成員。",
+      "references": [
+        {
+          "label": "Cambridge 語法／詞義核對",
+          "url": "https://dictionary.cambridge.org/us/grammar/british-grammar/pronouns-indefinite-body-one"
+        }
+      ],
+      "examples": [
+        {
+          "text": "Anyone who wants to join the reading club can attend our first meeting without paying a fee.",
+          "translationZh": "任何想加入讀書社的人都能免費參加第一次聚會。",
+          "grammar": "Anyone 是單數主詞；who wants 修飾它；can attend 後接原形。",
+          "writingTip": "讓招募條件清楚，避免漏掉 who 後的單數動詞。",
+          "topic": "語法與篇章",
+          "source": "self-authored"
+        },
+        {
+          "text": "I did not know anyone at the workshop, but a friendly partner soon made me feel welcome.",
+          "translationZh": "工作坊裡我誰都不認識，但友善的搭檔很快讓我感到受歡迎。",
+          "grammar": "not ... anyone 表否定範圍；made + O + 原形 feel。",
+          "writingTip": "用陌生與被接納的情境描寫轉變。",
+          "topic": "語法與篇章",
+          "source": "self-authored"
+        }
+      ]
+    },
+    "anything": {
+      "kind": "grammar",
+      "senses": [
+        {
+          "pos": "pron.",
+          "meaning": "任何事物；某些事物（疑問或否定語境）",
+          "usage": "anything 作主詞用單數動詞；形容詞放在它後面，例如 anything useful。不要自動把所有肯定句改成 something。"
+        }
+      ],
+      "collocations": [],
+      "grammarPatterns": [
+        {
+          "en": "anything useful",
+          "zh": "任何有用的東西",
+          "note": "本站整理的文法句型；N、S、V 等為句型位置，非試卷引文。"
+        },
+        {
+          "en": "anything else",
+          "zh": "其他東西",
+          "note": "本站整理的文法句型；N、S、V 等為句型位置，非試卷引文。"
+        },
+        {
+          "en": "not need anything",
+          "zh": "什麼都不需要",
+          "note": "本站整理的文法句型；N、S、V 等為句型位置，非試卷引文。"
+        },
+        {
+          "en": "anything that + V",
+          "zh": "任何……的事物",
+          "note": "本站整理的文法句型；N、S、V 等為句型位置，非試卷引文。"
+        }
+      ],
+      "synonyms": [
+        {
+          "en": "something",
+          "zh": "某件事／某樣東西",
+          "note": "常指未明說的某物；anything 可表示不限範圍。"
+        }
+      ],
+      "idioms": [],
+      "family": [],
+      "forms": [],
+      "usageNote": "anything 作主詞用單數動詞；形容詞放在它後面，例如 anything useful。不要自動把所有肯定句改成 something。",
+      "references": [
+        {
+          "label": "Cambridge 語法／詞義核對",
+          "url": "https://dictionary.cambridge.org/us/grammar/british-grammar/pronouns-indefinite-body-one"
+        }
+      ],
+      "examples": [
+        {
+          "text": "If you notice anything unusual in the experiment, record it carefully before changing the equipment.",
+          "translationZh": "如果你在實驗中注意到任何異常，請在調整設備前仔細記錄。",
+          "grammar": "anything unusual 的形容詞後置；it 回指觀察到的事物。",
+          "writingTip": "用具體觀察說明處理步驟。",
+          "topic": "語法與篇章",
+          "source": "self-authored"
+        },
+        {
+          "text": "The small museum welcomes anything that helps visitors understand how local families lived a century ago.",
+          "translationZh": "這間小博物館歡迎任何能幫助遊客了解百年前當地家庭生活的物品。",
+          "grammar": "anything 是 welcomes 的受詞；that helps 中 helps 用單數。",
+          "writingTip": "用關係子句界定徵集物品的條件。",
+          "topic": "語法與篇章",
+          "source": "self-authored"
+        }
+      ]
+    },
+    "anytime": {
+      "kind": "grammar",
+      "senses": [
+        {
+          "pos": "adv.",
+          "meaning": "任何時候；隨時",
+          "usage": "anytime 常作副詞；介系詞 at 後通常寫成兩字 any time。兩字形式也可在句中作時間名詞片語。"
+        }
+      ],
+      "collocations": [],
+      "grammarPatterns": [
+        {
+          "en": "call anytime",
+          "zh": "隨時來電",
+          "note": "本站整理的文法句型；N、S、V 等為句型位置，非試卷引文。"
+        },
+        {
+          "en": "visit anytime",
+          "zh": "隨時來訪",
+          "note": "本站整理的文法句型；N、S、V 等為句型位置，非試卷引文。"
+        },
+        {
+          "en": "anytime you need help",
+          "zh": "你需要幫助的任何時候",
+          "note": "本站整理的文法句型；N、S、V 等為句型位置，非試卷引文。"
+        },
+        {
+          "en": "anytime during the week",
+          "zh": "這週內的任何時候",
+          "note": "本站整理的文法句型；N、S、V 等為句型位置，非試卷引文。"
+        }
+      ],
+      "synonyms": [
+        {
+          "en": "at any time",
+          "zh": "在任何時刻",
+          "note": "at 後用兩字的名詞片語，不寫 at anytime。"
+        }
+      ],
+      "idioms": [],
+      "family": [],
+      "forms": [],
+      "usageNote": "anytime 常作副詞；介系詞 at 後通常寫成兩字 any time。兩字形式也可在句中作時間名詞片語。",
+      "references": [
+        {
+          "label": "Cambridge anytime 詞義與詞性",
+          "url": "https://dictionary.cambridge.org/dictionary/english/anytime"
+        }
+      ],
+      "examples": [
+        {
+          "text": "You may contact our group anytime if the instructions for the community project are unclear.",
+          "translationZh": "如果社區計畫的說明不清楚，你可以隨時聯絡我們。",
+          "grammar": "anytime 修飾 contact 的時間；if 子句提出聯絡條件。",
+          "writingTip": "在通知中寫清楚何時、為何可以求助。",
+          "topic": "語法與篇章",
+          "source": "self-authored"
+        },
+        {
+          "text": "The online guide can be opened anytime, allowing students to review difficult steps at their own pace.",
+          "translationZh": "線上指南隨時能開啟，讓學生按照自己的步調複習困難步驟。",
+          "grammar": "can be opened 是被動；anytime 是副詞，沒有另加 at。",
+          "writingTip": "具體說明學習工具提供的便利。",
+          "topic": "語法與篇章",
+          "source": "self-authored"
+        }
+      ]
+    },
+    "because": {
+      "kind": "grammar",
+      "senses": [
+        {
+          "pos": "conj.",
+          "meaning": "因為",
+          "usage": "because + 完整子句；because of + 名詞性成分。分清原因與結果；正式完整句不能只有 because 子句。"
+        }
+      ],
+      "collocations": [],
+      "grammarPatterns": [
+        {
+          "en": "because S + V",
+          "zh": "因為……",
+          "note": "本站整理的文法句型；N、S、V 等為句型位置，非試卷引文。"
+        },
+        {
+          "en": "Because S + V, S + V",
+          "zh": "原因子句在前",
+          "note": "本站整理的文法句型；N、S、V 等為句型位置，非試卷引文。"
+        },
+        {
+          "en": "not because A but because B",
+          "zh": "不是因為 A，而是因為 B",
+          "note": "本站整理的文法句型；N、S、V 等為句型位置，非試卷引文。"
+        },
+        {
+          "en": "because of + N",
+          "zh": "因為某事",
+          "note": "because of 為另一個介系詞片語結構。"
+        }
+      ],
+      "synonyms": [
+        {
+          "en": "since",
+          "zh": "因為／自從",
+          "note": "表原因時可能接近 because；since 也能指時間起點。"
+        }
+      ],
+      "idioms": [],
+      "family": [],
+      "forms": [],
+      "usageNote": "because + 完整子句；because of + 名詞性成分。分清原因與結果；正式完整句不能只有 because 子句。",
+      "references": [
+        {
+          "label": "Cambridge 語法／詞義核對",
+          "url": "https://dictionary.cambridge.org/grammar/british-grammar/because-because-of-and-cos-cos-of"
+        }
+      ],
+      "examples": [
+        {
+          "text": "We moved the outdoor concert indoors because heavy rain would have made the equipment unsafe.",
+          "translationZh": "我們把戶外音樂會移到室內，因為大雨會使設備不安全。",
+          "grammar": "because 子句說明 moved 的原因；would have made 表原先可能的後果。",
+          "writingTip": "把決定與具體原因連接。",
+          "topic": "語法與篇章",
+          "source": "self-authored"
+        },
+        {
+          "text": "Because the survey included only one class, its results cannot represent every student in the school.",
+          "translationZh": "因為調查只涵蓋一個班級，結果無法代表全校每位學生。",
+          "grammar": "because 子句在前以逗號分開；only 限制資料範圍。",
+          "writingTip": "用因果句說明證據的限制。",
+          "topic": "語法與篇章",
+          "source": "self-authored"
+        }
+      ]
+    },
+    "beside": {
+      "kind": "grammar",
+      "senses": [
+        {
+          "pos": "prep.",
+          "meaning": "在……旁邊",
+          "usage": "beside 表空間相鄰；besides 通常表「此外／除了……還」。字尾 s 改變用法，不能當作同詞的複數。"
+        }
+      ],
+      "collocations": [],
+      "grammarPatterns": [
+        {
+          "en": "sit beside someone",
+          "zh": "坐在某人旁邊",
+          "note": "本站整理的文法句型；N、S、V 等為句型位置，非試卷引文。"
+        },
+        {
+          "en": "stand beside a desk",
+          "zh": "站在桌旁",
+          "note": "本站整理的文法句型；N、S、V 等為句型位置，非試卷引文。"
+        },
+        {
+          "en": "a path beside the river",
+          "zh": "河旁的小徑",
+          "note": "本站整理的文法句型；N、S、V 等為句型位置，非試卷引文。"
+        },
+        {
+          "en": "beside the point",
+          "zh": "離題",
+          "note": "固定用法，並非字面位置。"
+        }
+      ],
+      "synonyms": [
+        {
+          "en": "next to",
+          "zh": "在……旁邊",
+          "note": "表位置可接近 beside；仍須確認原句是否是 beside the point 等固定用法。"
+        }
+      ],
+      "idioms": [],
+      "family": [],
+      "forms": [],
+      "usageNote": "beside 表空間相鄰；besides 通常表「此外／除了……還」。字尾 s 改變用法，不能當作同詞的複數。",
+      "references": [
+        {
+          "label": "Cambridge 語法／詞義核對",
+          "url": "https://dictionary.cambridge.org/us/grammar/british-grammar/prepositions_2"
+        }
+      ],
+      "examples": [
+        {
+          "text": "A narrow path beside the river gives local residents a safe place to walk after dinner.",
+          "translationZh": "河旁的小徑提供居民一處晚餐後能安全散步的地方。",
+          "grammar": "beside the river 修飾 path；[S] A narrow path [V] gives。",
+          "writingTip": "用位置片語精準描寫地點。",
+          "topic": "語法與篇章",
+          "source": "self-authored"
+        },
+        {
+          "text": "I sat beside the new student and explained the activity before the teacher divided us into groups.",
+          "translationZh": "我坐在新同學旁邊，在老師分組前向他說明活動。",
+          "grammar": "beside + 名詞表相鄰；sat 與 explained 共用主詞 I。",
+          "writingTip": "用小動作表達歡迎與協助。",
+          "topic": "語法與篇章",
+          "source": "self-authored"
+        }
+      ]
+    },
+    "concerning": {
+      "kind": "grammar",
+      "senses": [
+        {
+          "pos": "prep.",
+          "meaning": "關於；涉及",
+          "usage": "作介系詞時 concerning + 名詞性成分，常見於正式通知；作形容詞「令人擔心的」時則是另一用法。"
+        }
+      ],
+      "collocations": [],
+      "grammarPatterns": [
+        {
+          "en": "questions concerning N",
+          "zh": "關於某事的問題",
+          "note": "本站整理的文法句型；N、S、V 等為句型位置，非試卷引文。"
+        },
+        {
+          "en": "information concerning N",
+          "zh": "有關某事的資訊",
+          "note": "本站整理的文法句型；N、S、V 等為句型位置，非試卷引文。"
+        },
+        {
+          "en": "a notice concerning N",
+          "zh": "涉及某事的通知",
+          "note": "本站整理的文法句型；N、S、V 等為句型位置，非試卷引文。"
+        },
+        {
+          "en": "details concerning N",
+          "zh": "關於某事的細節",
+          "note": "本站整理的文法句型；N、S、V 等為句型位置，非試卷引文。"
+        }
+      ],
+      "synonyms": [
+        {
+          "en": "about",
+          "zh": "關於",
+          "note": "常較中性日常；concerning 在正式資訊中可用，仍須完整名詞片語。"
+        }
+      ],
+      "idioms": [],
+      "family": [],
+      "forms": [],
+      "usageNote": "作介系詞時 concerning + 名詞性成分，常見於正式通知；作形容詞「令人擔心的」時則是另一用法。",
+      "references": [
+        {
+          "label": "Cambridge 語法／詞義核對",
+          "url": "https://dictionary.cambridge.org/us/grammar/british-grammar/prepositions_2"
+        }
+      ],
+      "examples": [
+        {
+          "text": "The school sent parents a notice concerning changes to the bus route during the road repairs.",
+          "translationZh": "學校寄給家長一份通知，說明道路施工期間公車路線的變動。",
+          "grammar": "concerning changes 修飾 notice；不是主句的進行式動詞。",
+          "writingTip": "在正式通知中明確指出主題。",
+          "topic": "語法與篇章",
+          "source": "self-authored"
+        },
+        {
+          "text": "Students raised questions concerning privacy after the new app requested access to their personal photographs.",
+          "translationZh": "新應用程式要求存取私人照片後，學生提出了隱私方面的問題。",
+          "grammar": "questions concerning privacy 是名詞片語；after 子句交代觸發事件。",
+          "writingTip": "以具體事件引出討論議題。",
+          "topic": "語法與篇章",
+          "source": "self-authored"
+        }
+      ]
+    },
+    "cosmetics": {
+      "kind": "lexical",
+      "senses": [
+        {
+          "pos": "n. pl.",
+          "meaning": "化妝品",
+          "usage": "一般以複數形式談化妝品；特定一項可說 a cosmetic product。cosmetic 作形容詞也可能指表面性的。"
+        }
+      ],
+      "collocations": [
+        {
+          "en": "buy cosmetics",
+          "zh": "購買化妝品",
+          "note": "本站整理的用法片段；不是出題頻率。"
+        },
+        {
+          "en": "a cosmetics brand",
+          "zh": "化妝品品牌",
+          "note": "本站整理的用法片段；不是出題頻率。"
+        },
+        {
+          "en": "cosmetics and toiletries",
+          "zh": "化妝品與盥洗用品",
+          "note": "本站整理的用法片段；不是出題頻率。"
+        },
+        {
+          "en": "a range of cosmetics",
+          "zh": "一系列化妝品",
+          "note": "本站整理的用法片段；不是出題頻率。"
+        }
+      ],
+      "grammarPatterns": [],
+      "synonyms": [
+        {
+          "en": "makeup",
+          "zh": "彩妝",
+          "note": "makeup 常是不可數名詞；範圍與 cosmetics 並非每次相同。"
+        }
+      ],
+      "idioms": [],
+      "family": [],
+      "forms": [
+        {
+          "word": "cosmetic",
+          "pos": "adj.",
+          "meaning": "化妝用的；表面性的"
+        },
+        {
+          "word": "a cosmetic product",
+          "pos": "n.",
+          "meaning": "一項化妝產品；product 才是可數中心名詞"
+        }
+      ],
+      "usageNote": "一般以複數形式談化妝品；特定一項可說 a cosmetic product。cosmetic 作形容詞也可能指表面性的。",
+      "references": [
+        {
+          "label": "Cambridge 語法／詞義核對",
+          "url": "https://dictionary.cambridge.org/dictionary/english/cosmetics"
+        }
+      ],
+      "examples": [
+        {
+          "text": "The student compared several cosmetics brands and chose one that clearly listed the ingredients on its products.",
+          "translationZh": "這名學生比較幾個化妝品品牌，選擇了在產品上清楚列出成分的一家。",
+          "grammar": "cosmetics 修飾 brands；that 子句說明選擇條件。",
+          "writingTip": "以可觀察的資訊說明消費選擇。",
+          "topic": "消費與社會",
+          "source": "self-authored"
+        },
+        {
+          "text": "Unused cosmetics were kept in a separate box so the volunteers could sort the donated items safely.",
+          "translationZh": "未使用的化妝品被放在另一個箱子裡，方便志工安全分類捐贈物品。",
+          "grammar": "[S] Unused cosmetics 為複數；were kept 是被動。",
+          "writingTip": "寫出物品管理與分類的具體方法。",
+          "topic": "消費與社會",
+          "source": "self-authored"
+        }
+      ]
+    },
+    "crunchy": {
+      "kind": "lexical",
+      "senses": [
+        {
+          "pos": "adj.",
+          "meaning": "脆的；咬下或壓下時會發出脆響的",
+          "usage": "crunchy 描寫質地和聲音，常談食物；不能只因中文都譯「脆」就和 fragile 隨意互換。"
+        }
+      ],
+      "collocations": [
+        {
+          "en": "crunchy vegetables",
+          "zh": "爽脆的蔬菜",
+          "note": "本站整理的用法片段；不是出題頻率。"
+        },
+        {
+          "en": "a crunchy texture",
+          "zh": "脆口的質地",
+          "note": "本站整理的用法片段；不是出題頻率。"
+        },
+        {
+          "en": "stay crunchy",
+          "zh": "保持脆口",
+          "note": "本站整理的用法片段；不是出題頻率。"
+        },
+        {
+          "en": "crunchy on the outside",
+          "zh": "外層脆脆的",
+          "note": "本站整理的用法片段；不是出題頻率。"
+        }
+      ],
+      "grammarPatterns": [],
+      "synonyms": [
+        {
+          "en": "crispy",
+          "zh": "酥脆的",
+          "note": "常描寫薄而脆的表層；crunchy 更著重咬壓時的質地與聲音。"
+        }
+      ],
+      "idioms": [],
+      "family": [],
+      "forms": [
+        {
+          "word": "crunch",
+          "pos": "v./n.",
+          "meaning": "咬碎或壓碎時發出脆響；脆響"
+        }
+      ],
+      "usageNote": "crunchy 描寫質地和聲音，常談食物；不能只因中文都譯「脆」就和 fragile 隨意互換。",
+      "references": [
+        {
+          "label": "Cambridge 語法／詞義核對",
+          "url": "https://dictionary.cambridge.org/dictionary/english/crunchy"
+        }
+      ],
+      "examples": [
+        {
+          "text": "Adding crunchy vegetables to the sandwich made the simple lunch more interesting without increasing the cost much.",
+          "translationZh": "在三明治加入爽脆蔬菜，讓簡單午餐更有變化，成本也沒有增加太多。",
+          "grammar": "[S] Adding ... 是動名詞片語；made + O + C，C 為 more interesting。",
+          "writingTip": "透過具體口感描寫食物改善。",
+          "topic": "飲食與生活",
+          "source": "self-authored"
+        },
+        {
+          "text": "The crackers remained crunchy because we stored them in a sealed container after opening the package.",
+          "translationZh": "餅乾仍保持脆口，因為開封後我們把它們放在密封容器中。",
+          "grammar": "remained 後的 crunchy 為主詞補語；because 說明保存原因。",
+          "writingTip": "把物品狀態與保存方法連接。",
+          "topic": "飲食與生活",
+          "source": "self-authored"
+        }
+      ]
+    },
+    "during": {
+      "kind": "grammar",
+      "senses": [
+        {
+          "pos": "prep.",
+          "meaning": "在……期間",
+          "usage": "during + 名詞片語交代何時；for + 一段長度交代多久；while + 子句。不要寫 during + S + V。"
+        }
+      ],
+      "collocations": [],
+      "grammarPatterns": [
+        {
+          "en": "during the lesson",
+          "zh": "在課堂期間",
+          "note": "本站整理的文法句型；N、S、V 等為句型位置，非試卷引文。"
+        },
+        {
+          "en": "during the first week",
+          "zh": "在第一週期間",
+          "note": "本站整理的文法句型；N、S、V 等為句型位置，非試卷引文。"
+        },
+        {
+          "en": "during the discussion",
+          "zh": "在討論時",
+          "note": "本站整理的文法句型；N、S、V 等為句型位置，非試卷引文。"
+        },
+        {
+          "en": "during the summer",
+          "zh": "在夏季期間",
+          "note": "本站整理的文法句型；N、S、V 等為句型位置，非試卷引文。"
+        }
+      ],
+      "synonyms": [
+        {
+          "en": "for two hours",
+          "zh": "持續兩小時",
+          "note": "for 表長度；during two hours 通常不是所需結構。"
+        },
+        {
+          "en": "while S + V",
+          "zh": "在……時",
+          "note": "while 可以接完整子句。"
+        }
+      ],
+      "idioms": [],
+      "family": [],
+      "forms": [],
+      "usageNote": "during + 名詞片語交代何時；for + 一段長度交代多久；while + 子句。不要寫 during + S + V。",
+      "references": [
+        {
+          "label": "Cambridge 語法／詞義核對",
+          "url": "https://dictionary.cambridge.org/grammar/british-grammar/during-or-for"
+        }
+      ],
+      "examples": [
+        {
+          "text": "During the class discussion, several students changed their opinions after hearing a different account of the event.",
+          "translationZh": "課堂討論期間，幾名學生在聽到事件的另一種說法後改變了看法。",
+          "grammar": "During the class discussion 是介系詞片語；主句主詞為 several students。",
+          "writingTip": "先定位活動時段，再描寫觀點變化。",
+          "topic": "語法與篇章",
+          "source": "self-authored"
+        },
+        {
+          "text": "Our group measured the water temperature twice during the experiment to check whether the readings stayed consistent.",
+          "translationZh": "我們在實驗期間量了兩次水溫，檢查讀數是否一致。",
+          "grammar": "during the experiment 指事件期間；twice 是次數，不是時長。",
+          "writingTip": "把時間、次數與目的分別寫清楚。",
+          "topic": "語法與篇章",
+          "source": "self-authored"
+        }
+      ]
+    },
+    "else": {
+      "kind": "grammar",
+      "senses": [
+        {
+          "pos": "adv.",
+          "meaning": "其他；另外",
+          "usage": "else 放在 anyone、something、who、what 等後面；所有格可用 someone else’s。不可把它當 other 放在普通名詞前。"
+        }
+      ],
+      "collocations": [],
+      "grammarPatterns": [
+        {
+          "en": "someone else",
+          "zh": "其他人",
+          "note": "本站整理的文法句型；N、S、V 等為句型位置，非試卷引文。"
+        },
+        {
+          "en": "anything else",
+          "zh": "其他東西",
+          "note": "本站整理的文法句型；N、S、V 等為句型位置，非試卷引文。"
+        },
+        {
+          "en": "where else",
+          "zh": "還有哪裡",
+          "note": "本站整理的文法句型；N、S、V 等為句型位置，非試卷引文。"
+        },
+        {
+          "en": "someone else's idea",
+          "zh": "別人的想法",
+          "note": "本站整理的文法句型；N、S、V 等為句型位置，非試卷引文。"
+        }
+      ],
+      "synonyms": [
+        {
+          "en": "other + N",
+          "zh": "其他的……",
+          "note": "other 位於名詞前；else 的位置與結構不同。"
+        }
+      ],
+      "idioms": [],
+      "family": [],
+      "forms": [],
+      "usageNote": "else 放在 anyone、something、who、what 等後面；所有格可用 someone else’s。不可把它當 other 放在普通名詞前。",
+      "references": [
+        {
+          "label": "Cambridge 語法／詞義核對",
+          "url": "https://dictionary.cambridge.org/grammar/british-grammar/else"
+        }
+      ],
+      "examples": [
+        {
+          "text": "Before choosing a topic, we asked what else could be done to make the project useful to our neighbors.",
+          "translationZh": "選題前，我們詢問還能做些什麼，讓計畫對鄰居有用。",
+          "grammar": "what else 中 else 後置；could be done 是被動。",
+          "writingTip": "在規畫時補問還有哪些可行方法。",
+          "topic": "語法與篇章",
+          "source": "self-authored"
+        },
+        {
+          "text": "Someone else had already cleaned the room, so we spent the remaining time preparing the welcome posters.",
+          "translationZh": "已有其他人清好了房間，因此我們利用剩下的時間準備歡迎海報。",
+          "grammar": "Someone else 作主詞；had cleaned 發生在 spent 之前。",
+          "writingTip": "用時間先後說明計畫為何調整。",
+          "topic": "語法與篇章",
+          "source": "self-authored"
+        }
+      ]
+    },
+    "everyone": {
+      "kind": "grammar",
+      "senses": [
+        {
+          "pos": "pron.",
+          "meaning": "每個人；所有人",
+          "usage": "everyone／everybody 作主詞用單數動詞；every one of + 複數名詞強調每個成員。回指人可依語境用 their。"
+        }
+      ],
+      "collocations": [],
+      "grammarPatterns": [
+        {
+          "en": "everyone has N",
+          "zh": "每個人都有……",
+          "note": "本站整理的文法句型；N、S、V 等為句型位置，非試卷引文。"
+        },
+        {
+          "en": "everyone who + V",
+          "zh": "每個……的人",
+          "note": "本站整理的文法句型；N、S、V 等為句型位置，非試卷引文。"
+        },
+        {
+          "en": "not everyone",
+          "zh": "並非每個人",
+          "note": "本站整理的文法句型；N、S、V 等為句型位置，非試卷引文。"
+        },
+        {
+          "en": "everyone else",
+          "zh": "其他所有人",
+          "note": "本站整理的文法句型；N、S、V 等為句型位置，非試卷引文。"
+        }
+      ],
+      "synonyms": [
+        {
+          "en": "all the people",
+          "zh": "所有人",
+          "note": "all + 複數名詞要搭配複數動詞；不能只把 everyone 替換而保留 has。"
+        }
+      ],
+      "idioms": [],
+      "family": [],
+      "forms": [],
+      "usageNote": "everyone／everybody 作主詞用單數動詞；every one of + 複數名詞強調每個成員。回指人可依語境用 their。",
+      "references": [
+        {
+          "label": "Cambridge 語法／詞義核對",
+          "url": "https://dictionary.cambridge.org/us/grammar/british-grammar/pronouns-indefinite-body-one"
+        }
+      ],
+      "examples": [
+        {
+          "text": "Everyone has a different reason for volunteering, but the group shares a commitment to helping the community.",
+          "translationZh": "每個人投入志工工作的理由不同，但團隊都承諾幫助社區。",
+          "grammar": "Everyone 後用 has；but 連接個人差異與共同承諾。",
+          "writingTip": "兼顧個別動機與共同目標。",
+          "topic": "語法與篇章",
+          "source": "self-authored"
+        },
+        {
+          "text": "Not everyone enjoys speaking in public, so our teacher allowed students to contribute through written comments.",
+          "translationZh": "並非每個人都喜歡公開發言，因此老師讓學生透過書面意見參與。",
+          "grammar": "Not everyone 是部分否定，沒有宣稱所有人都不喜歡。",
+          "writingTip": "保留程度詞，避免把部分否定寫成全體否定。",
+          "topic": "語法與篇章",
+          "source": "self-authored"
+        }
+      ]
+    },
+    "everything": {
+      "kind": "grammar",
+      "senses": [
+        {
+          "pos": "pron.",
+          "meaning": "每件事；所有東西",
+          "usage": "everything 作主詞用單數動詞；形容詞可後置，如 everything necessary。範圍仍由上下文界定，不代表世界所有事物。"
+        }
+      ],
+      "collocations": [],
+      "grammarPatterns": [
+        {
+          "en": "everything is ready",
+          "zh": "一切都準備好了",
+          "note": "本站整理的文法句型；N、S、V 等為句型位置，非試卷引文。"
+        },
+        {
+          "en": "everything necessary",
+          "zh": "所有必要的東西",
+          "note": "本站整理的文法句型；N、S、V 等為句型位置，非試卷引文。"
+        },
+        {
+          "en": "everything that + V",
+          "zh": "所有……的事物",
+          "note": "本站整理的文法句型；N、S、V 等為句型位置，非試卷引文。"
+        },
+        {
+          "en": "not everything",
+          "zh": "並非所有東西",
+          "note": "本站整理的文法句型；N、S、V 等為句型位置，非試卷引文。"
+        }
+      ],
+      "synonyms": [
+        {
+          "en": "all the things",
+          "zh": "所有東西",
+          "note": "all the things 是複數主詞；everything 是單數形式。"
+        }
+      ],
+      "idioms": [],
+      "family": [],
+      "forms": [],
+      "usageNote": "everything 作主詞用單數動詞；形容詞可後置，如 everything necessary。範圍仍由上下文界定，不代表世界所有事物。",
+      "references": [
+        {
+          "label": "Cambridge 語法／詞義核對",
+          "url": "https://dictionary.cambridge.org/us/grammar/british-grammar/pronouns-indefinite-body-one"
+        }
+      ],
+      "examples": [
+        {
+          "text": "Everything necessary for the trip was packed the night before, leaving us enough time for breakfast.",
+          "translationZh": "旅行需要的所有物品前一晚就打包好了，讓我們有足夠時間吃早餐。",
+          "grammar": "Everything necessary 是單數主詞，故用 was；necessary 後置。",
+          "writingTip": "用先做好準備說明後續好處。",
+          "topic": "語法與篇章",
+          "source": "self-authored"
+        },
+        {
+          "text": "The team checked everything that might affect safety before opening the new playground to local children.",
+          "translationZh": "團隊在開放新遊戲場給當地孩子前，檢查了所有可能影響安全的事項。",
+          "grammar": "everything 作 checked 的受詞；that 子句限定相關範圍。",
+          "writingTip": "列明檢查範圍，避免無根據地宣稱絕對安全。",
+          "topic": "語法與篇章",
+          "source": "self-authored"
+        }
+      ]
+    },
+    "for": {
+      "kind": "grammar",
+      "senses": [
+        {
+          "pos": "prep./conj.",
+          "meaning": "為了；對……而言；持續……；因為（較正式的連接用法）",
+          "usage": "for + N／V-ing 可表對象、用途或時間長度；目的常用 to V。for 作連接詞與 because 的句法位置不完全相同。"
+        }
+      ],
+      "collocations": [],
+      "grammarPatterns": [
+        {
+          "en": "for three weeks",
+          "zh": "持續三週",
+          "note": "本站整理的文法句型；N、S、V 等為句型位置，非試卷引文。"
+        },
+        {
+          "en": "for students",
+          "zh": "給學生／對學生而言",
+          "note": "本站整理的文法句型；N、S、V 等為句型位置，非試卷引文。"
+        },
+        {
+          "en": "a tool for measuring N",
+          "zh": "量測某物的工具",
+          "note": "本站整理的文法句型；N、S、V 等為句型位置，非試卷引文。"
+        },
+        {
+          "en": "for example",
+          "zh": "例如",
+          "note": "本站整理的文法句型；N、S、V 等為句型位置，非試卷引文。"
+        }
+      ],
+      "synonyms": [
+        {
+          "en": "during",
+          "zh": "在……期間",
+          "note": "during 指事件時段；for + 長度指持續多久。"
+        }
+      ],
+      "idioms": [],
+      "family": [],
+      "forms": [],
+      "usageNote": "for + N／V-ing 可表對象、用途或時間長度；目的常用 to V。for 作連接詞與 because 的句法位置不完全相同。",
+      "references": [
+        {
+          "label": "Cambridge 語法／詞義核對",
+          "url": "https://dictionary.cambridge.org/grammar/british-grammar/during-or-for"
+        }
+      ],
+      "examples": [
+        {
+          "text": "The club collected books for children who had limited access to a library in their neighborhood.",
+          "translationZh": "社團替住家附近不易使用圖書館的孩子募集書籍。",
+          "grammar": "for children 表受益對象；who 子句說明對象的情況。",
+          "writingTip": "明確寫出行動服務的對象。",
+          "topic": "語法與篇章",
+          "source": "self-authored"
+        },
+        {
+          "text": "We practiced the presentation for two weeks so every member could explain the results with confidence.",
+          "translationZh": "我們練習簡報兩週，讓每位成員都能有自信地說明結果。",
+          "grammar": "for two weeks 表持續長度；不是 during two weeks。",
+          "writingTip": "用具體時間與結果呈現準備過程。",
+          "topic": "語法與篇章",
+          "source": "self-authored"
+        }
+      ]
+    },
+    "from": {
+      "kind": "grammar",
+      "senses": [
+        {
+          "pos": "prep.",
+          "meaning": "從；來自；由……起；免於",
+          "usage": "from 的意思取決於整組結構；from A to B 指範圍，prevent N from V-ing 指阻止，不能只逐字翻譯。"
+        }
+      ],
+      "collocations": [],
+      "grammarPatterns": [
+        {
+          "en": "from A to B",
+          "zh": "從 A 到 B",
+          "note": "本站整理的文法句型；N、S、V 等為句型位置，非試卷引文。"
+        },
+        {
+          "en": "learn from mistakes",
+          "zh": "從錯誤學習",
+          "note": "本站整理的文法句型；N、S、V 等為句型位置，非試卷引文。"
+        },
+        {
+          "en": "prevent N from V-ing",
+          "zh": "阻止某人／某物……",
+          "note": "本站整理的文法句型；N、S、V 等為句型位置，非試卷引文。"
+        },
+        {
+          "en": "different from N",
+          "zh": "與……不同",
+          "note": "本站整理的文法句型；N、S、V 等為句型位置，非試卷引文。"
+        }
+      ],
+      "synonyms": [
+        {
+          "en": "since",
+          "zh": "自從",
+          "note": "since 強調時間起點；from 常需在語境中交代起訖。"
+        }
+      ],
+      "idioms": [],
+      "family": [],
+      "forms": [],
+      "usageNote": "from 的意思取決於整組結構；from A to B 指範圍，prevent N from V-ing 指阻止，不能只逐字翻譯。",
+      "references": [
+        {
+          "label": "Cambridge 語法／詞義核對",
+          "url": "https://dictionary.cambridge.org/us/grammar/british-grammar/prepositions_2"
+        }
+      ],
+      "examples": [
+        {
+          "text": "We learned from our mistakes and changed the planting schedule before starting the second round of experiments.",
+          "translationZh": "我們從錯誤學習，開始第二輪實驗前調整了種植時程。",
+          "grammar": "learned from mistakes 是經驗來源；changed 與 learned 並列。",
+          "writingTip": "寫出從失敗得出的具體調整。",
+          "topic": "語法與篇章",
+          "source": "self-authored"
+        },
+        {
+          "text": "The new fence prevents young children from entering the road while they wait for the school bus.",
+          "translationZh": "新圍欄防止年幼孩子在等校車時走進馬路。",
+          "grammar": "prevents + O + from V-ing；from 後不是原形 enter。",
+          "writingTip": "用 prevent 結構說明設施的作用。",
+          "topic": "語法與篇章",
+          "source": "self-authored"
+        }
+      ]
+    },
+    "goods": {
+      "kind": "lexical",
+      "senses": [
+        {
+          "pos": "n. pl.",
+          "meaning": "商品；貨品",
+          "usage": "一般以複數 goods 談商品；不能用 a goods 指一件商品，也不能和形容詞 good 的「好」混淆。"
+        }
+      ],
+      "collocations": [
+        {
+          "en": "consumer goods",
+          "zh": "消費品",
+          "note": "本站整理的用法片段；不是出題頻率。"
+        },
+        {
+          "en": "household goods",
+          "zh": "家用品",
+          "note": "本站整理的用法片段；不是出題頻率。"
+        },
+        {
+          "en": "damaged goods",
+          "zh": "受損商品",
+          "note": "本站整理的用法片段；不是出題頻率。"
+        },
+        {
+          "en": "deliver goods",
+          "zh": "運送貨品",
+          "note": "本站整理的用法片段；不是出題頻率。"
+        }
+      ],
+      "grammarPatterns": [],
+      "synonyms": [
+        {
+          "en": "products",
+          "zh": "產品",
+          "note": "products 可表示製成品；goods 著重商品或貨品，範圍依情境。"
+        }
+      ],
+      "idioms": [],
+      "family": [],
+      "forms": [],
+      "usageNote": "一般以複數 goods 談商品；不能用 a goods 指一件商品，也不能和形容詞 good 的「好」混淆。",
+      "references": [
+        {
+          "label": "Cambridge 語法／詞義核對",
+          "url": "https://dictionary.cambridge.org/dictionary/english/goods"
+        }
+      ],
+      "examples": [
+        {
+          "text": "The shop reduced the price of damaged goods but clearly explained each problem before customers paid.",
+          "translationZh": "商店降低受損商品的價格，但在顧客付款前清楚說明每項問題。",
+          "grammar": "goods 是名詞複數；damaged 修飾商品狀態。",
+          "writingTip": "用資訊透明說明負責任的銷售。",
+          "topic": "消費與永續",
+          "source": "self-authored"
+        },
+        {
+          "text": "Locally produced goods may travel shorter distances, although their overall environmental impact still depends on production methods.",
+          "translationZh": "本地製造的商品可能運送較短距離，但整體環境影響仍取決於製造方法。",
+          "grammar": "[S] goods [V] may travel；although 保留環境主張的限制。",
+          "writingTip": "以 may 與讓步句避免把單一指標當成全部結論。",
+          "topic": "消費與永續",
+          "source": "self-authored"
+        }
+      ]
+    },
+    "how": {
+      "kind": "grammar",
+      "senses": [
+        {
+          "pos": "adv.",
+          "meaning": "如何；多麼；以何種方式",
+          "usage": "間接問句採陳述語序，如 explain how the system works；how to V 指做法，不能保留直接問句的倒裝。"
+        }
+      ],
+      "collocations": [],
+      "grammarPatterns": [
+        {
+          "en": "how S + V",
+          "zh": "如何……（間接問句）",
+          "note": "本站整理的文法句型；N、S、V 等為句型位置，非試卷引文。"
+        },
+        {
+          "en": "how to + V",
+          "zh": "如何做……",
+          "note": "本站整理的文法句型；N、S、V 等為句型位置，非試卷引文。"
+        },
+        {
+          "en": "how + adj. + S + V",
+          "zh": "……有多麼……",
+          "note": "本站整理的文法句型；N、S、V 等為句型位置，非試卷引文。"
+        },
+        {
+          "en": "how much / how many",
+          "zh": "多少（依名詞可數性）",
+          "note": "本站整理的文法句型；N、S、V 等為句型位置，非試卷引文。"
+        }
+      ],
+      "synonyms": [
+        {
+          "en": "what ... like",
+          "zh": "……是什麼樣子",
+          "note": "問特徵與描述時可用；不等同所有 how 的做法用法。"
+        }
+      ],
+      "idioms": [],
+      "family": [],
+      "forms": [],
+      "usageNote": "間接問句採陳述語序，如 explain how the system works；how to V 指做法，不能保留直接問句的倒裝。",
+      "references": [
+        {
+          "label": "Cambridge 語法／詞義核對",
+          "url": "https://dictionary.cambridge.org/grammar/british-grammar/pronouns_2"
+        }
+      ],
+      "examples": [
+        {
+          "text": "The guide explained how the old water system worked and why local families had depended on it.",
+          "translationZh": "導覽員說明舊供水系統如何運作，以及當地家庭為何依靠它。",
+          "grammar": "how 子句為陳述語序 the system worked；沒有 did the system work。",
+          "writingTip": "用兩個並列間接問句說明方法與原因。",
+          "topic": "語法與篇章",
+          "source": "self-authored"
+        },
+        {
+          "text": "Learning how to compare different sources helped me recognize how easily an impressive claim could be misleading.",
+          "translationZh": "學會比較不同來源，幫助我看出看似厲害的主張可能多容易誤導人。",
+          "grammar": "how to compare 表方法；how easily + 陳述語序描述程度。",
+          "writingTip": "把查核能力連到辨認誤導的具體結果。",
+          "topic": "語法與篇章",
+          "source": "self-authored"
+        }
+      ]
+    },
+    "if": {
+      "kind": "grammar",
+      "senses": [
+        {
+          "pos": "conj.",
+          "meaning": "如果；是否",
+          "usage": "區分條件 if 與間接問句的「是否」。一般未來條件用現在式；whether 才能直接接 to V 或放在介系詞後。"
+        }
+      ],
+      "collocations": [],
+      "grammarPatterns": [
+        {
+          "en": "if S + V, S + will V",
+          "zh": "條件與可能結果",
+          "note": "本站整理的文法句型；N、S、V 等為句型位置，非試卷引文。"
+        },
+        {
+          "en": "ask if S + V",
+          "zh": "詢問是否……",
+          "note": "本站整理的文法句型；N、S、V 等為句型位置，非試卷引文。"
+        },
+        {
+          "en": "if necessary",
+          "zh": "如果有必要",
+          "note": "本站整理的文法句型；N、S、V 等為句型位置，非試卷引文。"
+        },
+        {
+          "en": "if so / if not",
+          "zh": "如果如此／如果不如此",
+          "note": "本站整理的文法句型；N、S、V 等為句型位置，非試卷引文。"
+        }
+      ],
+      "synonyms": [
+        {
+          "en": "whether",
+          "zh": "是否",
+          "note": "是否用法常近似，但 whether to V／about whether 不能直接改為 if。"
+        }
+      ],
+      "idioms": [],
+      "family": [],
+      "forms": [],
+      "usageNote": "區分條件 if 與間接問句的「是否」。一般未來條件用現在式；whether 才能直接接 to V 或放在介系詞後。",
+      "references": [
+        {
+          "label": "Cambridge 語法／詞義核對",
+          "url": "https://dictionary.cambridge.org/grammar/british-grammar/if-or-whether"
+        }
+      ],
+      "examples": [
+        {
+          "text": "If the weather improves tomorrow, our class will collect litter along the river before the afternoon activities.",
+          "translationZh": "如果明天天氣好轉，我們班會在下午活動前沿河撿垃圾。",
+          "grammar": "if 子句 improves 用現在式談未來條件；主句用 will collect。",
+          "writingTip": "把行動與必要條件連接。",
+          "topic": "語法與篇章",
+          "source": "self-authored"
+        },
+        {
+          "text": "I asked if the library offered online access because several classmates could not visit after school.",
+          "translationZh": "我詢問圖書館是否提供線上使用，因為幾位同學放學後無法前往。",
+          "grammar": "asked if 是間接是否問句；the library offered 採陳述語序。",
+          "writingTip": "用具體需求說明詢問的原因。",
+          "topic": "語法與篇章",
+          "source": "self-authored"
+        }
+      ]
+    },
+    "including": {
+      "kind": "grammar",
+      "senses": [
+        {
+          "pos": "prep.",
+          "meaning": "包括；包含在內",
+          "usage": "including 後列舉名詞性成分；主詞動詞仍看主要主詞，不被插入的列舉內容改變。include 則是動詞原形。"
+        }
+      ],
+      "collocations": [],
+      "grammarPatterns": [
+        {
+          "en": "including A and B",
+          "zh": "包括 A 與 B",
+          "note": "本站整理的文法句型；N、S、V 等為句型位置，非試卷引文。"
+        },
+        {
+          "en": "several activities, including N",
+          "zh": "幾項活動，包括……",
+          "note": "本站整理的文法句型；N、S、V 等為句型位置，非試卷引文。"
+        },
+        {
+          "en": "including V-ing",
+          "zh": "包括做某事",
+          "note": "本站整理的文法句型；N、S、V 等為句型位置，非試卷引文。"
+        },
+        {
+          "en": "not including N",
+          "zh": "不包含某項",
+          "note": "本站整理的文法句型；N、S、V 等為句型位置，非試卷引文。"
+        }
+      ],
+      "synonyms": [
+        {
+          "en": "such as",
+          "zh": "例如",
+          "note": "such as 舉例；including 明示所列項目包含在範圍內。"
+        }
+      ],
+      "idioms": [],
+      "family": [],
+      "forms": [],
+      "usageNote": "including 後列舉名詞性成分；主詞動詞仍看主要主詞，不被插入的列舉內容改變。include 則是動詞原形。",
+      "references": [
+        {
+          "label": "Cambridge 語法／詞義核對",
+          "url": "https://dictionary.cambridge.org/us/grammar/british-grammar/prepositions_2"
+        }
+      ],
+      "examples": [
+        {
+          "text": "The festival offered several free activities, including a workshop where children learned to repair simple toys.",
+          "translationZh": "節慶提供幾項免費活動，包括讓孩子學習修理簡單玩具的工作坊。",
+          "grammar": "including 引入列舉；where 子句修飾 workshop。",
+          "writingTip": "列出一個具體例子使活動介紹更清楚。",
+          "topic": "語法與篇章",
+          "source": "self-authored"
+        },
+        {
+          "text": "Everyone, including the team leader, was asked to check the safety rules before entering the laboratory.",
+          "translationZh": "每個人，包括組長，都被要求進實驗室前確認安全規則。",
+          "grammar": "主詞為 Everyone，故用 was；including 片語不改主詞數。",
+          "writingTip": "透過 including 強調規則涵蓋誰。",
+          "topic": "語法與篇章",
+          "source": "self-authored"
+        }
+      ]
+    },
+    "into": {
+      "kind": "grammar",
+      "senses": [
+        {
+          "pos": "prep.",
+          "meaning": "進入；變成；分成",
+          "usage": "into 常表移動進入或轉變結果；in 多指位置。選字仍看動詞，不能只靠句子出現移動就強制 into。"
+        }
+      ],
+      "collocations": [],
+      "grammarPatterns": [
+        {
+          "en": "walk into a room",
+          "zh": "走進房間",
+          "note": "本站整理的文法句型；N、S、V 等為句型位置，非試卷引文。"
+        },
+        {
+          "en": "turn N into N",
+          "zh": "把……變成……",
+          "note": "本站整理的文法句型；N、S、V 等為句型位置，非試卷引文。"
+        },
+        {
+          "en": "divide N into groups",
+          "zh": "把……分成組",
+          "note": "本站整理的文法句型；N、S、V 等為句型位置，非試卷引文。"
+        },
+        {
+          "en": "put N into a container",
+          "zh": "把……放入容器",
+          "note": "本站整理的文法句型；N、S、V 等為句型位置，非試卷引文。"
+        }
+      ],
+      "synonyms": [
+        {
+          "en": "in",
+          "zh": "在……裡",
+          "note": "位置通常用 in；put 等動詞後 in／into 可有相近用法。"
+        }
+      ],
+      "idioms": [],
+      "family": [],
+      "forms": [],
+      "usageNote": "into 常表移動進入或轉變結果；in 多指位置。選字仍看動詞，不能只靠句子出現移動就強制 into。",
+      "references": [
+        {
+          "label": "Cambridge 語法／詞義核對",
+          "url": "https://dictionary.cambridge.org/grammar/british-grammar/in-into"
+        }
+      ],
+      "examples": [
+        {
+          "text": "The volunteers turned the empty classroom into a reading space where children could explore books after school.",
+          "translationZh": "志工把空教室改成閱讀空間，讓孩子放學後能探索書本。",
+          "grammar": "turned + O + into N 表轉變結果；不是單純移動位置。",
+          "writingTip": "用 into 指出改善後的具體用途。",
+          "topic": "語法與篇章",
+          "source": "self-authored"
+        },
+        {
+          "text": "We walked into the greenhouse quietly so our footsteps would not interrupt the students recording plant growth.",
+          "translationZh": "我們安靜走進溫室，以免腳步聲打斷記錄植物生長的學生。",
+          "grammar": "walked into 表進入；recording ... 修飾 students。",
+          "writingTip": "用移動方向與目的描寫參訪過程。",
+          "topic": "語法與篇章",
+          "source": "self-authored"
+        }
+      ]
+    },
+    "lest": {
+      "kind": "grammar",
+      "senses": [
+        {
+          "pos": "conj.",
+          "meaning": "唯恐；以免",
+          "usage": "lest 引導要避免的情況，語氣較書面；可見 lest + S + should V 或原形動詞。不要為了中文的「不」自動再加 not。"
+        }
+      ],
+      "collocations": [],
+      "grammarPatterns": [
+        {
+          "en": "lest S + should V",
+          "zh": "唯恐……（should + 原形）",
+          "note": "本站整理的文法句型；N、S、V 等為句型位置，非試卷引文。"
+        },
+        {
+          "en": "lest S + V",
+          "zh": "以免……（可見虛擬原形）",
+          "note": "本站整理的文法句型；N、S、V 等為句型位置，非試卷引文。"
+        },
+        {
+          "en": "take care lest S + V",
+          "zh": "留意以免……",
+          "note": "本站整理的文法句型；N、S、V 等為句型位置，非試卷引文。"
+        },
+        {
+          "en": "lest we forget",
+          "zh": "以免我們忘記",
+          "note": "較正式的提醒用法。"
+        }
+      ],
+      "synonyms": [
+        {
+          "en": "so that ... not",
+          "zh": "為了使……不……",
+          "note": "可用較常見的目的句表達；需重組否定與助動詞。"
+        }
+      ],
+      "idioms": [],
+      "family": [],
+      "forms": [],
+      "usageNote": "lest 引導要避免的情況，語氣較書面；可見 lest + S + should V 或原形動詞。不要為了中文的「不」自動再加 not。",
+      "references": [
+        {
+          "label": "Cambridge 語法／詞義核對",
+          "url": "https://dictionary.cambridge.org/dictionary/english/lest"
+        },
+        {
+          "label": "Cambridge should 與 lest 的用法",
+          "url": "https://dictionary.cambridge.org/dictionary/english/should"
+        }
+      ],
+      "examples": [
+        {
+          "text": "We saved a copy of the survey results lest a sudden computer failure should destroy our only record.",
+          "translationZh": "我們另存一份調查結果，唯恐突發電腦故障毀掉唯一紀錄。",
+          "grammar": "lest + S + should + 原形 destroy，內容是要避免的後果。",
+          "writingTip": "在正式敘述中說明預防措施。",
+          "topic": "語法與篇章",
+          "source": "self-authored"
+        },
+        {
+          "text": "The guide reminded us to stay on the path lest we damage the fragile plants growing beside it.",
+          "translationZh": "導覽員提醒我們留在步道上，以免破壞旁邊生長的脆弱植物。",
+          "grammar": "lest we damage 中 damage 為原形；不是再加 not damage。",
+          "writingTip": "把注意事項連到具體保護對象。",
+          "topic": "語法與篇章",
+          "source": "self-authored"
+        }
+      ]
+    },
+    "media": {
+      "kind": "lexical",
+      "senses": [
+        {
+          "pos": "n.",
+          "meaning": "傳播媒體；傳遞資訊的媒介",
+          "usage": "media 是 medium 的複數形式；談傳播媒體的整體時可見單數或複數搭配，應依語境與文體一致，不只靠字尾判斷。"
+        }
+      ],
+      "collocations": [
+        {
+          "en": "the news media",
+          "zh": "新聞媒體",
+          "note": "本站整理的用法片段；不是出題頻率。"
+        },
+        {
+          "en": "social media",
+          "zh": "社群媒體",
+          "note": "本站整理的用法片段；不是出題頻率。"
+        },
+        {
+          "en": "media coverage",
+          "zh": "媒體報導",
+          "note": "本站整理的用法片段；不是出題頻率。"
+        },
+        {
+          "en": "media literacy",
+          "zh": "媒體素養",
+          "note": "本站整理的用法片段；不是出題頻率。"
+        }
+      ],
+      "grammarPatterns": [],
+      "synonyms": [
+        {
+          "en": "medium",
+          "zh": "一種媒介",
+          "note": "a medium 指個別媒介；media 的群體用法不能機械式換成單數。"
+        }
+      ],
+      "idioms": [],
+      "family": [],
+      "forms": [
+        {
+          "word": "medium",
+          "pos": "n.",
+          "meaning": "單數媒介；例如 a medium of communication"
+        }
+      ],
+      "usageNote": "media 是 medium 的複數形式；談傳播媒體的整體時可見單數或複數搭配，應依語境與文體一致，不只靠字尾判斷。 原詞條 medium/media 的其他 medium 義項仍見原釋義；本專題集中整理傳播媒體用法。",
+      "references": [
+        {
+          "label": "Cambridge 語法／詞義核對",
+          "url": "https://dictionary.cambridge.org/dictionary/english/media?q=media_1"
+        }
+      ],
+      "examples": [
+        {
+          "text": "The news media reported the flood, but our class compared several accounts before accepting the first explanation.",
+          "translationZh": "新聞媒體報導了洪水，但我們班比較多份說法後，才接受最初的解釋。",
+          "grammar": "media 指新聞媒體；but 補出查核資訊的行動。",
+          "writingTip": "說明接收資訊後如何比較證據。",
+          "topic": "媒體與公民",
+          "source": "self-authored"
+        },
+        {
+          "text": "Media literacy helps students recognize misleading headlines and check whether the evidence supports the claims being made.",
+          "translationZh": "媒體素養幫助學生辨認誤導性標題，檢查證據是否支持所提出的主張。",
+          "grammar": "[S] Media literacy 是單數中心名詞 literacy，故用 helps。",
+          "writingTip": "將能力連到可觀察的查核動作。",
+          "topic": "媒體與公民",
+          "source": "self-authored"
+        }
+      ]
+    },
+    "nor": {
+      "kind": "grammar",
+      "senses": [
+        {
+          "pos": "conj.",
+          "meaning": "也不；亦非",
+          "usage": "neither A nor B 連接同類成分；否定主句後以 nor 引出新主句時，常用助動詞倒裝 nor + aux. + S + V。"
+        }
+      ],
+      "collocations": [],
+      "grammarPatterns": [
+        {
+          "en": "neither A nor B",
+          "zh": "A 和 B 都不",
+          "note": "本站整理的文法句型；N、S、V 等為句型位置，非試卷引文。"
+        },
+        {
+          "en": "nor do I",
+          "zh": "我也不……",
+          "note": "本站整理的文法句型；N、S、V 等為句型位置，非試卷引文。"
+        },
+        {
+          "en": "nor can S + V",
+          "zh": "也不能……",
+          "note": "本站整理的文法句型；N、S、V 等為句型位置，非試卷引文。"
+        },
+        {
+          "en": "neither know nor care",
+          "zh": "既不知道也不在意",
+          "note": "本站整理的文法句型；N、S、V 等為句型位置，非試卷引文。"
+        }
+      ],
+      "synonyms": [
+        {
+          "en": "or",
+          "zh": "或；否定中也可連接替代項",
+          "note": "nor 帶否定承接功能，不能在所有 or 的位置使用。"
+        }
+      ],
+      "idioms": [],
+      "family": [],
+      "forms": [],
+      "usageNote": "neither A nor B 連接同類成分；否定主句後以 nor 引出新主句時，常用助動詞倒裝 nor + aux. + S + V。",
+      "references": [
+        {
+          "label": "Cambridge 語法／詞義核對",
+          "url": "https://dictionary.cambridge.org/grammar/british-grammar/conjunctions"
+        }
+      ],
+      "examples": [
+        {
+          "text": "The report provided neither clear evidence nor a convincing explanation for the sudden change in student attendance.",
+          "translationZh": "報告既未提供清楚證據，也未提出學生出席率突然改變的可信解釋。",
+          "grammar": "neither 與 nor 連接兩個並列受詞名詞片語。",
+          "writingTip": "批評資料時指出欠缺的是哪兩項。",
+          "topic": "語法與篇章",
+          "source": "self-authored"
+        },
+        {
+          "text": "I did not share the unverified story, nor did I encourage my friends to spread it online.",
+          "translationZh": "我沒有分享未經查證的故事，也沒有鼓勵朋友在網路上散布。",
+          "grammar": "nor did I encourage 使用助動詞倒裝；encourage 保持原形。",
+          "writingTip": "用 nor 連接兩項明確的否定行動。",
+          "topic": "語法與篇章",
+          "source": "self-authored"
+        }
+      ]
+    },
+    "of": {
+      "kind": "grammar",
+      "senses": [
+        {
+          "pos": "prep.",
+          "meaning": "……的；關於；其中的；以……構成",
+          "usage": "of 的功能取決於整組名詞或搭配；中心名詞決定主詞動詞一致，如 a list of names 的中心是 list。"
+        }
+      ],
+      "collocations": [],
+      "grammarPatterns": [
+        {
+          "en": "a list of N",
+          "zh": "一份……清單",
+          "note": "本站整理的文法句型；N、S、V 等為句型位置，非試卷引文。"
+        },
+        {
+          "en": "one of the + plural N",
+          "zh": "……之中的一個",
+          "note": "本站整理的文法句型；N、S、V 等為句型位置，非試卷引文。"
+        },
+        {
+          "en": "be aware of N",
+          "zh": "知道／留意某事",
+          "note": "本站整理的文法句型；N、S、V 等為句型位置，非試卷引文。"
+        },
+        {
+          "en": "a lack of N",
+          "zh": "缺乏某物",
+          "note": "本站整理的文法句型；N、S、V 等為句型位置，非試卷引文。"
+        }
+      ],
+      "synonyms": [
+        {
+          "en": "from",
+          "zh": "從；由……而來",
+          "note": "來源或轉變的結構可能用 from，不能把所有中文「的」都譯為 of。"
+        }
+      ],
+      "idioms": [],
+      "family": [],
+      "forms": [],
+      "usageNote": "of 的功能取決於整組名詞或搭配；中心名詞決定主詞動詞一致，如 a list of names 的中心是 list。",
+      "references": [
+        {
+          "label": "Cambridge 語法／詞義核對",
+          "url": "https://dictionary.cambridge.org/us/grammar/british-grammar/prepositions_2"
+        }
+      ],
+      "examples": [
+        {
+          "text": "A list of emergency contacts was placed near the door so visitors could find help without delay.",
+          "translationZh": "門邊放著緊急聯絡人清單，讓訪客能及時求助。",
+          "grammar": "主詞中心名詞為 A list，故用 was；of contacts 不是中心。",
+          "writingTip": "用清楚的名詞結構描述安全準備。",
+          "topic": "語法與篇章",
+          "source": "self-authored"
+        },
+        {
+          "text": "One of the students suggested a simpler design that would reduce both material costs and unnecessary waste.",
+          "translationZh": "其中一名學生提出較簡單的設計，能降低材料成本與不必要的浪費。",
+          "grammar": "One of the students 的主詞中心是 One；students 用複數。",
+          "writingTip": "寫出一位成員的具體貢獻。",
+          "topic": "語法與篇章",
+          "source": "self-authored"
+        }
+      ]
+    },
+    "onto": {
+      "kind": "grammar",
+      "senses": [
+        {
+          "pos": "prep.",
+          "meaning": "到……上面；移動至某表面",
+          "usage": "onto 常強調到表面的移動結果，on 常表位置。部分動詞可用兩者，仍須看實際動作與所指位置。"
+        }
+      ],
+      "collocations": [],
+      "grammarPatterns": [
+        {
+          "en": "climb onto a platform",
+          "zh": "爬上平台",
+          "note": "本站整理的文法句型；N、S、V 等為句型位置，非試卷引文。"
+        },
+        {
+          "en": "step onto a bus",
+          "zh": "踏上公車",
+          "note": "本站整理的文法句型；N、S、V 等為句型位置，非試卷引文。"
+        },
+        {
+          "en": "put N onto a table",
+          "zh": "把……放到桌上",
+          "note": "本站整理的文法句型；N、S、V 等為句型位置，非試卷引文。"
+        },
+        {
+          "en": "load N onto a truck",
+          "zh": "把……裝上貨車",
+          "note": "本站整理的文法句型；N、S、V 等為句型位置，非試卷引文。"
+        }
+      ],
+      "synonyms": [
+        {
+          "en": "on",
+          "zh": "在……上",
+          "note": "on 多描述位置；在某些放置／附著用法中與 onto 很接近。"
+        }
+      ],
+      "idioms": [],
+      "family": [],
+      "forms": [],
+      "usageNote": "onto 常強調到表面的移動結果，on 常表位置。部分動詞可用兩者，仍須看實際動作與所指位置。",
+      "references": [
+        {
+          "label": "Cambridge 語法／詞義核對",
+          "url": "https://dictionary.cambridge.org/grammar/british-grammar/on"
+        }
+      ],
+      "examples": [
+        {
+          "text": "The volunteer helped the child climb onto the platform before explaining how the simple machine worked.",
+          "translationZh": "志工幫助孩子爬上平台，再解釋簡單機械如何運作。",
+          "grammar": "helped + O + 原形 climb；onto 指到平台上的方向。",
+          "writingTip": "把動作順序與終點寫清楚。",
+          "topic": "語法與篇章",
+          "source": "self-authored"
+        },
+        {
+          "text": "We loaded the donated boxes onto the truck and checked that none blocked the driver's view.",
+          "translationZh": "我們把捐贈箱子裝上貨車，確認沒有任何箱子擋住駕駛視線。",
+          "grammar": "loaded + O + onto N；onto 指裝載後的位置。",
+          "writingTip": "描寫運送準備並補上安全檢查。",
+          "topic": "語法與篇章",
+          "source": "self-authored"
+        }
+      ]
+    },
+    "pajamas": {
+      "kind": "lexical",
+      "senses": [
+        {
+          "pos": "n. pl.",
+          "meaning": "睡衣；睡衣褲",
+          "usage": "pajamas 為美式拼法，英式常見 pyjamas；pajamas are，但 a pair of pajamas 的中心是 pair，配 is。"
+        }
+      ],
+      "collocations": [
+        {
+          "en": "a pair of pajamas",
+          "zh": "一套睡衣褲",
+          "note": "本站整理的用法片段；不是出題頻率。"
+        },
+        {
+          "en": "wear pajamas",
+          "zh": "穿睡衣",
+          "note": "本站整理的用法片段；不是出題頻率。"
+        },
+        {
+          "en": "change into pajamas",
+          "zh": "換上睡衣",
+          "note": "本站整理的用法片段；不是出題頻率。"
+        },
+        {
+          "en": "cotton pajamas",
+          "zh": "棉質睡衣",
+          "note": "本站整理的用法片段；不是出題頻率。"
+        }
+      ],
+      "grammarPatterns": [],
+      "synonyms": [
+        {
+          "en": "nightwear",
+          "zh": "睡眠穿著的衣物",
+          "note": "nightwear 常為不可數總稱，不直接加 a 表一套睡衣。"
+        }
+      ],
+      "idioms": [],
+      "family": [],
+      "forms": [
+        {
+          "word": "pyjamas",
+          "pos": "n. pl.",
+          "meaning": "常見英式拼法"
+        },
+        {
+          "word": "a pair of pajamas",
+          "pos": "n.",
+          "meaning": "以 pair 表示一套；主詞中心為 pair"
+        }
+      ],
+      "usageNote": "pajamas 為美式拼法，英式常見 pyjamas；pajamas are，但 a pair of pajamas 的中心是 pair，配 is。",
+      "references": [
+        {
+          "label": "Cambridge 語法／詞義核對",
+          "url": "https://dictionary.cambridge.org/dictionary/english/pajamas?topic=nightwear"
+        }
+      ],
+      "examples": [
+        {
+          "text": "My pajamas were still damp after washing, so I wore another pair before going to bed.",
+          "translationZh": "我的睡衣洗後仍有點濕，因此睡前換穿另一套。",
+          "grammar": "My pajamas 為複數主詞，故用 were；another pair 指另一套。",
+          "writingTip": "用狀態與處理方式描述生活小事。",
+          "topic": "生活與關懷",
+          "source": "self-authored"
+        },
+        {
+          "text": "A pair of soft pajamas was included in the bag that volunteers prepared for the child.",
+          "translationZh": "志工替孩子準備的袋子裡放了一套柔軟睡衣。",
+          "grammar": "主詞中心名詞為 pair，故用 was；pajamas 在 of 片語中。",
+          "writingTip": "比較 pair 與 pajamas 的動詞一致。",
+          "topic": "生活與關懷",
+          "source": "self-authored"
+        }
+      ]
+    },
+    "per": {
+      "kind": "grammar",
+      "senses": [
+        {
+          "pos": "prep.",
+          "meaning": "每；以每……為單位",
+          "usage": "per + 單位名詞表比率，例如 per person／per hour；先核對分母單位，不能把每人費用當總費用。"
+        }
+      ],
+      "collocations": [],
+      "grammarPatterns": [
+        {
+          "en": "per person",
+          "zh": "每人",
+          "note": "本站整理的文法句型；N、S、V 等為句型位置，非試卷引文。"
+        },
+        {
+          "en": "per hour",
+          "zh": "每小時",
+          "note": "本站整理的文法句型；N、S、V 等為句型位置，非試卷引文。"
+        },
+        {
+          "en": "per day",
+          "zh": "每天",
+          "note": "本站整理的文法句型；N、S、V 等為句型位置，非試卷引文。"
+        },
+        {
+          "en": "per kilometer",
+          "zh": "每公里",
+          "note": "本站整理的文法句型；N、S、V 等為句型位置，非試卷引文。"
+        }
+      ],
+      "synonyms": [
+        {
+          "en": "a day / an hour",
+          "zh": "每天／每小時",
+          "note": "a 或 an 可用於一些比率表達；仍需搭配金額或次數。"
+        }
+      ],
+      "idioms": [],
+      "family": [],
+      "forms": [],
+      "usageNote": "per + 單位名詞表比率，例如 per person／per hour；先核對分母單位，不能把每人費用當總費用。",
+      "references": [
+        {
+          "label": "Cambridge 語法／詞義核對",
+          "url": "https://dictionary.cambridge.org/dictionary/english/per?q=per"
+        }
+      ],
+      "examples": [
+        {
+          "text": "The museum charges a small fee per person, but students with valid identification can enter for free.",
+          "translationZh": "博物館按人收取少量費用，但持有效證件的學生可免費入場。",
+          "grammar": "per person 指每人的計費單位；but 子句列出例外。",
+          "writingTip": "說明費用時同時標示單位與適用對象。",
+          "topic": "語法與篇章",
+          "source": "self-authored"
+        },
+        {
+          "text": "Our class reduced paper use from ten sheets per student to six after switching to shared digital notes.",
+          "translationZh": "改用共用數位筆記後，我們班每人用紙量由十張降至六張。",
+          "grammar": "ten sheets per student 的分母是每位學生；from ... to ... 表改變。",
+          "writingTip": "用正確單位與前後數字描述改善。",
+          "topic": "語法與篇章",
+          "source": "self-authored"
+        }
+      ]
+    },
+    "regarding": {
+      "kind": "grammar",
+      "senses": [
+        {
+          "pos": "prep.",
+          "meaning": "關於；有關",
+          "usage": "regarding 作介系詞接名詞性成分，用於正式訊息；regard 作動詞的 regard A as B 是另一組結構。"
+        }
+      ],
+      "collocations": [],
+      "grammarPatterns": [
+        {
+          "en": "questions regarding N",
+          "zh": "關於……的問題",
+          "note": "本站整理的文法句型；N、S、V 等為句型位置，非試卷引文。"
+        },
+        {
+          "en": "information regarding N",
+          "zh": "有關……的資訊",
+          "note": "本站整理的文法句型；N、S、V 等為句型位置，非試卷引文。"
+        },
+        {
+          "en": "a decision regarding N",
+          "zh": "關於……的決定",
+          "note": "本站整理的文法句型；N、S、V 等為句型位置，非試卷引文。"
+        },
+        {
+          "en": "regarding the schedule",
+          "zh": "關於時程",
+          "note": "本站整理的文法句型；N、S、V 等為句型位置，非試卷引文。"
+        }
+      ],
+      "synonyms": [
+        {
+          "en": "with regard to N",
+          "zh": "關於……",
+          "note": "固定片語；regard 在此通常不加 s，不額外疊加 regarding。"
+        }
+      ],
+      "idioms": [],
+      "family": [],
+      "forms": [],
+      "usageNote": "regarding 作介系詞接名詞性成分，用於正式訊息；regard 作動詞的 regard A as B 是另一組結構。",
+      "references": [
+        {
+          "label": "Cambridge 語法／詞義核對",
+          "url": "https://dictionary.cambridge.org/us/grammar/british-grammar/prepositions_2"
+        }
+      ],
+      "examples": [
+        {
+          "text": "Parents received detailed information regarding the new timetable before the school changed its afternoon bus service.",
+          "translationZh": "學校調整下午校車服務前，家長收到了新時刻表的詳細資訊。",
+          "grammar": "regarding the new timetable 修飾 information；information 不加複數 s。",
+          "writingTip": "在通知中交代主題與時間先後。",
+          "topic": "語法與篇章",
+          "source": "self-authored"
+        },
+        {
+          "text": "We asked several questions regarding the survey design because the original report did not explain its sample clearly.",
+          "translationZh": "我們提出幾個關於調查設計的問題，因為原報告沒有清楚說明樣本。",
+          "grammar": "questions regarding ... 是名詞片語；because 說明詢問理由。",
+          "writingTip": "把問題聚焦在資料不足的具體環節。",
+          "topic": "語法與篇章",
+          "source": "self-authored"
+        }
+      ]
+    },
+    "shall": {
+      "kind": "grammar",
+      "senses": [
+        {
+          "pos": "aux.",
+          "meaning": "將；用於提議、詢問或正式規定",
+          "usage": "shall + 原形動詞；Shall I／Shall we 常用來詢問提議，不一定只是未來。正式規定中的 shall 另有要求意味。"
+        }
+      ],
+      "collocations": [],
+      "grammarPatterns": [
+        {
+          "en": "Shall we + V?",
+          "zh": "我們要不要……？",
+          "note": "本站整理的文法句型；N、S、V 等為句型位置，非試卷引文。"
+        },
+        {
+          "en": "Shall I + V?",
+          "zh": "要不要我……？",
+          "note": "本站整理的文法句型；N、S、V 等為句型位置，非試卷引文。"
+        },
+        {
+          "en": "we shall + V",
+          "zh": "我們將……（較正式）",
+          "note": "本站整理的文法句型；N、S、V 等為句型位置，非試卷引文。"
+        },
+        {
+          "en": "shall not + V",
+          "zh": "不得／將不……（依語境）",
+          "note": "本站整理的文法句型；N、S、V 等為句型位置，非試卷引文。"
+        }
+      ],
+      "synonyms": [
+        {
+          "en": "will",
+          "zh": "將；願意",
+          "note": "談未來時常較中性常見；提議 Shall we ...? 不能全都逐字換為 Will we ...?。"
+        }
+      ],
+      "idioms": [],
+      "family": [],
+      "forms": [],
+      "usageNote": "shall + 原形動詞；Shall I／Shall we 常用來詢問提議，不一定只是未來。正式規定中的 shall 另有要求意味。",
+      "references": [
+        {
+          "label": "Cambridge 語法／詞義核對",
+          "url": "https://dictionary.cambridge.org/grammar/british-grammar/future-will"
+        }
+      ],
+      "examples": [
+        {
+          "text": "Shall we invite the younger students to test our game before presenting it at the school fair?",
+          "translationZh": "我們要不要邀請低年級學生在園遊會展示前測試遊戲？",
+          "grammar": "Shall we + 原形 invite 表提議；不是 shall to invite。",
+          "writingTip": "用清楚的建議句邀請團隊採取行動。",
+          "topic": "語法與篇章",
+          "source": "self-authored"
+        },
+        {
+          "text": "We shall review the feedback carefully before deciding whether the new club should continue next semester.",
+          "translationZh": "我們將仔細檢視回饋，再決定新社團下學期是否應繼續。",
+          "grammar": "shall review 是較正式的未來表達；whether 引入是否決策。",
+          "writingTip": "在正式計畫中指出下一步如何決定。",
+          "topic": "語法與篇章",
+          "source": "self-authored"
+        }
+      ]
+    },
+    "she": {
+      "kind": "grammar",
+      "senses": [
+        {
+          "pos": "pron.",
+          "meaning": "她；女性第三人稱主格",
+          "usage": "she 作主詞，her 可作受詞或所有格限定詞，hers 可獨立表所有，herself 表反身／強調；先看句中位置。"
+        }
+      ],
+      "collocations": [],
+      "grammarPatterns": [
+        {
+          "en": "she + singular V",
+          "zh": "她……（第三人稱單數）",
+          "note": "本站整理的文法句型；N、S、V 等為句型位置，非試卷引文。"
+        },
+        {
+          "en": "give her N",
+          "zh": "給她某物",
+          "note": "本站整理的文法句型；N、S、V 等為句型位置，非試卷引文。"
+        },
+        {
+          "en": "her + N",
+          "zh": "她的……",
+          "note": "本站整理的文法句型；N、S、V 等為句型位置，非試卷引文。"
+        },
+        {
+          "en": "by herself",
+          "zh": "她獨自／靠自己",
+          "note": "本站整理的文法句型；N、S、V 等為句型位置，非試卷引文。"
+        }
+      ],
+      "synonyms": [
+        {
+          "en": "her / hers",
+          "zh": "她／她的",
+          "note": "her book 與 the book is hers 結構不同，hers 後不再接 book。"
+        }
+      ],
+      "idioms": [],
+      "family": [],
+      "forms": [
+        {
+          "word": "her",
+          "pos": "pron./adj.",
+          "meaning": "受格；接名詞時是所有格限定詞"
+        },
+        {
+          "word": "hers",
+          "pos": "pron.",
+          "meaning": "所有格代名詞，獨立代替名詞片語"
+        },
+        {
+          "word": "herself",
+          "pos": "pron.",
+          "meaning": "反身或強調本人"
+        }
+      ],
+      "usageNote": "she 作主詞，her 可作受詞或所有格限定詞，hers 可獨立表所有，herself 表反身／強調；先看句中位置。",
+      "references": [
+        {
+          "label": "Cambridge 語法／詞義核對",
+          "url": "https://dictionary.cambridge.org/grammar/british-grammar/possessive-pronouns"
+        }
+      ],
+      "examples": [
+        {
+          "text": "She explained her idea clearly, and the group gave her enough time to answer questions about the design.",
+          "translationZh": "她清楚說明自己的想法，團隊也給她足夠時間回答設計方面的問題。",
+          "grammar": "She 是主詞；her idea 中 her 表所有；gave her 中 her 為受詞。",
+          "writingTip": "同一句核對主格、受格與所有格位置。",
+          "topic": "語法與篇章",
+          "source": "self-authored"
+        },
+        {
+          "text": "Although she prepared the poster herself, her classmates helped check whether the information was accurate.",
+          "translationZh": "雖然她自己製作海報，同學們仍協助檢查資訊是否正確。",
+          "grammar": "she 是 prepared 的主詞；herself 強調本人完成，非另一個人。",
+          "writingTip": "描寫個人投入與團隊協助。",
+          "topic": "語法與篇章",
+          "source": "self-authored"
+        }
+      ]
+    },
+    "since": {
+      "kind": "grammar",
+      "senses": [
+        {
+          "pos": "conj./prep./adv.",
+          "meaning": "自從；從……以來；因為",
+          "usage": "時間用法指起點，for 指長度；表原因時 since 不是時間標記。時態須按主句事件與持續情況判斷。"
+        }
+      ],
+      "collocations": [],
+      "grammarPatterns": [
+        {
+          "en": "since last year",
+          "zh": "自去年以來",
+          "note": "本站整理的文法句型；N、S、V 等為句型位置，非試卷引文。"
+        },
+        {
+          "en": "since S + past V",
+          "zh": "自從……之後",
+          "note": "本站整理的文法句型；N、S、V 等為句型位置，非試卷引文。"
+        },
+        {
+          "en": "ever since",
+          "zh": "從那時起一直",
+          "note": "本站整理的文法句型；N、S、V 等為句型位置，非試卷引文。"
+        },
+        {
+          "en": "since S + V, S + V",
+          "zh": "因為……，所以……",
+          "note": "本站整理的文法句型；N、S、V 等為句型位置，非試卷引文。"
+        }
+      ],
+      "synonyms": [
+        {
+          "en": "for a year",
+          "zh": "持續一年",
+          "note": "for 指期間長度，不是 since 的起點。"
+        },
+        {
+          "en": "because",
+          "zh": "因為",
+          "note": "原因用法可接近；但不能替換時間 since。"
+        }
+      ],
+      "idioms": [],
+      "family": [],
+      "forms": [],
+      "usageNote": "時間用法指起點，for 指長度；表原因時 since 不是時間標記。時態須按主句事件與持續情況判斷。",
+      "references": [
+        {
+          "label": "Cambridge 語法／詞義核對",
+          "url": "https://dictionary.cambridge.org/grammar/british-grammar/since?q=since"
+        }
+      ],
+      "examples": [
+        {
+          "text": "Our class has used reusable bottles since last year, and the amount of plastic waste has fallen.",
+          "translationZh": "我們班自去年起使用可重複使用的水瓶，塑膠垃圾量已減少。",
+          "grammar": "since last year 是時間起點；has used 表從過去連到現在。",
+          "writingTip": "用 since 交代行動持續的起點。",
+          "topic": "語法與篇章",
+          "source": "self-authored"
+        },
+        {
+          "text": "Since the sample included only volunteers, we avoided claiming that its results represented the whole school.",
+          "translationZh": "因為樣本只包含自願參與者，我們避免宣稱結果代表全校。",
+          "grammar": "Since 在此表原因；不表示「自從樣本包含」。",
+          "writingTip": "用原因句說明推論範圍的限制。",
+          "topic": "語法與篇章",
+          "source": "self-authored"
+        }
+      ]
+    },
+    "something": {
+      "kind": "grammar",
+      "senses": [
+        {
+          "pos": "pron.",
+          "meaning": "某件事；某樣東西",
+          "usage": "something 作主詞用單數動詞；形容詞後置，如 something meaningful。something to V 可表示要做或可做的事。"
+        }
+      ],
+      "collocations": [],
+      "grammarPatterns": [
+        {
+          "en": "something useful",
+          "zh": "有用的東西",
+          "note": "本站整理的文法句型；N、S、V 等為句型位置，非試卷引文。"
+        },
+        {
+          "en": "something to discuss",
+          "zh": "要討論的事情",
+          "note": "本站整理的文法句型；N、S、V 等為句型位置，非試卷引文。"
+        },
+        {
+          "en": "something else",
+          "zh": "其他事物",
+          "note": "本站整理的文法句型；N、S、V 等為句型位置，非試卷引文。"
+        },
+        {
+          "en": "something that + V",
+          "zh": "某種……的事物",
+          "note": "本站整理的文法句型；N、S、V 等為句型位置，非試卷引文。"
+        }
+      ],
+      "synonyms": [
+        {
+          "en": "anything",
+          "zh": "任何事物",
+          "note": "不限範圍或疑問否定常用 anything；something 不等於所有事物。"
+        }
+      ],
+      "idioms": [],
+      "family": [],
+      "forms": [],
+      "usageNote": "something 作主詞用單數動詞；形容詞後置，如 something meaningful。something to V 可表示要做或可做的事。",
+      "references": [
+        {
+          "label": "Cambridge 語法／詞義核對",
+          "url": "https://dictionary.cambridge.org/us/grammar/british-grammar/pronouns-indefinite-body-one"
+        }
+      ],
+      "examples": [
+        {
+          "text": "We wanted to create something useful for elderly residents rather than a display that would soon be forgotten.",
+          "translationZh": "我們想做對年長居民有用的東西，而不是很快就被遺忘的展示品。",
+          "grammar": "useful 放在 something 後面；rather than 連接對照的名詞片語。",
+          "writingTip": "用具體受益對象凸顯計畫價值。",
+          "topic": "語法與篇章",
+          "source": "self-authored"
+        },
+        {
+          "text": "Something unexpected happened during the experiment, so we recorded the change instead of ignoring it.",
+          "translationZh": "實驗時發生了意外情況，因此我們記錄變化，而沒有忽略。",
+          "grammar": "Something unexpected 作單數主詞；unexpected 為後置形容詞。",
+          "writingTip": "呈現面對異常時的負責任做法。",
+          "topic": "語法與篇章",
+          "source": "self-authored"
+        }
+      ]
+    },
+    "telecommunications": {
+      "kind": "lexical",
+      "senses": [
+        {
+          "pos": "n.",
+          "meaning": "電信；遠距通訊及其產業",
+          "usage": "字尾為 s，但指通訊技術或產業整體時可作不可數領域名詞；若中心名詞是 services／networks，動詞依中心名詞判斷。"
+        }
+      ],
+      "collocations": [
+        {
+          "en": "the telecommunications industry",
+          "zh": "電信產業",
+          "note": "本站整理的用法片段；不是出題頻率。"
+        },
+        {
+          "en": "telecommunications services",
+          "zh": "電信服務",
+          "note": "本站整理的用法片段；不是出題頻率。"
+        },
+        {
+          "en": "telecommunications networks",
+          "zh": "通訊網路",
+          "note": "本站整理的用法片段；不是出題頻率。"
+        },
+        {
+          "en": "invest in telecommunications",
+          "zh": "投資電信建設",
+          "note": "本站整理的用法片段；不是出題頻率。"
+        }
+      ],
+      "grammarPatterns": [],
+      "synonyms": [
+        {
+          "en": "communication",
+          "zh": "溝通；通訊",
+          "note": "範圍更廣，telecommunications 著重遠距訊息傳遞。"
+        }
+      ],
+      "idioms": [],
+      "family": [],
+      "forms": [],
+      "usageNote": "字尾為 s，但指通訊技術或產業整體時可作不可數領域名詞；若中心名詞是 services／networks，動詞依中心名詞判斷。",
+      "references": [
+        {
+          "label": "Cambridge 語法／詞義核對",
+          "url": "https://dictionary.cambridge.org/dictionary/english/telecommunication"
+        }
+      ],
+      "examples": [
+        {
+          "text": "Reliable telecommunications services help remote communities contact hospitals when severe weather makes the mountain roads unsafe.",
+          "translationZh": "可靠的電信服務幫助偏遠社區在惡劣天候使山路不安全時聯絡醫院。",
+          "grammar": "主詞中心為 services，故用 help；telecommunications 修飾 services。",
+          "writingTip": "把技術服務連到具體社區需求。",
+          "topic": "科技與社區",
+          "source": "self-authored"
+        },
+        {
+          "text": "The island invested in telecommunications so residents could receive urgent warnings even when ferry services were suspended.",
+          "translationZh": "島上投資電信建設，讓居民即使渡輪停駛也能接收緊急警報。",
+          "grammar": "in telecommunications 指建設領域；so 子句交代目的。",
+          "writingTip": "用可觀察的功能說明建設價值。",
+          "topic": "科技與社區",
+          "source": "self-authored"
+        }
+      ]
+    },
+    "than": {
+      "kind": "grammar",
+      "senses": [
+        {
+          "pos": "conj./prep.",
+          "meaning": "比；用於比較與排除的結構",
+          "usage": "than 接比較基準，先確認兩側比較的是同一項目。rather than 表取捨，other than 表排除，不能只看都有 than。"
+        }
+      ],
+      "collocations": [],
+      "grammarPatterns": [
+        {
+          "en": "more ... than ...",
+          "zh": "比……更……",
+          "note": "本站整理的文法句型；N、S、V 等為句型位置，非試卷引文。"
+        },
+        {
+          "en": "less ... than ...",
+          "zh": "比……更少／不那麼……",
+          "note": "本站整理的文法句型；N、S、V 等為句型位置，非試卷引文。"
+        },
+        {
+          "en": "rather than + N / V-ing",
+          "zh": "而不是……",
+          "note": "本站整理的文法句型；N、S、V 等為句型位置，非試卷引文。"
+        },
+        {
+          "en": "other than + N",
+          "zh": "除了……以外",
+          "note": "本站整理的文法句型；N、S、V 等為句型位置，非試卷引文。"
+        }
+      ],
+      "synonyms": [
+        {
+          "en": "then",
+          "zh": "接著；那麼",
+          "note": "then 表時間或推進，並非比較詞 than。"
+        }
+      ],
+      "idioms": [],
+      "family": [],
+      "forms": [],
+      "usageNote": "than 接比較基準，先確認兩側比較的是同一項目。rather than 表取捨，other than 表排除，不能只看都有 than。",
+      "references": [
+        {
+          "label": "Cambridge 語法／詞義核對",
+          "url": "https://dictionary.cambridge.org/grammar/british-grammar/conjunctions"
+        }
+      ],
+      "examples": [
+        {
+          "text": "The reusable bag lasted longer than the paper one, although it required more resources to produce.",
+          "translationZh": "可重複使用的袋子比紙袋耐用，但製造它需要較多資源。",
+          "grammar": "than the paper one 比較同類袋子；although 補上另一面。",
+          "writingTip": "比較同一指標，同時保留重要限制。",
+          "topic": "語法與篇章",
+          "source": "self-authored"
+        },
+        {
+          "text": "Rather than blaming others for the delay, our group revised the schedule and divided the remaining tasks.",
+          "translationZh": "我們團隊沒有因延誤責怪別人，而是修改時程並分配剩下的工作。",
+          "grammar": "rather than + V-ing；revised 與 divided 為主句並列動詞。",
+          "writingTip": "用取捨句呈現解決問題的做法。",
+          "topic": "語法與篇章",
+          "source": "self-authored"
+        }
+      ]
+    },
+    "that": {
+      "kind": "grammar",
+      "senses": [
+        {
+          "pos": "conj./pron./adj.",
+          "meaning": "那個；用於內容子句或限定關係子句",
+          "usage": "分辨 that 的功能：內容子句通常完整；關係代名詞 that 在子句中占主詞或受詞位置，且不用於逗號後的非限定關係子句。"
+        }
+      ],
+      "collocations": [],
+      "grammarPatterns": [
+        {
+          "en": "believe that S + V",
+          "zh": "相信……（內容子句）",
+          "note": "本站整理的文法句型；N、S、V 等為句型位置，非試卷引文。"
+        },
+        {
+          "en": "the N that + V",
+          "zh": "……的事物（that 作子句主詞）",
+          "note": "本站整理的文法句型；N、S、V 等為句型位置，非試卷引文。"
+        },
+        {
+          "en": "the N that S + V",
+          "zh": "……的事物（that 作子句受詞）",
+          "note": "本站整理的文法句型；N、S、V 等為句型位置，非試卷引文。"
+        },
+        {
+          "en": "that + singular N",
+          "zh": "那個……",
+          "note": "本站整理的文法句型；N、S、V 等為句型位置，非試卷引文。"
+        }
+      ],
+      "synonyms": [
+        {
+          "en": "which",
+          "zh": "關係代名詞：事物",
+          "note": "which 可用於非限定關係子句；that 不能放在該逗號後取代 which。"
+        }
+      ],
+      "idioms": [],
+      "family": [],
+      "forms": [
+        {
+          "word": "those",
+          "pos": "pron./adj.",
+          "meaning": "複數指示形式；只對應「那個／那些」的用法"
+        }
+      ],
+      "usageNote": "分辨 that 的功能：內容子句通常完整；關係代名詞 that 在子句中占主詞或受詞位置，且不用於逗號後的非限定關係子句。",
+      "references": [
+        {
+          "label": "Cambridge 語法／詞義核對",
+          "url": "https://dictionary.cambridge.org/us/grammar/british-grammar/relative-pronouns/"
+        }
+      ],
+      "examples": [
+        {
+          "text": "The report showed that the new route saved time for students who traveled from the eastern district.",
+          "translationZh": "報告顯示，新路線替從東區通學的學生節省了時間。",
+          "grammar": "that 引出 showed 的內容；the new route saved time 是完整子句。",
+          "writingTip": "將結論與報告來源連接。",
+          "topic": "語法與篇章",
+          "source": "self-authored"
+        },
+        {
+          "text": "The garden that our class created behind the library now provides a quiet place for everyone.",
+          "translationZh": "我們班在圖書館後方打造的花園，如今為大家提供安靜的場所。",
+          "grammar": "that 作 created 的受詞；主句中心主詞 garden，動詞 provides。",
+          "writingTip": "用限定關係子句辨識具體地點。",
+          "topic": "語法與篇章",
+          "source": "self-authored"
+        }
+      ]
+    },
+    "the": {
+      "kind": "grammar",
+      "senses": [
+        {
+          "pos": "art.",
+          "meaning": "定冠詞：指可辨認或特定的事物",
+          "usage": "the 使名詞指向語境可辨識的對象；首次提及不一定用 a，泛指複數也不一定用 the。看讀者能否知道所指。"
+        }
+      ],
+      "collocations": [],
+      "grammarPatterns": [
+        {
+          "en": "the + known N",
+          "zh": "語境已知的事物",
+          "note": "本站整理的文法句型；N、S、V 等為句型位置，非試卷引文。"
+        },
+        {
+          "en": "the + superlative + N",
+          "zh": "最高級名詞片語",
+          "note": "本站整理的文法句型；N、S、V 等為句型位置，非試卷引文。"
+        },
+        {
+          "en": "the N of N",
+          "zh": "由後方資訊界定的特定事物",
+          "note": "本站整理的文法句型；N、S、V 等為句型位置，非試卷引文。"
+        },
+        {
+          "en": "the same + N",
+          "zh": "相同的事物",
+          "note": "本站整理的文法句型；N、S、V 等為句型位置，非試卷引文。"
+        }
+      ],
+      "synonyms": [
+        {
+          "en": "a / an",
+          "zh": "不定冠詞",
+          "note": "引入一個未特定辨識的可數事物；a／an 依起始發音決定。"
+        }
+      ],
+      "idioms": [],
+      "family": [],
+      "forms": [],
+      "usageNote": "the 使名詞指向語境可辨識的對象；首次提及不一定用 a，泛指複數也不一定用 the。看讀者能否知道所指。",
+      "references": [
+        {
+          "label": "Cambridge 語法／詞義核對",
+          "url": "https://dictionary.cambridge.org/grammar/british-grammar/a-an-the"
+        }
+      ],
+      "examples": [
+        {
+          "text": "A student found a lost wallet near the library, and the wallet was returned to its owner.",
+          "translationZh": "一名學生在圖書館附近找到遺失的錢包，後來錢包被交還失主。",
+          "grammar": "首次 a wallet；再次 the wallet 回指前文可辨識的同一物。",
+          "writingTip": "用冠詞建立新資訊與已知資訊的承接。",
+          "topic": "語法與篇章",
+          "source": "self-authored"
+        },
+        {
+          "text": "The information on the notice board helped new students understand where to go on their first day.",
+          "translationZh": "佈告欄上的資訊幫助新生了解第一天應該前往哪裡。",
+          "grammar": "The information 被 on the notice board 限定；information 不可數，仍可用 the。",
+          "writingTip": "利用修飾語讓特定資訊清楚可辨。",
+          "topic": "語法與篇章",
+          "source": "self-authored"
+        }
+      ]
+    },
+    "these": {
+      "kind": "grammar",
+      "senses": [
+        {
+          "pos": "pron./adj.",
+          "meaning": "這些；指示複數的人或物",
+          "usage": "these 接複數名詞或獨立代替複數名詞片語；these are／these ideas，而非 these is。與 this 的數不同。"
+        }
+      ],
+      "collocations": [],
+      "grammarPatterns": [
+        {
+          "en": "these + plural N",
+          "zh": "這些……",
+          "note": "本站整理的文法句型；N、S、V 等為句型位置，非試卷引文。"
+        },
+        {
+          "en": "these are N",
+          "zh": "這些是……",
+          "note": "本站整理的文法句型；N、S、V 等為句型位置，非試卷引文。"
+        },
+        {
+          "en": "one of these + plural N",
+          "zh": "這些……之中的一個",
+          "note": "本站整理的文法句型；N、S、V 等為句型位置，非試卷引文。"
+        },
+        {
+          "en": "these days",
+          "zh": "近來；如今",
+          "note": "本站整理的文法句型；N、S、V 等為句型位置，非試卷引文。"
+        }
+      ],
+      "synonyms": [
+        {
+          "en": "this",
+          "zh": "這個／這項",
+          "note": "this 常搭單數或不可數名詞；不能只換字而保留複數名詞。"
+        }
+      ],
+      "idioms": [],
+      "family": [],
+      "forms": [
+        {
+          "word": "this",
+          "pos": "pron./adj.",
+          "meaning": "單數指示形式"
+        }
+      ],
+      "usageNote": "these 接複數名詞或獨立代替複數名詞片語；these are／these ideas，而非 these is。與 this 的數不同。",
+      "references": [
+        {
+          "label": "Cambridge 語法／詞義核對",
+          "url": "https://dictionary.cambridge.org/grammar/british-grammar/this-that-these-"
+        }
+      ],
+      "examples": [
+        {
+          "text": "These suggestions are practical, but we still need to check whether the school can afford the changes.",
+          "translationZh": "這些建議很實際，但我們仍須確認學校是否負擔得起這些改變。",
+          "grammar": "These suggestions 作複數主詞，故用 are；whether 子句是待核對事項。",
+          "writingTip": "肯定建議時仍保留資源限制。",
+          "topic": "語法與篇章",
+          "source": "self-authored"
+        },
+        {
+          "text": "One of these photographs shows how the riverbank looked before local volunteers began the cleanup project.",
+          "translationZh": "這些照片中的一張顯示志工開始清理計畫前河岸的樣子。",
+          "grammar": "主詞中心是 One，故用 shows；these photographs 保持複數。",
+          "writingTip": "用照片提供變化前的可查證資訊。",
+          "topic": "語法與篇章",
+          "source": "self-authored"
+        }
+      ]
+    },
+    "they": {
+      "kind": "grammar",
+      "senses": [
+        {
+          "pos": "pron.",
+          "meaning": "他們／她們／它們；也可回指未指定性別的單一人",
+          "usage": "they 作主詞；them 作受詞；their 接名詞；theirs 可獨立表所有。單數 they 仍用 they are／have，不用 they is。"
+        }
+      ],
+      "collocations": [],
+      "grammarPatterns": [
+        {
+          "en": "they are / they have",
+          "zh": "他們是／有；they 後的動詞形式",
+          "note": "本站整理的文法句型；N、S、V 等為句型位置，非試卷引文。"
+        },
+        {
+          "en": "help them",
+          "zh": "幫助他們",
+          "note": "本站整理的文法句型；N、S、V 等為句型位置，非試卷引文。"
+        },
+        {
+          "en": "their + N",
+          "zh": "他們的……",
+          "note": "本站整理的文法句型；N、S、V 等為句型位置，非試卷引文。"
+        },
+        {
+          "en": "by themselves",
+          "zh": "他們獨自／靠自己",
+          "note": "本站整理的文法句型；N、S、V 等為句型位置，非試卷引文。"
+        }
+      ],
+      "synonyms": [
+        {
+          "en": "their / theirs",
+          "zh": "他們的",
+          "note": "their ideas 與 the ideas are theirs 結構不同；注意 they’re 是 they are。"
+        }
+      ],
+      "idioms": [],
+      "family": [],
+      "forms": [
+        {
+          "word": "them",
+          "pos": "pron.",
+          "meaning": "受格"
+        },
+        {
+          "word": "their",
+          "pos": "adj.",
+          "meaning": "所有格限定詞，後接名詞"
+        },
+        {
+          "word": "theirs",
+          "pos": "pron.",
+          "meaning": "所有格代名詞"
+        },
+        {
+          "word": "themselves",
+          "pos": "pron.",
+          "meaning": "複數反身／強調形式"
+        }
+      ],
+      "usageNote": "they 作主詞；them 作受詞；their 接名詞；theirs 可獨立表所有。單數 they 仍用 they are／have，不用 they is。",
+      "references": [
+        {
+          "label": "Cambridge 語法／詞義核對",
+          "url": "https://dictionary.cambridge.org/grammar/british-grammar/possessive-pronouns"
+        },
+        {
+          "label": "Cambridge 人稱代名詞與單數 they",
+          "url": "https://dictionary.cambridge.org/grammar/british-grammar/pronouns-personal-i-me-you-him-it-they"
+        }
+      ],
+      "examples": [
+        {
+          "text": "The volunteers said they would return next week, and their promise encouraged residents to keep the area clean.",
+          "translationZh": "志工說下週會再來，他們的承諾鼓勵居民繼續維持環境整潔。",
+          "grammar": "they 回指 volunteers；their promise 是所有格限定詞 + 單數名詞。",
+          "writingTip": "讓代名詞的先行詞保持清楚。",
+          "topic": "語法與篇章",
+          "source": "self-authored"
+        },
+        {
+          "text": "If a student needs extra time, they can contact the teacher before the deadline and explain the reason.",
+          "translationZh": "如果某位學生需要更多時間，可以在期限前聯絡老師並說明理由。",
+          "grammar": "they 回指未指定性別的 a student；仍用 they can，不用第三人稱 s。",
+          "writingTip": "在規則說明中兼顧清楚與包容的指稱。",
+          "topic": "語法與篇章",
+          "source": "self-authored"
+        }
+      ]
+    },
+    "this": {
+      "kind": "grammar",
+      "senses": [
+        {
+          "pos": "pron./adj.",
+          "meaning": "這個；這項；指示單數或不可數事物",
+          "usage": "this 可限定名詞或獨立回指一項情況；this + 單數／不可數名詞，these + 複數。回指事件時最好再補清楚名詞。"
+        }
+      ],
+      "collocations": [],
+      "grammarPatterns": [
+        {
+          "en": "this + singular N",
+          "zh": "這個……",
+          "note": "本站整理的文法句型；N、S、V 等為句型位置，非試卷引文。"
+        },
+        {
+          "en": "this + uncountable N",
+          "zh": "這項……",
+          "note": "本站整理的文法句型；N、S、V 等為句型位置，非試卷引文。"
+        },
+        {
+          "en": "this is N",
+          "zh": "這是……",
+          "note": "本站整理的文法句型；N、S、V 等為句型位置，非試卷引文。"
+        },
+        {
+          "en": "this means that S + V",
+          "zh": "這意味著……",
+          "note": "本站整理的文法句型；N、S、V 等為句型位置，非試卷引文。"
+        }
+      ],
+      "synonyms": [
+        {
+          "en": "these",
+          "zh": "這些",
+          "note": "複數指示詞，名詞與動詞也要配合複數。"
+        }
+      ],
+      "idioms": [],
+      "family": [],
+      "forms": [
+        {
+          "word": "these",
+          "pos": "pron./adj.",
+          "meaning": "複數指示形式"
+        }
+      ],
+      "usageNote": "this 可限定名詞或獨立回指一項情況；this + 單數／不可數名詞，these + 複數。回指事件時最好再補清楚名詞。",
+      "references": [
+        {
+          "label": "Cambridge 語法／詞義核對",
+          "url": "https://dictionary.cambridge.org/grammar/british-grammar/this-that-these-"
+        }
+      ],
+      "examples": [
+        {
+          "text": "This plan gives students more time to discuss their ideas before the group chooses a final design.",
+          "translationZh": "這項計畫給學生更多時間討論想法，再由團隊選出最後設計。",
+          "grammar": "This plan 為單數主詞，故用 gives；before 引出先後順序。",
+          "writingTip": "用 this + 明確名詞承接上一段的提案。",
+          "topic": "語法與篇章",
+          "source": "self-authored"
+        },
+        {
+          "text": "The bus arrived ten minutes early, and this change helped us avoid the crowded morning queue.",
+          "translationZh": "公車提早十分鐘抵達，這項變動幫助我們避開擁擠的早晨隊伍。",
+          "grammar": "this change 回指提前抵達一事；用 change 明示代名所指。",
+          "writingTip": "避免只寫 this 而讓讀者不知回指哪件事。",
+          "topic": "語法與篇章",
+          "source": "self-authored"
+        }
+      ]
+    },
+    "those": {
+      "kind": "grammar",
+      "senses": [
+        {
+          "pos": "pron./adj.",
+          "meaning": "那些；代替前文的複數項目或人物",
+          "usage": "those 可接複數名詞或獨立使用；those who 指符合條件的人；比較中的 those of 常替代先前的複數名詞。"
+        }
+      ],
+      "collocations": [],
+      "grammarPatterns": [
+        {
+          "en": "those + plural N",
+          "zh": "那些……",
+          "note": "本站整理的文法句型；N、S、V 等為句型位置，非試卷引文。"
+        },
+        {
+          "en": "those who + V",
+          "zh": "那些……的人",
+          "note": "本站整理的文法句型；N、S、V 等為句型位置，非試卷引文。"
+        },
+        {
+          "en": "those of + N",
+          "zh": "……的那些（替代複數名詞）",
+          "note": "本站整理的文法句型；N、S、V 等為句型位置，非試卷引文。"
+        },
+        {
+          "en": "one of those + plural N",
+          "zh": "那些……之中的一個",
+          "note": "本站整理的文法句型；N、S、V 等為句型位置，非試卷引文。"
+        }
+      ],
+      "synonyms": [
+        {
+          "en": "that",
+          "zh": "那個；替代單數／不可數項目",
+          "note": "比較時確認所替代中心名詞的數，不是任意換 this／those。"
+        }
+      ],
+      "idioms": [],
+      "family": [],
+      "forms": [
+        {
+          "word": "that",
+          "pos": "pron./adj.",
+          "meaning": "單數指示／替代形式"
+        }
+      ],
+      "usageNote": "those 可接複數名詞或獨立使用；those who 指符合條件的人；比較中的 those of 常替代先前的複數名詞。",
+      "references": [
+        {
+          "label": "Cambridge 語法／詞義核對",
+          "url": "https://dictionary.cambridge.org/grammar/british-grammar/this-that-these-"
+        }
+      ],
+      "examples": [
+        {
+          "text": "Those who finish the survey early can help younger students understand the instructions without suggesting any answers.",
+          "translationZh": "提早完成問卷的人可以幫低年級學生理解說明，但不能提示任何答案。",
+          "grammar": "Those who ... 指符合條件的人；who finish 採複數動詞。",
+          "writingTip": "清楚界定可協助的對象與界線。",
+          "topic": "語法與篇章",
+          "source": "self-authored"
+        },
+        {
+          "text": "The results from our class differed from those of the older students, so we compared their learning conditions.",
+          "translationZh": "我們班的結果與較年長學生的不同，因此我們比較了學習條件。",
+          "grammar": "those of 替代 the results of，確保比較結果與結果。",
+          "writingTip": "比較相同項目，不把人直接與數據相比。",
+          "topic": "語法與篇章",
+          "source": "self-authored"
+        }
+      ]
+    },
+    "to": {
+      "kind": "grammar",
+      "senses": [
+        {
+          "pos": "prep.",
+          "meaning": "到；向；另可作不定詞標記",
+          "usage": "to 是介系詞時後接 N／V-ing；是不定詞標記時後接原形。look forward to V-ing 與 want to V 要分開記。"
+        }
+      ],
+      "collocations": [],
+      "grammarPatterns": [
+        {
+          "en": "give N to someone",
+          "zh": "把某物給某人",
+          "note": "本站整理的文法句型；N、S、V 等為句型位置，非試卷引文。"
+        },
+        {
+          "en": "look forward to V-ing",
+          "zh": "期待做某事",
+          "note": "本站整理的文法句型；N、S、V 等為句型位置，非試卷引文。"
+        },
+        {
+          "en": "object to V-ing",
+          "zh": "反對做某事",
+          "note": "本站整理的文法句型；N、S、V 等為句型位置，非試卷引文。"
+        },
+        {
+          "en": "want to + V",
+          "zh": "想做某事",
+          "note": "此處 to 是不定詞標記。"
+        }
+      ],
+      "synonyms": [
+        {
+          "en": "toward",
+          "zh": "朝向；對於",
+          "note": "toward 表方向／態度；不自動具有到達目的地的意思，也不能替換所有 to 搭配。"
+        }
+      ],
+      "idioms": [],
+      "family": [],
+      "forms": [],
+      "usageNote": "to 是介系詞時後接 N／V-ing；是不定詞標記時後接原形。look forward to V-ing 與 want to V 要分開記。",
+      "references": [
+        {
+          "label": "Cambridge 語法／詞義核對",
+          "url": "https://dictionary.cambridge.org/us/grammar/british-grammar/to"
+        }
+      ],
+      "examples": [
+        {
+          "text": "I look forward to meeting the volunteers who helped our town recover after the severe storm.",
+          "translationZh": "我期待見到幫助鎮上在強烈暴風雨後恢復的志工。",
+          "grammar": "look forward to 中 to 為介系詞，故用 meeting；who 修飾 volunteers。",
+          "writingTip": "用整組搭配寫出期待的對象。",
+          "topic": "語法與篇章",
+          "source": "self-authored"
+        },
+        {
+          "text": "Our class decided to donate the unused books to children whose families could not afford new ones.",
+          "translationZh": "我們班決定把未使用的書捐給家庭買不起新書的孩子。",
+          "grammar": "decided to donate 是不定詞；books to children 的 to 表接收者。",
+          "writingTip": "在同一句辨認兩種 to 的功能。",
+          "topic": "語法與篇章",
+          "source": "self-authored"
+        }
+      ]
+    },
+    "toward": {
+      "kind": "grammar",
+      "senses": [
+        {
+          "pos": "prep.",
+          "meaning": "朝向；對……的態度；往某方向的進展",
+          "usage": "toward／towards 都可表方向；動作朝向目的地不等於已到達。attitude toward 表對某事的態度。"
+        }
+      ],
+      "collocations": [],
+      "grammarPatterns": [
+        {
+          "en": "walk toward N",
+          "zh": "朝……走去",
+          "note": "本站整理的文法句型；N、S、V 等為句型位置，非試卷引文。"
+        },
+        {
+          "en": "an attitude toward N",
+          "zh": "對……的態度",
+          "note": "本站整理的文法句型；N、S、V 等為句型位置，非試卷引文。"
+        },
+        {
+          "en": "progress toward a goal",
+          "zh": "朝目標的進展",
+          "note": "本站整理的文法句型；N、S、V 等為句型位置，非試卷引文。"
+        },
+        {
+          "en": "work toward N",
+          "zh": "努力朝某目標前進",
+          "note": "本站整理的文法句型；N、S、V 等為句型位置，非試卷引文。"
+        }
+      ],
+      "synonyms": [
+        {
+          "en": "to",
+          "zh": "到；向",
+          "note": "to 可強調目的地或接收者；toward 的方向義不能保證到達。"
+        }
+      ],
+      "idioms": [],
+      "family": [],
+      "forms": [],
+      "usageNote": "toward／towards 都可表方向；動作朝向目的地不等於已到達。attitude toward 表對某事的態度。",
+      "references": [
+        {
+          "label": "Cambridge 語法／詞義核對",
+          "url": "https://dictionary.cambridge.org/us/grammar/british-grammar/prepositions_2"
+        }
+      ],
+      "examples": [
+        {
+          "text": "We walked toward the station, but heavy rain forced us to stop before we reached the entrance.",
+          "translationZh": "我們朝車站走去，但大雨迫使我們在抵達入口前停下來。",
+          "grammar": "toward 指方向；before reached 明示未到達入口。",
+          "writingTip": "利用後文驗證移動是否完成。",
+          "topic": "語法與篇章",
+          "source": "self-authored"
+        },
+        {
+          "text": "The discussion changed my attitude toward online learning because several classmates described benefits I had not considered.",
+          "translationZh": "討論改變了我對線上學習的態度，因為幾位同學描述了我未曾考慮的好處。",
+          "grammar": "attitude toward + N；had not considered 指先前尚未考慮的事。",
+          "writingTip": "交代觀點如何因具體資訊改變。",
+          "topic": "語法與篇章",
+          "source": "self-authored"
+        }
+      ]
+    },
+    "unless": {
+      "kind": "grammar",
+      "senses": [
+        {
+          "pos": "conj.",
+          "meaning": "除非；如果不",
+          "usage": "unless 表例外條件；常能理解為 if ... not，但不是每個否定 if 都能直接改寫。一般未來條件子句用現在式。"
+        }
+      ],
+      "collocations": [],
+      "grammarPatterns": [
+        {
+          "en": "unless S + V, S + will V",
+          "zh": "除非……，否則將……",
+          "note": "本站整理的文法句型；N、S、V 等為句型位置，非試卷引文。"
+        },
+        {
+          "en": "will not V unless S + V",
+          "zh": "除非……，否則不會……",
+          "note": "本站整理的文法句型；N、S、V 等為句型位置，非試卷引文。"
+        },
+        {
+          "en": "unless necessary",
+          "zh": "除非有必要",
+          "note": "本站整理的文法句型；N、S、V 等為句型位置，非試卷引文。"
+        },
+        {
+          "en": "unless otherwise stated",
+          "zh": "除非另有說明",
+          "note": "本站整理的文法句型；N、S、V 等為句型位置，非試卷引文。"
+        }
+      ],
+      "synonyms": [
+        {
+          "en": "if ... not",
+          "zh": "如果不……",
+          "note": "在適合的例外條件中意思接近；保留主句意思與否定範圍。"
+        }
+      ],
+      "idioms": [],
+      "family": [],
+      "forms": [],
+      "usageNote": "unless 表例外條件；常能理解為 if ... not，但不是每個否定 if 都能直接改寫。一般未來條件子句用現在式。",
+      "references": [
+        {
+          "label": "Cambridge 語法／詞義核對",
+          "url": "https://dictionary.cambridge.org/grammar/british-grammar/unless"
+        }
+      ],
+      "examples": [
+        {
+          "text": "Unless the school provides clear instructions, some parents may misunderstand why the new safety rule is necessary.",
+          "translationZh": "除非學校提供清楚說明，否則部分家長可能不理解新安全規則為何必要。",
+          "grammar": "unless 子句 provides 用現在式；some 與 may 保留主張範圍。",
+          "writingTip": "提出必要條件時保留人數與可能性的限制。",
+          "topic": "語法與篇章",
+          "source": "self-authored"
+        },
+        {
+          "text": "We will not publish the survey results unless every participant has agreed to the use of their responses.",
+          "translationZh": "除非每位參與者都同意使用回答，否則我們不會公布調查結果。",
+          "grammar": "will not ... unless 表發布條件；has agreed 用完成式核對同意已取得。",
+          "writingTip": "用 unless 清楚說明行動的前提。",
+          "topic": "語法與篇章",
+          "source": "self-authored"
+        }
+      ]
+    },
+    "until": {
+      "kind": "grammar",
+      "senses": [
+        {
+          "pos": "conj./prep.",
+          "meaning": "直到……為止；一直到",
+          "usage": "until 指持續到某終點；not ... until 指直到那時才發生。by 指最晚期限，與 until 的持續不同。"
+        }
+      ],
+      "collocations": [],
+      "grammarPatterns": [
+        {
+          "en": "wait until S + V",
+          "zh": "等到……",
+          "note": "本站整理的文法句型；N、S、V 等為句型位置，非試卷引文。"
+        },
+        {
+          "en": "until + time",
+          "zh": "直到某時刻",
+          "note": "本站整理的文法句型；N、S、V 等為句型位置，非試卷引文。"
+        },
+        {
+          "en": "not ... until ...",
+          "zh": "直到……才……",
+          "note": "本站整理的文法句型；N、S、V 等為句型位置，非試卷引文。"
+        },
+        {
+          "en": "continue until S + V",
+          "zh": "持續到……為止",
+          "note": "本站整理的文法句型；N、S、V 等為句型位置，非試卷引文。"
+        }
+      ],
+      "synonyms": [
+        {
+          "en": "by Friday",
+          "zh": "最遲星期五",
+          "note": "by 是完成期限；until Friday 是持續到星期五。"
+        }
+      ],
+      "idioms": [],
+      "family": [],
+      "forms": [],
+      "usageNote": "until 指持續到某終點；not ... until 指直到那時才發生。by 指最晚期限，與 until 的持續不同。",
+      "references": [
+        {
+          "label": "Cambridge 語法／詞義核對",
+          "url": "https://dictionary.cambridge.org/grammar/british-grammar/until"
+        }
+      ],
+      "examples": [
+        {
+          "text": "We waited until the rain stopped before carrying the donated boxes from the classroom to the truck.",
+          "translationZh": "我們等到雨停，才把捐贈箱子從教室搬到貨車。",
+          "grammar": "until the rain stopped 指等待的終點；不是最晚完成期限。",
+          "writingTip": "用時間終點整理行動先後。",
+          "topic": "語法與篇章",
+          "source": "self-authored"
+        },
+        {
+          "text": "The library will remain open until six, allowing students to finish their research after the final class.",
+          "translationZh": "圖書館將開放到六點，讓學生最後一堂課後能完成研究。",
+          "grammar": "remain open 為持續狀態；until six 指結束開放的時間。",
+          "writingTip": "將服務時段與學生需求連接。",
+          "topic": "語法與篇章",
+          "source": "self-authored"
+        }
+      ]
+    },
+    "upon": {
+      "kind": "grammar",
+      "senses": [
+        {
+          "pos": "prep.",
+          "meaning": "在……之上；一……就；在某條件或依據上",
+          "usage": "upon 常較正式；upon arrival／upon V-ing 可表某事件發生時。依賴等固定結構不能只逐字理解為位置。"
+        }
+      ],
+      "collocations": [],
+      "grammarPatterns": [
+        {
+          "en": "upon arrival",
+          "zh": "一到達",
+          "note": "本站整理的文法句型；N、S、V 等為句型位置，非試卷引文。"
+        },
+        {
+          "en": "upon receiving N",
+          "zh": "收到……時",
+          "note": "本站整理的文法句型；N、S、V 等為句型位置，非試卷引文。"
+        },
+        {
+          "en": "depend upon N",
+          "zh": "依賴……",
+          "note": "本站整理的文法句型；N、S、V 等為句型位置，非試卷引文。"
+        },
+        {
+          "en": "once upon a time",
+          "zh": "從前",
+          "note": "故事開頭的固定片語。"
+        }
+      ],
+      "synonyms": [
+        {
+          "en": "on",
+          "zh": "在……上；一……就",
+          "note": "某些位置或事件用法接近；upon 通常較正式，固定片語仍需逐組核對。"
+        }
+      ],
+      "idioms": [],
+      "family": [],
+      "forms": [],
+      "usageNote": "upon 常較正式；upon arrival／upon V-ing 可表某事件發生時。依賴等固定結構不能只逐字理解為位置。",
+      "references": [
+        {
+          "label": "Cambridge 語法／詞義核對",
+          "url": "https://dictionary.cambridge.org/us/grammar/british-grammar/prepositions_2"
+        }
+      ],
+      "examples": [
+        {
+          "text": "Upon arrival at the shelter, the students listened to the safety instructions before helping with the animals.",
+          "translationZh": "學生一抵達收容所，就先聽安全說明，再協助照顧動物。",
+          "grammar": "Upon arrival 是介系詞片語，arrival 為名詞；主句主詞為 the students。",
+          "writingTip": "先寫到達時必須完成的程序。",
+          "topic": "語法與篇章",
+          "source": "self-authored"
+        },
+        {
+          "text": "Upon receiving the feedback, our group revised the poster so visitors could understand the results more easily.",
+          "translationZh": "收到回饋後，我們團隊修改海報，讓訪客更容易理解結果。",
+          "grammar": "Upon receiving 是介系詞 + V-ing；動作主體對應 our group。",
+          "writingTip": "以回饋與修正連出改進過程。",
+          "topic": "語法與篇章",
+          "source": "self-authored"
+        }
+      ]
+    },
+    "versus": {
+      "kind": "grammar",
+      "senses": [
+        {
+          "pos": "prep.",
+          "meaning": "對；相對於；用於對照或競爭",
+          "usage": "versus／vs. 連接被比較或競爭的兩端，常見於標題。不要把它當完整連接詞直接連兩個主句。"
+        }
+      ],
+      "collocations": [],
+      "grammarPatterns": [
+        {
+          "en": "team A versus team B",
+          "zh": "A 隊對 B 隊",
+          "note": "本站整理的文法句型；N、S、V 等為句型位置，非試卷引文。"
+        },
+        {
+          "en": "cost versus benefit",
+          "zh": "成本相對於效益",
+          "note": "本站整理的文法句型；N、S、V 等為句型位置，非試卷引文。"
+        },
+        {
+          "en": "online versus classroom learning",
+          "zh": "線上與教室學習的對照",
+          "note": "本站整理的文法句型；N、S、V 等為句型位置，非試卷引文。"
+        },
+        {
+          "en": "quality versus quantity",
+          "zh": "品質與數量的比較",
+          "note": "本站整理的文法句型；N、S、V 等為句型位置，非試卷引文。"
+        }
+      ],
+      "synonyms": [
+        {
+          "en": "compared with",
+          "zh": "與……相比",
+          "note": "可用於完整句，但結構不同；vs. 是 versus 的縮寫。"
+        }
+      ],
+      "idioms": [],
+      "family": [],
+      "forms": [],
+      "usageNote": "versus／vs. 連接被比較或競爭的兩端，常見於標題。不要把它當完整連接詞直接連兩個主句。",
+      "references": [
+        {
+          "label": "Cambridge versus 詞義與比較用法",
+          "url": "https://dictionary.cambridge.org/dictionary/learner-english/versus"
+        }
+      ],
+      "examples": [
+        {
+          "text": "Our debate on online versus classroom learning focused on student needs rather than declaring one method universally superior.",
+          "translationZh": "我們關於線上與教室學習的辯論著重學生需求，而未宣稱某種方法全面優越。",
+          "grammar": "versus 連接兩種學習方式；主句動詞為 focused。",
+          "writingTip": "比較方案時先界定評估標準。",
+          "topic": "語法與篇章",
+          "source": "self-authored"
+        },
+        {
+          "text": "The final match was our school versus the neighboring school, and both teams showed respect despite the competition.",
+          "translationZh": "決賽由我們學校對上鄰校，雙方雖競爭仍展現尊重。",
+          "grammar": "versus 表比賽雙方；and 另外連接完整主句。",
+          "writingTip": "用競賽情境描述公平與尊重。",
+          "topic": "語法與篇章",
+          "source": "self-authored"
+        }
+      ]
+    },
+    "via": {
+      "kind": "grammar",
+      "senses": [
+        {
+          "pos": "prep.",
+          "meaning": "經由；透過某途徑或系統",
+          "usage": "via 後接路線、管道或中介者的名詞片語；可談旅行途經或訊息傳送，不直接接完整子句。"
+        }
+      ],
+      "collocations": [],
+      "grammarPatterns": [
+        {
+          "en": "travel via N",
+          "zh": "經由某地旅行",
+          "note": "本站整理的文法句型；N、S、V 等為句型位置，非試卷引文。"
+        },
+        {
+          "en": "send N via email",
+          "zh": "透過電子郵件寄送某物",
+          "note": "本站整理的文法句型；N、S、V 等為句型位置，非試卷引文。"
+        },
+        {
+          "en": "receive N via an app",
+          "zh": "經由應用程式接收某物",
+          "note": "本站整理的文法句型；N、S、V 等為句型位置，非試卷引文。"
+        },
+        {
+          "en": "connect via a network",
+          "zh": "透過網路連接",
+          "note": "本站整理的文法句型；N、S、V 等為句型位置，非試卷引文。"
+        }
+      ],
+      "synonyms": [
+        {
+          "en": "through",
+          "zh": "透過；穿過",
+          "note": "部分管道用法可近似，through 另有穿越／全程的意思。"
+        }
+      ],
+      "idioms": [],
+      "family": [],
+      "forms": [],
+      "usageNote": "via 後接路線、管道或中介者的名詞片語；可談旅行途經或訊息傳送，不直接接完整子句。",
+      "references": [
+        {
+          "label": "Cambridge 語法／詞義核對",
+          "url": "https://dictionary.cambridge.org/dictionary/english/via"
+        }
+      ],
+      "examples": [
+        {
+          "text": "The teacher sent the revised schedule via email so parents could check the changes before the field trip.",
+          "translationZh": "老師透過電子郵件寄送修改後的時程，讓家長在校外教學前確認變動。",
+          "grammar": "via email 指傳送管道；so 子句交代目的。",
+          "writingTip": "通知中寫出傳送方法與確認期限。",
+          "topic": "語法與篇章",
+          "source": "self-authored"
+        },
+        {
+          "text": "We traveled to the village via the coastal road because the mountain route was closed after the storm.",
+          "translationZh": "暴風雨後山路封閉，因此我們經由海岸公路前往村莊。",
+          "grammar": "via the coastal road 指途經路線；because 說明選擇原因。",
+          "writingTip": "把路線選擇與實際限制連接。",
+          "topic": "語法與篇章",
+          "source": "self-authored"
+        }
+      ]
+    },
+    "what": {
+      "kind": "grammar",
+      "senses": [
+        {
+          "pos": "pron./adj.",
+          "meaning": "什麼；所……的事物",
+          "usage": "what 可問內容，也可引導包含先行詞的名詞子句，約等於 the thing(s) that；間接問句用陳述語序。"
+        }
+      ],
+      "collocations": [],
+      "grammarPatterns": [
+        {
+          "en": "what S + V",
+          "zh": "……所做的／什麼……",
+          "note": "本站整理的文法句型；N、S、V 等為句型位置，非試卷引文。"
+        },
+        {
+          "en": "what to + V",
+          "zh": "要做什麼",
+          "note": "本站整理的文法句型；N、S、V 等為句型位置，非試卷引文。"
+        },
+        {
+          "en": "what + N",
+          "zh": "什麼……",
+          "note": "本站整理的文法句型；N、S、V 等為句型位置，非試卷引文。"
+        },
+        {
+          "en": "what matters is N",
+          "zh": "重要的是……",
+          "note": "本站整理的文法句型；N、S、V 等為句型位置，非試卷引文。"
+        }
+      ],
+      "synonyms": [
+        {
+          "en": "which",
+          "zh": "哪個；用於已界定範圍",
+          "note": "which 常在已知選項中選擇；what 不必預設有限選項。"
+        }
+      ],
+      "idioms": [],
+      "family": [],
+      "forms": [],
+      "usageNote": "what 可問內容，也可引導包含先行詞的名詞子句，約等於 the thing(s) that；間接問句用陳述語序。",
+      "references": [
+        {
+          "label": "Cambridge 語法／詞義核對",
+          "url": "https://dictionary.cambridge.org/grammar/british-grammar/pronouns_2"
+        }
+      ],
+      "examples": [
+        {
+          "text": "What the volunteers did for our neighborhood inspired me to join the next community cleanup.",
+          "translationZh": "志工為社區所做的事激勵我參加下一次社區清理。",
+          "grammar": "What ... did 作整個主句的主詞；what 已包含「所做的事」。",
+          "writingTip": "以具體行動作主詞交代自己的改變。",
+          "topic": "語法與篇章",
+          "source": "self-authored"
+        },
+        {
+          "text": "We asked what information was missing from the report before deciding whether its conclusion could be trusted.",
+          "translationZh": "我們先詢問報告缺少什麼資訊，再決定結論是否可信。",
+          "grammar": "what information 是間接問句主詞；沒有額外倒裝助動詞。",
+          "writingTip": "先指出資訊缺口，再談是否接受結論。",
+          "topic": "語法與篇章",
+          "source": "self-authored"
+        }
+      ]
+    },
+    "when": {
+      "kind": "grammar",
+      "senses": [
+        {
+          "pos": "adv./conj.",
+          "meaning": "何時；當……時",
+          "usage": "when 問時間或引導時間子句；一般未來時間子句常用現在式。作關係副詞時連到時間先行詞。"
+        }
+      ],
+      "collocations": [],
+      "grammarPatterns": [
+        {
+          "en": "when S + V, S + V",
+          "zh": "當……時，……",
+          "note": "本站整理的文法句型；N、S、V 等為句型位置，非試卷引文。"
+        },
+        {
+          "en": "ask when S + V",
+          "zh": "詢問何時……",
+          "note": "本站整理的文法句型；N、S、V 等為句型位置，非試卷引文。"
+        },
+        {
+          "en": "the day when S + V",
+          "zh": "……的那一天",
+          "note": "本站整理的文法句型；N、S、V 等為句型位置，非試卷引文。"
+        },
+        {
+          "en": "when necessary",
+          "zh": "必要時",
+          "note": "本站整理的文法句型；N、S、V 等為句型位置，非試卷引文。"
+        }
+      ],
+      "synonyms": [
+        {
+          "en": "while",
+          "zh": "當……時；而",
+          "note": "while 常強調持續背景或對比；when 不必表示兩個長動作同時進行。"
+        }
+      ],
+      "idioms": [],
+      "family": [],
+      "forms": [],
+      "usageNote": "when 問時間或引導時間子句；一般未來時間子句常用現在式。作關係副詞時連到時間先行詞。",
+      "references": [
+        {
+          "label": "Cambridge 語法／詞義核對",
+          "url": "https://dictionary.cambridge.org/grammar/british-grammar/conjunctions"
+        }
+      ],
+      "examples": [
+        {
+          "text": "When the new students arrive, our group will show them where to find the library and the nurse.",
+          "translationZh": "新生到校時，我們會帶他們認識圖書館和護理師的位置。",
+          "grammar": "When ... arrive 用現在式談未來時間；主句用 will show。",
+          "writingTip": "用時間子句安排迎新活動。",
+          "topic": "語法與篇章",
+          "source": "self-authored"
+        },
+        {
+          "text": "I still remember the day when our class turned an unused corner into a small vegetable garden.",
+          "translationZh": "我仍記得班上把閒置角落改成小菜園的那一天。",
+          "grammar": "when 引導關係子句，先行詞是時間名詞 the day。",
+          "writingTip": "用具體日期事件建立回憶文章。",
+          "topic": "語法與篇章",
+          "source": "self-authored"
+        }
+      ]
+    },
+    "whenever": {
+      "kind": "grammar",
+      "senses": [
+        {
+          "pos": "conj./adv.",
+          "meaning": "每當；任何……的時候；不論何時",
+          "usage": "whenever 可表反覆發生或不限定時間；要由語境區分「每次」與「任何時候」，不是單一過去事件的固定 when 替代。"
+        }
+      ],
+      "collocations": [],
+      "grammarPatterns": [
+        {
+          "en": "whenever S + V",
+          "zh": "每當／不論何時……",
+          "note": "本站整理的文法句型；N、S、V 等為句型位置，非試卷引文。"
+        },
+        {
+          "en": "whenever possible",
+          "zh": "只要可能／有機會時",
+          "note": "本站整理的文法句型；N、S、V 等為句型位置，非試卷引文。"
+        },
+        {
+          "en": "whenever you need help",
+          "zh": "你需要協助的任何時候",
+          "note": "本站整理的文法句型；N、S、V 等為句型位置，非試卷引文。"
+        },
+        {
+          "en": "whenever necessary",
+          "zh": "每當有必要時",
+          "note": "本站整理的文法句型；N、S、V 等為句型位置，非試卷引文。"
+        }
+      ],
+      "synonyms": [
+        {
+          "en": "when",
+          "zh": "當……時",
+          "note": "when 可指特定一次；whenever 常有反覆或不限時間的意思。"
+        }
+      ],
+      "idioms": [],
+      "family": [],
+      "forms": [],
+      "usageNote": "whenever 可表反覆發生或不限定時間；要由語境區分「每次」與「任何時候」，不是單一過去事件的固定 when 替代。",
+      "references": [
+        {
+          "label": "Cambridge 語法／詞義核對",
+          "url": "https://dictionary.cambridge.org/grammar/british-grammar/conjunctions"
+        },
+        {
+          "label": "Cambridge -ever 疑問詞的語意",
+          "url": "https://dictionary.cambridge.org/us/grammar/british-grammar/however"
+        }
+      ],
+      "examples": [
+        {
+          "text": "Whenever I struggle with a new concept, I compare two examples instead of memorizing the rule without context.",
+          "translationZh": "每當我對新概念感到困難，就會比較兩個例子，而不是脫離情境背規則。",
+          "grammar": "Whenever + 現在式表反覆情況；I compare 是習慣反應。",
+          "writingTip": "描述能重複使用的學習策略。",
+          "topic": "語法與篇章",
+          "source": "self-authored"
+        },
+        {
+          "text": "The volunteers offer support whenever families need advice about using the new community services.",
+          "translationZh": "每當家戶需要使用新社區服務的建議，志工便提供協助。",
+          "grammar": "whenever 引出求助時機，不表示每個家庭已經求助。",
+          "writingTip": "保留條件範圍並交代可提供的服務。",
+          "topic": "語法與篇章",
+          "source": "self-authored"
+        }
+      ]
+    },
+    "where": {
+      "kind": "grammar",
+      "senses": [
+        {
+          "pos": "adv./conj.",
+          "meaning": "在哪裡；在……的地方",
+          "usage": "where 可問位置或引導地點子句；關係副詞 where 在子句中表示地點，與作受詞的 which 不同。"
+        }
+      ],
+      "collocations": [],
+      "grammarPatterns": [
+        {
+          "en": "where S + V",
+          "zh": "……的地方／在哪裡……",
+          "note": "本站整理的文法句型；N、S、V 等為句型位置，非試卷引文。"
+        },
+        {
+          "en": "the place where S + V",
+          "zh": "……的地方",
+          "note": "本站整理的文法句型；N、S、V 等為句型位置，非試卷引文。"
+        },
+        {
+          "en": "where to + V",
+          "zh": "在哪裡做……",
+          "note": "本站整理的文法句型；N、S、V 等為句型位置，非試卷引文。"
+        },
+        {
+          "en": "where it happened",
+          "zh": "事情發生的地點",
+          "note": "wherever 另加任何地點的範圍。"
+        }
+      ],
+      "synonyms": [
+        {
+          "en": "in / at which",
+          "zh": "在其中／在該處",
+          "note": "某些關係地點用法可重組，介系詞須按實際意義選。"
+        }
+      ],
+      "idioms": [],
+      "family": [],
+      "forms": [],
+      "usageNote": "where 可問位置或引導地點子句；關係副詞 where 在子句中表示地點，與作受詞的 which 不同。",
+      "references": [
+        {
+          "label": "Cambridge 語法／詞義核對",
+          "url": "https://dictionary.cambridge.org/grammar/british-grammar/pronouns_2"
+        }
+      ],
+      "examples": [
+        {
+          "text": "The park where we first met is now a welcoming space where local families can relax together.",
+          "translationZh": "我們第一次相遇的公園如今成為當地家庭能一起放鬆的友善空間。",
+          "grammar": "where 引入地點關係子句；we met 本身不缺動詞受詞。",
+          "writingTip": "用 where 補充地點功能與回憶。",
+          "topic": "語法與篇章",
+          "source": "self-authored"
+        },
+        {
+          "text": "The guide showed us where to refill our bottles so we could avoid buying extra plastic containers.",
+          "translationZh": "導覽員告訴我們哪裡能補充水瓶，讓我們不用再買塑膠容器。",
+          "grammar": "where to refill 是疑問詞 + 不定詞，說明補水地點。",
+          "writingTip": "用具體資訊支援環境友善行動。",
+          "topic": "語法與篇章",
+          "source": "self-authored"
+        }
+      ]
+    },
+    "whereas": {
+      "kind": "grammar",
+      "senses": [
+        {
+          "pos": "conj.",
+          "meaning": "然而；而；用於對比兩項事實",
+          "usage": "whereas 連接對比的子句，不表時間。先找比較的共同維度，不把無關的兩句只靠連接詞硬接。"
+        }
+      ],
+      "collocations": [],
+      "grammarPatterns": [
+        {
+          "en": "S + V, whereas S + V",
+          "zh": "一方面……，另一方面……",
+          "note": "本站整理的文法句型；N、S、V 等為句型位置，非試卷引文。"
+        },
+        {
+          "en": "Whereas S + V, S + V",
+          "zh": "以對比子句開頭",
+          "note": "本站整理的文法句型；N、S、V 等為句型位置，非試卷引文。"
+        },
+        {
+          "en": "whereas others + V",
+          "zh": "而其他人……",
+          "note": "本站整理的文法句型；N、S、V 等為句型位置，非試卷引文。"
+        },
+        {
+          "en": "whereas the first + V",
+          "zh": "而第一項……",
+          "note": "本站整理的文法句型；N、S、V 等為句型位置，非試卷引文。"
+        }
+      ],
+      "synonyms": [
+        {
+          "en": "while",
+          "zh": "而；當……時",
+          "note": "while 表對比時可近似 whereas；表時間時不能改為 whereas。"
+        }
+      ],
+      "idioms": [],
+      "family": [],
+      "forms": [],
+      "usageNote": "whereas 連接對比的子句，不表時間。先找比較的共同維度，不把無關的兩句只靠連接詞硬接。",
+      "references": [
+        {
+          "label": "Cambridge 語法／詞義核對",
+          "url": "https://dictionary.cambridge.org/grammar/british-grammar/whereas"
+        }
+      ],
+      "examples": [
+        {
+          "text": "Some students prefer studying alone, whereas others understand difficult ideas better after discussing them with classmates.",
+          "translationZh": "有些學生喜歡獨自讀書，而另一些人討論後更能理解困難概念。",
+          "grammar": "whereas 對比兩種學習偏好；them 回指 difficult ideas。",
+          "writingTip": "以同一面向比較不同人的需求。",
+          "topic": "語法與篇章",
+          "source": "self-authored"
+        },
+        {
+          "text": "The first proposal focused on lowering costs, whereas the second gave greater priority to long-term environmental benefits.",
+          "translationZh": "第一個提案著重降低成本，第二個則更重視長期環境效益。",
+          "grammar": "whereas 對比兩案的優先考量，不是時間先後。",
+          "writingTip": "比較方案時寫出各自優先項目。",
+          "topic": "語法與篇章",
+          "source": "self-authored"
+        }
+      ]
+    },
+    "whether": {
+      "kind": "grammar",
+      "senses": [
+        {
+          "pos": "conj.",
+          "meaning": "是否；不論……與否",
+          "usage": "whether 可用於 whether to V、介系詞 + whether 子句，以及 whether or not；間接問句採陳述語序。"
+        }
+      ],
+      "collocations": [],
+      "grammarPatterns": [
+        {
+          "en": "whether S + V",
+          "zh": "是否……",
+          "note": "本站整理的文法句型；N、S、V 等為句型位置，非試卷引文。"
+        },
+        {
+          "en": "whether to + V",
+          "zh": "是否要做……",
+          "note": "本站整理的文法句型；N、S、V 等為句型位置，非試卷引文。"
+        },
+        {
+          "en": "whether or not S + V",
+          "zh": "是否……；不論是否（依語境）",
+          "note": "本站整理的文法句型；N、S、V 等為句型位置，非試卷引文。"
+        },
+        {
+          "en": "about whether S + V",
+          "zh": "關於是否……",
+          "note": "本站整理的文法句型；N、S、V 等為句型位置，非試卷引文。"
+        }
+      ],
+      "synonyms": [
+        {
+          "en": "if",
+          "zh": "是否；如果",
+          "note": "if 可引導許多是否問句，但不直接接 to V，也不直接放在介系詞後。"
+        }
+      ],
+      "idioms": [],
+      "family": [],
+      "forms": [],
+      "usageNote": "whether 可用於 whether to V、介系詞 + whether 子句，以及 whether or not；間接問句採陳述語序。",
+      "references": [
+        {
+          "label": "Cambridge 語法／詞義核對",
+          "url": "https://dictionary.cambridge.org/grammar/british-grammar/if-or-whether"
+        }
+      ],
+      "examples": [
+        {
+          "text": "We discussed whether to extend the project because several families still needed help with the new recycling system.",
+          "translationZh": "我們討論是否延長計畫，因為幾戶人家仍需要新回收制度方面的協助。",
+          "grammar": "whether to extend 指同一主體討論是否採取行動；不是 if to extend。",
+          "writingTip": "用是否決策連到尚未滿足的需求。",
+          "topic": "語法與篇章",
+          "source": "self-authored"
+        },
+        {
+          "text": "The report raised questions about whether the survey included enough students to support its broad conclusion.",
+          "translationZh": "報告引出疑問：調查是否涵蓋足夠學生以支持如此廣泛的結論。",
+          "grammar": "about 是介系詞，後接 whether 子句；不直接接 if。",
+          "writingTip": "用 whether 提出可查證的資料問題。",
+          "topic": "語法與篇章",
+          "source": "self-authored"
+        }
+      ]
+    },
+    "which": {
+      "kind": "grammar",
+      "senses": [
+        {
+          "pos": "pron./adj.",
+          "meaning": "哪個；哪一些；指事物的關係代名詞",
+          "usage": "which 可問限定選項，也可引導事物的關係子句；逗號後可回指前面整件事。先判斷它在子句占何種位置。"
+        }
+      ],
+      "collocations": [],
+      "grammarPatterns": [
+        {
+          "en": "which + N",
+          "zh": "哪一個／哪一些……",
+          "note": "本站整理的文法句型；N、S、V 等為句型位置，非試卷引文。"
+        },
+        {
+          "en": "the N which + V",
+          "zh": "……的事物（子句主詞）",
+          "note": "本站整理的文法句型；N、S、V 等為句型位置，非試卷引文。"
+        },
+        {
+          "en": "the N which S + V",
+          "zh": "……的事物（子句受詞）",
+          "note": "本站整理的文法句型；N、S、V 等為句型位置，非試卷引文。"
+        },
+        {
+          "en": "S + V, which + V",
+          "zh": "回指前面整件事的非限定子句",
+          "note": "本站整理的文法句型；N、S、V 等為句型位置，非試卷引文。"
+        }
+      ],
+      "synonyms": [
+        {
+          "en": "that",
+          "zh": "限定關係代名詞",
+          "note": "在一些限定子句中可用；逗號後非限定子句不能直接用 that。"
+        }
+      ],
+      "idioms": [],
+      "family": [],
+      "forms": [],
+      "usageNote": "which 可問限定選項，也可引導事物的關係子句；逗號後可回指前面整件事。先判斷它在子句占何種位置。",
+      "references": [
+        {
+          "label": "Cambridge 語法／詞義核對",
+          "url": "https://dictionary.cambridge.org/us/grammar/british-grammar/relative-pronouns/"
+        }
+      ],
+      "examples": [
+        {
+          "text": "The bus arrived early, which gave our group enough time to prepare the display before visitors entered.",
+          "translationZh": "公車提早抵達，讓我們在訪客入場前有足夠時間準備展示。",
+          "grammar": "逗號後 which 回指公車提早抵達這件事，作 gave 的主詞。",
+          "writingTip": "用非限定子句補述前面事件的結果。",
+          "topic": "語法與篇章",
+          "source": "self-authored"
+        },
+        {
+          "text": "We compared two plans and asked which option would give the younger students a safer route home.",
+          "translationZh": "我們比較兩個方案，詢問哪一項能讓低年級學生有更安全的返家路線。",
+          "grammar": "which option 在兩個已知方案中選擇；間接問句不倒裝。",
+          "writingTip": "在比較後明確提出決策標準。",
+          "topic": "語法與篇章",
+          "source": "self-authored"
+        }
+      ]
+    },
+    "whoever": {
+      "kind": "grammar",
+      "senses": [
+        {
+          "pos": "pron.",
+          "meaning": "任何……的人；無論誰",
+          "usage": "whoever 可引導包含人的先行詞的名詞子句，也可表不論誰。判斷 who 的形式時，要看它在內部子句的角色。"
+        }
+      ],
+      "collocations": [],
+      "grammarPatterns": [
+        {
+          "en": "whoever + singular V",
+          "zh": "任何……的人",
+          "note": "本站整理的文法句型；N、S、V 等為句型位置，非試卷引文。"
+        },
+        {
+          "en": "give N to whoever + V",
+          "zh": "把某物給任何……的人",
+          "note": "本站整理的文法句型；N、S、V 等為句型位置，非試卷引文。"
+        },
+        {
+          "en": "whoever you ask",
+          "zh": "不論你問誰；whoever 在子句中作受詞",
+          "note": "本站整理的文法句型；N、S、V 等為句型位置，非試卷引文。"
+        },
+        {
+          "en": "whoever needs help",
+          "zh": "任何需要協助的人",
+          "note": "本站整理的文法句型；N、S、V 等為句型位置，非試卷引文。"
+        }
+      ],
+      "synonyms": [
+        {
+          "en": "anyone who",
+          "zh": "任何……的人",
+          "note": "部分名詞子句用法可改寫；讓步「無論誰」仍須完整理解語境。"
+        }
+      ],
+      "idioms": [],
+      "family": [],
+      "forms": [],
+      "usageNote": "whoever 可引導包含人的先行詞的名詞子句，也可表不論誰。判斷 who 的形式時，要看它在內部子句的角色。",
+      "references": [
+        {
+          "label": "Cambridge 語法／詞義核對",
+          "url": "https://dictionary.cambridge.org/us/grammar/british-grammar/relative-pronouns/"
+        },
+        {
+          "label": "Cambridge whoever 詞義與受格區分",
+          "url": "https://dictionary.cambridge.org/us/dictionary/english/whoever?topic=question-words-and-expressions"
+        }
+      ],
+      "examples": [
+        {
+          "text": "Whoever arrives first can help the teacher arrange the chairs before the parents enter the classroom.",
+          "translationZh": "最先到的人可以在家長進教室前幫老師排椅子。",
+          "grammar": "Whoever arrives first 整段作主詞；arrives 為單數動詞。",
+          "writingTip": "以 whoever 指定不限定身分的工作條件。",
+          "topic": "語法與篇章",
+          "source": "self-authored"
+        },
+        {
+          "text": "We will offer guidance to whoever needs help understanding the survey, without suggesting how they should answer.",
+          "translationZh": "我們會協助任何需要理解問卷的人，但不提示應如何回答。",
+          "grammar": "to 後的名詞子句內，whoever 作 needs 的主詞；不能只因 to 而改 whomever。",
+          "writingTip": "區分提供程序協助與影響回答。",
+          "topic": "語法與篇章",
+          "source": "self-authored"
+        }
+      ]
+    },
+    "whom": {
+      "kind": "grammar",
+      "senses": [
+        {
+          "pos": "pron.",
+          "meaning": "誰；關係子句中指人的受格",
+          "usage": "whom 作受詞，較正式；可接在介系詞後，如 with whom。who 作主詞，不能只見前面有名詞就一律選 whom。"
+        }
+      ],
+      "collocations": [],
+      "grammarPatterns": [
+        {
+          "en": "to whom",
+          "zh": "給誰／對誰",
+          "note": "本站整理的文法句型；N、S、V 等為句型位置，非試卷引文。"
+        },
+        {
+          "en": "with whom",
+          "zh": "與誰",
+          "note": "本站整理的文法句型；N、S、V 等為句型位置，非試卷引文。"
+        },
+        {
+          "en": "the person whom S + V",
+          "zh": "被……的那個人（子句受詞）",
+          "note": "本站整理的文法句型；N、S、V 等為句型位置，非試卷引文。"
+        },
+        {
+          "en": "Whom did S + V?",
+          "zh": "正式受詞問句",
+          "note": "本站整理的文法句型；N、S、V 等為句型位置，非試卷引文。"
+        }
+      ],
+      "synonyms": [
+        {
+          "en": "who",
+          "zh": "誰；指人的關係代名詞",
+          "note": "口語受詞常用 who；主詞位置必須用 who，非 whom。"
+        }
+      ],
+      "idioms": [],
+      "family": [],
+      "forms": [],
+      "usageNote": "whom 作受詞，較正式；可接在介系詞後，如 with whom。who 作主詞，不能只見前面有名詞就一律選 whom。",
+      "references": [
+        {
+          "label": "Cambridge 語法／詞義核對",
+          "url": "https://dictionary.cambridge.org/us/grammar/british-grammar/relative-pronouns/"
+        }
+      ],
+      "examples": [
+        {
+          "text": "The volunteer to whom I sent the message replied quickly and explained how to register for the event.",
+          "translationZh": "我寄訊息給的志工迅速回覆，說明如何報名活動。",
+          "grammar": "whom 是 to 的受詞；主句主詞中心為 The volunteer，動詞 replied。",
+          "writingTip": "用正式關係子句交代聯絡對象。",
+          "topic": "語法與篇章",
+          "source": "self-authored"
+        },
+        {
+          "text": "The student whom our group selected as leader listened carefully before making a decision about the schedule.",
+          "translationZh": "我們選為組長的學生在決定時程前仔細聆聽意見。",
+          "grammar": "whom 作 selected 的受詞；our group 作該子句主詞。",
+          "writingTip": "先區分子句主詞與受詞再選代名詞。",
+          "topic": "語法與篇章",
+          "source": "self-authored"
+        }
+      ]
+    },
+    "whose": {
+      "kind": "grammar",
+      "senses": [
+        {
+          "pos": "pron.",
+          "meaning": "誰的；其……的（所有關係）",
+          "usage": "whose + 名詞表所有關係，可指人，也可在適合語境指事物；who’s 是 who is／who has 的縮寫。"
+        }
+      ],
+      "collocations": [],
+      "grammarPatterns": [
+        {
+          "en": "whose + N",
+          "zh": "誰的／其……的",
+          "note": "本站整理的文法句型；N、S、V 等為句型位置，非試卷引文。"
+        },
+        {
+          "en": "the student whose N + V",
+          "zh": "……的那名學生",
+          "note": "本站整理的文法句型；N、S、V 等為句型位置，非試卷引文。"
+        },
+        {
+          "en": "Whose N is this?",
+          "zh": "這是誰的……？",
+          "note": "本站整理的文法句型；N、S、V 等為句型位置，非試卷引文。"
+        },
+        {
+          "en": "a project whose N + V",
+          "zh": "其……的計畫",
+          "note": "本站整理的文法句型；N、S、V 等為句型位置，非試卷引文。"
+        }
+      ],
+      "synonyms": [
+        {
+          "en": "who's",
+          "zh": "who is／who has",
+          "note": "有撇號的是縮寫，不能當「誰的」放在名詞前。"
+        }
+      ],
+      "idioms": [],
+      "family": [],
+      "forms": [],
+      "usageNote": "whose + 名詞表所有關係，可指人，也可在適合語境指事物；who’s 是 who is／who has 的縮寫。",
+      "references": [
+        {
+          "label": "Cambridge 語法／詞義核對",
+          "url": "https://dictionary.cambridge.org/us/grammar/british-grammar/relative-pronouns/"
+        }
+      ],
+      "examples": [
+        {
+          "text": "The student whose bicycle was damaged received help from classmates who wanted to make the trip easier for her.",
+          "translationZh": "腳踏車受損的學生得到同學協助，大家想讓她這趟旅程更順利。",
+          "grammar": "whose bicycle 整體作子句主詞；whose 指 bicycle 與 student 的所有關係。",
+          "writingTip": "用 whose 界定人物遭遇。",
+          "topic": "語法與篇章",
+          "source": "self-authored"
+        },
+        {
+          "text": "We chose a project whose goals were clear enough for both younger students and their parents to understand.",
+          "translationZh": "我們選擇目標清楚的計畫，讓低年級學生和家長都能理解。",
+          "grammar": "whose 可指 project；子句中心主詞 goals 為複數，故用 were。",
+          "writingTip": "以所有關係說明計畫的可理解性。",
+          "topic": "語法與篇章",
+          "source": "self-authored"
+        }
+      ]
+    },
+    "with": {
+      "kind": "grammar",
+      "senses": [
+        {
+          "pos": "prep.",
+          "meaning": "和；帶有；用；伴隨某狀態",
+          "usage": "with + 名詞可表同伴、工具或附帶特徵；with + N + 補語可描寫背景狀態，不能把所有 with 都解為「和」。"
+        }
+      ],
+      "collocations": [],
+      "grammarPatterns": [
+        {
+          "en": "work with someone",
+          "zh": "與某人合作",
+          "note": "本站整理的文法句型；N、S、V 等為句型位置，非試卷引文。"
+        },
+        {
+          "en": "with a clear purpose",
+          "zh": "帶著明確目的",
+          "note": "本站整理的文法句型；N、S、V 等為句型位置，非試卷引文。"
+        },
+        {
+          "en": "with N + adj.",
+          "zh": "某物處於某狀態",
+          "note": "本站整理的文法句型；N、S、V 等為句型位置，非試卷引文。"
+        },
+        {
+          "en": "with N + V-ing",
+          "zh": "某人／某物正在……的情況下",
+          "note": "本站整理的文法句型；N、S、V 等為句型位置，非試卷引文。"
+        }
+      ],
+      "synonyms": [
+        {
+          "en": "by",
+          "zh": "藉由；由……",
+          "note": "by 可指方法或被動施事者；with 常指工具，不能在所有句子互換。"
+        }
+      ],
+      "idioms": [],
+      "family": [],
+      "forms": [],
+      "usageNote": "with + 名詞可表同伴、工具或附帶特徵；with + N + 補語可描寫背景狀態，不能把所有 with 都解為「和」。",
+      "references": [
+        {
+          "label": "Cambridge 語法／詞義核對",
+          "url": "https://dictionary.cambridge.org/us/grammar/british-grammar/prepositions_2"
+        }
+      ],
+      "examples": [
+        {
+          "text": "With the doors open, the classroom felt cooler and students could hear birds outside during the break.",
+          "translationZh": "門打開時，教室感覺較涼，學生也能在休息時聽見外面的鳥叫。",
+          "grammar": "with the doors open 為名詞 + 形容詞補語；主句是 classroom felt cooler。",
+          "writingTip": "用 with 結構補充可感受的背景。",
+          "topic": "語法與篇章",
+          "source": "self-authored"
+        },
+        {
+          "text": "We worked with local residents to design a garden that would be easy for elderly visitors to use.",
+          "translationZh": "我們與當地居民合作設計花園，讓年長訪客容易使用。",
+          "grammar": "with local residents 表合作對象；to design 表目的。",
+          "writingTip": "寫清楚誰一起參與、共同解決什麼需求。",
+          "topic": "語法與篇章",
+          "source": "self-authored"
+        }
+      ]
+    },
+    "without": {
+      "kind": "grammar",
+      "senses": [
+        {
+          "pos": "prep.",
+          "meaning": "沒有；不做……；缺乏……而",
+          "usage": "without + N／V-ing；without doing 不是完整子句，做這動作的人通常須與主句主體一致或由上下文明確決定。"
+        }
+      ],
+      "collocations": [],
+      "grammarPatterns": [
+        {
+          "en": "without + N",
+          "zh": "沒有某物",
+          "note": "本站整理的文法句型；N、S、V 等為句型位置，非試卷引文。"
+        },
+        {
+          "en": "without V-ing",
+          "zh": "沒有做……",
+          "note": "本站整理的文法句型；N、S、V 等為句型位置，非試卷引文。"
+        },
+        {
+          "en": "without any evidence",
+          "zh": "沒有任何證據",
+          "note": "本站整理的文法句型；N、S、V 等為句型位置，非試卷引文。"
+        },
+        {
+          "en": "without delay",
+          "zh": "立刻；沒有耽擱",
+          "note": "本站整理的文法句型；N、S、V 等為句型位置，非試卷引文。"
+        }
+      ],
+      "synonyms": [
+        {
+          "en": "unless",
+          "zh": "除非",
+          "note": "unless 接條件子句，without 接名詞性成分，不能直接交換。"
+        }
+      ],
+      "idioms": [],
+      "family": [],
+      "forms": [],
+      "usageNote": "without + N／V-ing；without doing 不是完整子句，做這動作的人通常須與主句主體一致或由上下文明確決定。",
+      "references": [
+        {
+          "label": "Cambridge 語法／詞義核對",
+          "url": "https://dictionary.cambridge.org/us/grammar/british-grammar/prepositions_2"
+        }
+      ],
+      "examples": [
+        {
+          "text": "We should not accept a dramatic claim without checking whether the source provides clear evidence for it.",
+          "translationZh": "我們不應未檢查來源是否提供清楚證據，就接受驚人的主張。",
+          "grammar": "without checking 是介系詞 + V-ing；checking 的主體是 we。",
+          "writingTip": "把查證行動當成接受主張前的必要程序。",
+          "topic": "語法與篇章",
+          "source": "self-authored"
+        },
+        {
+          "text": "The volunteers completed the task without expensive equipment by sharing simple tools and planning each step carefully.",
+          "translationZh": "志工透過共用簡單工具與仔細規画每一步，在沒有昂貴設備下完成任務。",
+          "grammar": "without expensive equipment 指資源條件；by sharing 表方法。",
+          "writingTip": "以具體方法解釋如何克服資源限制。",
+          "topic": "語法與篇章",
+          "source": "self-authored"
+        }
+      ]
+    },
+    "you": {
+      "kind": "grammar",
+      "senses": [
+        {
+          "pos": "pron.",
+          "meaning": "你；你們；也可泛指一般人",
+          "usage": "you 可作主詞或受詞；your 接名詞，yours 獨立表所有；yourself／yourselves 依所指人數判斷。泛指時注意讀者範圍。"
+        }
+      ],
+      "collocations": [],
+      "grammarPatterns": [
+        {
+          "en": "you are / you have",
+          "zh": "你／你們是／有",
+          "note": "本站整理的文法句型；N、S、V 等為句型位置，非試卷引文。"
+        },
+        {
+          "en": "your + N",
+          "zh": "你的／你們的……",
+          "note": "本站整理的文法句型；N、S、V 等為句型位置，非試卷引文。"
+        },
+        {
+          "en": "the N is yours",
+          "zh": "某物是你的",
+          "note": "本站整理的文法句型；N、S、V 等為句型位置，非試卷引文。"
+        },
+        {
+          "en": "by yourself",
+          "zh": "你獨自／靠自己",
+          "note": "本站整理的文法句型；N、S、V 等為句型位置，非試卷引文。"
+        }
+      ],
+      "synonyms": [
+        {
+          "en": "your / you're",
+          "zh": "你的／你是",
+          "note": "your 是所有格限定詞；you’re 是 you are，依後方結構分辨。"
+        }
+      ],
+      "idioms": [],
+      "family": [],
+      "forms": [
+        {
+          "word": "your",
+          "pos": "adj.",
+          "meaning": "所有格限定詞，後接名詞"
+        },
+        {
+          "word": "yours",
+          "pos": "pron.",
+          "meaning": "所有格代名詞，獨立使用"
+        },
+        {
+          "word": "yourself",
+          "pos": "pron.",
+          "meaning": "單數反身／強調形式"
+        },
+        {
+          "word": "yourselves",
+          "pos": "pron.",
+          "meaning": "複數反身／強調形式"
+        }
+      ],
+      "usageNote": "you 可作主詞或受詞；your 接名詞，yours 獨立表所有；yourself／yourselves 依所指人數判斷。泛指時注意讀者範圍。",
+      "references": [
+        {
+          "label": "Cambridge 語法／詞義核對",
+          "url": "https://dictionary.cambridge.org/grammar/british-grammar/possessive-pronouns"
+        }
+      ],
+      "examples": [
+        {
+          "text": "You can support the project by sharing your skills, even if you cannot attend every weekend activity.",
+          "translationZh": "即使無法參加每週末活動，你仍可透過分享技能支持計畫。",
+          "grammar": "you 為主詞；your skills 中 your 表所有；by sharing 表方法。",
+          "writingTip": "在邀請中提供不同程度的參與方式。",
+          "topic": "語法與篇章",
+          "source": "self-authored"
+        },
+        {
+          "text": "If you work by yourself, remember to check your results before presenting them to the rest of the class.",
+          "translationZh": "如果你獨自工作，記得在向全班其他人展示前核對結果。",
+          "grammar": "by yourself 表獨自；your results 中 your 接名詞；them 回指 results。",
+          "writingTip": "用第二人稱提出具體可實行的提醒。",
+          "topic": "語法與篇章",
+          "source": "self-authored"
+        }
+      ]
+    }
+  }
+}

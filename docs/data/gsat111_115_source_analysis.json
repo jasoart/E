@@ -1,0 +1,491 @@
+{
+  "schema_version": 1,
+  "documents": [
+    {
+      "id": "111",
+      "file_name": "02-111學測英文試卷 下午7.09.27.pdf",
+      "sha256": "5877adb44710601bd1e9580e063d00f702acd7229a0fa97425290fe90044c358",
+      "pdf_pages": 12,
+      "kind": "exam",
+      "lexical_stem_sample": {
+        "sample_count": 10,
+        "min": 15,
+        "median": 18.5,
+        "max": 25,
+        "above_24_tokens": 1,
+        "questions": [
+          {
+            "question": 1,
+            "printed_page": 1,
+            "pdf_page": 2,
+            "english_token_count_with_one_blank": 18
+          },
+          {
+            "question": 2,
+            "printed_page": 1,
+            "pdf_page": 2,
+            "english_token_count_with_one_blank": 18
+          },
+          {
+            "question": 3,
+            "printed_page": 1,
+            "pdf_page": 2,
+            "english_token_count_with_one_blank": 19
+          },
+          {
+            "question": 4,
+            "printed_page": 1,
+            "pdf_page": 2,
+            "english_token_count_with_one_blank": 18
+          },
+          {
+            "question": 5,
+            "printed_page": 1,
+            "pdf_page": 2,
+            "english_token_count_with_one_blank": 15
+          },
+          {
+            "question": 6,
+            "printed_page": 1,
+            "pdf_page": 2,
+            "english_token_count_with_one_blank": 25
+          },
+          {
+            "question": 7,
+            "printed_page": 1,
+            "pdf_page": 2,
+            "english_token_count_with_one_blank": 22
+          },
+          {
+            "question": 8,
+            "printed_page": 1,
+            "pdf_page": 2,
+            "english_token_count_with_one_blank": 19
+          },
+          {
+            "question": 9,
+            "printed_page": 1,
+            "pdf_page": 2,
+            "english_token_count_with_one_blank": 21
+          },
+          {
+            "question": 10,
+            "printed_page": 1,
+            "pdf_page": 2,
+            "english_token_count_with_one_blank": 18
+          }
+        ]
+      }
+    },
+    {
+      "id": "112",
+      "file_name": "02-112學測英文試卷.pdf",
+      "sha256": "79f8f0a5822b9fbdc424cccbf88fdff124c80b9cf0bd8a56913901cd1bb0f741",
+      "pdf_pages": 12,
+      "kind": "exam",
+      "lexical_stem_sample": {
+        "sample_count": 10,
+        "min": 16,
+        "median": 20.0,
+        "max": 23,
+        "above_24_tokens": 0,
+        "questions": [
+          {
+            "question": 1,
+            "printed_page": 1,
+            "pdf_page": 2,
+            "english_token_count_with_one_blank": 21
+          },
+          {
+            "question": 2,
+            "printed_page": 1,
+            "pdf_page": 2,
+            "english_token_count_with_one_blank": 16
+          },
+          {
+            "question": 3,
+            "printed_page": 1,
+            "pdf_page": 2,
+            "english_token_count_with_one_blank": 20
+          },
+          {
+            "question": 4,
+            "printed_page": 1,
+            "pdf_page": 2,
+            "english_token_count_with_one_blank": 22
+          },
+          {
+            "question": 5,
+            "printed_page": 1,
+            "pdf_page": 2,
+            "english_token_count_with_one_blank": 18
+          },
+          {
+            "question": 6,
+            "printed_page": 1,
+            "pdf_page": 2,
+            "english_token_count_with_one_blank": 20
+          },
+          {
+            "question": 7,
+            "printed_page": 1,
+            "pdf_page": 2,
+            "english_token_count_with_one_blank": 20
+          },
+          {
+            "question": 8,
+            "printed_page": 1,
+            "pdf_page": 2,
+            "english_token_count_with_one_blank": 18
+          },
+          {
+            "question": 9,
+            "printed_page": 1,
+            "pdf_page": 2,
+            "english_token_count_with_one_blank": 23
+          },
+          {
+            "question": 10,
+            "printed_page": 1,
+            "pdf_page": 2,
+            "english_token_count_with_one_blank": 16
+          }
+        ]
+      }
+    },
+    {
+      "id": "113",
+      "file_name": "02-113學測英文科定稿.pdf",
+      "sha256": "09d35c2ed8561e0845dbbe305e12f5342b27f209fb44d801ff7f9f1f9e519ecf",
+      "pdf_pages": 12,
+      "kind": "exam",
+      "lexical_stem_sample": {
+        "sample_count": 10,
+        "min": 14,
+        "median": 19.5,
+        "max": 24,
+        "above_24_tokens": 0,
+        "questions": [
+          {
+            "question": 1,
+            "printed_page": 1,
+            "pdf_page": 2,
+            "english_token_count_with_one_blank": 14
+          },
+          {
+            "question": 2,
+            "printed_page": 1,
+            "pdf_page": 2,
+            "english_token_count_with_one_blank": 19
+          },
+          {
+            "question": 3,
+            "printed_page": 1,
+            "pdf_page": 2,
+            "english_token_count_with_one_blank": 18
+          },
+          {
+            "question": 4,
+            "printed_page": 1,
+            "pdf_page": 2,
+            "english_token_count_with_one_blank": 20
+          },
+          {
+            "question": 5,
+            "printed_page": 1,
+            "pdf_page": 2,
+            "english_token_count_with_one_blank": 19
+          },
+          {
+            "question": 6,
+            "printed_page": 1,
+            "pdf_page": 2,
+            "english_token_count_with_one_blank": 19
+          },
+          {
+            "question": 7,
+            "printed_page": 1,
+            "pdf_page": 2,
+            "english_token_count_with_one_blank": 20
+          },
+          {
+            "question": 8,
+            "printed_page": 1,
+            "pdf_page": 2,
+            "english_token_count_with_one_blank": 20
+          },
+          {
+            "question": 9,
+            "printed_page": 1,
+            "pdf_page": 2,
+            "english_token_count_with_one_blank": 22
+          },
+          {
+            "question": 10,
+            "printed_page": 1,
+            "pdf_page": 2,
+            "english_token_count_with_one_blank": 24
+          }
+        ]
+      }
+    },
+    {
+      "id": "114",
+      "file_name": "02-114學測英文試題.pdf",
+      "sha256": "51c8d9f7c2715adf74cae808bde4906cfadee19d0ec379df3b33881c35960a78",
+      "pdf_pages": 12,
+      "kind": "exam",
+      "lexical_stem_sample": {
+        "sample_count": 10,
+        "min": 15,
+        "median": 19.0,
+        "max": 24,
+        "above_24_tokens": 0,
+        "questions": [
+          {
+            "question": 1,
+            "printed_page": 1,
+            "pdf_page": 2,
+            "english_token_count_with_one_blank": 21
+          },
+          {
+            "question": 2,
+            "printed_page": 1,
+            "pdf_page": 2,
+            "english_token_count_with_one_blank": 20
+          },
+          {
+            "question": 3,
+            "printed_page": 1,
+            "pdf_page": 2,
+            "english_token_count_with_one_blank": 24
+          },
+          {
+            "question": 4,
+            "printed_page": 1,
+            "pdf_page": 2,
+            "english_token_count_with_one_blank": 15
+          },
+          {
+            "question": 5,
+            "printed_page": 1,
+            "pdf_page": 2,
+            "english_token_count_with_one_blank": 21
+          },
+          {
+            "question": 6,
+            "printed_page": 1,
+            "pdf_page": 2,
+            "english_token_count_with_one_blank": 22
+          },
+          {
+            "question": 7,
+            "printed_page": 1,
+            "pdf_page": 2,
+            "english_token_count_with_one_blank": 17
+          },
+          {
+            "question": 8,
+            "printed_page": 1,
+            "pdf_page": 2,
+            "english_token_count_with_one_blank": 18
+          },
+          {
+            "question": 9,
+            "printed_page": 1,
+            "pdf_page": 2,
+            "english_token_count_with_one_blank": 18
+          },
+          {
+            "question": 10,
+            "printed_page": 1,
+            "pdf_page": 2,
+            "english_token_count_with_one_blank": 16
+          }
+        ]
+      }
+    },
+    {
+      "id": "115",
+      "file_name": "02-115學測英文試卷.pdf",
+      "sha256": "e5a644f0133482a86f0befb3dfd9aaa2161be2685a00620950581db7ad6bc3f2",
+      "pdf_pages": 12,
+      "kind": "exam",
+      "lexical_stem_sample": {
+        "sample_count": 10,
+        "min": 16,
+        "median": 18.5,
+        "max": 25,
+        "above_24_tokens": 1,
+        "questions": [
+          {
+            "question": 1,
+            "printed_page": 1,
+            "pdf_page": 2,
+            "english_token_count_with_one_blank": 17
+          },
+          {
+            "question": 2,
+            "printed_page": 1,
+            "pdf_page": 2,
+            "english_token_count_with_one_blank": 17
+          },
+          {
+            "question": 3,
+            "printed_page": 1,
+            "pdf_page": 2,
+            "english_token_count_with_one_blank": 16
+          },
+          {
+            "question": 4,
+            "printed_page": 1,
+            "pdf_page": 2,
+            "english_token_count_with_one_blank": 16
+          },
+          {
+            "question": 5,
+            "printed_page": 1,
+            "pdf_page": 2,
+            "english_token_count_with_one_blank": 19
+          },
+          {
+            "question": 6,
+            "printed_page": 1,
+            "pdf_page": 2,
+            "english_token_count_with_one_blank": 18
+          },
+          {
+            "question": 7,
+            "printed_page": 1,
+            "pdf_page": 2,
+            "english_token_count_with_one_blank": 20
+          },
+          {
+            "question": 8,
+            "printed_page": 1,
+            "pdf_page": 2,
+            "english_token_count_with_one_blank": 19
+          },
+          {
+            "question": 9,
+            "printed_page": 1,
+            "pdf_page": 2,
+            "english_token_count_with_one_blank": 25
+          },
+          {
+            "question": 10,
+            "printed_page": 1,
+            "pdf_page": 2,
+            "english_token_count_with_one_blank": 19
+          }
+        ]
+      }
+    },
+    {
+      "id": "spec115",
+      "file_name": "01_115學年度起適用學測英文考科考試說明.pdf",
+      "sha256": "9d206402a3f38f322b7f0ba94111ca4e775a2046725940108cd4140d28e714e2",
+      "pdf_pages": 34,
+      "kind": "official_specification"
+    }
+  ],
+  "total_pdf_pages": 94,
+  "method": "First ten lexical-question stems per year; English regex tokens + one blank; numerals excluded; a stem may contain multiple sentences. Not official sentence difficulty or all-exam statistics.",
+  "lexical_stem_summary": {
+    "count": 50,
+    "min": 14,
+    "median": 19.0,
+    "max": 25,
+    "above_24_tokens": 2
+  },
+  "existing_seed_overlap_checks": [
+    {
+      "dataset": "gsat115_style_examples.jsonl",
+      "records": 78,
+      "exact_8gram_matches_by_document": {
+        "111": 0,
+        "112": 0,
+        "113": 0,
+        "114": 0,
+        "115": 0,
+        "spec115": 0
+      },
+      "matched_record_ids": []
+    },
+    {
+      "dataset": "gsat_examples_demo.jsonl",
+      "records": 60,
+      "exact_8gram_matches_by_document": {
+        "111": 0,
+        "112": 0,
+        "113": 0,
+        "114": 0,
+        "115": 0,
+        "spec115": 0
+      },
+      "matched_record_ids": []
+    }
+  ],
+  "reference_note": "Exam111-115 and specification examples are all overlap references. Official specification examples may be from older years and are not counted as new111-115 questions. Only metadata is persisted.",
+  "multi_pdf_reference_validation": {
+    "role": "no-copy-overlap-reference-only",
+    "ngram_words": 8,
+    "uploaded_document_count": 7,
+    "unique_document_count": 6,
+    "duplicate_document_count": 1,
+    "page_count": 94,
+    "english_8gram_count": 19292,
+    "documents": [
+      {
+        "filename": "02-111學測英文試卷 下午7.09.27.pdf",
+        "sha256": "5877adb44710601bd1e9580e063d00f702acd7229a0fa97425290fe90044c358",
+        "page_count": 12,
+        "pages_with_8grams": 10,
+        "english_8gram_count": 3359,
+        "duplicate_filenames": []
+      },
+      {
+        "filename": "02-112學測英文試卷.pdf",
+        "sha256": "79f8f0a5822b9fbdc424cccbf88fdff124c80b9cf0bd8a56913901cd1bb0f741",
+        "page_count": 12,
+        "pages_with_8grams": 10,
+        "english_8gram_count": 3335,
+        "duplicate_filenames": []
+      },
+      {
+        "filename": "02-113學測英文科定稿.pdf",
+        "sha256": "09d35c2ed8561e0845dbbe305e12f5342b27f209fb44d801ff7f9f1f9e519ecf",
+        "page_count": 12,
+        "pages_with_8grams": 11,
+        "english_8gram_count": 3313,
+        "duplicate_filenames": []
+      },
+      {
+        "filename": "02-114學測英文試題.pdf",
+        "sha256": "51c8d9f7c2715adf74cae808bde4906cfadee19d0ec379df3b33881c35960a78",
+        "page_count": 12,
+        "pages_with_8grams": 10,
+        "english_8gram_count": 3264,
+        "duplicate_filenames": []
+      },
+      {
+        "filename": "02-115學測英文試卷.pdf",
+        "sha256": "e5a644f0133482a86f0befb3dfd9aaa2161be2685a00620950581db7ad6bc3f2",
+        "page_count": 12,
+        "pages_with_8grams": 10,
+        "english_8gram_count": 3458,
+        "duplicate_filenames": [
+          "02-115學測英文試卷.pdf"
+        ]
+      },
+      {
+        "filename": "01_115學年度起適用學測英文考科考試說明.pdf",
+        "sha256": "9d206402a3f38f322b7f0ba94111ca4e775a2046725940108cd4140d28e714e2",
+        "page_count": 34,
+        "pages_with_8grams": 23,
+        "english_8gram_count": 4975,
+        "duplicate_filenames": []
+      }
+    ]
+  }
+}
