@@ -437,3 +437,12 @@ h1 { font-weight: 700; letter-spacing: -.015em; }
 .paper-sources,.paper-references nav{font-size:.88rem}
 .paper-references{padding:.7rem 0}
 @media(max-width:630px){.paper-options{grid-template-columns:1fr}.paper-controls{gap:.5rem .8rem}}
+.paper-options li>div{min-width:0;flex:1}
+.paper-option-example{margin-top:.25rem}
+.paper-option-example>summary{cursor:pointer;font-size:.88rem;font-weight:650;padding:.35rem 0}
+.paper-option-example[open]>summary{margin-bottom:.2rem}
+.paper-option-example [lang=en]{overflow-wrap:anywhere}
+.paper-option-example em{font-style:normal;text-decoration:underline dotted;text-underline-offset:.22em}
+.paper-comparisons{list-style:none;margin:0;padding:0}
+.paper-comparisons li{padding:.4rem 0;border-top:1px solid var(--line)}
+.paper-comparisons strong{font-size:.95rem}

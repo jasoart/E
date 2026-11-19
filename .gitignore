@@ -1,0 +1,7 @@
+__pycache__/
+*.py[cod]
+colab/data/gsat_curriculum.json
+colab/runs/
+tests/browser_screenshot.png
+node_modules/
+assets/models/kokoro/

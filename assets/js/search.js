@@ -315,5 +315,18 @@ function computeHybridSearch(rawQuery){
   addRanking(lexicalTop,1.75,"字面");addRanking(sparseTop,1,"BM25");if(queryInfo.hasConcept)addRanking(conceptualTop,1.2,"概念");
   lexicalTop.slice(0,30).forEach(item=>{const record=fused.get(item.index);if(record&&item.score>=1000)record.score+=.09;else if(record&&item.score>=940)record.score+=.025});
   const feedback=state.searchFeedback[query]||{};Object.entries(feedback).sort((a,b)=>b[1]-a[1]).forEach(([word,count],rank)=>{if(!BM25_INDEX.ready)ensureBm25Index();const index=SEARCH_WORD_INDEX.get(word);if(index===undefined)return;const record=fused.get(index)||{entry:VOCABULARY[index],index,score:0,channels:new Set()};record.score+=Math.min(1.15,.7+Number(count)*.06)/(60+rank+1);record.channels.add("本機偏好");fused.set(index,record)});
-  return[...fused.values()].map(record=>{const direct=lexicalByIndex.get(record.index),reason=direct&&direct.reason?direct.reason:record.channels.has("概念")?"概念擴展":record.channels.has("BM25")?"BM25 相關":"本機偏好";return{entry:record.entry,index:record.index,match:{score:record.score,reason,channels:[...record.channels]}}}).sort((a,b)=>b.match.score-a.match.score||a.entry.level-b.entry.level||a.entry.word.localeCompare(b.entry.word));
+  const paperEntries=typeof paperEntriesByForm==="undefined"?undefined:paperEntriesByForm.get(query);
+  const results=[...fused.values()].map(record=>{
+    const direct=lexicalByIndex.get(record.index);
+    let reason=direct?.reason||(record.channels.has("概念")?"概念擴展":record.channels.has("BM25")?"BM25 相關":"本機偏好");
+    if(paperEntries?.has(record.entry.word)&&reason!=="完全相符")reason="試卷詞形相符";
+    return{entry:record.entry,index:record.index,match:{score:record.score,reason,channels:[...record.channels]}};
+  });
+  // For a printed option, show its actual headword or linked lemma before looser family matches.
+  function paperPriority(row){
+    if(row.match.reason==="完全相符")return 2;
+    return paperEntries.has(row.entry.word)?1:0;
+  }
+  return results.sort((a,b)=>(paperEntries?paperPriority(b)-paperPriority(a):0)||
+    b.match.score-a.match.score||a.entry.level-b.entry.level||a.entry.word.localeCompare(b.entry.word));
 }

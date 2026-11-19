@@ -1,0 +1,13 @@
+{
+  "name": "gsat-local-kokoro-runtime",
+  "private": true,
+  "type": "module",
+  "scripts": { "build": "node build.mjs" },
+  "dependencies": {
+    "@huggingface/transformers": "3.8.1",
+    "kokoro-js": "1.2.1",
+    "onnxruntime-web": "1.22.0-dev.20250409-89f8206ba4",
+    "phonemizer": "1.2.1"
+  },
+  "devDependencies": { "esbuild": "0.25.12" }
+}

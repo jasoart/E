@@ -1,0 +1,14 @@
+{
+  "stats": {
+    "contextsPerWord": 3,
+    "newlyWrittenSentences": 9900,
+    "sharedWords": 5622,
+    "completedWords": 6024,
+    "sharedSentenceAppearances": 18072,
+    "uniqueSharedSentences": 9625,
+    "curatedWords": 402,
+    "remainingWords": 0,
+    "totalWords": 6024
+  },
+  "remaining": []
+}
