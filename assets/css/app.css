@@ -413,3 +413,27 @@ h1 { font-weight: 700; letter-spacing: -.015em; }
   .reading-filter-grid { grid-template-columns: 1fr; }
   .reading-collocations p { grid-template-columns: 1fr; }
 }
+
+.paper-vocabulary{flex:0 0 100%;width:100%;min-width:0;margin:0;padding:0 0 14px;scroll-margin-top:1rem}
+.paper-vocabulary>summary,.paper-answer>summary{cursor:pointer;font-weight:700;padding:.6rem 0}
+.paper-vocabulary>summary{font-size:1.1rem}
+.paper-vocabulary :focus-visible,.paper-references a:focus-visible{outline:3px solid #a74432;outline-offset:3px}
+.paper-controls,.paper-sources,.paper-references nav{display:flex;flex-wrap:wrap;align-items:center;gap:.7rem 1.2rem}
+.paper-controls{margin:.5rem 0 1rem}
+.paper-controls label{font-weight:650;font-size:.9rem}
+.paper-controls select{margin-left:.5rem;color:var(--ink);background:var(--white);border:1px solid var(--line);border-radius:.4rem;font:inherit;min-height:40px;padding:.3rem .45rem}
+.paper-options,.paper-examples{list-style:none;margin:0;padding:0}
+.paper-options{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.6rem;margin:.65rem 0}
+.paper-options li{display:flex;gap:.65rem;align-items:baseline;min-width:0;background:var(--white);border:1px solid var(--line);border-radius:.6rem;padding:.8rem}
+.paper-options p,.paper-examples p,.paper-answer p{margin:.32rem 0;line-height:1.55}
+.paper-options abbr,.paper-examples small{color:var(--ink2);font-weight:650}
+.paper-letter{color:var(--muted);font-weight:700}
+.paper-options a,.paper-sources a,.paper-references a{color:var(--ink2);text-underline-offset:.2em;display:inline-block;padding:.36rem 0;overflow-wrap:anywhere}
+.paper-answer{border-block:1px solid var(--line);padding:.25rem 0;margin:.8rem 0}
+.paper-answer h4,.paper-references h3{margin:.8rem 0 .3rem}
+.paper-phrase,.paper-examples strong{font-weight:750}
+.paper-examples li{border-top:1px solid var(--line);padding:.65rem 0}
+.paper-examples em{font-style:normal;text-decoration:underline dotted;text-underline-offset:.22em}
+.paper-sources,.paper-references nav{font-size:.88rem}
+.paper-references{padding:.7rem 0}
+@media(max-width:630px){.paper-options{grid-template-columns:1fr}.paper-controls{gap:.5rem .8rem}}

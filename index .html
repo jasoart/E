@@ -13,7 +13,7 @@
   <title>學測英文專用詞典｜V2 單字筆記 × 情境搭配</title>
   <link rel="stylesheet" href="./assets/css/local-coach.css?v=9678e6098936">
   <link rel="stylesheet" href="./assets/css/retrieval-practice.css?v=fccb231d2194">
-  <link rel="stylesheet" href="./assets/css/app.css?v=72e03eb2a8c4">
+  <link rel="stylesheet" href="./assets/css/app.css?v=5f51c844db2c">
   <script defer src="./assets/js/config.js?v=eea935eb40ae"></script>
   <script defer src="./assets/data/vocabulary.js?v=f0471273feca"></script>
   <script defer src="./assets/data/collocations.js?v=9ca91a43390d"></script>
@@ -29,17 +29,19 @@
   <script defer src="./assets/js/builtin.js?v=4270c7044c34"></script>
   <script defer src="./assets/data/reading-vocabulary.js?v=d01430584e2c"></script>
   <script defer src="./assets/js/reading.js?v=998dfb149eb7"></script>
-  <script defer src="./assets/js/search.js?v=0d6449177e0a"></script>
+  <script defer src="./assets/data/exam-vocabulary.js?v=f99c030c51db"></script>
+  <script defer src="./assets/js/paper-vocabulary.js?v=24843234348e"></script>
+  <script defer src="./assets/js/search.js?v=787d245a3657"></script>
   <script defer src="./assets/js/examples.js?v=4f21b06d22b2"></script>
   <script defer src="./assets/js/audio.js?v=8df633276a02"></script>
   <script defer src="./assets/js/retrieval-practice.js?v=251a504ddb48"></script>
-  <script defer src="./assets/js/ui.js?v=fc26c2b6344b"></script>
+  <script defer src="./assets/js/ui.js?v=b5aa2f6ac213"></script>
   <script defer src="./assets/js/favorites.js?v=569a332f0d3a"></script>
   <script defer src="./assets/js/online.js?v=0084ffa743cb"></script>
   <script defer src="./assets/data/context-practice.js?v=b9d6934ef50c"></script>
   <script defer src="./assets/js/diagnostics.js?v=45c5c9678975"></script>
   <script defer src="./assets/js/local-coach.js?v=38bf370a4352"></script>
-  <script defer src="./assets/js/app.js?v=5e21f34fd68d"></script>
+  <script defer src="./assets/js/app.js?v=4ffe158f86b3"></script>
 
 </head>
 <body>
@@ -68,6 +70,11 @@
   </section>
 
   <section class="tools" id="dict" aria-label="詞彙篩選">
+    <details id="paperVocabulary" class="paper-vocabulary">
+      <summary>歷屆詞彙題 · 依年度與題號查詞</summary>
+      <div class="paper-controls"><label for="paperYear">年度<select id="paperYear"></select></label><label for="paperNumber">題號<select id="paperNumber"></select></label></div>
+      <div id="paperContent" aria-live="polite"></div>
+    </details>
     <div class="levels" id="levelFilters"><span class="filter-label">級別</span></div>
     <div class="tabs"><button id="allTab" class="on" type="button">全部</button><button id="notebookTab" type="button">V2 筆記 <span id="notebookTabCount"></span></button><button id="examTab" type="button">111–115 真題 <span id="examTabCount"></span></button><button id="readingTab" type="button">閱讀詞彙 <span id="readingTabCount"></span></button><button id="collocationTab" type="button">搭配考點 <span id="collocationTabCount"></span></button><button id="reviewTab" type="button">今日複習 <span id="reviewCount"></span></button><button id="favoriteTab" type="button">收藏 <span id="favoriteCount"></span></button></div>
     <label id="notebookSourceFilter" class="notebook-source-filter" hidden for="notebookSource">教材內容 <select id="notebookSource"><option value="">全部 V2 筆記</option><option value="curated">專題新編</option><option value="authored">原創情境句</option><option value="guided">待改寫 · 教材導讀</option></select></label>
@@ -131,7 +138,7 @@
   <footer>
     <p>高中英文參考詞彙表 © 財團法人大學入學考試中心基金會。本工具供非營利學習使用；詞彙級別與詞性依原表整理，中文釋義與音標含 ECDICT（MIT）資料。</p>
     <p>原創情境句附繁中翻譯、句構說明與仿寫方向；原教材例句保留在備查區，真題另附來源。詞彙搜尋與練習在此瀏覽器執行；單字及例句發音只使用 Google 音檔，按下播放後才連線載入。</p>
-    <p>考題來源與教學方法：<a href="./docs/TECHNOLOGY_RESEARCH_2026.md?v=5c4497a3ece6">研究與採用範圍</a> · <a href="./SOURCE_GUIDE.md?v=75f7f56d5d40">資料來源說明</a> · <a target="_blank" rel="noreferrer" href="https://www.ceec.edu.tw/xcepaper/cont?qperoid=0Q105359543716106563&amp;sid=0Q105583094870257539&amp;xsmsid=0J066588036013658199">大考中心 115 年試題特色</a> · <a target="_blank" rel="noreferrer" href="https://www.ceec.edu.tw/xmfile?xsmsid=0J052424829869345634">官方試卷</a> · <a target="_blank" rel="noreferrer" href="https://www.ehanlin.com.tw/infos/gsat/download.html">公開歷屆試題與解析索引（翰林）</a>。本包僅收錄自行整理的搭配與自編題，不轉載重考班付費教材。</p>
+    <p><a target="_blank" rel="noreferrer" href="https://www.ceec.edu.tw/xmfile?xsmsid=0J052424829869345634">大考中心歷年試卷</a> · <a target="_blank" rel="noreferrer" href="https://www.ceec.edu.tw/xmdoc/cont?sid=0O211573150658099894&amp;xsmsid=0J018586101460336585">115 學年度起英文考科考試說明</a> · <a href="./assets/data/ecdict.LICENSE.txt?v=f8552dd246f6">ECDICT 授權</a> · <a href="./assets/data/cmudict.LICENSE.txt?v=bd4ce8e44170">CMUdict 授權</a> · <a href="./assets/data/wordnet.NOTICE.txt?v=cdd0902c7f52">WordNet 授權</a></p>
   </footer>
   <div class="toast" id="toast" role="status"></div>
 

@@ -30,6 +30,7 @@ const officialWordCount=typeof GSAT_OFFICIAL_VOCABULARY_COUNT==="number"?GSAT_OF
 buildLevelFilters();buildCategoryFilters();buildExamYearFilters();byId("totalCount").textContent=officialWordCount.toLocaleString();byId("collocationCount").textContent=GSAT_COLLOCATION_GUIDE.length.toLocaleString();byId("collocationTabCount").textContent=GSAT_COLLOCATION_GUIDE.length.toLocaleString();const examCount=GSAT_EXAM_COLLOCATIONS.length;byId("examPointCount").textContent=examCount.toLocaleString();byId("examTabCount").textContent=examCount.toLocaleString();updateReviewCount();
 state.selectedIndex=Math.max(0,VOCABULARY.findIndex(entry=>entry.word==="challenge"));
 applyFilters();selectEntry(state.selectedIndex);setupDaily();
+if(typeof setupPaperVocabulary==="function")setupPaperVocabulary();
 
 setupFavoriteBackup();setTimeout(warmSearchIndex,100);
 const builtinStats=builtinStudyStats();

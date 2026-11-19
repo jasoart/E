@@ -61,7 +61,7 @@ async function loadPatternReferenceDetails(details){
   if(!quotes.some(node=>node.dataset.sourceId))return;
   if(!gsatSourcePromise)gsatSourcePromise=fetch('./assets/data/reference-details.json',{cache:'force-cache'}).then(response=>{if(!response.ok)throw Error('HTTP '+response.status);return response.json()}).catch(error=>{gsatSourcePromise=null;throw error});
   try{const library=await gsatSourcePromise;if(!details.isConnected)return;
-    quotes.forEach(node=>{const item=library[node.dataset.sourceId];node.textContent=item?'…'+item.quote+'…':'找不到原文紀錄，請查 SOURCE_GUIDE.md';delete node.dataset.sourceId;});
+    quotes.forEach(node=>{const item=library[node.dataset.sourceId];node.textContent=item?'…'+item.quote+'…':'這筆出處暫無摘錄，可從頁尾的大考中心歷年試卷核對。';delete node.dataset.sourceId;});
   }catch{quotes.forEach(node=>{node.textContent='來源暫時無法載入，請確認已將 assets/data/reference-details.json 一併上傳。';});}
 }
 
@@ -346,7 +346,7 @@ function renderDetail(entry,index){
     <div class="notebook-intro"><p class="kicker">單字筆記 V2.0 · ${note?.provenance==="source-guided"?"學測情境導讀":"學測情境新編"}</p><p>從字義到搭配，再把同一用法放入自己的作文。</p><nav class="notebook-navigation" aria-label="單字筆記欄位"><a href="#notebookSenses">1 字義</a><a href="#notebookCollocations">2 搭配</a><a href="#notebookRelations">3 辨析</a><a href="#notebookFamily">4 詞形</a><a href="#exampleCard">5 情境句</a></nav>${renderNotebookRoadmap(entry,note)}<div class="notebook-expert-tip"><h3>${(typeof getVocabularyInformation==="function"&&getVocabularyInformation(entry)?.tipKind==="pos-guidance")?"詞性學習提示":"學測用法提醒"}</h3><p>${escapeHtml(notebookTeacherTip(entry,note))}</p></div></div>
     <section id="retrievalPractice" class="retrieval-practice" aria-label="搭配回想練習"></section>
     ${typeof renderReadingVocabulary==="function"?renderReadingVocabulary(entry):""}
-    <section class="definition notebook-field" id="notebookSenses"><p class="kicker"><span class="notebook-number">01</span> 詞性與多重字義</p>${renderNotebookSenses(entry,study,note)}${note?.usageNote?`<p class="notebook-usage-note"><strong>用法提醒：</strong>${escapeHtml(note.usageNote)}</p>`:""}${renderNotebookReferences(note)}</section>
+    <section class="definition notebook-field" id="notebookSenses"><p class="kicker"><span class="notebook-number">01</span> 詞性與多重字義</p>${renderNotebookSenses(entry,study,note)}${note?.usageNote?`<p class="notebook-usage-note"><strong>用法提醒：</strong>${escapeHtml(note.usageNote)}</p>`:""}${renderNotebookReferences(note)}${typeof renderPaperReferences==="function"?renderPaperReferences(entry):""}</section>
     <section class="study-card notebook-field" id="notebookCollocations"><p class="kicker"><span class="notebook-number">02</span> 搭配詞、介系詞與句中用法</p><p class="card-note">以整組用法記憶；色標協助觀察小詞，to 的介系詞／不定詞功能仍需由上下文判斷。</p><div id="builtinCollocations">${renderNotebookContextPatterns(entry,note)}</div></section>
     <section class="study-card notebook-field" id="notebookRelations"><p class="kicker"><span class="notebook-number">03</span> 近義辨析與語境對照</p>${renderNotebookRelations(note,entry)}${renderNotebookLexical(entry,"senses")}</section>
     <section class="study-card notebook-field" id="notebookFamily"><p class="kicker"><span class="notebook-number">04</span> 字族與句中詞形</p>${renderNotebookFamily(note,entry)}${renderNotebookLexical(entry,"family")}</section>

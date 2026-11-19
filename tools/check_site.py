@@ -31,7 +31,7 @@ def main():
             [sys.executable, 'tools/validate_site.py'],
         ])
     if args.suite in ('browser', 'all'):
-        commands.extend([sys.executable, f'tests/browser_{suite}.py'] for suite in ('builtin', 'notebook', 'learning', 'typography', 'motion', 'reading'))
+        commands.extend([sys.executable, f'tests/browser_{suite}.py'] for suite in ('builtin', 'notebook', 'learning', 'typography', 'motion', 'reading', 'paper'))
     for command in commands:
         print('+ ' + ' '.join(command), flush=True)
         result = subprocess.run(command, cwd=ROOT, check=False)
