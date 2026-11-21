@@ -827,5 +827,579 @@ const GSAT_DIAG_QUESTIONS = [
     ],
     "answer": 0,
     "explanation": "Although 接完整子句，表「雖然」。because of / despite 接名詞或動名詞；therefore 是連接副詞，不能以此標點連接兩個獨立子句。"
+  },
+  {
+    "id": "ctx-060",
+    "category": "歷屆延伸詞彙",
+    "prompt": "The city built apartments with low rents so that housing would remain _____ for families on a tight budget.",
+    "zh": "市府興建低租金公寓，好讓預算吃緊的家庭仍然負擔得起住房。",
+    "options": [
+      "adjustable",
+      "affordable",
+      "mandatory",
+      "minimalist"
+    ],
+    "answer": 1,
+    "explanation": "low rents 和 on a tight budget 都把線索指向負擔能力。affordable 描述價格可負擔，adjustable 描述可調整的設計。"
+  },
+  {
+    "id": "ctx-061",
+    "category": "歷屆延伸詞彙",
+    "prompt": "More reminders had the opposite effect: volunteers started ignoring every message. The reminders were _____.",
+    "zh": "更多提醒產生了反效果，志工開始忽略每則訊息。這些提醒適得其反。",
+    "options": [
+      "cost-effective",
+      "unpredictable",
+      "counterproductive",
+      "timeless"
+    ],
+    "answer": 2,
+    "explanation": "the opposite effect 已說明做法妨礙了原本目標，用 counterproductive。unpredictable 只指出難以預料，沒有說明結果的方向。"
+  },
+  {
+    "id": "ctx-062",
+    "category": "歷屆延伸詞彙",
+    "prompt": "Instead of offering instant advice, Leo tried to imagine how his friend felt. His response showed _____.",
+    "zh": "小立沒有馬上給建議，而是試著想像朋友的感受。他的回應展現了同理心。",
+    "options": [
+      "empathy",
+      "serenity",
+      "inclination",
+      "individualism"
+    ],
+    "answer": 0,
+    "explanation": "imagine how his friend felt 是站在對方立場理解感受。serenity 描述自己平靜的狀態。"
+  },
+  {
+    "id": "ctx-063",
+    "category": "歷屆延伸詞彙",
+    "prompt": "The safety briefing is _____ for all guides. Anyone who misses it must attend a later session before working.",
+    "zh": "所有導覽員都必須參加安全說明，缺席者得先補參加才能工作。",
+    "options": [
+      "therapeutic",
+      "seasonal",
+      "outdated",
+      "mandatory"
+    ],
+    "answer": 3,
+    "explanation": "must attend 和 before working 說明這是必要規定。seasonal 表示在特定季節發生，無法表達義務。"
+  },
+  {
+    "id": "ctx-064",
+    "category": "歷屆延伸詞彙",
+    "prompt": "A second witness gave an account that directly opposed the first. The two accounts were _____.",
+    "zh": "第二位目擊者的敘述直接牴觸第一位的說法，兩份證詞相互矛盾。",
+    "options": [
+      "recognizable",
+      "contradictory",
+      "inseparable",
+      "uninhabited"
+    ],
+    "answer": 1,
+    "explanation": "directly opposed 說明兩種說法互相抵觸。unbiased 是公正的，不足以表達矛盾關係。"
+  },
+  {
+    "id": "ctx-065",
+    "category": "歷屆延伸詞彙",
+    "prompt": "Demand shot up for a week and then returned to normal. The analyst called it a temporary _____.",
+    "zh": "需求僅暴增一週就回到平時水準，分析師稱之為短暫波動。",
+    "options": [
+      "craze",
+      "cutback",
+      "blip",
+      "blackout"
+    ],
+    "answer": 2,
+    "explanation": "temporary 和 returned to normal 描寫偏離趨勢後迅速恢復的小波動。cutback 是削減，與先上升的情境不合。"
+  },
+  {
+    "id": "ctx-066",
+    "category": "歷屆延伸詞彙",
+    "prompt": "The vendor showed us how one _____ of garlic could flavor a whole bowl of noodles.",
+    "zh": "攤販示範如何用一瓣大蒜替整碗麵提味。",
+    "options": [
+      "clove",
+      "hoop",
+      "neuron",
+      "trench"
+    ],
+    "answer": 0,
+    "explanation": "a clove of garlic 是一瓣蒜。clove 單獨使用時也可以指香料丁香，須看 of garlic 的搭配。"
+  },
+  {
+    "id": "ctx-067",
+    "category": "歷屆延伸詞彙",
+    "prompt": "Only the labels had to be replaced each year. The sturdy boards themselves were _____.",
+    "zh": "每年只需要更換標籤，堅固的看板本身可以反覆使用。",
+    "options": [
+      "short-lived",
+      "residual",
+      "outdated",
+      "reusable"
+    ],
+    "answer": 3,
+    "explanation": "only the labels 和 each year 表示看板能保留到下次使用。residual 意為殘餘的，不表示可以重複使用。"
+  },
+  {
+    "id": "ctx-068",
+    "category": "歷屆延伸詞彙",
+    "prompt": "Knowing where the report got its figures made it more _____ in the readers' eyes.",
+    "zh": "知道數據來自何處，讓讀者覺得報告更加可信。",
+    "options": [
+      "festive",
+      "trustworthy",
+      "intricate",
+      "affordable"
+    ],
+    "answer": 1,
+    "explanation": "能追查 figures 的來源，提升的是可信度。intricate 形容細節繁複，與資料可查證是不同面向。"
+  },
+  {
+    "id": "ctx-069",
+    "category": "歷屆延伸詞彙",
+    "prompt": "The ferry stopped at four islands within the same _____. Each island had its own small harbor.",
+    "zh": "渡輪停靠了同一群島內的四座島，每座島都有自己的小港口。",
+    "options": [
+      "staircase",
+      "rainforest",
+      "archipelago",
+      "courtyard"
+    ],
+    "answer": 2,
+    "explanation": "four islands 與 within the same 表示一個包含多座島嶼的地理單位，應用 archipelago。"
+  },
+  {
+    "id": "ctx-070",
+    "category": "歷屆延伸詞彙",
+    "prompt": "A storm forced the team to start again, yet they returned every weekend. Their _____ impressed the neighbors.",
+    "zh": "風暴讓團隊得重新開始，但他們每個週末都回來工作，這份毅力讓鄰居印象深刻。",
+    "options": [
+      "perseverance",
+      "irritability",
+      "imagery",
+      "serenity"
+    ],
+    "answer": 0,
+    "explanation": "受挫後仍反覆投入是 perseverance。serenity 表內心平靜，不能由每週堅持回來這個線索推出。"
+  },
+  {
+    "id": "ctx-071",
+    "category": "歷屆延伸詞彙",
+    "prompt": "An hour after I turned off the stove, the pot's _____ heat was still enough to warm my hands.",
+    "zh": "爐火關掉一小時後，鍋子的餘熱仍足以暖手。",
+    "options": [
+      "seasonal",
+      "focal",
+      "acoustic",
+      "residual"
+    ],
+    "answer": 3,
+    "explanation": "turned off the stove 和 an hour after 表示主要熱源移除後還留著熱，應選 residual。focal 表焦點的。"
+  },
+  {
+    "id": "ctx-072",
+    "category": "歷屆延伸詞彙",
+    "prompt": "The bags were judged by overall cost and service life together. The longer-lasting one was more _____ despite its higher price.",
+    "zh": "評估袋子時同時考慮成本與使用年限。耐用的那款雖然買得較貴，整體更划算。",
+    "options": [
+      "heartwarming",
+      "cost-effective",
+      "weightless",
+      "timeless"
+    ],
+    "answer": 1,
+    "explanation": "儘管單價較高，較長的使用年限可提高成本效益。timeless 指歷久不衰的風格，並非經濟評估。"
+  },
+  {
+    "id": "ctx-073",
+    "category": "歷屆延伸詞彙",
+    "prompt": "For the owner, the boat was the family's _____: without it, nobody could earn money by fishing.",
+    "zh": "對船主來說，船維繫全家生計，沒了它就無法捕魚賺錢。",
+    "options": [
+      "lifestyle",
+      "headgear",
+      "livelihood",
+      "accompaniment"
+    ],
+    "answer": 2,
+    "explanation": "earn money 把語意限定在謀生的來源。lifestyle 指生活方式，不能精確表達經濟依靠。"
+  },
+  {
+    "id": "ctx-074",
+    "category": "歷屆延伸詞彙",
+    "prompt": "The photographer used the red door as the _____ point, drawing every viewer's eye to the center.",
+    "zh": "攝影師用紅門作為焦點，把觀看者的目光吸引到中央。",
+    "options": [
+      "focal",
+      "residual",
+      "culinary",
+      "periodic"
+    ],
+    "answer": 0,
+    "explanation": "focal point 是視覺焦點，drawing every viewer's eye 說明它如何引導目光。residual 則指殘留。"
+  },
+  {
+    "id": "ctx-075",
+    "category": "歷屆延伸詞彙",
+    "prompt": "Mina wants a strap she can shorten for cycling and lengthen for walking. It needs to be _____.",
+    "zh": "小敏希望騎車時能調短背帶、走路時能調長，所以背帶必須可調整。",
+    "options": [
+      "recognizable",
+      "festive",
+      "vegan",
+      "adjustable"
+    ],
+    "answer": 3,
+    "explanation": "shorten 和 lengthen 都表示改變長度，兩個動作直接說明 adjustable 的設計功能。"
+  },
+  {
+    "id": "ctx-076",
+    "category": "歷屆延伸詞彙",
+    "prompt": "We paid less because someone else had already owned the bicycle. We bought it _____.",
+    "zh": "因為這輛自行車以前有其他車主，所以我們花得比較少。我們買的是二手車。",
+    "options": [
+      "nationwide",
+      "second-hand",
+      "periodically",
+      "upstairs"
+    ],
+    "answer": 1,
+    "explanation": "already owned 表示所有權曾屬別人。second-hand 在 bought it 後說明購買方式。"
+  },
+  {
+    "id": "ctx-077",
+    "category": "歷屆延伸詞彙",
+    "prompt": "The two pieces of paper began to _____ into flakes when I tried to lift them from the damp box.",
+    "zh": "我試著從潮濕的箱裡拿出那兩張紙時，它們開始碎成薄片。",
+    "options": [
+      "recharge",
+      "collide",
+      "disintegrate",
+      "reestablish"
+    ],
+    "answer": 2,
+    "explanation": "into flakes 指碎裂後化成的小片，符合 disintegrate。collide 著重物體相撞，常接 with。"
+  },
+  {
+    "id": "ctx-078",
+    "category": "歷屆延伸詞彙",
+    "prompt": "The planners had enough money to repair only one hall, so they had to _____ the remaining funds among three activities.",
+    "zh": "規劃者的錢只夠修一座禮堂，所以得在三項活動之間重新分配剩餘經費。",
+    "options": [
+      "redistribute",
+      "withstand",
+      "showcase",
+      "eschew"
+    ],
+    "answer": 0,
+    "explanation": "funds 是待分配的資源，among three activities 指分配對象。withstand 表承受，無法帶出分配關係。"
+  },
+  {
+    "id": "ctx-079",
+    "category": "歷屆延伸詞彙",
+    "prompt": "The guide used a fan to test whether the paper tower could _____ a breeze without falling over.",
+    "zh": "導覽員用風扇測試紙塔能否承受微風而不倒下。",
+    "options": [
+      "regain",
+      "untangle",
+      "recast",
+      "withstand"
+    ],
+    "answer": 3,
+    "explanation": "without falling over 說明塔要承受外力。withstand 直接接受詞 a breeze，無須介系詞。"
+  },
+  {
+    "id": "ctx-080",
+    "category": "歷屆延伸詞彙",
+    "prompt": "Two cyclists swerved just in time to avoid colliding _____ each other.",
+    "zh": "兩位騎士及時轉向，避免彼此相撞。",
+    "options": [
+      "from",
+      "with",
+      "at",
+      "of"
+    ],
+    "answer": 1,
+    "explanation": "動詞 collide 指明相撞對象時用 with。avoid 後用動名詞，所以原句已有 colliding。"
+  },
+  {
+    "id": "ctx-081",
+    "category": "歷屆延伸詞彙",
+    "prompt": "During the meeting, Sara kept thinking about the loose rope on the bridge. She finally expressed her _____ about the plan.",
+    "zh": "開會時，莎拉一直想到橋上那條鬆動的繩索，最後說出了她對計畫的不安。",
+    "options": [
+      "serenity",
+      "timeliness",
+      "uneasiness",
+      "utilization"
+    ],
+    "answer": 2,
+    "explanation": "kept thinking about the loose rope 表明她對風險感到不安。express uneasiness about 可接擔心的事項。"
+  },
+  {
+    "id": "ctx-082",
+    "category": "歷屆延伸詞彙",
+    "prompt": "We could see every leaf clearly after adding the final shadows. The painting looked remarkably _____.",
+    "zh": "加上最後幾道陰影後，每片葉子的模樣都清晰可見，畫作顯得極為逼真。",
+    "options": [
+      "lifelike",
+      "unbiased",
+      "mandatory",
+      "reproductive"
+    ],
+    "answer": 0,
+    "explanation": "葉片的細節與陰影讓畫面像真物，適合 lifelike。unbiased 評價立場公正，並非畫面逼真。"
+  },
+  {
+    "id": "ctx-083",
+    "category": "歷屆延伸詞彙",
+    "prompt": "The map's station names had changed years ago. The information it gave travelers was _____.",
+    "zh": "車站名稱多年前就改過了，這張地圖給旅客的資訊早已過時。",
+    "options": [
+      "groundbreaking",
+      "culinary",
+      "timeless",
+      "outdated"
+    ],
+    "answer": 3,
+    "explanation": "舊地圖未反映更名，資訊已經落後。timeless 描述歷久仍保有魅力，語意不同。"
+  },
+  {
+    "id": "ctx-084",
+    "category": "歷屆延伸詞彙",
+    "prompt": "Plant roots cracked the pavement, causing a change in its shape. The engineer photographed this _____.",
+    "zh": "樹根撐裂了路面，造成形狀改變。工程師拍下了這種變形。",
+    "options": [
+      "absorption",
+      "deformation",
+      "hydration",
+      "regeneration"
+    ],
+    "answer": 1,
+    "explanation": "a change in its shape 就是 deformation。regeneration 是重新生長或恢復的過程。"
+  },
+  {
+    "id": "ctx-085",
+    "category": "歷屆延伸詞彙",
+    "prompt": "The bowl became thinner toward the edge, a detail that showed the _____ of the maker's work.",
+    "zh": "碗緣逐漸變薄，這個細節表現出製作手藝的精緻細膩。",
+    "options": [
+      "blackout",
+      "craving",
+      "delicacy",
+      "cutback"
+    ],
+    "answer": 2,
+    "explanation": "此處 delicacy 指精細、細膩，of the maker's work 可協助判讀。文中沒有提到地方美食或菜餚。"
+  },
+  {
+    "id": "ctx-086",
+    "category": "歷屆延伸詞彙",
+    "prompt": "Each cashier checked the same five items in the same order. The manager wanted _____ across all counters.",
+    "zh": "每個櫃檯都依相同順序檢查相同的五個項目，經理希望各櫃檯作業一致。",
+    "options": [
+      "consistency",
+      "imagery",
+      "individualism",
+      "dizziness"
+    ],
+    "answer": 0,
+    "explanation": "the same ... in the same order 重複強調一致性。individualism 著重個人選擇，和標準化流程不同。"
+  },
+  {
+    "id": "ctx-087",
+    "category": "歷屆延伸詞彙",
+    "prompt": "Sorting thousands of slides by hand was so _____ that the museum recruited ten additional volunteers.",
+    "zh": "手工分類數千張幻燈片太耗時，博物館因此多找了十名志工。",
+    "options": [
+      "short-lived",
+      "lightweight",
+      "heartwarming",
+      "time-consuming"
+    ],
+    "answer": 3,
+    "explanation": "thousands、by hand 和增派人手說明工作占用大量時間。short-lived 形容事物維持不久。"
+  },
+  {
+    "id": "ctx-088",
+    "category": "歷屆延伸詞彙",
+    "prompt": "The shop's ten-year-old waste policy asked everyone to print a new sheet each day. A volunteer argued that it was _____ to the goal of saving paper.",
+    "zh": "店裡實行十年的減廢政策要求每人每天印一張新紙。志工認為這反而妨礙省紙的目標。",
+    "options": [
+      "recognizable",
+      "counterproductive",
+      "inseparable",
+      "uninhabited"
+    ],
+    "answer": 1,
+    "explanation": "每天印新紙與省紙目標背道而馳，應用 counterproductive to the goal。inseparable 通常與 from 搭配。"
+  },
+  {
+    "id": "ctx-089",
+    "category": "歷屆延伸詞彙",
+    "prompt": "The choir sang without instruments at first. Then a pianist added a gentle _____.",
+    "zh": "合唱團起初清唱，接著鋼琴師加入了輕柔的伴奏。",
+    "options": [
+      "emergence",
+      "inclination",
+      "accompaniment",
+      "aroma"
+    ],
+    "answer": 2,
+    "explanation": "without instruments 和 a pianist 提供音樂語境。accompaniment 的另一個常見義是配菜，要由上文選義。"
+  },
+  {
+    "id": "ctx-090",
+    "category": "歷屆延伸詞彙",
+    "prompt": "The bags must be finished before the rainy season. In this case, _____ matters more than decorative packaging.",
+    "zh": "這些袋子必須在雨季前做好，此時能否及時完成比包裝美觀更重要。",
+    "options": [
+      "timeliness",
+      "cleanliness",
+      "weightlessness",
+      "individualism"
+    ],
+    "answer": 0,
+    "explanation": "before the rainy season 給了明確期限，timeliness 對應是否趕得上。cleanliness 評估整潔程度。"
+  },
+  {
+    "id": "ctx-091",
+    "category": "歷屆延伸詞彙",
+    "prompt": "The paper's figures came from people who had already read one another's accounts. We asked for an _____ observer with no ties to either group.",
+    "zh": "報告的數據來自看過彼此說法的人。我們要求找一名和雙方皆無關係的公正觀察者。",
+    "options": [
+      "uninhabited",
+      "intricate",
+      "acoustic",
+      "unbiased"
+    ],
+    "answer": 3,
+    "explanation": "no ties to either group 是重點，目的是避免立場偏向任何一方。unbiased 可直接修飾 observer。"
+  },
+  {
+    "id": "ctx-092",
+    "category": "歷屆延伸詞彙",
+    "prompt": "The restaurant buys fruit that is ready to harvest locally that month. Its menu changes with the _____ produce available.",
+    "zh": "餐廳採購當月在地成熟的水果，菜單隨當季可取得的農產品而改變。",
+    "options": [
+      "outdated",
+      "seasonal",
+      "residual",
+      "therapeutic"
+    ],
+    "answer": 1,
+    "explanation": "ready to harvest ... that month 指農作物的產季。seasonal produce 是當季農產品。"
+  },
+  {
+    "id": "ctx-093",
+    "category": "歷屆延伸詞彙",
+    "prompt": "The director moved the scene from a courtroom to a kitchen and chose to _____ the tragedy as a comedy.",
+    "zh": "導演把場景從法庭移到廚房，決定把悲劇重新詮釋成喜劇。",
+    "options": [
+      "outweigh",
+      "withstand",
+      "recast",
+      "coexist"
+    ],
+    "answer": 2,
+    "explanation": "recast A as B 指重新詮釋或改造 A，使它呈現為 B。coexist 描述同時存在，常接 with。"
+  },
+  {
+    "id": "ctx-094",
+    "category": "歷屆延伸詞彙",
+    "prompt": "The band moved the speakers twice to improve the hall's _____ properties and reduce the echo.",
+    "zh": "為了改善禮堂的聲學特性並減少回音，樂團兩度移動揚聲器。",
+    "options": [
+      "acoustic",
+      "culinary",
+      "reproductive",
+      "festive"
+    ],
+    "answer": 0,
+    "explanation": "speakers 和 echo 都與聲音有關，因此選 acoustic。culinary 則指烹飪。"
+  },
+  {
+    "id": "ctx-095",
+    "category": "歷屆延伸詞彙",
+    "prompt": "The sign pointed down three steps into a _____ garden, set lower than the surrounding paths.",
+    "zh": "標示指向三階樓梯下方的一座庭園，位置低於四周步道。",
+    "options": [
+      "picturesque",
+      "uninhabited",
+      "short-lived",
+      "sunken"
+    ],
+    "answer": 3,
+    "explanation": "set lower than the surrounding paths 直接解釋地勢下凹。picturesque 雖能形容庭園美麗，題幹沒有美感線索。"
+  },
+  {
+    "id": "ctx-096",
+    "category": "歷屆延伸詞彙",
+    "prompt": "After comparing both routes, we decided the safety benefits of the wider road _____ the cost of walking two extra blocks.",
+    "zh": "比較兩條路線後，我們認為較寬道路的安全效益大於多走兩個街區的代價。",
+    "options": [
+      "recast",
+      "outweigh",
+      "regain",
+      "untangle"
+    ],
+    "answer": 1,
+    "explanation": "benefits 和 cost 是權衡的兩方。A outweighs B 的 A 是較重要的一方，此句 A 為複數 benefits。"
+  },
+  {
+    "id": "ctx-097",
+    "category": "歷屆延伸詞彙",
+    "prompt": "Access for people using wheelchairs takes precedence _____ the choice of wall color in the station plan.",
+    "zh": "在車站規劃中，輪椅使用者的通行需求比牆面顏色更優先。",
+    "options": [
+      "with",
+      "at",
+      "over",
+      "from"
+    ],
+    "answer": 2,
+    "explanation": "take precedence over 是固定搭配。如果改用 give precedence，則是 give precedence to 優先處理的對象。"
+  },
+  {
+    "id": "ctx-098",
+    "category": "歷屆延伸詞彙",
+    "prompt": "The old cinema had one outlet, so we took turns plugging in our phones to _____ their batteries.",
+    "zh": "老電影院只有一個插座，所以我們輪流插上手機替電池充電。",
+    "options": [
+      "recharge",
+      "recast",
+      "regain",
+      "redistribute"
+    ],
+    "answer": 0,
+    "explanation": "outlet、plugging in 和 batteries 共同指向充電。regain 用於重新獲得原本失去的事物。"
+  },
+  {
+    "id": "ctx-099",
+    "category": "歷屆延伸詞彙",
+    "prompt": "The cushions must still fit the covers after washing, so the tailor allowed for a little fabric _____.",
+    "zh": "洗過後靠墊仍得裝進套子裡，因此裁縫預留了一點布料縮水的空間。",
+    "options": [
+      "breakage",
+      "drainage",
+      "hydration",
+      "shrinkage"
+    ],
+    "answer": 3,
+    "explanation": "fit 和 after washing 讓人聚焦在布料尺寸的縮小。breakage 描述破損，drainage 指排水。"
+  },
+  {
+    "id": "ctx-100",
+    "category": "歷屆延伸詞彙",
+    "prompt": "The lecture was split into _____ lessons, each short enough to finish on a five-minute bus ride.",
+    "zh": "這堂講座被拆成短小單元，每一單元短到搭五分鐘公車就能上完。",
+    "options": [
+      "handcrafted",
+      "bite-sized",
+      "unbiased",
+      "lightweight"
+    ],
+    "answer": 1,
+    "explanation": "原指一口大小的 bite-sized，在此比喻拆成容易吸收的短單元。lightweight 側重重量輕，也可指內容分量不足，沒有分成短節的意思。"
   }
 ];

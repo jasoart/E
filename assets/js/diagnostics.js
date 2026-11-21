@@ -34,4 +34,7 @@ function buildDiagnosticSession(pool,limit){
  return result;
 }
 function startDiagnostic(review=false){gsatDiagnosticReview=review;gsatDiagnosticSession=buildDiagnosticSession(diagnosticQuestionPool(review),Number(byId("diagnosticLength")?.value)||10);gsatDiagnosticPos=0;const host=byId('diagnosticContent');host.hidden=false;host.dataset.answered='';if(review&&!gsatDiagnosticSession.length){host.innerHTML='<p class="practice-feedback">目前所選範圍沒有待複習的診斷錯題。答錯的題目會自動加入；答對後才移出。</p>';return;}showDiagnosticQuestion()}
-function setupDiagnostics(){const first=byId('diagnosticStart'),wrong=byId('diagnosticReview');if(!first||!wrong)return;const category=byId('diagnosticCategory');if(category)category.innerHTML='<option value="">全部能力</option>'+[...new Set(GSAT_DIAG_QUESTIONS.map(q=>q.category))].map(value=>`<option value="${escapeHtml(value)}">${escapeHtml(value)}</option>`).join('');first.addEventListener('click',()=>startDiagnostic(false));wrong.addEventListener('click',()=>startDiagnostic(true));diagnosticInfo()}
+function setupDiagnostics(){
+ const count = byId("diagnosticQuestionCount");
+ if (count) count.textContent = String(GSAT_DIAG_QUESTIONS.length);
+ const first=byId('diagnosticStart'),wrong=byId('diagnosticReview');if(!first||!wrong)return;const category=byId('diagnosticCategory');if(category)category.innerHTML='<option value="">全部能力</option>'+[...new Set(GSAT_DIAG_QUESTIONS.map(q=>q.category))].map(value=>`<option value="${escapeHtml(value)}">${escapeHtml(value)}</option>`).join('');first.addEventListener('click',()=>startDiagnostic(false));wrong.addEventListener('click',()=>startDiagnostic(true));diagnosticInfo()}

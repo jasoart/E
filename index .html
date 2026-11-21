@@ -13,35 +13,36 @@
   <title>學測英文專用詞典｜V2 單字筆記 × 情境搭配</title>
   <link rel="stylesheet" href="./assets/css/local-coach.css?v=9678e6098936">
   <link rel="stylesheet" href="./assets/css/retrieval-practice.css?v=fccb231d2194">
-  <link rel="stylesheet" href="./assets/css/app.css?v=5f51c844db2c">
+  <link rel="stylesheet" href="./assets/css/app.css?v=c941dac824bb">
   <script defer src="./assets/js/config.js?v=eea935eb40ae"></script>
   <script defer src="./assets/data/vocabulary.js?v=f0471273feca"></script>
   <script defer src="./assets/data/collocations.js?v=9ca91a43390d"></script>
   <script defer src="./assets/data/learning.js?v=e9e970c406e3"></script>
   <script defer src="./assets/data/builtin-study.js?v=f8ed1bf9578d"></script>
   <script defer src="./assets/data/kk-pronunciation.js?v=5603b465216d"></script>
+  <script defer src="./assets/data/study-supplements.js?v=1fcf52da52c9"></script>
   <script defer src="./assets/data/exam-notebook.js?v=ed481fd0107d"></script>
   <script defer src="./assets/data/vocabulary-enrichment.js?v=646c76185801"></script>
   <script defer src="./assets/data/authored-scenarios.js?v=2a11bd7df1a8"></script>
   <script defer src="./assets/data/exam-evidence-index.js?v=8ebd96765f5e"></script>
-  <script defer src="./assets/js/exam-notes.js?v=d59f639c97d5"></script>
+  <script defer src="./assets/js/exam-notes.js?v=784acc7a7264"></script>
   <script defer src="./assets/js/state.js?v=8ad1ebee5e7a"></script>
   <script defer src="./assets/js/builtin.js?v=4270c7044c34"></script>
   <script defer src="./assets/data/reading-vocabulary.js?v=d01430584e2c"></script>
-  <script defer src="./assets/js/reading.js?v=998dfb149eb7"></script>
+  <script defer src="./assets/js/reading.js?v=5d40e39f3084"></script>
   <script defer src="./assets/data/exam-vocabulary.js?v=f99c030c51db"></script>
   <script defer src="./assets/js/paper-vocabulary.js?v=24843234348e"></script>
-  <script defer src="./assets/js/search.js?v=787d245a3657"></script>
-  <script defer src="./assets/js/examples.js?v=4f21b06d22b2"></script>
+  <script defer src="./assets/js/search.js?v=d3104147570f"></script>
+  <script defer src="./assets/js/examples.js?v=84fc9cc847e9"></script>
   <script defer src="./assets/js/audio.js?v=8df633276a02"></script>
   <script defer src="./assets/js/retrieval-practice.js?v=251a504ddb48"></script>
-  <script defer src="./assets/js/ui.js?v=b5aa2f6ac213"></script>
+  <script defer src="./assets/js/ui.js?v=dea230e4ef82"></script>
   <script defer src="./assets/js/favorites.js?v=569a332f0d3a"></script>
   <script defer src="./assets/js/online.js?v=0084ffa743cb"></script>
-  <script defer src="./assets/data/context-practice.js?v=b9d6934ef50c"></script>
-  <script defer src="./assets/js/diagnostics.js?v=45c5c9678975"></script>
+  <script defer src="./assets/data/context-practice.js?v=3b55b85aa678"></script>
+  <script defer src="./assets/js/diagnostics.js?v=20bcebccfe5f"></script>
   <script defer src="./assets/js/local-coach.js?v=38bf370a4352"></script>
-  <script defer src="./assets/js/app.js?v=4ffe158f86b3"></script>
+  <script defer src="./assets/js/app.js?v=0740410536c9"></script>
 
 </head>
 <body>
@@ -77,13 +78,13 @@
     </details>
     <div class="levels" id="levelFilters"><span class="filter-label">級別</span></div>
     <div class="tabs"><button id="allTab" class="on" type="button">全部</button><button id="notebookTab" type="button">V2 筆記 <span id="notebookTabCount"></span></button><button id="examTab" type="button">111–115 真題 <span id="examTabCount"></span></button><button id="readingTab" type="button">閱讀詞彙 <span id="readingTabCount"></span></button><button id="collocationTab" type="button">搭配考點 <span id="collocationTabCount"></span></button><button id="reviewTab" type="button">今日複習 <span id="reviewCount"></span></button><button id="favoriteTab" type="button">收藏 <span id="favoriteCount"></span></button></div>
-    <label id="notebookSourceFilter" class="notebook-source-filter" hidden for="notebookSource">教材內容 <select id="notebookSource"><option value="">全部 V2 筆記</option><option value="curated">專題新編</option><option value="authored">原創情境句</option><option value="guided">待改寫 · 教材導讀</option></select></label>
-    <div class="reading-search-notice" id="readingSearchNotice" hidden role="status"><span id="readingSearchNoticeText"></span><button id="viewReadingSupplemental" type="button">查看補充詞</button></div>
+    <label id="notebookSourceFilter" class="notebook-source-filter" hidden for="notebookSource">教材內容 <select id="notebookSource"><option value="">全部 V2 筆記</option><option value="exam-supplement">111–115 試卷補充詞</option><option value="curated">專題新編</option><option value="authored">原創情境句</option><option value="guided">待改寫 · 教材導讀</option></select></label>
+    <div class="reading-search-notice" id="readingSearchNotice" hidden role="status"><span id="readingSearchNoticeText"></span><button id="viewReadingSupplemental" type="button">看閱讀出處</button></div>
     <div class="reading-filters" id="readingFilters" hidden aria-label="閱讀詞彙篩選">
       <div class="reading-intro"><div><strong>從五年閱讀題組，整理下一輪複習</strong><p>依閱讀本文中的實際詞形、跨年出現與主題選詞；搭配與語境義另標為本站整理，不保證未來出題。</p></div><button id="exportReadingVocabulary" class="reading-export" type="button">匯出目前詞單 CSV</button></div>
       <div class="reading-filter-grid"><label for="readingYear">年度<select id="readingYear"><option value="all">全部年度</option></select></label><label for="readingTopic">閱讀主題<select id="readingTopic"><option value="all">全部主題</option></select></label><label for="readingPriority">複習順序<select id="readingPriority"><option value="all">全部閱讀詞彙</option></select></label><label for="readingSection">題型<select id="readingSection"><option value="all">全部題型</option></select></label></div>
       <p class="reading-filter-status" id="readingFilterStatus" role="status" aria-live="polite"></p>
-      <details class="reading-supplemental" id="readingSupplemental"><summary>閱讀題材補充詞 <span id="readingSupplementalCount">0</span> 詞</summary><p class="reading-supplemental-scope">這些詞實際出現在閱讀本文，另作題材詞彙準備；不列入官方 6,012 詞或 V2 三句計數，也不套用上方 L1–L6 級別篩選。搜尋、年度、主題、複習順序與題型仍會篩選此區。</p><div id="readingSupplementalContent"></div></details>
+      <details class="reading-supplemental" id="readingSupplemental"><summary>閱讀題材補充詞 <span id="readingSupplementalCount">0</span> 詞</summary><p class="reading-supplemental-scope">這些補充詞出現在歷屆閱讀本文。開啟單字筆記可查看搭配、練習例句並加入收藏。此區依搜尋、年度、主題、複習順序與題型篩選。</p><div id="readingSupplementalContent"></div></details>
     </div>
     <p class="original-writing-progress" id="originalWritingProgress" aria-live="polite">正在讀取原創例句改寫進度…</p>
   </section>
@@ -113,7 +114,7 @@
 
 
   <section class="diagnostic-panel" id="drill" aria-label="自編情境診斷與錯題複習">
-    <div class="diagnostic-head"><div><span class="local-label">CONTEXT PRACTICE · 自編題</span><h2>情境診斷與錯題複習</h2><p>59 題自編練習涵蓋熟詞偏義、搭配、詞性轉換、語境替換、篇章與寫作。先用英文作答，需要時再展開中文提示。答錯自動收進本機錯題，答對再移出；不影響舊收藏與單字複習。</p></div><div class="diagnostic-actions"><button type="button" id="diagnosticStart">開始情境診斷</button><button type="button" id="diagnosticReview">只練錯題 <span id="diagnosticWrongCount">0</span></button></div></div>
+    <div class="diagnostic-head"><div><span class="local-label">CONTEXT PRACTICE · 自編題</span><h2>情境診斷與錯題複習</h2><p><span id="diagnosticQuestionCount"></span> 題自編練習涵蓋歷屆延伸詞彙、熟詞偏義、搭配、詞性轉換、篇章與寫作。先用英文作答，需要時再展開中文提示。答錯自動收進本機錯題，答對再移出；不影響舊收藏與單字複習。</p></div><div class="diagnostic-actions"><button type="button" id="diagnosticStart">開始情境診斷</button><button type="button" id="diagnosticReview">只練錯題 <span id="diagnosticWrongCount">0</span></button></div></div>
     <div class="pronunciation-preferences"><label for="diagnosticCategory">練習範圍<select id="diagnosticCategory"><option value="">全部能力</option></select></label><label for="diagnosticLength">每輪題數<select id="diagnosticLength"><option value="10">10 題</option><option value="20">20 題</option><option value="999">全部題目</option></select></label></div>
     <div id="diagnosticContent" class="diagnostic-content" hidden></div>
   </section>

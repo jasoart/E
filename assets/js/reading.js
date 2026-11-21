@@ -79,16 +79,17 @@ function readingReferenceHtml(row){
   return`<li><div><strong>${readingHtml(readingPassageLabel(row.passage))}</strong><span>${readingHtml(row.passage.titleZh||readingTopicLabel(row.passage.topicId))}</span></div><p>實際詞形：${[...row.forms].map(form=>`<code lang="en">${readingHtml(form)}</code>`).join("、")}${row.inflected?' <span class="reading-form-kind">含變化形</span>':""}${row.compound?' <span class="reading-form-kind">含複合詞成分</span>':""}</p><small>${readingHtml(readingPageLabel(row))}</small></li>`;
 }
 function renderReadingVocabulary(entry){
-  const record=getReadingVocabulary(entry);if(!record)return"";
-  const escape=readingHtml,references=groupReadingOccurrences(getReadingOccurrences(entry)),reference=readingReferenceHtml;
+  const record = getReadingVocabulary(entry) || (entry?.supplemental && readingVocabularyData()?.supplemental?.[entry.word]);
+  if (!record) return "";
+  const escape=readingHtml,references=groupReadingOccurrences(readingRecordOccurrences(record)),reference=readingReferenceHtml;
   const collocations=(record.collocations||[]).filter(row=>Array.isArray(row)&&row[0]&&row[1]);
   const reviewedPassages=(record.editorialPassageIds||[]).map(id=>readingPassageCache.get(id)).filter(Boolean);
-  return`<section class="reading-vocabulary study-card notebook-field" id="readingVocabulary" aria-labelledby="readingVocabularyHeading"><div class="reading-card-heading"><h3 id="readingVocabularyHeading">111–115 閱讀詞彙</h3><span class="reading-priority">${escape(readingPriorityLabel(record.priority))}</span></div><p class="reading-card-meta">${escape((record.years||[]).join("、"))} 年 · ${Number(record.passageCount)||0} 個題組 · ${escape((record.topics||[]).map(readingTopicLabel).join("、"))}</p><h4>${record.readingSense?"閱讀語境義 · 本站整理":"原詞表釋義 · 配合題組語境判斷"}</h4><p class="reading-sense">${escape(record.readingSense||entry.meaning||"請對照上方詞義與實際閱讀語境。")}</p>${record.readingSense&&reviewedPassages.length?`<p class="reading-editorial-scope">語境義對照：${reviewedPassages.map(passage=>escape(readingPassageLabel(passage))).join("；")}。其他出處請另判字義。</p>`:""}${record.note?`<p class="reading-study-note">${escape(record.note)}</p>`:""}${collocations.length?`<h4>閱讀搭配 · 本站整理</h4><div class="reading-collocations">${collocations.map(([en,zh])=>`<p><code lang="en">${escape(en)}</code><span>${escape(zh)}</span></p>`).join("")}</div>`:""}<h4>題組與實際詞形</h4><ul class="reading-references">${references.slice(0,4).map(reference).join("")}</ul>${references.length>4?`<details class="reading-more"><summary>其餘 ${references.length-4} 筆出處</summary><ul class="reading-references">${references.slice(4).map(reference).join("")}</ul></details>`:""}<p class="card-note">此處記錄閱讀本文實際出現的詞形與位置；變化形不等於所有字族都曾出題。優先層級用於安排複習，不是未來出題機率。</p></section>`;
+  return`<section class="reading-vocabulary study-card notebook-field" id="readingVocabulary" aria-labelledby="readingVocabularyHeading"><div class="reading-card-heading"><h3 id="readingVocabularyHeading">111–115 閱讀詞彙</h3><span class="reading-priority">${escape(readingPriorityLabel(record.priority))}</span></div><p class="reading-card-meta">${escape((record.years||[]).join("、"))} 年 · ${Number(record.passageCount)||0} 個題組 · ${escape((record.topics||[]).map(readingTopicLabel).join("、"))}</p><h4>${record.readingSense || record.meaningZh ? "閱讀語境義 · 本站整理" : "原詞表釋義 · 配合題組語境判斷"}</h4><p class="reading-sense">${escape(record.readingSense||record.meaningZh||entry.meaning||"請對照上方詞義與實際閱讀語境。")}</p>${record.readingSense&&reviewedPassages.length?`<p class="reading-editorial-scope">語境義對照：${reviewedPassages.map(passage=>escape(readingPassageLabel(passage))).join("；")}。其他出處請另判字義。</p>`:""}${record.note?`<p class="reading-study-note">${escape(record.note)}</p>`:""}${collocations.length?`<h4>閱讀搭配 · 本站整理</h4><div class="reading-collocations">${collocations.map(([en,zh])=>`<p><code lang="en">${escape(en)}</code><span>${escape(zh)}</span></p>`).join("")}</div>`:""}<h4>題組與實際詞形</h4><ul class="reading-references">${references.slice(0,4).map(reference).join("")}</ul>${references.length>4?`<details class="reading-more"><summary>其餘 ${references.length-4} 筆出處</summary><ul class="reading-references">${references.slice(4).map(reference).join("")}</ul></details>`:""}<p class="card-note">此處記錄閱讀本文實際出現的詞形與位置；變化形不等於所有字族都曾出題。優先層級用於安排複習，不是未來出題機率。</p></section>`;
 }
 function renderReadingSupplementalEntries(entries,filters){
   const card=record=>{
     const references=groupReadingOccurrences(readingRecordOccurrences(record,filters));
-    return`<article class="reading-supplemental-card" data-reading-word="${readingHtml(record.word)}"><div class="reading-supplemental-heading"><h4 lang="en">${readingHtml(record.word)}</h4><span>${readingHtml(record.pos||"詞性依語境")}</span></div><p class="reading-supplemental-meaning">${readingHtml(record.meaningZh)}</p>${record.note?`<p class="reading-supplemental-note">${readingHtml(record.note)}</p>`:""}<ul class="reading-references">${references.slice(0,2).map(readingReferenceHtml).join("")}</ul>${references.length>2?`<details class="reading-more"><summary>其餘 ${references.length-2} 筆出處</summary><ul class="reading-references">${references.slice(2).map(readingReferenceHtml).join("")}</ul></details>`:""}</article>`;
+    return`<article class="reading-supplemental-card" data-reading-word="${readingHtml(record.word)}"><div class="reading-supplemental-heading"><h4 lang="en">${readingHtml(record.word)}</h4><span>${readingHtml(record.pos||"詞性依語境")}</span></div><p class="reading-supplemental-meaning">${readingHtml(record.meaningZh)}</p><button type="button" class="reading-export" data-open-reading-note="${readingHtml(record.word)}" aria-label="開啟 ${readingHtml(record.word)} 的單字筆記">開啟單字筆記</button>${record.note?`<p class="reading-supplemental-note">${readingHtml(record.note)}</p>`:""}<ul class="reading-references">${references.slice(0,2).map(readingReferenceHtml).join("")}</ul>${references.length>2?`<details class="reading-more"><summary>其餘 ${references.length-2} 筆出處</summary><ul class="reading-references">${references.slice(2).map(readingReferenceHtml).join("")}</ul></details>`:""}</article>`;
   };
   if(!entries.length)return'<p class="reading-supplemental-empty">這組條件沒有題材補充詞；可調整搜尋、年度、主題或題型。</p>';
   return`<div class="reading-supplemental-grid">${entries.slice(0,12).map(card).join("")}</div>${entries.length>12?`<details class="reading-supplemental-more"><summary>其餘 ${entries.length-12} 個補充詞</summary><div class="reading-supplemental-grid">${entries.slice(12).map(card).join("")}</div></details>`:""}`;
@@ -103,7 +104,7 @@ function updateReadingFilterStatus(){
   const discovery=!state.readingOnly&&String(state.query||"").trim()?getReadingSupplementalEntries({query:state.query}):[];
   const notice=document.getElementById("readingSearchNotice"),noticeText=document.getElementById("readingSearchNoticeText");
   if(notice)notice.hidden=!discovery.length;
-  if(noticeText&&discovery.length)noticeText.textContent=`閱讀題材補充詞另有 ${discovery.length} 個符合搜尋的結果。`;
+  if(noticeText&&discovery.length)noticeText.textContent=`${discovery.length} 個符合搜尋的補充詞可回查歷屆閱讀出處。`;
   if(!state.readingOnly){if(button)button.disabled=true;return}
   const supplemental=getReadingSupplementalEntries(state),supplementalHost=document.getElementById("readingSupplemental"),supplementalCount=document.getElementById("readingSupplementalCount"),supplementalContent=document.getElementById("readingSupplementalContent");
   if(button)button.disabled=!state.filtered.length&&!supplemental.length;
@@ -141,6 +142,15 @@ function setupReadingVocabulary(){
   fill("readingTopic",[["all","全部主題"],...(data?.topics||[]).map(topic=>[topic.id,topic.label])]);
   fill("readingPriority",[["all","全部閱讀詞彙"],...Object.entries(READING_PRIORITY_LABELS)]);
   fill("readingSection",[["all","全部題型"],...[...new Set((data?.passages||[]).map(item=>item.section))].map(section=>[section,readingSectionLabel(section)])]);
+  document.getElementById("readingSupplementalContent")?.addEventListener("click", event => {
+    const button = event.target.closest("[data-open-reading-note]");
+    if (!button) return;
+    const index = VOCABULARY.findIndex(entry => entry.word === button.dataset.openReadingNote);
+    if (index < 0) return;
+    selectEntry(index);
+    wordDetail.focus({preventScroll:true});
+    wordDetail.scrollIntoView({block:"start"});
+  });
   tab?.addEventListener("click",()=>setListMode("reading"));
   for(const [id,key] of [["readingYear","readingYear"],["readingTopic","readingTopic"],["readingPriority","readingPriority"],["readingSection","readingSection"]])document.getElementById(id)?.addEventListener("change",event=>{state[key]=event.target.value;applyFilters();selectReadingMatch()});
   document.getElementById("exportReadingVocabulary")?.addEventListener("click",exportReadingVocabulary);

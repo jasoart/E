@@ -128,8 +128,11 @@ function setListMode(mode){state.favoritesOnly=mode==="favorites";state.collocat
 const ALPHABETICAL_ROWS=VOCABULARY.map((entry,index)=>({entry,index,match:{score:0,reason:"",channels:[]}}))
   .sort((a,b)=>a.entry.word.localeCompare(b.entry.word));
 
+function viewingExamSupplements() {
+  return state.notebookOnly && state.notebookSource === "exam-supplement";
+}
 function matchesListFilters({entry}){
-  if(!state.levels.has(Number(entry.level)))return false;
+  if (!viewingExamSupplements() && !state.levels.has(Number(entry.level))) return false;
   if(state.favoritesOnly&&!state.favorites.has(entry.word))return false;
   if(state.reviewOnly&&!isReviewDue(entry.word))return false;
   if(state.examOnly){
@@ -141,7 +144,7 @@ function matchesListFilters({entry}){
     if(!note)return false;
     if(state.notebookSource==="curated"&&!getCuratedExamNotebook(entry))return false;
     if(state.notebookSource&&state.notebookSource!=="curated"){
-      const provenance=state.notebookSource==="authored"?"authored-scenarios":"source-guided";
+      const provenance = {authored:"authored-scenarios", guided:"source-guided", "exam-supplement":"exam-supplement"}[state.notebookSource];
       if(note.provenance!==provenance)return false;
     }
   }
@@ -154,6 +157,8 @@ function matchesListFilters({entry}){
 }
 
 function applyFilters(resetPage=true){
+  const levelFilters = byId("levelFilters");
+  if (levelFilters) levelFilters.hidden = viewingExamSupplements();
   const needle=normalizeSearchValue(state.query);
   const rows=(needle?hybridSearch(needle):ALPHABETICAL_ROWS).filter(matchesListFilters);
   if(!needle){
@@ -168,7 +173,11 @@ function applyFilters(resetPage=true){
   state.filtered=rows;
   if(resetPage)state.page=1;
   if(typeof updateReadingFilterStatus==="function")updateReadingFilterStatus();
-  renderList();
+  if (viewingExamSupplements() && rows.length && !rows.some(row => row.index === state.selectedIndex)) {
+    selectEntry(rows[0].index);
+  } else {
+    renderList();
+  }
 }
 
 function paginationItems(current,total){
@@ -230,6 +239,9 @@ function notebookShortMeaning(entry){
   return (typeof getVocabularyInformation==="function"?getVocabularyInformation(entry)?.commonMeaningZh:null)||(typeof getBuiltinStudy==="function"?getBuiltinStudy(entry)?.plainMeaning:null)||entry.meaning;
 }
 function renderNotebookSenses(entry,study,note){
+  if (note?.provenance === "exam-supplement") {
+    return `<div class="notebook-sense"><span class="sense-pos">${escapeHtml(entry.partOfSpeech)}</span><div><h3>${escapeHtml(entry.meaning)}</h3></div></div>`;
+  }
   const information=typeof getVocabularyInformation==="function"?getVocabularyInformation(entry):null;
   const core=note?.coreMeaning||information?.commonMeaningZh||study?.plainMeaning;
   const coreHtml=core?`<div class="notebook-core-meaning"><h3>學測常用義</h3><p>${escapeHtml(core)}</p>${information?.editorialCorrection?'<small>本站常用義修正；原表原文保留於下方，請分開核對。</small>':''}</div>`:'';
@@ -321,6 +333,12 @@ function renderNotebookRoadmap(entry,note){
   return `<div class="notebook-roadmap"><span class="notebook-coverage">全詞表 V2</span><strong>先理解，再回想，最後仿寫</strong><ol><li><b>定位</b>：先讀情境句，圈出 ${escapeHtml(entry.word)} 的上下文。</li><li><b>驗證</b>：說明詞性、用法與選這個字義的證據。</li><li><b>遷移</b>：遮字作答，訂正後再用自己的情境造句。</li></ol><p class="card-note">${note?.provenance==="source-guided"?"本詞原創句改寫尚待補齊，目前使用既有例句配合 V2 導讀；來源依句標示。":"本詞主要例句已改用原創仿學測句，附中譯、句構與仿寫方向；原教材另行保留。"}</p></div>`;
 }
 function renderNotebookSource(entry,note){
+  if (note?.provenance === "exam-supplement") {
+    // The reading topic cards already include their passage and page references.
+    if (!note.paper) return "";
+    const {year, section, questions, role, printedPage, form} = note.paper;
+    return `<section class="study-card"><h3>歷屆試卷用字出處</h3><p>${escapeHtml(year)} 學年度 · ${escapeHtml(section)}第 ${escapeHtml(questions)} 題 · ${escapeHtml(role)}</p><p>卷面第 ${escapeHtml(printedPage)} 頁使用 <strong lang="en">${escapeHtml(form)}</strong>。</p><a href="https://www.ceec.edu.tw/xmfile?xsmsid=0J052424829869345634" target="_blank" rel="noreferrer">查閱大考中心歷屆試卷</a></section>`;
+  }
   return note?`<details class="notebook-evidence" data-evidence-word="${escapeHtml(entry.word)}"><summary>核對此詞在 111–115 上傳試卷的出處</summary><div class="notebook-evidence-items"><p class="card-note">展開後讀取本站試卷摘錄。</p></div></details>`:"";
 }
 let notebookEvidencePromise=null;

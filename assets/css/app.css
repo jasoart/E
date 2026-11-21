@@ -386,6 +386,7 @@ h1 { font-weight: 700; letter-spacing: -.015em; }
 .reading-references p { margin: .3rem 0; font-size: .9375rem; line-height: 1.8; }
 .reading-form-kind { display: inline-block; font-size: .75rem; color: #355b71; }
 .reading-more summary { min-height: 2.5rem; padding: .45rem 0; cursor: pointer; font-size: .875rem; line-height: 1.7; font-weight: 700; }
+.levels[hidden] { display: none; }
 .reading-supplemental { margin-top: 1rem; padding-top: .7rem; border-top: 1px solid var(--line); }
 .reading-supplemental>summary,.reading-supplemental-more>summary { min-height: 2.75rem; padding: .45rem 0; cursor: pointer; font-size: .9375rem; line-height: 1.8; font-weight: 700; color: var(--ink); }
 .reading-supplemental>summary span { display: inline-block; min-width: 1.6em; margin: 0 .25rem; padding: 0 .3rem; border-radius: .3rem; background: #dcebf0; text-align: center; font-variant-numeric: tabular-nums; }
